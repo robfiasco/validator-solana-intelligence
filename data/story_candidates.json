@@ -1,117 +1,404 @@
 [
   {
-    "storyId": "story_1771013726518_0",
-    "category": "Ecosystem Updates",
-    "titleDraft": "Jupiter vote reframes emissions and unlock risk",
+    "storyId": "story_1771256743999_1",
+    "category": "Governance / Tokenomics",
+    "titleDraft": "Opinion Labs launch setup draws early listing and airdrop attention",
     "thesisBullets": [
-      "Solana Weekly News is LIVE on X! 💸 Goldman Sachs $SOL Investment 👀 Solana Perps DEXs Get Snubbed ☁️ $JUP Holders Aw...",
-      "NEW: @Anchorage, in collaboration with Kamino and Solana Company, has launched a new structure bringing institutional...",
-      "RT @somemobiledev: It's HACKATHON season in Solana. - @solanamobile  Mobile Hackathon ends at Mar 9 - @solana  Gravey...",
-      "🚨 Alibaba Cloud – world's largest ecommerce giant – demos high-performance Solana RPCs at Accelerate APAC in Hong Ko..."
+      "What we know about $POLY? 1. The $POLY ticker first appeared in the CEO post on Oct 8, 2025 2. CMO Matthew Modabber went on liv...",
+      "Two interesting launches are coming 👇 @opinionlabsxyz - $OPN • Raised $20M+ • Binance-backed prediction market (Polymarket / K...",
+      "My thoughts on Jupiter Vote: 1 - PumpFun also promised a huge airdrop just to get people to participate in their ICO and keep u...",
+      "TGEs and airdrops are better in a bear market It’s much less crowded, and there’s a higher chance that people won’t dump immedi..."
     ],
     "supportingTweetRefs": [
+      {
+        "handle": "jussy_world",
+        "url": "https://twitter.com/jussy_world/status/2023052945634595234",
+        "excerpt": "What we know about $POLY? 1. The $POLY ticker first appeared in the CEO post on ",
+        "score": 377
+      },
+      {
+        "handle": "jussy_world",
+        "url": "https://twitter.com/jussy_world/status/2022703261250465837",
+        "excerpt": "Two interesting launches are coming 👇 @opinionlabsxyz - $OPN • Raised $20M+ • B",
+        "score": 364
+      },
+      {
+        "handle": "jussy_world",
+        "url": "https://twitter.com/jussy_world/status/2022675444521410854",
+        "excerpt": "My thoughts on Jupiter Vote: 1 - PumpFun also promised a huge airdrop just to ge",
+        "score": 364
+      },
+      {
+        "handle": "sol_nxxn",
+        "url": "https://twitter.com/sol_nxxn/status/2023054789530300580",
+        "excerpt": "TGEs and airdrops are better in a bear market It’s much less crowded, and there’",
+        "score": 216
+      },
+      {
+        "handle": "0xyunss",
+        "url": "https://twitter.com/0xyunss/status/2022594094678278610",
+        "excerpt": "in this livestream with @meteora_my , i'm explaining how do i screening my token",
+        "score": 207
+      }
+    ],
+    "tweetCount": 12,
+    "clusterScore": 2029.6277093694607,
+    "confidence": 95,
+    "urgencyScore": 0,
+    "newestAgeHours": 2.5486108333333335,
+    "signalFeatureScore": 4,
+    "whyNow": "High-signal cluster with 8 active mentions in the last 72h.",
+    "tweets": [
+      {
+        "screen_name": "jussy_world",
+        "full_text": "What we know about $POLY?\n\n1. The $POLY ticker first appeared in the CEO post on Oct 8, 2025\n\n2. CMO Matthew Modabber went on live show and said:\n\n“There will be a token, there will be an airdrop”\n\n3. Investors like @1confirmation said \"We’ve noted that coinbase\nwent IPO and BNB went Token, \"Polymarket is different.\"\n\nWich means could mean Polymarket can have a token and Stock\n\n4. Team confirm that want to launch it's own L2 to stop using Polygon chain, (similar what HYPE did)\n\n5. Last week trademark filings for $POLY and the POLY brand surfaced\n\n6. Week ago Polymarket team confirmed the $POLY snapshot hasn’t been taken yet\n\n7. According to lead dev @mustafap0ly, the #1 priority right now is building a native Polymarket L2 infrastructure\n\nTheir ecosystem app made $300M+ in monthly volume, so there is a big need for chain\n\n$POLY likely becomes the gas, the governance, for this new infra\n\n8. Polymarket PRE-IPO stock is currently trading at $14.4B which is higher then Kalshi\n\nThere are also rumors on CT that teams plan to airdrop 31% of the supply, cumulative trading volume is your eligibility",
+        "favorite_count": 170,
+        "retweet_count": 75,
+        "quote_count": 38,
+        "reply_count": 57,
+        "url": "https://twitter.com/jussy_world/status/2023052945634595234",
+        "created_at": "2026-02-15 10:13:03 -05:00"
+      },
+      {
+        "screen_name": "jussy_world",
+        "full_text": "Two interesting launches are coming 👇\n\n@opinionlabsxyz - $OPN\n\n• Raised $20M+\n• Binance-backed prediction market (Polymarket / Kalshi)\n• $10B volume in 54 days\n• Airdrop based on points\n• On Coinbase roadmap\n• Listed on Binance Alpha + Bybit pre-market\n• Polymarket expects ~ $500M FDV at TGE\n• TGE: End of February\n\n@Backpack - $BP\n\n• Trading ~ $600M FDV on @pacifica_fi pre-market\n• 29% odds for $700M+ FDV day one\n• Team confirms Zero market maker deals\n• Tokens only for Points holders + MadLads\n• Weekly sybil redistribution (through Feb)\n• TGE: Early March\n\nBoth projects from the biggest current naratives\n\nPrediction Markets + Perps\n\nDo you think the launch will be successful?",
+        "favorite_count": 164,
+        "retweet_count": 73,
+        "quote_count": 36,
+        "reply_count": 55,
+        "url": "https://twitter.com/jussy_world/status/2022703261250465837",
+        "created_at": "2026-02-14 11:03:32 -05:00"
+      },
+      {
+        "screen_name": "jussy_world",
+        "full_text": "My thoughts on Jupiter Vote:\n\n1 - PumpFun also promised a huge airdrop just to get people to participate in their ICO and keep using their platform\n\nPeople burn fees and lose liquidity daily, and not a cent has been given back to the community\n\n2 - There may not be a right decision (and it's okay), sometimes projects just get stuck in the middle of nowhere, and both options look bad\n\nThat's why a lot of people ask for \"Option 3\"\n\n3 - I think the team is in a position where it's hard to make the community happy with the result because they will be unsatisfied anyway\n\n4 - A lot of people think \"Option 2\" will pump the price, but it's not completely true\n\nTo pump the price, you need a bull market plus a use case for the token\n\nWith Option 2, you just remove selling pressure the token will stop going lower, but it will not pump because there isn't enough buying pressure\n\n5 - Who is selling?\n\nA lot of people say that the team is selling, but where is the on-chain proof?\n\nTo really claim that the team is selling, we need full on-chain proof: when and how much, but I don't think there is even one of them\n\nI think $JUP is still the best choice among all Solana DeFi, and once market kick off, we can see come back, because anyway all tokens down\n\ndyor",
+        "favorite_count": 164,
+        "retweet_count": 73,
+        "quote_count": 36,
+        "reply_count": 55,
+        "url": "https://twitter.com/jussy_world/status/2022675444521410854",
+        "created_at": "2026-02-14 09:13:00 -05:00"
+      },
+      {
+        "screen_name": "sol_nxxn",
+        "full_text": "TGEs and airdrops are better in a bear market\n\nIt’s much less crowded, and there’s a higher chance that people won’t dump immediately but will hold/accumulate until better times - especially if token is meaningful\n\nProjects, if you’re canceling long-awaited TGEs now, think twice",
+        "favorite_count": 97,
+        "retweet_count": 43,
+        "quote_count": 22,
+        "reply_count": 32,
+        "url": "https://twitter.com/sol_nxxn/status/2023054789530300580",
+        "created_at": "2026-02-15 10:20:23 -05:00"
+      },
+      {
+        "screen_name": "0xyunss",
+        "full_text": "in this livestream with @meteora_my , i'm explaining how do i screening my token in this market for DLMM on @MeteoraAG \n\nit's a simple method but yet, very effective.\n\n- use gmgn for the screener\n- filter minimum 200k mcap\n- minimum total fees paid 20 sol\n- check the X community, what's the token really about, what's the narration behind the token. is it long lasting or just a hit tweet that tokenized\n- check the holder, is there any suspicious holder or high frequency transfers\n\nalso a new things to check is the recently viewed on gmgn page. i also test this as an indicator how's that affecting.\n\nmore people see that token, meaning more people monitoring = more organic buy on that token.\n\nimo, 100+ views on a tokens considered as good.",
+        "favorite_count": 93,
+        "retweet_count": 41,
+        "quote_count": 21,
+        "reply_count": 31,
+        "url": "https://twitter.com/0xyunss/status/2022594094678278610",
+        "created_at": "2026-02-14 03:49:44 -05:00"
+      },
+      {
+        "screen_name": "sol_nxxn",
+        "full_text": "List of Airdrops possible in 2026 🪂\n\nBackpack - very likely 🟢\nPolymarket - likely 🟢\nOpenSea - likely 🟢\nSolstice - likely 🟢\nKalshi - possible 🟡\nAbstract - possible 🟡\nHylo - possible 🟡\nOnRe - possible 🟡\nMetaMask - possible 🟡\nLoopscale - possible 🟡\nOro - possible 🟡\nPerena - possible 🟡\nClaynosaurz - possible 🟡\nTitan Exchange - possible 🟡\nPumpFun - probably never\n\nWhich 3 are you looking forward to the most?",
+        "favorite_count": 50,
+        "retweet_count": 22,
+        "quote_count": 11,
+        "reply_count": 17,
+        "url": "https://twitter.com/sol_nxxn/status/2023149394451665263",
+        "created_at": "2026-02-15 16:36:18 -05:00"
+      },
+      {
+        "screen_name": "jussy_world",
+        "full_text": "In Q1 alone, we already had 15+ TGEs\n\nAnd 8 more are coming\n\nThere are too many tokens on the market that people don't need\n\nWith no use case and no ownership\n\nLet's see the performance of all ICOs/TGEs by the end",
+        "favorite_count": 47,
+        "retweet_count": 21,
+        "quote_count": 10,
+        "reply_count": 16,
+        "url": "https://twitter.com/jussy_world/status/2022737107324940488",
+        "created_at": "2026-02-14 13:18:01 -05:00"
+      },
+      {
+        "screen_name": "armaniferrante",
+        "full_text": "If only there was a token with no time based unlocks 🤓",
+        "favorite_count": 35,
+        "retweet_count": 16,
+        "quote_count": 8,
+        "reply_count": 12,
+        "url": "https://twitter.com/armaniferrante/status/2023385078223802806",
+        "created_at": "2026-02-16 08:12:49 -05:00"
+      }
+    ],
+    "weightedScore": 9472.149118262543,
+    "_isNovel": false
+  },
+  {
+    "storyId": "story_1771256743998_0",
+    "category": "Token Launch / Pump",
+    "titleDraft": "Ponzi-style game launch becomes high-beta Solana signal",
+    "thesisBullets": [
+      "There’s a new ponzi-style game launching on Solana in the middle of the bear market 🎮 I looked into how it works. Here’s the @...",
+      "I spent 4 hours researching the best crypto jobs: (Engineers, Managers, Interns) Here are 10 of them: @nunchi - Onchain markets...",
+      "How to survive the bear szn - build your account by creating content - use your stables to farm yield - if you're chronically o...",
+      "Solana Weekly News is LIVE on X! 💸 Goldman Sachs $SOL Investment 👀 Solana Perps DEXs Get Snubbed ☁️ $JUP Holders Await Airdro..."
+    ],
+    "supportingTweetRefs": [
+      {
+        "handle": "sol_nxxn",
+        "url": "https://twitter.com/sol_nxxn/status/2022430061224173694",
+        "excerpt": "There’s a new ponzi-style game launching on Solana in the middle of the bear mar",
+        "score": 309
+      },
+      {
+        "handle": "jussy_world",
+        "url": "https://twitter.com/jussy_world/status/2023096475568492879",
+        "excerpt": "I spent 4 hours researching the best crypto jobs: (Engineers, Managers, Interns)",
+        "score": 272
+      },
+      {
+        "handle": "SolanaSensei",
+        "url": "https://twitter.com/SolanaSensei/status/2022964567941464562",
+        "excerpt": "How to survive the bear szn - build your account by creating content - use your ",
+        "score": 266
+      },
       {
         "handle": "SolanaFloor",
         "url": "https://twitter.com/SolanaFloor/status/2022340367451140151",
-        "excerpt": "Solana Weekly News is LIVE on X!\n\n💸 Goldman Sachs..."
+        "excerpt": "Solana Weekly News is LIVE on X! 💸 Goldman Sachs $SOL Investment 👀 Solana Perp",
+        "score": 257
       },
       {
         "handle": "SolanaFloor",
-        "url": "https://twitter.com/SolanaFloor/status/2022326749024104448",
-        "excerpt": "NEW: @Anchorage, in collaboration with Kamino and ..."
-      },
-      {
-        "handle": "solanamobile",
-        "url": "https://twitter.com/solanamobile/status/2022003387894837579",
-        "excerpt": "RT @somemobiledev: It's HACKATHON season in Solana..."
-      },
-      {
-        "handle": "solana_daily",
-        "url": "https://twitter.com/solana_daily/status/2021587885305049127",
-        "excerpt": "🚨 Alibaba Cloud – world's largest ecommerce giant..."
-      },
-      {
-        "handle": "SolanaFloor",
-        "url": "https://twitter.com/SolanaFloor/status/2022246148178907545",
-        "excerpt": "🚨BREAKING: @Solana DeFi TVL has surpassed 80M $SO..."
+        "url": "https://twitter.com/SolanaFloor/status/2023326522384527532",
+        "excerpt": "UPDATE: According to Tokenomist, over $321M in token unlocks are scheduled over ",
+        "score": 254
       }
     ],
-    "confidence": 94,
-    "whyNow": "High engagement cluster in Ecosystem Updates with 29 tweets in last 72h. Strong signal from multiple sources."
+    "tweetCount": 42,
+    "clusterScore": 4279.018886965554,
+    "confidence": 95,
+    "urgencyScore": 0,
+    "newestAgeHours": 6.426388055555556,
+    "signalFeatureScore": 4,
+    "whyNow": "High-signal cluster with 8 active mentions in the last 72h.",
+    "tweets": [
+      {
+        "screen_name": "sol_nxxn",
+        "full_text": "There’s a new ponzi-style game launching on Solana in the middle of the bear market 🎮\n\nI looked into how it works. Here’s the @cashcitydotfun  mechanics breakdown:\n\n• You are a CEO managing up to 15 trading Firms\n\nYour goal:\n- hire Interns\n- boost them with Advisors and Consumables\n- compete against other players for a share of the daily $CASH token emissions\n\n• Core Game Loop\n\n1. Buy a Firm: Costs 1 SOL, gives you 8 desk slots, 1 Advisor slot, and 1 free Intern Pack\n\n2. Open Packs: Use $CASH to buy Intern, Advisor, and Consumable packs (each has different rarity and impact)\n\n3. Seat & Assign: Place Interns at desks to generate base Efficiency. Assign Advisor for a global multiplier. Apply Consumables to Interns for 24h boosts\n\n4. Earn $CASH: Every 15-minute epoch, the network distributes $CASH based on your share of the total network Efficiency\n\n5. Claim & Upgrade: Claim your $CASH, tokens can be used to buy more packs, upgrade Firms, or acquire better Advisors to grow your share\n\n• Economy\n\n– $CASH has no fixed supply cap\n– New tokens are minted only when players claim emissions\n– All in-game spending (packs, upgrades, etc.) is permanently burned\n\nThe team states there are no team, VC, or investor allocations.\n\nOf course there is a referral system in place. If you choose to participate and need a code, mine is 'LZBD-H9JE'\n\nOnly risk what you can afford to lose, play responsibly and have fun.",
+        "favorite_count": 139,
+        "retweet_count": 62,
+        "quote_count": 31,
+        "reply_count": 46,
+        "url": "https://twitter.com/sol_nxxn/status/2022430061224173694",
+        "created_at": "2026-02-13 16:57:56 -05:00"
+      },
+      {
+        "screen_name": "jussy_world",
+        "full_text": "I spent 4 hours researching the best crypto jobs:\n\n(Engineers, Managers, Interns)\n\nHere are 10 of them:\n\n@nunchi - Onchain markets for yield & risk\n\n(Engineers, growth, shitposters, designers, interns)\n\n@turbine_cash - Leading the PrivacyFi, ownership\n\n(Marketing internship)\n\n@KASTxyz - Neobank card on Solana\n\n(Product manager, growth, product director, business banking)\n\n@wormhole - Bridge connecting chains together\n\n(Internship)\n\n@asymmetric_re - Enabling secure innovation\n\n(Internship)\n\n@orca_so - Liquidity layer on Solana\n\n(Product manager)\n\n@solflare - Solana wallet\n\n(Security engineer, backend developer, copywriter, designer, and more)\n\n@OndoFinance - Wall Street on-chain\n\n(AI knowledge)\n\n@Solana\n\n(Consumer ecosystem growth lead)\n\n@phantom - Solana wallet\n\n(VP of marketing)\n\nAnd there are many more of them... more than 500+ on Solana only",
+        "favorite_count": 122,
+        "retweet_count": 54,
+        "quote_count": 27,
+        "reply_count": 41,
+        "url": "https://twitter.com/jussy_world/status/2023096475568492879",
+        "created_at": "2026-02-15 13:06:01 -05:00"
+      },
+      {
+        "screen_name": "SolanaSensei",
+        "full_text": "How to survive the bear szn\n\n- build your account by creating content\n- use your stables to farm yield\n- if you're chronically online, get a job\n- apply to bounties on Superteam\n- participate in a solana hackathon\n- rock a panda PFP",
+        "favorite_count": 120,
+        "retweet_count": 53,
+        "quote_count": 27,
+        "reply_count": 40,
+        "url": "https://twitter.com/SolanaSensei/status/2022964567941464562",
+        "created_at": "2026-02-15 04:21:52 -05:00"
+      },
+      {
+        "screen_name": "SolanaFloor",
+        "full_text": "Solana Weekly News is LIVE on X!\n\n💸 Goldman Sachs $SOL Investment\n👀 Solana Perps DEXs Get Snubbed\n☁️ $JUP Holders Await Airdrop News\n\n...and more top stories of the week.\n\nhttps://t.co/EPO2bEc333",
+        "favorite_count": 116,
+        "retweet_count": 51,
+        "quote_count": 26,
+        "reply_count": 39,
+        "url": "https://twitter.com/SolanaFloor/status/2022340367451140151",
+        "created_at": "2026-02-13 11:01:31 -05:00"
+      },
+      {
+        "screen_name": "SolanaFloor",
+        "full_text": "UPDATE: According to Tokenomist, over $321M in token unlocks are scheduled over the next 7 days, with major cliffs in ZRO, YZY, ARB, and KAITO, and large daily linear unlocks including $BTC, $SOL, WLD, DOGE, and others. https://t.co/pGsMOv9bs6",
+        "favorite_count": 114,
+        "retweet_count": 51,
+        "quote_count": 25,
+        "reply_count": 38,
+        "url": "https://twitter.com/SolanaFloor/status/2023326522384527532",
+        "created_at": "2026-02-16 04:20:09 -05:00"
+      },
+      {
+        "screen_name": "jussy_world",
+        "full_text": "🚨 Cash City is LIVE (how much it prints?)\n\nUse my code for access: 7E9J-J9OF\n\nEntry = 1 SOL, you get:\n\n• 1 Firm\n• 8 Intern slots\n• 1 Free intern pack\n\nGoal → scale firms to farm $CASH\n\nHow it works:\n\nHire interns → boost with Advisors\nPlace interns at desks → generate base efficiency\nUse consumables → 24h boosts\nAdvisors → global multipliers\n\nYou earn $CASH every 15 min epoch\n\nSell it or reinvest back into the game\n\nSo far:\n\n$500 deployed → $4 / hour\n\nThe token itself trading at $1.8M Mc, with $170k into liquidity",
+        "favorite_count": 93,
+        "retweet_count": 41,
+        "quote_count": 21,
+        "reply_count": 31,
+        "url": "https://twitter.com/jussy_world/status/2022468646011031903",
+        "created_at": "2026-02-13 19:31:15 -05:00"
+      },
+      {
+        "screen_name": "triton_one",
+        "full_text": "Even if you skipped Valentine’s, here’s a quick relationship reminder: on Solana, “just seeing each other” doesn’t cut it.\n\nYour RPC has to be a reliable partner through every spike and update. Call it a service provider if you want, but you are basically married.",
+        "favorite_count": 77,
+        "retweet_count": 34,
+        "quote_count": 17,
+        "reply_count": 26,
+        "url": "https://twitter.com/triton_one/status/2023228142366888036",
+        "created_at": "2026-02-15 21:49:13 -05:00"
+      },
+      {
+        "screen_name": "SolanaSensei",
+        "full_text": "SOL-Stablecoin swaps generate the biggest share of Solana’s daily spot volume with $1.7B!\n\nTokenized assets account for just $7M. There’s a lot of fucking room to grow.\n\nThis is how early we are. I am sharing this to quote this screenshot in a few years.\n\nBookmark this. https://t.co/0FHHu0gQQT",
+        "favorite_count": 73,
+        "retweet_count": 32,
+        "quote_count": 16,
+        "reply_count": 24,
+        "url": "https://twitter.com/SolanaSensei/status/2023068304911499685",
+        "created_at": "2026-02-15 11:14:05 -05:00"
+      }
+    ],
+    "weightedScore": 5705.691708891403,
+    "_isNovel": true
   },
   {
-    "storyId": "story_1771013726518_1",
-    "category": "AI / Agents",
-    "titleDraft": "AI agent hackathon momentum builds",
+    "storyId": "story_1771256744000_3",
+    "category": "DeFi Strategy / Alpha",
+    "titleDraft": "Solana Is Winning In A Ton Of Categories",
     "thesisBullets": [
-      "Excited to launch autonomous trading agents for @Polymarket  5-min Bitcoin price market. Top up your wallet, set the ...",
-      "AI Agents on Solana 🌟  Which one are you watching? 👀  @giantsprotocol, @SolarisAI_fun, @swarms_corp, @mobyagent, @H...",
-      "AI Agents on Solana 🌟  Which one are you watching? 👀  @OPENCLAW, @moltbook, @moltdotid, @zauthx402, @bankrbot, @day...",
-      "Deploy your agents to trade autonomously on @cobotgg  https://t.co/BayVGBsFxA"
+      "Solana is winning in a ton of categories. Speed, cost, users, developers, spot trading and revenue. We need to eat into the len...",
+      "Another way I would frame this: Equity perps are net new and better. Tokenized spot stocks, in their current form, are net new...",
+      "And we will not get there without perps and lending. This requires us to figure out how to improve the execution layer for make...",
+      "7/ This is Vibe Trading And it’s now programmable. Get started here: https://t.co/LWNkdEolc0"
     ],
     "supportingTweetRefs": [
       {
-        "handle": "cobotgg",
-        "url": "https://twitter.com/cobotgg/status/2022328314120012083",
-        "excerpt": "Excited to launch autonomous trading agents for @P..."
+        "handle": "therealchaseeb",
+        "url": "https://twitter.com/therealchaseeb/status/2023034309444284814",
+        "excerpt": "Solana is winning in a ton of categories. Speed, cost, users, developers, spot t",
+        "score": 215
       },
       {
-        "handle": "solana_daily",
-        "url": "https://twitter.com/solana_daily/status/2022001622138925361",
-        "excerpt": "AI Agents on Solana 🌟 \n\nWhich one are you watchin..."
+        "handle": "armaniferrante",
+        "url": "https://twitter.com/armaniferrante/status/2022903849678442924",
+        "excerpt": "Another way I would frame this: Equity perps are net new and better. Tokenized s",
+        "score": 158
       },
       {
-        "handle": "solana_daily",
-        "url": "https://twitter.com/solana_daily/status/2022001617638502717",
-        "excerpt": "AI Agents on Solana 🌟 \n\nWhich one are you watchin..."
+        "handle": "therealchaseeb",
+        "url": "https://twitter.com/therealchaseeb/status/2023034863222419888",
+        "excerpt": "And we will not get there without perps and lending. This requires us to figure ",
+        "score": 107
       },
       {
-        "handle": "cobotgg",
-        "url": "https://twitter.com/cobotgg/status/2022367761691799727",
-        "excerpt": "Deploy your agents to trade autonomously on @cobot..."
+        "handle": "debridge",
+        "url": "https://twitter.com/debridge/status/2023383193278353626",
+        "excerpt": "7/ This is Vibe Trading And it’s now programmable. Get started here: https://t.c",
+        "score": 77
       },
       {
-        "handle": "solana_devs",
-        "url": "https://twitter.com/solana_devs/status/2022365864285344179",
-        "excerpt": "RT @b_migliaccio: There is ONE day left in the @so..."
+        "handle": "debridge",
+        "url": "https://twitter.com/debridge/status/2023382963875127655",
+        "excerpt": "1/ Vibe Trading is here Introducing deBridge MCP, a universal trading API for Op",
+        "score": 77
       }
     ],
-    "confidence": 85,
-    "whyNow": "High engagement cluster in AI / Agents with 6 tweets in last 72h. Strong signal from multiple sources."
-  },
-  {
-    "storyId": "story_1771013726518_2",
-    "category": "Perps / Trading",
-    "titleDraft": "AI agents gain traction on Solana",
-    "thesisBullets": [
-      "⚡️Solana now leads across key metrics - including users, transactions, developer growth, trading volume, and fees - w...",
-      "🚨Anatoly Yakovenko, CEO of @solanalabs , has been appointed to the U.S. Commodity Futures Trading Commission’s newly...",
-      "There's nothing to say about Bitcoin right now Other than completely avoid trading if your portfolio is down more tha...",
-      "Top 10 Trading App by Fee in the Last 30D 📊 🔸@AxiomExchange 🔸@ant_fun_trade 🔸@tryfomo 🔸@tradewithPhoton 🔸@moons..."
-    ],
-    "supportingTweetRefs": [
+    "tweetCount": 10,
+    "clusterScore": 931.6677432041267,
+    "confidence": 95,
+    "urgencyScore": 1,
+    "newestAgeHours": 2.6733330555555557,
+    "signalFeatureScore": 2,
+    "whyNow": "Time-sensitive signal: discussion shows urgency and near-term opportunity.",
+    "tweets": [
       {
-        "handle": "solana_daily",
-        "url": "https://twitter.com/solana_daily/status/2021615219580297419",
-        "excerpt": "⚡️Solana now leads across key metrics - including ..."
+        "screen_name": "therealchaseeb",
+        "full_text": "Solana is winning in a ton of categories. Speed, cost, users, developers, spot trading and revenue. We need to eat into the lending and perps markets.\n\nWe're doing great, but in order to fulfill the Internet Capital Markets dream we need to be the most liquid market in the world.",
+        "favorite_count": 97,
+        "retweet_count": 43,
+        "quote_count": 22,
+        "reply_count": 32,
+        "url": "https://twitter.com/therealchaseeb/status/2023034309444284814",
+        "created_at": "2026-02-15 08:59:00 -05:00"
       },
       {
-        "handle": "solana_daily",
-        "url": "https://twitter.com/solana_daily/status/2022189945755238466",
-        "excerpt": "🚨Anatoly Yakovenko, CEO of @solanalabs , has been..."
+        "screen_name": "armaniferrante",
+        "full_text": "Another way I would frame this:  \n\nEquity perps are net new and better. Tokenized spot stocks, in their current form, are net new and worse.  \n\nEquity perps are both a hedging and a short term speculation vehicle. Spot equities, on the other hand is much more about long term, intrinsic value.   \n\nNo one wants to buy a stock without cash dividends, voting rights, and legal protections (e.g. in the event of a bankruptcy). This changes as @The_DTCC, @SuperstateInc, and others come online.   \n\nThe end game is being able to use stocks--real stocks--as collateral for 24/7 markets. You only get this by disintermediating via crypto market structure, collapsing settlement from T+n into T+0 with all the benefits of a shared, global settlement layer. \n\nThis will come alongside securities laws as the SEC pushes modern markets onchain. It's only when you have the *real* thing that the hundreds of trillions of dollars of equities value will flow into crypto.   \n\nThe future is already here, it's just not evenly distributed yet.",
+        "favorite_count": 71,
+        "retweet_count": 32,
+        "quote_count": 16,
+        "reply_count": 24,
+        "url": "https://twitter.com/armaniferrante/status/2022903849678442924",
+        "created_at": "2026-02-15 00:20:36 -05:00"
       },
       {
-        "handle": "gumsays",
-        "url": "https://twitter.com/gumsays/status/2021622643258986518",
-        "excerpt": "There's nothing to say about Bitcoin right now\n\nOt..."
+        "screen_name": "therealchaseeb",
+        "full_text": "And we will not get there without perps and lending. This requires us to figure out how to improve the execution layer for makers, so that they choose Solana as their venue. Custom ordering rules need to come now.\n\nYou don't become the global financial layer without it.",
+        "favorite_count": 48,
+        "retweet_count": 21,
+        "quote_count": 11,
+        "reply_count": 16,
+        "url": "https://twitter.com/therealchaseeb/status/2023034863222419888",
+        "created_at": "2026-02-15 09:01:12 -05:00"
       },
       {
-        "handle": "solana_daily",
-        "url": "https://twitter.com/solana_daily/status/2021607660723052686",
-        "excerpt": "Top 10 Trading App by Fee in the Last 30D 📊\n\n🔸@A..."
+        "screen_name": "debridge",
+        "full_text": "7/ This is Vibe Trading\n\nAnd it’s now programmable. Get started here:\nhttps://t.co/LWNkdEolc0",
+        "favorite_count": 35,
+        "retweet_count": 15,
+        "quote_count": 8,
+        "reply_count": 12,
+        "url": "https://twitter.com/debridge/status/2023383193278353626",
+        "created_at": "2026-02-16 08:05:20 -05:00"
+      },
+      {
+        "screen_name": "debridge",
+        "full_text": "1/ Vibe Trading is here\n\nIntroducing deBridge MCP, a universal trading API for OpenClaw, Claude, Cursor, and all your favorite AI workstations https://t.co/1QOboIXDno",
+        "favorite_count": 35,
+        "retweet_count": 15,
+        "quote_count": 8,
+        "reply_count": 12,
+        "url": "https://twitter.com/debridge/status/2023382963875127655",
+        "created_at": "2026-02-16 08:04:25 -05:00"
+      },
+      {
+        "screen_name": "SolanaFloor",
+        "full_text": "NEWS: Russia’s Finance Ministry says citizens traded ~50B rubles (~$650M) in crypto daily, about $130B annually, mostly outside oversight. \n\nOfficials are preparing a 2026 licensing framework to bring trading onto regulated platforms while domestic crypto payments remain banned. https://t.co/80c4cGWEtC",
+        "favorite_count": 33,
+        "retweet_count": 15,
+        "quote_count": 7,
+        "reply_count": 11,
+        "url": "https://twitter.com/SolanaFloor/status/2023373610833109267",
+        "created_at": "2026-02-16 07:27:15 -05:00"
+      },
+      {
+        "screen_name": "mrjasonchoi",
+        "full_text": "If I was a fresh grad again my first priority would be to amass a fortress of solitude portfolio and get to a point where passive returns fund my lifestyle with acceptable principal decay into death before AGI permanukes the job market in 5 years\n\nThe two ways I would do this in such a short time is either hyper-gamble in crypto/stocks or FOMO VCs into giving me money to vibe code an AI consumer-facing app and aim to get acquihired by a pre-IPO hyperscaler pronto\n\nWould not bother wasting time applying to mckinsey et al. or the cliche wharton -> IB -> PE route. Both dead ends",
+        "favorite_count": 30,
+        "retweet_count": 13,
+        "quote_count": 7,
+        "reply_count": 10,
+        "url": "https://twitter.com/mrjasonchoi/status/2023341648093319416",
+        "created_at": "2026-02-16 05:20:15 -05:00"
+      },
+      {
+        "screen_name": "mrjasonchoi",
+        "full_text": "Trading crypto but not AI stonks is like taking a sword to war but insisting on only using one side",
+        "favorite_count": 24,
+        "retweet_count": 11,
+        "quote_count": 5,
+        "reply_count": 8,
+        "url": "https://twitter.com/mrjasonchoi/status/2023016003748458822",
+        "created_at": "2026-02-15 07:46:15 -05:00"
       }
     ],
-    "confidence": 69,
-    "whyNow": "High engagement cluster in Perps / Trading with 4 tweets in last 72h. Strong signal from multiple sources."
+    "weightedScore": 3908.6970860801116,
+    "_isNovel": false
   }
 ]

@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-02-17T15:05:23.330Z",
+  "totals": {
+    "total_tweets": 340,
+    "total_engagement": 42083,
+    "top_tweet_engagement": 2076,
+    "unique_users": 0
+  },
+  "top_tweet": {
+    "id": "1842966507619303523",
+    "handle": "",
+    "engagement": 2076
+  },
+  "top_users": [],
+  "by_handle": {}
+}

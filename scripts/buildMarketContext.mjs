@@ -12,6 +12,7 @@ const FALLBACK_CONTEXT = {
     price: null,
     change_24h: null,
     change_7d: null,
+    change_prev_week_utc: null,
   },
   mkt_cap: {
     solana_mkt_cap_usd: null,
@@ -60,6 +61,19 @@ const toNum = (v) => {
   return Number.isFinite(n) ? n : null;
 };
 
+const pickNearestPrice = (prices, targetMs, mode = "after") => {
+  if (!Array.isArray(prices) || !prices.length) return null;
+  if (mode === "after") {
+    const point = prices.find((p) => Number.isFinite(p?.[0]) && p[0] >= targetMs);
+    return toNum(point?.[1]);
+  }
+  for (let i = prices.length - 1; i >= 0; i -= 1) {
+    const p = prices[i];
+    if (Number.isFinite(p?.[0]) && p[0] <= targetMs) return toNum(p?.[1]);
+  }
+  return null;
+};
+
 const loadPrevious = () =>
   loadJson(dataOut) || loadJson(rootOut) || loadJson(publicOut) || FALLBACK_CONTEXT;
 
@@ -83,6 +97,7 @@ const main = async () => {
         change_24h: toNum(sol?.price_change_percentage_24h) ?? next.sol.change_24h ?? null,
         change_7d:
           toNum(sol?.price_change_percentage_7d_in_currency) ?? next.sol.change_7d ?? null,
+        change_prev_week_utc: next.sol.change_prev_week_utc ?? null,
       };
       next.mkt_cap = {
         solana_mkt_cap_usd: toNum(sol?.market_cap) ?? next.mkt_cap.solana_mkt_cap_usd ?? null,
@@ -94,6 +109,78 @@ const main = async () => {
     }
   } catch {
     // keep previous values
+  }
+
+  // Previous full UTC week (Sun 00:00 -> Sat 23:59:59.999) change
+  try {
+    const now = new Date();
+    const utcDay = now.getUTCDay(); // 0=Sun..6=Sat
+    const thisWeekStartMs = Date.UTC(
+      now.getUTCFullYear(),
+      now.getUTCMonth(),
+      now.getUTCDate() - utcDay,
+      0, 0, 0, 0
+    );
+    const prevWeekStartMs = thisWeekStartMs - 7 * 24 * 60 * 60 * 1000;
+    const prevWeekEndMs = thisWeekStartMs - 1;
+    // Add a small buffer to improve chance of endpoints in sparse data.
+    const fromSec = Math.floor((prevWeekStartMs - 2 * 60 * 60 * 1000) / 1000);
+    const toSec = Math.floor((prevWeekEndMs + 2 * 60 * 60 * 1000) / 1000);
+    const rangeRes = await withTimeout(
+      `https://api.coingecko.com/api/v3/coins/solana/market_chart/range?vs_currency=usd&from=${fromSec}&to=${toSec}`
+    );
+    if (rangeRes.ok) {
+      const rangeJson = await rangeRes.json();
+      const prices = Array.isArray(rangeJson?.prices) ? rangeJson.prices : [];
+      const startPrice = pickNearestPrice(prices, prevWeekStartMs, "after");
+      const endPrice = pickNearestPrice(prices, prevWeekEndMs, "before");
+      if (Number.isFinite(startPrice) && startPrice > 0 && Number.isFinite(endPrice)) {
+        const pct = ((endPrice - startPrice) / startPrice) * 100;
+        next.sol.change_prev_week_utc = Number.isFinite(pct) ? Number(pct.toFixed(2)) : next.sol.change_prev_week_utc ?? null;
+      }
+    }
+  } catch {
+    // keep previous values
+  }
+
+  // Fallback: derive previous UTC week change from OHLC candles if range data is missing.
+  if (!Number.isFinite(next?.sol?.change_prev_week_utc)) {
+    try {
+      const now = new Date();
+      const utcDay = now.getUTCDay();
+      const thisWeekStartMs = Date.UTC(
+        now.getUTCFullYear(),
+        now.getUTCMonth(),
+        now.getUTCDate() - utcDay,
+        0, 0, 0, 0
+      );
+      const prevWeekStartMs = thisWeekStartMs - 7 * 24 * 60 * 60 * 1000;
+      const prevWeekEndMs = thisWeekStartMs - 1;
+      const ohlcRes = await withTimeout(
+        "https://api.coingecko.com/api/v3/coins/solana/ohlc?vs_currency=usd&days=14"
+      );
+      if (ohlcRes.ok) {
+        const ohlc = await ohlcRes.json(); // [ts, open, high, low, close]
+        const candles = Array.isArray(ohlc) ? ohlc.filter((c) => Number.isFinite(c?.[0])) : [];
+        const startCandle = candles.find((c) => c[0] >= prevWeekStartMs);
+        let endCandle = null;
+        for (let i = candles.length - 1; i >= 0; i -= 1) {
+          const c = candles[i];
+          if (c[0] <= prevWeekEndMs) {
+            endCandle = c;
+            break;
+          }
+        }
+        const startPrice = toNum(startCandle?.[1]); // open
+        const endPrice = toNum(endCandle?.[4]); // close
+        if (Number.isFinite(startPrice) && startPrice > 0 && Number.isFinite(endPrice)) {
+          const pct = ((endPrice - startPrice) / startPrice) * 100;
+          next.sol.change_prev_week_utc = Number.isFinite(pct) ? Number(pct.toFixed(2)) : null;
+        }
+      }
+    } catch {
+      // keep null fallback
+    }
   }
 
   try {
@@ -128,6 +215,12 @@ const main = async () => {
 
   fs.mkdirSync(path.dirname(dataOut), { recursive: true });
   fs.mkdirSync(path.dirname(publicOut), { recursive: true });
+  next.sol = {
+    price: toNum(next?.sol?.price),
+    change_24h: toNum(next?.sol?.change_24h),
+    change_7d: toNum(next?.sol?.change_7d),
+    change_prev_week_utc: toNum(next?.sol?.change_prev_week_utc),
+  };
   fs.writeFileSync(dataOut, JSON.stringify(next, null, 2), "utf-8");
   fs.writeFileSync(rootOut, JSON.stringify(next, null, 2), "utf-8");
   fs.writeFileSync(publicOut, JSON.stringify(next, null, 2), "utf-8");
@@ -139,4 +232,3 @@ main().catch((err) => {
   console.error("market:build failed:", err?.message || err);
   process.exit(1);
 });
-

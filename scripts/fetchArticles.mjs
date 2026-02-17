@@ -14,8 +14,6 @@ const feeds = [
   { name: "Solana Blog", url: "https://solana.com/rss.xml" },
   { name: "Jupiter", url: "https://station.jup.ag/rss.xml" },
   { name: "Helius", url: "https://helius.dev/blog/rss.xml" },
-  { name: "Jito", url: "https://www.jito.network/blog/rss.xml" },
-  { name: "SolanaFloor", url: "https://solanafloor.com/rss" },
   { name: "The Block", url: "https://www.theblock.co/rss.xml" },
   { name: "CoinDesk", url: "https://www.coindesk.com/arc/outboundfeeds/rss/?outputType=xml" },
   { name: "Decrypt", url: "https://decrypt.co/feed" },

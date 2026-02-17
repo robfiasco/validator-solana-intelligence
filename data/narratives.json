@@ -123,11 +123,15 @@
     "hasEvidenceForEveryClaim": true
   },
   "narrative_vector": [
+    "new_product",
     "solana",
     "ai",
-    "new_product",
-    "jup",
-    "mobile",
-    "backpack"
+    "openclaw",
+    "gaming",
+    "jupiter",
+    "seeker",
+    "backpack",
+    "lads",
+    "leaderboard"
   ]
 }

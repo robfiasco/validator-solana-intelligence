@@ -5,7 +5,6 @@ import { XMLParser } from "fast-xml-parser";
 
 const SOURCE_URL = "https://solanafloor.com/news";
 const SOLANA_RSS = "https://solana.com/rss";
-const JITO_RSS = "https://www.jito.network/rss.xml";
 const BLOCKWORKS_RSS = "https://blockworks.co/feed";
 const THEBLOCK_RSS = "https://www.theblock.co/rss";
 const COINDESK_RSS = "https://www.coindesk.com/arc/outboundfeeds/rss/?outputType=xml";
@@ -286,7 +285,6 @@ const main = async () => {
     const solanaFloorStories = extractStories(html);
     const [
       solanaStories,
-      jitoStories,
       blockworksStories,
       theBlockStories,
       coindeskStories,
@@ -295,7 +293,6 @@ const main = async () => {
       influencerSignal,
     ] = await Promise.all([
       fetchRssStories(SOLANA_RSS, "Solana"),
-      fetchRssStories(JITO_RSS, "Jito"),
       fetchRssStories(BLOCKWORKS_RSS, "Blockworks"),
       fetchRssStories(THEBLOCK_RSS, "The Block"),
       fetchRssStories(COINDESK_RSS, "CoinDesk"),
@@ -307,7 +304,6 @@ const main = async () => {
     const allCandidates = [
       ...solanaFloorStories,
       ...solanaStories,
-      ...jitoStories,
       ...blockworksStories,
       ...theBlockStories,
       ...coindeskStories,

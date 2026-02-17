@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Activity, Brain, MessageCircle, Rocket, TrendingUp, Users } from "lucide-react";
+import SeekerGuard from "./components/SeekerGuard";
 import type { TerminalData } from "../lib/data/types";
 import {
   loadDailyData,
@@ -27,6 +29,9 @@ type MarketView = {
   volUsd: number | null;
 };
 
+const isValidNum = (value: unknown): value is number =>
+  typeof value === "number" && Number.isFinite(value);
+
 function MarketStatsBlock({
   marketView,
   formatPrice,
@@ -47,7 +52,7 @@ function MarketStatsBlock({
       <div className="market-metric-grid">
         <div className="market-metric">
           <div className="market-metric-label">SOL</div>
-          <div className="market-metric-value">{formatPrice(marketView.solPrice)}</div>
+          <div className="market-metric-value">{marketView.solPrice !== null ? `$${formatPrice(marketView.solPrice)}` : "n/a"}</div>
           <div className={`market-metric-delta ${formatDelta(marketView.sol24h).cls}`}>
             {formatDelta(marketView.sol24h).text}
           </div>
@@ -55,7 +60,7 @@ function MarketStatsBlock({
         <div className="market-metric">
           <div className="market-metric-label">7D</div>
           <div className={`market-metric-value ${formatDelta(marketView.sol7d).cls}`}>
-            {formatDollarDelta(sol7dDollarDelta)}
+            {sol7dDollarDelta !== null ? `$${formatDollarDelta(sol7dDollarDelta)}` : "n/a"}
           </div>
           <div className={`market-metric-delta ${formatDelta(marketView.sol7d).cls}`}>
             {formatDelta(marketView.sol7d).text}
@@ -92,62 +97,11 @@ export default function Home() {
   const [briefingData, setBriefingData] = useState<BriefingPayload | null>(null);
   const [newsCardsData, setNewsCardsData] = useState<NewsCardsPayload | null>(null);
   const [marketContextData, setMarketContextData] = useState<MarketContextPayload | null>(null);
+  const [marketCache, setMarketCache] = useState<MarketContextPayload | null>(null);
   const [activePanel, setActivePanel] = useState(0);
-  const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
   const [isSeeker, setIsSeeker] = useState(false);
   const carouselRef = useRef<HTMLDivElement | null>(null);
   const panelRefs = useRef<Array<HTMLDivElement | null>>([]);
-
-  // Navigation State
-  const touchStart = useRef<number | null>(null);
-  const touchEnd = useRef<number | null>(null);
-  const minSwipeDistance = 50;
-
-  const onTouchStart = (e: React.TouchEvent) => {
-    touchEnd.current = null;
-    touchStart.current = e.targetTouches[0].clientX;
-  };
-
-  const onTouchMove = (e: React.TouchEvent) => {
-    touchEnd.current = e.targetTouches[0].clientX;
-  };
-
-  const onTouchEnd = () => {
-    if (!touchStart.current || !touchEnd.current) return;
-    const distance = touchStart.current - touchEnd.current;
-    const isLeftSwipe = distance > minSwipeDistance;
-    const isRightSwipe = distance < -minSwipeDistance;
-
-    if (isLeftSwipe) {
-      nextStory();
-    } else if (isRightSwipe) {
-      prevStory();
-    }
-  };
-
-  const nextStory = () => {
-    setCurrentStoryIndex((prev) =>
-      prev < (newsCardsData?.items?.length || 1) - 1 ? prev + 1 : 0
-    );
-  };
-
-  const prevStory = () => {
-    setCurrentStoryIndex((prev) =>
-      prev > 0 ? prev - 1 : (newsCardsData?.items?.length || 1) - 1
-    );
-  };
-
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (activePanel !== 2) return; // Only if News panel is active (index 2)
-      if (e.key === "ArrowLeft") prevStory();
-      if (e.key === "ArrowRight") nextStory();
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [activePanel, newsCardsData]);
-
-
 
   useEffect(() => {
     const stored = window.localStorage.getItem("validator_theme");
@@ -181,9 +135,10 @@ export default function Home() {
     if (!Number.isNaN(idx) && idx >= 0 && idx <= 2) {
       setActivePanel(idx);
       requestAnimationFrame(() => {
+        const container = carouselRef.current;
         const node = panelRefs.current[idx];
-        if (node) {
-          node.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
+        if (container && node) {
+          container.scrollTo({ left: node.offsetLeft, behavior: "auto" });
         }
       });
     }
@@ -192,6 +147,19 @@ export default function Home() {
   useEffect(() => {
     window.localStorage.setItem("validator-panel", String(activePanel));
   }, [activePanel]);
+
+  useEffect(() => {
+    try {
+      const raw = window.localStorage.getItem("validator_market_cache");
+      if (!raw) return;
+      const parsed = JSON.parse(raw) as MarketContextPayload;
+      if (isValidNum(parsed?.sol?.price) || isValidNum(parsed?.mkt_cap?.solana_mkt_cap_usd)) {
+        setMarketCache(parsed);
+      }
+    } catch {
+      // ignore cache parse issues
+    }
+  }, []);
 
 
   useEffect(() => {
@@ -229,10 +197,23 @@ export default function Home() {
       setMarketContextData(daily.marketContext);
     };
     run();
+    const interval = window.setInterval(run, 30000);
     return () => {
       active = false;
+      window.clearInterval(interval);
     };
   }, []);
+
+  useEffect(() => {
+    if (!marketContextData) return;
+    if (!isValidNum(marketContextData?.sol?.price) && !isValidNum(marketContextData?.mkt_cap?.solana_mkt_cap_usd)) return;
+    setMarketCache(marketContextData);
+    try {
+      window.localStorage.setItem("validator_market_cache", JSON.stringify(marketContextData));
+    } catch {
+      // ignore storage errors
+    }
+  }, [marketContextData]);
 
   const toggleLabel = useMemo(
     () => (theme === "darker" ? "Switch to Dark" : "Switch to Darker"),
@@ -241,22 +222,35 @@ export default function Home() {
 
 
   const scrollToPanel = (index: number) => {
-    const node = panelRefs.current[index];
-    if (node) {
-      node.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
-      setActivePanel(index);
-    }
+    const container = carouselRef.current;
+    if (!container) return;
+    const target = Math.max(0, Math.min(2, index));
+    const node = panelRefs.current[target];
+    const left = node ? node.offsetLeft : target * (container.clientWidth || 1);
+    container.scrollTo({
+      left,
+      behavior: "smooth",
+    });
+    setActivePanel(target);
   };
 
   const handleCarouselScroll = () => {
     const container = carouselRef.current;
     if (!container) return;
-    const slideWidth = panelRefs.current[0]?.clientWidth ?? container.clientWidth;
-    const gap = 16;
-    const idx = Math.round(container.scrollLeft / (slideWidth + gap));
-    if (idx !== activePanel) {
-      setActivePanel(idx);
+    const offsets = panelRefs.current.map((node, idx) => ({
+      idx,
+      left: node ? node.offsetLeft : idx * (container.clientWidth || 1),
+    }));
+    let boundedIdx = activePanel;
+    let best = Number.POSITIVE_INFINITY;
+    for (const candidate of offsets) {
+      const dist = Math.abs(container.scrollLeft - candidate.left);
+      if (dist < best) {
+        best = dist;
+        boundedIdx = candidate.idx;
+      }
     }
+    if (boundedIdx !== activePanel) setActivePanel(boundedIdx);
   };
 
   const toFiniteNumber = (value: number | string | null | undefined) => {
@@ -298,6 +292,14 @@ export default function Home() {
     const numeric = toFiniteNumber(value);
     if (numeric === null) return "n/a";
     return numeric.toFixed(2);
+  };
+
+  const formatCompactNumber = (value: number | null | undefined) => {
+    const numeric = toFiniteNumber(value ?? null);
+    if (numeric === null) return "0";
+    if (Math.abs(numeric) >= 1_000_000) return `${(numeric / 1_000_000).toFixed(1)}M`;
+    if (Math.abs(numeric) >= 1_000) return `${(numeric / 1_000).toFixed(1)}K`;
+    return `${Math.round(numeric)}`;
   };
 
 
@@ -392,8 +394,15 @@ export default function Home() {
     signalBoardData?.pastWeek ||
     signalBoardData?.aiRead ||
     "SOL spent the week in risk-off posture, and flows stayed selective around majors.";
+  const utcDay = new Date().getUTCDay(); // 0=Sun,1=Mon...6=Sat
   const signalShowPastWeek =
-    typeof signalBoardData?.showPastWeek === "boolean" ? signalBoardData.showPastWeek : true;
+    typeof signalBoardData?.showPastWeek === "boolean"
+      ? signalBoardData.showPastWeek
+      : utcDay >= 1 && utcDay <= 3;
+  const signalShowNextWeek =
+    typeof signalBoardData?.showNextWeek === "boolean"
+      ? signalBoardData.showNextWeek
+      : utcDay === 0 || utcDay >= 4;
   const signalPriceUpdate =
     stripSectionPrefix(signalBoardData?.priceUpdate) ||
     "24h and 7d are mixed; wait for cleaner confirmation before adding size.";
@@ -422,9 +431,9 @@ export default function Home() {
   ) => {
     const text = `${story?.title || ""} ${story?.narrative || ""} ${story?.whyItMatters || ""} ` +
       pulses
-      .map((p) => String(p?.thought || ""))
-      .join(" ")
-      .toLowerCase();
+        .map((p) => String(p?.thought || ""))
+        .join(" ")
+        .toLowerCase();
     const source = String(story?.source || "").toLowerCase();
 
     const has = (pattern: RegExp) => pattern.test(text);
@@ -475,16 +484,32 @@ export default function Home() {
       }))
       .filter((item) => item.handle);
 
+  const pickMarket = (...values: Array<number | null | undefined>) => {
+    for (const value of values) {
+      const n = toFiniteNumber(value ?? null);
+      if (n !== null) return n;
+    }
+    return null;
+  };
+
   const marketView = {
-    solPrice: marketContextData?.sol?.price ?? terminalData?.sol.priceUsd ?? null,
-    sol24h: marketContextData?.sol?.change_24h ?? terminalData?.sol.change24hPct ?? null,
-    sol7d: marketContextData?.sol?.change_7d ?? terminalData?.sol.change7dPct ?? null,
-    mktCap: marketContextData?.mkt_cap?.solana_mkt_cap_usd ?? terminalData?.marketCap.totalUsd ?? null,
-    mktCap24h: marketContextData?.mkt_cap?.change_24h ?? terminalData?.marketCap.change24hPct ?? null,
-    fearValue: marketContextData?.fear_greed?.value ?? terminalData?.fearGreed.value ?? null,
-    fearLabel: marketContextData?.fear_greed?.label ?? terminalData?.fearGreed.classification ?? "n/a",
-    btcDom: marketContextData?.btc_dominance?.value ?? terminalData?.btcDominance.valuePct ?? null,
-    volUsd: marketContextData?.vol?.sol_24h_usd ?? null,
+    solPrice: pickMarket(marketContextData?.sol?.price, terminalData?.sol.priceUsd, marketCache?.sol?.price),
+    sol24h: pickMarket(marketContextData?.sol?.change_24h, terminalData?.sol.change24hPct, marketCache?.sol?.change_24h),
+    sol7d: pickMarket(marketContextData?.sol?.change_7d, terminalData?.sol.change7dPct, marketCache?.sol?.change_7d),
+    mktCap: pickMarket(
+      marketContextData?.mkt_cap?.solana_mkt_cap_usd,
+      terminalData?.marketCap.totalUsd,
+      marketCache?.mkt_cap?.solana_mkt_cap_usd,
+    ),
+    mktCap24h: pickMarket(marketContextData?.mkt_cap?.change_24h, terminalData?.marketCap.change24hPct, marketCache?.mkt_cap?.change_24h),
+    fearValue: pickMarket(marketContextData?.fear_greed?.value, terminalData?.fearGreed.value, marketCache?.fear_greed?.value),
+    fearLabel:
+      marketContextData?.fear_greed?.label ||
+      terminalData?.fearGreed.classification ||
+      marketCache?.fear_greed?.label ||
+      "n/a",
+    btcDom: pickMarket(marketContextData?.btc_dominance?.value, terminalData?.btcDominance.valuePct, marketCache?.btc_dominance?.value),
+    volUsd: pickMarket(marketContextData?.vol?.sol_24h_usd, marketCache?.vol?.sol_24h_usd),
     volChange24h: terminalData?.volume.change24hPct ?? null,
   };
 
@@ -514,8 +539,7 @@ export default function Home() {
               <span className="logo-cursor" aria-hidden="true">_</span>
             </h1>
             <p className="subtitle">
-              SOLANA INTELLIGENCE TERMINAL{" "}
-              <span className="subtitle-seeker">SEEKER EXCLUSIVE</span>
+              SOLANA INTELLIGENCE TERMINAL
             </p>
             {isStaked ? (
               <span className="staked-chip">Staked — Enhanced Signal</span>
@@ -588,14 +612,14 @@ export default function Home() {
                       </p>
                     </div>
                     {signalShowPastWeek ? (
-                    <div className="sb-item sb-item-past">
-                      <div className="sb-item-head">
-                        <span className="sb-item-label">PAST WEEK</span>
+                      <div className="sb-item sb-item-past">
+                        <div className="sb-item-head">
+                          <span className="sb-item-label">PAST WEEK</span>
+                        </div>
+                        <p className="sb-item-copy">
+                          {signalPastWeek}
+                        </p>
                       </div>
-                      <p className="sb-item-copy">
-                        {signalPastWeek}
-                      </p>
-                    </div>
                     ) : null}
 
                     <div className="sb-item sb-item-this">
@@ -607,14 +631,16 @@ export default function Home() {
                       </p>
                     </div>
 
-                    <div className="sb-item sb-item-next">
-                      <div className="sb-item-head">
-                        <span className="sb-item-label">NEXT WEEK</span>
+                    {signalShowNextWeek ? (
+                      <div className="sb-item sb-item-next">
+                        <div className="sb-item-head">
+                          <span className="sb-item-label">NEXT WEEK</span>
+                        </div>
+                        <p className="sb-item-copy">
+                          {signalNextWeek}
+                        </p>
                       </div>
-                      <p className="sb-item-copy">
-                        {signalNextWeek}
-                      </p>
-                    </div>
+                    ) : null}
                   </div>
                 </div>
               </div>
@@ -628,27 +654,27 @@ export default function Home() {
           >
             <section className="morning-open">
               <div className="morning-panel intel-card card--briefing">
-              <div className="morning-panel-header">
-                <h2 className="morning-panel-title">{briefingData?.title || "STORIES YOU MAY HAVE MISSED THIS WEEK"}</h2>
-              </div>
+                <div className="morning-panel-header">
+                  <h2 className="intelligence-title briefing-title-glitch">{briefingData?.title || "TODAY'S SOLANA BRIEFING"}</h2>
+                </div>
                 <div className="briefing-subhead-row">
                   <span className="briefing-subhead-line" />
-                  <span className="briefing-subhead-text">{briefingData?.subtitle || "Curated from trusted RSS sources (Solana-focused)"}</span>
+                  <span className="briefing-subhead-text">{briefingData?.subtitle || "Top links from trusted desks"}</span>
                   <span className="briefing-subhead-line" />
                 </div>
                 <div className="briefing-card-stack">
                   {(() => {
                     const items = briefingData?.items || [];
                     const slots = [
-                      { label: "NEED TO KNOW", icon: "⚡", tone: "briefing-card-need", item: items[0] },
-                      { label: "GOOD TO KNOW", icon: "↗", tone: "briefing-card-good", item: items[1] },
-                      { label: "KEEP AN EYE ON", icon: "◉", tone: "briefing-card-keep", item: items[2] },
+                      { label: "NEED TO KNOW", icon: "⚡", tone: "briefing-item-need", item: items[0] },
+                      { label: "GOOD TO KNOW", icon: "↗", tone: "briefing-item-good", item: items[1] },
+                      { label: "KEEP AN EYE ON", icon: "◉", tone: "briefing-item-keep", item: items[2] },
                     ];
                     return slots.map((slot, idx) => (
-                      <div key={idx} className={`briefing-card ${slot.tone}`}>
-                        <div className="briefing-card-head">
-                          <span className="briefing-card-icon">{slot.icon}</span>
-                          <span className="briefing-card-label">{slot.label}</span>
+                      <div key={idx} className={`briefing-item ${slot.tone}`}>
+                        <div className="briefing-item-head">
+                          <span className="briefing-item-icon">{slot.icon}</span>
+                          <span className="briefing-item-label">{slot.label}</span>
                         </div>
                         {slot.item?.url ? (
                           <a
@@ -657,11 +683,11 @@ export default function Home() {
                             rel="noreferrer"
                             className="briefing-story-link"
                           >
-                            {slot.item.title}
+                            {slot.item.title} <span className="briefing-story-arrow">↗</span>
                           </a>
                         ) : (
                           <p className="briefing-card-copy">
-                            {slot.item?.title || "No confirmed high-signal update yet."}
+                            {slot.item?.title || "Refreshing high-signal picks…"}
                           </p>
                         )}
                         {slot.item?.source ? (
@@ -683,31 +709,50 @@ export default function Home() {
               </div>
             </section>
           </div>
+
           <div
             className="panel-slide panel-slide-scroll"
             ref={(el) => {
               panelRefs.current[2] = el;
             }}
           >
-            <section className="stories stories-seeker-fullscreen" id="top-story-feed">
-              <div
-                className="story-reader-container"
-                onTouchStart={onTouchStart}
-                onTouchMove={onTouchMove}
-                onTouchEnd={onTouchEnd}
-              >
-                {/* Desktop Edge Click Zones */}
-                <div className="nav-edge-zone nav-zone-left" onClick={prevStory} />
-                <div className="nav-edge-zone nav-zone-right" onClick={nextStory} />
-
+            <SeekerGuard>
+              <section className="stories stories-seeker-fullscreen" id="top-story-feed">
                 {(() => {
-                  const items = newsCardsData?.items ?? [];
-                  const stories = items.slice(0, 3);
-                  const story = stories[currentStoryIndex];
-                  const total = stories.length || 0;
-                  const current = total > 0 ? currentStoryIndex + 1 : 0;
+                  const stories = (newsCardsData?.items || []).slice(0, 3);
+                  const globalMetrics = (newsCardsData as any)?.global_metrics || null;
+                  const lead = stories[0];
+                  const moreStories = stories.slice(1, 3);
+                  const globalTweets = Number(
+                    globalMetrics?.total_tweets ??
+                    stories.reduce((sum, item) => {
+                      const tweets = item?.metrics?.tweets ?? item?.stats?.total_tweets ?? 0;
+                      return sum + Number(tweets);
+                    }, 0)
+                  );
+                  const globalEng = Number(
+                    globalMetrics?.total_engagement ??
+                    stories.reduce((sum, item) => {
+                      const engagement = item?.metrics?.engagement ?? item?.stats?.total_engagement ?? 0;
+                      return sum + Number(engagement);
+                    }, 0)
+                  );
+                  const globalTop = Number(
+                    globalMetrics?.top_tweet ??
+                    Math.max(
+                      0,
+                      ...stories.map((item) => Number(item?.metrics?.topTweet ?? item?.stats?.top_engagement ?? 0))
+                    )
+                  );
+                  const globalVoices = Number(
+                    globalMetrics?.unique_voices ??
+                    stories.reduce((sum, item) => {
+                      const voices = item?.metrics?.voices ?? item?.stats?.unique_users ?? 0;
+                      return sum + Number(voices);
+                    }, 0)
+                  );
 
-                  if (!story) {
+                  if (!lead) {
                     return (
                       <div className="news-empty">
                         Run node scripts/runDaily.mjs to generate today’s stories.
@@ -715,316 +760,122 @@ export default function Home() {
                     );
                   }
 
-                  const citations = story.citations || [];
-                  const sectionBullets = {
-                    happening: Array.isArray(story.sections?.whatsActuallyHappening)
-                      ? story.sections.whatsActuallyHappening.slice(0, 6)
-                      : [],
-                    degensCare: Array.isArray(story.sections?.whyDegensCare)
-                      ? story.sections.whyDegensCare.slice(0, 4)
-                      : [],
-                    watchNext: Array.isArray(story.sections?.whatToWatchNext)
-                      ? story.sections.whatToWatchNext.slice(0, 3)
-                      : [],
-                  };
-                  const smartMoney = Array.isArray(story.smartMoneyWatching)
-                    ? story.smartMoneyWatching.slice(0, 5)
-                    : [];
-                  const headlineRaw = String(story.title || "").trim();
-                  const isUpdateStory = /^update:/i.test(headlineRaw);
-                  const displayHeadline = headlineRaw.replace(/^update:\s*/i, "") || "Seeker Story";
-                  const hookSource = story.hook || story.narrative || story.summary || story.whyItMatters || story.title;
-                  const { hookText, premiumText } = splitHookAndPremium(hookSource);
-                  const premiumLead =
-                    premiumText ||
-                    compactSentence(story.narrative || story.marketStructure || story.summary, 280);
-                  const inlineBlurLead = compactSentence(premiumLead, 170);
-                  const storyParagraphs = String(
-                    story.story ||
-                    [story.narrative, story.marketStructure, story.smartMoney, story.positioning].filter(Boolean).join("\n\n")
-                  )
-                    .split(/\n{2,}/)
-                    .map((p) => p.trim())
-                    .filter(Boolean)
-                    .slice(0, 5);
-                  const takeaways = Array.isArray(story.takeaways) && story.takeaways.length > 0
-                    ? story.takeaways.slice(0, 3)
-                    : [
-                      compactSentence(story.whyItMatters || story.positioningTake, 110),
-                      ...sectionBullets.watchNext.slice(0, 2).map((s) => compactSentence(s, 100)),
-                    ].filter(Boolean).slice(0, 3);
-                  const whoToFollow = Array.isArray(story.whoToFollow) && story.whoToFollow.length > 0
-                    ? story.whoToFollow.slice(0, 4)
-                    : (story.ctPulse || []).map((p: any) => ({
-                      handle: formatXHandle(p.handle),
-                      role: "Community",
-                      engagement: null,
-                    })).slice(0, 4);
-                  const stats = story.stats || {
-                    total_tweets: (story.ctPulse || []).length,
-                    total_engagement: null,
-                    top_engagement: null,
-                  };
-
-
-                  const isLocked = !isSeeker;
-
+                  const leadCategory = String(lead?.category || "Daily Intel");
+                  const leadIsCritical = /security|risk|breach|exploit|hack/i.test(leadCategory);
+                  const leadIsAi = /ai|agent/i.test(leadCategory);
+                  const leadIsGaming = /gaming|game/i.test(leadCategory);
                   return (
-                    <>
-                      {/* 1. READER HEADER */}
-                      <div className="reader-header premium-header">
-                        <div className="reader-brand">
-                          <span className="title-logo seeker-brand-logo">VALIDATOR</span>
-                          <span className="logo-cursor seeker-brand-cursor" aria-hidden="true">_</span>
+                    <div className="seeker-mag-shell">
+                      <div className="seeker-mag-header">
+                        <div>
+                          <h1 className="seeker-mag-logo">
+                            <span className="title-logo">VALIDATOR</span>
+                            <span className="logo-cursor" aria-hidden="true">_</span>
+                          </h1>
+                          <p className="seeker-mag-sub">
+                            Premium Intelligence • {formatShortDate(lead.timestamp || lead.publishedAt || null)}
+                          </p>
                         </div>
-                        <div className="reader-context">
-                          <span className="seeker-context-label">SEEKER OWNERS ONLY</span>
-                          <span className="seeker-context-progress">{current}/{total}</span>
+                        <div className="seeker-mag-issue">
+                          <div className="seeker-mag-issue-label">Issue</div>
+                          <div className="seeker-mag-issue-value">#{Math.max(stories.length, 1)}</div>
                         </div>
                       </div>
 
-                      <article className="story-card story-mode">
-                        <div className="story-alert-row story-kicker-row">
-                          <span className="story-alert-left story-kicker-pill">{isUpdateStory ? "UPDATE" : "DAILY INTEL"}</span>
-                          <span className="story-alert-right story-kicker-meta">TODAY'S SEEKER STORY</span>
+                      <div className="seeker-mag-stats">
+                        <div className="seeker-mag-stat">
+                          <i><MessageCircle size={16} strokeWidth={1.8} /></i>
+                          <strong>{globalTweets || 0}</strong>
+                          <span>Tweets Analyzed</span>
                         </div>
+                        <div className="seeker-mag-stat">
+                          <i className="is-green"><TrendingUp size={16} strokeWidth={1.8} /></i>
+                          <strong className="is-green">{formatCompactNumber(globalEng)}</strong>
+                          <span>Total Engagement</span>
+                        </div>
+                        <div className="seeker-mag-stat">
+                          <i><Users size={16} strokeWidth={1.8} /></i>
+                          <strong>{globalVoices || 0}</strong>
+                          <span>Unique Voices</span>
+                        </div>
+                        <div className="seeker-mag-stat">
+                          <i className="is-purple"><Activity size={16} strokeWidth={1.8} /></i>
+                          <strong className="is-purple">{formatCompactNumber(globalTop)}</strong>
+                          <span>Top Tweet</span>
+                        </div>
+                      </div>
 
-                        <a href={story.url} target="_blank" rel="noreferrer" className="story-main-link">
-                          <h3 className="story-headline story-headline-large">{displayHeadline}</h3>
+                      <div className="seeker-mag-divider" />
+
+                      <div className="seeker-mag-kicker-row">
+                        <span className={`seeker-mag-kicker ${leadIsCritical ? "critical" : leadIsAi ? "ai" : leadIsGaming ? "gaming" : ""}`}>
+                          {String(lead.category || "Seeker Story").toUpperCase()}
+                        </span>
+                      </div>
+                      <h2 className="seeker-mag-title">{lead.title}</h2>
+
+                      <div className="seeker-mag-meta">
+                        <span>By AI Validator News Desk</span>
+                      </div>
+
+                      <p className="seeker-mag-preview">
+                        {compactSentence(
+                          lead.content?.signal || lead.summary || lead.hook || lead.narrative || lead.title,
+                          260,
+                        )}
+                      </p>
+
+                      <div className="seeker-mag-cta-row">
+                        <a
+                          href="/seeker?story=0"
+                          className={`seeker-mag-cta ${leadIsCritical ? "critical" : "primary"}`}
+                        >
+                          Read Full Story
                         </a>
+                      </div>
 
-                        {/* 4. SECTIONS */}
-                        <div className="briefing-grid space-y-6">
-                          {/* HOOK (Free - Fully Visible) */}
-                          <div className="briefing-section">
-                            <div className="story-section-pill">THE SIGNAL</div>
-                            <div className="briefing-content font-medium text-[15px] leading-relaxed">
-                              {hookText || compactSentence(story.hook || story.title, 180)}
-                            </div>
-                            {isLocked && inlineBlurLead ? (
-                              <div className="seeker-inline-blur">
-                                {inlineBlurLead}
-                              </div>
-                            ) : null}
+                      {moreStories.length > 0 ? (
+                        <div className="seeker-mag-more">
+                          <h3>Featured Stories</h3>
+                          <div className="seeker-mag-grid">
+                            {moreStories.map((story, idx) => (
+                              <a
+                                key={`${story.title}-${idx}`}
+                                href={`/seeker?story=${idx + 1}`}
+                                className="seeker-mag-card"
+                              >
+                                <div className={`seeker-mag-thumb ${idx % 2 === 0 ? "live" : "alpha"}`}>
+                                  {idx % 2 === 0 ? <Rocket size={38} /> : <Brain size={38} />}
+                                </div>
+                                <div className="seeker-mag-card-row">
+                                  <span className={`seeker-mag-card-tag ${idx % 2 === 0 ? "live" : "alpha"}`}>
+                                    {idx % 2 === 0 ? "LIVE" : "ALPHA"}
+                                  </span>
+                                  <span className="seeker-mag-card-time">
+                                    {formatShortDate(story.timestamp || story.publishedAt || null)}
+                                  </span>
+                                </div>
+                                <div className="seeker-mag-card-title">{story.title}</div>
+                                <div className="seeker-mag-card-sub">
+                                  {compactSentence(story.summary || story.hook || story.narrative || story.title, 85)}
+                                </div>
+                                <div className="seeker-mag-card-meta">
+                                  {story?.metrics?.tweets ?? story?.stats?.total_tweets ?? 0} •{" "}
+                                  {formatCompactNumber(story?.metrics?.engagement ?? story?.stats?.total_engagement ?? 0)}
+                                </div>
+                              </a>
+                            ))}
                           </div>
-
-                          {isLocked ? (
-                            <div className="seeker-teaser-stack">
-                              <div className="seeker-premium-wrap">
-                                <div className="seeker-gate-sticky">
-                                  <div className="seeker-gate-card seeker-gate-card-overlay">
-                                    <div className="seeker-gate-icon">⚡</div>
-                                    <div className="seeker-gate-title">SEEKER ACCESS REQUIRED</div>
-                                    <div className="seeker-gate-subtitle">Hardware-verified intelligence layer</div>
-                                    <button
-                                      className="seeker-gate-verify-btn"
-                                      onClick={() => setIsSeeker(true)}
-                                    >
-                                      Verify Device →
-                                    </button>
-                                  </div>
-                                </div>
-
-                                <div className="seeker-premium-scrim" aria-hidden="true" />
-
-                                <div className="seeker-premium-content">
-                                  <div className="seeker-premium-block seeker-premium-lead">
-                                    <p className="seeker-premium-paragraph">
-                                      {premiumLead}
-                                    </p>
-                                  </div>
-
-                                  <div className="seeker-premium-block">
-                                    <div className="story-section-pill">THE NARRATIVE</div>
-                                    <p className="seeker-premium-paragraph">
-                                      {compactSentence(story.narrative || story.summary || story.marketStructure, 320)}
-                                    </p>
-                                    <p className="seeker-premium-paragraph">
-                                      {compactSentence(story.marketStructure || story.whyItMatters || story.summary, 300)}
-                                    </p>
-                                  </div>
-
-                                  <div className="seeker-premium-block">
-                                    <div className="story-section-pill">WHY IT MATTERS</div>
-                                    <p className="seeker-premium-paragraph">
-                                      {compactSentence(story.whyItMatters || story.positioningTake || story.traderTake, 300)}
-                                    </p>
-                                    <p className="seeker-premium-paragraph">
-                                      {compactSentence(story.smartMoney || story.bullCase || story.bearCase, 280)}
-                                    </p>
-                                  </div>
-
-                                  <div className="seeker-premium-block">
-                                    <div className="story-section-pill">WHAT TO WATCH</div>
-                                    <ul className="seeker-premium-list">
-                                      {(
-                                        sectionBullets.watchNext.length > 0
-                                          ? sectionBullets.watchNext
-                                          : [
-                                            story.whatToWatch,
-                                            story.watchlist,
-                                            story.positioningTake,
-                                          ]
-                                      )
-                                        .filter(Boolean)
-                                        .slice(0, 3)
-                                        .map((item, i) => (
-                                          <li key={i}>{compactSentence(String(item), 110)}</li>
-                                        ))}
-                                    </ul>
-                                  </div>
-
-                                  <div className="seeker-premium-block">
-                                    <div className="story-section-pill">WHO'S TALKING</div>
-                                    <p className="seeker-premium-paragraph">
-                                      {story.ctPulse && story.ctPulse.length > 0
-                                        ? `Mentioned by ${Array.from(
-                                          new Set(
-                                            story.ctPulse
-                                              .map((pulse) => formatXHandle(pulse.handle))
-                                              .filter(Boolean)
-                                          )
-                                        )
-                                          .slice(0, 4)
-                                          .join(", ")}. ${summarizeCtConversation(story.ctPulse, story)}`
-                                        : "Builders and traders are signaling this theme as an active discussion point."}
-                                    </p>
-                                  </div>
-
-                                  <div className="seeker-premium-block">
-                                    <div className="story-section-pill">TRADER TAKE</div>
-                                    <p className="seeker-premium-paragraph">
-                                      {compactSentence(story.traderTake || story.positioningTake || story.bearCase, 220)}
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          ) : null}
-
-                          {/* PREMIUM SECTIONS (Unified Container) */}
-                          <div className="transition-all duration-500">
-
-                            {!isLocked && (
-                              <>
-                                <div className="seeker-cards">
-                                  <div className="seeker-card seeker-card-signal">
-                                    <div className="seeker-card-label">The Signal</div>
-                                    <p className="seeker-card-copy">{compactSentence(story.summary || story.hook || story.title, 220)}</p>
-                                  </div>
-
-                                  <div className="seeker-card seeker-card-stats">
-                                    <div className="seeker-card-label">Stats</div>
-                                    <div className="seeker-stats-grid">
-                                      <div className="seeker-stat">
-                                        <span className="seeker-stat-k">Tweets</span>
-                                        <span className="seeker-stat-v">{stats.total_tweets ?? "n/a"}</span>
-                                      </div>
-                                      <div className="seeker-stat">
-                                        <span className="seeker-stat-k">Engagement</span>
-                                        <span className="seeker-stat-v">{stats.total_engagement ?? "n/a"}</span>
-                                      </div>
-                                      <div className="seeker-stat">
-                                        <span className="seeker-stat-k">Top Tweet</span>
-                                        <span className="seeker-stat-v">{stats.top_engagement ?? "n/a"}</span>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div className="seeker-card seeker-card-story">
-                                    <div className="seeker-card-label">Story</div>
-                                    <div className="seeker-story-body">
-                                      {storyParagraphs.map((paragraph, idx) => (
-                                        <p key={idx}>{paragraph}</p>
-                                      ))}
-                                    </div>
-                                  </div>
-
-                                  {takeaways.length > 0 && (
-                                    <div className="seeker-card seeker-card-takeaways">
-                                      <div className="seeker-card-label">Takeaways</div>
-                                      <ol className="seeker-takeaway-list">
-                                        {takeaways.map((item, idx) => (
-                                          <li key={idx}>{item}</li>
-                                        ))}
-                                      </ol>
-                                    </div>
-                                  )}
-
-                                  {whoToFollow.length > 0 && (
-                                    <div className="seeker-card seeker-card-follow">
-                                      <div className="seeker-card-label">Who To Follow</div>
-                                      <div className="seeker-follow-list">
-                                        {whoToFollow.map((person: any, idx: number) => {
-                                          const handle = formatXHandle(person.handle);
-                                          const profile = handle ? `https://x.com/${normalizeXHandle(handle)}` : null;
-                                          return (
-                                            <div className="seeker-follow-row" key={`${handle}-${idx}`}>
-                                              {profile ? (
-                                                <a href={profile} target="_blank" rel="noreferrer" className="seeker-follow-handle">{handle}</a>
-                                              ) : (
-                                                <span className="seeker-follow-handle">{handle || "Unknown"}</span>
-                                              )}
-                                              <span className="seeker-follow-role">{person.role || "Community"}</span>
-                                              <span className="seeker-follow-eng">{person.engagement ? `${person.engagement}` : "—"}</span>
-                                            </div>
-                                          );
-                                        })}
-                                      </div>
-                                    </div>
-                                  )}
-                                </div>
-                              </>
-                            )}
-
-                          </div>
-
                         </div>
+                      ) : null}
 
-                        <div className="story-source-footnote">
-                          Source: {story.source}
-                        </div>
-                      </article>
-                    </>
+                    </div>
                   );
                 })()}
-
-                <div className="reader-controls">
-                  <button
-                    className="reader-nav-btn"
-                    onClick={prevStory}
-                    aria-label="Previous Story"
-                  >
-                    ←
-                  </button>
-                  <div className="reader-dots">
-                    {(newsCardsData?.items || []).map((_, idx) => (
-                      <div key={idx} className={`reader-dot ${idx === currentStoryIndex ? 'active' : ''}`} />
-                    ))}
-                  </div>
-                  <button
-                    className="reader-nav-btn"
-                    onClick={nextStory}
-                    aria-label="Next Story"
-                  >
-                    →
-                  </button>
-                </div>
-              </div>
-            </section>
+              </section>
+            </SeekerGuard>
           </div>
         </div >
-        <div className="panel-dots">
-          {[0, 1, 2].map((idx) => (
-            <button
-              key={idx}
-              type="button"
-              className={`panel-dot ${activePanel === idx ? "active" : ""}`}
-              aria-label={`Go to panel ${idx + 1}`}
-              onClick={() => scrollToPanel(idx)}
-            />
-          ))}
-        </div>
       </div >
 
     </main >

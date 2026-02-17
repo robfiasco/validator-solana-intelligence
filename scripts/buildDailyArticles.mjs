@@ -19,7 +19,6 @@ const feeds = [
   { name: "Decrypt", url: "https://decrypt.co/feed", domain: "decrypt.co" },
   { name: "Cointelegraph", url: "https://cointelegraph.com/rss", domain: "cointelegraph.com" },
   { name: "Messari", url: "https://messari.io/rss", domain: "messari.io" },
-  { name: "Blockworks", url: "https://blockworks.co/feed", domain: "blockworks.co" },
   { name: "Solana News", url: "https://solana.com/news/rss.xml", domain: "solana.com" },
   { name: "CryptoSlate", url: "https://cryptoslate.com/feed/", domain: "cryptoslate.com" },
   { name: "AMB Crypto", url: "https://ambcrypto.com/feed/", domain: "ambcrypto.com" },
@@ -62,6 +61,14 @@ const isRecent = (iso) => {
   if (Number.isNaN(ts)) return false;
   return now - ts <= maxAgeHours * 60 * 60 * 1000;
 };
+
+const pickPublishedAt = (entry) =>
+  entry.isoDate ||
+  entry.pubDate ||
+  entry.published ||
+  entry.updated ||
+  entry["dc:date"] ||
+  null;
 
 const fetchFeed = async (url) => {
   const controller = new AbortController();
@@ -159,10 +166,14 @@ const main = async () => {
 
   for (const feed of feeds) {
     let count = 0;
+    let totalSeen = 0;
+    let droppedByAge = 0;
+    let latestSeenTs = 0;
     try {
       const xml = await fetchFeed(feed.url);
       const data = await parser.parseString(xml);
       for (const entry of data.items || []) {
+        totalSeen += 1;
         if ((perSource.get(feed.name) || 0) >= maxPerSource) break;
         const rawUrl = entry.link || entry.guid || entry.id;
         if (!rawUrl) continue;
@@ -171,8 +182,15 @@ const main = async () => {
         if (title.length < 8) continue;
         const key = url || `${feed.name}:${title.toLowerCase()}`;
         if (seen.has(key)) continue;
-        const publishedAt = entry.isoDate || entry.pubDate || entry.published || null;
-        if (publishedAt && !isRecent(publishedAt)) continue;
+        const publishedAt = pickPublishedAt(entry);
+        if (publishedAt) {
+          const ts = new Date(publishedAt).getTime();
+          if (!Number.isNaN(ts) && ts > latestSeenTs) latestSeenTs = ts;
+          if (!isRecent(publishedAt)) {
+            droppedByAge += 1;
+            continue;
+          }
+        }
         const summary = stripHtml(entry.contentSnippet || entry.content || entry.summary || "").slice(0, 300);
         const scoreT = scoreTitle(title);
         const scoreB = scoreBody(summary);
@@ -194,8 +212,13 @@ const main = async () => {
         count += 1;
         perSource.set(feed.name, (perSource.get(feed.name) || 0) + 1);
       }
-      sourcesLog.push({ name: feed.name, count, ok: true });
-      console.log(`Feed ok: ${feed.name} (${count})`);
+      const latestSeen = latestSeenTs ? new Date(latestSeenTs).toISOString().slice(0, 10) : null;
+      sourcesLog.push({ name: feed.name, count, ok: true, totalSeen, droppedByAge, latestSeen });
+      const detail =
+        count === 0 && totalSeen > 0
+          ? ` | filtered old=${droppedByAge}, latest=${latestSeen || "n/a"}`
+          : "";
+      console.log(`Feed ok: ${feed.name} (${count})${detail}`);
     } catch (err) {
       sourcesLog.push({ name: feed.name, count, ok: false, error: err?.message || String(err) });
       logLine(`Failed ${feed.name}: ${err?.message || err}`);

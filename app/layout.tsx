@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "Editorial-style Solana intelligence feed prototype.",
 };
 
+import AppWalletProvider from "./components/AppWalletProvider";
+
 export default function RootLayout({
   children,
 }: {
@@ -14,9 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <div className="app-shell">
-          <div className="phone-frame">{children}</div>
-        </div>
+        <AppWalletProvider>
+          <div className="app-shell">
+            <div className="phone-frame">{children}</div>
+          </div>
+        </AppWalletProvider>
       </body>
     </html>
   );

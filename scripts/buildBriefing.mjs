@@ -7,6 +7,7 @@ import {
   buildMemoryEntry,
   writeMemory,
   extractEntities,
+  createStoryFingerprint,
 } from "./storyMemory.mjs";
 
 const cwd = process.cwd();
@@ -14,16 +15,23 @@ const ARTICLES_PATH = path.join(cwd, "data", "articles.json");
 const OUT_ROOT = path.join(cwd, "briefing.json");
 const OUT_DATA = path.join(cwd, "data", "briefing.json");
 const OUT_PUBLIC = path.join(cwd, "public", "briefing.json");
+const TOP_STORIES_PATH = path.join(cwd, "data", "top_stories.json");
 
 const LOOKBACK_DAYS = 7;
 const MAX_ITEMS = 3;
-const MAX_PER_SOURCE = 2;
+const MAX_PER_SOURCE = 1;
 
 const SOLANA_IMPACT_TERMS = [
   "solana", "sol", "jupiter", "jup", "raydium", "orca", "meteora", "drift",
   "kamino", "marginfi", "jito", "pyth", "helius", "firedancer", "backpack",
   "tokenomics", "unlock", "airdrop", "listing", "payments", "stablecoin",
   "validator", "rpc", "exploit", "outage", "governance", "tvl", "dex", "perps",
+];
+
+const SOLANA_ANCHOR_TERMS = [
+  "solana", "sol", "jupiter", "jup", "raydium", "orca", "meteora", "drift",
+  "kamino", "marginfi", "jito", "pyth", "helius", "firedancer", "backpack",
+  "mad lads", "seeker", "saga", "phantom", "tensor", "pump.fun",
 ];
 
 const REPUTABLE_SOURCES = new Set([
@@ -72,16 +80,25 @@ const classifyCategory = (article) => {
 
 const whyCareLine = (article) => {
   const text = normalizeText(`${article.title || ""} ${article.summary || ""}`);
+  const title = String(article.title || "");
+  const source = String(article.source || "source");
   if (/(unlock|tokenomics|airdrop|listing)/.test(text)) {
-    return "Token supply timing can move flows fast, so this one matters for short-term risk.";
+    return "Token supply timing can move flows quickly, so this is a near-term positioning story.";
   }
   if (/(dex|perps|liquidity|tvl|yield)/.test(text)) {
-    return "This affects where liquidity is concentrating, which usually shows up in SOL beta.";
+    return "Liquidity is rotating here, and SOL beta usually follows when this trend sticks.";
   }
   if (/(validator|rpc|firedancer|infra|outage)/.test(text)) {
-    return "Execution quality and infra stability can reset confidence quickly.";
+    return "Infra reliability can reset confidence fast, especially during volatile sessions.";
   }
-  return "This is a narrative input that can shift positioning over the next few sessions.";
+  if (/(borrow|lending|staking|institutional|etf|payments|stablecoin|tokenization)/.test(text)) {
+    return "This is flow-relevant: if adoption continues, it can change who is buying SOL and why.";
+  }
+  if (/(security|exploit|hack|breach|risk)/.test(text)) {
+    return "Risk events change positioning quickly, so this is more about downside control than hype.";
+  }
+  const conciseTitle = title.length > 72 ? `${title.slice(0, 71).trimEnd()}…` : title;
+  return `Worth a read from ${source}: it adds context around "${conciseTitle}" for the next few sessions.`;
 };
 
 const formatDate = (iso) => {
@@ -90,10 +107,40 @@ const formatDate = (iso) => {
   return new Date(ts).toISOString().slice(0, 10);
 };
 
+const relevanceBoost = (article, topStories) => {
+  const text = normalizeText(`${article.title || ""} ${article.summary || ""}`);
+  let score = 0;
+
+  if (/(ai|agent|gaming|game|product|launch|ship|payments|stablecoin|tokenization|perps|yield|liquidity)/.test(text)) {
+    score += 2;
+  }
+
+  for (const story of topStories) {
+    const urlMatch = article.url && story.url && String(article.url).toLowerCase() === String(story.url).toLowerCase();
+    if (urlMatch) {
+      score += 4;
+      continue;
+    }
+    const storyTokens = normalizeText(story.title || "")
+      .split(/\s+/)
+      .filter((token) => token.length >= 5);
+    const overlap = storyTokens.filter((token) => text.includes(token)).length;
+    if (overlap >= 2) score += 2;
+  }
+
+  return score;
+};
+
 const recentCutoffMs = Date.now() - LOOKBACK_DAYS * 24 * 60 * 60 * 1000;
 
 const main = () => {
   const rawArticles = loadJson(ARTICLES_PATH, { items: [] });
+  const topStoriesRaw = loadJson(TOP_STORIES_PATH, []);
+  const topStories = Array.isArray(topStoriesRaw?.items)
+    ? topStoriesRaw.items
+    : Array.isArray(topStoriesRaw)
+      ? topStoriesRaw
+      : [];
   const articles = Array.isArray(rawArticles?.items)
     ? rawArticles.items
     : Array.isArray(rawArticles)
@@ -113,16 +160,27 @@ const main = () => {
       const title = String(article.title || "").trim();
       const summary = String(article.summary || "").trim();
       if (!title || !article.url) return null;
+      if (/(price predictions?|daily recap|market wrap|top \d+|week ahead)/i.test(title)) return null;
 
       const gateImpact = includesAny(`${title} ${summary}`, SOLANA_IMPACT_TERMS);
+      const titleAnchor = includesAny(title, SOLANA_ANCHOR_TERMS);
+      const bodyAnchor = includesAny(summary, ["solana", "sol ", "jupiter", "kamino", "jito", "drift", "backpack"]);
+      const gateAnchor = titleAnchor || bodyAnchor;
+      if (!titleAnchor && /(bitcoin|btc|ethereum|eth|crypto enters|macro|federal reserve|fed)/i.test(title)) return null;
       const gateSource = REPUTABLE_SOURCES.has(source.toLowerCase());
-      if (!(gateImpact && gateSource)) return null;
+      if (!(gateImpact && gateSource && gateAnchor)) return null;
 
       let score = 0;
       score += gateImpact ? 4 : 0;
+      score += gateAnchor ? 4 : 0;
       score += gateSource ? 2 : 0;
       if (/(unlock|tokenomics|airdrop|listing|exploit|outage|payments|stablecoin|firedancer)/i.test(`${title} ${summary}`)) {
         score += 3;
+      }
+      score += relevanceBoost(article, topStories);
+      score += Math.max(0, 2 - Math.floor((Date.now() - ts) / (24 * 60 * 60 * 1000)));
+      if (/(etf|institutional|borrow|staking|payments|tokenization|upgrade|partnership|governance|proposal)/i.test(`${title} ${summary}`)) {
+        score += 2;
       }
 
       return {
@@ -141,18 +199,34 @@ const main = () => {
     .sort((a, b) => b.score - a.score || b.ts - a.ts);
 
   const selected = [];
-  const trySelect = (story, preferNewSource) => {
+  const trySelect = (story, opts = {}) => {
+    const {
+      preferNewSource = false,
+      maxPerSource = MAX_PER_SOURCE,
+      ignoreMemory = false,
+    } = opts;
     if (selected.length >= MAX_ITEMS) return false;
     const sourceKey = String(story.source || "").toLowerCase();
     const sourceCount = selected.filter((item) => String(item.source || "").toLowerCase() === sourceKey).length;
-    if (sourceCount >= MAX_PER_SOURCE) return false;
+    if (sourceCount >= maxPerSource) return false;
     if (preferNewSource && sourceCount > 0) return false;
     const topicTags = extractEntities(`${story.title} ${story.summary}`);
-    const verdict = canUseStory(
-      { ...story, topicTags, sectionShown: "briefing" },
-      memory,
-      runSet,
-    );
+    const verdict = ignoreMemory
+      ? {
+          allowed: true,
+          fingerprint: createStoryFingerprint({
+            url: story.url,
+            title: story.title,
+            source: story.source,
+            entities: topicTags,
+            dateBucket: story.date,
+          }),
+        }
+      : canUseStory(
+          { ...story, topicTags, sectionShown: "briefing" },
+          memory,
+          runSet,
+        );
     if (!verdict.allowed) return false;
     selected.push(story);
     runSet.add(verdict.fingerprint);
@@ -164,17 +238,27 @@ const main = () => {
     return true;
   };
 
-  // Pass 1: enforce source diversity.
+  // Pass 1: enforce source diversity + memory.
   for (const story of scored) {
     if (selected.length >= MAX_ITEMS) break;
-    trySelect(story, true);
+    trySelect(story, { preferNewSource: true, maxPerSource: 1 });
   }
-  // Pass 2: backfill from remaining scored stories if needed.
+
+  // Pass 2: allow same source once if needed, still memory-aware.
   if (selected.length < MAX_ITEMS) {
     for (const story of scored) {
       if (selected.length >= MAX_ITEMS) break;
       if (selected.some((item) => item.url === story.url)) continue;
-      trySelect(story, false);
+      trySelect(story, { preferNewSource: false, maxPerSource: 2 });
+    }
+  }
+
+  // Pass 3: avoid blank cards; allow reuse if memory is the only blocker.
+  if (selected.length < MAX_ITEMS) {
+    for (const story of scored) {
+      if (selected.length >= MAX_ITEMS) break;
+      if (selected.some((item) => item.url === story.url)) continue;
+      trySelect(story, { preferNewSource: false, maxPerSource: 2, ignoreMemory: true });
     }
   }
 
@@ -182,8 +266,8 @@ const main = () => {
 
   const payload = {
     date: new Date().toISOString().slice(0, 10),
-    title: "STORIES YOU MAY HAVE MISSED THIS WEEK",
-    subtitle: "Curated from trusted RSS sources (Solana-focused)",
+    title: "TODAY'S SOLANA BRIEFING",
+    subtitle: "Top links from trusted desks",
     items: selected.map((story) => ({
       type: story.category,
       title: story.title,

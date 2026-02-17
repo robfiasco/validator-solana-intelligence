@@ -2,6 +2,7 @@ export type SignalBoardPayload = {
   date?: string | null;
   generated_at_utc?: string | null;
   showPastWeek?: boolean;
+  showNextWeek?: boolean;
   priceUpdate?: string;
   pastWeek?: string;
   thisWeek?: string;
@@ -109,6 +110,8 @@ export type NewsCard = {
   title: string;
   source: string;
   url: string;
+  category?: string;
+  timestamp?: string | null;
   publishedAt?: string | null;
   hook?: string;
   narrative?: string;
@@ -119,6 +122,10 @@ export type NewsCard = {
   whyItMatters?: string;
   watchlist?: string;
   takeaways?: string[];
+  content?: {
+    signal?: string;
+    story?: string;
+  };
   whoToFollow?: Array<{
     handle: string;
     reason?: string;
@@ -130,6 +137,12 @@ export type NewsCard = {
     total_engagement?: number | null;
     top_engagement?: number | null;
     unique_users?: number | null;
+  };
+  metrics?: {
+    tweets?: number | null;
+    engagement?: number | null;
+    voices?: number | null;
+    topTweet?: number | null;
   };
   citations?: Array<{ handle: string; link: string }>;
 
@@ -194,6 +207,26 @@ const safeFetchMany = async <T>(urls: string[], fallback: T): Promise<T> => {
   return fallback;
 };
 
+const hasUsableMarketValue = (payload: MarketContextPayload | null | undefined) => {
+  if (!payload || typeof payload !== "object") return false;
+  const solPrice = Number(payload?.sol?.price);
+  const sol24h = Number(payload?.sol?.change_24h);
+  const mktCap = Number(payload?.mkt_cap?.solana_mkt_cap_usd);
+  return Number.isFinite(solPrice) || Number.isFinite(sol24h) || Number.isFinite(mktCap);
+};
+
+const loadMarketContext = async (fallback: MarketContextPayload): Promise<MarketContextPayload> => {
+  // Prefer static files first to avoid API route cwd/path issues returning null fallback payloads.
+  const urls = ["/data/market_context.json", "/market_context.json", "/api/market-context"];
+  for (const url of urls) {
+    const value = await safeFetch<MarketContextPayload | null>(url, null);
+    if (hasUsableMarketValue(value)) {
+      return value as MarketContextPayload;
+    }
+  }
+  return fallback;
+};
+
 export const loadDailyData = async () => {
   const generatedNow = new Date().toISOString();
 
@@ -245,10 +278,7 @@ export const loadDailyData = async () => {
       ["/narratives.json", "/data/narratives.json"],
       {}
     ),
-    safeFetchMany<MarketContextPayload>(
-      ["/api/market-context", "/data/market_context.json", "/market_context.json"],
-      fallbackMarketContext
-    ),
+    loadMarketContext(fallbackMarketContext),
   ]);
 
   const normalizedNews = Array.isArray(newsCards) ? { items: newsCards } : newsCards;

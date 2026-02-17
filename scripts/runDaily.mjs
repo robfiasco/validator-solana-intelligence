@@ -73,32 +73,44 @@ const runStep = (label, command, args = []) =>
   });
 
 const main = async () => {
+  const args = new Set(process.argv.slice(2));
+  const skipStories = args.has("--no-stories");
+
   try {
     printAuditSummary();
     await runStep("STEP 0: MARKET CONTEXT BUILT", "npm", ["run", "market:build"]);
     await runStep("STEP 1: ARTICLES FETCHED", "npm", ["run", "articles:build"]);
-    await runStep("STEP 2: SIGNALS CLEANED", "node", ["scripts/cleanSignals.mjs"]);
-    await runStep("STEP 3: TWEETS (72H) FILTERED", "npm", ["run", "tweets:72h"]);
-    await runStep("STEP 4: TWEET TOPICS EXTRACTED", "npm", [
-      "run",
-      "extract:tweetTopics",
-    ]);
-    await runStep("STEP 5: TWEETS CLUSTERED", "npm", ["run", "cluster:tweets"]);
-    await runStep("STEP 6: STORIES BUILT", "node", ["scripts/buildTopStories.mjs"]);
-    await runStep("STEP 7: BRIEFING BUILT", "npm", ["run", "briefing:build"]);
-    await runStep("STEP 8: SIGNAL BOARD BUILT", "npm", ["run", "signal:build"]);
-    await runStep("STEP 9: STORY CANDIDATES SELECTED", "npm", [
-      "run",
-      "stories:candidates",
-    ]);
-    await runStep("STEP 10: STORY METRICS EXTRACTED", "npm", [
-      "run",
-      "stories:metrics",
-    ]);
-    await runStep("STEP 11: PREMIUM CT STORIES GENERATED", "npm", [
-      "run",
-      "stories:ct",
-    ]);
+    if (!skipStories) {
+      await runStep("STEP 2: SIGNALS CLEANED", "node", ["scripts/cleanSignals.mjs"]);
+      await runStep("STEP 3: TWEETS (72H) FILTERED", "npm", ["run", "tweets:72h"]);
+      await runStep("STEP 4: TWEET TOPICS EXTRACTED", "npm", [
+        "run",
+        "extract:tweetTopics",
+      ]);
+      await runStep("STEP 5: TWEETS CLUSTERED", "npm", ["run", "cluster:tweets"]);
+      await runStep("STEP 6: STORIES BUILT", "node", ["scripts/buildTopStories.mjs"]);
+      await runStep("STEP 7: BRIEFING BUILT", "npm", ["run", "briefing:build"]);
+      await runStep("STEP 8: BRIEFING NARRATIVE ENHANCED", "npm", ["run", "briefing:enhance"]);
+      await runStep("STEP 9: SIGNAL BOARD BUILT", "npm", ["run", "signal:build"]);
+      await runStep("STEP 10: STORY CANDIDATES SELECTED", "npm", [
+        "run",
+        "stories:candidates",
+      ]);
+      await runStep("STEP 11: STORY METRICS EXTRACTED", "npm", [
+        "run",
+        "stories:metrics",
+      ]);
+      await runStep("STEP 12: PREMIUM CT STORIES GENERATED", "npm", [
+        "run",
+        "stories:ct",
+      ]);
+    } else {
+      console.log("STEP 2+: STORY PIPELINE SKIPPED (--no-stories)");
+      await runStep("STEP 2: STORIES BUILT", "node", ["scripts/buildTopStories.mjs"]);
+      await runStep("STEP 3: BRIEFING BUILT", "npm", ["run", "briefing:build"]);
+      await runStep("STEP 4: BRIEFING NARRATIVE ENHANCED", "npm", ["run", "briefing:enhance"]);
+      await runStep("STEP 5: SIGNAL BOARD BUILT", "npm", ["run", "signal:build"]);
+    }
     printWrittenFilesSummary();
   } catch (err) {
     console.error(err.message);

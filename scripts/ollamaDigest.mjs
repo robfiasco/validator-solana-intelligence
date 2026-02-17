@@ -244,7 +244,7 @@ CRITICAL RULES:
 - 2-3 sentences per section, plain English.
 - Be specific: name products/events/numbers.
 - Link narrative to potential price impact.
-- Do NOT repeat section headers in text.
+- Do NOT repeat section headers in text. Never start with "Price check:", "Market context:", "This week:", or "Next week:".
 - Do NOT use jargon like: "tape is two-way", "stay bid", "execution quality", "building a base".
 - Do NOT use filler like: "focus is shifting", "momentum building", "interesting to watch", "it remains to be seen".
 - Do NOT make predictions.
@@ -253,6 +253,9 @@ CRITICAL RULES:
 
 SIGNAL BOARD OUTPUT RULES:
 - market_context: SOL 7d move + why + what matters short-term.
+  Sentence 1 = what SOL did over 7d.
+  Sentence 2 = why (macro/sentiment/rotation).
+  Sentence 3 = what traders are watching next.
 - this_week: active developments happening now that could impact SOL narrative/liquidity.
   Focus on concrete items like payments integrations, AI agents, launches, ecosystem announcements, macro sentiment, institutional flow.
   No filler phrasing like "focus is shifting toward". Be specific about what happened and why it matters.
@@ -280,6 +283,8 @@ OUTPUT FORMAT (STRICT JSON ONLY):
   "briefing": { "date": "YYYY-MM-DD", "items": [] },
   "validator_stories": { "date": "YYYY-MM-DD", "items": [] }
 }
+
+Return ONLY valid JSON. No markdown. No explanation.
 `;
 };
 
@@ -618,6 +623,11 @@ const sentence = (value, max = 160) => {
   if (cleaned.length <= max) return cleaned;
   return `${cleaned.slice(0, max - 1).trimEnd()}…`;
 };
+
+const stripSectionPrefix = (value) =>
+  String(value || "")
+    .replace(/^(market\s*context|price\s*check|this\s*week|next\s*week)\s*:\s*/i, "")
+    .trim();
 
 const detectStoryTheme = (story) => {
   const text = `${story?.title || ""} ${story?.summary || ""}`.toLowerCase();
@@ -1104,10 +1114,10 @@ const main = async () => {
     ...fallbackSignalBoard,
     date: llmSignalBoard.date || fallbackSignalBoard.date,
     generated_at_utc: new Date().toISOString(),
-    priceUpdate: sentence(llmSignalBoard.market_context || fallbackSignalBoard.priceUpdate || fallbackSignalBoard.pastWeek, 320),
-    thisWeek: sentence(llmSignalBoard.this_week || fallbackSignalBoard.thisWeek, 320),
+    priceUpdate: sentence(stripSectionPrefix(llmSignalBoard.market_context || fallbackSignalBoard.priceUpdate || fallbackSignalBoard.pastWeek), 320),
+    thisWeek: sentence(stripSectionPrefix(llmSignalBoard.this_week || fallbackSignalBoard.thisWeek), 320),
     nextWeek: sentence(
-      llmSignalBoard.next_week ||
+      stripSectionPrefix(llmSignalBoard.next_week) ||
       fallbackSignalBoard.nextWeek ||
       "No major Solana-specific catalyst is locked in yet, so broader crypto macro will likely set direction. If risk appetite returns to alts and volume picks up in ecosystem tokens, SOL usually responds quickly.",
       320
