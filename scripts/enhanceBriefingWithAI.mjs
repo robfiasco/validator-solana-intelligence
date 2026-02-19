@@ -47,22 +47,37 @@ const extractJson = (raw) => {
 const callOpenAI = async (payload) => {
   if (!process.env.OPENAI_API_KEY) throw new Error("No OPENAI_API_KEY");
 
-  const systemPrompt = `You rewrite briefing narratives for Solana readers.
+  const systemPrompt = `You rewrite daily crypto intelligence for Solana readers.
 Rules:
 - Use plain English.
-- 1 sentence only per item.
-- 18-28 words per sentence.
-- Be specific and concrete.
-- Explain why the story matters for SOL positioning, liquidity, or ecosystem usage.
+- Be specific, concrete, and analytical.
+- Explain why the story or data matters for SOL positioning, liquidity, or ecosystem usage.
 - No filler and no buzzwords.
-- Do not repeat the headline.
 - Do not mention that this is AI generated.
+- Ensure the tone is professional, insightful, and strictly objective. Let the data lead the narrative.
 
-Return JSON ONLY:
+For "briefingItems":
+- Rewrite each "whyYouShouldCare" into exactly 1 sentence (18-28 words max).
+- Do not repeat the headline, just provide the contextual analysis.
+
+For "signalBoard":
+- You will receive draft template text for \`priceUpdate\` (Market Context), \`pastWeek\`, \`thisWeek\`, and \`nextWeek\`.
+- Rewrite each of these fields to feel fluid, native, and analytically sharp.
+- Keep the exact same data points (prices, themes, headlines) but seamlessly rewrite the sentences so they do not sound like a rigid template.
+- Do NOT make up new numbers or events. Only rewrite the provided facts.
+- **IMPORTANT**: If a field is empty (e.g. \`pastWeek\` is ""), leave it empty in the output.
+
+Return JSON ONLY matching the exact structure:
 {
-  "items": [
+  "briefingItems": [
     { "index": 0, "whyYouShouldCare": "..." }
-  ]
+  ],
+  "signalBoard": {
+    "priceUpdate": "...",
+    "pastWeek": "...",
+    "thisWeek": "...",
+    "nextWeek": "..."
+  }
 }`;
 
   const userPrompt = JSON.stringify(payload);
@@ -79,7 +94,7 @@ Return JSON ONLY:
         { role: "system", content: systemPrompt },
         { role: "user", content: userPrompt }
       ],
-      temperature: 0.2,
+      temperature: 0.3,
       response_format: { type: "json_object" }
     }),
   });
@@ -96,23 +111,36 @@ Return JSON ONLY:
 
 const callOllama = async (payload) => {
   const prompt = `
-You rewrite briefing narratives for Solana readers.
+You rewrite daily crypto intelligence for Solana readers.
 
 Rules:
 - Use plain English.
-- 1 sentence only per item.
-- 18-28 words per sentence.
-- Be specific and concrete.
-- Explain why the story matters for SOL positioning, liquidity, or ecosystem usage.
+- Be specific, concrete, and analytical.
+- Explain why the story or data matters for SOL positioning, liquidity, or ecosystem usage.
 - No filler and no buzzwords.
-- Do not repeat the headline.
 - Do not mention that this is AI generated.
 
-Return JSON ONLY:
+For "briefingItems":
+- Rewrite each "whyYouShouldCare" into exactly 1 sentence (18-28 words max).
+- Do not repeat the headline, just provide the contextual analysis.
+
+For "signalBoard":
+- You will receive draft template text for \`priceUpdate\` (Market Context), \`pastWeek\`, \`thisWeek\`, and \`nextWeek\`.
+- Rewrite each of these fields to feel fluid, native, and analytically sharp.
+- Keep the exact same data points (prices, themes, headlines) but seamlessly rewrite the sentences so they do not sound like a rigid template.
+- Do NOT make up new numbers or events. Only rewrite the provided facts. If a field is empty, leave it empty.
+
+Return JSON ONLY matching the exact structure:
 {
-  "items": [
+  "briefingItems": [
     { "index": 0, "whyYouShouldCare": "..." }
-  ]
+  ],
+  "signalBoard": {
+    "priceUpdate": "...",
+    "pastWeek": "...",
+    "thisWeek": "...",
+    "nextWeek": "..."
+  }
 }
 
 INPUT:
@@ -127,7 +155,7 @@ ${JSON.stringify(payload)}
       stream: false,
       prompt,
       options: {
-        temperature: 0.2,
+        temperature: 0.3,
       },
       format: "json",
     }),
@@ -145,14 +173,21 @@ ${JSON.stringify(payload)}
   return extractJson(content);
 };
 
+const SIGNAL_PATHS = [
+  path.join(cwd, "data", "signal_board.json"),
+  path.join(cwd, "signal_board.json"),
+];
+
 const main = async () => {
   const briefing = BRIEFING_PATHS.map((p) => loadJson(p)).find(Boolean);
-  if (!briefing || !Array.isArray(briefing.items) || briefing.items.length === 0) {
-    console.log("No briefing items found; skipping AI enhancement.");
+  const signalBoard = SIGNAL_PATHS.map((p) => loadJson(p)).find(Boolean);
+
+  if ((!briefing || !Array.isArray(briefing.items) || briefing.items.length === 0) && !signalBoard) {
+    console.log("No briefing items or signal board found; skipping AI enhancement.");
     return;
   }
 
-  const promptItems = briefing.items.slice(0, 3).map((item, index) => ({
+  const promptItems = (briefing?.items || []).slice(0, 3).map((item, index) => ({
     index,
     title: item.title,
     source: item.source,
@@ -160,36 +195,64 @@ const main = async () => {
     date: item.date,
   }));
 
+  const payload = {
+    briefingItems: promptItems,
+    signalBoard: signalBoard ? {
+      priceUpdate: signalBoard.priceUpdate,
+      pastWeek: signalBoard.pastWeek,
+      thisWeek: signalBoard.thisWeek,
+      nextWeek: signalBoard.nextWeek,
+    } : null,
+  };
+
   try {
     let rewritten;
     if (process.env.OPENAI_API_KEY) {
-      console.log("Enhancing briefing with OpenAI (gpt-4o-mini)...");
-      rewritten = await callOpenAI({ items: promptItems });
+      console.log("Enhancing briefing & signal board with OpenAI (gpt-4o-mini)...");
+      rewritten = await callOpenAI(payload);
     } else {
-      console.log(`Enhancing briefing with local Ollama model: ${MODEL}`);
-      rewritten = await callOllama({ items: promptItems });
+      console.log(`Enhancing briefing & signal board with local Ollama model: ${MODEL}`);
+      rewritten = await callOllama(payload);
     }
 
-    const updates = new Map(
-      (rewritten?.items || [])
-        .filter((row) => Number.isInteger(row?.index) && typeof row?.whyYouShouldCare === "string")
-        .map((row) => [row.index, row.whyYouShouldCare.trim()]),
-    );
+    if (briefing && Array.isArray(briefing.items)) {
+      const updates = new Map(
+        (rewritten?.briefingItems || [])
+          .filter((row) => Number.isInteger(row?.index) && typeof row?.whyYouShouldCare === "string")
+          .map((row) => [row.index, row.whyYouShouldCare.trim()]),
+      );
 
-    const next = {
-      ...briefing,
-      items: briefing.items.map((item, index) => ({
-        ...item,
-        whyYouShouldCare: updates.get(index) || item.whyYouShouldCare,
-      })),
-    };
+      const nextBriefing = {
+        ...briefing,
+        items: briefing.items.map((item, index) => ({
+          ...item,
+          whyYouShouldCare: updates.get(index) || item.whyYouShouldCare,
+        })),
+      };
 
-    saveJson(path.join(cwd, "briefing.json"), next);
-    saveJson(path.join(cwd, "data", "briefing.json"), next);
-    saveJson(path.join(cwd, "public", "briefing.json"), next);
-    console.log(`Briefing enhanced: ${updates.size}/${briefing.items.length} items updated.`);
+      saveJson(path.join(cwd, "briefing.json"), nextBriefing);
+      saveJson(path.join(cwd, "data", "briefing.json"), nextBriefing);
+      saveJson(path.join(cwd, "public", "briefing.json"), nextBriefing);
+      console.log(`Briefing enhanced: ${updates.size}/${briefing.items.length} items updated.`);
+    }
+
+    if (signalBoard && rewritten?.signalBoard) {
+      const nextSignalBoard = {
+        ...signalBoard,
+        priceUpdate: rewritten.signalBoard.priceUpdate || signalBoard.priceUpdate,
+        pastWeek: rewritten.signalBoard.pastWeek || signalBoard.pastWeek,
+        thisWeek: rewritten.signalBoard.thisWeek || signalBoard.thisWeek,
+        nextWeek: rewritten.signalBoard.nextWeek || signalBoard.nextWeek,
+      };
+
+      saveJson(path.join(cwd, "signal_board.json"), nextSignalBoard);
+      saveJson(path.join(cwd, "data", "signal_board.json"), nextSignalBoard);
+      saveJson(path.join(cwd, "public", "signal_board.json"), nextSignalBoard);
+      console.log("Signal Board natively rewritten by AI.");
+    }
+
   } catch (err) {
-    console.log(`Briefing enhancement skipped: ${err?.message || err}`);
+    console.log(`Enhancement skipped: ${err?.message || err}`);
   }
 };
 
