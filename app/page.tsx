@@ -501,24 +501,24 @@ export default function Home() {
   };
 
   const marketView = {
-    solPrice: pickMarket(marketContextData?.sol?.price, terminalData?.sol.priceUsd, marketCache?.sol?.price),
-    sol24h: pickMarket(marketContextData?.sol?.change_24h, terminalData?.sol.change24hPct, marketCache?.sol?.change_24h),
-    sol7d: pickMarket(marketContextData?.sol?.change_7d, terminalData?.sol.change7dPct, marketCache?.sol?.change_7d),
+    solPrice: pickMarket(marketContextData?.sol?.price, terminalData?.sol?.priceUsd, marketCache?.sol?.price),
+    sol24h: pickMarket(marketContextData?.sol?.change_24h, terminalData?.sol?.change24hPct, marketCache?.sol?.change_24h),
+    sol7d: pickMarket(marketContextData?.sol?.change_7d, terminalData?.sol?.change7dPct, marketCache?.sol?.change_7d),
     mktCap: pickMarket(
       marketContextData?.mkt_cap?.solana_mkt_cap_usd,
-      terminalData?.marketCap.totalUsd,
+      terminalData?.marketCap?.totalUsd,
       marketCache?.mkt_cap?.solana_mkt_cap_usd,
     ),
-    mktCap24h: pickMarket(marketContextData?.mkt_cap?.change_24h, terminalData?.marketCap.change24hPct, marketCache?.mkt_cap?.change_24h),
-    fearValue: pickMarket(marketContextData?.fear_greed?.value, terminalData?.fearGreed.value, marketCache?.fear_greed?.value),
+    mktCap24h: pickMarket(marketContextData?.mkt_cap?.change_24h, terminalData?.marketCap?.change24hPct, marketCache?.mkt_cap?.change_24h),
+    fearValue: pickMarket(marketContextData?.fear_greed?.value, terminalData?.fearGreed?.value, marketCache?.fear_greed?.value),
     fearLabel:
       marketContextData?.fear_greed?.label ||
-      terminalData?.fearGreed.classification ||
+      terminalData?.fearGreed?.classification ||
       marketCache?.fear_greed?.label ||
       "n/a",
-    btcDom: pickMarket(marketContextData?.btc_dominance?.value, terminalData?.btcDominance.valuePct, marketCache?.btc_dominance?.value),
+    btcDom: pickMarket(marketContextData?.btc_dominance?.value, terminalData?.btcDominance?.valuePct, marketCache?.btc_dominance?.value),
     volUsd: pickMarket(marketContextData?.vol?.sol_24h_usd, marketCache?.vol?.sol_24h_usd),
-    volChange24h: terminalData?.volume.change24hPct ?? null,
+    volChange24h: terminalData?.volume?.change24hPct ?? null,
   };
 
   const sol7dDollarDelta = (() => {
