@@ -31,6 +31,14 @@ files.forEach(f => {
         }
     }
 
+    if (s.includes('yield detectionPromise;')) {
+        if (!s.includes('if (!window.__openSolanaIntentUrl)')) {
+            s = s.replace(/yield detectionPromise;/g, 'if (!window.__openSolanaIntentUrl) { yield detectionPromise; }');
+            patched = true;
+            console.log('Patched detectionPromise in ' + f);
+        }
+    }
+
     if (s.includes('window.isSecureContext')) {
         // Replace strict `isSecureContext` checks with true to bypass Capacitor Android HTTP localhost issues
         s = s.replace(/!window\.isSecureContext/g, 'false');
