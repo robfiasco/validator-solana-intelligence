@@ -21,8 +21,6 @@ pnpm-debug.log*
 .vercel
 
 # capacitor / android
-android/
-ios/
 
 # IDE
 .idea/
