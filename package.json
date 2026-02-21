@@ -29,7 +29,7 @@
     "daily:run": "node scripts/runDaily.mjs && node scripts/syncToKv.mjs",
     "daily:run:fast": "node scripts/runDaily.mjs --no-stories && node scripts/syncToKv.mjs",
     "dev": "next dev",
-    "build": "next build",
+    "build": "node patch-solana.mjs && next build",
     "start": "next start",
     "lint": "next lint"
   },
