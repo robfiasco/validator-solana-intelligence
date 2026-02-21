@@ -1,5 +1,26 @@
 [
   {
+    "id": "56b6a0dbfa8d28c345d18aad58ea53a45a46f0f0",
+    "title": "Solana tops DApp revenue! Is efficient monetization driving institutional interest?",
+    "url": "https://ambcrypto.com/solana-tops-dapp-revenue-is-efficient-monetization-driving-institutional-interest",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-02-20T16:00:28.995Z",
+    "lastSeenAt": "2026-02-21T07:32:00.651Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "solana",
+      "tops",
+      "dapp",
+      "revenue",
+      "efficient",
+      "monetization",
+      "driving",
+      "institutional"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "2b54d6cdfc575acbd7965f8b44f0ceebdf7adac4",
     "title": "Signal Board Summary 2026-02-20",
     "url": "",
@@ -54,111 +75,6 @@
       "surge",
       "capital",
       "efficiency"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "56b6a0dbfa8d28c345d18aad58ea53a45a46f0f0",
-    "title": "Solana tops DApp revenue! Is efficient monetization driving institutional interest?",
-    "url": "https://ambcrypto.com/solana-tops-dapp-revenue-is-efficient-monetization-driving-institutional-interest",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-02-20T16:00:28.995Z",
-    "lastSeenAt": "2026-02-20T16:00:28.995Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "solana",
-      "tops",
-      "dapp",
-      "revenue",
-      "efficient",
-      "monetization",
-      "driving",
-      "institutional"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "bffbcc775273405b32b7214200aca85b7ae16407",
-    "title": "Ether, XRP, Solana slide in crypto retreat despite tech-led lift in Asia stocks",
-    "url": "https://www.coindesk.com/markets/2026/02/19/ether-xrp-solana-slide-in-crypto-retreat-despite-tech-led-lift-in-asia-stocks",
-    "source": "CoinDesk",
-    "firstSeenAt": "2026-02-19T20:47:23.902Z",
-    "lastSeenAt": "2026-02-19T21:25:37.877Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "ether",
-      "solana",
-      "slide",
-      "crypto",
-      "retreat",
-      "despite",
-      "tech",
-      "lift"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "1156dfc41a4db659aa370ba0c37284853aca85a2",
-    "title": "Bitcoin, ether, xrp ETFs bleed while Solana bucks outflow trend",
-    "url": "https://www.coindesk.com/markets/2026/02/19/bitcoin-ether-xrp-etfs-bleed-while-solana-bucks-outflow-trend",
-    "source": "CoinDesk",
-    "firstSeenAt": "2026-02-19T17:23:19.552Z",
-    "lastSeenAt": "2026-02-19T21:25:37.877Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "bitcoin",
-      "ether",
-      "etfs",
-      "bleed",
-      "while",
-      "solana",
-      "bucks",
-      "outflow"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "df40342fef57203cdb5643f3d0b08bd9f8405670",
-    "title": "Hayden Davis Resurfaces After LIBRA Crash, But His Latest Trades Are Deep in the Red",
-    "url": "https://cryptopotato.com/hayden-davis-resurfaces-after-libra-crash-but-his-latest-trades-are-deep-in-the-red",
-    "source": "CryptoPotato",
-    "firstSeenAt": "2026-02-19T20:47:23.903Z",
-    "lastSeenAt": "2026-02-19T20:47:23.903Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "hayden",
-      "davis",
-      "resurfaces",
-      "after",
-      "libra",
-      "crash",
-      "latest",
-      "trades"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "65375b6b594b62438f348ccf8819436c8cc7adcc",
-    "title": "Solana futures data shows panicked bulls: Will $80 SOL hold?",
-    "url": "https://cointelegraph.com/news/solana-futures-data-shows-panicked-bulls-will-80-sol-hold",
-    "source": "Cointelegraph",
-    "firstSeenAt": "2026-02-19T17:23:19.553Z",
-    "lastSeenAt": "2026-02-19T17:23:19.553Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "solana",
-      "futures",
-      "data",
-      "shows",
-      "panicked",
-      "bulls",
-      "will",
-      "hold"
     ],
     "majorUpdate": false,
     "updateReason": null

@@ -1,5 +1,26 @@
 [
   {
+    "id": "56b6a0dbfa8d28c345d18aad58ea53a45a46f0f0",
+    "title": "Solana tops DApp revenue! Is efficient monetization driving institutional interest?",
+    "url": "https://ambcrypto.com/solana-tops-dapp-revenue-is-efficient-monetization-driving-institutional-interest",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-02-20T16:00:28.995Z",
+    "lastSeenAt": "2026-02-21T07:32:00.651Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "solana",
+      "tops",
+      "dapp",
+      "revenue",
+      "efficient",
+      "monetization",
+      "driving",
+      "institutional"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "2b54d6cdfc575acbd7965f8b44f0ceebdf7adac4",
     "title": "Signal Board Summary 2026-02-20",
     "url": "",
@@ -54,27 +75,6 @@
       "surge",
       "capital",
       "efficiency"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "56b6a0dbfa8d28c345d18aad58ea53a45a46f0f0",
-    "title": "Solana tops DApp revenue! Is efficient monetization driving institutional interest?",
-    "url": "https://ambcrypto.com/solana-tops-dapp-revenue-is-efficient-monetization-driving-institutional-interest",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-02-20T16:00:28.995Z",
-    "lastSeenAt": "2026-02-20T16:00:28.995Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "solana",
-      "tops",
-      "dapp",
-      "revenue",
-      "efficient",
-      "monetization",
-      "driving",
-      "institutional"
     ],
     "majorUpdate": false,
     "updateReason": null

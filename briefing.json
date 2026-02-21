@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-20",
+  "date": "2026-02-21",
   "title": "TODAY'S SOLANA BRIEFING",
   "subtitle": "Top links from trusted desks",
   "items": [
@@ -10,25 +10,7 @@
       "source": "AMB Crypto",
       "date": "2026-02-20",
       "url": "https://ambcrypto.com/solana-tops-dapp-revenue-is-efficient-monetization-driving-institutional-interest",
-      "whyYouShouldCare": "Solana's lead in DApp revenue highlights its appeal to institutional investors, potentially boosting liquidity and ecosystem growth."
-    },
-    {
-      "type": "APPS",
-      "title": "State of Solana Q4 2025",
-      "category": "APPS",
-      "source": "Messari",
-      "date": "2026-02-18",
-      "url": "https://messari.io/article/state-of-solana-q4-2025",
-      "whyYouShouldCare": "The Q4 2025 report provides insights into Solana's performance and strategic positioning, essential for understanding future market trends."
-    },
-    {
-      "type": "APPS",
-      "title": "Tokenized xStocks surpass $25 billion in total transaction volume: Kraken",
-      "category": "APPS",
-      "source": "The Block",
-      "date": "2026-02-19",
-      "url": "https://www.theblock.co/post/390537/tokenized-xstocks-surpass-25-billion-total-transaction-volume-kraken",
-      "whyYouShouldCare": "The surge in tokenized asset transactions signals robust market activity, which could enhance Solana's liquidity and user engagement."
+      "whyYouShouldCare": "This is flow-relevant: if adoption continues, it can change who is buying SOL and why."
     }
   ]
 }
