@@ -166,6 +166,7 @@ function LoadingDots({ visible }: { visible: boolean }) {
 export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFinished?: () => void, isAppReady?: boolean }) {
     const [taglineVisible, setTaglineVisible] = useState(false);
     const [dotsVisible, setDotsVisible] = useState(false);
+    const [catVisible, setCatVisible] = useState(false);
     const [exiting, setExiting] = useState(false);
     const [introSequenceComplete, setIntroSequenceComplete] = useState(false);
 
@@ -185,9 +186,11 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
 
     function handleLettersComplete() {
         setTaglineVisible(true);
+        // Gossip Cat peeks up after a short delay post-settlement
+        setTimeout(() => setCatVisible(true), 200);
         setTimeout(() => {
             setIntroSequenceComplete(true);
-        }, 1400); // Wait for the tagline to finish showing
+        }, 1400);
     }
 
     return (
@@ -213,16 +216,18 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
           0%, 80%, 100% { opacity: 0.2; transform: scale(0.85); }
           40%            { opacity: 1;   transform: scale(1.2); }
         }
-
         @keyframes meshShift {
           0%   { background-position: 0% 50%; }
           50%  { background-position: 100% 50%; }
           100% { background-position: 0% 50%; }
         }
-
         @keyframes auraBreath {
           0%, 100% { opacity: 0.55; transform: scale(1); }
           50%       { opacity: 0.75; transform: scale(1.08); }
+        }
+        @keyframes catBob {
+          0%, 100% { transform: translateX(-50%) translateY(0px); }
+          50%       { transform: translateX(-50%) translateY(-5px); }
         }
       `}</style>
             {/* Animated gradient mesh background */}
@@ -268,6 +273,36 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
                     userSelect: "none",
                 }}
             >
+                {/* Gossip Cat peeking over the letters */}
+                <div style={{
+                    position: "absolute",
+                    bottom: "calc(100% - 10px)",
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    width: "190px",
+                    height: "115px",
+                    overflow: "hidden",
+                    pointerEvents: "none",
+                    opacity: catVisible ? 1 : 0,
+                    transition: "opacity 500ms ease",
+                    zIndex: 2,
+                }}>
+                    <img
+                        src="/cat-welcome.png"
+                        alt="Gossip Cat"
+                        style={{
+                            position: "absolute",
+                            top: 0,
+                            left: "50%",
+                            transform: catVisible ? "translateX(-50%) translateY(0)" : "translateX(-50%) translateY(30px)",
+                            width: "190px",
+                            height: "auto",
+                            transition: "transform 500ms cubic-bezier(0.34, 1.56, 0.64, 1)",
+                            animation: catVisible ? "catBob 2.8s ease-in-out 0.6s infinite" : "none",
+                        }}
+                    />
+                </div>
+
                 {LETTERS.map((char, i) => (
                     <Letter
                         key={i}
