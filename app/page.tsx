@@ -200,21 +200,38 @@ export default function Home() {
         setNarrativesData(daily.narratives);
         setBriefingData(daily.briefing);
         setNewsCardsData(daily.newsCards);
-        setMarketContextData(daily.marketContext);
+        // Note: marketContextData is intentionally NOT set here —
+        // live pricing from /api/market-prices always takes precedence.
         setIsAppReady(true);
       } catch (err) {
         console.warn("Error fetching daily data", err);
-        // Fallback to allow app to load eventually even if data fetch fails
         setIsAppReady(true);
       }
     };
     run();
     const interval = window.setInterval(run, 30000);
-    return () => {
-      active = false;
-      window.clearInterval(interval);
-    };
+    return () => { active = false; window.clearInterval(interval); };
   }, []);
+
+  // Live pricing — independent refresh every 3 minutes from CoinGecko + Fear & Greed
+  useEffect(() => {
+    let active = true;
+    const fetchPrices = async () => {
+      try {
+        const res = await fetch("/api/market-prices", { cache: "no-store" });
+        if (!res.ok) throw new Error("market-prices fetch failed");
+        const data = await res.json();
+        if (!active) return;
+        setMarketContextData(data);
+      } catch (err) {
+        console.warn("Live price fetch failed, keeping cached value:", err);
+      }
+    };
+    fetchPrices();
+    const interval = window.setInterval(fetchPrices, 3 * 60 * 1000); // every 3 min
+    return () => { active = false; window.clearInterval(interval); };
+  }, []);
+
 
   useEffect(() => {
     if (!marketContextData) return;
