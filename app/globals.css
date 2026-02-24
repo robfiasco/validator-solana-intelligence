@@ -5695,3 +5695,253 @@ body {
     font-size: 1.1rem;
   }
 }
+
+/* ─────────────────────────────────────────────────────────────────────────
+   GOSSIP PAYWALL — Vox-style gate for page 3 (Stories / Seeker)
+   ──────────────────────────────────────────────────────────────────────── */
+
+/* ── Content peek zone ────────────────────────────────────────────────── */
+.seeker-peek-shell {
+  padding: 14px 18px 0;
+}
+
+.seeker-peek-stats {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(67, 79, 103, 0.28);
+}
+
+.seeker-peek-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--text) 52%, var(--muted));
+}
+
+.seeker-peek-stat svg {
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.seeker-peek-stat strong {
+  color: color-mix(in srgb, var(--text) 72%, var(--muted));
+  font-size: 0.76rem;
+}
+
+.seeker-peek-stat.is-green {
+  color: #14f195;
+}
+
+.seeker-peek-divider {
+  height: 1px;
+  background: rgba(67, 79, 103, 0.24);
+  margin: 12px 0;
+}
+
+.seeker-peek-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sol-cyan);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.seeker-peek-kicker::before {
+  content: "";
+  width: 44px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--sol-cyan);
+  display: inline-block;
+}
+
+.seeker-peek-title {
+  margin: 0 0 6px;
+  font-size: 1.26rem;
+  line-height: 1.22;
+  color: #f4f6ff;
+  font-weight: 700;
+}
+
+.seeker-peek-byline {
+  margin: 0 0 10px;
+  font-size: 0.74rem;
+  color: color-mix(in srgb, var(--text) 52%, var(--muted));
+}
+
+.seeker-peek-body {
+  margin: 0 0 18px;
+  color: color-mix(in srgb, var(--text) 80%, var(--muted));
+  font-size: 0.95rem;
+  line-height: 1.58;
+}
+
+.seeker-peek-more-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--text) 50%, var(--muted));
+  margin-bottom: 8px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(67, 79, 103, 0.24);
+}
+
+.seeker-peek-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid rgba(72, 84, 112, 0.28);
+  border-radius: 10px;
+  background: rgba(10, 12, 18, 0.6);
+}
+
+.seeker-peek-card-tag {
+  flex-shrink: 0;
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.seeker-peek-card-tag.live {
+  color: #c4b5fd;
+  background: rgba(108, 72, 220, 0.24);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.seeker-peek-card-title {
+  font-size: 0.88rem;
+  line-height: 1.3;
+  color: color-mix(in srgb, var(--text) 68%, var(--muted));
+}
+
+/* ── Paywall panel (solid, anchored below content) ────────────────────── */
+.gossip-paywall-panel {
+  position: relative;
+  margin-top: -120px; /* overlap up into the content zone */
+}
+
+.gossip-paywall-gradient {
+  height: 140px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--surface, #0d1117) 100%
+  );
+  pointer-events: none;
+}
+
+.gossip-paywall-card {
+  background: var(--surface, #0d1117);
+  padding: 0 20px 32px;
+}
+
+.gossip-paywall-rule {
+  width: 40px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--sol-green, #14f195);
+  margin-bottom: 16px;
+}
+
+.gossip-paywall-overline {
+  margin: 0 0 8px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sol-cyan, #5edcc6);
+  font-weight: 700;
+}
+
+.gossip-paywall-headline {
+  margin: 0 0 12px;
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.18;
+  color: #f3f6ff;
+  letter-spacing: -0.02em;
+}
+
+.gossip-paywall-body {
+  margin: 0 0 20px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--text) 68%, var(--muted));
+}
+
+.gossip-paywall-cta {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: var(--sol-green, #14f195);
+  color: #021a0e;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.15s ease;
+  text-align: center;
+}
+
+.gossip-paywall-cta:hover {
+  background: #0ddb85;
+  transform: translateY(-1px);
+}
+
+.gossip-paywall-cta:active {
+  transform: translateY(0);
+}
+
+.gossip-paywall-sub {
+  margin: 16px 0 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--text) 40%, var(--muted));
+  text-align: center;
+}
+
+.gossip-paywall-secondary-row {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gossip-paywall-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--text) 44%, var(--muted));
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+.gossip-paywall-link:hover {
+  color: color-mix(in srgb, var(--text) 72%, var(--muted));
+}
