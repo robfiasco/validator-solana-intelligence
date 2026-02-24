@@ -137,7 +137,7 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
         <p className="seeker-mag-preview">{peekBody}</p>
       </div>
 
-      {/* ── SECTION 2: Blurred story cards — ALWAYS VISIBLE ───── */}
+      {/* ── SECTION 2: Blurred story cards — show 2 as teaser ───── */}
       <div style={{
         padding: "0 18px 20px",
         display: "grid",
@@ -148,8 +148,8 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
         opacity: 0.85,
       }}>
         {stories.length > 0
-          ? stories.map((s, i) => <LockedCard key={i} story={s} idx={i} />)
-          : [0, 1, 2].map((i) => <PlaceholderCard key={i} />)
+          ? stories.slice(0, 2).map((s, i) => <LockedCard key={i} story={s} idx={i} />)
+          : [0, 1].map((i) => <PlaceholderCard key={i} />)
         }
       </div>
 
@@ -206,14 +206,25 @@ export default function SeekerGuard({ children, peekData = null }) {
       if (!publicKey || !connected) { setHasSeeker(false); return; }
       setChecking(true);
       try {
-        const tokenAccounts = await connection.getParsedTokenAccountsByOwner(publicKey, {
-          programId: new PublicKey("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"),
-        });
-        const seekerToken = tokenAccounts.value.find((account) => {
-          const info = account.account.data.parsed.info;
-          return info.mint === SEEKER_MINT_ADDRESS && info.tokenAmount.uiAmount > 0;
-        });
-        setHasSeeker(!!seekerToken);
+        // Check both classic Token program AND Token-2022 in parallel
+        const TOKEN_PROGRAM = "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA";
+        const TOKEN_2022 = "TokenzQdBNbequW8uyM9nj2HPEC4bsrghF8RTuPMJM";
+        const findInProgram = async (progId) => {
+          try {
+            const res = await connection.getParsedTokenAccountsByOwner(publicKey, {
+              programId: new PublicKey(progId),
+            });
+            return res.value.find((acct) => {
+              const info = acct.account.data.parsed.info;
+              return info.mint === SEEKER_MINT_ADDRESS && Number(info.tokenAmount.uiAmount) > 0;
+            });
+          } catch { return null; }
+        };
+        const [found1, found2] = await Promise.all([
+          findInProgram(TOKEN_PROGRAM),
+          findInProgram(TOKEN_2022),
+        ]);
+        setHasSeeker(!!(found1 || found2));
       } catch (err) {
         console.error("Error checking Seeker ownership:", err);
         setHasSeeker(false);
