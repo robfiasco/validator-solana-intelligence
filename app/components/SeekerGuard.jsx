@@ -42,55 +42,54 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
           maskImage: "linear-gradient(to bottom, black 0%, black 62%, transparent 85%)",
           pointerEvents: "none",
           userSelect: "none",
+          paddingBottom: "120px", /* extra space so the fade has room */
         }}
       >
-        <div style={{ minHeight: "460px", overflow: "hidden" }}>
-          <div className="seeker-peek-shell">
+        <div className="seeker-peek-shell">
 
-            {/* Real stats bar — same classes as full content */}
-            <div className="seeker-mag-stats">
-              <div className="seeker-mag-stat">
-                <i><MessageCircle size={16} strokeWidth={1.8} /></i>
-                <strong>{peekData?.tweets || "—"}</strong>
-                <span>Tweets Analyzed</span>
-              </div>
-              <div className="seeker-mag-stat">
-                <i className="is-green"><TrendingUp size={16} strokeWidth={1.8} /></i>
-                <strong className="is-green">{fmt(peekData?.eng)}</strong>
-                <span>Total Engagement</span>
-              </div>
-              <div className="seeker-mag-stat">
-                <i><Users size={16} strokeWidth={1.8} /></i>
-                <strong>{peekData?.voices || "—"}</strong>
-                <span>Unique Voices</span>
-              </div>
-              <div className="seeker-mag-stat">
-                <i className="is-purple"><Activity size={16} strokeWidth={1.8} /></i>
-                <strong className="is-purple">{fmt(peekData?.topTweet)}</strong>
-                <span>Top Tweet</span>
-              </div>
+          {/* Real stats bar — same classes as full content */}
+          <div className="seeker-mag-stats">
+            <div className="seeker-mag-stat">
+              <i><MessageCircle size={16} strokeWidth={1.8} /></i>
+              <strong>{peekData?.tweets || "—"}</strong>
+              <span>Tweets Analyzed</span>
             </div>
-
-            <div className="seeker-mag-divider" />
-
-            {/* Real story — kicker + title + byline + body */}
-            <div className="seeker-mag-kicker-row">
-              <span className={`seeker-mag-kicker ${leadIsCritical ? "critical" : leadIsAi ? "ai" : leadIsGaming ? "gaming" : ""}`}>
-                {kicker}
-              </span>
+            <div className="seeker-mag-stat">
+              <i className="is-green"><TrendingUp size={16} strokeWidth={1.8} /></i>
+              <strong className="is-green">{fmt(peekData?.eng)}</strong>
+              <span>Total Engagement</span>
             </div>
-
-            <h2 className="seeker-mag-title">
-              {lead?.title || "Solana's daily intelligence brief — curated from CT"}
-            </h2>
-
-            <div className="seeker-mag-meta">
-              <span>By AI Gossip News Desk</span>
+            <div className="seeker-mag-stat">
+              <i><Users size={16} strokeWidth={1.8} /></i>
+              <strong>{peekData?.voices || "—"}</strong>
+              <span>Unique Voices</span>
             </div>
-
-            <p className="seeker-mag-preview">{peekBody}</p>
-
+            <div className="seeker-mag-stat">
+              <i className="is-purple"><Activity size={16} strokeWidth={1.8} /></i>
+              <strong className="is-purple">{fmt(peekData?.topTweet)}</strong>
+              <span>Top Tweet</span>
+            </div>
           </div>
+
+          <div className="seeker-mag-divider" />
+
+          {/* Real story — kicker + title + byline + body */}
+          <div className="seeker-mag-kicker-row">
+            <span className={`seeker-mag-kicker ${leadIsCritical ? "critical" : leadIsAi ? "ai" : leadIsGaming ? "gaming" : ""}`}>
+              {kicker}
+            </span>
+          </div>
+
+          <h2 className="seeker-mag-title">
+            {lead?.title || "Solana's daily intelligence brief — curated from CT"}
+          </h2>
+
+          <div className="seeker-mag-meta">
+            <span>By AI Gossip News Desk</span>
+          </div>
+
+          <p className="seeker-mag-preview">{peekBody}</p>
+
         </div>
       </div>
 
@@ -130,7 +129,7 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
           )}
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
