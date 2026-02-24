@@ -745,149 +745,129 @@ export default function Home() {
                 panelRefs.current[2] = el;
               }}
             >
-              <SeekerGuard>
-                <section className="stories stories-seeker-fullscreen" id="top-story-feed">
-                  {(() => {
-                    const stories = (newsCardsData?.items || []).slice(0, 3);
-                    const globalMetrics = (newsCardsData as any)?.global_metrics || null;
-                    const lead = stories[0];
-                    const moreStories = stories.slice(1, 3);
-                    const globalTweets = Number(
-                      globalMetrics?.total_tweets ??
-                      stories.reduce((sum, item) => {
-                        const tweets = item?.metrics?.tweets ?? item?.stats?.total_tweets ?? 0;
-                        return sum + Number(tweets);
-                      }, 0)
-                    );
-                    const globalEng = Number(
-                      globalMetrics?.total_engagement ??
-                      stories.reduce((sum, item) => {
-                        const engagement = item?.metrics?.engagement ?? item?.stats?.total_engagement ?? 0;
-                        return sum + Number(engagement);
-                      }, 0)
-                    );
-                    const globalTop = Number(
-                      globalMetrics?.top_tweet ??
-                      Math.max(
-                        0,
-                        ...stories.map((item) => Number(item?.metrics?.topTweet ?? item?.stats?.top_engagement ?? 0))
-                      )
-                    );
-                    const globalVoices = Number(
-                      globalMetrics?.unique_voices ??
-                      stories.reduce((sum, item) => {
-                        const voices = item?.metrics?.voices ?? item?.stats?.unique_users ?? 0;
-                        return sum + Number(voices);
-                      }, 0)
-                    );
-
-                    if (!lead) {
-                      return (
-                        <div className="news-empty">
-                          Run node scripts/runDaily.mjs to generate today’s stories.
-                        </div>
-                      );
-                    }
-
-                    const leadCategory = String(lead?.category || "Daily Intel");
-                    const leadIsCritical = /security|risk|breach|exploit|hack/i.test(leadCategory);
-                    const leadIsAi = /ai|agent/i.test(leadCategory);
-                    const leadIsGaming = /gaming|game/i.test(leadCategory);
-                    return (
-                      <div className="seeker-mag-shell">
-
-                        <div className="seeker-mag-stats">
-                          <div className="seeker-mag-stat">
-                            <i><MessageCircle size={16} strokeWidth={1.8} /></i>
-                            <strong>{globalTweets || 0}</strong>
-                            <span>Tweets Analyzed</span>
-                          </div>
-                          <div className="seeker-mag-stat">
-                            <i className="is-green"><TrendingUp size={16} strokeWidth={1.8} /></i>
-                            <strong className="is-green">{formatCompactNumber(globalEng)}</strong>
-                            <span>Total Engagement</span>
-                          </div>
-                          <div className="seeker-mag-stat">
-                            <i><Users size={16} strokeWidth={1.8} /></i>
-                            <strong>{globalVoices || 0}</strong>
-                            <span>Unique Voices</span>
-                          </div>
-                          <div className="seeker-mag-stat">
-                            <i className="is-purple"><Activity size={16} strokeWidth={1.8} /></i>
-                            <strong className="is-purple">{formatCompactNumber(globalTop)}</strong>
-                            <span>Top Tweet</span>
-                          </div>
-                        </div>
-
-                        <div className="seeker-mag-divider" />
-
-                        <div className="seeker-mag-kicker-row">
-                          <span className={`seeker-mag-kicker ${leadIsCritical ? "critical" : leadIsAi ? "ai" : leadIsGaming ? "gaming" : ""}`}>
-                            {String(lead.category || "Seeker Story").toUpperCase()}
-                          </span>
-                        </div>
-                        <h2 className="seeker-mag-title">{lead.title}</h2>
-
-                        <div className="seeker-mag-meta">
-                          <span>By AI Gossip News Desk</span>
-                        </div>
-
-                        <p className="seeker-mag-preview">
-                          {compactSentence(
-                            lead.content?.signal || lead.summary || lead.hook || lead.narrative || lead.title,
-                            260,
-                          )}
-                        </p>
-
-                        <div className="seeker-mag-cta-row">
-                          <a
-                            href="/seeker?story=0"
-                            className={`seeker-mag-cta ${leadIsCritical ? "critical" : "primary"}`}
-                          >
-                            Read Full Story
-                          </a>
-                        </div>
-
-                        {moreStories.length > 0 ? (
-                          <div className="seeker-mag-more">
-                            <h3>Featured Stories</h3>
-                            <div className="seeker-mag-grid">
-                              {moreStories.map((story, idx) => (
-                                <a
-                                  key={`${story.title}-${idx}`}
-                                  href={`/seeker?story=${idx + 1}`}
-                                  className="seeker-mag-card"
-                                >
-                                  <div className={`seeker-mag-thumb ${idx % 2 === 0 ? "live" : "alpha"}`}>
-                                    {idx % 2 === 0 ? <Rocket size={38} /> : <Brain size={38} />}
-                                  </div>
-                                  <div className="seeker-mag-card-row">
-                                    <span className={`seeker-mag-card-tag ${idx % 2 === 0 ? "live" : "alpha"}`}>
-                                      {idx % 2 === 0 ? "LIVE" : "ALPHA"}
-                                    </span>
-                                    <span className="seeker-mag-card-time">
-                                      {formatShortDate(story.timestamp || story.publishedAt || null)}
-                                    </span>
-                                  </div>
-                                  <div className="seeker-mag-card-title">{story.title}</div>
-                                  <div className="seeker-mag-card-sub">
-                                    {compactSentence(story.summary || story.hook || story.narrative || story.title, 85)}
-                                  </div>
-                                  <div className="seeker-mag-card-meta">
-                                    {story?.metrics?.tweets ?? story?.stats?.total_tweets ?? 0} •{" "}
-                                    {formatCompactNumber(story?.metrics?.engagement ?? story?.stats?.total_engagement ?? 0)}
-                                  </div>
-                                </a>
-                              ))}
+              {(() => {
+                const stories = (newsCardsData?.items || []).slice(0, 3);
+                const globalMetrics = (newsCardsData as any)?.global_metrics || null;
+                const lead = stories[0] || null;
+                const moreStories = stories.slice(1, 3);
+                const globalTweets = Number(globalMetrics?.total_tweets ?? stories.reduce((sum, item) => { const t = item?.metrics?.tweets ?? item?.stats?.total_tweets ?? 0; return sum + Number(t); }, 0));
+                const globalEng = Number(globalMetrics?.total_engagement ?? stories.reduce((sum, item) => { const e = item?.metrics?.engagement ?? item?.stats?.total_engagement ?? 0; return sum + Number(e); }, 0));
+                const globalTop = Number(globalMetrics?.top_tweet ?? Math.max(0, ...stories.map((item) => Number(item?.metrics?.topTweet ?? item?.stats?.top_engagement ?? 0))));
+                const globalVoices = Number(globalMetrics?.unique_voices ?? stories.reduce((sum, item) => { const v = item?.metrics?.voices ?? item?.stats?.unique_users ?? 0; return sum + Number(v); }, 0));
+                const leadCategory = String(lead?.category || "Daily Intel");
+                const leadIsCritical = /security|risk|breach|exploit|hack/i.test(leadCategory);
+                const leadIsAi = /ai|agent/i.test(leadCategory);
+                const leadIsGaming = /gaming|game/i.test(leadCategory);
+                const peekData = { lead, tweets: globalTweets, eng: globalEng, voices: globalVoices, topTweet: globalTop };
+                return (
+                  <SeekerGuard peekData={peekData}>
+                    <section className="stories stories-seeker-fullscreen" id="top-story-feed">
+                      {(() => {
+                        if (!lead) {
+                          return (
+                            <div className="news-empty">
+                              Run node scripts/runDaily.mjs to generate today’s stories.
                             </div>
-                          </div>
-                        ) : null}
+                          );
+                        }
 
-                      </div>
-                    );
-                  })()}
-                </section>
-              </SeekerGuard>
+                        return (
+                          <div className="seeker-mag-shell">
+
+                            <div className="seeker-mag-stats">
+                              <div className="seeker-mag-stat">
+                                <i><MessageCircle size={16} strokeWidth={1.8} /></i>
+                                <strong>{globalTweets || 0}</strong>
+                                <span>Tweets Analyzed</span>
+                              </div>
+                              <div className="seeker-mag-stat">
+                                <i className="is-green"><TrendingUp size={16} strokeWidth={1.8} /></i>
+                                <strong className="is-green">{formatCompactNumber(globalEng)}</strong>
+                                <span>Total Engagement</span>
+                              </div>
+                              <div className="seeker-mag-stat">
+                                <i><Users size={16} strokeWidth={1.8} /></i>
+                                <strong>{globalVoices || 0}</strong>
+                                <span>Unique Voices</span>
+                              </div>
+                              <div className="seeker-mag-stat">
+                                <i className="is-purple"><Activity size={16} strokeWidth={1.8} /></i>
+                                <strong className="is-purple">{formatCompactNumber(globalTop)}</strong>
+                                <span>Top Tweet</span>
+                              </div>
+                            </div>
+
+                            <div className="seeker-mag-divider" />
+
+                            <div className="seeker-mag-kicker-row">
+                              <span className={`seeker-mag-kicker ${leadIsCritical ? "critical" : leadIsAi ? "ai" : leadIsGaming ? "gaming" : ""}`}>
+                                {String(lead.category || "Seeker Story").toUpperCase()}
+                              </span>
+                            </div>
+                            <h2 className="seeker-mag-title">{lead.title}</h2>
+
+                            <div className="seeker-mag-meta">
+                              <span>By AI Gossip News Desk</span>
+                            </div>
+
+                            <p className="seeker-mag-preview">
+                              {compactSentence(
+                                lead.content?.signal || lead.summary || lead.hook || lead.narrative || lead.title,
+                                260,
+                              )}
+                            </p>
+
+                            <div className="seeker-mag-cta-row">
+                              <a
+                                href="/seeker?story=0"
+                                className={`seeker-mag-cta ${leadIsCritical ? "critical" : "primary"}`}
+                              >
+                                Read Full Story
+                              </a>
+                            </div>
+
+                            {moreStories.length > 0 ? (
+                              <div className="seeker-mag-more">
+                                <h3>Featured Stories</h3>
+                                <div className="seeker-mag-grid">
+                                  {moreStories.map((story, idx) => (
+                                    <a
+                                      key={`${story.title}-${idx}`}
+                                      href={`/seeker?story=${idx + 1}`}
+                                      className="seeker-mag-card"
+                                    >
+                                      <div className={`seeker-mag-thumb ${idx % 2 === 0 ? "live" : "alpha"}`}>
+                                        {idx % 2 === 0 ? <Rocket size={38} /> : <Brain size={38} />}
+                                      </div>
+                                      <div className="seeker-mag-card-row">
+                                        <span className={`seeker-mag-card-tag ${idx % 2 === 0 ? "live" : "alpha"}`}>
+                                          {idx % 2 === 0 ? "LIVE" : "ALPHA"}
+                                        </span>
+                                        <span className="seeker-mag-card-time">
+                                          {formatShortDate(story.timestamp || story.publishedAt || null)}
+                                        </span>
+                                      </div>
+                                      <div className="seeker-mag-card-title">{story.title}</div>
+                                      <div className="seeker-mag-card-sub">
+                                        {compactSentence(story.summary || story.hook || story.narrative || story.title, 85)}
+                                      </div>
+                                      <div className="seeker-mag-card-meta">
+                                        {story?.metrics?.tweets ?? story?.stats?.total_tweets ?? 0} •{" "}
+                                        {formatCompactNumber(story?.metrics?.engagement ?? story?.stats?.total_engagement ?? 0)}
+                                      </div>
+                                    </a>
+                                  ))}
+                                </div>
+                              </div>
+                            ) : null}
+
+                          </div>
+                        );
+                      })()}
+                    </section>
+                  </SeekerGuard>
+                );
+              })()}
             </div>
           </div >
         </div >

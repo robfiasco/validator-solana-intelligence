@@ -1,106 +1,112 @@
 "use client";
 
-/**
- * SeekerGuard
- *
- * Vox-style paywall: shows real story content at the top, fades it into
- * a solid bottom panel that prompts the user to connect their Seeker wallet.
- *
- * - Content is fully readable for ~40% of the panel height
- * - A gradient softly blends the content into the solid paywall surface
- * - The paywall card is pinned to the bottom, not floating over blurred content
- * - Checks wallet for Seeker Genesis Token once connected
- */
-
 import React, { useEffect, useState } from "react";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 import { PublicKey } from "@solana/web3.js";
+import { Activity, MessageCircle, TrendingUp, Users } from "lucide-react";
 
 const SEEKER_MINT_ADDRESS = "2DMMamkkxQ6zDMBtkFp8KH7FoWzBMBA1CGTYwom4QH6Z";
 
-/* ─── Locked state: content + Vox-style paywall ─────────────────────── */
-function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisconnect, onBypass }) {
+const fmt = (n) => {
+  const num = Number(n) || 0;
+  if (num >= 1_000_000) return `${(num / 1_000_000).toFixed(1)}M`;
+  if (num >= 1_000) return `${(num / 1_000).toFixed(1)}K`;
+  return String(num);
+};
+
+/* ─── Paywall component ──────────────────────────────────────────────── */
+function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisconnect, onBypass, peekData }) {
   const isNoToken = variant === "no-token";
+  const lead = peekData?.lead;
+  const leadCategory = String(lead?.category || "TODAY'S TOP STORY");
+  const kicker = leadCategory.toUpperCase();
+  const leadIsCritical = /security|risk|breach|exploit|hack/i.test(leadCategory);
+  const leadIsAi = /ai|agent/i.test(leadCategory);
+  const leadIsGaming = /gaming|game/i.test(leadCategory);
+  const peekBody =
+    lead?.content?.signal ||
+    lead?.summary ||
+    lead?.hook ||
+    lead?.narrative ||
+    lead?.title ||
+    "Today's intelligence covers the dominant narratives moving the Solana ecosystem, ranked by on-chain signal and crypto-twitter engagement.";
 
   return (
     <div style={{ position: "relative", overflow: "hidden" }}>
-      {/* ── Readable content zone ─────────────────────── */}
+
+      {/* ── Readable content peek — fades out mid-paragraph ─── */}
       <div
-        id="seeker-content-peek"
         style={{
-          /* Clip so the gradient mask looks clean */
-          WebkitMaskImage:
-            "linear-gradient(to bottom, black 0%, black 52%, transparent 80%)",
-          maskImage:
-            "linear-gradient(to bottom, black 0%, black 52%, transparent 80%)",
+          WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 62%, transparent 85%)",
+          maskImage: "linear-gradient(to bottom, black 0%, black 62%, transparent 85%)",
           pointerEvents: "none",
           userSelect: "none",
         }}
       >
-        {/* Inner scroll area — same height as the real panel so layout matches */}
-        <div style={{ minHeight: "520px", overflow: "hidden" }}>
-          {/* Placeholder story peek that always looks good */}
+        <div style={{ minHeight: "460px", overflow: "hidden" }}>
           <div className="seeker-peek-shell">
-            {/* Stats bar */}
-            <div className="seeker-peek-stats">
-              <span className="seeker-peek-stat">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                <strong>—</strong> Tweets Analyzed
-              </span>
-              <span className="seeker-peek-stat is-green">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-                <strong>—</strong> Engagement
-              </span>
-            </div>
 
-            <div className="seeker-peek-divider" />
-
-            <div className="seeker-peek-kicker">TODAY'S TOP STORY</div>
-            <h2 className="seeker-peek-title">
-              Solana's daily intelligence brief — curated from CT
-            </h2>
-            <p className="seeker-peek-byline">By AI Gossip News Desk</p>
-            <p className="seeker-peek-body">
-              Today's intelligence covers the dominant narratives moving the
-              Solana ecosystem, ranked by on-chain signal and crypto-twitter
-              engagement. Unlock to see which protocols are attracting real
-              flow, which narratives have legs, and where the smart money is
-              actually watching.
-            </p>
-
-            {/* Second card teaser */}
-            <div className="seeker-peek-more-label">ALSO FEATURED</div>
-            <div className="seeker-peek-card">
-              <div className="seeker-peek-card-tag live">LIVE</div>
-              <div className="seeker-peek-card-title">
-                Second story waiting for unlock…
+            {/* Real stats bar — same classes as full content */}
+            <div className="seeker-mag-stats">
+              <div className="seeker-mag-stat">
+                <i><MessageCircle size={16} strokeWidth={1.8} /></i>
+                <strong>{peekData?.tweets || "—"}</strong>
+                <span>Tweets Analyzed</span>
+              </div>
+              <div className="seeker-mag-stat">
+                <i className="is-green"><TrendingUp size={16} strokeWidth={1.8} /></i>
+                <strong className="is-green">{fmt(peekData?.eng)}</strong>
+                <span>Total Engagement</span>
+              </div>
+              <div className="seeker-mag-stat">
+                <i><Users size={16} strokeWidth={1.8} /></i>
+                <strong>{peekData?.voices || "—"}</strong>
+                <span>Unique Voices</span>
+              </div>
+              <div className="seeker-mag-stat">
+                <i className="is-purple"><Activity size={16} strokeWidth={1.8} /></i>
+                <strong className="is-purple">{fmt(peekData?.topTweet)}</strong>
+                <span>Top Tweet</span>
               </div>
             </div>
+
+            <div className="seeker-mag-divider" />
+
+            {/* Real story — kicker + title + byline + body */}
+            <div className="seeker-mag-kicker-row">
+              <span className={`seeker-mag-kicker ${leadIsCritical ? "critical" : leadIsAi ? "ai" : leadIsGaming ? "gaming" : ""}`}>
+                {kicker}
+              </span>
+            </div>
+
+            <h2 className="seeker-mag-title">
+              {lead?.title || "Solana's daily intelligence brief — curated from CT"}
+            </h2>
+
+            <div className="seeker-mag-meta">
+              <span>By AI Gossip News Desk</span>
+            </div>
+
+            <p className="seeker-mag-preview">{peekBody}</p>
+
           </div>
         </div>
       </div>
 
-      {/* ── Paywall panel (solid, pinned to bottom) ───── */}
+      {/* ── Solid paywall panel ────────────────────────────── */}
       <div className="gossip-paywall-panel">
-        {/* The gradient bridge — fades from transparent into the panel bg */}
         <div className="gossip-paywall-gradient" />
-
-        {/* The solid card */}
         <div className="gossip-paywall-card">
-          {/* Top accent rule */}
           <div className="gossip-paywall-rule" />
-
           <p className="gossip-paywall-overline">SEEKER INTELLIGENCE</p>
           <h2 className="gossip-paywall-headline">
-            {isNoToken
-              ? "Seeker Token Not Found"
-              : "Read with a Seeker Token"}
+            {isNoToken ? "Seeker Token Not Found" : "Seeker Mobile Required"}
           </h2>
           <p className="gossip-paywall-body">
             {isNoToken
               ? `Wallet ${publicKey?.toBase58().slice(0, 4)}…${publicKey?.toBase58().slice(-4)} doesn't hold the Genesis token. Get access to daily alpha, CT narratives, and deep positioning intel.`
-              : "Unlock daily alpha, CT narrative analysis, and deep positioning intel reserved for Solana's earliest believers."}
+              : "This intel is exclusive to Solana Seeker Mobile holders. Connect your wallet to verify and unlock today's full stories."}
           </p>
 
           <button className="gossip-paywall-cta" onClick={onConnect}>
@@ -110,22 +116,16 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
           {isNoToken && (
             <div className="gossip-paywall-secondary-row">
               {process.env.NODE_ENV === "development" && (
-                <button className="gossip-paywall-link" onClick={onBypass}>
-                  Dev Bypass
-                </button>
+                <button className="gossip-paywall-link" onClick={onBypass}>Dev Bypass</button>
               )}
-              <button className="gossip-paywall-link" onClick={onDisconnect}>
-                Disconnect
-              </button>
+              <button className="gossip-paywall-link" onClick={onDisconnect}>Disconnect</button>
             </div>
           )}
 
           {!isNoToken && (
             <p className="gossip-paywall-sub">
               ALREADY HOLDING?{" "}
-              <button className="gossip-paywall-link" onClick={onConnect}>
-                CONNECT NOW
-              </button>
+              <button className="gossip-paywall-link" onClick={onConnect}>CONNECT NOW</button>
             </p>
           )}
         </div>
@@ -134,8 +134,8 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
   );
 }
 
-/* ─── Main guard component ───────────────────────────────────────────── */
-export default function SeekerGuard({ children }) {
+/* ─── Main guard ─────────────────────────────────────────────────────── */
+export default function SeekerGuard({ children, peekData = null }) {
   const { connection } = useConnection();
   const { publicKey, connected, disconnect } = useWallet();
   const { setVisible } = useWalletModal();
@@ -144,10 +144,7 @@ export default function SeekerGuard({ children }) {
 
   useEffect(() => {
     const checkOwnership = async () => {
-      if (!publicKey || !connected) {
-        setHasSeeker(false);
-        return;
-      }
+      if (!publicKey || !connected) { setHasSeeker(false); return; }
       setChecking(true);
       try {
         const tokenAccounts = await connection.getParsedTokenAccountsByOwner(publicKey, {
@@ -171,12 +168,7 @@ export default function SeekerGuard({ children }) {
   const handleConnect = () => setVisible(true);
 
   if (!connected) {
-    return (
-      <GossipPaywall
-        variant="not-connected"
-        onConnect={handleConnect}
-      />
-    );
+    return <GossipPaywall variant="not-connected" onConnect={handleConnect} peekData={peekData} />;
   }
 
   if (checking) {
@@ -186,10 +178,8 @@ export default function SeekerGuard({ children }) {
         <div style={{
           position: "absolute", top: "50%", left: "50%",
           transform: "translate(-50%, -50%)", zIndex: 50,
-          background: "rgba(24, 24, 27, 0.95)",
-          border: "1px solid rgba(16, 185, 129, 0.4)",
-          borderRadius: "12px", padding: "16px 24px",
-          backdropFilter: "blur(12px)",
+          background: "rgba(24,24,27,0.95)", border: "1px solid rgba(16,185,129,0.4)",
+          borderRadius: "12px", padding: "16px 24px", backdropFilter: "blur(12px)",
         }}>
           <div style={{ color: "#10b981", fontSize: "14px" }}>Verifying…</div>
         </div>
@@ -205,6 +195,7 @@ export default function SeekerGuard({ children }) {
         publicKey={publicKey}
         onDisconnect={disconnect}
         onBypass={() => setHasSeeker(true)}
+        peekData={peekData}
       />
     );
   }
