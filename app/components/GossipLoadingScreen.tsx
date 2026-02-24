@@ -299,6 +299,7 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
                             height: "auto",
                             transition: "transform 500ms cubic-bezier(0.34, 1.56, 0.64, 1)",
                             animation: catVisible ? "catBob 2.8s ease-in-out 0.6s infinite" : "none",
+                            mixBlendMode: "multiply",
                         }}
                     />
                 </div>
