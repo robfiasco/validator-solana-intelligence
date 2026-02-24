@@ -7,30 +7,30 @@ const SLIDES = [
     {
         img: "/cat-welcome.png",
         overline: "WELCOME TO GOSSIP",
-        headline: "Hey! I'm here to\nshow you around.",
+        headline: "Hey! I'm Gossip Cat.\nI'll show you around.",
         body: "Gossip is the Solana intelligence terminal. Real-time market data, AI briefings, and exclusive deep-dives — all in one place.",
-        quip: "meow. ready for the alpha?",
+        quip: "Gossip Cat, reporting for duty",
     },
     {
         img: "/cat-market.png",
         overline: "PANEL 1 — SIGNAL BOARD",
         headline: "I'm watching\nthe market for you.",
         body: "Live SOL price, 7-day delta, Fear & Greed, BTC dominance, and the week's dominant narratives ranked by CT engagement.",
-        quip: "swipe left to find it",
+        quip: "Gossip Cat sees all",
     },
     {
         img: "/cat-briefing.png",
         overline: "PANEL 2 — DAILY BRIEFING",
         headline: "AI intel, fresh\nevery morning.",
         body: "The pipeline reads thousands of tweets, clusters the narratives, and writes readable intelligence briefs. Daily at 7am UTC.",
-        quip: "i read it before you",
+        quip: "Gossip Cat read it first",
     },
     {
         img: "/cat-seeker.png",
         overline: "PANEL 3 — SEEKER STORIES",
         headline: "Unlock the\nexclusive stuff.",
         body: "Deep-dive analysis for Solana Seeker Genesis holders. Connect your wallet to verify your token and read today's full reports.",
-        quip: "the key is yours!",
+        quip: "Gossip Cat found the key!",
     },
 ];
 
@@ -74,9 +74,9 @@ export default function OnboardingCarousel() {
             onClick={() => dismiss(false)}
             style={{
                 position: "fixed", inset: 0, zIndex: 9999,
-                background: "rgba(5, 7, 14, 0.82)",
-                backdropFilter: "blur(6px)",
-                WebkitBackdropFilter: "blur(6px)",
+                background: "rgba(5, 7, 14, 0.45)",
+                backdropFilter: "blur(14px)",
+                WebkitBackdropFilter: "blur(14px)",
                 display: "flex", alignItems: "center", justifyContent: "center",
                 padding: "16px",
                 opacity: fading ? 1 : 0,
@@ -97,11 +97,11 @@ export default function OnboardingCarousel() {
             >
                 {/* Cat image area */}
                 <div style={{
-                    height: "260px",
-                    background: "rgba(20, 25, 40, 0.6)",
+                    height: "240px",
+                    background: "linear-gradient(to bottom, #f5f2eb, #ede9df)",
                     display: "flex", alignItems: "center", justifyContent: "center",
                     position: "relative",
-                    borderBottom: "1px solid rgba(80, 95, 130, 0.2)",
+                    borderBottom: "1px solid rgba(80, 95, 130, 0.15)",
                 }}>
                     <img
                         key={s.img}
