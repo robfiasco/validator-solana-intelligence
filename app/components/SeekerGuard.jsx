@@ -229,62 +229,12 @@ export default function SeekerGuard({ children, peekData = null }) {
           return;
         }
 
-        // ── Tier 3: Check wallet for Seeker Genesis Token (web/desktop fallback) ──
-        // Each Seeker holder has a UNIQUE Token-2022 NFT mint in their wallet.
-        // We verify group membership: tokenGroupMember.group === SEEKER_GROUP.
-        const rpcUrl = connection.rpcEndpoint;
-
-        const accountsRes = await fetch(rpcUrl, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            jsonrpc: "2.0", id: 1,
-            method: "getTokenAccountsByOwner",
-            params: [
-              publicKey.toBase58(),
-              { programId: TOKEN_2022_PROGRAM },
-              { encoding: "jsonParsed" },
-            ],
-          }),
-        });
-        const accountsData = await accountsRes.json();
-        const accounts = accountsData?.result?.value || [];
-
-        // Filter to NFT-like accounts (amount=1, decimals=0)
-        const nftAccounts = accounts.filter((a) => {
-          const info = a.account?.data?.parsed?.info;
-          return (
-            Number(info?.tokenAmount?.uiAmount) === 1 &&
-            Number(info?.tokenAmount?.decimals) === 0
-          );
-        });
-
-        if (nftAccounts.length === 0) { setHasSeeker(false); return; }
-
-        // Batch-fetch mint accounts and check group membership
-        const mintAddresses = nftAccounts.map((a) => a.account.data.parsed.info.mint);
-        const mintInfoRes = await fetch(rpcUrl, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(
-            mintAddresses.map((mint, i) => ({
-              jsonrpc: "2.0", id: i + 10,
-              method: "getAccountInfo",
-              params: [mint, { encoding: "jsonParsed" }],
-            }))
-          ),
-        });
-        const mintInfos = await mintInfoRes.json();
-        const responses = Array.isArray(mintInfos) ? mintInfos : [mintInfos];
-
-        const found = responses.some((resp) => {
-          const extensions = resp?.result?.value?.data?.parsed?.info?.extensions;
-          if (!Array.isArray(extensions)) return false;
-          const groupExt = extensions.find((e) => e.extension === "tokenGroupMember");
-          return groupExt?.state?.group === SEEKER_GROUP;
-        });
-
-        setHasSeeker(found);
+        // ── Tier 3: Server-side check (reliable, no browser rate limits) ──
+        const res = await fetch(`/api/verify-seeker?wallet=${encodeURIComponent(publicKey.toBase58())}`);
+        if (!res.ok) { setHasSeeker(false); return; }
+        const { hasSeeker: found } = await res.json();
+        console.log("[SeekerGuard] Server verify result:", found);
+        setHasSeeker(!!found);
 
       } catch (err) {
         console.error("Error checking Seeker ownership:", err);

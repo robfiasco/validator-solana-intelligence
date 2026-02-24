@@ -39,31 +39,25 @@ export default function AppWalletProvider({ children }) {
 
     useEffect(() => {
         const setupWallets = async () => {
-            const baseWallets = [
-                new PhantomWalletAdapter(),
-                new SolflareWalletAdapter()
-            ];
+            const mobileWalletAdapter = new SolanaMobileWalletAdapter({
+                addressSelector: createDefaultAddressSelector(),
+                appIdentity: {
+                    name: "Gossip Intelligence",
+                    uri: "https://validator-solana-intelligence.vercel.app",
+                    icon: "https://validator-solana-intelligence.vercel.app/icon.png",
+                },
+                authorizationResultCache: createDefaultAuthorizationResultCache(),
+                cluster: WalletAdapterNetwork.Mainnet,
+                onWalletNotFound: createDefaultWalletNotFoundHandler(),
+            });
 
-            if (Capacitor.isNativePlatform() && Capacitor.getPlatform() === 'android') {
-                // We are natively on Android (Seeker), use the official Mobile Wallet Adapter
-                // This triggers the native Android intents for the Seed Vault natively via our patch
-                setWallets([
-                    new SolanaMobileWalletAdapter({
-                        addressSelector: createDefaultAddressSelector(),
-                        appIdentity: {
-                            name: "Gossip Intelligence",
-                            uri: "https://validator-solana-intelligence.vercel.app",
-                            icon: "https://validator-solana-intelligence.vercel.app/icon.png",
-                        },
-                        authorizationResultCache: createDefaultAuthorizationResultCache(),
-                        cluster: WalletAdapterNetwork.Mainnet,
-                        onWalletNotFound: createDefaultWalletNotFoundHandler(),
-                    })
-                ]);
-            } else {
-                // We are in the web browser preview
-                setWallets(baseWallets);
-            }
+            // Always include all three: MWA (shows on mobile/Seeker browsers),
+            // Phantom, and Solflare (show when extension/app is detected).
+            setWallets([
+                mobileWalletAdapter,
+                new PhantomWalletAdapter(),
+                new SolflareWalletAdapter(),
+            ]);
         };
 
         setupWallets();
