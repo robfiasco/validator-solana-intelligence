@@ -3,8 +3,11 @@
 import React, { useEffect, useState } from "react";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
-import { PublicKey } from "@solana/web3.js";
 import { Activity, MessageCircle, TrendingUp, Users } from "lucide-react";
+
+// Solana Mobile detection (Capacitor runtime, available on-device)
+let Capacitor = null;
+try { Capacitor = require("@capacitor/core").Capacitor; } catch { /* web build */ }
 
 // Seeker Genesis Token — each holder has a UNIQUE mint address.
 // We verify by checking if any of the wallet's Token-2022 NFTs belongs to this group.
@@ -201,7 +204,7 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
 /* ─── Main guard ─────────────────────────────────────────────────────── */
 export default function SeekerGuard({ children, peekData = null }) {
   const { connection } = useConnection();
-  const { publicKey, connected, disconnect } = useWallet();
+  const { publicKey, connected, wallet, disconnect } = useWallet();
   const { setVisible } = useWalletModal();
   const [hasSeeker, setHasSeeker] = useState(false);
   const [checking, setChecking] = useState(false);
@@ -211,9 +214,24 @@ export default function SeekerGuard({ children, peekData = null }) {
       if (!publicKey || !connected) { setHasSeeker(false); return; }
       setChecking(true);
       try {
-        // Each Seeker Genesis holder has their own UNIQUE mint (Token-2022 NFT).
-        // Verify by: get wallet's Token-2022 accounts → filter NFTs (amount=1,decimals=0)
-        // → batch-fetch each mint's on-chain info → check tokenGroupMember.group === SEEKER_GROUP
+        // ── Tier 1: Running as native Capacitor app ON the Seeker device ──
+        if (Capacitor?.isNativePlatform?.() && Capacitor?.getPlatform?.() === "android") {
+          console.log("[SeekerGuard] Native Android detected — granting access");
+          setHasSeeker(true);
+          return;
+        }
+
+        // ── Tier 2: Connected via Solana Mobile Wallet Adapter (MWA) ──
+        const adapterName = wallet?.adapter?.name || "";
+        if (adapterName.toLowerCase().includes("mobile wallet") || adapterName.toLowerCase().includes("mwa")) {
+          console.log("[SeekerGuard] Mobile Wallet Adapter detected — granting access");
+          setHasSeeker(true);
+          return;
+        }
+
+        // ── Tier 3: Check wallet for Seeker Genesis Token (web/desktop fallback) ──
+        // Each Seeker holder has a UNIQUE Token-2022 NFT mint in their wallet.
+        // We verify group membership: tokenGroupMember.group === SEEKER_GROUP.
         const rpcUrl = connection.rpcEndpoint;
 
         const accountsRes = await fetch(rpcUrl, {
@@ -276,7 +294,7 @@ export default function SeekerGuard({ children, peekData = null }) {
       }
     };
     checkOwnership();
-  }, [publicKey, connected, connection]);
+  }, [publicKey, connected, wallet, connection]);
 
   const handleConnect = () => setVisible(true);
 
