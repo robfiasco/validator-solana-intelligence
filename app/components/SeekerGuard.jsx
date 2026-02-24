@@ -6,7 +6,7 @@ import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 import { PublicKey } from "@solana/web3.js";
 import { Activity, MessageCircle, TrendingUp, Users } from "lucide-react";
 
-const SEEKER_MINT_ADDRESS = "2DMMamkkxQ6zDMBtkFp8KH7FoWzBMBA1CGTYwom4QH6Z";
+const SEEKER_MINT_ADDRESS = "7xNEYsjb1GHCGeRqgM32i2d7DjiNb731JuwmAR84d9ma"; // Seeker Genesis Token
 
 const fmt = (n) => {
   const num = Number(n) || 0;
@@ -96,12 +96,10 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
     "Today's intelligence covers the dominant narratives moving the Solana ecosystem, ranked by on-chain signal and crypto-twitter engagement.";
 
   return (
-    <div style={{ position: "relative" }}>
+    <div>
 
       {/* ── SECTION 1: Fully visible content ──────────────────── */}
       <div className="seeker-peek-shell">
-
-        {/* Stats bar */}
         <div className="seeker-mag-stats">
           <div className="seeker-mag-stat">
             <i><MessageCircle size={16} strokeWidth={1.8} /></i>
@@ -127,7 +125,6 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
 
         <div className="seeker-mag-divider" />
 
-        {/* Lead story: kicker + title + byline */}
         <div className="seeker-mag-kicker-row">
           <span className={`seeker-mag-kicker ${leadIsCritical ? "critical" : leadIsAi ? "ai" : leadIsGaming ? "gaming" : ""}`}>
             {kicker}
@@ -136,51 +133,33 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
         <h2 className="seeker-mag-title">
           {lead?.title || "Solana's daily intelligence brief — curated from CT"}
         </h2>
-        <div className="seeker-mag-meta">
-          <span>By AI Gossip News Desk</span>
-        </div>
+        <div className="seeker-mag-meta"><span>By AI Gossip News Desk</span></div>
         <p className="seeker-mag-preview">{peekBody}</p>
       </div>
 
-      {/* ── SECTION 2: Blurred story cards + paywall overlay ───── */}
-      <div style={{ position: "relative" }}>
+      {/* ── SECTION 2: Blurred story cards — ALWAYS VISIBLE ───── */}
+      <div style={{
+        padding: "0 18px 20px",
+        display: "grid",
+        gap: "10px",
+        filter: "blur(4px)",
+        userSelect: "none",
+        pointerEvents: "none",
+        opacity: 0.85,
+      }}>
+        {stories.length > 0
+          ? stories.map((s, i) => <LockedCard key={i} story={s} idx={i} />)
+          : [0, 1, 2].map((i) => <PlaceholderCard key={i} />)
+        }
+      </div>
 
-        {/* Gradient bridge from visible content into blurred zone */}
-        <div style={{
-          height: "36px",
-          background: "linear-gradient(to bottom, transparent, rgba(10,13,20,0.82))",
-          pointerEvents: "none",
-        }} />
-
-        {/* Story cards — rendered but blurred */}
-        <div
-          aria-hidden="true"
-          style={{
-            filter: "blur(5px)",
-            userSelect: "none",
-            pointerEvents: "none",
-            padding: "0 18px 24px",
-            display: "grid",
-            gap: "10px",
-          }}
-        >
-          {stories.length > 0
-            ? stories.map((s, i) => <LockedCard key={i} story={s} idx={i} />)
-            : [0, 1, 2].map((i) => <PlaceholderCard key={i} />)
-          }
-        </div>
-
-        {/* Paywall overlay — sits on top of the blurred cards */}
-        <div style={{
-          position: "absolute",
-          top: 0, left: 0, right: 0, bottom: 0,
-          background: "linear-gradient(to bottom, rgba(10,13,20,0.7) 0%, rgba(10,13,20,0.94) 35%, rgba(10,13,20,0.98) 100%)",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "stretch",
-          justifyContent: "flex-start",
-          padding: "28px 20px 28px",
-        }}>
+      {/* ── SECTION 3: Solid paywall CTA — below the blurred cards */}
+      <div style={{
+        padding: "4px 18px 28px",
+        borderTop: "1px solid rgba(72,84,112,0.28)",
+        background: "var(--surface, #0d1117)",
+      }}>
+        <div style={{ paddingTop: "20px" }}>
           <div className="gossip-paywall-rule" />
           <p className="gossip-paywall-overline">SEEKER INTELLIGENCE</p>
           <h2 className="gossip-paywall-headline">
@@ -191,11 +170,9 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
               ? `Wallet ${publicKey?.toBase58().slice(0, 4)}…${publicKey?.toBase58().slice(-4)} doesn't hold the Genesis token.`
               : "This intel is exclusive to Solana Seeker Mobile holders. Connect your wallet to unlock today's full stories."}
           </p>
-
           <button className="gossip-paywall-cta" onClick={onConnect}>
             {isNoToken ? "Get Seeker Token  ↗" : "Connect Wallet"}
           </button>
-
           {isNoToken && (
             <div className="gossip-paywall-secondary-row">
               {process.env.NODE_ENV === "development" && (
