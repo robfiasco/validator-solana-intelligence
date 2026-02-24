@@ -17,7 +17,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          ref: test # Target the test branch as requested
+          ref: main
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -31,9 +31,11 @@ jobs:
       - name: Run Daily Update Pipeline
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          KV_REST_API_URL: ${{ secrets.KV_REST_API_URL }}
+          KV_REST_API_TOKEN: ${{ secrets.KV_REST_API_TOKEN }}
         run: |
           echo "Starting daily content update..."
-          # Runs market build -> articles fetch -> signal board -> briefing -> AI enhance
+          # Runs market build -> articles fetch -> signal board -> briefing -> AI enhance -> KV sync
           npm run daily:run:fast
 
       - name: Commit and Push Changes
@@ -45,7 +47,7 @@ jobs:
           if [[ -n $(git status --porcelain) ]]; then
             git add data/ public/ market_context.json signal_board.json briefing.json
             git commit -m "chore(data): daily intelligence update [skip ci]"
-            git push origin test
+            git push origin main
             echo "Changes pushed successfully."
           else
             echo "No changes to commit."
