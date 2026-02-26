@@ -1,30 +1,120 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T14:50:24.992Z",
-    "totalCandidates": 97,
-    "solanaCandidates": 31,
-    "selected": 3,
+    "generatedAt": "2026-02-26T07:51:46.331Z",
+    "totalCandidates": 98,
+    "solanaCandidates": 32,
+    "selected": 5,
     "tweetPool": 293,
     "narrativeKeywordsCount": 0
   },
   "items": [
     {
-      "id": "https://decrypt.co/359098/polkadot-solana-lead-altcoin-surge-ahead-of-nvidia-earnings-call",
-      "title": "Polkadot, Solana Lead Altcoin Surge Ahead of Nvidia Earnings Call",
-      "url": "https://decrypt.co/359098/polkadot-solana-lead-altcoin-surge-ahead-of-nvidia-earnings-call",
-      "source": "Decrypt",
-      "publishedAt": "2026-02-25T12:20:36.000Z",
-      "summary": "Crypto markets climb 3% as traders position for Nvidia's earnings, which analysts say now overshadow the SOTU as the key catalyst.",
+      "id": "https://cointelegraph.com/news/solana-leads-crypto-recovery-10-percent-100-dollars-sol-price-next",
+      "title": "Solana leads crypto recovery with 10% gain: Is $100 SOL price next?",
+      "url": "https://cointelegraph.com/news/solana-leads-crypto-recovery-10-percent-100-dollars-sol-price-next",
+      "source": "Cointelegraph",
+      "publishedAt": "2026-02-25T16:08:24.000Z",
+      "summary": "Solana price eyes a potential rise toward the $110-$115 range, according to a confluence of bullish technical and onchain indicators.",
       "tags": [
-        "polkadot",
         "solana",
-        "lead"
+        "leads",
+        "crypto"
       ],
       "topicBucket": "general",
       "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 2,
-      "xMentions": 2,
+      "mentionCount": 3,
+      "xMentions": 3,
       "who": [
+        {
+          "handle": "@ivan_nomadz",
+          "summary": "Long story short on how I fully immersed in the @solana ecosystem ~ 2020: My Solana journey started when I participat...",
+          "tweetUrl": "https://twitter.com/ivan_nomadz/status/1861468515024122079",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@triton_one",
+          "summary": "We know writing a Solana TPU client from scratch is really hard. Handling Agave releases, QUIC quirks, and leader sch...",
+          "tweetUrl": "https://twitter.com/triton_one/status/2001896431104463073",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@matty_solana",
+          "summary": "New Chapter for WIDI begins now. Rebranding ahead & sunsetting $WIDI TL;DR $WIDI will no longer be the core token acr...",
+          "tweetUrl": "https://twitter.com/matty_solana/status/2020903942092206499",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "xWho": [
+        {
+          "handle": "@ivan_nomadz",
+          "summary": "Long story short on how I fully immersed in the @solana ecosystem ~ 2020: My Solana journey started when I participat...",
+          "tweetUrl": "https://twitter.com/ivan_nomadz/status/1861468515024122079",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@triton_one",
+          "summary": "We know writing a Solana TPU client from scratch is really hard. Handling Agave releases, QUIC quirks, and leader sch...",
+          "tweetUrl": "https://twitter.com/triton_one/status/2001896431104463073",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@matty_solana",
+          "summary": "New Chapter for WIDI begins now. Rebranding ahead & sunsetting $WIDI TL;DR $WIDI will no longer be the core token acr...",
+          "tweetUrl": "https://twitter.com/matty_solana/status/2020903942092206499",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "mentionedBy": [
+        {
+          "handle": "@ivan_nomadz",
+          "linkToTweet": "https://twitter.com/ivan_nomadz/status/1861468515024122079"
+        },
+        {
+          "handle": "@triton_one",
+          "linkToTweet": "https://twitter.com/triton_one/status/2001896431104463073"
+        },
+        {
+          "handle": "@matty_solana",
+          "linkToTweet": "https://twitter.com/matty_solana/status/2020903942092206499"
+        }
+      ],
+      "matchReason": "keyword_match",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 13,
+        "mentionScore": 46,
+        "recencyScore": 9,
+        "sourceScore": 0,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "671745c860052a293f696d6a245508ee7dea2bab",
+      "score": 68
+    },
+    {
+      "id": "https://solana.com/news/payments-on-solana-production-ready-ecosystem-webinar",
+      "title": "Webinar Recap: Payments on Solana - A Production-Ready Ecosystem",
+      "url": "https://solana.com/news/payments-on-solana-production-ready-ecosystem-webinar",
+      "source": "Solana News",
+      "publishedAt": "2026-02-26T00:00:00.000Z",
+      "summary": "Recap of the \"Payments on Solana\" webinar featuring Sheraz Shere and Ilan Gitter, covering why Visa, PayPal, and Worldpay are building on Solana across treasury management, remittances, neobanking, payouts, and merchant settlement.",
+      "tags": [
+        "webinar",
+        "recap",
+        "payments"
+      ],
+      "topicBucket": "general",
+      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
+      "mentionCount": 3,
+      "xMentions": 3,
+      "who": [
+        {
+          "handle": "@ivan_nomadz",
+          "summary": "Long story short on how I fully immersed in the @solana ecosystem ~ 2020: My Solana journey started when I participat...",
+          "tweetUrl": "https://twitter.com/ivan_nomadz/status/1861468515024122079",
+          "matchReason": "keyword_match"
+        },
         {
           "handle": "@matty_solana",
           "summary": "New Chapter for WIDI begins now. Rebranding ahead & sunsetting $WIDI TL;DR $WIDI will no longer be the core token acr...",
@@ -33,8 +123,80 @@
         },
         {
           "handle": "@solana_daily",
-          "summary": "⚡️Solana continues to lead all L1 & L2 chains in 7-day DApp revenue Top 10 Chains by App Revenue in the Last 7 Days :...",
-          "tweetUrl": "https://twitter.com/solana_daily/status/2026297820085690731",
+          "summary": "🚨 @dflow launches DFlow MCP, a universal trading tool for AI agents on Solana. The new MCP enables OpenClaw, Claude,...",
+          "tweetUrl": "https://twitter.com/solana_daily/status/2025510889752023472",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "xWho": [
+        {
+          "handle": "@ivan_nomadz",
+          "summary": "Long story short on how I fully immersed in the @solana ecosystem ~ 2020: My Solana journey started when I participat...",
+          "tweetUrl": "https://twitter.com/ivan_nomadz/status/1861468515024122079",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@matty_solana",
+          "summary": "New Chapter for WIDI begins now. Rebranding ahead & sunsetting $WIDI TL;DR $WIDI will no longer be the core token acr...",
+          "tweetUrl": "https://twitter.com/matty_solana/status/2020903942092206499",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@solana_daily",
+          "summary": "🚨 @dflow launches DFlow MCP, a universal trading tool for AI agents on Solana. The new MCP enables OpenClaw, Claude,...",
+          "tweetUrl": "https://twitter.com/solana_daily/status/2025510889752023472",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "mentionedBy": [
+        {
+          "handle": "@ivan_nomadz",
+          "linkToTweet": "https://twitter.com/ivan_nomadz/status/1861468515024122079"
+        },
+        {
+          "handle": "@matty_solana",
+          "linkToTweet": "https://twitter.com/matty_solana/status/2020903942092206499"
+        },
+        {
+          "handle": "@solana_daily",
+          "linkToTweet": "https://twitter.com/solana_daily/status/2025510889752023472"
+        }
+      ],
+      "matchReason": "keyword_match",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 14,
+        "mentionScore": 34,
+        "recencyScore": 10,
+        "sourceScore": 5,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "851173755cceb1a01326a5e6ae6eae8cd5542c09",
+      "score": 63
+    },
+    {
+      "id": "https://ambcrypto.com/liquidity-floods-solana-as-sol-reclaims-ema-ribbon-to-hit-85-details",
+      "title": "Liquidity floods Solana as SOL reclaims EMA Ribbon to hit $85 – Details",
+      "url": "https://ambcrypto.com/liquidity-floods-solana-as-sol-reclaims-ema-ribbon-to-hit-85-details",
+      "source": "AMB Crypto",
+      "publishedAt": "2026-02-26T07:00:27.000Z",
+      "summary": "SOL's last 24 hours have been very important.",
+      "tags": [
+        "liquidity",
+        "floods",
+        "solana"
+      ],
+      "topicBucket": "defi",
+      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
+      "mentionCount": 1,
+      "xMentions": 1,
+      "who": [
+        {
+          "handle": "@matty_solana",
+          "summary": "New Chapter for WIDI begins now. Rebranding ahead & sunsetting $WIDI TL;DR $WIDI will no longer be the core token acr...",
+          "tweetUrl": "https://twitter.com/matty_solana/status/2020903942092206499",
           "matchReason": "keyword_match"
         }
       ],
@@ -43,12 +205,6 @@
           "handle": "@matty_solana",
           "summary": "New Chapter for WIDI begins now. Rebranding ahead & sunsetting $WIDI TL;DR $WIDI will no longer be the core token acr...",
           "tweetUrl": "https://twitter.com/matty_solana/status/2020903942092206499",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@solana_daily",
-          "summary": "⚡️Solana continues to lead all L1 & L2 chains in 7-day DApp revenue Top 10 Chains by App Revenue in the Last 7 Days :...",
-          "tweetUrl": "https://twitter.com/solana_daily/status/2026297820085690731",
           "matchReason": "keyword_match"
         }
       ],
@@ -56,129 +212,157 @@
         {
           "handle": "@matty_solana",
           "linkToTweet": "https://twitter.com/matty_solana/status/2020903942092206499"
-        },
-        {
-          "handle": "@solana_daily",
-          "linkToTweet": "https://twitter.com/solana_daily/status/2026297820085690731"
         }
       ],
       "matchReason": "keyword_match",
       "narrativesMatched": [],
       "premiumNarrativesMatched": [],
       "scoreBreakdown": {
-        "relevanceScore": 5,
-        "mentionScore": 20,
-        "recencyScore": 10,
-        "sourceScore": 3,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "0c5b9006d70f4dc4127faf02a5e9b3f94e4ee1dd",
-      "score": 38
-    },
-    {
-      "id": "https://cointelegraph.com/news/polymarket-bets-zachxbt-insider-trading",
-      "title": "Polymarket users favor Meteora in bets over ZachXBT crypto takedown",
-      "url": "https://cointelegraph.com/news/polymarket-bets-zachxbt-insider-trading",
-      "source": "Cointelegraph",
-      "publishedAt": "2026-02-24T20:14:17.000Z",
-      "summary": "Users placed more than $7 million betting on the outcome of the crypto sleuth's investigation, expected to be announced on Thursday.",
-      "tags": [
-        "polymarket",
-        "users",
-        "favor"
-      ],
-      "topicBucket": "general",
-      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 1,
-      "xMentions": 1,
-      "who": [
-        {
-          "handle": "@fabianosolana",
-          "summary": "It WON'T be Meteora… I’m doubling down on Meteora NO with a 3x leveraged position (on @wormdotwtf) Worm is mirroring ...",
-          "tweetUrl": "https://twitter.com/fabianosolana/status/2026359872250347555",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "xWho": [
-        {
-          "handle": "@fabianosolana",
-          "summary": "It WON'T be Meteora… I’m doubling down on Meteora NO with a 3x leveraged position (on @wormdotwtf) Worm is mirroring ...",
-          "tweetUrl": "https://twitter.com/fabianosolana/status/2026359872250347555",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "mentionedBy": [
-        {
-          "handle": "@fabianosolana",
-          "linkToTweet": "https://twitter.com/fabianosolana/status/2026359872250347555"
-        }
-      ],
-      "matchReason": "keyword_match",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 5,
+        "relevanceScore": 18,
         "mentionScore": 10,
-        "recencyScore": 9,
-        "sourceScore": 0,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "c4f6859a13ac2442bc83f48eb07638088d18b550",
-      "score": 24
-    },
-    {
-      "id": "https://ambcrypto.com/market-knows-something-meteoras-odds-climb-to-28-on-polymarket",
-      "title": "‘Market knows something’: Meteora’s odds climb to 28% on Polymarket",
-      "url": "https://ambcrypto.com/market-knows-something-meteoras-odds-climb-to-28-on-polymarket",
-      "source": "AMB Crypto",
-      "publishedAt": "2026-02-25T14:00:11.000Z",
-      "summary": "How did suspicion turn into a multi-million-dollar market overnight?",
-      "tags": [
-        "market",
-        "knows",
-        "something"
-      ],
-      "topicBucket": "general",
-      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 1,
-      "xMentions": 1,
-      "who": [
-        {
-          "handle": "@fabianosolana",
-          "summary": "I will STOP USING Meteora if they’re actually getting exposed by Zach But honestly I can’t imagine it People remember...",
-          "tweetUrl": "https://twitter.com/fabianosolana/status/2026224586279530862",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "xWho": [
-        {
-          "handle": "@fabianosolana",
-          "summary": "I will STOP USING Meteora if they’re actually getting exposed by Zach But honestly I can’t imagine it People remember...",
-          "tweetUrl": "https://twitter.com/fabianosolana/status/2026224586279530862",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "mentionedBy": [
-        {
-          "handle": "@fabianosolana",
-          "linkToTweet": "https://twitter.com/fabianosolana/status/2026224586279530862"
-        }
-      ],
-      "matchReason": "keyword_match",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": -1,
-        "mentionScore": 12,
         "recencyScore": 10,
         "sourceScore": 1,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "bfd8d1f7484fe5e3f7108f720edf66571402f998",
-      "score": 22
+      "dedupeFingerprint": "f3c3299190170933c288329505d2bacbc7e066fb",
+      "score": 39
+    },
+    {
+      "id": "https://decrypt.co/359188/occ-framework-regulated-stablecoins-genius-act",
+      "title": "OCC Lays Out Framework for Regulated Stablecoins Under GENIUS Act",
+      "url": "https://decrypt.co/359188/occ-framework-regulated-stablecoins-genius-act",
+      "source": "Decrypt",
+      "publishedAt": "2026-02-26T05:37:12.000Z",
+      "summary": "The proposal details how banks, nonbanks and foreign issuers could operate stablecoins under U.S. banking supervision.",
+      "tags": [
+        "lays",
+        "framework",
+        "regulated"
+      ],
+      "topicBucket": "defi",
+      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
+      "mentionCount": 1,
+      "xMentions": 1,
+      "who": [
+        {
+          "handle": "@armaniferrante",
+          "summary": "Every regulated broker dealer in the world will move to stablecoins.",
+          "tweetUrl": "https://twitter.com/armaniferrante/status/2025022471888666692",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "xWho": [
+        {
+          "handle": "@armaniferrante",
+          "summary": "Every regulated broker dealer in the world will move to stablecoins.",
+          "tweetUrl": "https://twitter.com/armaniferrante/status/2025022471888666692",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "mentionedBy": [
+        {
+          "handle": "@armaniferrante",
+          "linkToTweet": "https://twitter.com/armaniferrante/status/2025022471888666692"
+        }
+      ],
+      "matchReason": "keyword_match",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 11,
+        "mentionScore": 10,
+        "recencyScore": 10,
+        "sourceScore": 3,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "c7207dc7467a13dd5a1480041771b60ff3c2ff27",
+      "score": 34
+    },
+    {
+      "id": "https://decrypt.co/359129/bitcoin-ethereum-solana-shorts-get-rekt-btc-price-rebounds-69k",
+      "title": "Bitcoin, Ethereum and Solana Shorts Get Rekt as BTC Price Rebounds Near $69K",
+      "url": "https://decrypt.co/359129/bitcoin-ethereum-solana-shorts-get-rekt-btc-price-rebounds-69k",
+      "source": "Decrypt",
+      "publishedAt": "2026-02-25T18:14:17.000Z",
+      "summary": "More than $400 million worth of short positions have been liquidated in the last day as Bitcoin nears $69K and Ethereum and Solana surge.",
+      "tags": [
+        "bitcoin",
+        "ethereum",
+        "solana"
+      ],
+      "topicBucket": "general",
+      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
+      "mentionCount": 3,
+      "xMentions": 3,
+      "who": [
+        {
+          "handle": "@solanasensei",
+          "summary": "More capital keeps flowing into solana with over $5M bridged in this past week. More of ethereum was channeled, funne...",
+          "tweetUrl": "https://twitter.com/solanasensei/status/2026228368602259919",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@solana_daily",
+          "summary": "⚡️Solana continues to lead all L1 & L2 chains in 7-day DApp revenue Top 10 Chains by App Revenue in the Last 7 Days :...",
+          "tweetUrl": "https://twitter.com/solana_daily/status/2026297820085690731",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@aaalexhl",
+          "summary": "I pivoted to AI as soon as Jason posted this Missed the entire Bitcoin, Solana, Hyperliquid bullrun, and spent $200k ...",
+          "tweetUrl": "https://twitter.com/aaalexhl/status/2026620244928688318",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "xWho": [
+        {
+          "handle": "@solanasensei",
+          "summary": "More capital keeps flowing into solana with over $5M bridged in this past week. More of ethereum was channeled, funne...",
+          "tweetUrl": "https://twitter.com/solanasensei/status/2026228368602259919",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@solana_daily",
+          "summary": "⚡️Solana continues to lead all L1 & L2 chains in 7-day DApp revenue Top 10 Chains by App Revenue in the Last 7 Days :...",
+          "tweetUrl": "https://twitter.com/solana_daily/status/2026297820085690731",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@aaalexhl",
+          "summary": "I pivoted to AI as soon as Jason posted this Missed the entire Bitcoin, Solana, Hyperliquid bullrun, and spent $200k ...",
+          "tweetUrl": "https://twitter.com/aaalexhl/status/2026620244928688318",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "mentionedBy": [
+        {
+          "handle": "@solanasensei",
+          "linkToTweet": "https://twitter.com/solanasensei/status/2026228368602259919"
+        },
+        {
+          "handle": "@solana_daily",
+          "linkToTweet": "https://twitter.com/solana_daily/status/2026297820085690731"
+        },
+        {
+          "handle": "@aaalexhl",
+          "linkToTweet": "https://twitter.com/aaalexhl/status/2026620244928688318"
+        }
+      ],
+      "matchReason": "keyword_match",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 8,
+        "mentionScore": 34,
+        "recencyScore": 9,
+        "sourceScore": 3,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "07b4ae712d8521a3a8cc40c48f083b5fc9a1f576",
+      "score": 54
     }
   ]
 }

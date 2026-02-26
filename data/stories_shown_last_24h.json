@@ -1,5 +1,68 @@
 [
   {
+    "id": "deb8ebaed876eec085671b8fe57edca60c928bf9",
+    "title": "State of Marinade Q4 2025: Institutions Select Marinade",
+    "url": "https://messari.io/article/state-of-marinade-q4-2025-institutions-select-marinade",
+    "source": "Messari",
+    "firstSeenAt": "2026-02-26T07:51:46.514Z",
+    "lastSeenAt": "2026-02-26T07:51:46.514Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "state",
+      "marinade",
+      "2025",
+      "institutions",
+      "select",
+      "staked",
+      "million",
+      "across"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "851173755cceb1a01326a5e6ae6eae8cd5542c09",
+    "title": "Webinar Recap: Payments on Solana - A Production-Ready Ecosystem",
+    "url": "https://solana.com/news/payments-on-solana-production-ready-ecosystem-webinar",
+    "source": "Solana News",
+    "firstSeenAt": "2026-02-26T07:51:46.513Z",
+    "lastSeenAt": "2026-02-26T07:51:46.513Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "webinar",
+      "recap",
+      "payments",
+      "solana",
+      "production",
+      "ready",
+      "ecosystem",
+      "featuring"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "671745c860052a293f696d6a245508ee7dea2bab",
+    "title": "Solana leads crypto recovery with 10% gain: Is $100 SOL price next?",
+    "url": "https://cointelegraph.com/news/solana-leads-crypto-recovery-10-percent-100-dollars-sol-price-next",
+    "source": "Cointelegraph",
+    "firstSeenAt": "2026-02-26T07:51:46.513Z",
+    "lastSeenAt": "2026-02-26T07:51:46.513Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "solana",
+      "leads",
+      "crypto",
+      "recovery",
+      "with",
+      "gain",
+      "price",
+      "next"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "0c5b9006d70f4dc4127faf02a5e9b3f94e4ee1dd",
     "title": "Polkadot, Solana Lead Altcoin Surge Ahead of Nvidia Earnings Call",
     "url": "https://decrypt.co/359098/polkadot-solana-lead-altcoin-surge-ahead-of-nvidia-earnings-call",
@@ -58,69 +121,6 @@
       "climb",
       "polymarket",
       "suspicion"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "8ad475068eceabcf01ba337ad3a8443c2d77f787",
-    "title": "ETH, SOL, XRP extend losses as AI scare trade unsettles risk markets",
-    "url": "https://www.coindesk.com/markets/2026/02/24/eth-sol-xrp-extend-losses-as-ai-scare-trade-unsettles-risk-markets",
-    "source": "CoinDesk",
-    "firstSeenAt": "2026-02-24T14:50:31.479Z",
-    "lastSeenAt": "2026-02-24T15:09:35.069Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "extend",
-      "losses",
-      "scare",
-      "trade",
-      "unsettles",
-      "risk",
-      "markets",
-      "analysts"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "2ba0fc8b23148984a82db870d47a95a109e41c3b",
-    "title": "Solana DeFi Project Step Finance to Wind Down Weeks After $29M Hack",
-    "url": "https://decrypt.co/358970/solana-defi-project-step-finance-to-wind-down-weeks-after-29m-hack",
-    "source": "Decrypt",
-    "firstSeenAt": "2026-02-24T14:41:57.501Z",
-    "lastSeenAt": "2026-02-24T15:09:35.069Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "solana",
-      "defi",
-      "project",
-      "step",
-      "finance",
-      "wind",
-      "down",
-      "weeks"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "e112d111c212b1d3884cf29019fe005b9d45b346",
-    "title": "Polymarket bettors put $3 million on which crypto firm ZachXBT will expose next",
-    "url": "https://www.coindesk.com/markets/2026/02/24/polymarket-bettors-put-usd3-million-on-which-crypto-firm-zachxbt-will-expose-next",
-    "source": "CoinDesk",
-    "firstSeenAt": "2026-02-24T14:41:57.501Z",
-    "lastSeenAt": "2026-02-24T15:09:35.069Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "polymarket",
-      "bettors",
-      "million",
-      "which",
-      "crypto",
-      "firm",
-      "zachxbt",
-      "will"
     ],
     "majorUpdate": false,
     "updateReason": null
