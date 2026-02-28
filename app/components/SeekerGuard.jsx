@@ -145,12 +145,6 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
               <button className="gossip-paywall-link" onClick={onDisconnect}>Disconnect</button>
             </div>
           )}
-          {!isNoToken && (
-            <p className="gossip-paywall-sub" style={{ marginTop: "16px" }}>
-              ALREADY HOLDING?{" "}
-              <button className="gossip-paywall-link" onClick={onConnect}>CONNECT NOW</button>
-            </p>
-          )}
         </div>
 
         {/* Blurred Stories Section */}
