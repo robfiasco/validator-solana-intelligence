@@ -165,8 +165,8 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
           }} />
 
           {stories.length > 0
-            ? stories.slice(0, 2).map((s, i) => <LockedCard key={i} story={s} idx={i} />)
-            : [0, 1].map((i) => <PlaceholderCard key={i} />)
+            ? stories.slice(0, 3).map((s, i) => <LockedCard key={i} story={s} idx={i} />)
+            : [0, 1, 2].map((i) => <PlaceholderCard key={i} />)
           }
         </div>
       </div>
