@@ -40,9 +40,11 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
 
     useEffect(() => {
         if (introSequenceComplete && isAppReady) {
-            setExiting(true);
-            const timer = setTimeout(() => onFinished?.(), 800);
-            return () => clearTimeout(timer);
+            const delayTimer = setTimeout(() => {
+                setExiting(true);
+                setTimeout(() => onFinished?.(), 800);
+            }, 3000);
+            return () => clearTimeout(delayTimer);
         }
     }, [introSequenceComplete, isAppReady, onFinished]);
 
