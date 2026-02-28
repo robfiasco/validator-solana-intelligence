@@ -1,166 +1,162 @@
 {
   "meta": {
-    "generatedAt": "2026-02-25T14:50:24.992Z",
-    "totalCandidates": 97,
-    "solanaCandidates": 31,
-    "selected": 3,
+    "generatedAt": "2026-02-28T07:25:46.872Z",
+    "totalCandidates": 102,
+    "solanaCandidates": 25,
+    "selected": 5,
     "tweetPool": 293,
     "narrativeKeywordsCount": 0
   },
   "items": [
     {
-      "id": "https://decrypt.co/359098/polkadot-solana-lead-altcoin-surge-ahead-of-nvidia-earnings-call",
-      "title": "Polkadot, Solana Lead Altcoin Surge Ahead of Nvidia Earnings Call",
-      "url": "https://decrypt.co/359098/polkadot-solana-lead-altcoin-surge-ahead-of-nvidia-earnings-call",
-      "source": "Decrypt",
-      "publishedAt": "2026-02-25T12:20:36.000Z",
-      "summary": "Crypto markets climb 3% as traders position for Nvidia's earnings, which analysts say now overshadow the SOTU as the key catalyst.",
+      "id": "https://www.coindesk.com/coindesk-indices/2026/02/27/coindesk-20-performance-update-solana-sol-falls-4-2-leading-index-lower",
+      "title": "CoinDesk 20 performance update: Solana (SOL) falls 4.2%, leading index lower",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/02/27/coindesk-20-performance-update-solana-sol-falls-4-2-leading-index-lower",
+      "source": "CoinDesk",
+      "publishedAt": "2026-02-27T14:17:41.000Z",
+      "summary": "Ethereum (ETH), down 3.7% from Thursday, joined Solana (SOL) as an underperformer.",
       "tags": [
-        "polkadot",
-        "solana",
-        "lead"
+        "coindesk",
+        "performance",
+        "update"
       ],
-      "topicBucket": "general",
+      "topicBucket": "defi",
       "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 2,
-      "xMentions": 2,
+      "mentionCount": 3,
+      "xMentions": 3,
       "who": [
         {
-          "handle": "@matty_solana",
-          "summary": "New Chapter for WIDI begins now. Rebranding ahead & sunsetting $WIDI TL;DR $WIDI will no longer be the core token acr...",
-          "tweetUrl": "https://twitter.com/matty_solana/status/2020903942092206499",
+          "handle": "@ivan_nomadz",
+          "summary": "Long story short on how I fully immersed in the @solana ecosystem ~ 2020: My Solana journey started when I participat...",
+          "tweetUrl": "https://twitter.com/ivan_nomadz/status/1861468515024122079",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@fabianosolana",
+          "summary": "Solana is leading privacy These are the BEST tools to send, swap &amp; bridge privately on Solana https://t.co/CaaWSv...",
+          "tweetUrl": "https://twitter.com/fabianosolana/status/2025226314769199288",
           "matchReason": "keyword_match"
         },
         {
           "handle": "@solana_daily",
-          "summary": "⚡️Solana continues to lead all L1 & L2 chains in 7-day DApp revenue Top 10 Chains by App Revenue in the Last 7 Days :...",
-          "tweetUrl": "https://twitter.com/solana_daily/status/2026297820085690731",
+          "summary": "Solana Weekly Performance: Top 7D Gainers & Losers 🟢 Gainers: 🔸@getFoundry : 148.90% 🔸@official_9bit : 61.80% 🔸@U...",
+          "tweetUrl": "https://twitter.com/solana_daily/status/2025956315177103428",
           "matchReason": "keyword_match"
         }
       ],
       "xWho": [
         {
+          "handle": "@ivan_nomadz",
+          "summary": "Long story short on how I fully immersed in the @solana ecosystem ~ 2020: My Solana journey started when I participat...",
+          "tweetUrl": "https://twitter.com/ivan_nomadz/status/1861468515024122079",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@fabianosolana",
+          "summary": "Solana is leading privacy These are the BEST tools to send, swap &amp; bridge privately on Solana https://t.co/CaaWSv...",
+          "tweetUrl": "https://twitter.com/fabianosolana/status/2025226314769199288",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@solana_daily",
+          "summary": "Solana Weekly Performance: Top 7D Gainers & Losers 🟢 Gainers: 🔸@getFoundry : 148.90% 🔸@official_9bit : 61.80% 🔸@U...",
+          "tweetUrl": "https://twitter.com/solana_daily/status/2025956315177103428",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "mentionedBy": [
+        {
+          "handle": "@ivan_nomadz",
+          "linkToTweet": "https://twitter.com/ivan_nomadz/status/1861468515024122079"
+        },
+        {
+          "handle": "@fabianosolana",
+          "linkToTweet": "https://twitter.com/fabianosolana/status/2025226314769199288"
+        },
+        {
+          "handle": "@solana_daily",
+          "linkToTweet": "https://twitter.com/solana_daily/status/2025956315177103428"
+        }
+      ],
+      "matchReason": "keyword_match",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 16,
+        "mentionScore": 34,
+        "recencyScore": 9,
+        "sourceScore": 4,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "02056afb15b242198aa2aa79dc107a66f57c3224",
+      "score": 63
+    },
+    {
+      "id": "https://ambcrypto.com/trumps-3-18-vs-3-60-liquidity-battle-whats-next-for-price",
+      "title": "TRUMP’s $3.18 vs $3.60 liquidity battle: What’s next for price?",
+      "url": "https://ambcrypto.com/trumps-3-18-vs-3-60-liquidity-battle-whats-next-for-price",
+      "source": "AMB Crypto",
+      "publishedAt": "2026-02-27T23:00:52.000Z",
+      "summary": "TRUMP compresses near key support as whale deposit reshapes market expectations.",
+      "tags": [
+        "trump",
+        "liquidity",
+        "battle"
+      ],
+      "topicBucket": "defi",
+      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
+      "mentionCount": 3,
+      "xMentions": 3,
+      "who": [
+        {
+          "handle": "@ivan_nomadz",
+          "summary": "Long story short on how I fully immersed in the @solana ecosystem ~ 2020: My Solana journey started when I participat...",
+          "tweetUrl": "https://twitter.com/ivan_nomadz/status/1861468515024122079",
+          "matchReason": "keyword_match"
+        },
+        {
           "handle": "@matty_solana",
           "summary": "New Chapter for WIDI begins now. Rebranding ahead & sunsetting $WIDI TL;DR $WIDI will no longer be the core token acr...",
           "tweetUrl": "https://twitter.com/matty_solana/status/2020903942092206499",
           "matchReason": "keyword_match"
         },
         {
-          "handle": "@solana_daily",
-          "summary": "⚡️Solana continues to lead all L1 & L2 chains in 7-day DApp revenue Top 10 Chains by App Revenue in the Last 7 Days :...",
-          "tweetUrl": "https://twitter.com/solana_daily/status/2026297820085690731",
+          "handle": "@fabianosolana",
+          "summary": "I will STOP USING Meteora if they’re actually getting exposed by Zach But honestly I can’t imagine it People remember...",
+          "tweetUrl": "https://twitter.com/fabianosolana/status/2026224586279530862",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "xWho": [
+        {
+          "handle": "@ivan_nomadz",
+          "summary": "Long story short on how I fully immersed in the @solana ecosystem ~ 2020: My Solana journey started when I participat...",
+          "tweetUrl": "https://twitter.com/ivan_nomadz/status/1861468515024122079",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@matty_solana",
+          "summary": "New Chapter for WIDI begins now. Rebranding ahead & sunsetting $WIDI TL;DR $WIDI will no longer be the core token acr...",
+          "tweetUrl": "https://twitter.com/matty_solana/status/2020903942092206499",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@fabianosolana",
+          "summary": "I will STOP USING Meteora if they’re actually getting exposed by Zach But honestly I can’t imagine it People remember...",
+          "tweetUrl": "https://twitter.com/fabianosolana/status/2026224586279530862",
           "matchReason": "keyword_match"
         }
       ],
       "mentionedBy": [
+        {
+          "handle": "@ivan_nomadz",
+          "linkToTweet": "https://twitter.com/ivan_nomadz/status/1861468515024122079"
+        },
         {
           "handle": "@matty_solana",
           "linkToTweet": "https://twitter.com/matty_solana/status/2020903942092206499"
         },
-        {
-          "handle": "@solana_daily",
-          "linkToTweet": "https://twitter.com/solana_daily/status/2026297820085690731"
-        }
-      ],
-      "matchReason": "keyword_match",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 5,
-        "mentionScore": 20,
-        "recencyScore": 10,
-        "sourceScore": 3,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "0c5b9006d70f4dc4127faf02a5e9b3f94e4ee1dd",
-      "score": 38
-    },
-    {
-      "id": "https://cointelegraph.com/news/polymarket-bets-zachxbt-insider-trading",
-      "title": "Polymarket users favor Meteora in bets over ZachXBT crypto takedown",
-      "url": "https://cointelegraph.com/news/polymarket-bets-zachxbt-insider-trading",
-      "source": "Cointelegraph",
-      "publishedAt": "2026-02-24T20:14:17.000Z",
-      "summary": "Users placed more than $7 million betting on the outcome of the crypto sleuth's investigation, expected to be announced on Thursday.",
-      "tags": [
-        "polymarket",
-        "users",
-        "favor"
-      ],
-      "topicBucket": "general",
-      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 1,
-      "xMentions": 1,
-      "who": [
-        {
-          "handle": "@fabianosolana",
-          "summary": "It WON'T be Meteora… I’m doubling down on Meteora NO with a 3x leveraged position (on @wormdotwtf) Worm is mirroring ...",
-          "tweetUrl": "https://twitter.com/fabianosolana/status/2026359872250347555",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "xWho": [
-        {
-          "handle": "@fabianosolana",
-          "summary": "It WON'T be Meteora… I’m doubling down on Meteora NO with a 3x leveraged position (on @wormdotwtf) Worm is mirroring ...",
-          "tweetUrl": "https://twitter.com/fabianosolana/status/2026359872250347555",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "mentionedBy": [
-        {
-          "handle": "@fabianosolana",
-          "linkToTweet": "https://twitter.com/fabianosolana/status/2026359872250347555"
-        }
-      ],
-      "matchReason": "keyword_match",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 5,
-        "mentionScore": 10,
-        "recencyScore": 9,
-        "sourceScore": 0,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "c4f6859a13ac2442bc83f48eb07638088d18b550",
-      "score": 24
-    },
-    {
-      "id": "https://ambcrypto.com/market-knows-something-meteoras-odds-climb-to-28-on-polymarket",
-      "title": "‘Market knows something’: Meteora’s odds climb to 28% on Polymarket",
-      "url": "https://ambcrypto.com/market-knows-something-meteoras-odds-climb-to-28-on-polymarket",
-      "source": "AMB Crypto",
-      "publishedAt": "2026-02-25T14:00:11.000Z",
-      "summary": "How did suspicion turn into a multi-million-dollar market overnight?",
-      "tags": [
-        "market",
-        "knows",
-        "something"
-      ],
-      "topicBucket": "general",
-      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 1,
-      "xMentions": 1,
-      "who": [
-        {
-          "handle": "@fabianosolana",
-          "summary": "I will STOP USING Meteora if they’re actually getting exposed by Zach But honestly I can’t imagine it People remember...",
-          "tweetUrl": "https://twitter.com/fabianosolana/status/2026224586279530862",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "xWho": [
-        {
-          "handle": "@fabianosolana",
-          "summary": "I will STOP USING Meteora if they’re actually getting exposed by Zach But honestly I can’t imagine it People remember...",
-          "tweetUrl": "https://twitter.com/fabianosolana/status/2026224586279530862",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "mentionedBy": [
         {
           "handle": "@fabianosolana",
           "linkToTweet": "https://twitter.com/fabianosolana/status/2026224586279530862"
@@ -170,15 +166,187 @@
       "narrativesMatched": [],
       "premiumNarrativesMatched": [],
       "scoreBreakdown": {
-        "relevanceScore": -1,
-        "mentionScore": 12,
+        "relevanceScore": 5,
+        "mentionScore": 30,
         "recencyScore": 10,
         "sourceScore": 1,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "bfd8d1f7484fe5e3f7108f720edf66571402f998",
-      "score": 22
+      "dedupeFingerprint": "c04fdab291442f880b22f701b30d6e1ff0004871",
+      "score": 46
+    },
+    {
+      "id": "https://cointelegraph.com/news/3-solana-data-points-highlight-resilience-but-is-sol-undervalued",
+      "title": "Three Solana data points highlight resilience, but is SOL undervalued?",
+      "url": "https://cointelegraph.com/news/3-solana-data-points-highlight-resilience-but-is-sol-undervalued",
+      "source": "Cointelegraph",
+      "publishedAt": "2026-02-27T21:30:00.000Z",
+      "summary": "SOL is down 72% from its all-time high, but several data points paint a compelling investment scenario. Is SOL trading at a deep discount?",
+      "tags": [
+        "three",
+        "solana",
+        "data"
+      ],
+      "topicBucket": "general",
+      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
+      "mentionCount": 2,
+      "xMentions": 2,
+      "who": [
+        {
+          "handle": "@matty_solana",
+          "summary": "Solana’s real-time prediction hub is live 🌊 Monitor live activity. Track top predictors. Predict with 0 fees. Earn W...",
+          "tweetUrl": "https://twitter.com/matty_solana/status/2024155301373489239",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@solanasensei",
+          "summary": "Binance generated $2.48B in $SOL volume yesterday, more than the following three CEXs combined. Hyperliquid only did ...",
+          "tweetUrl": "https://twitter.com/solanasensei/status/2026576157479678374",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "xWho": [
+        {
+          "handle": "@matty_solana",
+          "summary": "Solana’s real-time prediction hub is live 🌊 Monitor live activity. Track top predictors. Predict with 0 fees. Earn W...",
+          "tweetUrl": "https://twitter.com/matty_solana/status/2024155301373489239",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@solanasensei",
+          "summary": "Binance generated $2.48B in $SOL volume yesterday, more than the following three CEXs combined. Hyperliquid only did ...",
+          "tweetUrl": "https://twitter.com/solanasensei/status/2026576157479678374",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "mentionedBy": [
+        {
+          "handle": "@matty_solana",
+          "linkToTweet": "https://twitter.com/matty_solana/status/2024155301373489239"
+        },
+        {
+          "handle": "@solanasensei",
+          "linkToTweet": "https://twitter.com/solanasensei/status/2026576157479678374"
+        }
+      ],
+      "matchReason": "keyword_match",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 13,
+        "mentionScore": 22,
+        "recencyScore": 10,
+        "sourceScore": 0,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "43db72a63923f7ac34ba2f363b494e2d51a974bc",
+      "score": 45
+    },
+    {
+      "id": "https://www.coindesk.com/markets/2026/02/28/bitcoin-slides-to-usd65-000-in-weekend-sell-off-with-solana-xrp-dogecoin-down-6",
+      "title": "Bitcoin slides to $65,000 in weekend sell-off, with solana, XRP, dogecoin down 6%",
+      "url": "https://www.coindesk.com/markets/2026/02/28/bitcoin-slides-to-usd65-000-in-weekend-sell-off-with-solana-xrp-dogecoin-down-6",
+      "source": "CoinDesk",
+      "publishedAt": "2026-02-28T04:24:51.000Z",
+      "summary": "The pullback erased most of Wednesday's push toward $70,000 as hot producer-price data and a post-earnings Nvidia decline dragged risk assets lower heading into the weekend.",
+      "tags": [
+        "bitcoin",
+        "slides",
+        "weekend"
+      ],
+      "topicBucket": "market",
+      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
+      "mentionCount": 1,
+      "xMentions": 1,
+      "who": [
+        {
+          "handle": "@aaalexhl",
+          "summary": "I pivoted to AI as soon as Jason posted this Missed the entire Bitcoin, Solana, Hyperliquid bullrun, and spent $200k ...",
+          "tweetUrl": "https://twitter.com/aaalexhl/status/2026620244928688318",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "xWho": [
+        {
+          "handle": "@aaalexhl",
+          "summary": "I pivoted to AI as soon as Jason posted this Missed the entire Bitcoin, Solana, Hyperliquid bullrun, and spent $200k ...",
+          "tweetUrl": "https://twitter.com/aaalexhl/status/2026620244928688318",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "mentionedBy": [
+        {
+          "handle": "@aaalexhl",
+          "linkToTweet": "https://twitter.com/aaalexhl/status/2026620244928688318"
+        }
+      ],
+      "matchReason": "keyword_match",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 5,
+        "mentionScore": 10,
+        "recencyScore": 10,
+        "sourceScore": 4,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "72ab9a1ef9ec2247ba26baf3e97596892910e6ee",
+      "score": 29
+    },
+    {
+      "id": "https://www.coindesk.com/markets/2026/02/27/bitcoin-falls-with-ether-solana-while-decred-ai-linked-tokens-advance",
+      "title": "Bitcoin falls with ether, solana while decred, AI-linked tokens advance",
+      "url": "https://www.coindesk.com/markets/2026/02/27/bitcoin-falls-with-ether-solana-while-decred-ai-linked-tokens-advance",
+      "source": "CoinDesk",
+      "publishedAt": "2026-02-27T11:49:09.000Z",
+      "summary": "Positioning in futures and options shows traders looking to protect against further declines.",
+      "tags": [
+        "bitcoin",
+        "falls",
+        "with"
+      ],
+      "topicBucket": "general",
+      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
+      "mentionCount": 1,
+      "xMentions": 1,
+      "who": [
+        {
+          "handle": "@aaalexhl",
+          "summary": "I pivoted to AI as soon as Jason posted this Missed the entire Bitcoin, Solana, Hyperliquid bullrun, and spent $200k ...",
+          "tweetUrl": "https://twitter.com/aaalexhl/status/2026620244928688318",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "xWho": [
+        {
+          "handle": "@aaalexhl",
+          "summary": "I pivoted to AI as soon as Jason posted this Missed the entire Bitcoin, Solana, Hyperliquid bullrun, and spent $200k ...",
+          "tweetUrl": "https://twitter.com/aaalexhl/status/2026620244928688318",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "mentionedBy": [
+        {
+          "handle": "@aaalexhl",
+          "linkToTweet": "https://twitter.com/aaalexhl/status/2026620244928688318"
+        }
+      ],
+      "matchReason": "keyword_match",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 5,
+        "mentionScore": 10,
+        "recencyScore": 9,
+        "sourceScore": 4,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "bb0120760f877df2c794212ea6bda92a1d407319",
+      "score": 28
     }
   ]
 }
