@@ -642,7 +642,9 @@ export default function Home() {
                     <div className="sb-list">
                       <div className="sb-item sb-item-price">
                         <div className="sb-item-head">
-                          <span className="sb-item-label">MARKET CONTEXT</span>
+                          <span className="sb-item-label">
+                            MARKET SUMMARY {narrativeGeneratedDate ? `(AS OF ${new Date(narrativeGeneratedDate).getUTCHours().toString().padStart(2, '0')}:${new Date(narrativeGeneratedDate).getUTCMinutes().toString().padStart(2, '0')} UTC)` : ''}
+                          </span>
                         </div>
                         <p className="sb-item-copy">
                           {signalPriceUpdate}
