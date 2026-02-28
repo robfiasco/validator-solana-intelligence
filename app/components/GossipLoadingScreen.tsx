@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 
-const TARGET_TEXT = "SOLANA INTELLIGENCE TERMINAL";
-const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*!+=?><";
+const TARGET_TEXT = "GOSSIP";
+const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
 export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFinished?: () => void, isAppReady?: boolean }) {
     const [text, setText] = useState("");
