@@ -29,54 +29,46 @@ const compact = (text, max = 120) => {
   return s.length <= max ? s : s.slice(0, max - 1).trimEnd() + "…";
 };
 
-/**
- * Renders a locked story card, showing a blurred teaser for premium intelligence.
- * @param {Object} props - The component props
- * @param {Object} props.story - The story data object
- * @param {number} props.idx - The rank index of the story
- * @returns {JSX.Element} The locked card component
- */
 function LockedCard({ story, idx }) {
   const cat = String(story?.category || "Intel").toUpperCase();
-  const isCrit = /security|risk|breach|exploit|hack/i.test(cat);
-  const isAi = /ai|agent/i.test(cat);
-  const isGaming = /gaming|game/i.test(cat);
-  const kickerCls = isCrit ? "critical" : isAi ? "ai" : isGaming ? "gaming" : "";
   const title = String(story?.title || "Untitled Intelligence");
   const preview = compact(
     story?.content?.signal || story?.summary || story?.hook || story?.narrative || "",
     110,
   );
-  const tweets = Number(story?.metrics?.tweets ?? story?.stats?.total_tweets ?? 0);
-  const eng = Number(story?.metrics?.engagement ?? story?.stats?.total_engagement ?? 0);
+
+  // Choose icon/color based on index to mimic briefing items
+  const slots = [
+    { icon: "⚡", tone: "briefing-item-need" },
+    { icon: "↗", tone: "briefing-item-good" },
+    { icon: "◉", tone: "briefing-item-keep" }
+  ];
+  const slot = slots[idx] || slots[2];
 
   return (
-    <div
-      style={{
-        background: "rgba(12, 15, 24, 0.72)",
-        border: "1px solid rgba(72, 84, 112, 0.28)",
-        borderRadius: "14px",
-        padding: "14px 16px",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "7px" }}>
-        <span className={`seeker-mag-kicker ${kickerCls}`} style={{ fontSize: "0.58rem", padding: 0 }}>{cat}</span>
-        {idx === 0 && (
-          <span style={{
-            fontSize: "0.55rem", fontFamily: "JetBrains Mono, monospace", letterSpacing: "0.1em",
-            background: "rgba(20,241,149,0.12)", color: "#14f195",
-            border: "1px solid rgba(20,241,149,0.28)", borderRadius: "999px", padding: "2px 8px",
-            textTransform: "uppercase",
-          }}>Top Story</span>
-        )}
+    <div className={`briefing-item ${slot.tone}`}>
+      <div className="briefing-item-head">
+        <span className="briefing-item-icon">{slot.icon}</span>
+        <span className="briefing-item-label">{cat}</span>
       </div>
-      <div style={{ fontSize: "0.95rem", fontWeight: 700, color: "#f3f6ff", lineHeight: 1.25, marginBottom: "5px" }}>{title}</div>
-      {preview && (
-        <div style={{ fontSize: "0.82rem", color: "rgba(175,185,215,0.6)", lineHeight: 1.45 }}>{preview}</div>
+
+      <p className="briefing-card-copy" style={{ opacity: 0.9 }}>
+        {title} <span className="briefing-story-arrow">↗</span>
+      </p>
+
+      {story?.source && (
+        <div className="briefing-story-meta">
+          {story.source}
+          {story.date ? ` • ${new Date(story.date).toLocaleDateString()}` : ""}
+        </div>
       )}
-      <div style={{ marginTop: "8px", fontSize: "0.6rem", fontFamily: "JetBrains Mono, monospace", color: "rgba(140,152,185,0.5)", letterSpacing: "0.08em" }}>
-        {tweets} tweets · {fmt(eng)} eng
-      </div>
+
+      {/* This is the part that is blurred out for unauthenticated users */}
+      {preview && (
+        <p className="briefing-story-why" style={{ filter: "blur(4px)", userSelect: "none", pointerEvents: "none" }}>
+          {preview}
+        </p>
+      )}
     </div>
   );
 }
@@ -125,11 +117,19 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
     "Today's intelligence covers the dominant narratives moving the Solana ecosystem, ranked by on-chain signal and crypto-twitter engagement.";
 
   return (
-    <div>
+    <section className="morning-open">
+      <div className="morning-panel intel-card card--briefing">
+        <div className="morning-panel-header">
+          <h2 className="intelligence-title briefing-title-glitch">SEEKER EXCLUSIVE INTEL</h2>
+        </div>
+        <div className="briefing-subhead-row">
+          <span className="briefing-subhead-line" />
+          <span className="briefing-subhead-text">Premium On-Chain Data Analysis</span>
+          <span className="briefing-subhead-line" />
+        </div>
 
-      {/* ── SECTION 1: Fully visible content ──────────────────── */}
-      <div className="seeker-peek-shell">
-        <div className="seeker-mag-stats">
+        {/* Global Stats Block */}
+        <div className="seeker-mag-stats" style={{ padding: "16px 18px 4px" }}>
           <div className="seeker-mag-stat">
             <i><MessageCircle size={16} strokeWidth={1.8} /></i>
             <strong>{peekData?.tweets || "—"}</strong>
@@ -152,8 +152,9 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
           </div>
         </div>
 
+        {/* Animated Chart Block */}
         {stories.length > 0 && (
-          <div style={{ marginTop: "16px", marginBottom: "16px", padding: "0 4px" }}>
+          <div style={{ padding: "16px 18px 0" }}>
             <AnimatedEngagementChart
               title="TOP SIGNALS BY NETWORK ENGAGEMENT"
               items={stories.map(s => ({
@@ -164,58 +165,27 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
           </div>
         )}
 
-        <div className="seeker-mag-divider" />
+        <div className="terminal-divider" aria-hidden="true" style={{ margin: "24px 0" }} />
 
-        <div className="seeker-mag-kicker-row">
-          <span className={`seeker-mag-kicker ${leadIsCritical ? "critical" : leadIsAi ? "ai" : leadIsGaming ? "gaming" : ""}`}>
-            {kicker}
-          </span>
-        </div>
-        <h2 className="seeker-mag-title">
-          {lead?.title || "Solana's daily intelligence brief — curated from CT"}
-        </h2>
-        <div className="seeker-mag-meta"><span>By AI Gossip News Desk</span></div>
-        <p className="seeker-mag-preview">{peekBody}</p>
-      </div>
-
-      {/* ── SECTION 2: Blurred story cards — show 2 as teaser ───── */}
-      <div style={{
-        padding: "0 18px 20px",
-        display: "grid",
-        gap: "10px",
-        filter: "blur(4px)",
-        userSelect: "none",
-        pointerEvents: "none",
-        opacity: 0.85,
-      }}>
-        {stories.length > 0
-          ? stories.slice(0, 2).map((s, i) => <LockedCard key={i} story={s} idx={i} />)
-          : [0, 1].map((i) => <PlaceholderCard key={i} />)
-        }
-      </div>
-
-      {/* ── SECTION 3: Solid paywall CTA — below the blurred cards */}
-      <div style={{
-        padding: "4px 18px 28px",
-        borderTop: "1px solid rgba(72,84,112,0.28)",
-        background: "var(--surface, #0d1117)",
-      }}>
-        <div style={{ paddingTop: "20px" }}>
-          <div className="gossip-paywall-rule" />
-          <p className="gossip-paywall-overline">SEEKER INTELLIGENCE</p>
-          <h2 className="gossip-paywall-headline">
+        {/* Paywall CTA Block (Placed OVER the blurred stories) */}
+        <div style={{
+          padding: "0 18px 24px",
+          textAlign: "center"
+        }}>
+          <p className="gossip-paywall-overline" style={{ color: "#4cbb17" }}>SEEKER INTELLIGENCE</p>
+          <h2 className="gossip-paywall-headline" style={{ fontSize: "1.4rem", marginBottom: "12px", color: "var(--text)" }}>
             {isNoToken ? "Seeker Token Not Found" : "Seeker Mobile Required"}
           </h2>
-          <p className="gossip-paywall-body">
+          <p className="gossip-paywall-body" style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.85rem", marginBottom: "20px" }}>
             {isNoToken
               ? `Wallet ${publicKey?.toBase58().slice(0, 4)}…${publicKey?.toBase58().slice(-4)} doesn't hold the Genesis token.`
               : "This intel is exclusive to Solana Seeker Mobile holders. Connect your wallet to unlock today's full stories."}
           </p>
-          <button className="gossip-paywall-cta" onClick={onConnect}>
+          <button className="gossip-paywall-cta" onClick={onConnect} style={{ width: "100%", maxWidth: "260px", margin: "0 auto" }}>
             {isNoToken ? "Get Seeker Token  ↗" : "Connect Wallet"}
           </button>
           {isNoToken && (
-            <div className="gossip-paywall-secondary-row">
+            <div className="gossip-paywall-secondary-row" style={{ marginTop: "16px" }}>
               {process.env.NODE_ENV === "development" && (
                 <button className="gossip-paywall-link" onClick={onBypass}>Dev Bypass</button>
               )}
@@ -223,14 +193,31 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
             </div>
           )}
           {!isNoToken && (
-            <p className="gossip-paywall-sub">
+            <p className="gossip-paywall-sub" style={{ marginTop: "16px" }}>
               ALREADY HOLDING?{" "}
               <button className="gossip-paywall-link" onClick={onConnect}>CONNECT NOW</button>
             </p>
           )}
         </div>
+
+        {/* Blurred Stories Section */}
+        <div className="briefing-card-stack" style={{ position: "relative" }}>
+          {/* Fading gradient overlay to disguise the bottom cut-off */}
+          <div style={{
+            position: "absolute",
+            bottom: 0, left: 0, right: 0, height: "120px",
+            background: "linear-gradient(to bottom, rgba(12,15,24,0) 0%, var(--surface) 100%)",
+            zIndex: 10,
+            pointerEvents: "none"
+          }} />
+
+          {stories.length > 0
+            ? stories.slice(0, 2).map((s, i) => <LockedCard key={i} story={s} idx={i} />)
+            : [0, 1].map((i) => <PlaceholderCard key={i} />)
+          }
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
