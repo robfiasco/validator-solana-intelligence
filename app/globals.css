@@ -1324,10 +1324,11 @@ body {
 
 .briefing-subhead-text {
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   color: color-mix(in srgb, var(--text) 58%, var(--muted));
+  white-space: nowrap;
 }
 
 .briefing-card-stack {
@@ -5947,11 +5948,7 @@ body {
 
 /* Animated Engagement Chart */
 .engagement-chart-container {
-  margin-top: 24px;
-  padding: 16px;
-  border: 1px solid rgba(124, 92, 255, 0.15);
-  border-radius: 12px;
-  background: rgba(10, 15, 28, 0.6);
+  background: transparent;
   font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace;
 }
 

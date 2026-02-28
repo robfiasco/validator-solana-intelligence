@@ -151,6 +151,9 @@ export default function Home() {
 
   useEffect(() => {
     window.localStorage.setItem("validator-panel", String(activePanel));
+    if (activePanel === 2) {
+      setFocusMode(true);
+    }
   }, [activePanel]);
 
   useEffect(() => {
