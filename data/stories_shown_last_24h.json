@@ -1,5 +1,68 @@
 [
   {
+    "id": "bb0120760f877df2c794212ea6bda92a1d407319",
+    "title": "Bitcoin falls with ether, solana while decred, AI-linked tokens advance",
+    "url": "https://www.coindesk.com/markets/2026/02/27/bitcoin-falls-with-ether-solana-while-decred-ai-linked-tokens-advance",
+    "source": "CoinDesk",
+    "firstSeenAt": "2026-02-28T07:25:47.054Z",
+    "lastSeenAt": "2026-02-28T07:25:47.054Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "bitcoin",
+      "falls",
+      "with",
+      "ether",
+      "solana",
+      "while",
+      "decred",
+      "linked"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "b650b2d6555e5634ba460b1a0ad15e9fdc9c5f12",
+    "title": "Morgan Stanley applies for OCC bank charter to custody crypto",
+    "url": "https://cointelegraph.com/news/morgan-stanley-applies-bank-charter-custody-trade-stake-crypto",
+    "source": "Cointelegraph",
+    "firstSeenAt": "2026-02-28T07:25:47.054Z",
+    "lastSeenAt": "2026-02-28T07:25:47.054Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "morgan",
+      "stanley",
+      "applies",
+      "bank",
+      "charter",
+      "custody",
+      "crypto",
+      "wall"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "8d724cf187cc227e349416251a5a63ef77ca725f",
+    "title": "Magic Eden Pulls Plug on Bitcoin and Ethereum Support, Doubles Down on Solana",
+    "url": "https://decrypt.co/359422/magic-eden-pulls-plug-bitcoin-ethereum-doubles-down-solana",
+    "source": "Decrypt",
+    "firstSeenAt": "2026-02-28T07:25:47.054Z",
+    "lastSeenAt": "2026-02-28T07:25:47.054Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "magic",
+      "eden",
+      "pulls",
+      "plug",
+      "bitcoin",
+      "ethereum",
+      "support",
+      "doubles"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "8312556dc02be056d891432c96f1c8c8262f217c",
     "title": "Signal Board Summary 2026-02-27",
     "url": "",
@@ -75,48 +138,6 @@
       "wall",
       "street",
       "playbook"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "deb8ebaed876eec085671b8fe57edca60c928bf9",
-    "title": "State of Marinade Q4 2025: Institutions Select Marinade",
-    "url": "https://messari.io/article/state-of-marinade-q4-2025-institutions-select-marinade",
-    "source": "Messari",
-    "firstSeenAt": "2026-02-26T07:51:46.514Z",
-    "lastSeenAt": "2026-02-26T07:51:46.514Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "state",
-      "marinade",
-      "2025",
-      "institutions",
-      "select",
-      "staked",
-      "million",
-      "across"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "671745c860052a293f696d6a245508ee7dea2bab",
-    "title": "Solana leads crypto recovery with 10% gain: Is $100 SOL price next?",
-    "url": "https://cointelegraph.com/news/solana-leads-crypto-recovery-10-percent-100-dollars-sol-price-next",
-    "source": "Cointelegraph",
-    "firstSeenAt": "2026-02-26T07:51:46.513Z",
-    "lastSeenAt": "2026-02-26T07:51:46.513Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "solana",
-      "leads",
-      "crypto",
-      "recovery",
-      "with",
-      "gain",
-      "price",
-      "next"
     ],
     "majorUpdate": false,
     "updateReason": null

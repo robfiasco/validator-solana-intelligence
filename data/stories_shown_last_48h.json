@@ -1,5 +1,68 @@
 [
   {
+    "id": "bb0120760f877df2c794212ea6bda92a1d407319",
+    "title": "Bitcoin falls with ether, solana while decred, AI-linked tokens advance",
+    "url": "https://www.coindesk.com/markets/2026/02/27/bitcoin-falls-with-ether-solana-while-decred-ai-linked-tokens-advance",
+    "source": "CoinDesk",
+    "firstSeenAt": "2026-02-28T07:25:47.054Z",
+    "lastSeenAt": "2026-02-28T07:25:47.054Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "bitcoin",
+      "falls",
+      "with",
+      "ether",
+      "solana",
+      "while",
+      "decred",
+      "linked"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "b650b2d6555e5634ba460b1a0ad15e9fdc9c5f12",
+    "title": "Morgan Stanley applies for OCC bank charter to custody crypto",
+    "url": "https://cointelegraph.com/news/morgan-stanley-applies-bank-charter-custody-trade-stake-crypto",
+    "source": "Cointelegraph",
+    "firstSeenAt": "2026-02-28T07:25:47.054Z",
+    "lastSeenAt": "2026-02-28T07:25:47.054Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "morgan",
+      "stanley",
+      "applies",
+      "bank",
+      "charter",
+      "custody",
+      "crypto",
+      "wall"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "8d724cf187cc227e349416251a5a63ef77ca725f",
+    "title": "Magic Eden Pulls Plug on Bitcoin and Ethereum Support, Doubles Down on Solana",
+    "url": "https://decrypt.co/359422/magic-eden-pulls-plug-bitcoin-ethereum-doubles-down-solana",
+    "source": "Decrypt",
+    "firstSeenAt": "2026-02-28T07:25:47.054Z",
+    "lastSeenAt": "2026-02-28T07:25:47.054Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "magic",
+      "eden",
+      "pulls",
+      "plug",
+      "bitcoin",
+      "ethereum",
+      "support",
+      "doubles"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "8312556dc02be056d891432c96f1c8c8262f217c",
     "title": "Signal Board Summary 2026-02-27",
     "url": "",
@@ -117,69 +180,6 @@
       "gain",
       "price",
       "next"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "0c5b9006d70f4dc4127faf02a5e9b3f94e4ee1dd",
-    "title": "Polkadot, Solana Lead Altcoin Surge Ahead of Nvidia Earnings Call",
-    "url": "https://decrypt.co/359098/polkadot-solana-lead-altcoin-surge-ahead-of-nvidia-earnings-call",
-    "source": "Decrypt",
-    "firstSeenAt": "2026-02-25T14:50:25.097Z",
-    "lastSeenAt": "2026-02-25T14:50:25.097Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "polkadot",
-      "solana",
-      "lead",
-      "altcoin",
-      "surge",
-      "ahead",
-      "nvidia",
-      "earnings"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "c4f6859a13ac2442bc83f48eb07638088d18b550",
-    "title": "Polymarket users favor Meteora in bets over ZachXBT crypto takedown",
-    "url": "https://cointelegraph.com/news/polymarket-bets-zachxbt-insider-trading",
-    "source": "Cointelegraph",
-    "firstSeenAt": "2026-02-25T14:50:25.097Z",
-    "lastSeenAt": "2026-02-25T14:50:25.097Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "polymarket",
-      "users",
-      "favor",
-      "meteora",
-      "bets",
-      "over",
-      "zachxbt",
-      "crypto"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "bfd8d1f7484fe5e3f7108f720edf66571402f998",
-    "title": "‘Market knows something’: Meteora’s odds climb to 28% on Polymarket",
-    "url": "https://ambcrypto.com/market-knows-something-meteoras-odds-climb-to-28-on-polymarket",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-02-25T14:50:25.096Z",
-    "lastSeenAt": "2026-02-25T14:50:25.096Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "market",
-      "knows",
-      "something",
-      "meteora",
-      "odds",
-      "climb",
-      "polymarket",
-      "suspicion"
     ],
     "majorUpdate": false,
     "updateReason": null
