@@ -2,11 +2,13 @@
 
 import { useState, useEffect } from "react";
 
-const TARGET_TEXT = "GOSSIP";
+const TARGET_TITLE = "GOSSIP";
+const TARGET_SUBTITLE = "SOLANA INTELLIGENCE TERMINAL";
 const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
 export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFinished?: () => void, isAppReady?: boolean }) {
-    const [text, setText] = useState("");
+    const [titleText, setTitleText] = useState("");
+    const [subtitleText, setSubtitleText] = useState("");
     const [progress, setProgress] = useState(0);
     const [exiting, setExiting] = useState(false);
     const [introSequenceComplete, setIntroSequenceComplete] = useState(false);
@@ -16,11 +18,18 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
         const totalIterations = 35; // Smooth decrypt duration
 
         const interval = setInterval(() => {
-            setText(TARGET_TEXT.split("").map((letter, index) => {
+            setTitleText(TARGET_TITLE.split("").map((letter, index) => {
                 if (letter === " ") return " ";
-                // As iterations progress, reveal the correct letter
-                if (index < (iterations / totalIterations) * TARGET_TEXT.length) {
-                    return TARGET_TEXT[index];
+                if (index < (iterations / totalIterations) * TARGET_TITLE.length) {
+                    return TARGET_TITLE[index];
+                }
+                return CHARS[Math.floor(Math.random() * CHARS.length)];
+            }).join(""));
+
+            setSubtitleText(TARGET_SUBTITLE.split("").map((letter, index) => {
+                if (letter === " ") return " ";
+                if (index < (iterations / totalIterations) * TARGET_SUBTITLE.length) {
+                    return TARGET_SUBTITLE[index];
                 }
                 return CHARS[Math.floor(Math.random() * CHARS.length)];
             }).join(""));
@@ -30,7 +39,8 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
 
             if (iterations >= totalIterations) {
                 clearInterval(interval);
-                setText(TARGET_TEXT);
+                setTitleText(TARGET_TITLE);
+                setSubtitleText(TARGET_SUBTITLE);
                 setIntroSequenceComplete(true);
             }
         }, 40); // 40ms step
@@ -123,21 +133,42 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
 
                 {/* Decrypting Text */}
                 <div style={{
-                    fontFamily: "'JetBrains Mono', 'IBM Plex Mono', monospace",
-                    fontSize: "clamp(12px, 3.5vw, 18px)",
-                    fontWeight: 500,
-                    letterSpacing: "0.4em",
-                    color: "rgba(230, 210, 255, 0.9)",
-                    textAlign: "center",
-                    textTransform: "uppercase",
-                    minHeight: "24px",
-                    textShadow: "0 0 10px rgba(167, 139, 250, 0.4)",
                     display: "flex",
+                    flexDirection: "column",
                     alignItems: "center",
-                    justifyContent: "center"
+                    gap: "8px"
                 }}>
-                    {text}
-                    {!introSequenceComplete && <span style={{ animation: "cursorBlink 0.5s step-end infinite", opacity: 0.8 }}>_</span>}
+                    <div style={{
+                        fontFamily: "'JetBrains Mono', 'IBM Plex Mono', monospace",
+                        fontSize: "clamp(24px, 5vw, 36px)",
+                        fontWeight: 700,
+                        letterSpacing: "0.4em",
+                        color: "#4cbb17",
+                        textAlign: "center",
+                        textTransform: "uppercase",
+                        textShadow: "0 0 10px rgba(94, 220, 198, 0.4)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center"
+                    }}>
+                        {titleText}
+                    </div>
+                    <div style={{
+                        fontFamily: "'JetBrains Mono', 'IBM Plex Mono', monospace",
+                        fontSize: "clamp(10px, 3.5vw, 14px)",
+                        fontWeight: 500,
+                        letterSpacing: "0.3em",
+                        color: "rgba(230, 210, 255, 0.7)",
+                        textAlign: "center",
+                        textTransform: "uppercase",
+                        minHeight: "24px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center"
+                    }}>
+                        {subtitleText}
+                        {!introSequenceComplete && <span style={{ animation: "cursorBlink 0.5s step-end infinite", opacity: 0.8 }}>_</span>}
+                    </div>
                 </div>
 
                 {/* Progress Bar Container */}
