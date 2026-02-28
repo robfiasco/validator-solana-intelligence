@@ -16,6 +16,7 @@ import { Activity, Brain, MessageCircle, Rocket, TrendingUp, Users } from "lucid
 import SeekerGuard from "./components/SeekerGuard";
 import GossipLoadingScreen from "./components/GossipLoadingScreen";
 import OnboardingCarousel from "./components/OnboardingCarousel";
+import AnimatedEngagementChart from "./components/AnimatedEngagementChart";
 import type { TerminalData } from "../lib/data/types";
 import type {
   BriefingPayload,
@@ -688,6 +689,34 @@ export default function Home() {
                           </p>
                         </div>
                       ) : null}
+
+                      {/* Animated Engagement Chart */}
+                      {(() => {
+                        const allStories = asList(newsCardsData?.items);
+                        if (allStories.length === 0) return null;
+
+                        // Pick top 5 stories by engagement
+                        const sortedStories = [...allStories].sort((a, b) => {
+                          const engA = Number(a?.metrics?.engagement ?? a?.stats?.total_engagement ?? 0);
+                          const engB = Number(b?.metrics?.engagement ?? b?.stats?.total_engagement ?? 0);
+                          return engB - engA;
+                        }).slice(0, 5);
+
+                        const chartItems = sortedStories.map(story => {
+                          const val = Number(story?.metrics?.engagement ?? story?.stats?.total_engagement ?? 0);
+                          return {
+                            label: story.title || "Unknown Signal",
+                            value: val
+                          };
+                        });
+
+                        return (
+                          <AnimatedEngagementChart
+                            title="TOP SIGNALS BY NETWORK ENGAGEMENT"
+                            items={chartItems}
+                          />
+                        );
+                      })()}
                     </div>
                   </div>
                 </div>
