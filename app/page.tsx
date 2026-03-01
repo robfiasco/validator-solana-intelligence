@@ -12,7 +12,7 @@
  */
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Activity, Brain, MessageCircle, Rocket, TrendingUp, Users } from "lucide-react";
+import { Activity, Brain, Info, MessageCircle, Rocket, TrendingUp, Users } from "lucide-react";
 import SeekerGuard from "./components/SeekerGuard";
 import GossipLoadingScreen from "./components/GossipLoadingScreen";
 import OnboardingCarousel from "./components/OnboardingCarousel";
@@ -115,7 +115,13 @@ export default function Home() {
   const [isSeeker, setIsSeeker] = useState(false);
   const [showLoadingScreen, setShowLoadingScreen] = useState(true);
   const [isAppReady, setIsAppReady] = useState(false);
+  const [showInfoModal, setShowInfoModal] = useState(false);
   const carouselRef = useRef<HTMLDivElement | null>(null);
+
+  const handleReplayOnboarding = () => {
+    window.localStorage.removeItem("gossip_onboarded");
+    window.location.reload();
+  };
   const panelRefs = useRef<Array<HTMLDivElement | null>>([]);
 
   useEffect(() => {
@@ -589,6 +595,13 @@ export default function Home() {
           </div>
           <div className="header-actions">
             <button
+              className="theme-toggle-icon"
+              onClick={() => setShowInfoModal(true)}
+              aria-label="App Info"
+            >
+              <Info size={14} />
+            </button>
+            <button
               className={`focus-toggle ${focusMode ? "active" : ""}`}
               onClick={() => setFocusMode((prev) => !prev)}
               aria-label={focusMode ? "Disable Focus Mode" : "Enable Focus Mode"}
@@ -894,6 +907,40 @@ export default function Home() {
         </div >
 
       </main >
+
+      {showInfoModal && (
+        <div
+          className="info-modal-overlay"
+          onClick={() => setShowInfoModal(false)}
+        >
+          <div
+            className="info-modal-content"
+            onClick={e => e.stopPropagation()}
+          >
+            <h2 className="info-modal-title">Gossip Terminal</h2>
+            <p className="info-modal-version">v1.0.0</p>
+
+            <p className="info-modal-dev">
+              Developed by<br /><strong>Rob @ Chadakoin Digital</strong>
+            </p>
+
+            <button
+              onClick={handleReplayOnboarding}
+              className="info-modal-btn-replay"
+            >
+              REPLAY TUTORIAL
+            </button>
+
+            <button
+              onClick={() => setShowInfoModal(false)}
+              className="info-modal-btn-close"
+            >
+              CLOSE
+            </button>
+          </div>
+        </div>
+      )}
+
       <OnboardingCarousel />
     </>
   );
