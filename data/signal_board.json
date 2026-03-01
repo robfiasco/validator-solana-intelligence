@@ -1,13 +1,11 @@
 {
   "date": "2026-03-01",
-  "generated_at_utc": "2026-03-01T19:14:54.824Z",
-  "showPastWeek": true,
-  "showNextWeek": false,
-  "priceUpdate": "SOL is up 2.4% in the last 24 hours and 0.9% over the past week, with a trading volume of approximately $5.10 billion, indicating active market participation despite prevailing fear sentiment.",
-  "pastWeek": "SOL ended the week down 0.9%, primarily influenced by discussions around dogwifhat at $0.20, which suggests potential new liquidity sources.",
-  "thisWeek": "This week, attention is on dogwifhat at $0.20 as traders respond to Solana-specific news; the impact will depend on actual usage metrics like wallet growth and trading volume.",
-  "nextWeek": "",
-  "whatsHot": "Currently trending are AI agents and yield-focused products, which are capturing significant attention in the Solana ecosystem and may drive future engagement.",
+  "generated_at_utc": "2026-03-01T19:52:28.180Z",
+  "ctxMarket": "Attention is on Solana’s sharp price swings, with a notable rebound after a weekend sell-off that affected major tokens. Institutional moves and regulatory strategies are also drawing focus, particularly around new custody and token-equity models.",
+  "ctxTalking": "• Solana’s rapid recovery and volatility following a broader crypto market drop\n• The shutdown of Step Finance after a wallet compromise\n• Backpack exchange’s legal approach to token-to-equity conversion",
+  "ctxMatters": "Solana’s price action highlights ongoing volatility and liquidity shifts, impacting trading and DeFi activity. The Step Finance closure underscores persistent security risks for Solana-based projects. Institutional interest, including Morgan Stanley’s crypto custody plans, signals continued mainstream engagement with Solana and related assets.",
+  "ctxSignal": "Signal: Major institutions exploring Solana ETFs and custody, and the impact of security breaches on project viability.\nNoise: Short-term price fluctuations tied to external events without clear long-term implications.",
+  "ctxGlossary": "Token-to-equity — Converting crypto tokens into company shares, often to address regulatory concerns.\nWallet compromise — Unauthorized access to a crypto wallet, typically resulting in loss of funds or project shutdown.",
   "readMore": [
     {
       "title": "dogwifhat at $0.20",

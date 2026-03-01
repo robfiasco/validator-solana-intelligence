@@ -668,48 +668,68 @@ export default function Home() {
                 <div className="signal-brief">
                   <div className="signal-brief-body">
                     <div className="sb-list">
-                      <div className="sb-item sb-item-price">
-                        <div className="sb-item-head">
-                          <span className="sb-item-label">
-                            MARKET SUMMARY {narrativeGeneratedDate ? `(AS OF ${new Date(narrativeGeneratedDate).getUTCHours().toString().padStart(2, '0')}:${new Date(narrativeGeneratedDate).getUTCMinutes().toString().padStart(2, '0')} UTC)` : ''}
-                          </span>
-                        </div>
-                        <p className="sb-item-copy">
-                          {signalPriceUpdate}
-                        </p>
-                      </div>
-                      {signalShowPastWeek ? (
-                        <div className="sb-item sb-item-past">
+                      {signalBoardData?.ctxMarket && (
+                        <div className="sb-item sb-item-price">
                           <div className="sb-item-head">
-                            <span className="sb-item-label">PAST WEEK</span>
+                            <span className="sb-item-label">
+                              MARKET CONTEXT {narrativeGeneratedDate ? `(AS OF ${new Date(narrativeGeneratedDate).getUTCHours().toString().padStart(2, '0')}:${new Date(narrativeGeneratedDate).getUTCMinutes().toString().padStart(2, '0')} UTC)` : ''}
+                            </span>
                           </div>
                           <p className="sb-item-copy">
-                            {signalPastWeek}
+                            {signalBoardData.ctxMarket}
                           </p>
                         </div>
-                      ) : null}
+                      )}
 
-                      <div className="sb-item sb-item-this">
-                        <div className="sb-item-head">
-                          <span className="sb-item-label">THIS WEEK</span>
-                        </div>
-                        <p className="sb-item-copy">
-                          {signalThisWeek}
-                        </p>
-                      </div>
-
-                      {signalShowNextWeek ? (
-                        <div className="sb-item sb-item-next">
+                      {signalBoardData?.ctxTalking && (
+                        <div className="sb-item sb-item-this">
                           <div className="sb-item-head">
-                            <span className="sb-item-label">NEXT WEEK</span>
+                            <span className="sb-item-label">WHAT PEOPLE ARE TALKING ABOUT</span>
+                          </div>
+                          <div className="sb-item-copy">
+                            {signalBoardData.ctxTalking.split('\n').map((line, i) => (
+                              <p key={i}>{line}</p>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {signalBoardData?.ctxMatters && (
+                        <div className="sb-item sb-item-this">
+                          <div className="sb-item-head">
+                            <span className="sb-item-label">WHY IT MATTERS</span>
                           </div>
                           <p className="sb-item-copy">
-                            {signalNextWeek}
+                            {signalBoardData.ctxMatters}
                           </p>
                         </div>
-                      ) : null}
+                      )}
 
+                      {signalBoardData?.ctxSignal && (
+                        <div className="sb-item sb-item-this">
+                          <div className="sb-item-head">
+                            <span className="sb-item-label">WHAT'S SIGNAL VS NOISE</span>
+                          </div>
+                          <div className="sb-item-copy">
+                            {signalBoardData.ctxSignal.split('\n').map((line, i) => (
+                              <p key={i}>{line}</p>
+                            ))}
+                          </div>
+                        </div>
+                      )}
 
+                      {signalBoardData?.ctxGlossary && (
+                        <div className="sb-item sb-item-this">
+                          <div className="sb-item-head">
+                            <span className="sb-item-label">GLOSSARY (1-LINERS)</span>
+                          </div>
+                          <div className="sb-item-copy glossary-text">
+                            {signalBoardData.ctxGlossary.split('\n').map((line, i) => (
+                              <p key={i}>{line}</p>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

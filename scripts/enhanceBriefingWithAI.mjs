@@ -59,30 +59,11 @@ For "briefingItems":
 - Rewrite each "whyYouShouldCare" into exactly 1 sentence (18-28 words max).
 - Do not repeat the headline, just provide the contextual analysis.
 
-For "signalBoard":
-- You will receive draft template text for \`priceUpdate\` (Market Context), \`pastWeek\`, \`thisWeek\`, \`nextWeek\`, and \`whatsHot\`.
-- Rewrite each of these fields to feel fluid, native, and analytically sharp.
-- CRITICAL RULE: NEVER repeat the exact same protocol name, token, or headline across multiple fields.
-- CRITICAL RULE: Do NOT use repetitive cliché phrases like "rotating into BTC and ETH" or "macro is doing the work". Keep the analysis fresh and specific to today's data.
-- If there is major real-world geopolitical or macroeconomic news today that clearly impacts crypto prices (e.g. major wars, Fed decisions), you SHOULD briefly contextualize the market movement against it, but remain highly objective. 
-- If you use a specific name (e.g. "tokenized xStocks" or "Jupiter") in \`priceUpdate\`, you MUST abstract it into broader market concepts (e.g. "RWA liquidity", "DEX volumes", "institutional flow", "ecosystem momentum") in \`thisWeek\` and \`nextWeek\` to force vocabulary diversity.
-- For \`whatsHot\`, rewrite it specifically to highlight actionable ecosystem intel. Highlight airdrops, token launches, top performing apps, or emerging protocols if present in the data. Make it sound like an insider's watchlist.
-- Keep the hard data points (prices, volumes) but seamlessly rewrite the sentences so they do not sound like a rigid template.
-- Do NOT make up new numbers or events. Only rewrite the provided facts.
-- **IMPORTANT**: If a field is empty (e.g. \`pastWeek\` is ""), leave it empty in the output.
-
 Return JSON ONLY matching the exact structure:
 {
   "briefingItems": [
     { "index": 0, "whyYouShouldCare": "..." }
-  ],
-  "signalBoard": {
-    "priceUpdate": "...",
-    "pastWeek": "...",
-    "thisWeek": "...",
-    "nextWeek": "...",
-    "whatsHot": "..."
-  }
+  ]
 }`;
 
   const userPrompt = JSON.stringify(payload);
@@ -114,22 +95,15 @@ Return JSON ONLY matching the exact structure:
   return extractJson(content);
 };
 
-
-const SIGNAL_PATHS = [
-  path.join(cwd, "data", "signal_board.json"),
-  path.join(cwd, "signal_board.json"),
-];
-
 const main = async () => {
   const briefing = BRIEFING_PATHS.map((p) => loadJson(p)).find(Boolean);
-  const signalBoard = SIGNAL_PATHS.map((p) => loadJson(p)).find(Boolean);
 
-  if ((!briefing || !Array.isArray(briefing.items) || briefing.items.length === 0) && !signalBoard) {
-    console.log("No briefing items or signal board found; skipping AI enhancement.");
+  if (!briefing || !Array.isArray(briefing.items) || briefing.items.length === 0) {
+    console.log("No briefing items found; skipping AI enhancement.");
     return;
   }
 
-  const promptItems = (briefing?.items || []).slice(0, 3).map((item, index) => ({
+  const promptItems = (briefing.items).slice(0, 3).map((item, index) => ({
     index,
     title: item.title,
     source: item.source,
@@ -137,61 +111,32 @@ const main = async () => {
     date: item.date,
   }));
 
-  const promptSignalBoard = {
-    priceUpdate: signalBoard?.priceUpdate || "",
-    pastWeek: signalBoard?.pastWeek || "",
-    thisWeek: signalBoard?.thisWeek || "",
-    nextWeek: signalBoard?.nextWeek || "",
-    whatsHot: signalBoard?.whatsHot || "",
-  };
-
   try {
-    console.log("Enhancing briefing and signal board with OpenAI (gpt-4o-mini)...");
-    const rewritten = await callOpenAI({ briefingItems: promptItems, signalBoard: promptSignalBoard });
+    console.log("Enhancing briefing with OpenAI (gpt-4o-mini)...");
+    const rewritten = await callOpenAI({ briefingItems: promptItems });
 
-    if (!rewritten || !rewritten.briefingItems || !rewritten.signalBoard) {
-      throw new Error("AI did not return a valid combined JSON object");
+    if (!rewritten || !rewritten.briefingItems) {
+      throw new Error("AI did not return a valid JSON object");
     }
 
-    const { briefingItems, signalBoard: rewrittenSB } = rewritten;
+    const updates = new Map(
+      (rewritten.briefingItems || [])
+        .filter((row) => Number.isInteger(row?.index) && typeof row?.whyYouShouldCare === "string")
+        .map((row) => [row.index, row.whyYouShouldCare.trim()]),
+    );
 
-    // 1) Update briefing items
-    if (briefing && Array.isArray(briefing.items)) {
-      const updates = new Map(
-        (rewritten?.briefingItems || [])
-          .filter((row) => Number.isInteger(row?.index) && typeof row?.whyYouShouldCare === "string")
-          .map((row) => [row.index, row.whyYouShouldCare.trim()]),
-      );
+    const nextBriefing = {
+      ...briefing,
+      items: briefing.items.map((item, index) => ({
+        ...item,
+        whyYouShouldCare: updates.get(index) || item.whyYouShouldCare,
+      })),
+    };
 
-      const nextBriefing = {
-        ...briefing,
-        items: briefing.items.map((item, index) => ({
-          ...item,
-          whyYouShouldCare: updates.get(index) || item.whyYouShouldCare,
-        })),
-      };
-
-      saveJson(path.join(cwd, "briefing.json"), nextBriefing);
-      saveJson(path.join(cwd, "data", "briefing.json"), nextBriefing);
-      saveJson(path.join(cwd, "public", "briefing.json"), nextBriefing);
-      console.log(`Briefing enhanced: ${updates.size}/${briefing.items.length} items updated.`);
-    }
-
-    if (signalBoard && rewritten?.signalBoard) {
-      const nextSignalBoard = {
-        ...signalBoard,
-        priceUpdate: rewritten.signalBoard.priceUpdate || signalBoard.priceUpdate,
-        pastWeek: rewritten.signalBoard.pastWeek || signalBoard.pastWeek,
-        thisWeek: rewritten.signalBoard.thisWeek || signalBoard.thisWeek,
-        nextWeek: rewritten.signalBoard.nextWeek || signalBoard.nextWeek,
-        whatsHot: rewritten.signalBoard.whatsHot || signalBoard.whatsHot,
-      };
-
-      saveJson(path.join(cwd, "signal_board.json"), nextSignalBoard);
-      saveJson(path.join(cwd, "data", "signal_board.json"), nextSignalBoard);
-      saveJson(path.join(cwd, "public", "signal_board.json"), nextSignalBoard);
-      console.log(`Signal Board enhanced.`);
-    }
+    saveJson(path.join(cwd, "briefing.json"), nextBriefing);
+    saveJson(path.join(cwd, "data", "briefing.json"), nextBriefing);
+    saveJson(path.join(cwd, "public", "briefing.json"), nextBriefing);
+    console.log(`Briefing enhanced: ${updates.size}/${briefing.items.length} items updated.`);
 
   } catch (error) {
     console.error("AI enhancement failed:", error);

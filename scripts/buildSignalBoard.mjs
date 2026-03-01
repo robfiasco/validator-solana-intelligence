@@ -187,114 +187,146 @@ const utcWeekVisibility = () => {
   };
 };
 
-const priceInsight = (market, themes, weekArticles) => {
-  const change24h = Number(market?.sol?.change_24h);
-  const change7d = Number(market?.sol?.change_7d);
-  const vol = formatB(market?.vol?.sol_24h_usd);
-  const fg = Number(market?.fear_greed?.value);
-  const sentiment = fearLabel(fg);
-  const leadTheme = themes[0]?.name ? themeLabel(themes[0].name) : "ecosystem headlines";
-  const leadArticle = weekArticles[0] ? cleanHeadline(weekArticles[0].title, 72) : null;
+const callOpenAI = async (promptItems, timestamp, isRetry = false) => {
+  if (!process.env.OPENAI_API_KEY) throw new Error("No OPENAI_API_KEY");
 
-  if (!Number.isFinite(change24h) || !Number.isFinite(change7d)) {
-    return "SOL data is incomplete right now, so the short-term trend is less reliable. Wait for clean price and volume confirmation before treating this as a directional move.";
+  let systemPrompt = `You are a "Solana Context Editor" writing for busy professionals who do not use X or subscribe to many newsletters.
+Your job is to translate today's RSS items into clear context, not advice.
+
+### HARD RULES (must follow)
+- Do NOT give instructions or financial advice. Avoid verbs like: buy, sell, stake, farm, rotate, ape, short, long, avoid, exit, enter.
+- Do NOT say "no action required" or any equivalent.
+- Do NOT invent causes, numbers, or claims not supported by the RSS items.
+- Do NOT use generic market filler (e.g. "amid uncertainty", "despite fear sentiment") unless the RSS explicitly supports it.
+- Prefer clarity over hype. Sound confident but not promotional.
+- If an item is speculative, label it as speculation.
+
+### OUTPUT FORMAT (must match exactly)
+Return plain text (no markdown bullets), using this exact structure and section titles:
+
+MARKET CONTEXT (AS OF ${timestamp})
+{2–3 sentences max. Only mention price/volume if the RSS clearly ties them to a cause. Otherwise focus on "where attention is going."}
+
+WHAT PEOPLE ARE TALKING ABOUT
+• {Theme 1: one line in plain English}
+• {Theme 2}
+• {Theme 3 (optional)}
+
+WHY IT MATTERS
+{2–4 short lines. Explain implications for Solana users/builders/holders without advice.}
+
+WHAT'S SIGNAL VS NOISE
+Signal: {1–2 short lines}
+Noise: {1 short line}
+
+GLOSSARY (1-LINERS)
+{Only include 1–3 terms that appeared in today's items, each with a simple definition. Format: TERM — definition}
+
+### LENGTH LIMITS
+- Total output: 120–180 words
+- No section may exceed 3 lines
+- If you can't support 3 themes from RSS, output 1–2 themes only (don't pad).`;
+
+  if (isRetry) {
+    systemPrompt = "Your last answer was too generic. Use only the provided RSS facts, remove filler, and be more specific about named projects/topics mentioned in the RSS.\n\n" + systemPrompt;
   }
 
-  const s24 = formatPct(change24h) || "0.0%";
-  const s7 = formatPct(change7d) || "0.0%";
-  const line1 = `SOL is ${s24} in the last 24h and ${s7} over the last 7 days, while sentiment is still ${sentiment}.`;
-  const line2 = vol
-    ? `24h volume is about $${vol}, which shows active trading. The key question is whether ecosystem flow remains strong.`
-    : "Trading is active, but the direction depends on broader market macro conditions.";
-  const line3 = leadArticle
-    ? `Near-term direction depends on whether ${leadTheme} headlines turn into real usage (wallets, swaps, borrowing), led by ${headlineForCopy(leadArticle, 68)}.`
-    : `Near-term direction depends on whether ${leadTheme} headlines turn into actual on-chain activity.`;
-  return `${line1} ${line2} ${line3}`;
+  const userPrompt = JSON.stringify(promptItems);
+
+  const res = await fetch("https://api.openai.com/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`
+    },
+    body: JSON.stringify({
+      model: "gpt-4.1",
+      messages: [
+        { role: "system", content: systemPrompt },
+        { role: "user", content: `RSS Items:\n${userPrompt}` }
+      ],
+      temperature: 0.3,
+    }),
+  });
+
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`OpenAI HTTP ${res.status}: ${err}`);
+  }
+
+  const data = await res.json();
+  return String(data?.choices?.[0]?.message?.content || "").trim();
 };
 
-const buildPastWeek = (market, weekArticles) => {
-  const top = weekArticles[0];
-  const changePrevWeek = Number(market?.sol?.change_prev_week_utc);
-  const change7d = Number(market?.sol?.change_7d);
-  const describeMove = (n) => {
-    if (!Number.isFinite(n)) return "SOL finished the week mixed";
-    if (Math.abs(n) < 0.15) return "SOL finished the week roughly flat";
-    return `SOL finished the week ${n >= 0 ? "up" : "down"} ${Math.abs(n).toFixed(1)}%`;
+const qualityGateFails = (text, articles) => {
+  const lower = text.toLowerCase();
+
+  const bannedPhrases = [
+    "amid uncertainty",
+    "prevailing fear sentiment",
+    "market participants",
+    "macro headwinds",
+  ];
+  if (bannedPhrases.some(phrase => lower.includes(phrase))) {
+    console.log("Quality Gate Failed: Contains banned filler phrase.");
+    return true;
+  }
+
+  if (lower.includes("risk-on") || lower.includes("risk-off")) {
+    const rssText = JSON.stringify(articles).toLowerCase();
+    if (!rssText.includes("risk-on") && !rssText.includes("risk-off")) {
+      console.log("Quality Gate Failed: Hallucinated 'risk-on/risk-off'.");
+      return true;
+    }
+  }
+
+  const instructionVerbs = ["buy ", "sell ", "stake ", "avoid ", "short ", "long ", "ape ", "rotate "];
+  if (instructionVerbs.some(verb => lower.includes(` ${verb}`))) {
+    console.log("Quality Gate Failed: Contains instruction verbs.");
+    return true;
+  }
+
+  if (lower.includes("no action required")) {
+    console.log("Quality Gate Failed: Contains 'no action required'.");
+    return true;
+  }
+
+  return false;
+};
+
+const parseBrief = (text) => {
+  const sections = text.split(/\n{2,}/);
+  const result = {
+    marketContext: "",
+    talkingAbout: "",
+    whyItMatters: "",
+    signalVsNoise: "",
+    glossary: ""
   };
-  const changeText = Number.isFinite(changePrevWeek)
-    ? describeMove(changePrevWeek)
-    : describeMove(change7d);
-  if (!top) return `${changeText}. No single Solana catalyst clearly controlled flows.`;
-  return `${changeText}. The most discussed driver was ${headlineForCopy(top.title, 90)} (${top.source}), because it points to where new liquidity may concentrate.`;
-};
 
-const buildThisWeek = (themes, articles, briefingItems = []) => {
-  const topThemes = themes.slice(0, 2).map((item) => themeLabel(item.name));
-  const briefOne = articles[0]?.title
-    ? cleanHeadline(articles[0].title, 90)
-    : briefingItems[0]?.title
-      ? cleanHeadline(briefingItems[0].title, 90)
-      : null;
-  const briefTwo = articles[1]?.title
-    ? cleanHeadline(articles[1].title, 90)
-    : briefingItems[1]?.title
-      ? cleanHeadline(briefingItems[1].title, 90)
-      : null;
-  const lead = articles[0];
-  const second = articles[1];
-  if (!lead && !topThemes.length) {
-    return "There are no hard Solana catalysts in this feed right now, so macro is still doing most of the work. Watch for one narrative to separate from noise through transaction and volume growth.";
+  let currentKey = null;
+  for (const block of sections) {
+    if (block.startsWith("MARKET CONTEXT")) {
+      currentKey = "marketContext";
+      result[currentKey] = block.split("\n").slice(1).join("\n").trim();
+    } else if (block.startsWith("WHAT PEOPLE ARE TALKING ABOUT")) {
+      currentKey = "talkingAbout";
+      result[currentKey] = block.split("\n").slice(1).join("\n").trim();
+    } else if (block.startsWith("WHY IT MATTERS")) {
+      currentKey = "whyItMatters";
+      result[currentKey] = block.split("\n").slice(1).join("\n").trim();
+    } else if (block.startsWith("WHAT'S SIGNAL VS NOISE") || block.startsWith("WHAT’S SIGNAL VS NOISE")) {
+      currentKey = "signalVsNoise";
+      result[currentKey] = block.split("\n").slice(1).join("\n").trim();
+    } else if (block.startsWith("GLOSSARY")) {
+      currentKey = "glossary";
+      result[currentKey] = block.split("\n").slice(1).join("\n").trim();
+    } else if (currentKey) {
+      result[currentKey] += "\n\n" + block.trim();
+    }
   }
-  const line1 = briefOne
-    ? `The lead setup this week is ${headlineForCopy(briefOne, 88)}, with traders now reacting to specific Solana headlines.`
-    : lead
-      ? `${cleanHeadline(lead.title)} is the most active Solana development in the feed this week.`
-      : `The loudest themes this week are ${topThemes.join(" and ")} across Solana channels.`;
-  const line2 = briefTwo
-    ? `Next up is ${headlineForCopy(briefTwo, 88)}. These stories only matter if they drive measurable usage, borrowing, and trading depth.`
-    : second
-      ? `${cleanHeadline(second.title)} is the second leg, and together they matter only if they bring users and liquidity instead of headline churn.`
-      : `These narratives matter if they bring users and liquidity instead of headline churn.`;
-  const line3 = topThemes.length
-    ? `Watch wallet growth, swaps, and perps depth around ${topThemes[0]} first.`
-    : `Watch wallet growth, swaps, and perps depth around the lead setup first.`;
-  return `${line1} ${line2} ${line3}`;
-};
 
-const buildNextWeek = (themes, articles, briefingItems = []) => {
-  const top = themes.slice(0, 3).map((item) => themeLabel(item.name));
-  const briefThree = briefingItems[2]?.title ? teaserTitle(briefingItems[2].title, 80) : null;
-  const upcoming = articles
-    .map((item) => compactTitle(item.title))
-    .filter((title) => /(claim|closes|ships|launch|vote|unlock|proposal|conference|event|deadline)/i.test(title))
-    .slice(0, 2);
-  if (upcoming.length >= 2) {
-    return `${upcoming[0]} and ${upcoming[1]} are the clearest event-driven setups on deck. These matter because event timing can change short-term supply, participation, and liquidity conditions. Early confirmation should show up in volume concentration and token-specific flow before broad market moves.`;
-  }
-  if (briefThree) {
-    return `Into next week, keep ${briefThree} on watch because it can pull incremental institutional and trading flow into the Solana complex. If that flow broadens beyond one headline, trend quality usually improves. If not, expect rotation and chop instead of continuation.`;
-  }
-  if (top.length >= 2) {
-    return `${top[0]} and ${top[1]} remain the most likely drivers for next week if participation stays broad. The main thing to monitor is whether volume spreads beyond one pocket of the ecosystem. If that breadth fails to appear, momentum usually stalls quickly.`;
-  }
-  return "There are no obvious Solana-only event catalysts scheduled from this feed, so macro likely sets the pace. The practical watch is whether ecosystem tokens regain volume share versus majors. That shift is often the earliest sign of renewed risk appetite.";
-};
-
-const buildWhatsHot = (themes) => {
-  const has = (name) => themes.find((item) => item.name === name);
-  const ai = has("ai agents");
-  const gaming = has("gaming");
-  const yields = has("yield");
-  const products = has("new products");
-  const hot = [ai, gaming, yields, products].filter(Boolean).map((item) => item.name);
-  if (hot.length) {
-    return `What's hot: ${hot.join(", ")} are getting the highest share of Solana headlines right now.`;
-  }
-  const fallback = themes.slice(0, 2).map((item) => item.name);
-  if (fallback.length) {
-    return `What's hot: ${fallback.join(" and ")} are leading the current Solana conversation.`;
-  }
-  return "What's hot: no single narrative has clear dominance yet, so stay selective and event-driven.";
+  return result;
 };
 
 const buildReadMore = (articles, max = 3) => {
@@ -315,30 +347,59 @@ const buildReadMore = (articles, max = 3) => {
   return links;
 };
 
-const main = () => {
-  const market = loadJson(MARKET_PATH, {});
-  const briefing = loadJson(BRIEFING_PATH, { items: [] });
+const main = async () => {
+  // Try loading dotenv
+  const { createRequire } = await import("module");
+  const req = createRequire(import.meta.url);
+  try {
+    req("dotenv").config({ path: ".env.local" });
+    req("dotenv").config();
+  } catch (e) { }
+
   const rawArticles = loadJson(ARTICLES_PATH, { items: [] });
   const articles = Array.isArray(rawArticles?.items)
     ? rawArticles.items
     : Array.isArray(rawArticles)
       ? rawArticles
       : [];
+
   const weekArticles = getRecentArticles(articles, 7);
-  const briefingItems = Array.isArray(briefing?.items) ? briefing.items.slice(0, 3) : [];
-  const themes = scoreThemes(weekArticles);
   const visibility = utcWeekVisibility();
+
+  const promptItems = weekArticles.slice(0, 8).map(item => ({
+    title: item.title,
+    source: item.source,
+    published: item.publishedAt || item.published || item.date,
+    summary: item.summary
+  }));
+
+  let aiText = "";
+  try {
+    console.log("Generating Context Brief using gpt-4.1...");
+    aiText = await callOpenAI(promptItems, visibility.generatedDate, false);
+
+    if (qualityGateFails(aiText, promptItems)) {
+      console.log("Retrying Generation...");
+      aiText = await callOpenAI(promptItems, visibility.generatedDate, true);
+    }
+  } catch (err) {
+    console.error("AI Generation failed:", err);
+    aiText = `MARKET CONTEXT (AS OF ${visibility.generatedDate})\nData unavailable.\n\nWHAT PEOPLE ARE TALKING ABOUT\n• Data unavailable.\n\nWHY IT MATTERS\nData unavailable.\n\nWHAT'S SIGNAL VS NOISE\nSignal: Data unavailable.\nNoise: Data unavailable.\n\nGLOSSARY (1-LINERS)\nDATA — unavailable`;
+  }
+
+  const parsedSections = parseBrief(aiText);
 
   const payload = {
     date: visibility.generatedDate,
     generated_at_utc: new Date().toISOString(),
-    showPastWeek: visibility.showPastWeek,
-    showNextWeek: visibility.showNextWeek,
-    priceUpdate: priceInsight(market, themes, weekArticles),
-    pastWeek: visibility.showPastWeek ? buildPastWeek(market, weekArticles) : "",
-    thisWeek: buildThisWeek(themes, weekArticles, briefingItems),
-    nextWeek: visibility.showNextWeek ? buildNextWeek(themes, weekArticles, briefingItems) : "",
-    whatsHot: buildWhatsHot(themes),
+
+    // New Context Brief Sections mapped directly into JSON root payload
+    ctxMarket: parsedSections.marketContext,
+    ctxTalking: parsedSections.talkingAbout,
+    ctxMatters: parsedSections.whyItMatters,
+    ctxSignal: parsedSections.signalVsNoise,
+    ctxGlossary: parsedSections.glossary,
+
     readMore: buildReadMore(weekArticles, 3),
   };
 
@@ -348,7 +409,7 @@ const main = () => {
     title: `Signal Board Summary ${payload.date}`,
     source: "signal-board",
     url: "",
-    topicTags: ["signal-board", ...themes.slice(0, 3).map((item) => item.name)],
+    topicTags: ["signal-board"],
     dateBucket: payload.date,
   };
   const verdict = canUseStory(summaryCandidate, memory, runSet);
@@ -361,7 +422,7 @@ const main = () => {
   fs.writeFileSync(OUT_ROOT, JSON.stringify(payload, null, 2), "utf-8");
   fs.writeFileSync(OUT_DATA, JSON.stringify(payload, null, 2), "utf-8");
   fs.writeFileSync(OUT_PUBLIC, JSON.stringify(payload, null, 2), "utf-8");
-  console.log(`Signal board summary generated (rss+market only). Articles used: ${weekArticles.length}`);
+  console.log(`Signal board summary generated (Context Brief). Articles used: ${weekArticles.length}`);
 };
 
 main();

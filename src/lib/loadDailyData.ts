@@ -8,6 +8,11 @@ export type SignalBoardPayload = {
   thisWeek?: string;
   nextWeek?: string;
   whatsHot?: string;
+  ctxMarket?: string;
+  ctxTalking?: string;
+  ctxMatters?: string;
+  ctxSignal?: string;
+  ctxGlossary?: string;
   readMore?: Array<{
     title?: string;
     source?: string;
