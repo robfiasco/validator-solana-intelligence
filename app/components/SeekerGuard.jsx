@@ -143,10 +143,8 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
             </button>
           </div>
           {(isNoToken || isWrongDevice) && (
-            <div className="gossip-paywall-secondary-row" style={{ marginTop: "16px" }}>
-              {process.env.NODE_ENV === "development" && (
-                <button className="gossip-paywall-link" onClick={onBypass}>Dev Bypass</button>
-              )}
+            <div className="gossip-paywall-secondary-row" style={{ marginTop: "16px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+              <button className="gossip-paywall-link" style={{ color: "rgba(16, 185, 129, 0.8)", fontWeight: "500", letterSpacing: "0.05em" }} onClick={onBypass}>Hackathon Judge Bypass</button>
               <button className="gossip-paywall-link" onClick={onDisconnect}>Disconnect</button>
             </div>
           )}
