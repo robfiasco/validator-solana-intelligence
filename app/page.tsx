@@ -449,11 +449,11 @@ export default function Home() {
   const signalShowPastWeek =
     typeof signalBoardData?.showPastWeek === "boolean"
       ? signalBoardData.showPastWeek
-      : utcDay >= 1 && utcDay <= 3;
+      : utcDay >= 0 && utcDay <= 2;
   const signalShowNextWeek =
     typeof signalBoardData?.showNextWeek === "boolean"
       ? signalBoardData.showNextWeek
-      : utcDay === 0 || utcDay >= 4;
+      : utcDay >= 3;
   const signalPriceUpdate =
     signalBoardData?.priceUpdate ||
     stripSectionPrefix(signalBoardData?.priceUpdate) ||
