@@ -14,7 +14,7 @@
  */
 
 import { Suspense, useEffect, useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import {
   Activity,
   AlertTriangle,
@@ -77,6 +77,7 @@ export default function SeekerPage() {
 }
 
 function SeekerPageInner() {
+  const router = useRouter();
   const searchParams = useSearchParams();
   const [stories, setStories] = useState<Story[]>([]);
   const [globalMetrics, setGlobalMetrics] = useState<StoryPayload["global_metrics"]>({});
@@ -143,26 +144,29 @@ function SeekerPageInner() {
     return <div className="seeker-loading">No stories available.</div>;
   }
 
-  const lead = stories[0];
-  const current = selectedIndex >= 0 ? stories[selectedIndex] : null;
+  // If there's no selected index (e.g. they hit the page without ?story=X, or cleared it)
+  // redirect them back to the main homepage instead of showing the legacy magazine cover
+  if (selectedIndex < 0) {
+    if (typeof window !== "undefined") {
+      router.push("/");
+    }
+    return null;
+  }
+
+  const current = stories[selectedIndex];
 
   return (
     <div className="seeker-page">
-      {current ? (
-        <StoryDetail
-          story={current}
-          index={selectedIndex}
-          total={stories.length}
-          onBack={() => setSelectedIndex(-1)}
-        />
-      ) : (
-        <MagazineCover
-          stories={stories}
-          lead={lead}
-          totals={computedGlobal}
-          onOpenStory={(index) => setSelectedIndex(index)}
-        />
-      )}
+      <StoryDetail
+        story={current}
+        index={selectedIndex}
+        total={stories.length}
+        onBack={() => {
+          if (typeof window !== "undefined") {
+            router.push("/");
+          }
+        }}
+      />
     </div>
   );
 }
