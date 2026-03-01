@@ -28,7 +28,7 @@ OUTPUT FORMAT:
 Return a single, valid JSON object. Do not include markdown formatting (```json).
 
 {
-  "signal": "One punchy sentence on why this matters (max 20 words)",
+  "signal": "A highly descriptive executive summary (2-3 sentences, 40-50 words max) that explains the core event, context, and why it is important.",
   "story_content": "The full 400-600 word article text. Use \\n\\n for paragraph breaks. No markdown headers, just pure text paragraphs.",
   "takeaways": [
     "Actionable insight 1 (Max 15 words)",

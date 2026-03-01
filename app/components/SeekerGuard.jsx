@@ -104,6 +104,7 @@ function PlaceholderCard() {
  */
 function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisconnect, onBypass, peekData }) {
   const isNoToken = variant === "no-token";
+  const isWrongDevice = variant === "wrong-device";
   const lead = peekData?.lead;
   const stories = peekData?.stories || [];
   const leadCategory = String(lead?.category || "TODAY'S TOP STORY");
@@ -127,17 +128,21 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
         }}>
           <p className="gossip-paywall-overline" style={{ color: "#4cbb17" }}>SEEKER INTELLIGENCE</p>
           <h2 className="gossip-paywall-headline" style={{ fontSize: "1.4rem", marginBottom: "12px", color: "var(--text)" }}>
-            {isNoToken ? "Seeker Token Not Found" : "Seeker Mobile Required"}
+            {isWrongDevice ? "Seeker Device Required" : isNoToken ? "Seeker Token Not Found" : "Seeker Mobile Required"}
           </h2>
-          <p className="gossip-paywall-body" style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.85rem", marginBottom: "20px" }}>
-            {isNoToken
-              ? `Wallet ${publicKey?.toBase58().slice(0, 4)}…${publicKey?.toBase58().slice(-4)} doesn't hold the Genesis token.`
-              : "This intel is exclusive to Solana Seeker Mobile holders. Connect your wallet to unlock today's full stories."}
+          <p className="gossip-paywall-body" style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.85rem", marginBottom: "20px", lineHeight: "1.5" }}>
+            {isWrongDevice
+              ? "This intelligence terminal is strictly encrypted for the Solana Seeker mobile device. Web and desktop browser access is prohibited."
+              : isNoToken
+                ? `Wallet ${publicKey?.toBase58().slice(0, 4)}…${publicKey?.toBase58().slice(-4)} doesn't hold the Genesis token.`
+                : "This intel is exclusive to Solana Seeker Mobile holders. Connect your wallet to unlock today's full stories."}
           </p>
-          <button className="gossip-paywall-cta" onClick={onConnect} style={{ width: "100%", maxWidth: "260px", margin: "0 auto" }}>
-            {isNoToken ? "Get Seeker Token  ↗" : "Connect Wallet"}
-          </button>
-          {isNoToken && (
+          <div style={{ display: isWrongDevice ? "none" : "block" }}>
+            <button className="gossip-paywall-cta" onClick={onConnect} style={{ width: "100%", maxWidth: "260px", margin: "0 auto" }}>
+              {isNoToken ? "Get Seeker Token  ↗" : "Connect Wallet"}
+            </button>
+          </div>
+          {(isNoToken || isWrongDevice) && (
             <div className="gossip-paywall-secondary-row" style={{ marginTop: "16px" }}>
               {process.env.NODE_ENV === "development" && (
                 <button className="gossip-paywall-link" onClick={onBypass}>Dev Bypass</button>
@@ -181,29 +186,41 @@ export default function SeekerGuard({ children, peekData = null }) {
   const { publicKey, connected, wallet, disconnect } = useWallet();
   const { setVisible } = useWalletModal();
   const [hasSeeker, setHasSeeker] = useState(false);
+  const [wrongDevice, setWrongDevice] = useState(false);
   const [checking, setChecking] = useState(false);
 
   useEffect(() => {
     const checkOwnership = async () => {
-      if (!publicKey || !connected) { setHasSeeker(false); return; }
+      if (!publicKey || !connected) { setHasSeeker(false); setWrongDevice(false); return; }
       setChecking(true);
+      setWrongDevice(false);
       try {
+        const isNative = Capacitor?.isNativePlatform?.() && Capacitor?.getPlatform?.() === "android";
+        const adapterName = wallet?.adapter?.name || "";
+        const isMWA = adapterName.toLowerCase().includes("mobile wallet") || adapterName.toLowerCase().includes("mwa");
+
+        if (!isNative && !isMWA) {
+          console.log("[SeekerGuard] Non-mobile connection blocked.");
+          setWrongDevice(true);
+          setHasSeeker(false);
+          return;
+        }
+
         // ── Tier 1: Running as native Capacitor app ON the Seeker device ──
-        if (Capacitor?.isNativePlatform?.() && Capacitor?.getPlatform?.() === "android") {
+        if (isNative) {
           console.log("[SeekerGuard] Native Android detected — granting access");
           setHasSeeker(true);
           return;
         }
 
         // ── Tier 2: Connected via Solana Mobile Wallet Adapter (MWA) ──
-        const adapterName = wallet?.adapter?.name || "";
-        if (adapterName.toLowerCase().includes("mobile wallet") || adapterName.toLowerCase().includes("mwa")) {
-          console.log("[SeekerGuard] Mobile Wallet Adapter detected — granting access");
+        if (isMWA) {
+          console.log("[SeekerGuard] Mobile Wallet Adapter detected — verifying token or bypassing");
           setHasSeeker(true);
           return;
         }
 
-        // ── Tier 3: Server-side check (reliable, no browser rate limits) ──
+        // ── Tier 3: Server-side check (Fallback) ──
         const res = await fetch(`/api/verify-seeker?wallet=${encodeURIComponent(publicKey.toBase58())}`);
         if (!res.ok) { setHasSeeker(false); return; }
         const { hasSeeker: found } = await res.json();
@@ -239,6 +256,19 @@ export default function SeekerGuard({ children, peekData = null }) {
           <div style={{ color: "#10b981", fontSize: "14px" }}>Verifying Seeker token…</div>
         </div>
       </div>
+    );
+  }
+
+  if (wrongDevice) {
+    return (
+      <GossipPaywall
+        variant="wrong-device"
+        onConnect={handleConnect}
+        publicKey={publicKey}
+        onDisconnect={disconnect}
+        onBypass={() => { setWrongDevice(false); setHasSeeker(true); }}
+        peekData={peekData}
+      />
     );
   }
 
