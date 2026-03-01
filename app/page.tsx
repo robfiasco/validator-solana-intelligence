@@ -12,6 +12,7 @@
  */
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 import { Activity, Brain, Info, MessageCircle, Rocket, TrendingUp, Users } from "lucide-react";
 import SeekerGuard from "./components/SeekerGuard";
 import GossipLoadingScreen from "./components/GossipLoadingScreen";
@@ -864,7 +865,7 @@ export default function Home() {
                                   else if (isAirdrop) bannerImg = "/story-images/airdrop_banner.png";
 
                                   return (
-                                    <a
+                                    <Link
                                       key={`story-card-${idx}`}
                                       href={`/seeker?story=${idx}`}
                                       className="seeker-mag-item"
@@ -886,7 +887,7 @@ export default function Home() {
                                           {preview}
                                         </p>
                                       )}
-                                    </a>
+                                    </Link>
                                   );
                                 })}
                               </div>
