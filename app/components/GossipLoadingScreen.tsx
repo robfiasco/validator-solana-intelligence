@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const TARGET_TITLE = "GOSSIP";
 const TARGET_SUBTITLE = "SOLANA INTELLIGENCE TERMINAL";
@@ -13,7 +13,58 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
     const [exiting, setExiting] = useState(false);
     const [introSequenceComplete, setIntroSequenceComplete] = useState(false);
     const [isGlitching, setIsGlitching] = useState(false);
+    const canvasRef = useRef<HTMLCanvasElement>(null);
 
+    useEffect(() => {
+        const canvas = canvasRef.current;
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops: number[] = [];
+        for (let x = 0; x < columns; x++) {
+            drops[x] = 1;
+        }
+
+        const draw = () => {
+            ctx.fillStyle = 'rgba(10, 6, 18, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = '#4cbb17';
+            ctx.font = `${fontSize}px "JetBrains Mono", monospace`;
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = CHARS[Math.floor(Math.random() * CHARS.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        };
+
+        const interval = setInterval(draw, 50);
+
+        const handleResize = () => {
+            if (canvas) {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+        };
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            clearInterval(interval);
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     useEffect(() => {
         let iterations = 0;
         const totalIterations = 35; // Smooth decrypt duration
@@ -96,6 +147,20 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
                 animation: "gridPan 15s linear infinite"
             }} />
 
+            {/* Matrix Rain Canvas */}
+            <canvas
+                ref={canvasRef}
+                style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    zIndex: 0,
+                    opacity: 0.5
+                }}
+            />
+
             {/* Glowing Aura */}
             <div style={{
                 position: "absolute",
@@ -108,43 +173,6 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
             }} />
 
             <div style={{ zIndex: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: "32px", width: "100%", padding: "0 24px" }}>
-
-                {/* Terminal Decryption Block */}
-                <div style={{
-                    position: "relative",
-                    width: "48px",
-                    height: "48px",
-                    border: "1px solid rgba(76, 187, 23, 0.3)",
-                    background: "rgba(10, 6, 18, 0.8)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    boxShadow: "0 0 15px rgba(76, 187, 23, 0.1) inset",
-                    overflow: "hidden"
-                }}>
-                    {/* Corner accents */}
-                    <div style={{ position: "absolute", top: -1, left: -1, width: 6, height: 6, borderTop: "2px solid #4cbb17", borderLeft: "2px solid #4cbb17" }} />
-                    <div style={{ position: "absolute", top: -1, right: -1, width: 6, height: 6, borderTop: "2px solid #4cbb17", borderRight: "2px solid #4cbb17" }} />
-                    <div style={{ position: "absolute", bottom: -1, left: -1, width: 6, height: 6, borderBottom: "2px solid #4cbb17", borderLeft: "2px solid #4cbb17" }} />
-                    <div style={{ position: "absolute", bottom: -1, right: -1, width: 6, height: 6, borderBottom: "2px solid #4cbb17", borderRight: "2px solid #4cbb17" }} />
-
-                    {/* Scanline */}
-                    <div style={{
-                        position: "absolute",
-                        top: 0, left: 0, right: 0, height: "100%",
-                        background: "linear-gradient(to bottom, transparent 0%, rgba(76, 187, 23, 0.4) 50%, transparent 100%)",
-                        animation: "loading-scanline 1.5s linear infinite",
-                        opacity: 0.8
-                    }} />
-
-                    {/* Blinking decoding node */}
-                    <div style={{
-                        width: "12px", height: "12px",
-                        background: "#4cbb17",
-                        animation: "fast-blink 0.6s steps(2, start) infinite",
-                        boxShadow: "0 0 10px #4cbb17"
-                    }} />
-                </div>
 
                 {/* Decrypting Text */}
                 <div style={{
