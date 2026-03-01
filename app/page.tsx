@@ -800,104 +800,95 @@ export default function Home() {
                 const peekData = { lead, tweets: globalTweets, eng: globalEng, voices: globalVoices, topTweet: globalTop, stories };
                 return (
                   <SeekerGuard peekData={peekData}>
-                    <section className="stories stories-seeker-fullscreen" id="top-story-feed">
-                      {(() => {
-                        if (!lead) {
+                    <section className="morning-open" id="top-story-feed">
+                      <div className="morning-panel intel-card card--briefing">
+                        {(() => {
+                          if (!lead) {
+                            return (
+                              <div className="news-empty">
+                                Run node scripts/runDaily.mjs to generate today’s stories.
+                              </div>
+                            );
+                          }
+
                           return (
-                            <div className="news-empty">
-                              Run node scripts/runDaily.mjs to generate today’s stories.
-                            </div>
-                          );
-                        }
+                            <>
+                              <div className="morning-panel-header">
+                                <h2 className="intelligence-title briefing-title-glitch">SEEKER EXCLUSIVE INTEL</h2>
+                              </div>
+                              <div className="briefing-subhead-row">
+                                <span className="briefing-subhead-line" />
+                                <span className="briefing-subhead-text">Premium On-Chain Data Analysis</span>
+                                <span className="briefing-subhead-line" />
+                              </div>
 
-                        return (
-                          <div className="seeker-mag-shell">
-                            <div className="morning-panel-header">
-                              <h2 className="intelligence-title briefing-title-glitch">SEEKER EXCLUSIVE INTEL</h2>
-                            </div>
-                            <div className="briefing-subhead-row">
-                              <span className="briefing-subhead-line" />
-                              <span className="briefing-subhead-text">Premium On-Chain Data Analysis</span>
-                              <span className="briefing-subhead-line" />
-                            </div>
+                              <div style={{ padding: "16px 18px 4px", marginBottom: "16px" }}>
+                                <AnimatedEngagementChart
+                                  title="GLOBAL NETWORK METRICS"
+                                  maxValue={100}
+                                  items={[
+                                    { label: "Tweets Analyzed", value: Math.min(100, (storyMetrics?.totals?.total_tweets || globalTweets || 0) / 500 * 100), formattedValue: String(storyMetrics?.totals?.total_tweets || globalTweets || 0) },
+                                    { label: "Total Engagement", value: Math.min(100, (storyMetrics?.totals?.total_engagement || globalEng || 0) / 100000 * 100), formattedValue: formatCompactNumber(storyMetrics?.totals?.total_engagement || globalEng || 0) },
+                                    { label: "Unique Voices", value: Math.min(100, (storyMetrics?.totals?.unique_users || globalVoices || 0) / 200 * 100), formattedValue: String(storyMetrics?.totals?.unique_users || globalVoices || 0) },
+                                    { label: "Top Tweet", value: Math.min(100, (storyMetrics?.totals?.top_tweet_engagement || globalTop || 0) / 20000 * 100), formattedValue: formatCompactNumber(storyMetrics?.totals?.top_tweet_engagement || globalTop || 0) }
+                                  ]}
+                                />
+                              </div>
 
-                            <div style={{ padding: "16px 18px 4px", marginBottom: "16px" }}>
-                              <AnimatedEngagementChart
-                                title="GLOBAL NETWORK METRICS"
-                                maxValue={100}
-                                items={[
-                                  { label: "Tweets Analyzed", value: Math.min(100, (storyMetrics?.totals?.total_tweets || globalTweets || 0) / 500 * 100), formattedValue: String(storyMetrics?.totals?.total_tweets || globalTweets || 0) },
-                                  { label: "Total Engagement", value: Math.min(100, (storyMetrics?.totals?.total_engagement || globalEng || 0) / 100000 * 100), formattedValue: formatCompactNumber(storyMetrics?.totals?.total_engagement || globalEng || 0) },
-                                  { label: "Unique Voices", value: Math.min(100, (storyMetrics?.totals?.unique_users || globalVoices || 0) / 200 * 100), formattedValue: String(storyMetrics?.totals?.unique_users || globalVoices || 0) },
-                                  { label: "Top Tweet", value: Math.min(100, (storyMetrics?.totals?.top_tweet_engagement || globalTop || 0) / 20000 * 100), formattedValue: formatCompactNumber(storyMetrics?.totals?.top_tweet_engagement || globalTop || 0) }
-                                ]}
-                              />
-                            </div>
+                              <div className="seeker-mag-divider" />
 
-                            <div className="seeker-mag-divider" />
+                              <div className="briefing-card-stack" style={{ padding: "0 18px 18px" }}>
+                                {stories.map((story, idx) => {
+                                  const cat = String(story?.category || "Intel").toUpperCase();
+                                  const title = String(story?.title || "Untitled Intelligence");
+                                  const preview = compactSentence(
+                                    story?.content?.signal || story?.summary || story?.hook || story?.narrative || "",
+                                    110,
+                                  );
 
-                            <div style={{ padding: "0 18px 18px", display: "grid", gap: "12px" }}>
-                              {stories.map((story, idx) => {
-                                const cat = String(story?.category || "Intel").toUpperCase();
-                                const isCrit = /security|risk|breach|exploit|hack/i.test(cat);
-                                const isAi = /ai|agent/i.test(cat);
-                                const isGaming = /gaming|game/i.test(cat);
-                                const kickerCls = isCrit ? "critical" : isAi ? "ai" : isGaming ? "gaming" : "";
-                                const tweets = story?.metrics?.tweets ?? story?.stats?.total_tweets ?? 0;
-                                const eng = story?.metrics?.engagement ?? story?.stats?.total_engagement ?? 0;
-                                const preview = compactSentence(
-                                  story?.content?.signal || story?.summary || story?.hook || story?.narrative || story?.title || "",
-                                  160,
-                                );
-                                return (
-                                  <a
-                                    key={`story-card-${idx}`}
-                                    href={`/seeker?story=${idx}`}
-                                    style={{
-                                      display: "block",
-                                      textDecoration: "none",
-                                      background: "rgba(12, 15, 24, 0.72)",
-                                      border: "1px solid rgba(72, 84, 112, 0.32)",
-                                      borderRadius: "14px",
-                                      padding: "16px",
-                                    }}
-                                  >
-                                    <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
-                                      <span className={`seeker-mag-kicker ${kickerCls}`} style={{ fontSize: "0.6rem", padding: "0" }}>
-                                        {cat}
-                                      </span>
-                                      {idx === 0 && (
-                                        <span style={{
-                                          fontSize: "0.58rem", fontFamily: "JetBrains Mono, monospace",
-                                          letterSpacing: "0.1em", background: "rgba(20,241,149,0.12)",
-                                          color: "#14f195", border: "1px solid rgba(20,241,149,0.3)",
-                                          borderRadius: "999px", padding: "2px 8px", textTransform: "uppercase",
-                                        }}>Top Story</span>
+                                  const slots = [
+                                    { icon: "⚡", tone: "briefing-item-need" },
+                                    { icon: "↗", tone: "briefing-item-good" },
+                                    { icon: "◉", tone: "briefing-item-keep" }
+                                  ];
+                                  const slot = slots[idx] || slots[2];
+
+                                  return (
+                                    <a
+                                      key={`story-card-${idx}`}
+                                      href={`/seeker?story=${idx}`}
+                                      className={`briefing-item ${slot.tone}`}
+                                      style={{ display: "block", textDecoration: "none" }}
+                                    >
+                                      <div className="briefing-item-head">
+                                        <span className="briefing-item-icon">{slot.icon}</span>
+                                        <span className="briefing-item-label">{cat}</span>
+                                      </div>
+
+                                      <p className="briefing-card-copy" style={{ opacity: 0.9 }}>
+                                        {title} <span className="briefing-story-arrow">↗</span>
+                                      </p>
+
+                                      {(story as any)?.source && (
+                                        <div className="briefing-story-meta">
+                                          {(story as any).source}
+                                          {((story as any).date || (story as any).timestamp || (story as any).publishedAt) ? ` • ${new Date((story as any).date || (story as any).timestamp || (story as any).publishedAt).toLocaleDateString()}` : ""}
+                                        </div>
                                       )}
-                                    </div>
-                                    <div style={{ fontSize: "1rem", fontWeight: 700, color: "#f3f6ff", lineHeight: 1.25, marginBottom: "6px" }}>
-                                      {story?.title || "Untitled"}
-                                    </div>
-                                    <div style={{ fontSize: "0.86rem", color: "rgba(180,188,220,0.72)", lineHeight: 1.5, marginBottom: "10px" }}>
-                                      {preview}
-                                    </div>
-                                    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                                      <span style={{ fontSize: "0.64rem", fontFamily: "JetBrains Mono, monospace", color: "rgba(150,160,190,0.6)", letterSpacing: "0.08em" }}>
-                                        {Number(tweets)} tweets · {formatCompactNumber(Number(eng))} eng
-                                      </span>
-                                      <span style={{ fontSize: "0.68rem", fontWeight: 700, color: "#14f195", letterSpacing: "0.06em", textTransform: "uppercase" }}>
-                                        Read Full Story →
-                                      </span>
-                                    </div>
-                                  </a>
-                                );
-                              })}
-                            </div>
 
-
-                          </div>
-                        );
-                      })()}
+                                      {preview && (
+                                        <p className="briefing-story-why">
+                                          {preview}
+                                        </p>
+                                      )}
+                                    </a>
+                                  );
+                                })}
+                              </div>
+                            </>
+                          );
+                        })()}
+                      </div>
                     </section>
                   </SeekerGuard>
                 );

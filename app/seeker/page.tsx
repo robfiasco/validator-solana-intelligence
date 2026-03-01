@@ -387,7 +387,7 @@ function StoryDetail({ story, index, total, onBack }: { story: Story; index: num
   return (
     <div className="seeker-detail-shell" style={{ paddingBottom: "100px" }}>
       <button className="seeker-detail-back" onClick={onBack} type="button">
-        <ChevronLeft size={16} /> Return to Stories
+        <ChevronLeft size={16} /> Back
       </button>
 
       <div className="seeker-detail-header">
@@ -397,10 +397,6 @@ function StoryDetail({ story, index, total, onBack }: { story: Story; index: num
             <span className="logo-cursor" aria-hidden="true">_</span>
           </h1>
           <p className="seeker-detail-sub">Premium Intelligence • {formatShortDate(story?.timestamp || story?.publishedAt)}</p>
-        </div>
-        <div className="seeker-detail-issue">
-          <div className="seeker-mag-issue-value seeker-detail-issue-value" style={{ marginTop: 0 }}>#{Math.max(index + 1, 1)}</div>
-          <div className="seeker-detail-count">{index + 1}/{Math.max(total, 1)}</div>
         </div>
       </div>
 
@@ -412,17 +408,27 @@ function StoryDetail({ story, index, total, onBack }: { story: Story; index: num
         <p className="seeker-detail-author">Analysis by AI Gossip News Desk</p>
       </div>
 
-      <div style={{ marginTop: "16px", marginBottom: "24px", padding: 0 }}>
-        <AnimatedEngagementChart
-          title="SIGNAL METRICS"
-          maxValue={100}
-          items={[
-            { label: "Tweets", value: Math.min(100, metrics.tweets / 200 * 100), formattedValue: formatCompactNumber(metrics.tweets) },
-            { label: "Engagement", value: Math.min(100, metrics.engagement / 50000 * 100), formattedValue: formatCompactNumber(metrics.engagement) },
-            { label: "Unique Voices", value: Math.min(100, metrics.voices / 100 * 100), formattedValue: formatCompactNumber(metrics.voices) },
-            { label: "Top Tweet", value: Math.min(100, metrics.topTweet / 5000 * 100), formattedValue: formatCompactNumber(metrics.topTweet) }
-          ]}
-        />
+      <div className="seeker-detail-metrics">
+        <div className="seeker-detail-metric-card">
+          <MessageCircle size={16} />
+          <strong>{metrics.tweets}</strong>
+          <span>Tweets Analyzed</span>
+        </div>
+        <div className="seeker-detail-metric-card">
+          <TrendingUp size={16} className="is-green" />
+          <strong className="is-green">{formatCompactNumber(metrics.engagement)}</strong>
+          <span>Total Engagement</span>
+        </div>
+        <div className="seeker-detail-metric-card">
+          <Users size={16} />
+          <strong>{metrics.voices}</strong>
+          <span>Unique Voices</span>
+        </div>
+        <div className="seeker-detail-metric-card">
+          <Activity size={16} className="is-purple" />
+          <strong className="is-purple">{formatCompactNumber(metrics.topTweet)}</strong>
+          <span>Top Tweet</span>
+        </div>
       </div>
 
       {timeline.length > 0 ? (
