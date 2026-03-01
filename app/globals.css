@@ -5473,6 +5473,58 @@ body {
   color: #f3f5ff;
 }
 
+.seeker-mag-item {
+  display: block;
+  text-decoration: none;
+  background: transparent;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(67, 79, 103, 0.22);
+  transition: all 0.2s ease;
+}
+
+.seeker-mag-item:last-child {
+  border-bottom: none;
+}
+
+.seeker-mag-item:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.seeker-mag-item-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.seeker-mag-item-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #f1f5ff;
+  line-height: 1.35;
+  margin: 0 0 6px 0;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.seeker-mag-item-title span {
+  display: inline-block;
+  color: rgba(180, 188, 220, 0.5);
+  font-size: 0.85rem;
+  margin-left: 6px;
+  transform: translateY(-1px);
+}
+
+.seeker-mag-item-copy {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--text) 72%, var(--muted));
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .seeker-detail-metric-card span {
   font-family: "JetBrains Mono", monospace;
   font-size: 0.52rem;

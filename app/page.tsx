@@ -839,45 +839,41 @@ export default function Home() {
 
                               <div className="briefing-card-stack" style={{ padding: "0 18px 18px" }}>
                                 {stories.map((story, idx) => {
-                                  const cat = String(story?.category || "Intel").toUpperCase();
+                                  let cat = String(story?.category || "Intel").toUpperCase();
+                                  if (cat.includes("/")) {
+                                    cat = cat.split("/")[0].trim();
+                                  }
+
                                   const title = String(story?.title || "Untitled Intelligence");
                                   const preview = compactSentence(
                                     story?.content?.signal || story?.summary || story?.hook || story?.narrative || "",
-                                    110,
+                                    160,
                                   );
 
-                                  const slots = [
-                                    { icon: "⚡", tone: "briefing-item-need" },
-                                    { icon: "↗", tone: "briefing-item-good" },
-                                    { icon: "◉", tone: "briefing-item-keep" }
-                                  ];
-                                  const slot = slots[idx] || slots[2];
+                                  const isCrit = /security|risk|breach|exploit|hack/i.test(cat);
+                                  const isAi = /ai|agent/i.test(cat);
+                                  const isGaming = /gaming|game/i.test(cat);
+                                  const kickerCls = isCrit ? "critical" : isAi ? "ai" : isGaming ? "gaming" : "";
+                                  const icon = isCrit ? "●" : isAi ? "⚡" : isGaming ? "🎮" : "↗";
 
                                   return (
                                     <a
                                       key={`story-card-${idx}`}
                                       href={`/seeker?story=${idx}`}
-                                      className={`briefing-item ${slot.tone}`}
-                                      style={{ display: "block", textDecoration: "none" }}
+                                      className="seeker-mag-item"
                                     >
-                                      <div className="briefing-item-head">
-                                        <span className="briefing-item-icon">{slot.icon}</span>
-                                        <span className="briefing-item-label">{cat}</span>
+                                      <div className="seeker-mag-item-head">
+                                        <span className={`seeker-mag-kicker ${kickerCls}`} style={{ padding: 0, fontSize: "0.6rem" }}>
+                                          <span style={{ marginRight: "4px", opacity: 0.8 }}>{icon}</span>{cat}
+                                        </span>
                                       </div>
 
-                                      <p className="briefing-card-copy" style={{ opacity: 0.9 }}>
-                                        {title} <span className="briefing-story-arrow">↗</span>
-                                      </p>
-
-                                      {(story as any)?.source && (
-                                        <div className="briefing-story-meta">
-                                          {(story as any).source}
-                                          {((story as any).date || (story as any).timestamp || (story as any).publishedAt) ? ` • ${new Date((story as any).date || (story as any).timestamp || (story as any).publishedAt).toLocaleDateString()}` : ""}
-                                        </div>
-                                      )}
+                                      <h3 className="seeker-mag-item-title">
+                                        {title} <span aria-hidden="true">↗</span>
+                                      </h3>
 
                                       {preview && (
-                                        <p className="briefing-story-why">
+                                        <p className="seeker-mag-item-copy">
                                           {preview}
                                         </p>
                                       )}
