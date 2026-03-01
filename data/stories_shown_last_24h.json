@@ -1,5 +1,68 @@
 [
   {
+    "id": "d405ec9aff7bf384a9c2403141f2faffffeb3d6c",
+    "title": "The End of Step Finance: How a Wallet Compromise Killed the Solana DeFi Aggregator",
+    "url": "https://cryptopotato.com/the-end-of-step-finance-how-a-wallet-compromise-killed-the-solana-defi-aggregator",
+    "source": "CryptoPotato",
+    "firstSeenAt": "2026-03-01T07:32:30.977Z",
+    "lastSeenAt": "2026-03-01T07:32:30.977Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "step",
+      "finance",
+      "wallet",
+      "compromise",
+      "killed",
+      "solana",
+      "defi",
+      "aggregator"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "43db72a63923f7ac34ba2f363b494e2d51a974bc",
+    "title": "Three Solana data points highlight resilience, but is SOL undervalued?",
+    "url": "https://cointelegraph.com/news/3-solana-data-points-highlight-resilience-but-is-sol-undervalued",
+    "source": "Cointelegraph",
+    "firstSeenAt": "2026-03-01T07:32:30.977Z",
+    "lastSeenAt": "2026-03-01T07:32:30.977Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "three",
+      "solana",
+      "data",
+      "points",
+      "highlight",
+      "resilience",
+      "undervalued",
+      "down"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "721220909e7c015cb21201e382a8d7b7a4694f13",
+    "title": "Solana [SOL] stalls at range highs as market panic overrides capital inflows",
+    "url": "https://ambcrypto.com/solana-sol-stalls-at-range-highs-as-market-panic-overrides-capital-inflows",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-03-01T07:32:30.977Z",
+    "lastSeenAt": "2026-03-01T07:32:30.977Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "solana",
+      "stalls",
+      "range",
+      "highs",
+      "market",
+      "panic",
+      "overrides",
+      "capital"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "1633650a1a2228d07cc671aedcef652d5fc18686",
     "title": "Signal Board Summary 2026-02-28",
     "url": "",

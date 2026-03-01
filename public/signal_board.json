@@ -1,28 +1,28 @@
 {
-  "date": "2026-02-28",
-  "generated_at_utc": "2026-02-28T18:02:32.430Z",
+  "date": "2026-03-01",
+  "generated_at_utc": "2026-03-01T07:32:38.276Z",
   "showPastWeek": false,
   "showNextWeek": true,
-  "priceUpdate": "SOL is down 0.5% in the last 24 hours and 5.6% over the past week, with a trading volume of $4.33 billion indicating active market participation amid extreme fear sentiment. The focus now is on whether product launches translate into real ecosystem activity.",
+  "priceUpdate": "SOL is +10.9% in the last 24h and +1.5% over the last 7 days, while sentiment is still extreme fear. 24h volume is about $5.47B, which shows active trading. The key question is whether ecosystem flow remains strong. Near-term direction depends on whether AI agents headlines turn into real usage (wallets, swaps, borrowing), led by Ether, solana, xrp surge up to 10% as majors recover Saturday's.",
   "pastWeek": "",
-  "thisWeek": "This week, trader attention is on specific Solana developments, particularly in light of the upcoming Nvidia earnings call. The impact will hinge on whether these narratives translate into increased usage metrics like wallet growth and trading volumes.",
-  "nextWeek": "Next week, monitor the betting trends on Polymarket regarding Meteora and ZachXBT, as this could attract institutional interest and enhance trading flows within the Solana ecosystem. A broadening of interest beyond single headlines could signal stronger market trends.",
-  "whatsHot": "Currently trending are AI agents, yield opportunities, and innovative products, capturing significant attention within the Solana ecosystem and indicating areas for potential investment and engagement.",
+  "thisWeek": "The lead setup this week is Ether, solana, xrp surge up to 10% as majors recover Saturday's war-driven losses, with traders now reacting to specific Solana headlines. Next up is Solana [SOL] stalls at range highs as market panic overrides capital inflows. These stories only matter if they drive measurable usage, borrowing, and trading depth. Watch wallet growth, swaps, and perps depth around AI agents first.",
+  "nextWeek": "Into next week, keep Solana [SOL] stalls at range highs as market panic overrides capital inflows on watch because it can pull incremental institutional and trading flow into the Solana complex. If that flow broadens beyond one headline, trend quality usually improves. If not, expect rotation and chop instead of continuation.",
+  "whatsHot": "What's hot: ai agents, yield, new products are getting the highest share of Solana headlines right now.",
   "readMore": [
     {
-      "title": "Bitcoin slides to $65,000 in weekend sell-off, with solana, XRP, dogecoin down 6%",
+      "title": "Ether, solana, xrp surge up to 10% as majors recover Saturday's war-driven losses",
       "source": "CoinDesk",
-      "url": "https://www.coindesk.com/markets/2026/02/28/bitcoin-slides-to-usd65-000-in-weekend-sell-off-with-solana-xrp-dogecoin-down-6"
+      "url": "https://www.coindesk.com/markets/2026/03/01/ether-solana-xrp-surge-up-to-10-as-majors-recover-saturday-s-war-driven-losses"
     },
     {
-      "title": "Morgan Stanley applies for OCC bank charter to custody crypto",
-      "source": "Cointelegraph",
-      "url": "https://cointelegraph.com/news/morgan-stanley-applies-bank-charter-custody-trade-stake-crypto"
-    },
-    {
-      "title": "Pump.fun eyes 20% rally if PUMP price breaks THIS hurdle",
+      "title": "Solana [SOL] stalls at range highs as market panic overrides capital inflows",
       "source": "AMB Crypto",
-      "url": "https://ambcrypto.com/pump-fun-eyes-20-rally-if-pump-price-breaks-this-hurdle"
+      "url": "https://ambcrypto.com/solana-sol-stalls-at-range-highs-as-market-panic-overrides-capital-inflows"
+    },
+    {
+      "title": "The End of Step Finance",
+      "source": "CryptoPotato",
+      "url": "https://cryptopotato.com/the-end-of-step-finance-how-a-wallet-compromise-killed-the-solana-defi-aggregator"
     }
   ]
 }
