@@ -4922,6 +4922,30 @@ body {
   background: var(--item-accent, var(--sol-green));
 }
 
+.seeker-mag-kicker.alpha {
+  color: var(--item-accent, var(--sol-green));
+}
+
+.seeker-mag-kicker.alpha::before {
+  background: var(--item-accent, var(--sol-green));
+}
+
+.seeker-mag-kicker.mobile {
+  color: var(--item-accent, var(--sol-cyan));
+}
+
+.seeker-mag-kicker.mobile::before {
+  background: var(--item-accent, var(--sol-cyan));
+}
+
+.seeker-mag-kicker.privacy {
+  color: var(--item-accent, var(--sol-pink));
+}
+
+.seeker-mag-kicker.privacy::before {
+  background: var(--item-accent, var(--sol-pink));
+}
+
 .seeker-mag-title {
   margin: 14px 18px 0;
   font-size: 1.26rem;
@@ -6140,9 +6164,9 @@ body {
   width: 100%;
   max-width: 320px;
   border-radius: 20px;
-  background: #080b14;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.75);
+  background: rgba(12, 16, 26, 0.95);
+  border: 1px solid rgba(20, 241, 149, 0.2);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.75), 0 0 40px rgba(20, 241, 149, 0.1);
   overflow: hidden;
   text-align: center;
   padding: 32px 24px;

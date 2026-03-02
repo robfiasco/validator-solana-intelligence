@@ -9,8 +9,8 @@
       "update",
       "long"
     ],
-    "tweetCount": 24,
-    "clusterScore": 2371.888055149218,
+    "tweetCount": 23,
+    "clusterScore": 2309.293807442733,
     "reason": "Ecosystem Updates cluster linked by [solana, wallet, sol, update, long]",
     "sampleTweets": [
       {
@@ -35,7 +35,7 @@
         "created_at_iso": "2026-03-02 05:01:01 -05:00",
         "text": "A generational opportunity to reinvent crypto gaming starts here.\n\nWith 150k Seeker users on @solana, @solanamobile is the only distribution layer positioned to realise a new vision of fully onchain competitive economies.\n\nBuilt from first principles, Colony has:\n→ Player-controlled production\n→ Globally shared markets\n→ Real-time economic competition\n\nOne unified, high-throughput economy.\n\nIn Colony, rewards are native to @solana:\n→ SOL\n→ SKR\n→ Season-limited items\n→ $STAR (Stardust), earned only through gameplay and capturing 20% of revenue\n\nPerformance settles onchain. Incentives are transparent. Outcomes are verifiable.\n\nThe right home for Colony was always @solanamobile. \n→ Direct access to Solana-native users\n→ Native wallet integration\n→ No rent-seeking duopoly\n\nThis is what happens when high-performance infrastructure meets aligned distribution.\n\nColony launches today, March 2nd 15:00 UTC.\n\nThe next era of crypto gaming starts on @solana.",
         "url": "https://twitter.com/colonythegame/status/2028410236625691107",
-        "score": 178
+        "score": 176
       },
       {
         "id": "2028457327444296020",
@@ -43,7 +43,7 @@
         "created_at_iso": "2026-03-02 08:08:08 -05:00",
         "text": "What's the worst thing about Solana wallets?",
         "url": "https://twitter.com/armaniferrante/status/2028457327444296020",
-        "score": 126
+        "score": 124
       },
       {
         "id": "2028431134179348715",
@@ -51,7 +51,7 @@
         "created_at_iso": "2026-03-02 06:24:03 -05:00",
         "text": "Good morning!\n\nStaying safe and calm in Dubai despite the situation. \n\nDecided to build more in public and share weekly @NOMADZxyz progress. \n\nWeek 10, 2026\n\n• Product (platform): \n\n1. Launched custom referral in our referral system (10% in USDC and XP from every booking), next week launching 2nd level referral for communities to get 5% in USDC and XP.\n\n2. Added conference venues to the map so that people can see the exact location on the map and book nearby.\n\n3. Added 5 events to the calendar and 5 badges from the past conferences.\n\n4. Built an interface with an Earth to show the conferences and side events in the events section.\n\n5. Improved AI search districts, breakfasts, and locations based on customer feedback.\n\n• Product (mobile):\n\n1. Build the 9th release of the @solanamobile app with an updated navbar design.\n\n2. Created a new navigation menu\n\n2. Created a new navigation menu, event categories and book nearby features.\n\n4. Improved search logic and started the integration of the AI search.\n\n• Growth:\n\n1. Launched Cohort 1 of Nomadz 100 program with 28 creators on Solana (more than 30 user-generated posts were created in week 1).\n\n2. Partnered up with @MatricaLabs to verify without Wallet Connection (got 75% discount with @MonkeDAO NFT for the enterprise package and commitment for the huge marketing support).\n\n3. Partnered up with @perena to list the third stable coin as a payment option and add their NFT community to Nomadz.\n\n4. Partnered up with @SolanaEvents for Accelerate Miami and wrote a thread with 5 discounted stays at Nomadz.\n\n5. Connected with the @SolanaSensei team to list their community at Nomadz and do a growth campaign.\n\n6. Reached out to 15 web3 events organisers to partner up.\n\n7. Applied to @nitrodotacc accelerator. \n\nHow was your week?",
         "url": "https://twitter.com/ivan_nomadz/status/2028431134179348715",
-        "score": 121
+        "score": 120
       },
       {
         "id": "2028402454698897492",
@@ -59,7 +59,7 @@
         "created_at_iso": "2026-03-02 04:30:05 -05:00",
         "text": "We're only in March and the total Solana spot DEX volume has surpassed $200B\n\nTRILLIONS https://t.co/cHWljH2fQD",
         "url": "https://twitter.com/SolanaSensei/status/2028402454698897492",
-        "score": 118
+        "score": 117
       },
       {
         "id": "2028210579840659752",
@@ -75,7 +75,7 @@
         "created_at_iso": "2026-03-01 09:07:58 -05:00",
         "text": "Which Solana wallet is the most complete one?\n\nHere’s a list of all features\n\nWhat wallet are you using? https://t.co/RSHqT8R42s",
         "url": "https://twitter.com/FabianoSolana/status/2028109996534173748",
-        "score": 107
+        "score": 106
       }
     ]
   },
@@ -90,7 +90,7 @@
       "lst"
     ],
     "tweetCount": 7,
-    "clusterScore": 1385.003093132765,
+    "clusterScore": 1376.314193442793,
     "reason": "DeFi Yield / LP cluster linked by [yield, jup, solana, jupiter, lst]",
     "sampleTweets": [
       {
@@ -99,7 +99,7 @@
         "created_at_iso": "2026-03-02 07:42:03 -05:00",
         "text": "Jupiter TCG rewards is still live with up to $2M in jupUSD\n\nHere's how to participate:\n\n1. Make $10K worth of swaps using the eligible pairs below\n2. Make sure you're on ultra mode or Limit V2\n3. Use either @jup_mobile or the official jupiter site.\n\nSome eligible pairs:\n- JUP -> JLP for 1 card\n- LST -> JUP for 1 card\n- JUP -> SOL for 1 card\n\nCards are earned per $10K Volume\n\nPS: You can only reveal cards and claim rewards when connected via Jupiter Wallet or Jupiter Mobile",
         "url": "https://twitter.com/SolanaSensei/status/2028450763002036586",
-        "score": 500
+        "score": 492
       },
       {
         "id": "2027833051074437591",
@@ -161,7 +161,7 @@
       "llm"
     ],
     "tweetCount": 8,
-    "clusterScore": 947.8631726254293,
+    "clusterScore": 940.4286733286525,
     "reason": "AI / Agents cluster linked by [agent, agents, solana, llm]",
     "sampleTweets": [
       {
@@ -178,7 +178,7 @@
         "created_at_iso": "2026-02-28 09:45:03 -05:00",
         "text": "Solana is statistically the best place for payments across all chains\n\n- Low fees\n- Instant payouts\n- Available 24/7\n- Pay and get paid by AI agents https://t.co/IR8I5in457",
         "url": "https://twitter.com/SolanaSensei/status/2027756941922238754",
-        "score": 156
+        "score": 155
       },
       {
         "id": "2028477386430582901",
@@ -186,7 +186,7 @@
         "created_at_iso": "2026-03-02 09:27:50 -05:00",
         "text": "RT @met_engine: Markets are the AGI we already have; they move the fastest and price things the quickest.\n\nGive your agents the ability to…",
         "url": "https://twitter.com/0xharsh1001/status/2028477386430582901",
-        "score": 132
+        "score": 129
       },
       {
         "id": "2028473791878479946",
@@ -194,7 +194,7 @@
         "created_at_iso": "2026-03-02 09:13:33 -05:00",
         "text": "Markets are the AGI we already have; they move the fastest and price things the quickest.\n\nGive your agents the ability to query live market data from @Polymarket, @HyperliquidX, and @MeteoraAG with our data agent, powered by @x402. https://t.co/qX8Mkg5rAy",
         "url": "https://twitter.com/met_engine/status/2028473791878479946",
-        "score": 131
+        "score": 128
       },
       {
         "id": "2028377764911600072",
@@ -202,7 +202,7 @@
         "created_at_iso": "2026-03-02 02:51:59 -05:00",
         "text": "https://t.co/zNIlWtTrIG\n@xmayeth you can deploy and run agents on @cobotgg in seconds with built in strategies. \n\nNo custom prompts , @openclaw  or @claudeai  agents required. \n\nPWA: https://t.co/R38F4WbDp5",
         "url": "https://twitter.com/cobotgg/status/2028377764911600072",
-        "score": 116
+        "score": 115
       },
       {
         "id": "2027529499043107267",
@@ -238,7 +238,7 @@
       "solflare"
     ],
     "tweetCount": 7,
-    "clusterScore": 448.8040003533867,
+    "clusterScore": 445.02875009860776,
     "reason": "Wallets cluster linked by [wallet, solflare]",
     "sampleTweets": [
       {
@@ -247,7 +247,7 @@
         "created_at_iso": "2026-03-02 09:38:55 -05:00",
         "text": "Solflare is the first mainstream wallet to introduce private sends\n\n- Recipients don’t see your wallet\n\n- Your balance stays hidden\n\n- No public on-chain trace\n\nWould you use this? https://t.co/TJjwkY7Bq9",
         "url": "https://twitter.com/FabianoSolana/status/2028480172324757782",
-        "score": 133
+        "score": 130
       },
       {
         "id": "2028069257297461643",
@@ -309,7 +309,7 @@
       "volume"
     ],
     "tweetCount": 3,
-    "clusterScore": 388.6454623583022,
+    "clusterScore": 380.1810147916078,
     "reason": "Token Launch / Pump cluster linked by [launch, token, solana, volume]",
     "sampleTweets": [
       {
@@ -318,7 +318,7 @@
         "created_at_iso": "2026-03-02 08:35:27 -05:00",
         "text": "RT @solana: .@Sunrise_DeFi is showing that every token launch belongs onchain.\n\nSunrise takes non-native assets and lists them to Solana wi…",
         "url": "https://twitter.com/vibhu/status/2028464201048391947",
-        "score": 192
+        "score": 188
       },
       {
         "id": "2028473263891095967",
@@ -326,7 +326,7 @@
         "created_at_iso": "2026-03-02 09:11:27 -05:00",
         "text": "Most crypto projects: raise money → disappear\n\nFor us: raise → build → deliver\n\nSince launch 2,400 users onboarded, ~200 weekly active, $210K+ total volume\n\nWe're just getting started.\n\n$SKR + $SEE will be supported for predictions this week. More products launching soon to bring more users\n\nThe product is getting better every week.\n\nPrediction markets are the next big thing.\n@Polymarket is leading the catalyst.",
         "url": "https://twitter.com/tissesson/status/2028473263891095967",
-        "score": 131
+        "score": 128
       },
       {
         "id": "2028476178412286045",
@@ -334,7 +334,7 @@
         "created_at_iso": "2026-03-02 09:23:02 -05:00",
         "text": "RT @tissesson: Most crypto projects: raise money → disappear\n\nFor us: raise → build → deliver\n\nSince launch 2,400 users onboarded, ~200 wee…",
         "url": "https://twitter.com/foreseelol/status/2028476178412286045",
-        "score": 66
+        "score": 64
       }
     ]
   },
@@ -343,12 +343,12 @@
     "category": "Perps / Trading",
     "topKeywords": [
       "trading",
-      "perps",
-      "jupiter"
+      "jupiter",
+      "perps"
     ],
-    "tweetCount": 5,
-    "clusterScore": 382.4492202293151,
-    "reason": "Perps / Trading cluster linked by [trading, perps, jupiter]",
+    "tweetCount": 4,
+    "clusterScore": 329.6051078306542,
+    "reason": "Perps / Trading cluster linked by [trading, jupiter, perps]",
     "sampleTweets": [
       {
         "id": "2028387353065365704",
@@ -356,7 +356,7 @@
         "created_at_iso": "2026-03-02 03:30:05 -05:00",
         "text": "Jupiter's Perps generated almost 2x more revenue than all other products combined - $203M over 3 years.\n\nAre you trading on Jupiter? https://t.co/6M1DwjZd1v",
         "url": "https://twitter.com/SolanaSensei/status/2028387353065365704",
-        "score": 175
+        "score": 173
       },
       {
         "id": "2028099304947376533",
@@ -381,14 +381,6 @@
         "text": "Infrastructure engineer: https://t.co/STDCvoSpHN\n\nTrading Engineer: https://t.co/WyPRsyW0Bp",
         "url": "https://twitter.com/vibhu/status/2027502058190807376",
         "score": 51
-      },
-      {
-        "id": "2027475688236978390",
-        "handle": "solanamobile",
-        "created_at_iso": "2026-02-27 15:07:27 -05:00",
-        "text": "SKR perps are now live on Phoenix 🔥\n\nSKR szn",
-        "url": "https://twitter.com/solanamobile/status/2027475688236978390",
-        "score": 51
       }
     ]
   },
@@ -399,7 +391,7 @@
       "backpack"
     ],
     "tweetCount": 4,
-    "clusterScore": 213.21380334920093,
+    "clusterScore": 212.69782241359866,
     "reason": "Wallets cluster linked by [backpack]",
     "sampleTweets": [
       {
@@ -443,7 +435,7 @@
       "breaking"
     ],
     "tweetCount": 3,
-    "clusterScore": 163.17776881514763,
+    "clusterScore": 162.58240720996025,
     "reason": "Ecosystem Updates cluster linked by [breaking]",
     "sampleTweets": [
       {
@@ -452,7 +444,7 @@
         "created_at_iso": "2026-03-02 04:27:35 -05:00",
         "text": "🚨BREAKING: Iran 🇮🇷 says it will not negotiate with the United States 🇺🇸\n\nCan Trump's surgical strikes break a regime with nothing left to lose, or has the US 🇺🇸just walked into a war with no exit?\n\nMore Iran events are live on Foresee, bet now via @solanamobile https://t.co/2UfeDVSl8j",
         "url": "https://twitter.com/foreseelol/status/2028401825725206832",
-        "score": 59
+        "score": 58
       },
       {
         "id": "2027945747182989716",
@@ -479,7 +471,7 @@
       "pool"
     ],
     "tweetCount": 1,
-    "clusterScore": 59.46803553069694,
+    "clusterScore": 58.869366646411656,
     "reason": "DeFi Yield / LP cluster linked by [pool]",
     "sampleTweets": [
       {
@@ -499,7 +491,7 @@
       "ecosystem"
     ],
     "tweetCount": 1,
-    "clusterScore": 51.639391503048415,
+    "clusterScore": 51.62045266940206,
     "reason": "Ecosystem Updates cluster linked by [ecosystem]",
     "sampleTweets": [
       {
@@ -1948,24 +1940,6 @@
         "created_at_iso": "2026-02-27 16:07:55 -05:00",
         "text": "RT @pipenetwork: 🎙️ SolanaCDN: performance infra for @solana\n\nThis Tuesday @ 7pm UTC\n\nWith @DavidRhodus and guests @vibhu and @solanalegend…",
         "url": "https://twitter.com/vibhu/status/2027490905461047741",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "clusterId": "cluster_91",
-    "category": "General / Uncategorized",
-    "topKeywords": [],
-    "tweetCount": 1,
-    "clusterScore": 0,
-    "reason": "General / Uncategorized cluster linked by []",
-    "sampleTweets": [
-      {
-        "id": "2027478612388032561",
-        "handle": "ivan_nomadz",
-        "created_at_iso": "2026-02-27 15:19:04 -05:00",
-        "text": "RT @NOMADZxyz: Your audience can now earn you USDC 💸\n\nNomadz custom referral links are live!\n\n• 10% XP from referred user activity\n• 10% US…",
-        "url": "https://twitter.com/ivan_nomadz/status/2027478612388032561",
         "score": 0
       }
     ]

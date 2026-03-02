@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-02T19:42:30.350Z",
+    "generatedAt": "2026-03-02T20:25:16.785Z",
     "window": {
       "hotHours": 48,
       "weekDays": 7
@@ -55,7 +55,7 @@
       },
       "score": {
         "solanaRelevance": 1,
-        "recencyBoost": 0.469
+        "recencyBoost": 0.454
       }
     },
     {
@@ -80,7 +80,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.069
+        "recencyBoost": 0.054
       }
     },
     {
@@ -478,7 +478,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.622
+        "recencyBoost": 0.608
       }
     },
     {
@@ -1080,7 +1080,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.707
+        "recencyBoost": 0.693
       }
     },
     {
@@ -1102,7 +1102,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.167
+        "recencyBoost": 0.152
       }
     },
     {
@@ -1525,7 +1525,7 @@
       },
       "score": {
         "solanaRelevance": 5,
-        "recencyBoost": 0.444
+        "recencyBoost": 0.429
       }
     },
     {
@@ -1562,7 +1562,7 @@
       },
       "score": {
         "solanaRelevance": 13,
-        "recencyBoost": 0.002
+        "recencyBoost": 0
       }
     },
     {
@@ -2090,7 +2090,7 @@
       },
       "score": {
         "solanaRelevance": 4,
-        "recencyBoost": 0.753
+        "recencyBoost": 0.738
       }
     },
     {
@@ -2419,7 +2419,7 @@
       },
       "score": {
         "solanaRelevance": 1,
-        "recencyBoost": 0.784
+        "recencyBoost": 0.769
       }
     },
     {
@@ -2440,7 +2440,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.557
+        "recencyBoost": 0.542
       }
     },
     {
@@ -2464,7 +2464,7 @@
       },
       "score": {
         "solanaRelevance": 2,
-        "recencyBoost": 0.307
+        "recencyBoost": 0.292
       }
     },
     {
@@ -2856,7 +2856,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.877
+        "recencyBoost": 0.862
       }
     },
     {
@@ -2878,7 +2878,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.835
+        "recencyBoost": 0.82
       }
     },
     {
@@ -2903,7 +2903,7 @@
       },
       "score": {
         "solanaRelevance": 4,
-        "recencyBoost": 0.36
+        "recencyBoost": 0.346
       }
     },
     {
@@ -2924,7 +2924,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.321
+        "recencyBoost": 0.306
       }
     },
     {
@@ -2948,7 +2948,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.32
+        "recencyBoost": 0.305
       }
     },
     {
@@ -3340,7 +3340,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.849
+        "recencyBoost": 0.835
       }
     },
     {
@@ -3370,7 +3370,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.827
+        "recencyBoost": 0.812
       }
     },
     {
@@ -3393,7 +3393,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.407
+        "recencyBoost": 0.392
       }
     },
     {
@@ -3417,7 +3417,7 @@
       },
       "score": {
         "solanaRelevance": 6,
-        "recencyBoost": 0.341
+        "recencyBoost": 0.327
       }
     },
     {
@@ -3845,7 +3845,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.861
+        "recencyBoost": 0.847
       }
     },
     {
@@ -3867,7 +3867,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.369
+        "recencyBoost": 0.354
       }
     },
     {
@@ -3889,7 +3889,7 @@
       },
       "score": {
         "solanaRelevance": 4,
-        "recencyBoost": 0.306
+        "recencyBoost": 0.291
       }
     },
     {
@@ -3932,7 +3932,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.283
+        "recencyBoost": 0.268
       }
     },
     {
@@ -3956,7 +3956,7 @@
       },
       "score": {
         "solanaRelevance": 1,
-        "recencyBoost": 0.072
+        "recencyBoost": 0.057
       }
     },
     {
@@ -4327,7 +4327,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.873
+        "recencyBoost": 0.858
       }
     },
     {
@@ -4351,7 +4351,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.406
+        "recencyBoost": 0.391
       }
     },
     {
@@ -4372,7 +4372,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.151
+        "recencyBoost": 0.136
       }
     },
     {
@@ -4808,7 +4808,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.863
+        "recencyBoost": 0.848
       }
     },
     {
@@ -4833,7 +4833,7 @@
       },
       "score": {
         "solanaRelevance": 2,
-        "recencyBoost": 0.768
+        "recencyBoost": 0.753
       }
     },
     {
@@ -4855,7 +4855,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.731
+        "recencyBoost": 0.717
       }
     },
     {
@@ -4878,7 +4878,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.731
+        "recencyBoost": 0.717
       }
     },
     {
@@ -4902,7 +4902,7 @@
       },
       "score": {
         "solanaRelevance": 2,
-        "recencyBoost": 0.637
+        "recencyBoost": 0.622
       }
     },
     {
@@ -4925,7 +4925,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.202
+        "recencyBoost": 0.187
       }
     },
     {
@@ -4946,7 +4946,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.157
+        "recencyBoost": 0.142
       }
     },
     {
@@ -5283,7 +5283,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.87
+        "recencyBoost": 0.855
       }
     },
     {
@@ -5304,7 +5304,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.878
+        "recencyBoost": 0.864
       }
     },
     {
@@ -5327,7 +5327,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.595
+        "recencyBoost": 0.58
       }
     },
     {
@@ -5348,7 +5348,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.483
+        "recencyBoost": 0.469
       }
     },
     {
@@ -5756,7 +5756,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.88
+        "recencyBoost": 0.865
       }
     },
     {
@@ -5784,7 +5784,7 @@
       },
       "score": {
         "solanaRelevance": 8,
-        "recencyBoost": 0.854
+        "recencyBoost": 0.839
       }
     },
     {
@@ -5808,7 +5808,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.833
+        "recencyBoost": 0.818
       }
     },
     {
@@ -5830,7 +5830,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.808
+        "recencyBoost": 0.793
       }
     },
     {
@@ -5854,7 +5854,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.787
+        "recencyBoost": 0.773
       }
     },
     {
@@ -5878,7 +5878,7 @@
       },
       "score": {
         "solanaRelevance": 4,
-        "recencyBoost": 0.767
+        "recencyBoost": 0.752
       }
     },
     {
@@ -5900,7 +5900,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.747
+        "recencyBoost": 0.732
       }
     },
     {
@@ -5922,7 +5922,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.723
+        "recencyBoost": 0.709
       }
     },
     {
@@ -5943,7 +5943,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.487
+        "recencyBoost": 0.473
       }
     },
     {
@@ -5964,7 +5964,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.475
+        "recencyBoost": 0.46
       }
     },
     {
@@ -5985,7 +5985,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.471
+        "recencyBoost": 0.456
       }
     },
     {
@@ -6009,7 +6009,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.328
+        "recencyBoost": 0.313
       }
     },
     {
@@ -6031,7 +6031,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.286
+        "recencyBoost": 0.271
       }
     },
     {
@@ -6053,7 +6053,7 @@
       },
       "score": {
         "solanaRelevance": 13,
-        "recencyBoost": 0.265
+        "recencyBoost": 0.251
       }
     },
     {
@@ -6077,7 +6077,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.224
+        "recencyBoost": 0.21
       }
     },
     {
@@ -6289,7 +6289,7 @@
       },
       "score": {
         "solanaRelevance": 4,
-        "recencyBoost": 0.824
+        "recencyBoost": 0.809
       }
     },
     {
@@ -6319,7 +6319,7 @@
       },
       "score": {
         "solanaRelevance": 11,
-        "recencyBoost": 0.798
+        "recencyBoost": 0.783
       }
     },
     {
@@ -6341,7 +6341,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.652
+        "recencyBoost": 0.637
       }
     },
     {
@@ -6363,7 +6363,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.418
+        "recencyBoost": 0.403
       }
     },
     {
@@ -6646,7 +6646,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.885
+        "recencyBoost": 0.87
       }
     },
     {
@@ -6672,7 +6672,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.45
+        "recencyBoost": 0.435
       }
     },
     {
@@ -6716,7 +6716,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.889
+        "recencyBoost": 0.874
       }
     },
     {
@@ -6740,7 +6740,7 @@
       },
       "score": {
         "solanaRelevance": 4,
-        "recencyBoost": 0.786
+        "recencyBoost": 0.772
       }
     },
     {
@@ -6764,7 +6764,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.421
+        "recencyBoost": 0.406
       }
     },
     {
@@ -6790,7 +6790,7 @@
       },
       "score": {
         "solanaRelevance": 6,
-        "recencyBoost": 0.418
+        "recencyBoost": 0.403
       }
     },
     {
@@ -6815,7 +6815,7 @@
       },
       "score": {
         "solanaRelevance": 9,
-        "recencyBoost": 0.349
+        "recencyBoost": 0.335
       }
     },
     {
@@ -7728,7 +7728,7 @@
       },
       "score": {
         "solanaRelevance": 6,
-        "recencyBoost": 0.889
+        "recencyBoost": 0.875
       }
     },
     {
@@ -7754,7 +7754,7 @@
       },
       "score": {
         "solanaRelevance": 9,
-        "recencyBoost": 0.888
+        "recencyBoost": 0.873
       }
     },
     {
@@ -7779,7 +7779,7 @@
       },
       "score": {
         "solanaRelevance": 4,
-        "recencyBoost": 0.795
+        "recencyBoost": 0.781
       }
     },
     {
@@ -7804,7 +7804,7 @@
       },
       "score": {
         "solanaRelevance": 4,
-        "recencyBoost": 0.639
+        "recencyBoost": 0.624
       }
     },
     {
@@ -8230,7 +8230,7 @@
       },
       "score": {
         "solanaRelevance": 4,
-        "recencyBoost": 0.886
+        "recencyBoost": 0.871
       }
     },
     {
@@ -8253,7 +8253,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.886
+        "recencyBoost": 0.871
       }
     },
     {
@@ -8276,7 +8276,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.885
+        "recencyBoost": 0.87
       }
     },
     {
@@ -8304,7 +8304,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.814
+        "recencyBoost": 0.8
       }
     },
     {
@@ -8325,7 +8325,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.535
+        "recencyBoost": 0.52
       }
     },
     {
@@ -8349,7 +8349,7 @@
       },
       "score": {
         "solanaRelevance": 1,
-        "recencyBoost": 0.312
+        "recencyBoost": 0.297
       }
     },
     {
@@ -8374,7 +8374,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.312
+        "recencyBoost": 0.297
       }
     },
     {
@@ -8711,7 +8711,7 @@
       },
       "score": {
         "solanaRelevance": 2,
-        "recencyBoost": 0.891
+        "recencyBoost": 0.876
       }
     },
     {
@@ -8735,7 +8735,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.801
+        "recencyBoost": 0.786
       }
     },
     {
@@ -8760,7 +8760,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.464
+        "recencyBoost": 0.45
       }
     },
     {
@@ -8785,7 +8785,7 @@
       },
       "score": {
         "solanaRelevance": 1,
-        "recencyBoost": 0.327
+        "recencyBoost": 0.313
       }
     },
     {
@@ -8808,7 +8808,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.034
+        "recencyBoost": 0.02
       }
     },
     {
@@ -9190,7 +9190,7 @@
       },
       "score": {
         "solanaRelevance": 2,
-        "recencyBoost": 0.895
+        "recencyBoost": 0.88
       }
     },
     {
@@ -9213,7 +9213,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.895
+        "recencyBoost": 0.881
       }
     },
     {
@@ -9237,7 +9237,7 @@
       },
       "score": {
         "solanaRelevance": 1,
-        "recencyBoost": 0.866
+        "recencyBoost": 0.851
       }
     },
     {
@@ -9263,7 +9263,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.523
+        "recencyBoost": 0.508
       }
     },
     {
@@ -9287,7 +9287,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.46
+        "recencyBoost": 0.445
       }
     },
     {
@@ -9311,7 +9311,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.462
+        "recencyBoost": 0.447
       }
     },
     {
@@ -9333,7 +9333,7 @@
       },
       "score": {
         "solanaRelevance": 0,
-        "recencyBoost": 0.43
+        "recencyBoost": 0.415
       }
     },
     {
@@ -9355,7 +9355,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.384
+        "recencyBoost": 0.369
       }
     },
     {
@@ -9379,7 +9379,7 @@
       },
       "score": {
         "solanaRelevance": 7,
-        "recencyBoost": 0.004
+        "recencyBoost": 0
       }
     },
     {

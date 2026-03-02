@@ -475,56 +475,6 @@
     "score": 3
   },
   {
-    "source": "AMB Crypto",
-    "title": "VIRTUAL rallies 9% toward key resistance – Is $0.85 the next stop?",
-    "url": "https://ambcrypto.com/virtual-rallies-9-toward-key-resistance-is-0-85-the-next-stop",
-    "published": "2026-03-01T23:00:07.000Z",
-    "summary": "VIRTUAL rebounds from key support and consolidates near resistance as rising participation and bullish indicators signal a potential breakout attempt.",
-    "keywords": [
-      "virtual",
-      "rallies",
-      "toward",
-      "resistance",
-      "next",
-      "stop",
-      "rebounds",
-      "from",
-      "support",
-      "consolidates",
-      "near",
-      "rising"
-    ],
-    "scoreTitle": 0,
-    "scoreBody": 2,
-    "scoreSource": 0,
-    "score": 2
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Kalshi founder provides update on Iran's Khamenei market carveout",
-    "url": "https://cointelegraph.com/news/kalshi-founder-khamenei-market-carveout",
-    "published": "2026-03-01T21:17:03.000Z",
-    "summary": "The prediction platform said it would reimburse users and resolve markets to the last-traded price before the death of the Iranian leader was confirmed.",
-    "keywords": [
-      "kalshi",
-      "founder",
-      "provides",
-      "update",
-      "iran",
-      "khamenei",
-      "market",
-      "carveout",
-      "prediction",
-      "platform",
-      "said",
-      "would"
-    ],
-    "scoreTitle": 0,
-    "scoreBody": 2,
-    "scoreSource": 0,
-    "score": 2
-  },
-  {
     "source": "Cointelegraph",
     "title": "Kalshi founder provides update on Iran's Khamenei market carveout",
     "url": "https://cointelegraph.com/news/kalshi-founder-khamenei-market-carveout",
@@ -575,11 +525,61 @@
     "score": 2
   },
   {
+    "source": "The Block",
+    "title": "Prosecutors seek forfeiture of $327K in Tether after alleged dating app crypto fraud",
+    "url": "https://www.theblock.co/post/391838/prosecutors-seek-forfeiture-of-327k-in-tether-after-alleged-dating-app-crypto-fraud",
+    "published": "2026-03-02T20:04:49.000Z",
+    "summary": "Prosecutors are looking to seize $327,829 worth of Tether after prosecutors say a person in Massachusetts was duped on a dating app.",
+    "keywords": [
+      "prosecutors",
+      "seek",
+      "forfeiture",
+      "327k",
+      "tether",
+      "after",
+      "alleged",
+      "dating",
+      "crypto",
+      "fraud",
+      "looking",
+      "seize"
+    ],
+    "scoreTitle": 0,
+    "scoreBody": 0,
+    "scoreSource": 1,
+    "score": 1
+  },
+  {
+    "source": "Decrypt",
+    "title": "Bitcoin Treasury Firm ProCap Adds $31 Million in BTC as Stock Buybacks Grow",
+    "url": "https://decrypt.co/359646/bitcoin-treasury-firm-procap-adds-31-million-stock-buybacks-grow",
+    "published": "2026-03-02T19:57:49.000Z",
+    "summary": "Publicly traded Bitcoin treasury ProCap Financial boosted its BTC stash to $376 million as it continues buying back its own shares.",
+    "keywords": [
+      "bitcoin",
+      "treasury",
+      "firm",
+      "procap",
+      "adds",
+      "million",
+      "stock",
+      "buybacks",
+      "grow",
+      "publicly",
+      "traded",
+      "financial"
+    ],
+    "scoreTitle": 0,
+    "scoreBody": 0,
+    "scoreSource": 1,
+    "score": 1
+  },
+  {
     "source": "CoinDesk",
     "title": "Bitcoin’s 5% spike higher Monday driven by short-covering, not fresh buying, says analyst.",
     "url": "https://www.coindesk.com/markets/2026/03/02/bitcoin-s-5-spike-higher-monday-driven-by-short-covering-not-fresh-buying-says-analyst",
     "published": "2026-03-02T19:35:01.000Z",
-    "summary": "",
+    "summary": "Market data show rising open interest and large liquidation clusters around $65,000 and above $70,000, underscoring that the rally may be fragile without stronger spot demand",
     "keywords": [
       "bitcoin",
       "spike",
@@ -591,7 +591,8 @@
       "fresh",
       "buying",
       "says",
-      "analyst"
+      "analyst",
+      "market"
     ],
     "scoreTitle": 0,
     "scoreBody": 0,
@@ -2046,31 +2047,6 @@
     "score": 1
   },
   {
-    "source": "The Block",
-    "title": "Developer embeds image on Bitcoin as a single transaction, challenging BIP-110’s core claims",
-    "url": "https://www.theblock.co/post/391667/developer-embeds-image-on-bitcoin-as-a-single-transaction-challenging-bip-110s-core-claims",
-    "published": "2026-02-28T21:17:03.000Z",
-    "summary": "BIP-110, formerly known as BIP-444, is a controversial proposal that would restrict certain ways of storing data on the Bitcoin blockchain.",
-    "keywords": [
-      "developer",
-      "embeds",
-      "image",
-      "bitcoin",
-      "single",
-      "transaction",
-      "challenging",
-      "core",
-      "claims",
-      "formerly",
-      "known",
-      "controversial"
-    ],
-    "scoreTitle": 0,
-    "scoreBody": 0,
-    "scoreSource": 1,
-    "score": 1
-  },
-  {
     "source": "Decrypt",
     "title": "Bitcoin Recovers Following Plunge as US, Israel Begin Bombing Iran",
     "url": "https://decrypt.co/359528/bitcoin-recovers-following-plunge-as-us-israel-begin-bombing-iran",
@@ -2314,31 +2290,6 @@
       "legislation",
       "introduced",
       "response"
-    ],
-    "scoreTitle": 0,
-    "scoreBody": 0,
-    "scoreSource": 1,
-    "score": 1
-  },
-  {
-    "source": "Decrypt",
-    "title": "Amazon, Nvidia Flood OpenAI With Cash as ChatGPT Maker’s Valuation Hits $730 Billion",
-    "url": "https://decrypt.co/359401/amazon-nvidia-flood-openai-cash-valuation-730-billion",
-    "published": "2026-02-27T14:48:25.000Z",
-    "summary": "OpenAI just secured $110 billion in fresh investment, and announced additional collaborations with two of the big backers.",
-    "keywords": [
-      "amazon",
-      "nvidia",
-      "flood",
-      "openai",
-      "with",
-      "cash",
-      "chatgpt",
-      "maker",
-      "valuation",
-      "hits",
-      "billion",
-      "just"
     ],
     "scoreTitle": 0,
     "scoreBody": 0,

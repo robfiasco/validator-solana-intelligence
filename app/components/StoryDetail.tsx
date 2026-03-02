@@ -28,7 +28,7 @@ export default function StoryDetail({ story, index, total, onBack }: { story: St
         { label: "Top Tweet Volume", value: metrics.topTweet },
         { label: "Tweets Analyzed", value: metrics.tweets },
         { label: "Unique Voices", value: metrics.voices },
-    ];
+    ].filter(item => item.value >= 10);
 
     return (
         <div className="seeker-detail-shell" style={{ paddingBottom: "100px", zIndex: 9999 }} >
@@ -145,6 +145,9 @@ function getKickerClass(categoryRaw: string) {
     if (/security|risk|breach|exploit|hack/.test(category)) return "critical";
     if (/ai|agent/.test(category)) return "ai";
     if (/gaming|game/.test(category)) return "gaming";
+    if (/alpha/.test(category)) return "alpha";
+    if (/mobile|seeker/.test(category)) return "mobile";
+    if (/privacy|zk/.test(category)) return "privacy";
     return "";
 }
 

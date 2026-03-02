@@ -1018,9 +1018,12 @@ export default function Home() {
             <h2 className="info-modal-title">Gossip Terminal</h2>
             <p className="info-modal-version">v1.0.0</p>
 
-            <p className="info-modal-dev">
-              Developed by<br /><strong>Rob @ Chadakoin Digital</strong>
-            </p>
+            <div className="info-modal-dev">
+              <span style={{ opacity: 0.6, fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "0.05em" }}>Developed by</span><br />
+              <a href="https://x.com/chkndgtl" target="_blank" rel="noopener noreferrer" style={{ color: "var(--sol-cyan)", textDecoration: "none", fontWeight: 700, fontSize: "1.1rem", marginTop: "4px", display: "inline-block" }}>
+                @chkndgtl
+              </a>
+            </div>
 
             <button
               onClick={handleReplayOnboarding}

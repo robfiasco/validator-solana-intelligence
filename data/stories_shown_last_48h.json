@@ -1,25 +1,11 @@
 [
   {
-    "id": "fc3ddc0fe50699343de05bf6ba561db27e7355b3",
-    "title": "Signal Board Summary 2026-03-02",
-    "url": "",
-    "source": "signal-board",
-    "firstSeenAt": "2026-03-02T19:42:44.014Z",
-    "lastSeenAt": "2026-03-02T19:42:44.014Z",
-    "sectionShown": "signal",
-    "topicTags": [
-      "signal-board"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
     "id": "2e403a00ce766e4887f69c875dc9b7a2b301bfeb",
     "title": "Bitcoin, Ethereum, and Solana ETFs record weekly inflows amid price weakness",
     "url": "https://ambcrypto.com/bitcoin-ethereum-and-solana-etfs-record-weekly-inflows-amid-price-weakness",
     "source": "AMB Crypto",
     "firstSeenAt": "2026-03-02T19:42:31.081Z",
-    "lastSeenAt": "2026-03-02T19:42:31.081Z",
+    "lastSeenAt": "2026-03-02T20:25:17.657Z",
     "sectionShown": "briefing",
     "topicTags": [
       "bitcoin",
@@ -30,6 +16,62 @@
       "weekly",
       "inflows",
       "amid"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "52816826d3944511aee1994c814bdcf89a9dd464",
+    "title": "Solana at a breaking point: $100 mln inflows meet rising sell pressure",
+    "url": "https://ambcrypto.com/solana-at-a-breaking-point-100-mln-inflows-meet-rising-sell-pressure",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-03-02T20:25:17.657Z",
+    "lastSeenAt": "2026-03-02T20:25:17.657Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "solana",
+      "breaking",
+      "point",
+      "inflows",
+      "meet",
+      "rising",
+      "sell",
+      "pressure"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "a9f1705aa095ef8909f2b4334c3717199bad1aae",
+    "title": "Hyperliquid's HYPE token jumps 5% as Iran war brings windfall revenue, JUP gains on supply freeze",
+    "url": "https://www.coindesk.com/markets/2026/03/02/hype-jumps-5-as-token-burn-offsets-usd316-million-unlock-jup-gains-weekly-on-supply-freeze",
+    "source": "CoinDesk",
+    "firstSeenAt": "2026-03-02T20:25:17.657Z",
+    "lastSeenAt": "2026-03-02T20:25:17.657Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "hyperliquid",
+      "hype",
+      "token",
+      "jumps",
+      "iran",
+      "brings",
+      "windfall",
+      "revenue"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "fc3ddc0fe50699343de05bf6ba561db27e7355b3",
+    "title": "Signal Board Summary 2026-03-02",
+    "url": "",
+    "source": "signal-board",
+    "firstSeenAt": "2026-03-02T19:42:44.014Z",
+    "lastSeenAt": "2026-03-02T19:42:44.014Z",
+    "sectionShown": "signal",
+    "topicTags": [
+      "signal-board"
     ],
     "majorUpdate": false,
     "updateReason": null

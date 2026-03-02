@@ -245,7 +245,13 @@ function extractNarrative(tweets) {
   // Fallback: First meaningful sentence
   const sentences = text.split(/[.!?]/).filter(s => s.length > 20);
   if (sentences.length > 0) {
-    return sentences[0].trim().substring(0, 100);
+    const fallback = sentences[0].trim();
+    if (fallback.length > 140) {
+      const cut = fallback.substring(0, 137);
+      const lastSpace = cut.lastIndexOf(' ');
+      return cut.substring(0, lastSpace > 0 ? lastSpace : 137) + '...';
+    }
+    return fallback;
   }
 
   return 'Untitled';
