@@ -100,10 +100,26 @@ const main = async () => {
         "run",
         "stories:metrics",
       ]);
-      await runStep("STEP 12: PREMIUM CT STORIES GENERATED", "npm", [
-        "run",
-        "stories:ct",
-      ]);
+
+      const rawPath = path.join(cwd, "signals_raw.json");
+      const storiesPath = path.join(cwd, "public/data/validator_stories.json");
+      let shouldGenerateStories = true;
+      if (fs.existsSync(rawPath) && fs.existsSync(storiesPath)) {
+        const rawStat = fs.statSync(rawPath);
+        const storiesStat = fs.statSync(storiesPath);
+        if (storiesStat.mtime > rawStat.mtime) {
+          shouldGenerateStories = false;
+        }
+      }
+
+      if (shouldGenerateStories) {
+        await runStep("STEP 12: PREMIUM CT STORIES GENERATED", "npm", [
+          "run",
+          "stories:ct",
+        ]);
+      } else {
+        console.log("STEP 12: PREMIUM CT STORIES GENERATED (Skipped - signals_raw.json unmodified)");
+      }
     } else {
       console.log("STEP 2+: STORY PIPELINE SKIPPED (--no-stories)");
       await runStep("STEP 2: STORIES BUILT", "node", ["scripts/buildTopStories.mjs"]);

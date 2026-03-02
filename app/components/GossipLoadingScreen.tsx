@@ -190,7 +190,8 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
                         textAlign: "center",
                         display: "flex",
                         alignItems: "center",
-                        justifyContent: "center"
+                        justifyContent: "center",
+                        textShadow: "0 0 10px rgba(20, 241, 149, 0.5), 0 0 20px rgba(153, 69, 255, 0.4), 0 0 30px rgba(0, 194, 255, 0.3)"
                     }}>
                         {titleText}
                     </div>

@@ -1,24 +1,24 @@
 {
   "meta": {
-    "generatedAt": "2026-03-01T19:06:23.095Z",
-    "totalCandidates": 100,
-    "solanaCandidates": 23,
+    "generatedAt": "2026-03-02T19:42:30.982Z",
+    "totalCandidates": 89,
+    "solanaCandidates": 25,
     "selected": 5,
-    "tweetPool": 398,
+    "tweetPool": 380,
     "narrativeKeywordsCount": 0
   },
   "items": [
     {
-      "id": "https://ambcrypto.com/while-bitcoin-etfs-bled-solana-and-xrp-won-the-week-heres-the-data",
-      "title": "While Bitcoin ETFs bled, Solana and XRP won the week – Here’s the data!",
-      "url": "https://ambcrypto.com/while-bitcoin-etfs-bled-solana-and-xrp-won-the-week-heres-the-data",
+      "id": "https://ambcrypto.com/bitcoin-ethereum-and-solana-etfs-record-weekly-inflows-amid-price-weakness",
+      "title": "Bitcoin, Ethereum, and Solana ETFs record weekly inflows amid price weakness",
+      "url": "https://ambcrypto.com/bitcoin-ethereum-and-solana-etfs-record-weekly-inflows-amid-price-weakness",
       "source": "AMB Crypto",
-      "publishedAt": "2026-03-01T09:00:54.000Z",
-      "summary": "Is this market weakness, or the early stages of institutional reshuffling?",
+      "publishedAt": "2026-03-02T19:11:08.000Z",
+      "summary": "Crypto ETFs tied to Bitcoin, Ethereum, and Solana saw positive weekly inflows, signaling continued allocation even as spot markets declined.",
       "tags": [
-        "while",
         "bitcoin",
-        "etfs"
+        "ethereum",
+        "solana"
       ],
       "topicBucket": "market",
       "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
@@ -26,140 +26,56 @@
       "xMentions": 3,
       "who": [
         {
+          "handle": "@solana_daily",
+          "summary": "Top 10 Chains by Dex Volume in the Last 7 Days 📊 🔸@solana: $15.72B 🔸@ethereum : $11.64B 🔸@BNBCHAIN : $6.21B 🔸@ba...",
+          "tweetUrl": "https://twitter.com/solana_daily/status/2026597538619412967",
+          "matchReason": "keyword_match"
+        },
+        {
           "handle": "@inno_ox",
-          "summary": "RT @inno_ox: BEST $10,000 PORTFOLIO ON SOLANA (conservative) &gt; $2,500 BTC: bitcoin is king. you should always hold...",
-          "tweetUrl": "https://twitter.com/inno_ox/status/2027932492838174856",
+          "summary": "BEST $10,000 PORTFOLIO ON SOLANA (conservative) > $2,500 BTC: bitcoin is king. you should always hold some. > $2,000 ...",
+          "tweetUrl": "https://twitter.com/inno_ox/status/2027833051074437591",
           "matchReason": "keyword_match"
         },
         {
-          "handle": "@sol_nxxn",
-          "summary": "The last time we saw $SOL around $80 was in 2023 That was the year we were still trading NFTs and only beginning to e...",
-          "tweetUrl": "https://twitter.com/sol_nxxn/status/2026845213075873926",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@vibhu",
-          "summary": "The @MaxResnick^2 @Apiaruk x Solana Watch finally got here Blown away by the craftsmanship 🔥🔥🔥 https://t.co/TiyG1d...",
-          "tweetUrl": "https://twitter.com/vibhu/status/2027122304640008374",
+          "handle": "@gumsays",
+          "summary": "The winner of the next cycle is here Throughput is less of a concern; there's plenty of it to handle 100x more econom...",
+          "tweetUrl": "https://twitter.com/gumsays/status/2024922353768018414",
           "matchReason": "keyword_match"
         }
       ],
       "xWho": [
         {
+          "handle": "@solana_daily",
+          "summary": "Top 10 Chains by Dex Volume in the Last 7 Days 📊 🔸@solana: $15.72B 🔸@ethereum : $11.64B 🔸@BNBCHAIN : $6.21B 🔸@ba...",
+          "tweetUrl": "https://twitter.com/solana_daily/status/2026597538619412967",
+          "matchReason": "keyword_match"
+        },
+        {
           "handle": "@inno_ox",
-          "summary": "RT @inno_ox: BEST $10,000 PORTFOLIO ON SOLANA (conservative) &gt; $2,500 BTC: bitcoin is king. you should always hold...",
-          "tweetUrl": "https://twitter.com/inno_ox/status/2027932492838174856",
+          "summary": "BEST $10,000 PORTFOLIO ON SOLANA (conservative) > $2,500 BTC: bitcoin is king. you should always hold some. > $2,000 ...",
+          "tweetUrl": "https://twitter.com/inno_ox/status/2027833051074437591",
           "matchReason": "keyword_match"
         },
         {
-          "handle": "@sol_nxxn",
-          "summary": "The last time we saw $SOL around $80 was in 2023 That was the year we were still trading NFTs and only beginning to e...",
-          "tweetUrl": "https://twitter.com/sol_nxxn/status/2026845213075873926",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@vibhu",
-          "summary": "The @MaxResnick^2 @Apiaruk x Solana Watch finally got here Blown away by the craftsmanship 🔥🔥🔥 https://t.co/TiyG1d...",
-          "tweetUrl": "https://twitter.com/vibhu/status/2027122304640008374",
+          "handle": "@gumsays",
+          "summary": "The winner of the next cycle is here Throughput is less of a concern; there's plenty of it to handle 100x more econom...",
+          "tweetUrl": "https://twitter.com/gumsays/status/2024922353768018414",
           "matchReason": "keyword_match"
         }
       ],
       "mentionedBy": [
         {
-          "handle": "@inno_ox",
-          "linkToTweet": "https://twitter.com/inno_ox/status/2027932492838174856"
+          "handle": "@solana_daily",
+          "linkToTweet": "https://twitter.com/solana_daily/status/2026597538619412967"
         },
-        {
-          "handle": "@sol_nxxn",
-          "linkToTweet": "https://twitter.com/sol_nxxn/status/2026845213075873926"
-        },
-        {
-          "handle": "@vibhu",
-          "linkToTweet": "https://twitter.com/vibhu/status/2027122304640008374"
-        }
-      ],
-      "matchReason": "keyword_match",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 5,
-        "mentionScore": 52,
-        "recencyScore": 10,
-        "sourceScore": 1,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "133f3b2e81df1786f987592b9c0f64ae731f8cc6",
-      "score": 68
-    },
-    {
-      "id": "https://ambcrypto.com/bitcoin-falls-with-ethereum-and-solana-as-mutuum-finance-lending-protocol-advances",
-      "title": "Bitcoin falls with Ethereum and Solana as Mutuum Finance lending protocol advances",
-      "url": "https://ambcrypto.com/bitcoin-falls-with-ethereum-and-solana-as-mutuum-finance-lending-protocol-advances",
-      "source": "AMB Crypto",
-      "publishedAt": "2026-03-01T11:00:38.000Z",
-      "summary": "Bitcoin fell alongside Ethereum and Solana on Feb. 27, 2026, as broader market caution weighed […]",
-      "tags": [
-        "bitcoin",
-        "falls",
-        "with"
-      ],
-      "topicBucket": "general",
-      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 3,
-      "xMentions": 3,
-      "who": [
         {
           "handle": "@inno_ox",
-          "summary": "RT @inno_ox: BEST $10,000 PORTFOLIO ON SOLANA (conservative) &gt; $2,500 BTC: bitcoin is king. you should always hold...",
-          "tweetUrl": "https://twitter.com/inno_ox/status/2027932492838174856",
-          "matchReason": "keyword_match"
+          "linkToTweet": "https://twitter.com/inno_ox/status/2027833051074437591"
         },
         {
-          "handle": "@sol_nxxn",
-          "summary": "The best thing in a bear market is yield On Solana, I use @HubraApp for lending yields Instead of manually monitoring...",
-          "tweetUrl": "https://twitter.com/sol_nxxn/status/2027005326759702794",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@marygooneratne",
-          "summary": "Started 2025 with $10M in deposits and starting 2026 with $150M 📈 📈 This is the year real-world financial products ...",
-          "tweetUrl": "https://twitter.com/marygooneratne/status/2009700302723944506",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "xWho": [
-        {
-          "handle": "@inno_ox",
-          "summary": "RT @inno_ox: BEST $10,000 PORTFOLIO ON SOLANA (conservative) &gt; $2,500 BTC: bitcoin is king. you should always hold...",
-          "tweetUrl": "https://twitter.com/inno_ox/status/2027932492838174856",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@sol_nxxn",
-          "summary": "The best thing in a bear market is yield On Solana, I use @HubraApp for lending yields Instead of manually monitoring...",
-          "tweetUrl": "https://twitter.com/sol_nxxn/status/2027005326759702794",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@marygooneratne",
-          "summary": "Started 2025 with $10M in deposits and starting 2026 with $150M 📈 📈 This is the year real-world financial products ...",
-          "tweetUrl": "https://twitter.com/marygooneratne/status/2009700302723944506",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "mentionedBy": [
-        {
-          "handle": "@inno_ox",
-          "linkToTweet": "https://twitter.com/inno_ox/status/2027932492838174856"
-        },
-        {
-          "handle": "@sol_nxxn",
-          "linkToTweet": "https://twitter.com/sol_nxxn/status/2027005326759702794"
-        },
-        {
-          "handle": "@marygooneratne",
-          "linkToTweet": "https://twitter.com/marygooneratne/status/2009700302723944506"
+          "handle": "@gumsays",
+          "linkToTweet": "https://twitter.com/gumsays/status/2024922353768018414"
         }
       ],
       "matchReason": "keyword_match",
@@ -173,32 +89,194 @@
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "37a9231dad9e0933f551c5ebf655f6f00b44e96c",
+      "dedupeFingerprint": "2e403a00ce766e4887f69c875dc9b7a2b301bfeb",
       "score": 63
     },
     {
-      "id": "https://www.coindesk.com/policy/2026/03/01/stablecoin-yield-rewards-likely-won-t-be-banned-under-occ-proposal-state-of-crypto",
-      "title": "Stablecoin yield rewards (likely won't be) banned under OCC proposal: State of Crypto",
-      "url": "https://www.coindesk.com/policy/2026/03/01/stablecoin-yield-rewards-likely-won-t-be-banned-under-occ-proposal-state-of-crypto",
+      "id": "https://www.coindesk.com/coindesk-indices/2026/03/02/coindesk-20-performance-update-near-protocol-near-jumps-12-4-over-weekend",
+      "title": "CoinDesk 20 performance update: NEAR Protocol (NEAR) jumps 12.4% over weekend",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/03/02/coindesk-20-performance-update-near-protocol-near-jumps-12-4-over-weekend",
       "source": "CoinDesk",
-      "publishedAt": "2026-03-01T15:00:00.000Z",
-      "summary": "The OCC's proposal's stablecoin yield procedures are the most ambiguous in that rulemaking plan.",
+      "publishedAt": "2026-03-02T14:15:11.000Z",
+      "summary": "Solana (SOL), up 2.1% from Friday, was also among the top performers.",
       "tags": [
-        "stablecoin",
-        "yield",
-        "rewards"
+        "coindesk",
+        "performance",
+        "update"
+      ],
+      "topicBucket": "general",
+      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
+      "mentionCount": 3,
+      "xMentions": 3,
+      "who": [
+        {
+          "handle": "@solana_daily",
+          "summary": "🚨 Solana introduces https://t.co/SysoWCt0EZ via @solanapayments - a breakthrough new product for the Web3 payments e...",
+          "tweetUrl": "https://twitter.com/solana_daily/status/2027228574223319266",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@inno_ox",
+          "summary": "Back in 2024, Solana Airdrops arc was incredible! 🪂🎒 my 2 most profitable Solana airdrops were: > $ME: Timed the sa...",
+          "tweetUrl": "https://twitter.com/inno_ox/status/2024943422008951025",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@gumsays",
+          "summary": "The winner of the next cycle is here Throughput is less of a concern; there's plenty of it to handle 100x more econom...",
+          "tweetUrl": "https://twitter.com/gumsays/status/2024922353768018414",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "xWho": [
+        {
+          "handle": "@solana_daily",
+          "summary": "🚨 Solana introduces https://t.co/SysoWCt0EZ via @solanapayments - a breakthrough new product for the Web3 payments e...",
+          "tweetUrl": "https://twitter.com/solana_daily/status/2027228574223319266",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@inno_ox",
+          "summary": "Back in 2024, Solana Airdrops arc was incredible! 🪂🎒 my 2 most profitable Solana airdrops were: > $ME: Timed the sa...",
+          "tweetUrl": "https://twitter.com/inno_ox/status/2024943422008951025",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@gumsays",
+          "summary": "The winner of the next cycle is here Throughput is less of a concern; there's plenty of it to handle 100x more econom...",
+          "tweetUrl": "https://twitter.com/gumsays/status/2024922353768018414",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "mentionedBy": [
+        {
+          "handle": "@solana_daily",
+          "linkToTweet": "https://twitter.com/solana_daily/status/2027228574223319266"
+        },
+        {
+          "handle": "@inno_ox",
+          "linkToTweet": "https://twitter.com/inno_ox/status/2024943422008951025"
+        },
+        {
+          "handle": "@gumsays",
+          "linkToTweet": "https://twitter.com/gumsays/status/2024922353768018414"
+        }
+      ],
+      "matchReason": "keyword_match",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 6,
+        "mentionScore": 40,
+        "recencyScore": 10,
+        "sourceScore": 4,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "a8edff70ad66af0d5c52df63d0e2cb0f6877e3cf",
+      "score": 60
+    },
+    {
+      "id": "https://ambcrypto.com/solana-at-a-breaking-point-100-mln-inflows-meet-rising-sell-pressure",
+      "title": "Solana at a breaking point: $100 mln inflows meet rising sell pressure",
+      "url": "https://ambcrypto.com/solana-at-a-breaking-point-100-mln-inflows-meet-rising-sell-pressure",
+      "source": "AMB Crypto",
+      "publishedAt": "2026-03-02T15:00:47.000Z",
+      "summary": "Solana is caught at a crossroads as buyers and sellers clash.",
+      "tags": [
+        "solana",
+        "breaking",
+        "point"
+      ],
+      "topicBucket": "market",
+      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
+      "mentionCount": 3,
+      "xMentions": 3,
+      "who": [
+        {
+          "handle": "@solana_daily",
+          "summary": "Join our X Space AMA with @Tramplin_io - Premium Staking App on Solana 📍 Listen here: https://t.co/Lh7yeLBGaT 🗓 Dat...",
+          "tweetUrl": "https://twitter.com/solana_daily/status/2026831838782828718",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@inno_ox",
+          "summary": "What happened this week on @solanamobile ? 📱 > Milestone! Over 500+ dApps are deployed on Seeker.🏆 > @Official_Upbi...",
+          "tweetUrl": "https://twitter.com/inno_ox/status/2027070274735141315",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@solanasensei",
+          "summary": "Over $195M was bridged into solana with this February and ~70% of total inflows came from Ethereum alone. https://t.c...",
+          "tweetUrl": "https://twitter.com/solanasensei/status/2027994505501413661",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "xWho": [
+        {
+          "handle": "@solana_daily",
+          "summary": "Join our X Space AMA with @Tramplin_io - Premium Staking App on Solana 📍 Listen here: https://t.co/Lh7yeLBGaT 🗓 Dat...",
+          "tweetUrl": "https://twitter.com/solana_daily/status/2026831838782828718",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@inno_ox",
+          "summary": "What happened this week on @solanamobile ? 📱 > Milestone! Over 500+ dApps are deployed on Seeker.🏆 > @Official_Upbi...",
+          "tweetUrl": "https://twitter.com/inno_ox/status/2027070274735141315",
+          "matchReason": "keyword_match"
+        },
+        {
+          "handle": "@solanasensei",
+          "summary": "Over $195M was bridged into solana with this February and ~70% of total inflows came from Ethereum alone. https://t.c...",
+          "tweetUrl": "https://twitter.com/solanasensei/status/2027994505501413661",
+          "matchReason": "keyword_match"
+        }
+      ],
+      "mentionedBy": [
+        {
+          "handle": "@solana_daily",
+          "linkToTweet": "https://twitter.com/solana_daily/status/2026831838782828718"
+        },
+        {
+          "handle": "@inno_ox",
+          "linkToTweet": "https://twitter.com/inno_ox/status/2027070274735141315"
+        },
+        {
+          "handle": "@solanasensei",
+          "linkToTweet": "https://twitter.com/solanasensei/status/2027994505501413661"
+        }
+      ],
+      "matchReason": "keyword_match",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 8,
+        "mentionScore": 38,
+        "recencyScore": 10,
+        "sourceScore": 1,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "52816826d3944511aee1994c814bdcf89a9dd464",
+      "score": 57
+    },
+    {
+      "id": "https://www.theblock.co/post/391770/european-bank-consortium-targets-2026-launch-for-euro-backed-stablecoin-report",
+      "title": "European bank consortium targets 2026 launch for euro-backed stablecoin: report",
+      "url": "https://www.theblock.co/post/391770/european-bank-consortium-targets-2026-launch-for-euro-backed-stablecoin-report",
+      "source": "The Block",
+      "publishedAt": "2026-03-02T16:13:46.000Z",
+      "summary": "12 major European banks are moving forward with a euro-backed stablecoin under the Qivalis consortium, aiming for a second-half 2026 launch.",
+      "tags": [
+        "european",
+        "bank",
+        "consortium"
       ],
       "topicBucket": "defi",
       "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 2,
-      "xMentions": 2,
+      "mentionCount": 1,
+      "xMentions": 1,
       "who": [
-        {
-          "handle": "@marygooneratne",
-          "summary": "RWA looping but make it U.K. government bonds. stablecoins have been so USD-dominated that people forget there's $30T...",
-          "tweetUrl": "https://twitter.com/marygooneratne/status/2021977201202115002",
-          "matchReason": "keyword_match"
-        },
         {
           "handle": "@umbraprivacy",
           "summary": "RT @reflectmoney: 1/ Introducing Reflect Whitelabel. Launch your own custom yield-bearing stablecoin, powered by Refl...",
@@ -208,12 +286,6 @@
       ],
       "xWho": [
         {
-          "handle": "@marygooneratne",
-          "summary": "RWA looping but make it U.K. government bonds. stablecoins have been so USD-dominated that people forget there's $30T...",
-          "tweetUrl": "https://twitter.com/marygooneratne/status/2021977201202115002",
-          "matchReason": "keyword_match"
-        },
-        {
           "handle": "@umbraprivacy",
           "summary": "RT @reflectmoney: 1/ Introducing Reflect Whitelabel. Launch your own custom yield-bearing stablecoin, powered by Refl...",
           "tweetUrl": "https://twitter.com/umbraprivacy/status/2026330530791199012",
@@ -221,10 +293,6 @@
         }
       ],
       "mentionedBy": [
-        {
-          "handle": "@marygooneratne",
-          "linkToTweet": "https://twitter.com/marygooneratne/status/2021977201202115002"
-        },
         {
           "handle": "@umbraprivacy",
           "linkToTweet": "https://twitter.com/umbraprivacy/status/2026330530791199012"
@@ -234,152 +302,52 @@
       "narrativesMatched": [],
       "premiumNarrativesMatched": [],
       "scoreBreakdown": {
-        "relevanceScore": 16,
-        "mentionScore": 20,
+        "relevanceScore": 8,
+        "mentionScore": 10,
         "recencyScore": 10,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "e1cdfcb4f1a98cb47ec9fd122ee6a0b45abe6333",
-      "score": 50
+      "dedupeFingerprint": "59c8a1bab251018017e7d91651759d4778ae91da",
+      "score": 32
     },
     {
-      "id": "https://www.coindesk.com/markets/2026/02/28/bitcoin-slides-to-usd65-000-in-weekend-sell-off-with-solana-xrp-dogecoin-down-6",
-      "title": "Bitcoin slides to $65,000 in weekend sell-off, with solana, XRP, dogecoin down 6%",
-      "url": "https://www.coindesk.com/markets/2026/02/28/bitcoin-slides-to-usd65-000-in-weekend-sell-off-with-solana-xrp-dogecoin-down-6",
-      "source": "CoinDesk",
-      "publishedAt": "2026-02-28T04:24:51.000Z",
-      "summary": "The pullback erased most of Wednesday's push toward $70,000 as hot producer-price data and a post-earnings Nvidia decline dragged risk assets lower heading into the weekend.",
+      "id": "https://decrypt.co/359510/legal-strategy-behind-crypto-exchange-backpack-token-equity-program",
+      "title": "The Legal Strategy Behind Crypto Exchange Backpack's Token-to-Equity Program",
+      "url": "https://decrypt.co/359510/legal-strategy-behind-crypto-exchange-backpack-token-equity-program",
+      "source": "Decrypt",
+      "publishedAt": "2026-03-01T14:58:25.000Z",
+      "summary": "Backpack co-founder Can Sun said the exchange's upcoming token-to-equity conversion program threads the needle on securities laws.",
       "tags": [
-        "bitcoin",
-        "slides",
-        "weekend"
+        "legal",
+        "strategy",
+        "behind"
       ],
-      "topicBucket": "market",
+      "topicBucket": "consumer",
       "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 3,
-      "xMentions": 3,
+      "mentionCount": 1,
+      "xMentions": 1,
       "who": [
         {
-          "handle": "@inno_ox",
-          "summary": "RT @inno_ox: BEST $10,000 PORTFOLIO ON SOLANA (conservative) &gt; $2,500 BTC: bitcoin is king. you should always hold...",
-          "tweetUrl": "https://twitter.com/inno_ox/status/2027932492838174856",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@solanasensei",
-          "summary": "🚨 Magic Eden is going back to its roots (Solana) and focusing more on their profitable products: - The Solana NFT ma...",
-          "tweetUrl": "https://twitter.com/solanasensei/status/2027424993605276159",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@jussy_world",
-          "summary": "Wow... Magic Eden is closing products that are not making money They are: • Closing EVM marketplaces • Closing the Bi...",
-          "tweetUrl": "https://twitter.com/jussy_world/status/2027427012999319560",
+          "handle": "@ivan_nomadz",
+          "summary": "Long story short on how I fully immersed in the @solana ecosystem ~ 2020: My Solana journey started when I participat...",
+          "tweetUrl": "https://twitter.com/ivan_nomadz/status/1861468515024122079",
           "matchReason": "keyword_match"
         }
       ],
       "xWho": [
         {
-          "handle": "@inno_ox",
-          "summary": "RT @inno_ox: BEST $10,000 PORTFOLIO ON SOLANA (conservative) &gt; $2,500 BTC: bitcoin is king. you should always hold...",
-          "tweetUrl": "https://twitter.com/inno_ox/status/2027932492838174856",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@solanasensei",
-          "summary": "🚨 Magic Eden is going back to its roots (Solana) and focusing more on their profitable products: - The Solana NFT ma...",
-          "tweetUrl": "https://twitter.com/solanasensei/status/2027424993605276159",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@jussy_world",
-          "summary": "Wow... Magic Eden is closing products that are not making money They are: • Closing EVM marketplaces • Closing the Bi...",
-          "tweetUrl": "https://twitter.com/jussy_world/status/2027427012999319560",
+          "handle": "@ivan_nomadz",
+          "summary": "Long story short on how I fully immersed in the @solana ecosystem ~ 2020: My Solana journey started when I participat...",
+          "tweetUrl": "https://twitter.com/ivan_nomadz/status/1861468515024122079",
           "matchReason": "keyword_match"
         }
       ],
       "mentionedBy": [
         {
-          "handle": "@inno_ox",
-          "linkToTweet": "https://twitter.com/inno_ox/status/2027932492838174856"
-        },
-        {
-          "handle": "@solanasensei",
-          "linkToTweet": "https://twitter.com/solanasensei/status/2027424993605276159"
-        },
-        {
-          "handle": "@jussy_world",
-          "linkToTweet": "https://twitter.com/jussy_world/status/2027427012999319560"
-        }
-      ],
-      "matchReason": "keyword_match",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 5,
-        "mentionScore": 32,
-        "recencyScore": 7,
-        "sourceScore": 4,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "72ab9a1ef9ec2247ba26baf3e97596892910e6ee",
-      "score": 48
-    },
-    {
-      "id": "https://www.coindesk.com/markets/2026/03/01/ether-solana-xrp-surge-up-to-10-as-majors-recover-saturday-s-war-driven-losses",
-      "title": "Ether, solana, xrp surge up to 10% as majors recover Saturday's war-driven losses",
-      "url": "https://www.coindesk.com/markets/2026/03/01/ether-solana-xrp-surge-up-to-10-as-majors-recover-saturday-s-war-driven-losses",
-      "source": "CoinDesk",
-      "publishedAt": "2026-03-01T07:25:47.000Z",
-      "summary": "Solana led major tokens with a 10.8% bounce, while ether reclaimed $2,000 and bitcoin climbed back above $66,800 ahead of traditional futures opens on Sunday.",
-      "tags": [
-        "ether",
-        "solana",
-        "surge"
-      ],
-      "topicBucket": "general",
-      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 2,
-      "xMentions": 2,
-      "who": [
-        {
-          "handle": "@kylesamani",
-          "summary": "My one big prediction for EOY 2026 Solana mainnet will rival or exceed all major CEXs for majors for spot and perps",
-          "tweetUrl": "https://twitter.com/kylesamani/status/2004949730259075078",
-          "matchReason": "keyword_match"
-        },
-        {
           "handle": "@ivan_nomadz",
-          "summary": "Max who joined @Solana ecosystem in 2025. He participated in many hackathons (won 5 prizes), grew TVL to 1.5k+ SOL an...",
-          "tweetUrl": "https://twitter.com/ivan_nomadz/status/2027070330003431902",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "xWho": [
-        {
-          "handle": "@kylesamani",
-          "summary": "My one big prediction for EOY 2026 Solana mainnet will rival or exceed all major CEXs for majors for spot and perps",
-          "tweetUrl": "https://twitter.com/kylesamani/status/2004949730259075078",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@ivan_nomadz",
-          "summary": "Max who joined @Solana ecosystem in 2025. He participated in many hackathons (won 5 prizes), grew TVL to 1.5k+ SOL an...",
-          "tweetUrl": "https://twitter.com/ivan_nomadz/status/2027070330003431902",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "mentionedBy": [
-        {
-          "handle": "@kylesamani",
-          "linkToTweet": "https://twitter.com/kylesamani/status/2004949730259075078"
-        },
-        {
-          "handle": "@ivan_nomadz",
-          "linkToTweet": "https://twitter.com/ivan_nomadz/status/2027070330003431902"
+          "linkToTweet": "https://twitter.com/ivan_nomadz/status/1861468515024122079"
         }
       ],
       "matchReason": "keyword_match",
@@ -387,14 +355,14 @@
       "premiumNarrativesMatched": [],
       "scoreBreakdown": {
         "relevanceScore": 8,
-        "mentionScore": 20,
-        "recencyScore": 10,
-        "sourceScore": 4,
+        "mentionScore": 10,
+        "recencyScore": 8,
+        "sourceScore": 3,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "d906e9a4521696abffb19d02070f253cbec9ca6f",
-      "score": 42
+      "dedupeFingerprint": "793739f50aeca79b3dcbb07e398359d318289a77",
+      "score": 29
     }
   ]
 }

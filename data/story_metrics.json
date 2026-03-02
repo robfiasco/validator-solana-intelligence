@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-03-01T19:06:33.338Z",
+  "generatedAt": "2026-03-02T19:42:44.294Z",
   "totals": {
-    "total_tweets": 409,
-    "total_engagement": 98367,
-    "top_tweet_engagement": 9407,
+    "total_tweets": 395,
+    "total_engagement": 92526,
+    "top_tweet_engagement": 9478,
     "unique_users": 0
   },
   "top_tweet": {
     "id": "2027175239671808145",
     "handle": "",
-    "engagement": 9407
+    "engagement": 9478
   },
   "top_users": [],
   "by_handle": {}

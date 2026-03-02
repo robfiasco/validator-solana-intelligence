@@ -1,26 +1,26 @@
 {
-  "date": "2026-03-01",
-  "generated_at_utc": "2026-03-01T20:22:49.910Z",
-  "ctxMarket": "Attention is on Solana’s sharp weekend price swings, with a notable 10% rebound after a broader crypto sell-off linked to macro events. Institutional moves, including ETF activity and Morgan Stanley’s crypto custody plans, are also drawing focus.",
-  "ctxTalking": "• Solana’s price volatility and recovery following a weekend sell-off\n• Institutional interest, highlighted by ETF flows and Morgan Stanley’s crypto custody application\n• The shutdown of Step Finance after a wallet compromise",
-  "ctxMatters": "Solana’s resilience amid market turbulence is under scrutiny by both retail and institutional participants. Institutional engagement, especially from traditional banks and ETF issuers, signals ongoing mainstream adoption efforts. The Step Finance shutdown highlights ongoing security risks in Solana DeFi.",
-  "ctxSignal": "Signal: Institutional moves and ETF flows are shaping perceptions of Solana’s long-term role in crypto markets.\nNoise: Short-term price speculation around meme tokens like dogwifhat lacks broader ecosystem impact.",
-  "ctxGlossary": "ETF — Exchange-traded fund, a regulated investment vehicle tracking assets like cryptocurrencies\nCustody — Secure holding and management of digital assets, often by financial institutions",
+  "date": "2026-03-02",
+  "generated_at_utc": "2026-03-02T19:42:44.011Z",
+  "ctxMarket": "Attention is on persistent ETF inflows for Solana, Bitcoin, and Ethereum despite spot price declines. Solana stands out for both strong capital inflows and heightened sell pressure, while altcoins like Jupiter and NEAR outperform as traders focus on supply dynamics.",
+  "ctxTalking": "• Solana, Bitcoin, and Ethereum ETFs continue to attract weekly inflows amid falling prices\n• Solana faces a standoff between $100 million in inflows and rising sell pressure\n• The shutdown of Step Finance after a wallet compromise",
+  "ctxMatters": "ETF inflows suggest institutional or large-scale interest in Solana even as prices soften. The Step Finance closure highlights ongoing security risks for Solana DeFi users and aggregators. Supply compression narratives, such as Jupiter’s emission freeze, are influencing altcoin attention and performance.",
+  "ctxSignal": "Signal: Sustained ETF inflows and large buybacks on Solana projects point to continued capital allocation and shifting liquidity strategies.\nNoise: Short-term price moves framed as trend shifts without supporting long-term data.",
+  "ctxGlossary": "ETF — Exchange-traded fund tracking the price of an asset, tradable on stock exchanges\nBuyback — Project uses revenue to purchase its own tokens from the market\nDeFi Aggregator — Platform that combines multiple decentralized finance services in one interface",
   "readMore": [
     {
-      "title": "dogwifhat at $0.20",
+      "title": "Bitcoin, Ethereum, and Solana ETFs record weekly inflows amid price weakness",
       "source": "AMB Crypto",
-      "url": "https://ambcrypto.com/dogwifhat-at-0-20-reversal-or-further-drop-whats-next-for-wif"
+      "url": "https://ambcrypto.com/bitcoin-ethereum-and-solana-etfs-record-weekly-inflows-amid-price-weakness"
     },
     {
-      "title": "The Legal Strategy Behind Crypto Exchange Backpack's Token-to-Equity Program",
-      "source": "Decrypt",
-      "url": "https://decrypt.co/359510/legal-strategy-behind-crypto-exchange-backpack-token-equity-program"
-    },
-    {
-      "title": "Ether, solana, xrp surge up to 10% as majors recover Saturday's war-driven losses",
+      "title": "CoinDesk 20 performance update",
       "source": "CoinDesk",
-      "url": "https://www.coindesk.com/markets/2026/03/01/ether-solana-xrp-surge-up-to-10-as-majors-recover-saturday-s-war-driven-losses"
+      "url": "https://www.coindesk.com/coindesk-indices/2026/03/02/coindesk-20-performance-update-near-protocol-near-jumps-12-4-over-weekend"
+    },
+    {
+      "title": "Altcoins Outperform Bitcoin With Double-Digit Weekly Gains",
+      "source": "Decrypt",
+      "url": "https://decrypt.co/359581/altcoins-outperform-bitcoin-with-double-digit-weekly-gains"
     }
   ]
 }

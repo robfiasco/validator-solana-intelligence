@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 import { Activity, MessageCircle, TrendingUp, Users } from "lucide-react";
+import MatrixBanner from "./MatrixBanner";
 
 
 // Solana Mobile detection (Capacitor runtime, available on-device)
@@ -30,42 +31,62 @@ const compact = (text, max = 120) => {
 };
 
 function LockedCard({ story, idx }) {
-  const cat = String(story?.category || "Intel").toUpperCase();
+  let cat = String(story?.category || "Intel").toUpperCase();
+  if (cat.includes("/")) {
+    cat = cat.split("/")[0].trim();
+  }
+
   const title = String(story?.title || "Untitled Intelligence");
   const preview = compact(
     story?.content?.signal || story?.summary || story?.hook || story?.narrative || "",
-    110,
+    160,
   );
 
-  // Choose icon/color based on index to mimic briefing items
-  const slots = [
-    { icon: "⚡", tone: "briefing-item-need" },
-    { icon: "↗", tone: "briefing-item-good" },
-    { icon: "◉", tone: "briefing-item-keep" }
+  const isCrit = /security|risk|breach|exploit|hack/i.test(cat);
+  const isAi = /ai|agent/i.test(cat);
+  const isGaming = /gaming|game/i.test(cat);
+  const kickerCls = isCrit ? "critical" : isAi ? "ai" : isGaming ? "gaming" : "";
+
+  const PALETTE_3 = ["accent-purple", "accent-cyan", "accent-pink", "accent-green"];
+  const bannerColors = [
+    "#9945FF", // Purple
+    "#00C2FF", // Cyan
+    "#FF00FF", // Pink
+    "#14F195", // Green
   ];
-  const slot = slots[idx] || slots[2];
+
+  // To match the category styling exactly from the previous step:
+  let toneIndex = 3; // accent-green fallback
+  if (isCrit) toneIndex = 0; // purple
+  else if (isAi) toneIndex = 1; // cyan
+  else if (isGaming) toneIndex = 3; // green
+  else if (/privacy|zk tech|zk/i.test(cat)) toneIndex = 2; // pink
+  else if (/ecosystem|launch|update/i.test(cat)) toneIndex = 1; // cyan
+
+  const bannerColor = bannerColors[toneIndex];
+  const paletteCls = PALETTE_3[toneIndex];
 
   return (
-    <div className={`briefing-item ${slot.tone}`}>
-      <div className="briefing-item-head">
-        <span className="briefing-item-icon">{slot.icon}</span>
-        <span className="briefing-item-label">{cat}</span>
+    <div
+      className={`seeker-mag-item ${paletteCls}`}
+      style={{ textAlign: "left", width: "100%", padding: 0 }}
+    >
+      <div className="seeker-mag-item-banner" style={{ overflow: "hidden" }}>
+        <MatrixBanner color={bannerColor} />
       </div>
 
-      <p className="briefing-card-copy" style={{ opacity: 0.9 }}>
-        {title} <span className="briefing-story-arrow">↗</span>
-      </p>
+      <div className="seeker-mag-item-head">
+        <span className={`seeker-mag-kicker ${kickerCls}`} style={{ padding: 0, fontSize: "0.6rem" }}>
+          {cat}
+        </span>
+      </div>
 
-      {story?.source && (
-        <div className="briefing-story-meta">
-          {story.source}
-          {story.date ? ` • ${new Date(story.date).toLocaleDateString()}` : ""}
-        </div>
-      )}
+      <h3 className="seeker-mag-item-title">
+        {title}
+      </h3>
 
-      {/* This is the part that is blurred out for unauthenticated users */}
       {preview && (
-        <p className="briefing-story-why" style={{ filter: "blur(4px)", userSelect: "none", pointerEvents: "none" }}>
+        <p className="seeker-mag-item-copy" style={{ filter: "blur(4px)", userSelect: "none", pointerEvents: "none" }}>
           {preview}
         </p>
       )}
@@ -142,12 +163,12 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
               {isNoToken ? "Get Seeker Token  ↗" : "Connect Wallet"}
             </button>
           </div>
-          {(isNoToken || isWrongDevice) && (
-            <div className="gossip-paywall-secondary-row" style={{ marginTop: "16px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
-              <button className="gossip-paywall-link" style={{ color: "rgba(16, 185, 129, 0.8)", fontWeight: "500", letterSpacing: "0.05em" }} onClick={onBypass}>Hackathon Judge Bypass</button>
+          <div className="gossip-paywall-secondary-row" style={{ marginTop: "16px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+            <button className="gossip-paywall-link" style={{ color: "rgba(16, 185, 129, 0.8)", fontWeight: "500", letterSpacing: "0.05em" }} onClick={onBypass}>Hackathon Judge Bypass</button>
+            {(isNoToken || isWrongDevice) && (
               <button className="gossip-paywall-link" onClick={onDisconnect}>Disconnect</button>
-            </div>
-          )}
+            )}
+          </div>
         </div>
 
         {/* Blurred Stories Section */}
@@ -183,7 +204,12 @@ export default function SeekerGuard({ children, peekData = null }) {
   const { connection } = useConnection();
   const { publicKey, connected, wallet, disconnect } = useWallet();
   const { setVisible } = useWalletModal();
-  const [hasSeeker, setHasSeeker] = useState(false);
+  const [hasSeeker, setHasSeeker] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.sessionStorage.getItem("gossip_bypass") === "true";
+    }
+    return false;
+  });
   const [wrongDevice, setWrongDevice] = useState(false);
   const [checking, setChecking] = useState(false);
 
@@ -237,8 +263,13 @@ export default function SeekerGuard({ children, peekData = null }) {
 
   const handleConnect = () => setVisible(true);
 
-  if (!connected) {
-    return <GossipPaywall variant="not-connected" onConnect={handleConnect} peekData={peekData} />;
+  if (!connected && !hasSeeker) {
+    return <GossipPaywall variant="not-connected" onConnect={handleConnect} onBypass={() => {
+      if (typeof window !== "undefined") {
+        window.sessionStorage.setItem("gossip_bypass", "true");
+      }
+      setHasSeeker(true);
+    }} peekData={peekData} />;
   }
 
   if (checking) {

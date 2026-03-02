@@ -1,5 +1,82 @@
 [
   {
+    "id": "fc3ddc0fe50699343de05bf6ba561db27e7355b3",
+    "title": "Signal Board Summary 2026-03-02",
+    "url": "",
+    "source": "signal-board",
+    "firstSeenAt": "2026-03-02T19:42:44.014Z",
+    "lastSeenAt": "2026-03-02T19:42:44.014Z",
+    "sectionShown": "signal",
+    "topicTags": [
+      "signal-board"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "2e403a00ce766e4887f69c875dc9b7a2b301bfeb",
+    "title": "Bitcoin, Ethereum, and Solana ETFs record weekly inflows amid price weakness",
+    "url": "https://ambcrypto.com/bitcoin-ethereum-and-solana-etfs-record-weekly-inflows-amid-price-weakness",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-03-02T19:42:31.081Z",
+    "lastSeenAt": "2026-03-02T19:42:31.081Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "bitcoin",
+      "ethereum",
+      "solana",
+      "etfs",
+      "record",
+      "weekly",
+      "inflows",
+      "amid"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "793739f50aeca79b3dcbb07e398359d318289a77",
+    "title": "The Legal Strategy Behind Crypto Exchange Backpack's Token-to-Equity Program",
+    "url": "https://decrypt.co/359510/legal-strategy-behind-crypto-exchange-backpack-token-equity-program",
+    "source": "Decrypt",
+    "firstSeenAt": "2026-03-02T19:42:31.081Z",
+    "lastSeenAt": "2026-03-02T19:42:31.081Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "legal",
+      "strategy",
+      "behind",
+      "crypto",
+      "exchange",
+      "backpack",
+      "token",
+      "equity"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "a8edff70ad66af0d5c52df63d0e2cb0f6877e3cf",
+    "title": "CoinDesk 20 performance update: NEAR Protocol (NEAR) jumps 12.4% over weekend",
+    "url": "https://www.coindesk.com/coindesk-indices/2026/03/02/coindesk-20-performance-update-near-protocol-near-jumps-12-4-over-weekend",
+    "source": "CoinDesk",
+    "firstSeenAt": "2026-03-02T19:42:31.081Z",
+    "lastSeenAt": "2026-03-02T19:42:31.081Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "coindesk",
+      "performance",
+      "update",
+      "near",
+      "protocol",
+      "jumps",
+      "over",
+      "weekend"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "b650b2d6555e5634ba460b1a0ad15e9fdc9c5f12",
     "title": "Morgan Stanley applies for OCC bank charter to custody crypto",
     "url": "https://cointelegraph.com/news/morgan-stanley-applies-bank-charter-custody-trade-stake-crypto",
@@ -121,23 +198,6 @@
       "panic",
       "overrides",
       "capital"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "1633650a1a2228d07cc671aedcef652d5fc18686",
-    "title": "Signal Board Summary 2026-02-28",
-    "url": "",
-    "source": "signal-board",
-    "firstSeenAt": "2026-02-28T18:02:32.432Z",
-    "lastSeenAt": "2026-02-28T18:02:32.432Z",
-    "sectionShown": "signal",
-    "topicTags": [
-      "signal-board",
-      "new products",
-      "ai agents",
-      "yield"
     ],
     "majorUpdate": false,
     "updateReason": null

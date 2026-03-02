@@ -13,11 +13,13 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import StoryDetail from "./components/StoryDetail";
 import { Activity, Brain, Info, MessageCircle, Rocket, TrendingUp, Users } from "lucide-react";
 import SeekerGuard from "./components/SeekerGuard";
 import GossipLoadingScreen from "./components/GossipLoadingScreen";
 import OnboardingCarousel from "./components/OnboardingCarousel";
 import AnimatedEngagementChart from "./components/AnimatedEngagementChart";
+import MatrixBanner from "./components/MatrixBanner";
 import type { TerminalData } from "../lib/data/types";
 import type {
   BriefingPayload,
@@ -30,6 +32,12 @@ import type {
   NewsCardsPayload,
   SignalBoardPayload,
 } from "../src/lib/loadDailyData";
+
+const PALETTE_1 = ["accent-green", "accent-purple", "accent-cyan", "accent-pink"];
+const PALETTE_2 = ["accent-cyan", "accent-pink", "accent-green", "accent-purple"];
+const PALETTE_3 = ["accent-purple", "accent-cyan", "accent-pink", "accent-green"];
+
+const ENDPOINT_URL = process.env.NEXT_PUBLIC_API_URL || "https://solana-intelligence.vercel.app/api";
 
 type MarketView = {
   solPrice: number | null;
@@ -106,22 +114,51 @@ export default function Home() {
   const [focusMode, setFocusMode] = useState(false);
   const isStaked = false;
   const [terminalData, setTerminalData] = useState<TerminalData | null>(null);
-  const [signalBoardData, setSignalBoardData] = useState<SignalBoardPayload | null>(null);
-  const [narrativesData, setNarrativesData] = useState<NarrativesPayload | null>(null);
-  const [briefingData, setBriefingData] = useState<BriefingPayload | null>(null);
-  const [newsCardsData, setNewsCardsData] = useState<NewsCardsPayload | null>(null);
+
+  const getCachedDaily = () => {
+    if (typeof window !== "undefined") {
+      try {
+        const cached = window.sessionStorage.getItem("validator_daily_cache");
+        if (cached) return JSON.parse(cached);
+      } catch { }
+    }
+    return null;
+  };
+  const cachedDaily = getCachedDaily();
+
+  const [signalBoardData, setSignalBoardData] = useState<SignalBoardPayload | null>(cachedDaily?.signalBoard || null);
+  const [narrativesData, setNarrativesData] = useState<NarrativesPayload | null>(cachedDaily?.narratives || null);
+  const [briefingData, setBriefingData] = useState<BriefingPayload | null>(cachedDaily?.briefing || null);
+  const [newsCardsData, setNewsCardsData] = useState<NewsCardsPayload | null>(cachedDaily?.newsCards || null);
   const [marketContextData, setMarketContextData] = useState<MarketContextPayload | null>(null);
-  const [storyMetrics, setStoryMetrics] = useState<any>(null);
+
+  const [storyMetrics, setStoryMetrics] = useState<any>(() => {
+    if (typeof window !== "undefined") {
+      try {
+        const m = window.sessionStorage.getItem("validator_metrics_cache");
+        if (m) return JSON.parse(m);
+      } catch { }
+    }
+    return null;
+  });
+
   const [marketCache, setMarketCache] = useState<MarketContextPayload | null>(null);
-  const [activePanel, setActivePanel] = useState(0);
+  const [activePanel, setActivePanel] = useState(0); // always default to the first page
   const [isSeeker, setIsSeeker] = useState(false);
-  const [showLoadingScreen, setShowLoadingScreen] = useState(true);
-  const [isAppReady, setIsAppReady] = useState(false);
+  const [showLoadingScreen, setShowLoadingScreen] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.sessionStorage.getItem("gossip_onboarded") !== "true";
+    }
+    return true;
+  });
+  const [isAppReady, setIsAppReady] = useState(!!cachedDaily);
   const [showInfoModal, setShowInfoModal] = useState(false);
+  const [activeStoryIndex, setActiveStoryIndex] = useState(-1);
   const carouselRef = useRef<HTMLDivElement | null>(null);
+  const hasRestoredScroll = useRef(false);
 
   const handleReplayOnboarding = () => {
-    window.localStorage.removeItem("gossip_onboarded");
+    window.sessionStorage.removeItem("gossip_onboarded");
     window.location.reload();
   };
   const panelRefs = useRef<Array<HTMLDivElement | null>>([]);
@@ -131,6 +168,11 @@ export default function Home() {
     if (stored === "dark" || stored === "darker" || stored === "gossip") {
       setTheme(stored);
     }
+
+    // Check onboarding asynchronously as a fallback (hydration mismatch safety)
+    if (window.sessionStorage.getItem("gossip_onboarded") === "true" && showLoadingScreen) {
+      setShowLoadingScreen(false);
+    }
   }, []);
 
   useEffect(() => {
@@ -139,7 +181,7 @@ export default function Home() {
   }, [theme]);
 
   useEffect(() => {
-    const stored = window.localStorage.getItem("validator_focus_mode");
+    const stored = window.sessionStorage.getItem("validator_focus_mode");
     if (stored === "1" || stored === "0") {
       setFocusMode(stored === "1");
       return;
@@ -149,20 +191,14 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    window.localStorage.setItem("validator_focus_mode", focusMode ? "1" : "0");
+    if (typeof window !== "undefined") {
+      window.sessionStorage.setItem("validator_focus_mode", focusMode ? "1" : "0");
+    }
   }, [focusMode]);
 
-  // Always start on Signal Board (panel 0)
-  useEffect(() => {
-    window.localStorage.removeItem("validator-panel");
-  }, []);
+  // Remove the `removeItem` hook that forcibly resets panel state on mount
 
-  useEffect(() => {
-    window.localStorage.setItem("validator-panel", String(activePanel));
-    if (activePanel === 2) {
-      setFocusMode(true);
-    }
-  }, [activePanel]);
+
 
   useEffect(() => {
     try {
@@ -213,9 +249,18 @@ export default function Home() {
         if (!res.ok) throw new Error("daily fetch failed");
         const daily = await res.json();
 
+        if (typeof window !== "undefined") {
+          window.sessionStorage.setItem("validator_daily_cache", JSON.stringify(daily));
+        }
+
         if (metricsRes.ok) {
           const metrics = await metricsRes.json();
-          if (active) setStoryMetrics(metrics);
+          if (active) {
+            setStoryMetrics(metrics);
+            if (typeof window !== "undefined") {
+              window.sessionStorage.setItem("validator_metrics_cache", JSON.stringify(metrics));
+            }
+          }
         }
 
         if (!active) return;
@@ -223,8 +268,6 @@ export default function Home() {
         setNarrativesData(daily.narratives);
         setBriefingData(daily.briefing);
         setNewsCardsData(daily.newsCards);
-        // Note: marketContextData is intentionally NOT set here —
-        // live pricing from /api/market-prices always takes precedence.
         setIsAppReady(true);
       } catch (err) {
         console.warn("Error fetching daily data", err);
@@ -272,6 +315,26 @@ export default function Home() {
     [theme]
   );
 
+  // Restore scroll position on initial mount if we came back to a different panel
+  useEffect(() => {
+    if (isAppReady && !hasRestoredScroll.current) {
+      if (activePanel > 0) {
+        requestAnimationFrame(() => {
+          const container = carouselRef.current;
+          const node = panelRefs.current[activePanel];
+          if (container && node) {
+            container.scrollTo({
+              left: node.offsetLeft,
+              behavior: "instant",
+            });
+          }
+          hasRestoredScroll.current = true;
+        });
+      } else {
+        hasRestoredScroll.current = true;
+      }
+    }
+  }, [isAppReady, activePanel]);
 
   const scrollToPanel = (index: number) => {
     const container = carouselRef.current;
@@ -287,6 +350,7 @@ export default function Home() {
   };
 
   const handleCarouselScroll = () => {
+    if (!hasRestoredScroll.current) return;
     const container = carouselRef.current;
     if (!container) return;
     const offsets = panelRefs.current.map((node, idx) => ({
@@ -599,7 +663,9 @@ export default function Home() {
               <span className="logo-cursor" aria-hidden="true">_</span>
             </h1>
             <p className="subtitle">
-              {activePanel === 2 ? "PREMIUM INTELLIGENCE FOR SEEKER HOLDERS" : "SOLANA INTELLIGENCE TERMINAL"}
+              {activePanel === 2 ? (
+                <>PREMIUM INTELLIGENCE FOR <span style={{ whiteSpace: "nowrap" }}>SEEKER HOLDERS</span></>
+              ) : "SOLANA INTELLIGENCE TERMINAL"}
             </p>
             {isStaked && activePanel !== 2 ? (
               <span className="staked-chip">Staked — Enhanced Signal</span>
@@ -669,7 +735,7 @@ export default function Home() {
                   <div className="signal-brief-body">
                     <div className="sb-list">
                       {signalBoardData?.ctxMarket && (
-                        <div className="sb-item sb-item-price">
+                        <div className={`sb-item ${PALETTE_1[0]}`}>
                           <div className="sb-item-head">
                             <span className="sb-item-label">
                               MARKET CONTEXT {narrativeGeneratedDate ? `(AS OF ${new Date(narrativeGeneratedDate).getUTCHours().toString().padStart(2, '0')}:${new Date(narrativeGeneratedDate).getUTCMinutes().toString().padStart(2, '0')} UTC)` : ''}
@@ -682,7 +748,7 @@ export default function Home() {
                       )}
 
                       {signalBoardData?.ctxTalking && (
-                        <div className="sb-item sb-item-this">
+                        <div className={`sb-item ${PALETTE_1[1]}`}>
                           <div className="sb-item-head">
                             <span className="sb-item-label">WHAT PEOPLE ARE TALKING ABOUT</span>
                           </div>
@@ -695,7 +761,7 @@ export default function Home() {
                       )}
 
                       {signalBoardData?.ctxMatters && (
-                        <div className="sb-item sb-item-this">
+                        <div className={`sb-item ${PALETTE_1[2]}`}>
                           <div className="sb-item-head">
                             <span className="sb-item-label">WHY IT MATTERS</span>
                           </div>
@@ -706,7 +772,7 @@ export default function Home() {
                       )}
 
                       {signalBoardData?.ctxSignal && (
-                        <div className="sb-item sb-item-this">
+                        <div className={`sb-item ${PALETTE_1[3]}`}>
                           <div className="sb-item-head">
                             <span className="sb-item-label">WHAT'S SIGNAL VS NOISE</span>
                           </div>
@@ -719,7 +785,7 @@ export default function Home() {
                       )}
 
                       {signalBoardData?.ctxGlossary && (
-                        <div className="sb-item sb-item-this">
+                        <div className={`sb-item ${PALETTE_1[0]}`}>
                           <div className="sb-item-head">
                             <span className="sb-item-label">GLOSSARY (1-LINERS)</span>
                           </div>
@@ -755,9 +821,9 @@ export default function Home() {
                     {(() => {
                       const items = briefingData?.items || [];
                       const slots = [
-                        { label: "NEED TO KNOW", icon: "⚡", tone: "briefing-item-need", item: items[0] },
-                        { label: "GOOD TO KNOW", icon: "↗", tone: "briefing-item-good", item: items[1] },
-                        { label: "KEEP AN EYE ON", icon: "◉", tone: "briefing-item-keep", item: items[2] },
+                        { label: "NEED TO KNOW", icon: "⚡", tone: PALETTE_2[0], item: items[0] },
+                        { label: "GOOD TO KNOW", icon: "↗", tone: PALETTE_2[1], item: items[1] },
+                        { label: "KEEP AN EYE ON", icon: "◉", tone: PALETTE_2[2], item: items[2] },
                       ];
                       return slots.map((slot, idx) => (
                         <div key={idx} className={`briefing-item ${slot.tone}`}>
@@ -821,101 +887,116 @@ export default function Home() {
                 const peekData = { lead, tweets: globalTweets, eng: globalEng, voices: globalVoices, topTweet: globalTop, stories };
                 return (
                   <SeekerGuard peekData={peekData}>
-                    <section className="morning-open" id="top-story-feed">
-                      <div className="morning-panel intel-card card--briefing">
-                        {(() => {
-                          if (!lead) {
+                    {activeStoryIndex >= 0 && stories[activeStoryIndex] ? (
+                      <StoryDetail
+                        story={stories[activeStoryIndex]}
+                        index={activeStoryIndex}
+                        total={stories.length}
+                        onBack={() => setActiveStoryIndex(-1)}
+                      />
+                    ) : (
+                      <section className="morning-open" id="top-story-feed">
+                        <div className="morning-panel intel-card card--briefing">
+                          {(() => {
+                            if (!lead) {
+                              return (
+                                <div className="news-empty">
+                                  Run node scripts/runDaily.mjs to generate today’s stories.
+                                </div>
+                              );
+                            }
+
                             return (
-                              <div className="news-empty">
-                                Run node scripts/runDaily.mjs to generate today’s stories.
-                              </div>
+                              <>
+                                <div className="morning-panel-header">
+                                  <h2 className="intelligence-title briefing-title-glitch">SEEKER EXCLUSIVE INTEL</h2>
+                                </div>
+                                <div className="briefing-subhead-row">
+                                  <span className="briefing-subhead-line" />
+                                  <span className="briefing-subhead-text">Premium On-Chain Data Analysis</span>
+                                  <span className="briefing-subhead-line" />
+                                </div>
+
+                                <div style={{ padding: "16px 18px 4px", marginBottom: "16px" }}>
+                                  <AnimatedEngagementChart
+                                    title="GLOBAL NETWORK METRICS"
+                                    maxValue={100}
+                                    colors={['#9945FF', '#14F195', '#00C2FF', '#FF0080']}
+                                    items={[
+                                      { label: "Tweets Analyzed", value: Math.min(100, (storyMetrics?.totals?.total_tweets || globalTweets || 0) / 500 * 100), formattedValue: String(storyMetrics?.totals?.total_tweets || globalTweets || 0) },
+                                      { label: "Total Engagement", value: Math.min(100, (storyMetrics?.totals?.total_engagement || globalEng || 0) / 100000 * 100), formattedValue: formatCompactNumber(storyMetrics?.totals?.total_engagement || globalEng || 0) },
+                                      { label: "Unique Voices", value: Math.min(100, (storyMetrics?.totals?.unique_users || globalVoices || 0) / 200 * 100), formattedValue: String(storyMetrics?.totals?.unique_users || globalVoices || 0) },
+                                      { label: "Top Tweet", value: Math.min(100, (storyMetrics?.totals?.top_tweet_engagement || globalTop || 0) / 20000 * 100), formattedValue: formatCompactNumber(storyMetrics?.totals?.top_tweet_engagement || globalTop || 0) }
+                                    ]}
+                                  />
+                                </div>
+
+                                <div className="seeker-mag-divider" />
+
+                                <div className="briefing-card-stack" style={{ padding: "0 18px 18px" }}>
+                                  {stories.map((story, idx) => {
+                                    let cat = String(story?.category || "Intel").toUpperCase();
+                                    if (cat.includes("/")) {
+                                      cat = cat.split("/")[0].trim();
+                                    }
+
+                                    const title = String(story?.title || "Untitled Intelligence");
+                                    const preview = compactSentence(
+                                      story?.content?.signal || story?.summary || story?.hook || story?.narrative || "",
+                                      160,
+                                    );
+
+                                    const isCrit = /security|risk|breach|exploit|hack/i.test(cat);
+                                    const isAi = /ai|agent/i.test(cat);
+                                    const isGaming = /gaming|game/i.test(cat);
+                                    const isAirdrop = /airdrop/i.test(cat);
+                                    const kickerCls = isCrit ? "critical" : isAi ? "ai" : isGaming ? "gaming" : "";
+
+                                    const bannerColors = [
+                                      "#9945FF", // Purple
+                                      "#00C2FF", // Cyan
+                                      "#FF00FF", // Pink
+                                      "#14F195", // Green
+                                    ];
+                                    const bannerColor = bannerColors[idx % 4];
+
+                                    return (
+                                      <button
+                                        type="button"
+                                        key={`story-card-${idx}`}
+                                        onClick={() => setActiveStoryIndex(idx)}
+                                        className={`seeker-mag-item ${PALETTE_3[idx % 4]}`}
+                                        style={{ border: "none", background: "transparent", cursor: "pointer", textAlign: "left", width: "100%", padding: 0 }}
+                                      >
+                                        <div className="seeker-mag-item-banner" style={{ overflow: "hidden" }}>
+                                          <MatrixBanner color={bannerColor} />
+                                        </div>
+
+                                        <div className="seeker-mag-item-head">
+                                          <span className={`seeker-mag-kicker ${kickerCls}`} style={{ padding: 0, fontSize: "0.6rem" }}>
+                                            {cat}
+                                          </span>
+                                        </div>
+
+                                        <h3 className="seeker-mag-item-title">
+                                          {title}
+                                        </h3>
+
+                                        {preview && (
+                                          <p className="seeker-mag-item-copy">
+                                            {preview}
+                                          </p>
+                                        )}
+                                      </button>
+                                    );
+                                  })}
+                                </div>
+                              </>
                             );
-                          }
-
-                          return (
-                            <>
-                              <div className="morning-panel-header">
-                                <h2 className="intelligence-title briefing-title-glitch">SEEKER EXCLUSIVE INTEL</h2>
-                              </div>
-                              <div className="briefing-subhead-row">
-                                <span className="briefing-subhead-line" />
-                                <span className="briefing-subhead-text">Premium On-Chain Data Analysis</span>
-                                <span className="briefing-subhead-line" />
-                              </div>
-
-                              <div style={{ padding: "16px 18px 4px", marginBottom: "16px" }}>
-                                <AnimatedEngagementChart
-                                  title="GLOBAL NETWORK METRICS"
-                                  maxValue={100}
-                                  colors={['#9945FF', '#14F195', '#00C2FF', '#FF0080']}
-                                  items={[
-                                    { label: "Tweets Analyzed", value: Math.min(100, (storyMetrics?.totals?.total_tweets || globalTweets || 0) / 500 * 100), formattedValue: String(storyMetrics?.totals?.total_tweets || globalTweets || 0) },
-                                    { label: "Total Engagement", value: Math.min(100, (storyMetrics?.totals?.total_engagement || globalEng || 0) / 100000 * 100), formattedValue: formatCompactNumber(storyMetrics?.totals?.total_engagement || globalEng || 0) },
-                                    { label: "Unique Voices", value: Math.min(100, (storyMetrics?.totals?.unique_users || globalVoices || 0) / 200 * 100), formattedValue: String(storyMetrics?.totals?.unique_users || globalVoices || 0) },
-                                    { label: "Top Tweet", value: Math.min(100, (storyMetrics?.totals?.top_tweet_engagement || globalTop || 0) / 20000 * 100), formattedValue: formatCompactNumber(storyMetrics?.totals?.top_tweet_engagement || globalTop || 0) }
-                                  ]}
-                                />
-                              </div>
-
-                              <div className="seeker-mag-divider" />
-
-                              <div className="briefing-card-stack" style={{ padding: "0 18px 18px" }}>
-                                {stories.map((story, idx) => {
-                                  let cat = String(story?.category || "Intel").toUpperCase();
-                                  if (cat.includes("/")) {
-                                    cat = cat.split("/")[0].trim();
-                                  }
-
-                                  const title = String(story?.title || "Untitled Intelligence");
-                                  const preview = compactSentence(
-                                    story?.content?.signal || story?.summary || story?.hook || story?.narrative || "",
-                                    160,
-                                  );
-
-                                  const isCrit = /security|risk|breach|exploit|hack/i.test(cat);
-                                  const isAi = /ai|agent/i.test(cat);
-                                  const isGaming = /gaming|game/i.test(cat);
-                                  const isAirdrop = /airdrop/i.test(cat);
-                                  const kickerCls = isCrit ? "critical" : isAi ? "ai" : isGaming ? "gaming" : "";
-
-                                  let bannerImg = "/story-images/ecosystem_banner.png";
-                                  if (isCrit) bannerImg = "/story-images/security_banner.png";
-                                  else if (isAi) bannerImg = "/story-images/ai_banner.png";
-                                  else if (isGaming) bannerImg = "/story-images/gaming_banner.png";
-                                  else if (isAirdrop) bannerImg = "/story-images/airdrop_banner.png";
-
-                                  return (
-                                    <Link
-                                      key={`story-card-${idx}`}
-                                      href={`/seeker?story=${idx}`}
-                                      className="seeker-mag-item"
-                                    >
-                                      <div className="seeker-mag-item-banner" style={{ backgroundImage: `url(${bannerImg})` }} />
-
-                                      <div className="seeker-mag-item-head">
-                                        <span className={`seeker-mag-kicker ${kickerCls}`} style={{ padding: 0, fontSize: "0.6rem" }}>
-                                          {cat}
-                                        </span>
-                                      </div>
-
-                                      <h3 className="seeker-mag-item-title">
-                                        {title}
-                                      </h3>
-
-                                      {preview && (
-                                        <p className="seeker-mag-item-copy">
-                                          {preview}
-                                        </p>
-                                      )}
-                                    </Link>
-                                  );
-                                })}
-                              </div>
-                            </>
-                          );
-                        })()}
-                      </div>
-                    </section>
+                          })()}
+                        </div>
+                      </section>
+                    )}
                   </SeekerGuard>
                 );
               })()}

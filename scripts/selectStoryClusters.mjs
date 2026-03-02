@@ -26,7 +26,7 @@ const MEMORY_48H_PATH = './data/stories_shown_last_48h.json';
 // ============================================================================
 
 const CONFIG = {
-  MIN_CLUSTER_SIZE: 2,
+  MIN_CLUSTER_SIZE: 1,
   MIN_ENGAGEMENT_SCORE: 200,
   MAX_CANDIDATES: 5,
   MIN_TWEET_QUALITY: 50,
@@ -196,6 +196,11 @@ function isHighQualityTweet(tweet) {
   const textLower = text.toLowerCase();
   const spamCount = spamPatterns.filter(p => textLower.includes(p)).length;
   if (spamCount > 2) return false;
+
+  // STRICT SOLANA-CENTRIC FILTER
+  const solanaKeywords = ['solana', ' sol ', ' sol.', ' sol,', 'jup', 'jupiter', 'backpack', 'phantom', 'solflare', 'raydium', 'drift', 'kamino', '$sol', 'tensor', 'helius', 'meteora', 'orca', 'seeker', 'saga', 'magic eden', 'squads'];
+  const isSolanaCentric = solanaKeywords.some(kw => textLower.includes(kw));
+  if (!isSolanaCentric) return false;
 
   // Require substance
   const hasSubstance = (
