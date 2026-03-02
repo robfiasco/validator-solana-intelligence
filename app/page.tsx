@@ -1028,7 +1028,7 @@ export default function Home() {
             </div>
 
             <div className="info-modal-meta-row">
-              <span className="info-modal-badge">{`v1.0.1`}</span>
+              <span className="info-modal-badge">{`v1.0.2`}</span>
               <span className="info-modal-dot">·</span>
               <span className="info-modal-badge">2026</span>
             </div>
