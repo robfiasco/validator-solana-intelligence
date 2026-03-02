@@ -1029,15 +1029,32 @@ export default function Home() {
             className="info-modal-content"
             onClick={e => e.stopPropagation()}
           >
-            <h2 className="info-modal-title">Gossip Terminal</h2>
-            <p className="info-modal-version">v1.0.1</p>
+            {/* Matrix banner header strip */}
+            <div style={{ height: "48px", margin: "-32px -24px 24px", overflow: "hidden" }}>
+              <MatrixBanner color="#14f195" />
+            </div>
+
+            <div className="info-modal-wordmark">
+              <h2 className="info-modal-title">GOSSIP</h2>
+              <p className="info-modal-subtitle">SOLANA INTELLIGENCE TERMINAL</p>
+            </div>
+
+            <div className="info-modal-meta-row">
+              <span className="info-modal-badge">{`v1.0.1`}</span>
+              <span className="info-modal-dot">·</span>
+              <span className="info-modal-badge">2026</span>
+            </div>
+
+            <div className="info-modal-divider" />
 
             <div className="info-modal-dev">
-              <span style={{ opacity: 0.6, fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "0.05em" }}>Developed by</span><br />
-              <a href="https://x.com/chkndgtl" target="_blank" rel="noopener noreferrer" style={{ color: "var(--sol-cyan)", textDecoration: "none", fontWeight: 700, fontSize: "1.1rem", marginTop: "4px", display: "inline-block" }}>
+              <span className="info-modal-dev-label">BUILT BY</span>
+              <a href="https://x.com/chkndgtl" target="_blank" rel="noopener noreferrer" className="info-modal-dev-handle">
                 @chkndgtl
               </a>
             </div>
+
+            <div className="info-modal-divider" />
 
             <button
               onClick={handleReplayOnboarding}
