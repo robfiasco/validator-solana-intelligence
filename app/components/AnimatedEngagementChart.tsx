@@ -26,7 +26,11 @@ export default function AnimatedEngagementChart({ title, items, maxValue, colors
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    setIsVisible(true);
+                    // Double RAF ensures the browser paints width:0% first,
+                    // so the CSS transition actually plays
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(() => setIsVisible(true));
+                    });
                     observer.disconnect();
                 }
             },

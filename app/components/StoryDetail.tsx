@@ -24,12 +24,15 @@ export default function StoryDetail({ story, index, total, onBack }: { story: St
 
     const fullText = String(story?.content?.story || story?.story || story?.narrative || "").replace(/\[object Object\]/g, "");
 
-    const chartItems = [
+    const allChartItems = [
         { label: "Total Engagement", value: metrics.engagement },
         { label: "Top Tweet Volume", value: metrics.topTweet },
         { label: "Tweets Analyzed", value: metrics.tweets },
         { label: "Unique Voices", value: metrics.voices },
-    ].filter(item => item.value >= 10);
+    ];
+    const chartMax = Math.max(...allChartItems.map(i => i.value), 1);
+    // Hide metrics that are less than 5% of the top metric — they'd render as a sliver
+    const chartItems = allChartItems.filter(item => item.value >= chartMax * 0.05 && item.value >= 10);
 
     return (
         <div className="seeker-detail-shell" style={{ paddingBottom: "100px", zIndex: 9999, position: "relative" }} >
