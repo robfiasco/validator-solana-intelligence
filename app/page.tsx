@@ -949,8 +949,10 @@ export default function Home() {
                                     const isCrit = /security|risk|breach|exploit|hack/i.test(cat);
                                     const isAi = /ai|agent/i.test(cat);
                                     const isGaming = /gaming|game/i.test(cat);
-                                    const isAirdrop = /airdrop/i.test(cat);
-                                    const kickerCls = isCrit ? "critical" : isAi ? "ai" : isGaming ? "gaming" : "";
+                                    const isAlpha = /alpha/i.test(cat);
+                                    const isMobile = /mobile|seeker/i.test(cat);
+                                    const isPrivacy = /privacy|zk/i.test(cat);
+                                    const kickerCls = isCrit ? "critical" : isAi ? "ai" : isGaming ? "gaming" : isAlpha ? "alpha" : isMobile ? "mobile" : isPrivacy ? "privacy" : "";
 
                                     const bannerColors = [
                                       "#9945FF", // Purple
@@ -958,7 +960,8 @@ export default function Home() {
                                       "#FF00FF", // Pink
                                       "#14F195", // Green
                                     ];
-                                    const bannerColor = bannerColors[idx % 4];
+                                    const rowBannerColor = bannerColors[idx % 4];
+                                    const bannerColor = kickerCls === "critical" ? "#ff7f86" : kickerCls === "ai" ? "#ae88ff" : kickerCls === "gaming" ? "#14f195" : kickerCls === "alpha" ? "#14f195" : kickerCls === "mobile" ? "#00c2ff" : kickerCls === "privacy" ? "#ef77c7" : rowBannerColor;
 
                                     return (
                                       <button

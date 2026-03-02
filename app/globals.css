@@ -4899,51 +4899,51 @@ body {
 }
 
 .seeker-mag-kicker.critical {
-  color: var(--item-accent, #ff7f86);
+  color: #ff7f86;
 }
 
 .seeker-mag-kicker.critical::before {
-  background: var(--item-accent, rgba(248, 113, 113, 0.95));
+  background: rgba(248, 113, 113, 0.95);
 }
 
 .seeker-mag-kicker.ai {
-  color: var(--item-accent, var(--sol-purple));
+  color: var(--sol-purple);
 }
 
 .seeker-mag-kicker.ai::before {
-  background: var(--item-accent, var(--sol-purple));
+  background: var(--sol-purple);
 }
 
 .seeker-mag-kicker.gaming {
-  color: var(--item-accent, var(--sol-green));
+  color: var(--sol-green);
 }
 
 .seeker-mag-kicker.gaming::before {
-  background: var(--item-accent, var(--sol-green));
+  background: var(--sol-green);
 }
 
 .seeker-mag-kicker.alpha {
-  color: var(--item-accent, var(--sol-green));
+  color: var(--sol-green);
 }
 
 .seeker-mag-kicker.alpha::before {
-  background: var(--item-accent, var(--sol-green));
+  background: var(--sol-green);
 }
 
 .seeker-mag-kicker.mobile {
-  color: var(--item-accent, var(--sol-cyan));
+  color: var(--sol-cyan);
 }
 
 .seeker-mag-kicker.mobile::before {
-  background: var(--item-accent, var(--sol-cyan));
+  background: var(--sol-cyan);
 }
 
 .seeker-mag-kicker.privacy {
-  color: var(--item-accent, var(--sol-pink));
+  color: var(--sol-pink);
 }
 
 .seeker-mag-kicker.privacy::before {
-  background: var(--item-accent, var(--sol-pink));
+  background: var(--sol-pink);
 }
 
 .seeker-mag-title {
