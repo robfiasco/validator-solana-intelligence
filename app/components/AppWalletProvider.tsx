@@ -8,17 +8,17 @@ import { SolanaMobileWalletAdapter, createDefaultAddressSelector, createDefaultA
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import { clusterApiUrl } from "@solana/web3.js";
 import { Capacitor } from "@capacitor/core";
-import { App } from "@capacitor/app";
+import { Browser } from "@capacitor/browser";
 import type { Adapter } from "@solana/wallet-adapter-base";
 
 import "@solana/wallet-adapter-react-ui/styles.css";
 
-// Chrome WebView blocks intent:// URLs — route through Capacitor's App.openUrl which calls
+// Chrome WebView blocks intent:// URLs — route through Capacitor's Browser.open which calls
 // startActivity(Intent.ACTION_VIEW) natively, triggering the Seeker wallet bottom sheet
 if (typeof window !== "undefined") {
     (window as Window & { __openSolanaIntentUrl?: (url: URL) => void }).__openSolanaIntentUrl = (url: URL) => {
         if (Capacitor.isNativePlatform()) {
-            App.openUrl({ url: url.toString() }).catch(() => {
+            Browser.open({ url: url.toString() }).catch(() => {
                 window.location.assign(url);
             });
         } else {
