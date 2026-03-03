@@ -1,12 +1,17 @@
 {
-  "date": "2026-03-02",
-  "generated_at_utc": "2026-03-02T20:25:35.784Z",
-  "ctxMarket": "Attention is on ETF inflows for Solana, Bitcoin, and Ethereum, despite spot price declines. Solana-specific flows and trading volumes are in focus as buyers and sellers clash at a key level.",
-  "ctxTalking": "• Solana ETFs and spot markets show diverging trends, with $100 million in inflows amid rising sell pressure.\n• The end of Step Finance after a wallet compromise highlights security risks in Solana DeFi.\n• Jupiter and Hyperliquid tokens gain attention due to supply freezes and token burns.",
-  "ctxMatters": "ETF inflows suggest institutional interest in Solana even as market volatility persists. The Step Finance shutdown underscores ongoing wallet security challenges for Solana DeFi users and projects. Tokenomics changes at Jupiter and Hyperliquid may influence liquidity and trading behaviors on Solana.",
-  "ctxSignal": "Signal: Sustained ETF inflows into Solana and the closure of Step Finance due to a security breach.\nNoise: Short-term price moves in altcoins attributed to positioning rebounds rather than lasting trends.",
-  "ctxGlossary": "ETF — Exchange-traded fund tracking the price of an asset, tradable on stock markets.\nToken burn — Permanent removal of tokens from circulation, often to reduce supply.\nDeFi aggregator — Platform that combines multiple decentralized finance services for users.",
+  "date": "2026-03-03",
+  "generated_at_utc": "2026-03-03T07:41:14.229Z",
+  "ctxMarket": "Attention is on Solana’s resilience and product expansion, with ETF inflows and new integrations drawing interest despite recent price declines. Activity around memecoin platforms and institutional staking is also in focus.",
+  "ctxTalking": "• Pump.fun expanding to support tokens from rival memecoin generators and non-native assets\n• Continued inflows into Solana ETFs even as spot prices softened\n• Institutional adoption of Marinade’s staking products and the launch of a Solana ETF staking exclusively via Marinade Select",
+  "ctxMatters": "Support for non-native tokens on Pump.fun may broaden Solana’s memecoin ecosystem and user base. ETF inflows and institutional staking signal ongoing confidence in Solana’s infrastructure, even during market drawdowns. Recent DeFi setbacks, such as the Step Finance shutdown, highlight ongoing security and sustainability challenges.",
+  "ctxSignal": "Signal: ETF inflows and Marinade’s institutional traction suggest sustained interest from larger players. \nNoise: Short-term altcoin outperformance is being framed as a positioning rebound, not a lasting trend.",
+  "ctxGlossary": "ETF — Exchange-traded fund; a regulated investment vehicle tracking an asset or basket of assets\nTVL — Total value locked; the sum of assets deposited in a protocol or ecosystem",
   "readMore": [
+    {
+      "title": "Pump.fun adds support for tokens launched on rival memecoin generators and other non-native assets",
+      "source": "The Block",
+      "url": "https://www.theblock.co/post/391855/pump-fun-adds-support-tokens-launched-rival-memecoin-generators-other-non-native-assets"
+    },
     {
       "title": "Bitcoin, Ethereum, and Solana ETFs record weekly inflows amid price weakness",
       "source": "AMB Crypto",
@@ -16,11 +21,6 @@
       "title": "CoinDesk 20 performance update",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/coindesk-indices/2026/03/02/coindesk-20-performance-update-near-protocol-near-jumps-12-4-over-weekend"
-    },
-    {
-      "title": "Altcoins Outperform Bitcoin With Double-Digit Weekly Gains",
-      "source": "Decrypt",
-      "url": "https://decrypt.co/359581/altcoins-outperform-bitcoin-with-double-digit-weekly-gains"
     }
   ]
 }

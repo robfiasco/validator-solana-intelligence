@@ -1,26 +1,8 @@
 {
-  "date": "2026-03-02",
+  "date": "2026-03-03",
   "title": "TODAY'S SOLANA BRIEFING",
   "subtitle": "Top links from trusted desks",
   "items": [
-    {
-      "type": "APPS",
-      "title": "Solana at a breaking point: $100 mln inflows meet rising sell pressure",
-      "category": "APPS",
-      "source": "AMB Crypto",
-      "date": "2026-03-02",
-      "url": "https://ambcrypto.com/solana-at-a-breaking-point-100-mln-inflows-meet-rising-sell-pressure",
-      "whyYouShouldCare": "Solana faces a critical moment as significant inflows are countered by increased selling pressure, impacting its liquidity and market stability."
-    },
-    {
-      "type": "APPS",
-      "title": "Hyperliquid's HYPE token jumps 5% as Iran war brings windfall revenue, JUP gains on supply freeze",
-      "category": "APPS",
-      "source": "CoinDesk",
-      "date": "2026-03-02",
-      "url": "https://www.coindesk.com/markets/2026/03/02/hype-jumps-5-as-token-burn-offsets-usd316-million-unlock-jup-gains-weekly-on-supply-freeze",
-      "whyYouShouldCare": "Hyperliquid's HYPE token's rise indicates a potential shift in investor sentiment, which could influence trading dynamics within the Solana ecosystem."
-    },
     {
       "type": "APPS",
       "title": "Bitcoin, Ethereum, and Solana ETFs record weekly inflows amid price weakness",
@@ -28,7 +10,25 @@
       "source": "AMB Crypto",
       "date": "2026-03-02",
       "url": "https://ambcrypto.com/bitcoin-ethereum-and-solana-etfs-record-weekly-inflows-amid-price-weakness",
-      "whyYouShouldCare": "The inflows into Bitcoin, Ethereum, and Solana ETFs suggest sustained interest in these assets, which may enhance Solana's market positioning despite current price challenges."
+      "whyYouShouldCare": "Increased inflows into Bitcoin, Ethereum, and Solana ETFs suggest growing institutional interest, which could enhance liquidity and support SOL's market positioning."
+    },
+    {
+      "type": "APPS",
+      "title": "The Legal Strategy Behind Crypto Exchange Backpack's Token-to-Equity Program",
+      "category": "APPS",
+      "source": "Decrypt",
+      "date": "2026-03-01",
+      "url": "https://decrypt.co/359510/legal-strategy-behind-crypto-exchange-backpack-token-equity-program",
+      "whyYouShouldCare": "Backpack's token-to-equity program highlights innovative legal strategies in crypto, potentially influencing how Solana projects structure their offerings and engage with investors."
+    },
+    {
+      "type": "APPS",
+      "title": "CoinDesk 20 performance update: NEAR Protocol (NEAR) jumps 12.4% over weekend",
+      "category": "APPS",
+      "source": "CoinDesk",
+      "date": "2026-03-02",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/03/02/coindesk-20-performance-update-near-protocol-near-jumps-12-4-over-weekend",
+      "whyYouShouldCare": "NEAR Protocol's recent performance surge may impact Solana's competitive landscape, as it reflects investor appetite for alternative ecosystems within the broader market."
     }
   ]
 }

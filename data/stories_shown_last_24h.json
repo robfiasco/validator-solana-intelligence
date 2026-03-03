@@ -5,7 +5,7 @@
     "url": "https://ambcrypto.com/bitcoin-ethereum-and-solana-etfs-record-weekly-inflows-amid-price-weakness",
     "source": "AMB Crypto",
     "firstSeenAt": "2026-03-02T19:42:31.081Z",
-    "lastSeenAt": "2026-03-02T20:25:17.657Z",
+    "lastSeenAt": "2026-03-03T07:41:01.942Z",
     "sectionShown": "briefing",
     "topicTags": [
       "bitcoin",
@@ -16,6 +16,48 @@
       "weekly",
       "inflows",
       "amid"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "793739f50aeca79b3dcbb07e398359d318289a77",
+    "title": "The Legal Strategy Behind Crypto Exchange Backpack's Token-to-Equity Program",
+    "url": "https://decrypt.co/359510/legal-strategy-behind-crypto-exchange-backpack-token-equity-program",
+    "source": "Decrypt",
+    "firstSeenAt": "2026-03-02T19:42:31.081Z",
+    "lastSeenAt": "2026-03-03T07:41:01.942Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "legal",
+      "strategy",
+      "behind",
+      "crypto",
+      "exchange",
+      "backpack",
+      "token",
+      "equity"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "a8edff70ad66af0d5c52df63d0e2cb0f6877e3cf",
+    "title": "CoinDesk 20 performance update: NEAR Protocol (NEAR) jumps 12.4% over weekend",
+    "url": "https://www.coindesk.com/coindesk-indices/2026/03/02/coindesk-20-performance-update-near-protocol-near-jumps-12-4-over-weekend",
+    "source": "CoinDesk",
+    "firstSeenAt": "2026-03-02T19:42:31.081Z",
+    "lastSeenAt": "2026-03-03T07:41:01.942Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "coindesk",
+      "performance",
+      "update",
+      "near",
+      "protocol",
+      "jumps",
+      "over",
+      "weekend"
     ],
     "majorUpdate": false,
     "updateReason": null
@@ -72,48 +114,6 @@
     "sectionShown": "signal",
     "topicTags": [
       "signal-board"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "793739f50aeca79b3dcbb07e398359d318289a77",
-    "title": "The Legal Strategy Behind Crypto Exchange Backpack's Token-to-Equity Program",
-    "url": "https://decrypt.co/359510/legal-strategy-behind-crypto-exchange-backpack-token-equity-program",
-    "source": "Decrypt",
-    "firstSeenAt": "2026-03-02T19:42:31.081Z",
-    "lastSeenAt": "2026-03-02T19:42:31.081Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "legal",
-      "strategy",
-      "behind",
-      "crypto",
-      "exchange",
-      "backpack",
-      "token",
-      "equity"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "a8edff70ad66af0d5c52df63d0e2cb0f6877e3cf",
-    "title": "CoinDesk 20 performance update: NEAR Protocol (NEAR) jumps 12.4% over weekend",
-    "url": "https://www.coindesk.com/coindesk-indices/2026/03/02/coindesk-20-performance-update-near-protocol-near-jumps-12-4-over-weekend",
-    "source": "CoinDesk",
-    "firstSeenAt": "2026-03-02T19:42:31.081Z",
-    "lastSeenAt": "2026-03-02T19:42:31.081Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "coindesk",
-      "performance",
-      "update",
-      "near",
-      "protocol",
-      "jumps",
-      "over",
-      "weekend"
     ],
     "majorUpdate": false,
     "updateReason": null
