@@ -69,10 +69,6 @@ function LockedCard({ story, idx }) {
   );
 }
 
-/**
- * Displays a placeholder card skeleton while story data is loading.
- * @returns {JSX.Element} The placeholder card
- */
 function PlaceholderCard() {
   return (
     <div style={{
@@ -86,19 +82,7 @@ function PlaceholderCard() {
   );
 }
 
-/**
- * Renders the paywall component, prompting the user to connect their wallet
- * or acquire a Seeker Token to access premium content.
- * @param {Object} props - The component props
- * @param {Function} props.onConnect - Callback to initiate wallet connection
- * @param {"not-connected"|"no-token"} props.variant - The current state of the user's access
- * @param {Object} [props.publicKey] - The connected user's public key
- * @param {Function} [props.onDisconnect] - Callback to disconnect wallet
- * @param {Function} [props.onBypass] - Callback to bypass in development mode
- * @param {Object} [props.peekData] - Teaser data shown on the paywall
- * @returns {JSX.Element} The paywall component
- */
-function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisconnect, onBypass, peekData, debugInfo }) {
+function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisconnect, onBypass, peekData }) {
   const isNoToken = variant === "no-token";
   const isWrongDevice = variant === "wrong-device";
   const lead = peekData?.lead;
@@ -137,11 +121,6 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
             <button className="gossip-paywall-cta" onClick={onConnect} style={{ width: "100%", maxWidth: "260px", margin: "0 auto" }}>
               {isNoToken ? "Get Seeker Token  ↗" : "Connect Wallet"}
             </button>
-            {debugInfo && (
-              <p style={{ marginTop: "8px", fontSize: "0.65rem", color: "rgba(255,255,100,0.8)", fontFamily: "monospace", wordBreak: "break-all" }}>
-                {debugInfo}
-              </p>
-            )}
           </div>
           <div className="gossip-paywall-secondary-row" style={{ marginTop: "16px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <button className="gossip-paywall-link" style={{ color: "rgba(16, 185, 129, 0.8)", fontWeight: "500", letterSpacing: "0.05em" }} onClick={onBypass}>Hackathon Judge Bypass</button>
@@ -170,20 +149,9 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
   );
 }
 
-/**
- * A higher-order component that acts as a guard for premium content.
- * Validates whether the connected wallet holds a Seeker Genesis Token.
- * @param {Object} props - The component props
- * @param {React.ReactNode} props.children - The protected content to render if authorized
- * @param {Object} [props.peekData] - Content preview data to display on the paywall
- * @returns {JSX.Element} The original content if authorized, or the paywall otherwise
- */
 export default function SeekerGuard({ children, peekData = null }) {
   const { disconnect } = useWallet();
   const { setVisible } = useWalletModal();
-
-  const [debugInfo, setDebugInfo] = useState(null);
-  const [connecting, setConnecting] = useState(false);
 
   const [hasSeeker, setHasSeeker] = useState(() => {
     if (typeof window !== "undefined") {
@@ -194,7 +162,6 @@ export default function SeekerGuard({ children, peekData = null }) {
 
   const handleConnect = async () => {
     const isNative = Capacitor?.isNativePlatform?.() && Capacitor?.getPlatform?.() === "android";
-    setDebugInfo(`tap|native:${isNative ? "Y" : "N"}`);
 
     if (!isNative) {
       setVisible(true);
@@ -205,21 +172,8 @@ export default function SeekerGuard({ children, peekData = null }) {
     // This bypasses SolanaMobileWalletAdapter entirely (no readyState checks,
     // no isWebView guard) and goes straight to startSession() → launchAssociation()
     // → window.__openSolanaIntentUrl() → Capacitor Browser.open().
-    setConnecting(true);
-
-    // Intercept the intent URL bridge so we can log diagnostic info
-    let intentUrl = null;
-    const origBridge = window.__openSolanaIntentUrl;
-    window.__openSolanaIntentUrl = (url) => {
-      intentUrl = url.toString();
-      setDebugInfo(`intent:${intentUrl.slice(0, 40)}`);
-      return origBridge?.(url);
-    };
-
     try {
-      setDebugInfo("calling-transact");
       const authResult = await transact(async (wallet) => {
-        setDebugInfo("wallet-sheet-open");
         return await wallet.authorize({
           cluster: "mainnet-beta",
           identity: {
@@ -231,20 +185,12 @@ export default function SeekerGuard({ children, peekData = null }) {
       });
 
       const address = authResult?.accounts?.[0]?.address;
-      setDebugInfo(`done|addr:${address?.slice(0, 8) || "null"}|intent:${intentUrl ? "Y" : "N"}`);
-
-      if (!address) {
-        setDebugInfo("no-address — authorize returned no accounts");
-        return;
-      }
+      if (!address) return;
 
       window.localStorage.setItem("gossip_seeker_verified", "true");
       setHasSeeker(true);
     } catch (e) {
-      setDebugInfo(`err: ${e?.message || String(e)}`);
-    } finally {
-      window.__openSolanaIntentUrl = origBridge; // always restore the bridge
-      setConnecting(false);
+      console.error("MWA connect failed:", e);
     }
   };
 
@@ -264,7 +210,6 @@ export default function SeekerGuard({ children, peekData = null }) {
         setHasSeeker(true);
       }}
       peekData={peekData}
-      debugInfo={connecting ? "Connecting…" : debugInfo}
     />;
   }
 
