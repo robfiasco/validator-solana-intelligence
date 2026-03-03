@@ -184,6 +184,9 @@ export default function SeekerGuard({ children, peekData = null }) {
   const { publicKey, connected, wallet, disconnect, select, connect: connectWallet } = useWallet();
   const { setVisible } = useWalletModal();
   const mwaConnectPending = useRef(false);
+  // Ref always points to the latest connectWallet — avoids stale closure in useEffect
+  const connectWalletRef = useRef(connectWallet);
+  connectWalletRef.current = connectWallet;
 
   const [debugInfo, setDebugInfo] = useState(null);
 
@@ -197,18 +200,17 @@ export default function SeekerGuard({ children, peekData = null }) {
   const [wrongDevice, setWrongDevice] = useState(false);
   const [checking, setChecking] = useState(false);
 
-  // autoConnect only fires when readyState===Installed; MWA may report Loadable in a WebView.
-  // Watch for the adapter being set AND for the pending flag, then connect manually.
-  // The setTimeout handles the case where MWA is already the selected adapter (select() is a
-  // no-op and doesn't trigger a state change, so we can't rely on the dep array alone).
-  // Fires after select() updates wallet state — connectWallet here has fresh wallet in scope
+  // Fires after select() updates wallet state. Uses connectWalletRef (not connectWallet
+  // directly) to avoid the stale closure bug — the dep array triggers re-run when wallet
+  // name changes, but without the ref, connectWallet would still be the old closure where
+  // wallet===null, causing WalletNotSelectedError.
   useEffect(() => {
     if (!mwaConnectPending.current) return;
     if (!wallet?.adapter?.name?.toLowerCase().includes("mobile wallet")) return;
     if (connected) return;
     mwaConnectPending.current = false;
-    setDebugInfo(`effect:connecting adapter:${wallet.adapter.name}`);
-    connectWallet()
+    setDebugInfo(`effect:connecting`);
+    connectWalletRef.current()
       .then(() => setDebugInfo("mwa:connected"))
       .catch(e => setDebugInfo(`err: ${e?.message || String(e)}`));
   }, [wallet?.adapter?.name, connected]);
