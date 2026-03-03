@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 import MatrixBanner from "./MatrixBanner";
@@ -176,8 +176,10 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
  */
 export default function SeekerGuard({ children, peekData = null }) {
   const { connection } = useConnection();
-  const { publicKey, connected, wallet, disconnect, select } = useWallet();
+  const { publicKey, connected, wallet, disconnect, select, connect: connectWallet } = useWallet();
   const { setVisible } = useWalletModal();
+  const mwaConnectPending = useRef(false);
+
   const [hasSeeker, setHasSeeker] = useState(() => {
     if (typeof window !== "undefined") {
       // Persist across sessions — cleared on explicit disconnect
@@ -187,6 +189,15 @@ export default function SeekerGuard({ children, peekData = null }) {
   });
   const [wrongDevice, setWrongDevice] = useState(false);
   const [checking, setChecking] = useState(false);
+
+  // autoConnect only fires when readyState===Installed; MWA may report Loadable in a WebView,
+  // so we manually call connect() once the adapter is selected
+  useEffect(() => {
+    if (mwaConnectPending.current && wallet?.adapter?.name?.toLowerCase().includes("mobile wallet") && !connected) {
+      mwaConnectPending.current = false;
+      connectWallet().catch(() => {});
+    }
+  }, [wallet?.adapter?.name, connected]);
 
   useEffect(() => {
     const checkOwnership = async () => {
@@ -217,9 +228,10 @@ export default function SeekerGuard({ children, peekData = null }) {
 
   const handleConnect = () => {
     // On native Android, skip the wallet selection modal and go straight to MWA
-    // — this fires the solana-wallet:// intent that triggers the robfiasco.skr bottom sheet
+    // — fires the solana-wallet:// intent that triggers the robfiasco.skr bottom sheet
     const isNative = Capacitor?.isNativePlatform?.() && Capacitor?.getPlatform?.() === "android";
     if (isNative) {
+      mwaConnectPending.current = true;
       select("Mobile Wallet Adapter");
     } else {
       setVisible(true);
