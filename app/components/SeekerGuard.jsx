@@ -5,8 +5,7 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 import MatrixBanner from "./MatrixBanner";
 import { getKickerClass, getKickerColor } from "../lib/categories";
-import { SolanaMobileWalletAdapter, createDefaultAddressSelector, createDefaultWalletNotFoundHandler } from "@solana-mobile/wallet-adapter-mobile";
-import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
+import { transact } from "@solana-mobile/mobile-wallet-adapter-protocol-web3js";
 import { Capacitor } from "@capacitor/core";
 
 const SEEKER_GROUP = "GT22s89nU4iWFkNXj1Bw6uYhJJWDRPpShHt4Bk8f99Te";
@@ -202,13 +201,11 @@ export default function SeekerGuard({ children, peekData = null }) {
       return;
     }
 
-    // Native Android: directly invoke SolanaMobileWalletAdapter, bypassing
-    // useWallet() which filters MWA out on Capacitor WebViews (isWebView check).
-    //
-    // IMPORTANT: mwa.connect() fires its internal _connect() without awaiting it
-    // (fire-and-forget by design). The real result comes via the 'connect' event.
+    // Native Android: call transact() directly from the MWA protocol library.
+    // This bypasses SolanaMobileWalletAdapter entirely (no readyState checks,
+    // no isWebView guard) and goes straight to startSession() → launchAssociation()
+    // → window.__openSolanaIntentUrl() → Capacitor Browser.open().
     setConnecting(true);
-    setDebugInfo("connecting-mwa");
 
     // Intercept the intent URL bridge so we can log diagnostic info
     let intentUrl = null;
@@ -220,35 +217,24 @@ export default function SeekerGuard({ children, peekData = null }) {
     };
 
     try {
-      const mwa = new SolanaMobileWalletAdapter({
-        addressSelector: createDefaultAddressSelector(),
-        appIdentity: {
-          name: "Gossip Intelligence",
-          uri: "https://validator-solana-intelligence.vercel.app",
-          icon: "https://validator-solana-intelligence.vercel.app/icon.png",
-        },
-        // No-op cache — always show the Seeker wallet sheet on Connect.
-        // Our own gossip_seeker_verified key handles the "stay logged in" flow.
-        authorizationResultCache: { get: async () => null, set: async () => {}, clear: async () => {} },
-        cluster: WalletAdapterNetwork.Mainnet,
-        onWalletNotFound: createDefaultWalletNotFoundHandler(),
+      setDebugInfo("calling-transact");
+      const authResult = await transact(async (wallet) => {
+        setDebugInfo("wallet-sheet-open");
+        return await wallet.authorize({
+          cluster: "mainnet-beta",
+          identity: {
+            name: "Gossip Intelligence",
+            uri: "https://validator-solana-intelligence.vercel.app",
+            icon: "https://validator-solana-intelligence.vercel.app/icon.png",
+          },
+        });
       });
 
-      // Wait for the wallet adapter to emit 'connect' (with the public key) or 'error'.
-      // mwa.connect() is intentionally fire-and-forget; the 'connect' event is the
-      // authoritative signal that the MWA handshake completed successfully.
-      const publicKey = await new Promise((resolve, reject) => {
-        const timeout = setTimeout(() => reject(new Error("connect timeout (90s)")), 90000);
-        mwa.on("connect", (pk) => { clearTimeout(timeout); resolve(pk); });
-        mwa.on("error",   (err) => { clearTimeout(timeout); reject(err); });
-        mwa.connect(); // fires asynchronously
-      });
+      const address = authResult?.accounts?.[0]?.address;
+      setDebugInfo(`done|addr:${address?.slice(0, 8) || "null"}|intent:${intentUrl ? "Y" : "N"}`);
 
-      const pk = publicKey?.toBase58?.() || null;
-      setDebugInfo(`done|pk:${pk?.slice(0, 8) || "null"}|intent:${intentUrl ? "Y" : "N"}`);
-
-      if (!pk) {
-        setDebugInfo(`no-pubkey — wallet connected but returned no public key`);
+      if (!address) {
+        setDebugInfo("no-address — authorize returned no accounts");
         return;
       }
 
