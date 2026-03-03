@@ -201,12 +201,16 @@ export default function SeekerGuard({ children, peekData = null }) {
   // Watch for the adapter being set AND for the pending flag, then connect manually.
   // The setTimeout handles the case where MWA is already the selected adapter (select() is a
   // no-op and doesn't trigger a state change, so we can't rely on the dep array alone).
+  // Fires after select() updates wallet state — connectWallet here has fresh wallet in scope
   useEffect(() => {
     if (!mwaConnectPending.current) return;
     if (!wallet?.adapter?.name?.toLowerCase().includes("mobile wallet")) return;
     if (connected) return;
     mwaConnectPending.current = false;
-    connectWallet().catch(() => {});
+    setDebugInfo(`effect:connecting adapter:${wallet.adapter.name}`);
+    connectWallet()
+      .then(() => setDebugInfo("mwa:connected"))
+      .catch(e => setDebugInfo(`err: ${e?.message || String(e)}`));
   }, [wallet?.adapter?.name, connected]);
 
   useEffect(() => {
@@ -238,19 +242,21 @@ export default function SeekerGuard({ children, peekData = null }) {
 
   const handleConnect = () => {
     const isNative = Capacitor?.isNativePlatform?.() && Capacitor?.getPlatform?.() === "android";
-    const walletName = wallet?.adapter?.name || "none";
-    setDebugInfo(`tap ok | native:${isNative ? "Y" : "N"} | wallet:${walletName}`);
+    const adapterName = wallet?.adapter?.name || "none";
+    setDebugInfo(`tap | native:${isNative ? "Y" : "N"} | adapter:${adapterName}`);
 
     if (isNative) {
-      mwaConnectPending.current = true;
-      select("Mobile Wallet Adapter");
-      setTimeout(() => {
-        if (!mwaConnectPending.current) return;
-        mwaConnectPending.current = false;
+      const alreadyMWA = adapterName.toLowerCase().includes("mobile wallet");
+      if (alreadyMWA && !connected) {
+        // Adapter already selected — connectWallet() has current wallet in scope, call directly
         connectWallet()
-          .then(() => setDebugInfo("connected!"))
+          .then(() => setDebugInfo("mwa:connected"))
           .catch(e => setDebugInfo(`err: ${e?.message || String(e)}`));
-      }, 100);
+      } else {
+        // Need to select first; useEffect fires after state update with fresh connectWallet
+        mwaConnectPending.current = true;
+        select("Mobile Wallet Adapter");
+      }
     } else {
       setVisible(true);
     }
