@@ -183,6 +183,10 @@ body {
     border: none;
     box-shadow: none;
   }
+  /* Push header below device status bar (time, battery, signal) */
+  .header-terminal {
+    padding-top: max(calc(env(safe-area-inset-top) + 12px), 28px);
+  }
 }
 
 [data-theme="darker"] .phone-frame {

@@ -1061,7 +1061,7 @@ export default function Home() {
         </div>
       )}
 
-      <OnboardingCarousel />
+      {!showLoadingScreen && <OnboardingCarousel />}
     </>
   );
 }

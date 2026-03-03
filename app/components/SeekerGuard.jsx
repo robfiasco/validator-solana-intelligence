@@ -180,7 +180,8 @@ export default function SeekerGuard({ children, peekData = null }) {
   const { setVisible } = useWalletModal();
   const [hasSeeker, setHasSeeker] = useState(() => {
     if (typeof window !== "undefined") {
-      if (window.sessionStorage.getItem("gossip_bypass") === "true") return true;
+      // Persist across sessions — cleared on explicit disconnect
+      if (window.localStorage.getItem("gossip_seeker_verified") === "true") return true;
       // Grant access immediately if running as native Capacitor app on Android
       if (Capacitor?.isNativePlatform?.() && Capacitor?.getPlatform?.() === "android") return true;
     }
@@ -208,7 +209,8 @@ export default function SeekerGuard({ children, peekData = null }) {
           return;
         }
 
-        // Connected via Mobile Wallet Adapter
+        // Connected via Mobile Wallet Adapter — persist so re-opens don't require reconnect
+        window.localStorage.setItem("gossip_seeker_verified", "true");
         setHasSeeker(true);
       } catch (err) {
         setHasSeeker(false);
@@ -220,11 +222,16 @@ export default function SeekerGuard({ children, peekData = null }) {
   }, [publicKey, connected, wallet, connection]);
 
   const handleConnect = () => setVisible(true);
+  const handleDisconnect = () => {
+    window.localStorage.removeItem("gossip_seeker_verified");
+    setHasSeeker(false);
+    disconnect();
+  };
 
   if (!connected && !hasSeeker) {
     return <GossipPaywall variant="not-connected" onConnect={handleConnect} onBypass={() => {
       if (typeof window !== "undefined") {
-        window.sessionStorage.setItem("gossip_bypass", "true");
+        window.localStorage.setItem("gossip_seeker_verified", "true");
       }
       setHasSeeker(true);
     }} peekData={peekData} />;
@@ -252,7 +259,7 @@ export default function SeekerGuard({ children, peekData = null }) {
         variant="wrong-device"
         onConnect={handleConnect}
         publicKey={publicKey}
-        onDisconnect={disconnect}
+        onDisconnect={handleDisconnect}
         onBypass={() => { setWrongDevice(false); setHasSeeker(true); }}
         peekData={peekData}
       />
@@ -265,7 +272,7 @@ export default function SeekerGuard({ children, peekData = null }) {
         variant="no-token"
         onConnect={handleConnect}
         publicKey={publicKey}
-        onDisconnect={disconnect}
+        onDisconnect={handleDisconnect}
         onBypass={() => setHasSeeker(true)}
         peekData={peekData}
       />
