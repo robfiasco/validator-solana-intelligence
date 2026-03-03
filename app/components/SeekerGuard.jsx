@@ -182,7 +182,9 @@ export default function SeekerGuard({ children, peekData = null }) {
   const { setVisible } = useWalletModal();
   const [hasSeeker, setHasSeeker] = useState(() => {
     if (typeof window !== "undefined") {
-      return window.sessionStorage.getItem("gossip_bypass") === "true";
+      if (window.sessionStorage.getItem("gossip_bypass") === "true") return true;
+      // Grant access immediately if running as native Capacitor app on Android
+      if (Capacitor?.isNativePlatform?.() && Capacitor?.getPlatform?.() === "android") return true;
     }
     return false;
   });
@@ -191,40 +193,26 @@ export default function SeekerGuard({ children, peekData = null }) {
 
   useEffect(() => {
     const checkOwnership = async () => {
+      // Native Capacitor on Android — grant access without requiring a wallet connection
+      const isNative = Capacitor?.isNativePlatform?.() && Capacitor?.getPlatform?.() === "android";
+      if (isNative) { setHasSeeker(true); return; }
+
       if (!publicKey || !connected) { setHasSeeker(false); setWrongDevice(false); return; }
       setChecking(true);
       setWrongDevice(false);
       try {
-        const isNative = Capacitor?.isNativePlatform?.() && Capacitor?.getPlatform?.() === "android";
         const adapterName = wallet?.adapter?.name || "";
         const isMWA = adapterName.toLowerCase().includes("mobile wallet") || adapterName.toLowerCase().includes("mwa");
 
-        if (!isNative && !isMWA) {
+        if (!isMWA) {
           setWrongDevice(true);
           setHasSeeker(false);
           return;
         }
 
-        // Tier 1: native Capacitor app running on the Seeker device
-        if (isNative) {
-          setHasSeeker(true);
-          return;
-        }
-
-        // Tier 2: connected via Mobile Wallet Adapter
-        if (isMWA) {
-          setHasSeeker(true);
-          return;
-        }
-
-        // Tier 3: server-side token verification fallback
-        const res = await fetch(`/api/verify-seeker?wallet=${encodeURIComponent(publicKey.toBase58())}`);
-        if (!res.ok) { setHasSeeker(false); return; }
-        const { hasSeeker: found } = await res.json();
-        setHasSeeker(!!found);
-
+        // Connected via Mobile Wallet Adapter
+        setHasSeeker(true);
       } catch (err) {
-        console.error("Error checking Seeker ownership:", err);
         setHasSeeker(false);
       } finally {
         setChecking(false);
