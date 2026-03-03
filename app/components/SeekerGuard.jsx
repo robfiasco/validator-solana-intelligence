@@ -99,7 +99,7 @@ function PlaceholderCard() {
  * @param {Object} [props.peekData] - Teaser data shown on the paywall
  * @returns {JSX.Element} The paywall component
  */
-function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisconnect, onBypass, peekData }) {
+function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisconnect, onBypass, peekData, debugInfo }) {
   const isNoToken = variant === "no-token";
   const isWrongDevice = variant === "wrong-device";
   const lead = peekData?.lead;
@@ -138,6 +138,11 @@ function GossipPaywall({ onConnect, variant = "not-connected", publicKey, onDisc
             <button className="gossip-paywall-cta" onClick={onConnect} style={{ width: "100%", maxWidth: "260px", margin: "0 auto" }}>
               {isNoToken ? "Get Seeker Token  ↗" : "Connect Wallet"}
             </button>
+            {debugInfo && (
+              <p style={{ marginTop: "8px", fontSize: "0.65rem", color: "rgba(255,255,100,0.8)", fontFamily: "monospace", wordBreak: "break-all" }}>
+                {debugInfo}
+              </p>
+            )}
           </div>
           <div className="gossip-paywall-secondary-row" style={{ marginTop: "16px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <button className="gossip-paywall-link" style={{ color: "rgba(16, 185, 129, 0.8)", fontWeight: "500", letterSpacing: "0.05em" }} onClick={onBypass}>Hackathon Judge Bypass</button>
@@ -179,6 +184,8 @@ export default function SeekerGuard({ children, peekData = null }) {
   const { publicKey, connected, wallet, disconnect, select, connect: connectWallet } = useWallet();
   const { setVisible } = useWalletModal();
   const mwaConnectPending = useRef(false);
+
+  const [debugInfo, setDebugInfo] = useState(null);
 
   const [hasSeeker, setHasSeeker] = useState(() => {
     if (typeof window !== "undefined") {
@@ -230,18 +237,19 @@ export default function SeekerGuard({ children, peekData = null }) {
   }, [publicKey, connected, wallet, connection]);
 
   const handleConnect = () => {
-    // On native Android, skip the wallet selection modal and go straight to MWA
-    // — fires the solana-wallet:// intent that triggers the robfiasco.skr bottom sheet
     const isNative = Capacitor?.isNativePlatform?.() && Capacitor?.getPlatform?.() === "android";
+    const walletName = wallet?.adapter?.name || "none";
+    setDebugInfo(`tap ok | native:${isNative ? "Y" : "N"} | wallet:${walletName}`);
+
     if (isNative) {
       mwaConnectPending.current = true;
       select("Mobile Wallet Adapter");
-      // Fallback: if MWA is already selected the dep-array effect won't re-fire,
-      // so also attempt connect() after a tick directly.
       setTimeout(() => {
-        if (!mwaConnectPending.current) return; // effect already handled it
+        if (!mwaConnectPending.current) return;
         mwaConnectPending.current = false;
-        connectWallet().catch(() => {});
+        connectWallet()
+          .then(() => setDebugInfo("connected!"))
+          .catch(e => setDebugInfo(`err: ${e?.message || String(e)}`));
       }, 100);
     } else {
       setVisible(true);
@@ -259,7 +267,7 @@ export default function SeekerGuard({ children, peekData = null }) {
         window.localStorage.setItem("gossip_seeker_verified", "true");
       }
       setHasSeeker(true);
-    }} peekData={peekData} />;
+    }} peekData={peekData} debugInfo={debugInfo} />;
   }
 
   if (checking) {
