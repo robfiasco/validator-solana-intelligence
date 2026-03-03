@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-03T18:39:10.415Z",
+  "generatedAt": "2026-03-03T19:38:06.319Z",
   "sources": [
     {
       "name": "The Block",
@@ -447,6 +447,81 @@
       "scoreBody": 2,
       "scoreSource": 0,
       "score": 2
+    },
+    {
+      "source": "The Block",
+      "title": "The Daily: Marc Zeller’s ACI to exit Aave DAO, MARA opens door to selling balance sheet bitcoin, and more",
+      "url": "https://www.theblock.co/post/392065/the-daily-marc-zellers-aci-to-exit-aave-dao-mara-opens-door-to-selling-balance-sheet-bitcoin-and-more",
+      "published": "2026-03-03T19:01:24.000Z",
+      "summary": "The following article is adapted from The Block’s newsletter, The Daily, which comes out on weekday afternoons.",
+      "keywords": [
+        "daily",
+        "marc",
+        "zeller",
+        "exit",
+        "aave",
+        "mara",
+        "opens",
+        "door",
+        "selling",
+        "balance",
+        "sheet",
+        "bitcoin"
+      ],
+      "scoreTitle": 0,
+      "scoreBody": 0,
+      "scoreSource": 1,
+      "score": 1
+    },
+    {
+      "source": "Decrypt",
+      "title": "Ex-LAPD Officer Found Guilty of $350K ‘Wrench Attack’ Bitcoin Robbery",
+      "url": "https://decrypt.co/359818/ex-lapd-officer-found-guilty-350k-wrench-attack-bitcoin",
+      "published": "2026-03-03T18:56:15.000Z",
+      "summary": "Eric Halem faces life in prison on kidnapping and robbery charges after stealing $350,000 in crypto from a teenager during a home invasion.",
+      "keywords": [
+        "lapd",
+        "officer",
+        "found",
+        "guilty",
+        "350k",
+        "wrench",
+        "attack",
+        "bitcoin",
+        "robbery",
+        "eric",
+        "halem",
+        "faces"
+      ],
+      "scoreTitle": 0,
+      "scoreBody": 0,
+      "scoreSource": 1,
+      "score": 1
+    },
+    {
+      "source": "The Block",
+      "title": "PayPal USD tapped to expand TCS Blockchain’s onchain trade financing for trucking industry",
+      "url": "https://www.theblock.co/post/392060/paypal-usd-expand-tcs-blockchain-onchain-trade-financing-trucking-industry",
+      "published": "2026-03-03T18:10:24.000Z",
+      "summary": "Truckers will now be able to exchange TCS utility tokens for PYUSD on the INX-Republic exchange, providing them with quicker cash flows.",
+      "keywords": [
+        "paypal",
+        "tapped",
+        "expand",
+        "blockchain",
+        "onchain",
+        "trade",
+        "financing",
+        "trucking",
+        "industry",
+        "truckers",
+        "will",
+        "able"
+      ],
+      "scoreTitle": 0,
+      "scoreBody": 0,
+      "scoreSource": 1,
+      "score": 1
     },
     {
       "source": "CoinDesk",
@@ -1723,31 +1798,6 @@
       "score": 1
     },
     {
-      "source": "The Block",
-      "title": "US Senate’s anti-CBDC housing bill advances with bipartisan support",
-      "url": "https://www.theblock.co/post/391889/us-senate-anti-cbdc-housing-bill",
-      "published": "2026-03-03T03:59:24.000Z",
-      "summary": "The bill includes a provision prohibiting the Federal Reserve from issuing a CBDC through the beginning of 2031.",
-      "keywords": [
-        "senate",
-        "anti",
-        "cbdc",
-        "housing",
-        "bill",
-        "advances",
-        "with",
-        "bipartisan",
-        "support",
-        "includes",
-        "provision",
-        "prohibiting"
-      ],
-      "scoreTitle": 0,
-      "scoreBody": 0,
-      "scoreSource": 1,
-      "score": 1
-    },
-    {
       "source": "Decrypt",
       "title": "Human Brain Cells Learn to Play Doom in Cortical Labs Experiment",
       "url": "https://decrypt.co/359697/human-brain-cells-play-doom-cortical-labs-experiment",
@@ -1816,31 +1866,6 @@
         "attestation",
         "linking",
         "four"
-      ],
-      "scoreTitle": 0,
-      "scoreBody": 0,
-      "scoreSource": 1,
-      "score": 1
-    },
-    {
-      "source": "The Block",
-      "title": "Core Scientific revenue drops in Q4 as bitcoin miner pushes into supplying data center infrastructure",
-      "url": "https://www.theblock.co/post/391878/core-scientific-revenue-drops-in-q4-as-bitcoin-miner-pushes-into-supplying-data-center-infrastructure",
-      "published": "2026-03-02T22:38:26.000Z",
-      "summary": "The company emphasized its colocation revenue jumped to $31.3 million from $8.5 million in 2024 due to an expansion of operations.",
-      "keywords": [
-        "core",
-        "scientific",
-        "revenue",
-        "drops",
-        "bitcoin",
-        "miner",
-        "pushes",
-        "into",
-        "supplying",
-        "data",
-        "center",
-        "infrastructure"
       ],
       "scoreTitle": 0,
       "scoreBody": 0,
@@ -2270,31 +2295,6 @@
       "score": 1
     },
     {
-      "source": "Decrypt",
-      "title": "Anthropic's AI Used in Iran Strikes After Trump Moved to Cut Ties: WSJ",
-      "url": "https://decrypt.co/359577/anthropics-ai-iran-strikes-trump-moved-to-cut-ties",
-      "published": "2026-03-02T06:07:13.000Z",
-      "summary": "Claude was reportedly embedded in U.S. Central Command even as the White House ordered federal agencies to cut all ties with the company.",
-      "keywords": [
-        "anthropic",
-        "used",
-        "iran",
-        "strikes",
-        "after",
-        "trump",
-        "moved",
-        "ties",
-        "claude",
-        "reportedly",
-        "embedded",
-        "central"
-      ],
-      "scoreTitle": 0,
-      "scoreBody": 0,
-      "scoreSource": 1,
-      "score": 1
-    },
-    {
       "source": "Messari",
       "title": "Crypto Venture Weekly: Feb. 23-27, 2026",
       "url": "https://messari.io/article/crypto-venture-weekly-feb-23-27-2026",
@@ -2643,6 +2643,31 @@
       "scoreBody": 0,
       "scoreSource": 1,
       "score": 1
+    },
+    {
+      "source": "Cointelegraph",
+      "title": "Ether supply on exchanges drops to multi-year lows: Here’s why it matters",
+      "url": "https://cointelegraph.com/news/ether-supply-on-exchanges-drops-to-multi-year-lows-here-s-why-it-matters",
+      "published": "2026-03-03T18:57:41.000Z",
+      "summary": "Ether reserves held on exchanges fell to a new multi-year low as ETH price struggles to trade above $2,000. Will the supply crunch benefit bulls or bears?",
+      "keywords": [
+        "ether",
+        "supply",
+        "exchanges",
+        "drops",
+        "multi",
+        "year",
+        "lows",
+        "here",
+        "matters",
+        "reserves",
+        "held",
+        "fell"
+      ],
+      "scoreTitle": 0,
+      "scoreBody": 0,
+      "scoreSource": 0,
+      "score": 0
     },
     {
       "source": "CryptoSlate",
@@ -3010,31 +3035,6 @@
         "daily",
         "trends",
         "events"
-      ],
-      "scoreTitle": 0,
-      "scoreBody": 0,
-      "scoreSource": 0,
-      "score": 0
-    },
-    {
-      "source": "AMB Crypto",
-      "title": "Bitcoin’s shrinking supply meets rising profits – But where is the demand?",
-      "url": "https://ambcrypto.com/bitcoins-shrinking-supply-meets-rising-profits-but-where-is-the-demand",
-      "published": "2026-03-03T14:00:50.000Z",
-      "summary": "Bitcoin supply drops as profitable wallets rise—Is this a clear bull signal?",
-      "keywords": [
-        "bitcoin",
-        "shrinking",
-        "supply",
-        "meets",
-        "rising",
-        "profits",
-        "where",
-        "demand",
-        "drops",
-        "profitable",
-        "wallets",
-        "rise"
       ],
       "scoreTitle": 0,
       "scoreBody": 0,

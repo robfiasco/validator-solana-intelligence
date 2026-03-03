@@ -5,7 +5,7 @@
     "url": "https://www.coindesk.com/business/2026/03/03/japan-prime-minister-sanae-takaichi-disavows-solana-meme-coin-after-it-crashes-by-75",
     "source": "CoinDesk",
     "firstSeenAt": "2026-03-03T18:39:11.486Z",
-    "lastSeenAt": "2026-03-03T18:39:11.486Z",
+    "lastSeenAt": "2026-03-03T19:38:07.490Z",
     "sectionShown": "briefing",
     "topicTags": [
       "japan",
@@ -135,69 +135,6 @@
     "sectionShown": "signal",
     "topicTags": [
       "signal-board"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "b650b2d6555e5634ba460b1a0ad15e9fdc9c5f12",
-    "title": "Morgan Stanley applies for OCC bank charter to custody crypto",
-    "url": "https://cointelegraph.com/news/morgan-stanley-applies-bank-charter-custody-trade-stake-crypto",
-    "source": "Cointelegraph",
-    "firstSeenAt": "2026-03-01T19:06:23.205Z",
-    "lastSeenAt": "2026-03-01T19:06:23.205Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "morgan",
-      "stanley",
-      "applies",
-      "bank",
-      "charter",
-      "custody",
-      "crypto",
-      "wall"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "37a9231dad9e0933f551c5ebf655f6f00b44e96c",
-    "title": "Bitcoin falls with Ethereum and Solana as Mutuum Finance lending protocol advances",
-    "url": "https://ambcrypto.com/bitcoin-falls-with-ethereum-and-solana-as-mutuum-finance-lending-protocol-advances",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-03-01T19:06:23.205Z",
-    "lastSeenAt": "2026-03-01T19:06:23.205Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "bitcoin",
-      "falls",
-      "with",
-      "ethereum",
-      "solana",
-      "mutuum",
-      "finance",
-      "lending"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "d906e9a4521696abffb19d02070f253cbec9ca6f",
-    "title": "Ether, solana, xrp surge up to 10% as majors recover Saturday's war-driven losses",
-    "url": "https://www.coindesk.com/markets/2026/03/01/ether-solana-xrp-surge-up-to-10-as-majors-recover-saturday-s-war-driven-losses",
-    "source": "CoinDesk",
-    "firstSeenAt": "2026-03-01T19:06:23.204Z",
-    "lastSeenAt": "2026-03-01T19:06:23.204Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "ether",
-      "solana",
-      "surge",
-      "majors",
-      "recover",
-      "saturday",
-      "driven",
-      "losses"
     ],
     "majorUpdate": false,
     "updateReason": null
