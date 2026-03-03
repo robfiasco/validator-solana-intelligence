@@ -204,8 +204,21 @@ export default function SeekerGuard({ children, peekData = null }) {
 
     // Native Android: directly invoke SolanaMobileWalletAdapter, bypassing
     // useWallet() which filters MWA out on Capacitor WebViews (isWebView check).
+    //
+    // IMPORTANT: mwa.connect() fires its internal _connect() without awaiting it
+    // (fire-and-forget by design). The real result comes via the 'connect' event.
     setConnecting(true);
-    setDebugInfo("creating-mwa");
+    setDebugInfo("connecting-mwa");
+
+    // Intercept the intent URL bridge so we can log diagnostic info
+    let intentUrl = null;
+    const origBridge = window.__openSolanaIntentUrl;
+    window.__openSolanaIntentUrl = (url) => {
+      intentUrl = url.toString();
+      setDebugInfo(`intent:${intentUrl.slice(0, 40)}`);
+      return origBridge?.(url);
+    };
+
     try {
       const mwa = new SolanaMobileWalletAdapter({
         addressSelector: createDefaultAddressSelector(),
@@ -220,26 +233,22 @@ export default function SeekerGuard({ children, peekData = null }) {
         cluster: WalletAdapterNetwork.Mainnet,
         onWalletNotFound: createDefaultWalletNotFoundHandler(),
       });
-      // Intercept the intent URL so we can see if MWA actually ran
-      let intentUrl = null;
-      const origBridge = window.__openSolanaIntentUrl;
-      window.__openSolanaIntentUrl = (url) => {
-        intentUrl = url.toString();
-        setDebugInfo(`intent:${intentUrl.slice(0, 40)}`);
-        return origBridge?.(url);
-      };
 
-      setDebugInfo("connecting-mwa");
-      await mwa.connect();
+      // Wait for the wallet adapter to emit 'connect' (with the public key) or 'error'.
+      // mwa.connect() is intentionally fire-and-forget; the 'connect' event is the
+      // authoritative signal that the MWA handshake completed successfully.
+      const publicKey = await new Promise((resolve, reject) => {
+        const timeout = setTimeout(() => reject(new Error("connect timeout (90s)")), 90000);
+        mwa.on("connect", (pk) => { clearTimeout(timeout); resolve(pk); });
+        mwa.on("error",   (err) => { clearTimeout(timeout); reject(err); });
+        mwa.connect(); // fires asynchronously
+      });
 
-      window.__openSolanaIntentUrl = origBridge; // restore
-
-      const pk = mwa.publicKey?.toBase58() || null;
+      const pk = publicKey?.toBase58?.() || null;
       setDebugInfo(`done|pk:${pk?.slice(0, 8) || "null"}|intent:${intentUrl ? "Y" : "N"}`);
 
-      // Require a real public key — connect() resolving without one means no real MWA handshake
       if (!pk) {
-        setDebugInfo(`no-pubkey|intent:${intentUrl ? "Y" : "N"} — connection did not authenticate`);
+        setDebugInfo(`no-pubkey — wallet connected but returned no public key`);
         return;
       }
 
@@ -248,6 +257,7 @@ export default function SeekerGuard({ children, peekData = null }) {
     } catch (e) {
       setDebugInfo(`err: ${e?.message || String(e)}`);
     } finally {
+      window.__openSolanaIntentUrl = origBridge; // always restore the bridge
       setConnecting(false);
     }
   };
