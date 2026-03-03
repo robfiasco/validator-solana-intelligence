@@ -246,14 +246,14 @@ export default function SeekerGuard({ children, peekData = null }) {
   const handleConnect = () => {
     const isNative = Capacitor?.isNativePlatform?.() && Capacitor?.getPlatform?.() === "android";
     const adapterName = wallet?.adapter?.name || "none";
-    const walletNames = wallets.map(w => w.name).join(",") || "empty";
+    const walletNames = wallets.map(w => w.adapter?.name || "?").join(",") || "empty";
 
     setDebugInfo(`tap|native:${isNative ? "Y" : "N"}|cur:${adapterName}|reg:${walletNames}`);
 
     if (isNative) {
       // Find the mobile wallet adapter by checking for "mobile" in the name
-      const mwaAdapter = wallets.find(w => w.name.toLowerCase().includes("mobile"));
-      const mwaName = mwaAdapter?.name;
+      const mwaWallet = wallets.find(w => w.adapter?.name?.toLowerCase().includes("mobile"));
+      const mwaName = mwaWallet?.adapter?.name;
 
       const alreadyMWA = adapterName.toLowerCase().includes("mobile");
       if (alreadyMWA && !connected) {
