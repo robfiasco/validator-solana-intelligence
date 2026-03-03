@@ -26,3 +26,4 @@ pnpm-debug.log*
 .idea/
 *.swp
 *.swo
+.orbitron-font.b64

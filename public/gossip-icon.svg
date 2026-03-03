@@ -1,0 +1,88 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&amp;display=swap');</style>
+
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04090a"/>
+      <stop offset="100%" stop-color="#060810"/>
+    </linearGradient>
+
+    <radialGradient id="ctl" cx="0%" cy="0%" r="55%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ctr" cx="100%" cy="0%" r="55%">
+      <stop offset="0%" stop-color="#f9a8d4" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cbr" cx="100%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cbl" cx="0%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#14F195" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#14F195" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glowWide" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="52" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowMid" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="24" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowSharp" x="-12%" y="-12%" width="124%" height="124%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <clipPath id="round">
+      <rect width="1024" height="1024" rx="230"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1024" height="1024" rx="230" fill="url(#bg)"/>
+  <rect width="1024" height="1024" rx="230" fill="url(#ctl)"/>
+  <rect width="1024" height="1024" rx="230" fill="url(#ctr)"/>
+  <rect width="1024" height="1024" rx="230" fill="url(#cbr)"/>
+  <rect width="1024" height="1024" rx="230" fill="url(#cbl)"/>
+
+  <rect x="6" y="6" width="1012" height="1012" rx="226" fill="none" stroke="#14F195" stroke-width="4" opacity="0.14"/>
+
+  <g clip-path="url(#round)" font-family="'Courier New',Courier,monospace" font-size="44" fill="#14F195" opacity="0.095">
+    <text x="40" y="60">G</text><text x="40" y="108">0</text><text x="40" y="156">5</text><text x="40" y="204">1</text><text x="40" y="252">P</text><text x="40" y="300">G</text><text x="40" y="348">0</text><text x="40" y="396">5</text><text x="40" y="444">1</text><text x="40" y="492">P</text><text x="40" y="540">G</text><text x="40" y="588">0</text><text x="40" y="636">5</text><text x="40" y="684">1</text><text x="40" y="732">P</text><text x="40" y="780">G</text><text x="40" y="828">0</text><text x="40" y="876">5</text><text x="40" y="924">1</text><text x="40" y="972">P</text>
+    <text x="90" y="84">5</text><text x="90" y="132">P</text><text x="90" y="180">G</text><text x="90" y="228">0</text><text x="90" y="276">5</text><text x="90" y="324">1</text><text x="90" y="372">P</text><text x="90" y="420">G</text><text x="90" y="468">0</text><text x="90" y="516">5</text><text x="90" y="564">1</text><text x="90" y="612">P</text><text x="90" y="660">G</text><text x="90" y="708">0</text><text x="90" y="756">5</text><text x="90" y="804">1</text><text x="90" y="852">P</text><text x="90" y="900">G</text><text x="90" y="948">0</text><text x="90" y="996">5</text>
+    <text x="140" y="44">1</text><text x="140" y="92">G</text><text x="140" y="140">P</text><text x="140" y="188">5</text><text x="140" y="236">0</text><text x="140" y="284">1</text><text x="140" y="332">G</text><text x="140" y="380">P</text><text x="140" y="428">5</text><text x="140" y="476">0</text><text x="140" y="524">1</text><text x="140" y="572">G</text><text x="140" y="620">P</text><text x="140" y="668">5</text><text x="140" y="716">0</text><text x="140" y="764">1</text><text x="140" y="812">G</text><text x="140" y="860">P</text><text x="140" y="908">5</text><text x="140" y="956">0</text>
+    <text x="190" y="68">P</text><text x="190" y="116">0</text><text x="190" y="164">1</text><text x="190" y="212">G</text><text x="190" y="260">5</text><text x="190" y="308">P</text><text x="190" y="356">0</text><text x="190" y="404">1</text><text x="190" y="452">G</text><text x="190" y="500">5</text><text x="190" y="548">P</text><text x="190" y="596">0</text><text x="190" y="644">1</text><text x="190" y="692">G</text><text x="190" y="740">5</text><text x="190" y="788">P</text><text x="190" y="836">0</text><text x="190" y="884">1</text><text x="190" y="932">G</text><text x="190" y="980">5</text>
+  </g>
+
+  <g clip-path="url(#round)" font-family="'Courier New',Courier,monospace" font-size="44" fill="#14F195" opacity="0.095">
+    <text x="736" y="52">0</text><text x="736" y="100">5</text><text x="736" y="148">G</text><text x="736" y="196">1</text><text x="736" y="244">P</text><text x="736" y="292">0</text><text x="736" y="340">5</text><text x="736" y="388">G</text><text x="736" y="436">1</text><text x="736" y="484">P</text><text x="736" y="532">0</text><text x="736" y="580">5</text><text x="736" y="628">G</text><text x="736" y="676">1</text><text x="736" y="724">P</text><text x="736" y="772">0</text><text x="736" y="820">5</text><text x="736" y="868">G</text><text x="736" y="916">1</text><text x="736" y="964">P</text>
+    <text x="786" y="76">G</text><text x="786" y="124">1</text><text x="786" y="172">P</text><text x="786" y="220">5</text><text x="786" y="268">0</text><text x="786" y="316">G</text><text x="786" y="364">1</text><text x="786" y="412">P</text><text x="786" y="460">5</text><text x="786" y="508">0</text><text x="786" y="556">G</text><text x="786" y="604">1</text><text x="786" y="652">P</text><text x="786" y="700">5</text><text x="786" y="748">0</text><text x="786" y="796">G</text><text x="786" y="844">1</text><text x="786" y="892">P</text><text x="786" y="940">5</text><text x="786" y="988">0</text>
+    <text x="836" y="56">5</text><text x="836" y="104">G</text><text x="836" y="152">0</text><text x="836" y="200">P</text><text x="836" y="248">1</text><text x="836" y="296">5</text><text x="836" y="344">G</text><text x="836" y="392">0</text><text x="836" y="440">P</text><text x="836" y="488">1</text><text x="836" y="536">5</text><text x="836" y="584">G</text><text x="836" y="632">0</text><text x="836" y="680">P</text><text x="836" y="728">1</text><text x="836" y="776">5</text><text x="836" y="824">G</text><text x="836" y="872">0</text><text x="836" y="920">P</text><text x="836" y="968">1</text>
+    <text x="886" y="80">P</text><text x="886" y="128">5</text><text x="886" y="176">1</text><text x="886" y="224">G</text><text x="886" y="272">0</text><text x="886" y="320">P</text><text x="886" y="368">5</text><text x="886" y="416">1</text><text x="886" y="464">G</text><text x="886" y="512">0</text><text x="886" y="560">P</text><text x="886" y="608">5</text><text x="886" y="656">1</text><text x="886" y="704">G</text><text x="886" y="752">0</text><text x="886" y="800">P</text><text x="886" y="848">5</text><text x="886" y="896">1</text><text x="886" y="944">G</text><text x="886" y="992">0</text>
+    <text x="936" y="48">1</text><text x="936" y="96">P</text><text x="936" y="144">G</text><text x="936" y="192">5</text><text x="936" y="240">0</text><text x="936" y="288">1</text><text x="936" y="336">P</text><text x="936" y="384">G</text><text x="936" y="432">5</text><text x="936" y="480">0</text><text x="936" y="528">1</text><text x="936" y="576">P</text><text x="936" y="624">G</text><text x="936" y="672">5</text><text x="936" y="720">0</text><text x="936" y="768">1</text><text x="936" y="816">P</text><text x="936" y="864">G</text><text x="936" y="912">5</text><text x="936" y="960">0</text>
+  </g>
+
+  <g clip-path="url(#round)">
+    <text x="512" y="648" dominant-baseline="middle" text-anchor="middle"
+      font-family="Orbitron,sans-serif" font-size="840" font-weight="900"
+      fill="none" stroke="#14F195" stroke-width="72" opacity="0.10"
+      filter="url(#glowWide)">G</text>
+
+    <text x="512" y="648" dominant-baseline="middle" text-anchor="middle"
+      font-family="Orbitron,sans-serif" font-size="840" font-weight="900"
+      fill="none" stroke="#14F195" stroke-width="36" opacity="0.18"
+      filter="url(#glowMid)">G</text>
+
+    <text x="512" y="648" dominant-baseline="middle" text-anchor="middle"
+      font-family="Orbitron,sans-serif" font-size="840" font-weight="900"
+      fill="none" stroke="#14F195" stroke-width="18" opacity="0.22"
+      filter="url(#glowSharp)">G</text>
+
+    <text x="512" y="648" dominant-baseline="middle" text-anchor="middle"
+      font-family="Orbitron,sans-serif" font-size="840" font-weight="900"
+      fill="none" stroke="#14F195" stroke-width="14" opacity="0.95">G</text>
+  </g>
+</svg>
