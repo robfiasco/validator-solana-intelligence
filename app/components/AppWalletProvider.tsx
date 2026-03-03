@@ -7,18 +7,18 @@ import { PhantomWalletAdapter, SolflareWalletAdapter } from "@solana/wallet-adap
 import { SolanaMobileWalletAdapter, createDefaultAddressSelector, createDefaultAuthorizationResultCache, createDefaultWalletNotFoundHandler } from "@solana-mobile/wallet-adapter-mobile";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import { clusterApiUrl } from "@solana/web3.js";
-import { Capacitor, registerPlugin } from "@capacitor/core";
+import { Capacitor } from "@capacitor/core";
+import { App } from "@capacitor/app";
 import type { Adapter } from "@solana/wallet-adapter-base";
-
-const NativeIntent = registerPlugin<{ openUrl: (opts: { url: string }) => Promise<void> }>('NativeIntent');
 
 import "@solana/wallet-adapter-react-ui/styles.css";
 
-// Chrome blocks asynchronous intent URLs — proxy through Capacitor's native layer instead
+// Chrome WebView blocks intent:// URLs — route through Capacitor's App.openUrl which calls
+// startActivity(Intent.ACTION_VIEW) natively, triggering the Seeker wallet bottom sheet
 if (typeof window !== "undefined") {
     (window as Window & { __openSolanaIntentUrl?: (url: URL) => void }).__openSolanaIntentUrl = (url: URL) => {
         if (Capacitor.isNativePlatform()) {
-            NativeIntent.openUrl({ url: url.toString() }).catch(() => {
+            App.openUrl({ url: url.toString() }).catch(() => {
                 window.location.assign(url);
             });
         } else {
