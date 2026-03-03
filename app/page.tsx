@@ -826,7 +826,7 @@ export default function Home() {
                         { label: "GOOD TO KNOW", icon: "↗", tone: PALETTE_2[1], item: items[1] },
                         { label: "KEEP AN EYE ON", icon: "◉", tone: PALETTE_2[2], item: items[2] },
                       ];
-                      return slots.map((slot, idx) => (
+                      return slots.filter(slot => slot.item).map((slot, idx) => (
                         <div key={idx} className={`briefing-item ${slot.tone}`}>
                           <div className="briefing-item-head">
                             <span className="briefing-item-icon">{slot.icon}</span>
