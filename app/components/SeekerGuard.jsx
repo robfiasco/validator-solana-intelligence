@@ -205,11 +205,12 @@ export default function SeekerGuard({ children, peekData = null }) {
   // name changes, but without the ref, connectWallet would still be the old closure where
   // wallet===null, causing WalletNotSelectedError.
   useEffect(() => {
+    const adName = wallet?.adapter?.name || "nil";
+    setDebugInfo(`eff|pend:${mwaConnectPending.current}|w:${adName.slice(0,6)}|conn:${connected}`);
     if (!mwaConnectPending.current) return;
-    if (!wallet?.adapter?.name?.toLowerCase().includes("mobile wallet")) return;
+    if (!adName.toLowerCase().includes("mobile wallet")) return;
     if (connected) return;
     mwaConnectPending.current = false;
-    setDebugInfo(`effect:connecting`);
     connectWalletRef.current()
       .then(() => setDebugInfo("mwa:connected"))
       .catch(e => setDebugInfo(`err: ${e?.message || String(e)}`));
