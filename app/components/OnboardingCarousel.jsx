@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 const STORAGE_KEY = "gossip_onboarded";
 
@@ -62,6 +62,21 @@ export default function OnboardingCarousel() {
         else dismiss(true);
     }, [slide, goTo, dismiss]);
 
+    const touchStartX = useRef(null);
+
+    const handleTouchStart = (e) => {
+        touchStartX.current = e.touches[0].clientX;
+    };
+
+    const handleTouchEnd = (e) => {
+        if (touchStartX.current === null) return;
+        const delta = e.changedTouches[0].clientX - touchStartX.current;
+        touchStartX.current = null;
+        if (Math.abs(delta) < 50) return; // ignore micro-swipes
+        if (delta < 0) next(); // swipe left → next
+        else if (slide > 0) goTo(slide - 1); // swipe right → prev
+    };
+
     if (!visible) return null;
 
     const s = SLIDES[slide];
@@ -87,6 +102,8 @@ export default function OnboardingCarousel() {
             {/* Phone-width card */}
             <div
                 onClick={(e) => e.stopPropagation()}
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
                 style={{
                     width: "100%",
                     maxWidth: "400px",
