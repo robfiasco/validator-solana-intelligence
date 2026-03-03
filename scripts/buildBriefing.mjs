@@ -262,6 +262,50 @@ const main = () => {
     }
   }
 
+  // Pass 4: safety net — any crypto topic from trusted desks, newest first.
+  // Runs only when strict Solana gates didn't fill all 3 slots.
+  if (selected.length < MAX_ITEMS) {
+    const BROAD_TERMS = [
+      "crypto", "defi", "blockchain", "token", "wallet", "exchange",
+      "protocol", "stablecoin", "web3", "nft",
+      ...SOLANA_IMPACT_TERMS,
+    ];
+    const broadPool = articles
+      .map((article) => {
+        const publishedAt = article.published || article.publishedAt || article.date || null;
+        const ts = Date.parse(String(publishedAt || ""));
+        if (Number.isNaN(ts) || ts < recentCutoffMs) return null;
+        const source = String(article.source || "").trim();
+        const title = String(article.title || "").trim();
+        if (!title || !article.url) return null;
+        if (!REPUTABLE_SOURCES.has(source.toLowerCase())) return null;
+        const text = `${title} ${String(article.summary || "")}`;
+        if (!includesAny(text, BROAD_TERMS)) return null;
+        return {
+          category: classifyCategory(article),
+          title,
+          source,
+          date: formatDate(publishedAt),
+          url: article.url,
+          whyCare: whyCareLine(article),
+          summary: String(article.summary || ""),
+          ts,
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => b.ts - a.ts);
+
+    for (const story of broadPool) {
+      if (selected.length >= MAX_ITEMS) break;
+      if (selected.some((s) => s.url === story.url)) continue;
+      const sourceCount = selected.filter(
+        (s) => String(s.source || "").toLowerCase() === String(story.source || "").toLowerCase()
+      ).length;
+      if (sourceCount >= 2) continue;
+      selected.push(story);
+    }
+  }
+
   writeMemory(memory, newMemoryEntries);
 
   const payload = {

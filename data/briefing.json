@@ -10,7 +10,25 @@
       "source": "CoinDesk",
       "date": "2026-03-03",
       "url": "https://www.coindesk.com/business/2026/03/03/japan-prime-minister-sanae-takaichi-disavows-solana-meme-coin-after-it-crashes-by-75",
-      "whyYouShouldCare": "The disavowal by a prominent political figure could impact Solana's reputation and investor confidence, potentially affecting its liquidity and market positioning."
+      "whyYouShouldCare": "The disavowal by Japan's prime minister could undermine confidence in Solana's ecosystem, impacting its reputation and market liquidity."
+    },
+    {
+      "type": "MARKET",
+      "title": "Hyperliquid gold perps front-ran CME after Iran strikes and the Monday gap exposed a new weekend leader",
+      "category": "MARKET",
+      "source": "CryptoSlate",
+      "date": "2026-03-03",
+      "url": "https://cryptoslate.com/hyperliquid-gold-perps-front-ran-cme-after-iran-strikes-and-the-monday-gap-exposed-a-new-weekend-leader",
+      "whyYouShouldCare": "The emergence of a new weekend leader in crypto trading could shift liquidity dynamics, influencing how Solana and other assets are traded during off-hours."
+    },
+    {
+      "type": "MARKET",
+      "title": "Mastercard adds SoFiUSD as settlement option for card issuers",
+      "category": "MARKET",
+      "source": "Cointelegraph",
+      "date": "2026-03-03",
+      "url": "https://cointelegraph.com/news/sofi-and-mastercard-move-stablecoin-settlement-into-global-card-network",
+      "whyYouShouldCare": "Mastercard's inclusion of SoFiUSD as a settlement option enhances the usability of digital assets, potentially increasing transaction volumes within the Solana ecosystem."
     }
   ]
 }
