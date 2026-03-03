@@ -7,9 +7,7 @@ import MatrixBanner from "./MatrixBanner";
 import { getKickerClass, getKickerColor } from "../lib/categories";
 
 
-// Capacitor may not be available in web builds
-let Capacitor = null;
-try { Capacitor = require("@capacitor/core").Capacitor; } catch { /* web build */ }
+import { Capacitor } from "@capacitor/core";
 
 const SEEKER_GROUP = "GT22s89nU4iWFkNXj1Bw6uYhJJWDRPpShHt4Bk8f99Te";
 const TOKEN_2022_PROGRAM = "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb";

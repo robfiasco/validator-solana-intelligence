@@ -155,6 +155,7 @@ body {
 .phone-frame {
   width: min(430px, 100%);
   height: 100vh;
+  height: 100dvh;
   max-height: 920px;
   background:
     radial-gradient(420px 320px at 12% 0%, rgba(153, 69, 255, 0.18), transparent 62%),
@@ -167,6 +168,21 @@ body {
   border-radius: 28px;
   box-shadow: 0 28px 70px -38px rgba(14, 8, 32, 0.6);
   overflow: hidden;
+}
+
+/* On actual mobile devices — fill edge to edge, no phone chrome */
+@media (max-width: 480px) {
+  .app-shell {
+    padding: 0;
+    align-items: flex-start;
+  }
+  .phone-frame {
+    width: 100%;
+    max-height: none;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+  }
 }
 
 [data-theme="darker"] .phone-frame {
