@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Gossip — Solana Intelligence",
@@ -27,6 +28,7 @@ export default function RootLayout({
             <div className="phone-frame">{children}</div>
           </div>
         </AppWalletProvider>
+        <Analytics />
       </body>
     </html>
   );
