@@ -15,6 +15,18 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 *.log
+logcat*.txt
+capacitor_logs.txt
+mwa_logcat.txt
+dev_output.log
+vercel_body.txt
+
+# temp / scratch files
+tmp*.json
+signals_raw.json
+xposts.csv
+test-deploy.js
+*.tsbuildinfo
 
 # misc
 .DS_Store
