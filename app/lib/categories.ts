@@ -1,12 +1,12 @@
 // Shared category classification — used by story cards, locked paywall, and story detail
 
 export const CATEGORY_COLORS: Record<string, string> = {
-  critical: "#ff7f86",
+  critical: "#ff4545",
   ai:       "#ae88ff",
   gaming:   "#14f195",
   alpha:    "#14f195",
   mobile:   "#00c2ff",
-  privacy:  "#ef77c7",
+  privacy:  "#b06eff",
   default:  "#00c2ff",
 };
 

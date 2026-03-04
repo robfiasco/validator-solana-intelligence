@@ -21,6 +21,10 @@ import OnboardingCarousel from "./components/OnboardingCarousel";
 import AnimatedEngagementChart from "./components/AnimatedEngagementChart";
 import MatrixBanner from "./components/MatrixBanner";
 import { getKickerClass, getKickerColor } from "./lib/categories";
+import { requestAndScheduleNotifications, cancelNotifications } from "./lib/notifications";
+import { Capacitor } from "@capacitor/core";
+import { App } from "@capacitor/app";
+import { useWallet } from "@solana/wallet-adapter-react";
 import type { TerminalData } from "../lib/data/types";
 import type {
   BriefingPayload,
@@ -155,12 +159,31 @@ export default function Home() {
   const [isAppReady, setIsAppReady] = useState(!!cachedDaily);
   const [showInfoModal, setShowInfoModal] = useState(false);
   const [activeStoryIndex, setActiveStoryIndex] = useState(-1);
+  const [notifsEnabled, setNotifsEnabled] = useState(() =>
+    typeof window !== "undefined" &&
+    window.localStorage.getItem("gossip_notifications_enabled") === "true"
+  );
+  const { connected, disconnect } = useWallet();
   const carouselRef = useRef<HTMLDivElement | null>(null);
   const hasRestoredScroll = useRef(false);
 
   const handleReplayOnboarding = () => {
     window.sessionStorage.removeItem("gossip_onboarded");
     window.location.reload();
+  };
+
+  const handleNotifToggle = async () => {
+    if (!notifsEnabled) {
+      const granted = await requestAndScheduleNotifications();
+      if (granted) {
+        localStorage.setItem("gossip_notifications_enabled", "true");
+        setNotifsEnabled(true);
+      }
+    } else {
+      await cancelNotifications();
+      localStorage.setItem("gossip_notifications_enabled", "false");
+      setNotifsEnabled(false);
+    }
   };
   const panelRefs = useRef<Array<HTMLDivElement | null>>([]);
 
@@ -180,6 +203,18 @@ export default function Home() {
     document.documentElement.setAttribute("data-theme", theme);
     window.localStorage.setItem("validator_theme", theme);
   }, [theme]);
+
+  // Re-schedule notifications on app resume in case the OS cleared them (e.g. after reboot)
+  useEffect(() => {
+    if (!Capacitor.isNativePlatform()) return;
+    let listener: any;
+    App.addListener("resume", async () => {
+      if (window.localStorage.getItem("gossip_notifications_enabled") === "true") {
+        await requestAndScheduleNotifications();
+      }
+    }).then(l => { listener = l; });
+    return () => { listener?.remove(); };
+  }, []);
 
   useEffect(() => {
     const stored = window.sessionStorage.getItem("validator_focus_mode");
@@ -663,11 +698,7 @@ export default function Home() {
               <span className={`title-logo ${focusMode ? "title-logo-focus" : ""}`}>GOSSIP</span>
               <span className="logo-cursor" aria-hidden="true">_</span>
             </h1>
-            <p className="subtitle">
-              {activePanel === 2 ? (
-                <>PREMIUM INTELLIGENCE FOR <span style={{ whiteSpace: "nowrap" }}>SEEKER HOLDERS</span></>
-              ) : "SOLANA INTELLIGENCE TERMINAL"}
-            </p>
+            <p className="subtitle">SOLANA INTELLIGENCE TERMINAL</p>
             {isStaked && activePanel !== 2 ? (
               <span className="staked-chip">Staked — Enhanced Signal</span>
             ) : null}
@@ -894,6 +925,7 @@ export default function Home() {
                         index={activeStoryIndex}
                         total={stories.length}
                         onBack={() => setActiveStoryIndex(-1)}
+                        publishDate={newsCardsData?.date}
                       />
                     ) : (
                       <section className="morning-open" id="top-story-feed">
@@ -1028,7 +1060,7 @@ export default function Home() {
             </div>
 
             <div className="info-modal-meta-row">
-              <span className="info-modal-badge">{`v1.0.1`}</span>
+              <span className="info-modal-badge">{`v${process.env.NEXT_PUBLIC_APP_VERSION}`}</span>
               <span className="info-modal-dot">·</span>
               <span className="info-modal-badge">2026</span>
             </div>
@@ -1044,12 +1076,50 @@ export default function Home() {
 
             <div className="info-modal-divider" />
 
+            {Capacitor.isNativePlatform() && (
+              <div style={{
+                display: "flex", alignItems: "center", justifyContent: "space-between",
+                padding: "10px 0", marginBottom: "8px",
+              }}>
+                <span style={{ fontSize: "0.75rem", fontFamily: "JetBrains Mono, monospace", letterSpacing: "0.08em", color: "rgba(160,175,215,0.80)" }}>
+                  STORY NOTIFICATIONS
+                </span>
+                <button
+                  onClick={handleNotifToggle}
+                  style={{
+                    width: "44px", height: "24px", borderRadius: "12px", border: "none",
+                    cursor: "pointer", position: "relative", transition: "background 0.22s",
+                    background: notifsEnabled ? "#14F195" : "rgba(100,115,155,0.30)",
+                  }}
+                  aria-label={notifsEnabled ? "Disable notifications" : "Enable notifications"}
+                >
+                  <span style={{
+                    position: "absolute", top: "3px",
+                    left: notifsEnabled ? "23px" : "3px",
+                    width: "18px", height: "18px", borderRadius: "50%",
+                    background: notifsEnabled ? "#000" : "rgba(160,175,215,0.70)",
+                    transition: "left 0.22s",
+                  }} />
+                </button>
+              </div>
+            )}
+
             <button
               onClick={handleReplayOnboarding}
               className="info-modal-btn-replay"
             >
               REPLAY TUTORIAL
             </button>
+
+            {connected && (
+              <button
+                onClick={() => { disconnect(); setShowInfoModal(false); }}
+                className="info-modal-btn-replay"
+                style={{ color: "#ff4d4d", borderColor: "rgba(255,77,77,0.25)", marginBottom: "4px" }}
+              >
+                DISCONNECT WALLET
+              </button>
+            )}
 
             <button
               onClick={() => setShowInfoModal(false)}

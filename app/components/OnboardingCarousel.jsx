@@ -223,9 +223,10 @@ export default function OnboardingCarousel() {
                     <button onClick={() => dismiss(true)} style={{
                         display: "block", width: "100%", marginTop: "10px",
                         background: "none", border: "none", cursor: "pointer",
-                        fontSize: "0.6rem", fontFamily: "JetBrains Mono, monospace",
-                        color: "rgba(100,115,155,0.38)", letterSpacing: "0.08em",
-                        textAlign: "center", padding: "2px",
+                        fontSize: "0.75rem", fontFamily: "JetBrains Mono, monospace",
+                        color: "rgba(160,175,215,0.60)", letterSpacing: "0.08em",
+                        textAlign: "center", padding: "6px 0",
+                        textDecoration: "underline",
                     }}>DON'T SHOW AGAIN</button>
                 </div>
             </div>

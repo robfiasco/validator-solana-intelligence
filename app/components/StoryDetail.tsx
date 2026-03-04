@@ -28,7 +28,7 @@ type Story = {
     hook?: string;
 };
 
-export default function StoryDetail({ story, index, total, onBack }: { story: Story; index: number; total: number; onBack: () => void }) {
+export default function StoryDetail({ story, index, total, onBack, publishDate }: { story: Story; index: number; total: number; onBack: () => void; publishDate?: string | null }) {
     const metrics = {
         tweets: Number(story?.metrics?.tweets ?? story?.stats?.total_tweets ?? 0),
         engagement: Number(story?.metrics?.engagement ?? story?.stats?.total_engagement ?? 0),
@@ -63,7 +63,7 @@ export default function StoryDetail({ story, index, total, onBack }: { story: St
 
             <div className="seeker-detail-header" style={{ paddingTop: '16px', display: 'flex', justifyContent: 'center' }}>
                 <div style={{ textAlign: 'center' }}>
-                    <p className="seeker-detail-sub">Premium Intelligence • {formatShortDate(story?.timestamp || story?.publishedAt)}</p>
+                    <p className="seeker-detail-sub">Premium Intelligence • {formatShortDate(publishDate || story?.timestamp || story?.publishedAt)}</p>
                 </div>
             </div>
 

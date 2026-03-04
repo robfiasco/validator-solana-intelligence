@@ -13,6 +13,7 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
     const [exiting, setExiting] = useState(false);
     const [introSequenceComplete, setIntroSequenceComplete] = useState(false);
     const [isGlitching, setIsGlitching] = useState(false);
+    const [readyFlash, setReadyFlash] = useState(false);
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
     useEffect(() => {
@@ -99,6 +100,14 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
 
         return () => clearInterval(interval);
     }, []);
+
+    useEffect(() => {
+        if (introSequenceComplete && isAppReady) {
+            setReadyFlash(true);
+            const flashTimer = setTimeout(() => setReadyFlash(false), 600);
+            return () => clearTimeout(flashTimer);
+        }
+    }, [introSequenceComplete, isAppReady]);
 
     useEffect(() => {
         if (introSequenceComplete && isAppReady) {
@@ -228,13 +237,17 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
 
                 <div style={{
                     fontFamily: "'JetBrains Mono', 'IBM Plex Mono', monospace",
-                    fontSize: "10px",
-                    color: "rgba(255, 255, 255, 0.3)",
-                    letterSpacing: "0.1em",
-                    opacity: isAppReady && introSequenceComplete ? 1 : 0.6,
-                    transition: "opacity 0.3s ease"
+                    fontSize: isAppReady && introSequenceComplete ? "12px" : "10px",
+                    color: isAppReady && introSequenceComplete ? "#14f195" : "rgba(255, 255, 255, 0.3)",
+                    letterSpacing: "0.18em",
+                    fontWeight: isAppReady && introSequenceComplete ? 700 : 400,
+                    textShadow: isAppReady && introSequenceComplete
+                        ? "0 0 10px rgba(20,241,149,0.8), 0 0 24px rgba(20,241,149,0.4)"
+                        : "none",
+                    transition: "color 0.4s ease, font-size 0.3s ease, text-shadow 0.4s ease",
+                    animation: readyFlash ? "readyFlash 0.5s ease-out forwards" : undefined,
                 }}>
-                    {isAppReady && introSequenceComplete ? "SYSTEM READY" : "ESTABLISHING CONNECTION..."}
+                    {isAppReady && introSequenceComplete ? "[ OK ]  SYSTEM READY" : "ESTABLISHING CONNECTION..."}
                 </div>
             </div>
 
@@ -258,6 +271,11 @@ export default function GossipLoadingScreen({ onFinished, isAppReady }: { onFini
                 @keyframes cursorBlink {
                     0%, 100% { opacity: 1; }
                     50% { opacity: 0; }
+                }
+                @keyframes readyFlash {
+                    0%   { opacity: 0; transform: scale(0.92) translateY(4px); }
+                    60%  { opacity: 1; transform: scale(1.06) translateY(0); }
+                    100% { opacity: 1; transform: scale(1) translateY(0); }
                 }
             `}</style>
         </div>

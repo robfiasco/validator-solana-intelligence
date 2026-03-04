@@ -1,7 +1,7 @@
 {
   "name": "gossip-solana-intelligence",
   "private": true,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "scripts": {
     "postinstall": "node patch-solana.mjs",
@@ -39,6 +39,7 @@
     "@capacitor/browser": "^8.0.1",
     "@capacitor/cli": "^8.1.0",
     "@capacitor/core": "^8.1.0",
+    "@capacitor/local-notifications": "^8.0.1",
     "@solana-mobile/wallet-adapter-mobile": "^2.2.5",
     "@solana/wallet-adapter-base": "^0.9.27",
     "@solana/wallet-adapter-phantom": "^0.9.28",
