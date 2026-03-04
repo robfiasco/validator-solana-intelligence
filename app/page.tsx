@@ -163,6 +163,12 @@ export default function Home() {
     typeof window !== "undefined" &&
     window.localStorage.getItem("gossip_notifications_enabled") === "true"
   );
+  // Evaluated client-side only — isNativePlatform() returns false during SSR,
+  // causing a hydration mismatch that hides the toggle permanently.
+  const [isNativeAndroid, setIsNativeAndroid] = useState(false);
+  useEffect(() => {
+    setIsNativeAndroid(Capacitor?.isNativePlatform?.() === true && Capacitor?.getPlatform?.() === "android");
+  }, []);
   const { disconnect } = useWallet();
   const isSeekerConnected = typeof window !== "undefined" &&
     window.localStorage.getItem("gossip_seeker_verified") === "true";
@@ -1078,7 +1084,7 @@ export default function Home() {
 
             <div className="info-modal-divider" />
 
-            {Capacitor.isNativePlatform() && (
+            {isNativeAndroid && (
               <div style={{
                 display: "flex", alignItems: "center", justifyContent: "space-between",
                 padding: "10px 0", marginBottom: "8px",
