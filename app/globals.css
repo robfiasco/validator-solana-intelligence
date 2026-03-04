@@ -2697,12 +2697,14 @@ body {
 }
 
 .panel-slide-signal>section {
-  flex: 1;
-  min-height: 100%; /* allow card to grow with content; height:100% was clipping the last section */
+  /* no flex:1 — allows section to grow beyond viewport height with content.
+     flex:1 capped it at the scroll container's viewport, so the card background
+     didn't extend to cover sections below the fold. */
+  min-height: 100%;
 }
 
 .panel-slide-signal .intel-card {
-  min-height: 100%;
+  /* height grows naturally with content */
 }
 
 .panel-slide-briefing {
