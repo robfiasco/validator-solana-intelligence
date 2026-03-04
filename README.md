@@ -1,57 +1,156 @@
-# Gossip (formerly Validator) v1 Data Sources
+# Gossip — Solana Intelligence Terminal
 
-This app now pulls live market data and stories from public endpoints. No API keys required (v1).
+**v1.0.5** · [gossip-app.vercel.app](https://gossip-app.vercel.app) · Android APK available in [Releases](https://github.com/robfiasco/gossip-app/releases)
 
-## Endpoints
-- CoinGecko (SOL price + 24h/7d): `https://api.coingecko.com/api/v3/coins/solana`
-- CoinGecko Global (market cap + BTC dominance): `https://api.coingecko.com/api/v3/global`
-- Alternative.me Fear & Greed: `https://api.alternative.me/fng/?limit=1&format=json`
-- DefiLlama Yields: `https://yields.llama.fi/pools`
-- RSS sources (daily article cache):
-  - The Block: `https://www.theblock.co/rss.xml`
-  - CoinDesk: `https://www.coindesk.com/arc/outboundfeeds/rss/`
-  - Decrypt: `https://decrypt.co/feed`
-  - Cointelegraph: `https://cointelegraph.com/rss`
-  - Messari: `https://messari.io/rss`
-  - Blockworks: `https://blockworks.co/feed`
-  - Galaxy: `https://www.galaxy.com/insights/rss/`
-  - VanEck Digital Assets: `https://www.vaneck.com/us/en/blogs/digital-assets/feed/`
-  - CryptoSlate: `https://cryptoslate.com/feed/`
-  - AMB Crypto: `https://ambcrypto.com/feed/`
+Mobile-first Solana intelligence terminal that converts crypto Twitter signals and ecosystem data into high-signal daily narratives and premium trader insights — gated behind the Solana Seeker Genesis token.
 
-## Notes
-- Data is cached in-memory for 5 minutes in `lib/data/terminalData.ts`.
-- Story URLs are deduped for 3 days using `data/seenStories.json`.
-- If any API fails, fields fall back to `—` and the UI continues to render.
+---
 
-## Daily Article Cache
-Generate the daily article cache with:
+## Stack
 
-```
-npm run articles:build
-```
+| Layer | Tech |
+|-------|------|
+| Framework | Next.js 16 (App Router), TypeScript |
+| Styling | Custom CSS (globals.css), dark-mode native |
+| Native wrapper | Capacitor v8 (Android) |
+| Wallet | `@solana-mobile/wallet-adapter-mobile` (MWA), Phantom, Solflare |
+| Notifications | `@capacitor/local-notifications` |
+| Data cache | Vercel KV (`@vercel/kv`) |
+| Deployment | Vercel |
 
-Output is written to:
-- `data/articles.json`
+---
 
-Next step: match influencer posts to this cache for daily story selection.
+## Features
 
-## LLM Daily Digest (local Ollama)
-Generate the three app outputs (Signal Board, Briefing, News cards) from local signals + articles:
+- **Signal Board** — AI-generated weekly intelligence: market context, what people are talking about, why it matters, signal vs noise, glossary
+- **Daily Briefing** — curated story feed from 10 RSS sources
+- **Premium Stories** — full narrative analysis with timeline, key quotes, key players, and engagement chart; gated behind Seeker token verification
+- **Live Market Ticker** — SOL price (24h/7d), market cap, Fear & Greed Index, BTC dominance, volume
+- **FOCUS Mode** — distraction-free reading
+- **Onboarding Carousel** — first-launch walkthrough
+- **Story Notifications** — twice-daily local notifications at 7:30 AM and 7:30 PM (user's local time)
+- **Wallet Connect / Disconnect** — MWA native flow on Android; modal on web
+
+---
+
+## Access Control
+
+Premium content is gated by the Seeker Genesis token group:
 
 ```
-npm run articles:build
-npm run digest:llm
+SEEKER_GROUP = GT22s89nU4iWFkNXj1Bw6uYhJJWDRPpShHt4Bk8f99Te
 ```
 
-Outputs:
-- `signal_board.json`
-- `briefing.json`
-- `news_cards.json`
+Verification checks Token-2022 and classic SPL token programs via the Solana RPC. A **Hackathon Judge Bypass** button is visible on the paywall for judges evaluating the app without a Seeker device.
 
-### Debugging digest:llm
-- Raw LLM response is saved to: `data/llm_last_response.txt`
-- “Backpack seeded” now means the Backpack tokenomics article is guaranteed to be in the **LLM input subset**.
+---
 
-# gossip-solana-intelligence
-Mobile-first Solana intelligence terminal that converts crypto Twitter + ecosystem data into high-signal daily narratives and premium trader insights.
+## Project Structure
+
+```
+app/
+  components/       React components
+  lib/              Shared utilities (categories, KV, notifications)
+  api/              Next.js API routes
+  globals.css       All styles
+  page.tsx          Main app shell
+  error.tsx         Global error boundary
+
+scripts/            Data pipeline scripts (Node/ESM)
+data/               JSON fallbacks for API routes (pipeline output)
+src/lib/            Shared TypeScript types and data loaders
+android/            Capacitor Android project
+public/             Static assets (icons, onboarding images)
+```
+
+---
+
+## API Routes
+
+| Route | Description | Cache |
+|-------|-------------|-------|
+| `/api/daily` | All daily data (signal board, briefing, stories, news cards) | Dynamic |
+| `/api/market-prices` | Live SOL price, Fear & Greed, BTC.D | In-memory 5 min |
+| `/api/market-context` | Cached market context narrative | 1 min revalidate |
+| `/api/stories` | Seeker premium stories | 1 min revalidate |
+| `/api/terminal` | Terminal/signal board data | 5 min revalidate |
+| `/api/verify-seeker` | Token-gate verification endpoint | Dynamic |
+| `/api/metrics` | Engagement metrics | 1 min revalidate |
+
+All routes fall back to `data/*.json` if Vercel KV is unavailable.
+
+---
+
+## Data Sources
+
+- **SOL price / 7d**: CoinGecko `/api/v3/coins/solana`
+- **Global market**: CoinGecko `/api/v3/global`
+- **Fear & Greed**: Alternative.me `/fng/?limit=1`
+- **RSS feeds**: The Block, CoinDesk, Decrypt, Cointelegraph, Messari, Blockworks, Galaxy, VanEck, CryptoSlate, AMB Crypto
+
+---
+
+## Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `NEXT_PUBLIC_APP_VERSION` | Auto-injected from `package.json` via `next.config.mjs` |
+| `NEXT_PUBLIC_APP_URL` | Deployment URL (defaults to `https://gossip-app.vercel.app`) |
+| `KV_REST_API_URL` | Vercel KV endpoint |
+| `KV_REST_API_TOKEN` | Vercel KV auth token |
+
+---
+
+## Development
+
+```bash
+npm install
+npm run dev        # Next.js dev server → http://localhost:3000
+```
+
+---
+
+## Data Pipeline
+
+The daily intelligence pipeline runs server-side and outputs to Vercel KV (with `data/` as local fallback):
+
+```bash
+npm run daily:run           # Full pipeline + KV sync
+npm run daily:run:fast      # Skip story generation
+npm run signal:build        # Rebuild signal board only
+npm run briefing:build      # Rebuild daily briefing only
+npm run articles:build      # Fetch + cache RSS articles
+```
+
+Individual pipeline steps in `scripts/` can be run independently. See `package.json` for all available commands.
+
+---
+
+## Android Build
+
+Requires Android SDK and Gradle.
+
+```bash
+# Sync Capacitor config + web assets to Android project
+npx cap sync android
+
+# Build debug APK
+cd android
+./gradlew assembleDebug
+
+# Output: android/app/build/outputs/apk/debug/gossip-v{version}.apk
+```
+
+Install via ADB (USB debugging enabled):
+
+```bash
+~/Library/Android/sdk/platform-tools/adb install -r gossip-v1.0.5.apk
+```
+
+The Capacitor config (`capacitor.config.ts`) points the WebView at the Vercel production deployment. Any URL change requires a rebuild.
+
+---
+
+## Releases
+
+APK releases are published to [GitHub Releases](https://github.com/robfiasco/gossip-app/releases) with changelogs. The app targets the Solana Seeker device (Android) but installs on any Android phone.
