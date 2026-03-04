@@ -1,34 +1,34 @@
 {
-  "date": "2026-03-03",
+  "date": "2026-03-04",
   "title": "TODAY'S SOLANA BRIEFING",
   "subtitle": "Top links from trusted desks",
   "items": [
     {
       "type": "APPS",
-      "title": "Japan prime minister Sanae Takaichi disavows Solana meme coin after it crashes by 75%",
+      "title": "Bitcoin holds, ether, solana slide as Mideast woes drag Asian equities to multi-year lows",
       "category": "APPS",
       "source": "CoinDesk",
-      "date": "2026-03-03",
-      "url": "https://www.coindesk.com/business/2026/03/03/japan-prime-minister-sanae-takaichi-disavows-solana-meme-coin-after-it-crashes-by-75",
-      "whyYouShouldCare": "The disavowal of a Solana meme coin by Japan's prime minister highlights regulatory scrutiny and potential reputational risks for the Solana ecosystem."
+      "date": "2026-03-04",
+      "url": "https://www.coindesk.com/markets/2026/03/04/bitcoin-holds-ether-solana-slide-as-mideast-woes-drag-asian-equities-to-multi-year-lows",
+      "whyYouShouldCare": "The decline in Solana's value, alongside broader market pressures, could impact liquidity and investor confidence in the ecosystem."
     },
     {
-      "type": "APPS",
-      "title": "Ex-LAPD Officer Found Guilty of $350K ‘Wrench Attack’ Bitcoin Robbery",
-      "category": "APPS",
-      "source": "Decrypt",
-      "date": "2026-03-03",
-      "url": "https://decrypt.co/359818/ex-lapd-officer-found-guilty-350k-wrench-attack-bitcoin",
-      "whyYouShouldCare": "The conviction of a former LAPD officer in a Bitcoin robbery underscores ongoing security challenges in the crypto space, impacting user confidence and ecosystem integrity."
-    },
-    {
-      "type": "APPS",
-      "title": "PayPal USD tapped to expand TCS Blockchain’s onchain trade financing for trucking industry",
-      "category": "APPS",
+      "type": "MARKET",
+      "title": "White House crypto advisor counters Jamie Dimon’s stablecoin yield logic",
+      "category": "MARKET",
       "source": "The Block",
-      "date": "2026-03-03",
-      "url": "https://www.theblock.co/post/392060/paypal-usd-expand-tcs-blockchain-onchain-trade-financing-trucking-industry",
-      "whyYouShouldCare": "PayPal's integration of USD for blockchain trade financing signals growing institutional adoption of crypto solutions, which could enhance liquidity and use cases within the Solana network."
+      "date": "2026-03-04",
+      "url": "https://www.theblock.co/post/392154/white-house-counters-jamie-dimon-stablecoin-yield",
+      "whyYouShouldCare": "The debate over stablecoin yields may influence regulatory perspectives, which can affect Solana's DeFi projects and overall market positioning."
+    },
+    {
+      "type": "APPS",
+      "title": "Former LAPD officer convicted of kidnapping teen in $350K crypto robbery",
+      "category": "APPS",
+      "source": "Cointelegraph",
+      "date": "2026-03-04",
+      "url": "https://cointelegraph.com/news/former-lapd-cop-convicted-of-350k-crypto-theft-and-kidnapping",
+      "whyYouShouldCare": "High-profile crime cases involving crypto can affect public perception and regulatory scrutiny, potentially impacting Solana's adoption and ecosystem growth."
     }
   ]
 }
