@@ -1,5 +1,68 @@
 [
   {
+    "id": "202ae23610872e9bfaaa30813133e69fc174ef2b",
+    "title": "Solana stablecoin volume hits record $650 billion in February as onchain payments draw demand, Grayscale says",
+    "url": "https://www.theblock.co/post/392217/solana-stablecoin-volume-record-650-billion-february-onchain-payments-demand-grayscale",
+    "source": "The Block",
+    "firstSeenAt": "2026-03-04T19:36:53.578Z",
+    "lastSeenAt": "2026-03-04T19:36:53.578Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "solana",
+      "stablecoin",
+      "volume",
+      "hits",
+      "record",
+      "billion",
+      "february",
+      "onchain"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "ac6f78224d84cdfb71ac4e559dc3942fe7f8a37a",
+    "title": "$BANK Sale Begins on Solana, Targeting Poker Staking Market",
+    "url": "https://cryptoslate.com/bank-sale-begins-on-solana-targeting-poker-staking-market",
+    "source": "CryptoSlate",
+    "firstSeenAt": "2026-03-04T19:36:53.578Z",
+    "lastSeenAt": "2026-03-04T19:36:53.578Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "bank",
+      "sale",
+      "begins",
+      "solana",
+      "targeting",
+      "poker",
+      "staking",
+      "market"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "6f04d17f1351880afa81d237e0dd7c36150b8a41",
+    "title": "CoinDesk 20 performance update: Solana (SOL) gains 5.6%, leading index higher",
+    "url": "https://www.coindesk.com/coindesk-indices/2026/03/04/coindesk-20-performance-update-solana-sol-gains-5-6-leading-index-higher",
+    "source": "CoinDesk",
+    "firstSeenAt": "2026-03-04T19:36:53.578Z",
+    "lastSeenAt": "2026-03-04T19:36:53.578Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "coindesk",
+      "performance",
+      "update",
+      "solana",
+      "gains",
+      "leading",
+      "index",
+      "higher"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "5717ad37ceb2d8b1a3e430d290012247f2110c07",
     "title": "Bitcoin holds, ether, solana slide as Mideast woes drag Asian equities to multi-year lows",
     "url": "https://www.coindesk.com/markets/2026/03/04/bitcoin-holds-ether-solana-slide-as-mideast-woes-drag-asian-equities-to-multi-year-lows",
@@ -37,69 +100,6 @@
       "disavows",
       "solana",
       "meme"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "2e403a00ce766e4887f69c875dc9b7a2b301bfeb",
-    "title": "Bitcoin, Ethereum, and Solana ETFs record weekly inflows amid price weakness",
-    "url": "https://ambcrypto.com/bitcoin-ethereum-and-solana-etfs-record-weekly-inflows-amid-price-weakness",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-03-02T19:42:31.081Z",
-    "lastSeenAt": "2026-03-03T07:41:01.942Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "bitcoin",
-      "ethereum",
-      "solana",
-      "etfs",
-      "record",
-      "weekly",
-      "inflows",
-      "amid"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "793739f50aeca79b3dcbb07e398359d318289a77",
-    "title": "The Legal Strategy Behind Crypto Exchange Backpack's Token-to-Equity Program",
-    "url": "https://decrypt.co/359510/legal-strategy-behind-crypto-exchange-backpack-token-equity-program",
-    "source": "Decrypt",
-    "firstSeenAt": "2026-03-02T19:42:31.081Z",
-    "lastSeenAt": "2026-03-03T07:41:01.942Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "legal",
-      "strategy",
-      "behind",
-      "crypto",
-      "exchange",
-      "backpack",
-      "token",
-      "equity"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "a8edff70ad66af0d5c52df63d0e2cb0f6877e3cf",
-    "title": "CoinDesk 20 performance update: NEAR Protocol (NEAR) jumps 12.4% over weekend",
-    "url": "https://www.coindesk.com/coindesk-indices/2026/03/02/coindesk-20-performance-update-near-protocol-near-jumps-12-4-over-weekend",
-    "source": "CoinDesk",
-    "firstSeenAt": "2026-03-02T19:42:31.081Z",
-    "lastSeenAt": "2026-03-03T07:41:01.942Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "coindesk",
-      "performance",
-      "update",
-      "near",
-      "protocol",
-      "jumps",
-      "over",
-      "weekend"
     ],
     "majorUpdate": false,
     "updateReason": null

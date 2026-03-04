@@ -1,352 +1,177 @@
 {
   "meta": {
-    "generatedAt": "2026-03-04T07:36:59.251Z",
-    "totalCandidates": 96,
-    "solanaCandidates": 26,
+    "generatedAt": "2026-03-04T19:36:53.370Z",
+    "totalCandidates": 99,
+    "solanaCandidates": 31,
     "selected": 5,
-    "tweetPool": 474,
+    "tweetPool": 0,
     "narrativeKeywordsCount": 0
   },
   "items": [
     {
-      "id": "https://www.coindesk.com/markets/2026/03/04/ripple-expands-payments-platform-into-end-to-end-stablecoin-infrastructure-as-processed-volume-tops-usd100-billion",
-      "title": "Ripple expands payments platform into end-to-end stablecoin infrastructure as processed volume tops $100 billion",
-      "url": "https://www.coindesk.com/markets/2026/03/04/ripple-expands-payments-platform-into-end-to-end-stablecoin-infrastructure-as-processed-volume-tops-usd100-billion",
+      "id": "https://www.coindesk.com/coindesk-indices/2026/03/04/coindesk-20-performance-update-solana-sol-gains-5-6-leading-index-higher",
+      "title": "CoinDesk 20 performance update: Solana (SOL) gains 5.6%, leading index higher",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/03/04/coindesk-20-performance-update-solana-sol-gains-5-6-leading-index-higher",
       "source": "CoinDesk",
-      "publishedAt": "2026-03-04T04:47:42.000Z",
-      "summary": "The company added managed custody, virtual account collections, and fiat-to-stablecoin settlement capabilities, positioning itself as a single provider for enterprise digital asset payments across 60 markets.",
+      "publishedAt": "2026-03-04T14:28:02.000Z",
+      "summary": "Aave (AAVE) joined Solana (SOL) as a top performer, rising 5% from Tuesday.",
       "tags": [
-        "ripple",
-        "expands",
-        "payments"
+        "coindesk",
+        "performance",
+        "update"
+      ],
+      "topicBucket": "defi",
+      "whyItMatters": "Flow and volume shifts here usually show up first in Solana risk appetite.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 16,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 4,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "6f04d17f1351880afa81d237e0dd7c36150b8a41",
+      "score": 30
+    },
+    {
+      "id": "https://www.theblock.co/post/392217/solana-stablecoin-volume-record-650-billion-february-onchain-payments-demand-grayscale",
+      "title": "Solana stablecoin volume hits record $650 billion in February as onchain payments draw demand, Grayscale says",
+      "url": "https://www.theblock.co/post/392217/solana-stablecoin-volume-record-650-billion-february-onchain-payments-demand-grayscale",
+      "source": "The Block",
+      "publishedAt": "2026-03-04T14:24:41.000Z",
+      "summary": "Solana's record monthly stablecoin transaction volume follows growing appetite for retail payments infrastructure over memecoins.",
+      "tags": [
+        "solana",
+        "stablecoin",
+        "volume"
       ],
       "topicBucket": "infra",
-      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 2,
-      "xMentions": 2,
-      "who": [
-        {
-          "handle": "@marinonchain",
-          "summary": "You don't realize how much Jupiter is dominating Solana right now 🪐 They just dropped their yearly report - and I we...",
-          "tweetUrl": "https://twitter.com/marinonchain/status/2028433560831463428",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@defiantnews",
-          "summary": "Stablecoin issuer @tether has made a $200 million strategic investment in @whop as it looks to expand stablecoin paym...",
-          "tweetUrl": "https://twitter.com/defiantnews/status/2026757089968939060",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "xWho": [
-        {
-          "handle": "@marinonchain",
-          "summary": "You don't realize how much Jupiter is dominating Solana right now 🪐 They just dropped their yearly report - and I we...",
-          "tweetUrl": "https://twitter.com/marinonchain/status/2028433560831463428",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@defiantnews",
-          "summary": "Stablecoin issuer @tether has made a $200 million strategic investment in @whop as it looks to expand stablecoin paym...",
-          "tweetUrl": "https://twitter.com/defiantnews/status/2026757089968939060",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "mentionedBy": [
-        {
-          "handle": "@marinonchain",
-          "linkToTweet": "https://twitter.com/marinonchain/status/2028433560831463428"
-        },
-        {
-          "handle": "@defiantnews",
-          "linkToTweet": "https://twitter.com/defiantnews/status/2026757089968939060"
-        }
-      ],
-      "matchReason": "keyword_match",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
       "narrativesMatched": [],
       "premiumNarrativesMatched": [],
       "scoreBreakdown": {
-        "relevanceScore": 8,
-        "mentionScore": 24,
+        "relevanceScore": 16,
+        "mentionScore": 0,
         "recencyScore": 10,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "132a1264f8331575590ae06f9df006f05ef1d2a3",
-      "score": 46
+      "dedupeFingerprint": "202ae23610872e9bfaaa30813133e69fc174ef2b",
+      "score": 30
     },
     {
-      "id": "https://www.coindesk.com/web3/2026/03/03/aave-governance-rift-deepens-as-major-governance-group-exits-usd26-billion-defi-protocol",
-      "title": "Aave governance rift deepens as major governance group exits $26 billion DeFi protocol",
-      "url": "https://www.coindesk.com/web3/2026/03/03/aave-governance-rift-deepens-as-major-governance-group-exits-usd26-billion-defi-protocol",
-      "source": "CoinDesk",
-      "publishedAt": "2026-03-03T17:26:07.000Z",
-      "summary": "The conflict centered on a proposal to fund product development and expansion, which ACI opposed due to concerns over self-voting and lack of transparency.",
+      "id": "https://cryptoslate.com/bank-sale-begins-on-solana-targeting-poker-staking-market",
+      "title": "$BANK Sale Begins on Solana, Targeting Poker Staking Market",
+      "url": "https://cryptoslate.com/bank-sale-begins-on-solana-targeting-poker-staking-market",
+      "source": "CryptoSlate",
+      "publishedAt": "2026-03-04T18:10:25.000Z",
+      "summary": "Switzerland-registered FANtium AG launched $BANK on Solana today, with a public sale via Metaplex Spotlight. The token is designed to give holders liquid on-chain exposure to a professionally managed poker bankroll. The sale window runs through March 6, 00:00 UTC, accepts payment in $SOL, and carrie",
       "tags": [
-        "aave",
-        "governance",
-        "rift"
+        "bank",
+        "sale",
+        "begins"
       ],
       "topicBucket": "general",
-      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 2,
-      "xMentions": 2,
-      "who": [
-        {
-          "handle": "@marinonchain",
-          "summary": "What does the Net-Zero Emissions vote mean for the future of $JUP? 🪐 And what does the next era of the Jupiverse act...",
-          "tweetUrl": "https://twitter.com/marinonchain/status/2026870033247318445",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@defiantnews",
-          "summary": "Aave Chan Initiative @AaveChan Announces Exit From Aave Amid Governance Rift In a governance forum post published Mar...",
-          "tweetUrl": "https://twitter.com/defiantnews/status/2028797935182389269",
-          "matchReason": "keyword_match"
-        }
+      "whyItMatters": "Infrastructure changes here can reset risk and throughput expectations.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 16,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 2,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "ac6f78224d84cdfb71ac4e559dc3942fe7f8a37a",
+      "score": 28
+    },
+    {
+      "id": "https://ambcrypto.com/solana-sol-signals-potential-volatility-spike-heres-what-it-means-for-new-crypto-protocols",
+      "title": "Solana (SOL) Signals Potential Volatility Spike: Here’s What It Means for New Crypto Protocols",
+      "url": "https://ambcrypto.com/solana-sol-signals-potential-volatility-spike-heres-what-it-means-for-new-crypto-protocols",
+      "source": "AMB Crypto",
+      "publishedAt": "2026-03-04T15:25:16.000Z",
+      "summary": "For the past several weeks, Solana (SOL) has been pinned within a tight consolidation range […]",
+      "tags": [
+        "solana",
+        "signals",
+        "potential"
       ],
-      "xWho": [
-        {
-          "handle": "@marinonchain",
-          "summary": "What does the Net-Zero Emissions vote mean for the future of $JUP? 🪐 And what does the next era of the Jupiverse act...",
-          "tweetUrl": "https://twitter.com/marinonchain/status/2026870033247318445",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@defiantnews",
-          "summary": "Aave Chan Initiative @AaveChan Announces Exit From Aave Amid Governance Rift In a governance forum post published Mar...",
-          "tweetUrl": "https://twitter.com/defiantnews/status/2028797935182389269",
-          "matchReason": "keyword_match"
-        }
+      "topicBucket": "market",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 16,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 1,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "1e0219c2e03ab086249f4590a85d7e653b4387b1",
+      "score": 27
+    },
+    {
+      "id": "https://www.theblock.co/post/392240/backpack-taps-superstate-for-ipo-roadshow-tokenization-offering-opens-waitlist",
+      "title": "Backpack taps Superstate for IPO roadshow tokenization offering, opens waitlist",
+      "url": "https://www.theblock.co/post/392240/backpack-taps-superstate-for-ipo-roadshow-tokenization-offering-opens-waitlist",
+      "source": "The Block",
+      "publishedAt": "2026-03-04T16:01:30.000Z",
+      "summary": "Users will be able to purchase official IPO shares with “real, direct ownership on Solana,\" through a partnership with Superstate.",
+      "tags": [
+        "backpack",
+        "taps",
+        "superstate"
       ],
-      "mentionedBy": [
-        {
-          "handle": "@marinonchain",
-          "linkToTweet": "https://twitter.com/marinonchain/status/2026870033247318445"
-        },
-        {
-          "handle": "@defiantnews",
-          "linkToTweet": "https://twitter.com/defiantnews/status/2028797935182389269"
-        }
-      ],
-      "matchReason": "keyword_match",
+      "topicBucket": "consumer",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
       "narrativesMatched": [],
       "premiumNarrativesMatched": [],
       "scoreBreakdown": {
         "relevanceScore": 8,
-        "mentionScore": 22,
-        "recencyScore": 9,
-        "sourceScore": 4,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "ddd0177c8269f50120fac5380d11b25d951ea434",
-      "score": 43
-    },
-    {
-      "id": "https://decrypt.co/359691/tether-anchorage-deloitte-usat-stablecoin-reserve-report",
-      "title": "Tether, Anchorage Tap Deloitte for First USAT Stablecoin Reserve Report",
-      "url": "https://decrypt.co/359691/tether-anchorage-deloitte-usat-stablecoin-reserve-report",
-      "source": "Decrypt",
-      "publishedAt": "2026-03-02T22:38:28.000Z",
-      "summary": "Deloitte performed USAT’s first attestation, linking the Big Four accounting firm with Tether’s U.S.-regulated stablecoin.",
-      "tags": [
-        "tether",
-        "anchorage",
-        "deloitte"
-      ],
-      "topicBucket": "defi",
-      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 3,
-      "xMentions": 3,
-      "who": [
-        {
-          "handle": "@marinonchain",
-          "summary": "Jupiter just raised $35M from @paraficapital. But this wasn’t about the money. It’s about what comes next for Solana’...",
-          "tweetUrl": "https://twitter.com/marinonchain/status/2026358142695559603",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@defiantnews",
-          "summary": "Stablecoin issuer @tether has made a $200 million strategic investment in @whop as it looks to expand stablecoin paym...",
-          "tweetUrl": "https://twitter.com/defiantnews/status/2026757089968939060",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@fabianosolana",
-          "summary": "One of the biggest things this year in crypto will be Meta launching their stablecoin A top-10 company by market cap ...",
-          "tweetUrl": "https://twitter.com/fabianosolana/status/2028143565294170601",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "xWho": [
-        {
-          "handle": "@marinonchain",
-          "summary": "Jupiter just raised $35M from @paraficapital. But this wasn’t about the money. It’s about what comes next for Solana’...",
-          "tweetUrl": "https://twitter.com/marinonchain/status/2026358142695559603",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@defiantnews",
-          "summary": "Stablecoin issuer @tether has made a $200 million strategic investment in @whop as it looks to expand stablecoin paym...",
-          "tweetUrl": "https://twitter.com/defiantnews/status/2026757089968939060",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@fabianosolana",
-          "summary": "One of the biggest things this year in crypto will be Meta launching their stablecoin A top-10 company by market cap ...",
-          "tweetUrl": "https://twitter.com/fabianosolana/status/2028143565294170601",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "mentionedBy": [
-        {
-          "handle": "@marinonchain",
-          "linkToTweet": "https://twitter.com/marinonchain/status/2026358142695559603"
-        },
-        {
-          "handle": "@defiantnews",
-          "linkToTweet": "https://twitter.com/defiantnews/status/2026757089968939060"
-        },
-        {
-          "handle": "@fabianosolana",
-          "linkToTweet": "https://twitter.com/fabianosolana/status/2028143565294170601"
-        }
-      ],
-      "matchReason": "keyword_match",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 2,
-        "mentionScore": 30,
-        "recencyScore": 8,
-        "sourceScore": 3,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "73f75707b7e236885d3f86ceec28a758178facb6",
-      "score": 43
-    },
-    {
-      "id": "https://www.coindesk.com/markets/2026/03/04/bitcoin-holds-ether-solana-slide-as-mideast-woes-drag-asian-equities-to-multi-year-lows",
-      "title": "Bitcoin holds, ether, solana slide as Mideast woes drag Asian equities to multi-year lows",
-      "url": "https://www.coindesk.com/markets/2026/03/04/bitcoin-holds-ether-solana-slide-as-mideast-woes-drag-asian-equities-to-multi-year-lows",
-      "source": "CoinDesk",
-      "publishedAt": "2026-03-04T05:06:46.000Z",
-      "summary": "The largest cryptocurrency briefly reclaimed the top of its range on Tuesday before sellers pushed it back to $67,000, while South Korean stocks posted their worst two-day drop since 2008.",
-      "tags": [
-        "bitcoin",
-        "holds",
-        "ether"
-      ],
-      "topicBucket": "general",
-      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 2,
-      "xMentions": 2,
-      "who": [
-        {
-          "handle": "@inno_ox",
-          "summary": "BEST $10,000 PORTFOLIO ON SOLANA (conservative) > $2,500 BTC: bitcoin is king. you should always hold some. > $2,000 ...",
-          "tweetUrl": "https://twitter.com/inno_ox/status/2027833051074437591",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@jussy_world",
-          "summary": "Network outages (all-time) Solana: 7 (50 - 80h total) Arbitrum: 3 (10 - 20h total) Starknet: 3 (15 - 30h total) Sui: ...",
-          "tweetUrl": "https://twitter.com/jussy_world/status/2028456152951140562",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "xWho": [
-        {
-          "handle": "@inno_ox",
-          "summary": "BEST $10,000 PORTFOLIO ON SOLANA (conservative) > $2,500 BTC: bitcoin is king. you should always hold some. > $2,000 ...",
-          "tweetUrl": "https://twitter.com/inno_ox/status/2027833051074437591",
-          "matchReason": "keyword_match"
-        },
-        {
-          "handle": "@jussy_world",
-          "summary": "Network outages (all-time) Solana: 7 (50 - 80h total) Arbitrum: 3 (10 - 20h total) Starknet: 3 (15 - 30h total) Sui: ...",
-          "tweetUrl": "https://twitter.com/jussy_world/status/2028456152951140562",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "mentionedBy": [
-        {
-          "handle": "@inno_ox",
-          "linkToTweet": "https://twitter.com/inno_ox/status/2027833051074437591"
-        },
-        {
-          "handle": "@jussy_world",
-          "linkToTweet": "https://twitter.com/jussy_world/status/2028456152951140562"
-        }
-      ],
-      "matchReason": "keyword_match",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 5,
-        "mentionScore": 22,
+        "mentionScore": 0,
         "recencyScore": 10,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "5717ad37ceb2d8b1a3e430d290012247f2110c07",
-      "score": 41
-    },
-    {
-      "id": "https://decrypt.co/359799/jpmorgan-ceo-jamie-dimon-slams-stablecoin-yield-demands",
-      "title": "JPMorgan CEO Jamie Dimon Slams Stablecoin Yield Demands: 'The Public Will Pay'",
-      "url": "https://decrypt.co/359799/jpmorgan-ceo-jamie-dimon-slams-stablecoin-yield-demands",
-      "source": "Decrypt",
-      "publishedAt": "2026-03-03T15:58:36.000Z",
-      "summary": "Jamie Dimon said if crypto companies like Coinbase want to offer stablecoin rewards, then they should become banks. “Then you can do whatever you want,” he said.",
-      "tags": [
-        "jpmorgan",
-        "jamie",
-        "dimon"
-      ],
-      "topicBucket": "defi",
-      "whyItMatters": "Conversation overlap is live — this is actively shaping Solana positioning.",
-      "mentionCount": 1,
-      "xMentions": 1,
-      "who": [
-        {
-          "handle": "@marinonchain",
-          "summary": "You don't realize how much Jupiter is dominating Solana right now 🪐 They just dropped their yearly report - and I we...",
-          "tweetUrl": "https://twitter.com/marinonchain/status/2028433560831463428",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "xWho": [
-        {
-          "handle": "@marinonchain",
-          "summary": "You don't realize how much Jupiter is dominating Solana right now 🪐 They just dropped their yearly report - and I we...",
-          "tweetUrl": "https://twitter.com/marinonchain/status/2028433560831463428",
-          "matchReason": "keyword_match"
-        }
-      ],
-      "mentionedBy": [
-        {
-          "handle": "@marinonchain",
-          "linkToTweet": "https://twitter.com/marinonchain/status/2028433560831463428"
-        }
-      ],
-      "matchReason": "keyword_match",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 8,
-        "mentionScore": 12,
-        "recencyScore": 9,
-        "sourceScore": 3,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "15f5154b032f72c0210acad1b38907988497e8f9",
-      "score": 32
+      "dedupeFingerprint": "5369265a1ae0866c234c2c892ab8298b046fc056",
+      "score": 22
     }
   ]
 }
