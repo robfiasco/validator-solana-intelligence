@@ -183,8 +183,8 @@ export default function SeekerGuard({ children, peekData = null }) {
         return await wallet.authorize({
           cluster: "mainnet-beta",
           identity: {
-            name: "Gossip Intelligence",
-            uri: "https://validator-solana-intelligence.vercel.app",
+            name: `Gossip v${process.env.NEXT_PUBLIC_APP_VERSION}`,
+            uri: "https://gossip.app",
             icon: "/icon.png",
           },
         });
