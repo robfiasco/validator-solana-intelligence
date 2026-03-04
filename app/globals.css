@@ -2698,7 +2698,7 @@ body {
 
 .panel-slide-signal>section {
   flex: 1;
-  height: 100%;
+  min-height: 100%; /* allow card to grow with content; height:100% was clipping the last section */
 }
 
 .panel-slide-signal .intel-card {
