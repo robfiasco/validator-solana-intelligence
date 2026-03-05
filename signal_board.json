@@ -1,26 +1,26 @@
 {
   "date": "2026-03-05",
-  "generated_at_utc": "2026-03-05T07:40:54.186Z",
-  "ctxMarket": "Attention is on a broad crypto rally, with Solana up over 5% alongside other majors as global equities rebound and spot Bitcoin ETF inflows accelerate. The focus is also shifting to institutional adoption and new tokenization initiatives on Solana.",
-  "ctxTalking": "• Solana’s transaction volume outpacing competitors, processing 8x more than BNB Chain\n• Major institutions like Western Union and Scotiabank integrating Solana for stablecoins and ETFs\n• New tokenization projects, including IPO shares and tokenized gold, launching on Solana",
-  "ctxMatters": "Solana’s high transaction throughput is drawing attention as other networks slow. Institutional moves suggest growing confidence in Solana’s infrastructure for stablecoins, ETFs, and asset tokenization. These developments may expand Solana’s use cases and visibility among both retail and institutional participants.",
-  "ctxSignal": "Signal: Institutional partnerships and tokenization projects are increasing Solana’s mainstream integration.\nNoise: Short-term price surges tied to macro events may not reflect long-term adoption trends.",
-  "ctxGlossary": "Tokenization — Turning real-world assets into blockchain-based tokens\nStablecoin — A cryptocurrency pegged to a stable asset, like the US dollar\nSpot Bitcoin ETF — An exchange-traded fund holding actual Bitcoin, not derivatives",
+  "generated_at_utc": "2026-03-05T20:32:20.921Z",
+  "ctxMarket": "Attention is on Solana’s expanding payments ecosystem and institutional adoption, with notable price gains for SOL and other majors as crypto markets rally. Stablecoin activity and tokenized asset infrastructure are driving network growth.",
+  "ctxTalking": "• Solana’s payment volume and stablecoin market cap have reached new highs, outpacing peer blockchains.\n• Major institutions and platforms—including Ripple, Western Union, and Scotiabank—are integrating Solana for trading, payments, and ETFs.\n• New token creation and tokenized equity platforms are launching on Solana, broadening its onchain asset offerings.",
+  "ctxMatters": "Solana’s role in payments and tokenized assets is expanding, attracting both traditional finance and crypto-native platforms. Increased stablecoin and ETF integration signals growing institutional confidence. Builders may see more demand for onchain financial products and infrastructure.",
+  "ctxSignal": "Signal: Surging payment volume, stablecoin growth, and institutional integrations on Solana.\nNoise: Speculation that tokenized stocks could reduce the need for altcoin diversification.",
+  "ctxGlossary": "Stablecoin — A cryptocurrency pegged to a stable asset, often the US dollar.\nETF — Exchange-traded fund, a regulated investment vehicle tracking assets like crypto.\nTokenized equities — Traditional stocks represented as tokens on a blockchain.",
   "readMore": [
     {
-      "title": "Ether, solana, xrp surge 8% as crypto markets rally on easing war fears",
+      "title": "Ripple adds Coinbase crypto futures to its $3 trillion trading venue",
       "source": "CoinDesk",
-      "url": "https://www.coindesk.com/markets/2026/03/05/ether-solana-xrp-surge-8-as-crypto-markets-rally-on-easing-war-fears"
+      "url": "https://www.coindesk.com/business/2026/03/05/ripple-adds-coinbase-crypto-futures-to-its-usd3-trillion-trading-venue"
     },
     {
-      "title": "Western Union teams with Crossmint to support USDPT stablecoin on Solana",
-      "source": "Cointelegraph",
-      "url": "https://cointelegraph.com/news/western-union-taps-crossmint-to-support-solana-based-usd-stablecoin-and-digital-asset-payout-network"
+      "title": "Kraken rolls out unified execution layer for xStocks tokenized equities called xChange",
+      "source": "The Block",
+      "url": "https://www.theblock.co/post/392466/kraken-unified-execution-layer-xstocks-tokenized-equities-xchange"
     },
     {
-      "title": "Solana processes 8x transactions more than BNB Chain – Details",
-      "source": "AMB Crypto",
-      "url": "https://ambcrypto.com/solana-processes-8x-transactions-more-than-bnb-chain-details"
+      "title": "State of Solana",
+      "source": "Messari",
+      "url": "https://messari.io/article/state-of-solana-payments"
     }
   ]
 }

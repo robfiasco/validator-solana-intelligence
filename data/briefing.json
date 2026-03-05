@@ -4,31 +4,31 @@
   "subtitle": "Top links from trusted desks",
   "items": [
     {
-      "type": "APPS",
-      "title": "Backpack taps Superstate for IPO roadshow tokenization offering, opens waitlist",
-      "category": "APPS",
-      "source": "The Block",
-      "date": "2026-03-04",
-      "url": "https://www.theblock.co/post/392240/backpack-taps-superstate-for-ipo-roadshow-tokenization-offering-opens-waitlist",
-      "whyYouShouldCare": "Backpack's collaboration with Superstate for tokenization could enhance liquidity options and broaden investor access within the Solana ecosystem."
+      "type": "MARKET",
+      "title": "State of Solana: Payments",
+      "category": "MARKET",
+      "source": "Messari",
+      "date": "2026-03-05",
+      "url": "https://messari.io/article/state-of-solana-payments",
+      "whyYouShouldCare": "The current state of payments on Solana indicates potential for increased transaction efficiency, which could enhance liquidity and user adoption within the ecosystem."
     },
     {
-      "type": "INFRA",
-      "title": "Western Union teams with Crossmint to support USDPT stablecoin on Solana",
-      "category": "INFRA",
+      "type": "ECOSYSTEM",
+      "title": "Canada's Scotiabank launches multi-crypto ETF with 3iQ",
+      "category": "ECOSYSTEM",
       "source": "Cointelegraph",
       "date": "2026-03-04",
-      "url": "https://cointelegraph.com/news/western-union-taps-crossmint-to-support-solana-based-usd-stablecoin-and-digital-asset-payout-network",
-      "whyYouShouldCare": "Western Union's partnership with Crossmint to support USDPT on Solana may increase transaction volume and utility for stablecoins in the Solana network."
+      "url": "https://cointelegraph.com/news/scotiabank-launches-multi-crypto-etf-with-3iq",
+      "whyYouShouldCare": "Scotiabank's multi-crypto ETF launch signifies institutional interest in crypto assets, potentially boosting Solana's visibility and attracting more investors to its ecosystem."
     },
     {
-      "type": "APPS",
-      "title": "Ether, solana, xrp surge 8% as crypto markets rally on easing war fears",
-      "category": "APPS",
-      "source": "CoinDesk",
+      "type": "ECOSYSTEM",
+      "title": "Doppler token creation platform powering most Base launches expands to Solana",
+      "category": "ECOSYSTEM",
+      "source": "The Block",
       "date": "2026-03-05",
-      "url": "https://www.coindesk.com/markets/2026/03/05/ether-solana-xrp-surge-8-as-crypto-markets-rally-on-easing-war-fears",
-      "whyYouShouldCare": "The recent 8% surge in Solana, alongside other cryptocurrencies, indicates a positive market sentiment that could attract more users and liquidity to the ecosystem."
+      "url": "https://www.theblock.co/post/392440/doppler-token-platform-powering-majority-base-launches-expands-solana",
+      "whyYouShouldCare": "Doppler's expansion to Solana enhances the platform's launch capabilities, likely increasing the number of projects and overall activity within the Solana ecosystem."
     }
   ]
 }

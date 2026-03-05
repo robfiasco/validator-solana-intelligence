@@ -1,5 +1,68 @@
 [
   {
+    "id": "f34c34f4209dd64f65b9db5e6967c2b0dfd1c3bb",
+    "title": "Canada's Scotiabank launches multi-crypto ETF with 3iQ",
+    "url": "https://cointelegraph.com/news/scotiabank-launches-multi-crypto-etf-with-3iq",
+    "source": "Cointelegraph",
+    "firstSeenAt": "2026-03-05T20:32:09.990Z",
+    "lastSeenAt": "2026-03-05T20:32:09.990Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "canada",
+      "scotiabank",
+      "launches",
+      "multi",
+      "crypto",
+      "with",
+      "bank",
+      "asset"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "4400fcc2bcedd4f60797a0d553ee84e14eb1b458",
+    "title": "Doppler token creation platform powering most Base launches expands to Solana",
+    "url": "https://www.theblock.co/post/392440/doppler-token-platform-powering-majority-base-launches-expands-solana",
+    "source": "The Block",
+    "firstSeenAt": "2026-03-05T20:32:09.990Z",
+    "lastSeenAt": "2026-03-05T20:32:09.990Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "doppler",
+      "token",
+      "creation",
+      "platform",
+      "powering",
+      "most",
+      "base",
+      "launches"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "468e5d2a4d5bc13965a1d9d73c05b3adcc53011b",
+    "title": "State of Solana: Payments",
+    "url": "https://messari.io/article/state-of-solana-payments",
+    "source": "Messari",
+    "firstSeenAt": "2026-03-05T20:32:09.989Z",
+    "lastSeenAt": "2026-03-05T20:32:09.989Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "state",
+      "solana",
+      "payments",
+      "total",
+      "payment",
+      "volume",
+      "network",
+      "surged"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "db9879be747ac0e68b79df4b1ce0a5ce7b906fd3",
     "title": "Signal Board Summary 2026-03-05",
     "url": "",
@@ -156,90 +219,6 @@
       "mideast",
       "woes",
       "drag"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "4ae18cbf51eb9ccbd2dae032a9e69bb46e2ebad6",
-    "title": "Japan prime minister Sanae Takaichi disavows Solana meme coin after it crashes by 75%",
-    "url": "https://www.coindesk.com/business/2026/03/03/japan-prime-minister-sanae-takaichi-disavows-solana-meme-coin-after-it-crashes-by-75",
-    "source": "CoinDesk",
-    "firstSeenAt": "2026-03-03T18:39:11.486Z",
-    "lastSeenAt": "2026-03-03T19:38:07.490Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "japan",
-      "prime",
-      "minister",
-      "sanae",
-      "takaichi",
-      "disavows",
-      "solana",
-      "meme"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "2e403a00ce766e4887f69c875dc9b7a2b301bfeb",
-    "title": "Bitcoin, Ethereum, and Solana ETFs record weekly inflows amid price weakness",
-    "url": "https://ambcrypto.com/bitcoin-ethereum-and-solana-etfs-record-weekly-inflows-amid-price-weakness",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-03-02T19:42:31.081Z",
-    "lastSeenAt": "2026-03-03T07:41:01.942Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "bitcoin",
-      "ethereum",
-      "solana",
-      "etfs",
-      "record",
-      "weekly",
-      "inflows",
-      "amid"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "793739f50aeca79b3dcbb07e398359d318289a77",
-    "title": "The Legal Strategy Behind Crypto Exchange Backpack's Token-to-Equity Program",
-    "url": "https://decrypt.co/359510/legal-strategy-behind-crypto-exchange-backpack-token-equity-program",
-    "source": "Decrypt",
-    "firstSeenAt": "2026-03-02T19:42:31.081Z",
-    "lastSeenAt": "2026-03-03T07:41:01.942Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "legal",
-      "strategy",
-      "behind",
-      "crypto",
-      "exchange",
-      "backpack",
-      "token",
-      "equity"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "a8edff70ad66af0d5c52df63d0e2cb0f6877e3cf",
-    "title": "CoinDesk 20 performance update: NEAR Protocol (NEAR) jumps 12.4% over weekend",
-    "url": "https://www.coindesk.com/coindesk-indices/2026/03/02/coindesk-20-performance-update-near-protocol-near-jumps-12-4-over-weekend",
-    "source": "CoinDesk",
-    "firstSeenAt": "2026-03-02T19:42:31.081Z",
-    "lastSeenAt": "2026-03-03T07:41:01.942Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "coindesk",
-      "performance",
-      "update",
-      "near",
-      "protocol",
-      "jumps",
-      "over",
-      "weekend"
     ],
     "majorUpdate": false,
     "updateReason": null

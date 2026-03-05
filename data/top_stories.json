@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-03-05T07:40:45.629Z",
-    "totalCandidates": 100,
-    "solanaCandidates": 37,
+    "generatedAt": "2026-03-05T20:32:09.817Z",
+    "totalCandidates": 103,
+    "solanaCandidates": 26,
     "selected": 5,
     "tweetPool": 0,
     "narrativeKeywordsCount": 0
@@ -33,91 +33,25 @@
       "scoreBreakdown": {
         "relevanceScore": 22,
         "mentionScore": 0,
-        "recencyScore": 10,
+        "recencyScore": 9,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "fb9aa2bdd76231e857e1966015a4d6f8e63cc9f7",
-      "score": 36
+      "score": 35
     },
     {
-      "id": "https://www.theblock.co/post/392344/sol-strategies-shares-jump",
-      "title": "SOL Strategies shares jump 20% as firm posts validator network growth",
-      "url": "https://www.theblock.co/post/392344/sol-strategies-shares-jump",
-      "source": "The Block",
-      "publishedAt": "2026-03-05T04:50:21.000Z",
-      "summary": "The company said its validator network grew to 33,568 unique wallets in February, up from about 31,000 announced earlier in the month.",
+      "id": "https://messari.io/article/state-of-solana-payments",
+      "title": "State of Solana: Payments",
+      "url": "https://messari.io/article/state-of-solana-payments",
+      "source": "Messari",
+      "publishedAt": "2026-03-05T16:10:39.000Z",
+      "summary": "Total Payment Volume (TPV) on the network surged by a staggering 755.3% year-over-year, nearly tripling the growth rate of its nearest peer blockchains. This expansion was fueled by a \"Cambrian explosion\" of stablecoin activity, with the network’s stablecoin market cap hitting an all-time high of $1",
       "tags": [
-        "strategies",
-        "shares",
-        "jump"
-      ],
-      "topicBucket": "infra",
-      "whyItMatters": "Infrastructure changes here can reset risk and throughput expectations.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 13,
-        "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 4,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "b44c310e7a711162d766e49d08c14f41249431be",
-      "score": 27
-    },
-    {
-      "id": "https://www.coindesk.com/markets/2026/03/05/ether-solana-xrp-surge-8-as-crypto-markets-rally-on-easing-war-fears",
-      "title": "Ether, solana, xrp surge 8% as crypto markets rally on easing war fears",
-      "url": "https://www.coindesk.com/markets/2026/03/05/ether-solana-xrp-surge-8-as-crypto-markets-rally-on-easing-war-fears",
-      "source": "CoinDesk",
-      "publishedAt": "2026-03-05T06:29:26.000Z",
-      "summary": "Ether surged 7.5%, dogecoin jumped 7.5%, and solana added 5.3% as global equities rebounded and $700 million flowed into U.S. spot bitcoin ETFs since the start of March.",
-      "tags": [
-        "ether",
+        "state",
         "solana",
-        "surge"
-      ],
-      "topicBucket": "market",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 8,
-        "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 4,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "409fdd1bc6e4478a3a205f771e2d5223477cfc54",
-      "score": 22
-    },
-    {
-      "id": "https://www.coindesk.com/policy/2026/03/04/eric-trump-world-liberty-co-founder-calls-banks-anti-american-over-stablecoin-fight",
-      "title": "Eric Trump, World Liberty co-founder, calls banks 'anti-American' over stablecoin fight",
-      "url": "https://www.coindesk.com/policy/2026/03/04/eric-trump-world-liberty-co-founder-calls-banks-anti-american-over-stablecoin-fight",
-      "source": "CoinDesk",
-      "publishedAt": "2026-03-04T23:12:46.000Z",
-      "summary": "The World Liberty Financial co-founder and presidential son posted about the ongoing negotiations on stablecoin yield on Wednesday.",
-      "tags": [
-        "eric",
-        "trump",
-        "world"
+        "payments"
       ],
       "topicBucket": "defi",
       "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
@@ -133,26 +67,92 @@
         "relevanceScore": 8,
         "mentionScore": 0,
         "recencyScore": 10,
+        "sourceScore": 3,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "468e5d2a4d5bc13965a1d9d73c05b3adcc53011b",
+      "score": 21
+    },
+    {
+      "id": "https://www.theblock.co/post/392440/doppler-token-platform-powering-majority-base-launches-expands-solana",
+      "title": "Doppler token creation platform powering most Base launches expands to Solana",
+      "url": "https://www.theblock.co/post/392440/doppler-token-platform-powering-majority-base-launches-expands-solana",
+      "source": "The Block",
+      "publishedAt": "2026-03-05T16:05:53.000Z",
+      "summary": "The platform is live on multiple EVM chains and powers the majority of token launches on Base, via integrations with apps like Zora and Bankr.",
+      "tags": [
+        "doppler",
+        "token",
+        "creation"
+      ],
+      "topicBucket": "general",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 5,
+        "mentionScore": 0,
+        "recencyScore": 10,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "bd04403a3432d8f074df65349b3d1263c395c411",
-      "score": 22
+      "dedupeFingerprint": "4400fcc2bcedd4f60797a0d553ee84e14eb1b458",
+      "score": 19
     },
     {
-      "id": "https://www.theblock.co/post/392240/backpack-taps-superstate-for-ipo-roadshow-tokenization-offering-opens-waitlist",
-      "title": "Backpack taps Superstate for IPO roadshow tokenization offering, opens waitlist",
-      "url": "https://www.theblock.co/post/392240/backpack-taps-superstate-for-ipo-roadshow-tokenization-offering-opens-waitlist",
+      "id": "https://www.theblock.co/post/392327/apollo-crypto-tokenized-mevusd",
+      "title": "Apollo Crypto to manage tokenized mEVUSD targeting returns on stablecoins",
+      "url": "https://www.theblock.co/post/392327/apollo-crypto-tokenized-mevusd",
       "source": "The Block",
-      "publishedAt": "2026-03-04T16:01:30.000Z",
-      "summary": "Users will be able to purchase official IPO shares with “real, direct ownership on Solana,\" through a partnership with Superstate.",
+      "publishedAt": "2026-03-05T12:00:00.000Z",
+      "summary": "The product will tap diversified lending strategies on protocols such as Aave, Morpho, and Pendle as well as market-neutral basis trades.",
       "tags": [
-        "backpack",
-        "taps",
-        "superstate"
+        "apollo",
+        "crypto",
+        "manage"
       ],
-      "topicBucket": "consumer",
+      "topicBucket": "defi",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 5,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 4,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "569d3c35898ee1a505e220852c9c7737038a9c23",
+      "score": 19
+    },
+    {
+      "id": "https://cointelegraph.com/news/sofi-bitgo-bank-issued-stablecoin-sofiusd",
+      "title": "SoFi taps BitGo to provide infrastructure for bank-issued stablecoin",
+      "url": "https://cointelegraph.com/news/sofi-bitgo-bank-issued-stablecoin-sofiusd",
+      "source": "Cointelegraph",
+      "publishedAt": "2026-03-05T16:42:24.000Z",
+      "summary": "BitGo will support the rollout of US dollar-pegged stablecoin SoFiUSD, as US fintechs and banks expand digital dollar infrastructure following new federal legislation.",
+      "tags": [
+        "sofi",
+        "taps",
+        "bitgo"
+      ],
+      "topicBucket": "infra",
       "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
       "mentionCount": 0,
       "xMentions": 0,
@@ -165,13 +165,13 @@
       "scoreBreakdown": {
         "relevanceScore": 8,
         "mentionScore": 0,
-        "recencyScore": 9,
-        "sourceScore": 4,
+        "recencyScore": 10,
+        "sourceScore": 0,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "5369265a1ae0866c234c2c892ab8298b046fc056",
-      "score": 21
+      "dedupeFingerprint": "c3fc692b8ca7ba6414b8e5b01c8b0a062a5777f8",
+      "score": 18
     }
   ]
 }

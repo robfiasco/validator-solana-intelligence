@@ -1,5 +1,68 @@
 [
   {
+    "id": "f34c34f4209dd64f65b9db5e6967c2b0dfd1c3bb",
+    "title": "Canada's Scotiabank launches multi-crypto ETF with 3iQ",
+    "url": "https://cointelegraph.com/news/scotiabank-launches-multi-crypto-etf-with-3iq",
+    "source": "Cointelegraph",
+    "firstSeenAt": "2026-03-05T20:32:09.990Z",
+    "lastSeenAt": "2026-03-05T20:32:09.990Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "canada",
+      "scotiabank",
+      "launches",
+      "multi",
+      "crypto",
+      "with",
+      "bank",
+      "asset"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "4400fcc2bcedd4f60797a0d553ee84e14eb1b458",
+    "title": "Doppler token creation platform powering most Base launches expands to Solana",
+    "url": "https://www.theblock.co/post/392440/doppler-token-platform-powering-majority-base-launches-expands-solana",
+    "source": "The Block",
+    "firstSeenAt": "2026-03-05T20:32:09.990Z",
+    "lastSeenAt": "2026-03-05T20:32:09.990Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "doppler",
+      "token",
+      "creation",
+      "platform",
+      "powering",
+      "most",
+      "base",
+      "launches"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "468e5d2a4d5bc13965a1d9d73c05b3adcc53011b",
+    "title": "State of Solana: Payments",
+    "url": "https://messari.io/article/state-of-solana-payments",
+    "source": "Messari",
+    "firstSeenAt": "2026-03-05T20:32:09.989Z",
+    "lastSeenAt": "2026-03-05T20:32:09.989Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "state",
+      "solana",
+      "payments",
+      "total",
+      "payment",
+      "volume",
+      "network",
+      "surged"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "db9879be747ac0e68b79df4b1ce0a5ce7b906fd3",
     "title": "Signal Board Summary 2026-03-05",
     "url": "",
@@ -72,69 +135,6 @@
       "offering",
       "opens",
       "waitlist"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "202ae23610872e9bfaaa30813133e69fc174ef2b",
-    "title": "Solana stablecoin volume hits record $650 billion in February as onchain payments draw demand, Grayscale says",
-    "url": "https://www.theblock.co/post/392217/solana-stablecoin-volume-record-650-billion-february-onchain-payments-demand-grayscale",
-    "source": "The Block",
-    "firstSeenAt": "2026-03-04T19:36:53.578Z",
-    "lastSeenAt": "2026-03-04T19:36:53.578Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "solana",
-      "stablecoin",
-      "volume",
-      "hits",
-      "record",
-      "billion",
-      "february",
-      "onchain"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "ac6f78224d84cdfb71ac4e559dc3942fe7f8a37a",
-    "title": "$BANK Sale Begins on Solana, Targeting Poker Staking Market",
-    "url": "https://cryptoslate.com/bank-sale-begins-on-solana-targeting-poker-staking-market",
-    "source": "CryptoSlate",
-    "firstSeenAt": "2026-03-04T19:36:53.578Z",
-    "lastSeenAt": "2026-03-04T19:36:53.578Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "bank",
-      "sale",
-      "begins",
-      "solana",
-      "targeting",
-      "poker",
-      "staking",
-      "market"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "6f04d17f1351880afa81d237e0dd7c36150b8a41",
-    "title": "CoinDesk 20 performance update: Solana (SOL) gains 5.6%, leading index higher",
-    "url": "https://www.coindesk.com/coindesk-indices/2026/03/04/coindesk-20-performance-update-solana-sol-gains-5-6-leading-index-higher",
-    "source": "CoinDesk",
-    "firstSeenAt": "2026-03-04T19:36:53.578Z",
-    "lastSeenAt": "2026-03-04T19:36:53.578Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "coindesk",
-      "performance",
-      "update",
-      "solana",
-      "gains",
-      "leading",
-      "index",
-      "higher"
     ],
     "majorUpdate": false,
     "updateReason": null
