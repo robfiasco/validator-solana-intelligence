@@ -26,6 +26,8 @@ type Story = {
     narrative?: string;
     summary?: string;
     hook?: string;
+    ctPulse?: Array<{ handle?: string; thought?: string; url?: string }>;
+    whoToFollow?: Array<{ handle?: string; reason?: string; role?: string }>;
 };
 
 export default function StoryDetail({ story, index, total, onBack, publishDate }: { story: Story; index: number; total: number; onBack: () => void; publishDate?: string | null }) {
@@ -157,6 +159,50 @@ export default function StoryDetail({ story, index, total, onBack, publishDate }
                     </section>
                 ) : null
             }
+
+            {(() => {
+                const ctHandles = Array.isArray(story?.ctPulse)
+                    ? [...new Set(story.ctPulse.map(p => p?.handle).filter(Boolean))] as string[]
+                    : [];
+                const followHandles = Array.isArray(story?.whoToFollow)
+                    ? [...new Set(story.whoToFollow.map(p => p?.handle).filter(Boolean))] as string[]
+                    : [];
+                // Deduplicate: don't show whoToFollow handles already in ctPulse
+                const extraFollows = followHandles.filter(h => !ctHandles.includes(h));
+
+                if (ctHandles.length === 0 && extraFollows.length === 0) return null;
+
+                const toHref = (h: string) => `https://x.com/${h.replace("@", "")}`;
+
+                return (
+                    <section className="seeker-detail-card">
+                        {ctHandles.length > 0 && (
+                            <>
+                                <h3>Voices</h3>
+                                <div className="seeker-handles-row">
+                                    {ctHandles.map((handle, idx) => (
+                                        <a key={idx} href={toHref(handle)} target="_blank" rel="noopener noreferrer" className="seeker-handle-chip">
+                                            {handle.startsWith("@") ? handle : `@${handle}`}
+                                        </a>
+                                    ))}
+                                </div>
+                            </>
+                        )}
+                        {extraFollows.length > 0 && (
+                            <>
+                                <h3 style={{ marginTop: ctHandles.length > 0 ? "14px" : 0 }}>Who To Follow</h3>
+                                <div className="seeker-handles-row">
+                                    {extraFollows.map((handle, idx) => (
+                                        <a key={idx} href={toHref(handle)} target="_blank" rel="noopener noreferrer" className="seeker-handle-chip seeker-handle-chip--follow">
+                                            {handle.startsWith("@") ? handle : `@${handle}`}
+                                        </a>
+                                    ))}
+                                </div>
+                            </>
+                        )}
+                    </section>
+                );
+            })()}
 
             <div className="seeker-detail-disclaimer">
                 AI-generated analysis from on-chain and social signal data. Verify critical claims with primary sources before acting.

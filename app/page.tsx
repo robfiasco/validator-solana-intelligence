@@ -830,7 +830,7 @@ export default function Home() {
                         <div className={`sb-item ${PALETTE_1[0]}`}>
                           <div className="sb-item-head">
                             <span className="sb-item-label">
-                              MARKET CONTEXT {localTimeDisplay.market ? `(AS OF ${localTimeDisplay.market})` : ''}
+                              MARKET CONTEXT
                             </span>
                           </div>
                           <p className="sb-item-copy">

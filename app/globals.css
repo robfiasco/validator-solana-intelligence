@@ -6438,3 +6438,38 @@ body {
     opacity: 0;
   }
 }
+/* Story detail — handle chips */
+.seeker-handles-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.seeker-handle-chip {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(20, 241, 149, 0.08);
+  border: 1px solid rgba(20, 241, 149, 0.25);
+  color: #14F195;
+  font-size: 0.68rem;
+  font-family: var(--font-mono);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: background 0.15s ease;
+}
+
+.seeker-handle-chip:active {
+  background: rgba(20, 241, 149, 0.18);
+}
+
+.seeker-handle-chip--follow {
+  background: rgba(153, 69, 255, 0.08);
+  border-color: rgba(153, 69, 255, 0.3);
+  color: #9945FF;
+}
+
+.seeker-handle-chip--follow:active {
+  background: rgba(153, 69, 255, 0.18);
+}
