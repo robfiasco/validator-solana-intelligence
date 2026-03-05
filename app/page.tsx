@@ -11,7 +11,7 @@
  * Handles global state, theme switching, and touch-based carousel navigation.
  */
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import StoryDetail from "./components/StoryDetail";
 import { Activity, Brain, Info, MessageCircle, Rocket, TrendingUp, Users } from "lucide-react";
@@ -153,6 +153,10 @@ export default function Home() {
   useEffect(() => {
     setIsNativeAndroid(Capacitor?.isNativePlatform?.() === true && Capacitor?.getPlatform?.() === "android");
   }, []);
+
+  // Stable reference — passing an inline arrow to GossipLoadingScreen would cause its
+  // dismiss timers to reset on every re-render (e.g. the 1-second countdown tick).
+  const handleLoadingFinished = useCallback(() => setShowLoadingScreen(false), []);
 
   const [nextUpdateCountdown, setNextUpdateCountdown] = useState("");
   useEffect(() => {
@@ -739,7 +743,7 @@ export default function Home() {
       {showLoadingScreen && (
         <GossipLoadingScreen
           isAppReady={isAppReady}
-          onFinished={() => setShowLoadingScreen(false)}
+          onFinished={handleLoadingFinished}
         />
       )}
       <main className="page terminal-surface">
