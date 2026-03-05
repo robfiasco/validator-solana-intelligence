@@ -1,3 +1,6 @@
+// Returns the cached market context narrative (SOL price, market cap, Fear & Greed, BTC dominance).
+// Reads from Vercel KV first; falls back to data/market_context.json.
+// Revalidates every 60 seconds.
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";

@@ -1,3 +1,6 @@
+// Returns story engagement metrics (tweet counts, engagement scores, unique voices).
+// Reads from data/story_metrics.json — written by the daily pipeline.
+// Revalidates every 60 seconds.
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";

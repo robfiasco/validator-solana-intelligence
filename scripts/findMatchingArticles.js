@@ -1,3 +1,6 @@
+// Scrapes Solana news sources and matches articles to active narrative buckets.
+// Output feeds into buildDailyNews.js to generate the curated news feed.
+// Writes results to matching_articles.json.
 import fs from "fs";
 import path from "path";
 import cheerio from "cheerio";

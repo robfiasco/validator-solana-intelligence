@@ -1,3 +1,6 @@
+// Returns premium Seeker story narratives used in the Stories panel.
+// Reads from Vercel KV first; falls back to data/validator_stories.json.
+// Revalidates every 60 seconds.
 import { NextResponse } from "next/server";
 import { kv } from "../../../lib/kv";
 import fs from "fs";

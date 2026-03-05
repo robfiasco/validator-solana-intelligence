@@ -1,3 +1,6 @@
+// Returns the full daily intelligence payload: signal board, briefing, premium stories,
+// news cards, and story metrics. Reads from Vercel KV with JSON file fallback.
+// Always fetches fresh — no CDN caching.
 import { NextResponse } from "next/server";
 import { loadDailyData } from "../../../src/lib/loadDailyData";
 export const dynamic = "force-dynamic";

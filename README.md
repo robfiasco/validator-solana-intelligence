@@ -1,8 +1,52 @@
 # Gossip — Solana Intelligence Terminal
 
-**v1.0.5** · [gossip-app.vercel.app](https://gossip-app.vercel.app) · Android APK available in [Releases](https://github.com/robfiasco/gossip-app/releases)
+![Gossip Signal Board Screenshot](./assets/signal-board.png)
 
-Mobile-first Solana intelligence terminal that converts crypto Twitter signals and ecosystem data into high-signal daily narratives and premium trader insights — gated behind the Solana Seeker Genesis token.
+**v1.0.8** · https://gossip-app-rob-fiasco.vercel.app · Android APK available in Releases
+
+Gossip is a mobile-first intelligence terminal for the Solana ecosystem.
+
+Instead of tracking hundreds of accounts across X (Twitter), Discord, and newsletters,
+Gossip converts ecosystem signals into a simple daily briefing and deeper narrative analysis.
+
+The app is designed for the Solana Mobile Seeker and uses token-gating
+to unlock premium intelligence for Seeker holders.
+
+---
+
+## Demo
+
+Demo video: [ADD DEMO VIDEO LINK]
+
+Live preview: https://gossip-app-rob-fiasco.vercel.app
+Android APK: https://github.com/robfiasco/gossip-app/releases
+
+---
+
+## Why Gossip Exists
+
+The Solana ecosystem moves extremely fast.
+
+Important information is scattered across X (Twitter), newsletters,
+Discord posts, and research reports. Even experienced users struggle
+to keep up with the volume of information.
+
+Gossip aggregates these signals and converts them into structured,
+readable intelligence so users can understand what is happening in the
+ecosystem quickly.
+
+---
+
+## Features
+
+- **Signal Board** — AI-generated weekly intelligence: market context, what people are talking about, why it matters, signal vs noise, glossary
+- **Daily Briefing** — curated story feed from 10 RSS sources
+- **Premium Stories** — full narrative analysis with timeline, key quotes, key players, and engagement chart; gated behind Seeker token verification
+- **Live Market Ticker** — SOL price (24h/7d), market cap, Fear & Greed Index, BTC dominance, volume
+- **FOCUS Mode** — distraction-free reading
+- **Onboarding Carousel** — first-launch walkthrough
+- **Story Notifications** — twice-daily local notifications at 7:30 AM and 7:30 PM (user's local time)
+- **Wallet Connect / Disconnect** — MWA native flow on Android; modal on web
 
 ---
 
@@ -20,22 +64,9 @@ Mobile-first Solana intelligence terminal that converts crypto Twitter signals a
 
 ---
 
-## Features
-
-- **Signal Board** — AI-generated weekly intelligence: market context, what people are talking about, why it matters, signal vs noise, glossary
-- **Daily Briefing** — curated story feed from 10 RSS sources
-- **Premium Stories** — full narrative analysis with timeline, key quotes, key players, and engagement chart; gated behind Seeker token verification
-- **Live Market Ticker** — SOL price (24h/7d), market cap, Fear & Greed Index, BTC dominance, volume
-- **FOCUS Mode** — distraction-free reading
-- **Onboarding Carousel** — first-launch walkthrough
-- **Story Notifications** — twice-daily local notifications at 7:30 AM and 7:30 PM (user's local time)
-- **Wallet Connect / Disconnect** — MWA native flow on Android; modal on web
-
----
-
 ## Access Control
 
-Premium content is gated by the Seeker Genesis token group:
+Premium intelligence is unlocked by verifying the Solana Seeker Genesis token.
 
 ```
 SEEKER_GROUP = GT22s89nU4iWFkNXj1Bw6uYhJJWDRPpShHt4Bk8f99Te
@@ -95,7 +126,7 @@ All routes fall back to `data/*.json` if Vercel KV is unavailable.
 | Variable | Description |
 |----------|-------------|
 | `NEXT_PUBLIC_APP_VERSION` | Auto-injected from `package.json` via `next.config.mjs` |
-| `NEXT_PUBLIC_APP_URL` | Deployment URL (defaults to `https://gossip-app.vercel.app`) |
+| `NEXT_PUBLIC_APP_URL` | Deployment URL (defaults to `https://gossip-app-rob-fiasco.vercel.app`) |
 | `KV_REST_API_URL` | Vercel KV endpoint |
 | `KV_REST_API_TOKEN` | Vercel KV auth token |
 
@@ -144,10 +175,19 @@ cd android
 Install via ADB (USB debugging enabled):
 
 ```bash
-~/Library/Android/sdk/platform-tools/adb install -r gossip-v1.0.5.apk
+~/Library/Android/sdk/platform-tools/adb install -r gossip-v1.0.8.apk
 ```
 
 The Capacitor config (`capacitor.config.ts`) points the WebView at the Vercel production deployment. Any URL change requires a rebuild.
+
+---
+
+## Hackathon Submission
+
+This project was built for the Solana Mobile Hackathon.
+
+It demonstrates how mobile-native applications can deliver
+high-signal ecosystem intelligence directly on the Solana Seeker device.
 
 ---
 

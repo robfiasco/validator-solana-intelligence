@@ -1,3 +1,6 @@
+// Classifies raw signal posts into narrative buckets (tokenomics, staking, infra, etc.)
+// by matching post text against keyword lists.
+// Used for exploratory analysis; main pipeline uses clusterTweets.mjs instead.
 import fs from "fs";
 import path from "path";
 

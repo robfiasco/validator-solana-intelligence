@@ -1,3 +1,6 @@
+// Dev utility: validates that signals_raw.json is present, readable, and correctly structured.
+// Run manually to diagnose input data issues before executing the full pipeline.
+// Not part of the production build process.
 import fs from "fs";
 import path from "path";
 

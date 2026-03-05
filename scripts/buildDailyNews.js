@@ -1,3 +1,6 @@
+// Combines narrative data and matched articles into the daily news feed.
+// Reads from narratives.json and matching_articles.json.
+// Writes output to data/dailyNews.json.
 import fs from "fs";
 import path from "path";
 
