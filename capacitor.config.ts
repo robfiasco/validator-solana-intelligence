@@ -8,7 +8,7 @@ import type { CapacitorConfig } from "@capacitor/cli";
 const config: CapacitorConfig = {
     appName: "Gossip",
     server: {
-        url: "https://gossip-app.vercel.app",
+        url: "https://gossip-app-rob-fiasco.vercel.app",
         cleartext: false,
     },
     webDir: "out", // Required by Capacitor even when using a remote server URL
