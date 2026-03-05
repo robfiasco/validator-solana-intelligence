@@ -196,6 +196,12 @@ export default function Home() {
     const id = setInterval(tick, 1000);
     return () => clearInterval(id);
   }, []);
+
+  // Local time strings are computed client-side only to avoid SSR hydration mismatch.
+  // Server has no sessionStorage, so narrativeGeneratedDate is null on server but may be
+  // non-null on client (from cache), making toLocaleString output differ. Start null,
+  // set after mount so server and initial client render both produce the same output.
+  const [localTimeDisplay, setLocalTimeDisplay] = useState<{ generated: string | null; market: string | null }>({ generated: null, market: null });
   const { disconnect } = useWallet();
   const isSeekerConnected = typeof window !== "undefined" &&
     window.localStorage.getItem("gossip_seeker_verified") === "true";
@@ -346,6 +352,17 @@ export default function Home() {
     const interval = window.setInterval(run, 30000);
     return () => { active = false; window.clearInterval(interval); };
   }, []);
+
+  useEffect(() => {
+    const raw = signalBoardData?.generated_at_utc || signalBoardData?.date || null;
+    if (!raw) return;
+    const d = new Date(raw);
+    if (isNaN(d.getTime())) return;
+    setLocalTimeDisplay({
+      generated: d.toLocaleString("en-US", { month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit" }),
+      market: d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }),
+    });
+  }, [signalBoardData]);
 
   // Live pricing — independent refresh every 3 minutes from CoinGecko + Fear & Greed
   useEffect(() => {
@@ -507,20 +524,6 @@ export default function Home() {
       return formatDailyDate(`${y}-${m}-${d}T00:00:00Z`);
     }
     return formatDailyDate(value);
-  };
-
-  const formatGeneratedLocal = (value?: string | null) => {
-    if (!value) return null;
-    const d = new Date(value);
-    if (isNaN(d.getTime())) return null;
-    return d.toLocaleString("en-US", { month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit" });
-  };
-
-  const formatLocalTime = (value?: string | null) => {
-    if (!value) return "";
-    const d = new Date(value);
-    if (isNaN(d.getTime())) return "";
-    return d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
   };
 
   const stripHandles = (value?: string | null) =>
@@ -805,7 +808,7 @@ export default function Home() {
                 <div className="weekly-intel-head">
                   <div className="weekly-intel-title">Weekly Intelligence</div>
                   <div className="weekly-intel-date">
-                    Generated {formatGeneratedLocal(narrativeGeneratedDate) ?? formatShortDate(narrativeGeneratedDate)}
+                    Generated {localTimeDisplay.generated ?? formatShortDate(narrativeGeneratedDate)}
                   </div>
                   {nextUpdateCountdown && (
                     <div className="weekly-intel-countdown">
@@ -821,7 +824,7 @@ export default function Home() {
                         <div className={`sb-item ${PALETTE_1[0]}`}>
                           <div className="sb-item-head">
                             <span className="sb-item-label">
-                              MARKET CONTEXT {narrativeGeneratedDate ? `(AS OF ${formatLocalTime(narrativeGeneratedDate)})` : ''}
+                              MARKET CONTEXT {localTimeDisplay.market ? `(AS OF ${localTimeDisplay.market})` : ''}
                             </span>
                           </div>
                           <p className="sb-item-copy">
