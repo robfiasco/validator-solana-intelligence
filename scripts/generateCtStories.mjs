@@ -285,7 +285,7 @@ async function generateStory(candidate, index) {
     const metrics = extractMetrics(candidate);
     const topVoices = extractWhoToFollow(candidate);
 
-    // Safely map whoToFollow
+    // Safely map whoToFollow (top-level, not nested in content)
     const whoToFollow = (Array.isArray(storyData.whoToFollow) ? storyData.whoToFollow : []).map((person, i) => ({
       ...person,
       engagement: topVoices[i]?.engagement || 0
@@ -299,6 +299,16 @@ async function generateStory(candidate, index) {
         role: "Community"
       }));
     }
+
+    // Build ctPulse from the top engaging source tweets (handle + thought + url)
+    const ctPulse = tweets
+      .filter(t => t.screen_name && t.full_text)
+      .slice(0, 5)
+      .map(t => ({
+        handle: `@${t.screen_name}`,
+        thought: (t.full_text || '').substring(0, 200),
+        url: t.url || null
+      }));
 
     // Use AI-generated title; fall back to first 60 chars of narrative (no ellipsis mid-word)
     const aiTitle = typeof storyData.title === "string" && storyData.title.trim().length > 0
@@ -316,11 +326,12 @@ async function generateStory(candidate, index) {
       author: tweets[0]?.screen_name ? `@${tweets[0].screen_name}` : 'Solana Intelligence',
       timestamp: new Date().toISOString(),
       metrics,
+      ctPulse,     // top-level so StoryDetail can read story?.ctPulse
+      whoToFollow, // top-level so StoryDetail can read story?.whoToFollow
       content: {
         signal: storyData.signal || candidate.narrative,
-        story: storyData.story, // This now comes from 'story_content' via parser
+        story: storyData.story,
         takeaways: Array.isArray(storyData.takeaways) ? storyData.takeaways : [],
-        whoToFollow
       },
       riskLevel: storyData.riskLevel || 'medium',
       narrativeStrength: storyData.narrativeStrength || 7.0

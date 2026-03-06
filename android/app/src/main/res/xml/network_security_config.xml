@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow cleartext WebSocket traffic to localhost for Solana Mobile Wallet Adapter.
+         MWA local association uses ws://localhost:PORT/solana-wallet to communicate
+         between the WebView and the Seeker wallet app. Android 9+ blocks cleartext
+         traffic by default, which breaks the MWA handshake. -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">localhost</domain>
+        <domain includeSubdomains="false">127.0.0.1</domain>
+    </domain-config>
+</network-security-config>

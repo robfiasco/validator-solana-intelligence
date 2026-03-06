@@ -1,5 +1,18 @@
 // Shared category classification — used by story cards, locked paywall, and story detail
 
+export function getSignalLabel(categoryRaw: string): string {
+  const cls = getKickerClass(categoryRaw);
+  const labels: Record<string, string> = {
+    critical: "SECURITY SIGNAL",
+    ai:       "AI SIGNAL",
+    gaming:   "GAMING SIGNAL",
+    alpha:    "ALPHA SIGNAL",
+    mobile:   "MOBILE SIGNAL",
+    privacy:  "PRIVACY SIGNAL",
+  };
+  return labels[cls] ?? "INTELLIGENCE SIGNAL";
+}
+
 export const CATEGORY_COLORS: Record<string, string> = {
   critical: "#ff4545",
   ai:       "#ae88ff",

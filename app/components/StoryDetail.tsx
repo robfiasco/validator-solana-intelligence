@@ -5,7 +5,7 @@ import { ChevronLeft } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import AnimatedEngagementChart from "./AnimatedEngagementChart";
 import ScrollMatrixBackground from "./ScrollMatrixBackground";
-import { getKickerClass, getKickerColor } from "../lib/categories";
+import { getKickerClass, getKickerColor, getSignalLabel } from "../lib/categories";
 
 type Story = {
     category?: string;
@@ -28,6 +28,7 @@ type Story = {
     hook?: string;
     ctPulse?: Array<{ handle?: string; thought?: string; url?: string }>;
     whoToFollow?: Array<{ handle?: string; reason?: string; role?: string }>;
+    narrativeStrength?: number;
 };
 
 export default function StoryDetail({ story, index, total, onBack, publishDate }: { story: Story; index: number; total: number; onBack: () => void; publishDate?: string | null }) {
@@ -63,18 +64,31 @@ export default function StoryDetail({ story, index, total, onBack, publishDate }
                 <ChevronLeft size={16} /> Back
             </button>
 
-            <div className="seeker-detail-header" style={{ paddingTop: '16px', display: 'flex', justifyContent: 'center' }}>
-                <div style={{ textAlign: 'center' }}>
-                    <p className="seeker-detail-sub">Premium Intelligence • {formatShortDate(publishDate || story?.timestamp || story?.publishedAt)}</p>
-                </div>
-            </div>
-
             <div className="seeker-detail-hero">
+                {/* Category signal label with pulsing dot */}
                 <div className={`seeker-mag-kicker ${getKickerClass(String(story?.category || ""))}`}>
-                    {String(story?.category || "Seeker Story").toUpperCase()}
+                    <span className="seeker-signal-dot" style={{ background: getKickerColor(String(story?.category || "")) }} />
+                    {getSignalLabel(String(story?.category || ""))}
                 </div>
+
                 <h2 className="seeker-detail-title">{story?.title || "Untitled"}</h2>
-                <p className="seeker-detail-author">Analysis by AI Gossip News Desk</p>
+
+                <p className="seeker-detail-author">Signal analysis from Gossip</p>
+
+                <p className="seeker-freshness">{formatFreshness(story?.timestamp || story?.publishedAt)}</p>
+
+                {/* Signal strength bar */}
+                {story?.narrativeStrength != null && (
+                    <div className="seeker-signal-strength">
+                        <span className="seeker-signal-strength-label">Signal Strength</span>
+                        <span className="seeker-signal-strength-bar">
+                            {"█".repeat(Math.round(story.narrativeStrength))}{"░".repeat(10 - Math.round(story.narrativeStrength))}
+                        </span>
+                        <span className="seeker-signal-strength-value">{story.narrativeStrength}/10</span>
+                    </div>
+                )}
+
+                <div className="seeker-header-divider" />
             </div>
 
             <div style={{ marginTop: "24px", marginBottom: "32px", background: "rgba(10, 11, 14, 0.4)", border: "1px solid rgba(255, 255, 255, 0.05)", borderRadius: "16px", padding: "16px" }}>
@@ -224,6 +238,19 @@ function quoteColorClass(sentimentRaw: unknown) {
     if (sentiment === "negative") return "negative";
     if (sentiment === "positive") return "positive";
     return "neutral";
+}
+
+function formatFreshness(value?: string) {
+    if (!value) return "";
+    const d = new Date(value);
+    if (Number.isNaN(d.getTime())) return "";
+    const diffMs = Date.now() - d.getTime();
+    const diffMins = Math.floor(diffMs / 60000);
+    if (diffMins < 60) return `Updated ${diffMins}m ago`;
+    const diffHours = Math.floor(diffMins / 60);
+    if (diffHours < 24) return `Updated ${diffHours}h ago`;
+    const diffDays = Math.floor(diffHours / 24);
+    return `Updated ${diffDays}d ago`;
 }
 
 function formatShortDate(value?: string) {
