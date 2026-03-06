@@ -214,6 +214,26 @@ function extractMetrics(candidate) {
   };
 }
 
+// Compute signal strength 1.0–9.5 from real engagement data rather than asking the LLM.
+// LLM scores cluster at 7-8 regardless of actual signal quality.
+// Formula: engagement (log-scaled, 50%) + unique voices (25%) + tweet count (25%).
+function computeNarrativeStrength(candidate) {
+  const tweets = candidate.tweets || [];
+  const engagement = candidate.totalEngagement || tweets.reduce((sum, t) =>
+    sum + (t.favorite_count || 0) + (t.retweet_count || 0) * 2 + (t.quote_count || 0) * 3 + (t.reply_count || 0) * 1.5
+  , 0);
+  const voices = candidate.uniqueUsers || new Set(tweets.map(t => t.screen_name)).size;
+  const tweetCount = tweets.length;
+
+  // Log-normalize engagement against a 20k ceiling
+  const engScore  = Math.min(Math.log10(Math.max(engagement, 1)) / Math.log10(20000), 1);
+  const voiceScore = Math.min(voices / 15, 1);
+  const tweetScore = Math.min(tweetCount / 30, 1);
+
+  const raw = (engScore * 0.5) + (voiceScore * 0.25) + (tweetScore * 0.25);
+  return Math.round((1 + raw * 8.5) * 10) / 10; // 1.0 – 9.5
+}
+
 function extractWhoToFollow(candidate) {
   const tweets = candidate.tweets || [];
 
@@ -334,7 +354,7 @@ async function generateStory(candidate, index) {
         takeaways: Array.isArray(storyData.takeaways) ? storyData.takeaways : [],
       },
       riskLevel: storyData.riskLevel || 'medium',
-      narrativeStrength: storyData.narrativeStrength || 7.0
+      narrativeStrength: computeNarrativeStrength(candidate)
     };
 
   } catch (error) {
