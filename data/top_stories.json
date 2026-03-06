@@ -1,26 +1,26 @@
 {
   "meta": {
-    "generatedAt": "2026-03-06T07:37:18.684Z",
-    "totalCandidates": 103,
-    "solanaCandidates": 18,
+    "generatedAt": "2026-03-06T19:32:42.898Z",
+    "totalCandidates": 106,
+    "solanaCandidates": 20,
     "selected": 5,
     "tweetPool": 0,
     "narrativeKeywordsCount": 0
   },
   "items": [
     {
-      "id": "https://ambcrypto.com/solana-seeing-rising-interest-but-is-it-enough-to-boost-sol",
-      "title": "Solana seeing rising interest, but is it enough to boost SOL?",
-      "url": "https://ambcrypto.com/solana-seeing-rising-interest-but-is-it-enough-to-boost-sol",
+      "id": "https://ambcrypto.com/can-solanas-755-payment-surge-trigger-a-sol-supercycle",
+      "title": "Can Solana’s 755% payment surge trigger a SOL supercycle?",
+      "url": "https://ambcrypto.com/can-solanas-755-payment-surge-trigger-a-sol-supercycle",
       "source": "AMB Crypto",
-      "publishedAt": "2026-03-05T22:00:40.000Z",
-      "summary": "Transaction volume for Solana stablecoins hit a record high of $650 billion.",
+      "publishedAt": "2026-03-06T09:00:13.000Z",
+      "summary": "Rising payment volumes put Solana at the center of Web3’s adoption push.",
       "tags": [
         "solana",
-        "seeing",
-        "rising"
+        "payment",
+        "surge"
       ],
-      "topicBucket": "defi",
+      "topicBucket": "general",
       "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
       "mentionCount": 0,
       "xMentions": 0,
@@ -31,60 +31,27 @@
       "narrativesMatched": [],
       "premiumNarrativesMatched": [],
       "scoreBreakdown": {
-        "relevanceScore": 16,
+        "relevanceScore": 13,
         "mentionScore": 0,
         "recencyScore": 10,
         "sourceScore": 1,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "d1bd97bbda65af2271435bb1d19572103723198c",
-      "score": 27
+      "dedupeFingerprint": "4770a7e23ecb863f21a104fda97d0bfb6a17688e",
+      "score": 24
     },
     {
-      "id": "https://cointelegraph.com/news/solana-etfs-impressive-numbers-token-dives-since-launch",
-      "title": "Solana ETFs still hold ‘impressive numbers’ even as token dives 57%",
-      "url": "https://cointelegraph.com/news/solana-etfs-impressive-numbers-token-dives-since-launch",
-      "source": "Cointelegraph",
-      "publishedAt": "2026-03-06T05:20:34.000Z",
-      "summary": "Bloomberg ETF analyst Eric Balchunas says Solana ETF inflows are posting “pretty impressive numbers,” even as the token has dropped by more than half since they launched.",
+      "id": "https://www.theblock.co/post/392733/first-us-state-level-stablecoin-bill-passes-in-florida",
+      "title": "First US state-level stablecoin bill passes in Florida",
+      "url": "https://www.theblock.co/post/392733/first-us-state-level-stablecoin-bill-passes-in-florida",
+      "source": "The Block",
+      "publishedAt": "2026-03-06T19:11:40.000Z",
+      "summary": "Senate Bill 314 provides a framework for payment stablecoin issuers in the state, aligning with federal GENIUS Act standards.",
       "tags": [
-        "solana",
-        "etfs",
-        "still"
-      ],
-      "topicBucket": "market",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 8,
-        "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 0,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "89e11606c74ae9718409ff38115fa857d8888837",
-      "score": 18
-    },
-    {
-      "id": "https://messari.io/article/in-the-stables-inflows-surge-414-as-stablecoin-use-returns",
-      "title": "In The Stables: Inflows Surge 414% as Stablecoin Use Returns",
-      "url": "https://messari.io/article/in-the-stables-inflows-surge-414-as-stablecoin-use-returns",
-      "source": "Messari",
-      "publishedAt": "2026-03-04T18:25:00.000Z",
-      "summary": "This week’s edition of In The Stables highlights a rebound in stablecoin demand and usage after a slow start to the year. Total stablecoin market cap expanded 0.63% WoW to $293.7 billion, led by USDS and PYUSD gains while USDe contracted. Onchain activity strengthened meaningfully, with transaction ",
-      "tags": [
-        "stables",
-        "inflows",
-        "surge"
+        "first",
+        "state",
+        "level"
       ],
       "topicBucket": "defi",
       "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
@@ -99,13 +66,79 @@
       "scoreBreakdown": {
         "relevanceScore": 8,
         "mentionScore": 0,
-        "recencyScore": 7,
-        "sourceScore": 3,
+        "recencyScore": 10,
+        "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "dc86241e3e2f2c641de16900f2b89218fe341bc9",
-      "score": 18
+      "dedupeFingerprint": "c7558681ecafd28d8a52c1b40540bbce042b016e",
+      "score": 22
+    },
+    {
+      "id": "https://www.coindesk.com/coindesk-indices/2026/03/06/coindesk-20-performance-update-aave-drops-4-3-as-all-index-constituents-trade-lower",
+      "title": "CoinDesk 20 performance update: Aave drops 4.3% as all index constituents trade lower",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/03/06/coindesk-20-performance-update-aave-drops-4-3-as-all-index-constituents-trade-lower",
+      "source": "CoinDesk",
+      "publishedAt": "2026-03-06T14:18:17.000Z",
+      "summary": "Solana (SOL), down 3.1% since Thursday, joined Aave (AAVE) as an underperformer.",
+      "tags": [
+        "coindesk",
+        "performance",
+        "update"
+      ],
+      "topicBucket": "defi",
+      "whyItMatters": "Flow and volume shifts here usually show up first in Solana risk appetite.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 6,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 4,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "b347a75e9cca91ded89b402dcaecaeb524bb1f65",
+      "score": 20
+    },
+    {
+      "id": "https://ambcrypto.com/unlock-for-tokenization-occ-clarifies-capital-rules-for-tokenized-securities",
+      "title": "‘Unlock for tokenization? ’- OCC clarifies capital rules for tokenized securities",
+      "url": "https://ambcrypto.com/unlock-for-tokenization-occ-clarifies-capital-rules-for-tokenized-securities",
+      "source": "AMB Crypto",
+      "publishedAt": "2026-03-06T19:00:22.000Z",
+      "summary": "Tokenized stock adoption jumped by 47% in 2026.",
+      "tags": [
+        "unlock",
+        "tokenization",
+        "clarifies"
+      ],
+      "topicBucket": "tokenomics",
+      "whyItMatters": "Token supply mechanics can move short-term flows fast.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 5,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 1,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "8124ad3e622b5a3cc5825a9a87ddab3be95075f8",
+      "score": 16
     },
     {
       "id": "https://www.coindesk.com/business/2026/03/05/ripple-adds-coinbase-crypto-futures-to-its-usd3-trillion-trading-venue",
@@ -132,45 +165,12 @@
       "scoreBreakdown": {
         "relevanceScore": 3,
         "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 4,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "2cb9e9ddf1ccdd5c945a2b055196d8d2701a1e6f",
-      "score": 17
-    },
-    {
-      "id": "https://www.theblock.co/post/392466/kraken-unified-execution-layer-xstocks-tokenized-equities-xchange",
-      "title": "Kraken rolls out unified execution layer for xStocks tokenized equities called xChange",
-      "url": "https://www.theblock.co/post/392466/kraken-unified-execution-layer-xstocks-tokenized-equities-xchange",
-      "source": "The Block",
-      "publishedAt": "2026-03-05T18:55:37.000Z",
-      "summary": "xChange is an onchain trading engine and unified execution layer for xStocks issued on Solana and Ethereum.",
-      "tags": [
-        "kraken",
-        "rolls",
-        "unified"
-      ],
-      "topicBucket": "general",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 3,
-        "mentionScore": 0,
         "recencyScore": 9,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "47caaff417f2a39b30a8d38d5931b135e2480564",
+      "dedupeFingerprint": "2cb9e9ddf1ccdd5c945a2b055196d8d2701a1e6f",
       "score": 16
     }
   ]

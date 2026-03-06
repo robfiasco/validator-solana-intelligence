@@ -1,26 +1,26 @@
 {
   "date": "2026-03-06",
-  "generated_at_utc": "2026-03-06T07:37:30.550Z",
-  "ctxMarket": "Attention is on Solana’s robust on-chain activity and institutional adoption, despite a 57% drop in SOL price since ETF launches. Record stablecoin transaction volumes and payment growth are drawing focus, alongside new token launches and tokenized equities.",
-  "ctxTalking": "• Solana ETFs continue to attract inflows even as SOL price declines sharply\n• Stablecoin and payment volumes on Solana are reaching all-time highs\n• New products and platforms, like tokenized equities and token creation tools, are expanding Solana’s ecosystem",
-  "ctxMatters": "Sustained ETF inflows and institutional integrations suggest ongoing confidence in Solana’s infrastructure. High stablecoin and payment activity point to real-world usage beyond speculation. Expanding tokenization and trading platforms could diversify Solana’s application landscape and user base.",
-  "ctxSignal": "Signal: Institutional adoption and record on-chain volumes highlight Solana’s growing role in payments and tokenization.\nNoise: Short-term price moves appear less connected to underlying network activity.",
-  "ctxGlossary": "ETF — Exchange-traded fund, a tradable investment product tracking an asset or group of assets\nStablecoin — A cryptocurrency pegged to a stable asset, often used for payments and trading\nTokenized equities — Traditional stocks represented as tokens on a blockchain",
+  "generated_at_utc": "2026-03-06T19:32:52.454Z",
+  "ctxMarket": "Attention is on broad declines across major crypto assets, with Solana down 3.1% and all CoinDesk 20 index constituents trading lower. ETF flows are in focus after Solana ETFs posted their first losses since February, mirroring outflows from Bitcoin spot ETFs.",
+  "ctxTalking": "• Solana’s payment volume surged 755% year-over-year, outpacing peer blockchains\n• Solana ETFs show strong inflows despite a 57% drop in token price since launch\n• Institutional access to Solana futures expands via Ripple’s clearing platform",
+  "ctxMatters": "Solana’s payment growth highlights its increasing role in Web3 payments and stablecoin activity. ETF inflows suggest ongoing institutional interest even as prices fall. Expanded futures trading could boost Solana’s visibility among professional investors.",
+  "ctxSignal": "Signal: Surging payment volumes and stablecoin activity on Solana point to real network usage.\nNoise: Short-term price drops and ETF outflows may not reflect underlying adoption trends.",
+  "ctxGlossary": "ETF — Exchange-traded fund, a tradable investment vehicle tracking an asset or group of assets\nStablecoin — A cryptocurrency pegged to a stable asset, often used for payments and transfers",
   "readMore": [
     {
-      "title": "Solana ETFs still hold ‘impressive numbers’ even as token dives 57%",
-      "source": "Cointelegraph",
-      "url": "https://cointelegraph.com/news/solana-etfs-impressive-numbers-token-dives-since-launch"
-    },
-    {
-      "title": "Solana seeing rising interest, but is it enough to boost SOL?",
-      "source": "AMB Crypto",
-      "url": "https://ambcrypto.com/solana-seeing-rising-interest-but-is-it-enough-to-boost-sol"
-    },
-    {
-      "title": "Ripple adds Coinbase crypto futures to its $3 trillion clearing platform",
+      "title": "CoinDesk 20 performance update",
       "source": "CoinDesk",
-      "url": "https://www.coindesk.com/business/2026/03/05/ripple-adds-coinbase-crypto-futures-to-its-usd3-trillion-trading-venue"
+      "url": "https://www.coindesk.com/coindesk-indices/2026/03/06/coindesk-20-performance-update-aave-drops-4-3-as-all-index-constituents-trade-lower"
+    },
+    {
+      "title": "Bitcoin relief rally hits wall as spot ETFs log $228M in outflows",
+      "source": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/bitcoin-etfs-228-million-outflows-bear-market-persists"
+    },
+    {
+      "title": "Can Solana’s 755% payment surge trigger a SOL supercycle?",
+      "source": "AMB Crypto",
+      "url": "https://ambcrypto.com/can-solanas-755-payment-surge-trigger-a-sol-supercycle"
     }
   ]
 }

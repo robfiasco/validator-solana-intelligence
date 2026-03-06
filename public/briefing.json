@@ -4,31 +4,31 @@
   "subtitle": "Top links from trusted desks",
   "items": [
     {
-      "type": "MARKET",
-      "title": "Solana seeing rising interest, but is it enough to boost SOL?",
-      "category": "MARKET",
-      "source": "AMB Crypto",
+      "type": "APPS",
+      "title": "Ripple adds Coinbase crypto futures to its $3 trillion clearing platform",
+      "category": "APPS",
+      "source": "CoinDesk",
       "date": "2026-03-05",
-      "url": "https://ambcrypto.com/solana-seeing-rising-interest-but-is-it-enough-to-boost-sol",
-      "whyYouShouldCare": "Increased interest in Solana could indicate potential for future growth, impacting SOL's market positioning and liquidity."
-    },
-    {
-      "type": "ECOSYSTEM",
-      "title": "Solana ETFs still hold ‘impressive numbers’ even as token dives 57%",
-      "category": "ECOSYSTEM",
-      "source": "Cointelegraph",
-      "date": "2026-03-06",
-      "url": "https://cointelegraph.com/news/solana-etfs-impressive-numbers-token-dives-since-launch",
-      "whyYouShouldCare": "Despite a significant drop in SOL's price, strong ETF holdings suggest continued institutional interest, which may stabilize the ecosystem."
+      "url": "https://www.coindesk.com/business/2026/03/05/ripple-adds-coinbase-crypto-futures-to-its-usd3-trillion-trading-venue",
+      "whyYouShouldCare": "Ripple's integration of Coinbase futures into its clearing platform could enhance liquidity and trading options, indirectly impacting Solana's competitive landscape."
     },
     {
       "type": "APPS",
-      "title": "Kraken rolls out unified execution layer for xStocks tokenized equities called xChange",
+      "title": "Can Solana’s 755% payment surge trigger a SOL supercycle?",
       "category": "APPS",
-      "source": "The Block",
-      "date": "2026-03-05",
-      "url": "https://www.theblock.co/post/392466/kraken-unified-execution-layer-xstocks-tokenized-equities-xchange",
-      "whyYouShouldCare": "Kraken's new execution layer for tokenized equities could enhance Solana's application usage, potentially driving more liquidity into the ecosystem."
+      "source": "AMB Crypto",
+      "date": "2026-03-06",
+      "url": "https://ambcrypto.com/can-solanas-755-payment-surge-trigger-a-sol-supercycle",
+      "whyYouShouldCare": "A 755% surge in Solana payments may signal increased ecosystem activity, potentially positioning SOL for significant price movements and broader adoption."
+    },
+    {
+      "type": "MARKET",
+      "title": "CoinDesk 20 performance update: Aave drops 4.3% as all index constituents trade lower",
+      "category": "MARKET",
+      "source": "CoinDesk",
+      "date": "2026-03-06",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/03/06/coindesk-20-performance-update-aave-drops-4-3-as-all-index-constituents-trade-lower",
+      "whyYouShouldCare": "The decline of Aave and other CoinDesk 20 constituents highlights market volatility, which could affect investor sentiment and liquidity across the Solana ecosystem."
     }
   ]
 }
