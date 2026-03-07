@@ -1,11 +1,25 @@
 [
   {
+    "id": "45ad358b99b48b3fb9db490f12d7d3a647052029",
+    "title": "Signal Board Summary 2026-03-07",
+    "url": "",
+    "source": "signal-board",
+    "firstSeenAt": "2026-03-07T19:20:15.678Z",
+    "lastSeenAt": "2026-03-07T19:20:15.678Z",
+    "sectionShown": "signal",
+    "topicTags": [
+      "signal-board"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "b347a75e9cca91ded89b402dcaecaeb524bb1f65",
     "title": "CoinDesk 20 performance update: Aave drops 4.3% as all index constituents trade lower",
     "url": "https://www.coindesk.com/coindesk-indices/2026/03/06/coindesk-20-performance-update-aave-drops-4-3-as-all-index-constituents-trade-lower",
     "source": "CoinDesk",
     "firstSeenAt": "2026-03-06T19:32:43.075Z",
-    "lastSeenAt": "2026-03-07T07:26:42.946Z",
+    "lastSeenAt": "2026-03-07T19:20:07.807Z",
     "sectionShown": "briefing",
     "topicTags": [
       "coindesk",
@@ -16,6 +30,48 @@
       "index",
       "constituents",
       "trade"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "db7cd0d83682f73e16a511ddd4fe5f889df371e9",
+    "title": "Kraken launches xChange engine to power tokenized stock trading",
+    "url": "https://cointelegraph.com/news/kraken-xstocks-platform-xchange-engine-tokenized-stock-trading",
+    "source": "Cointelegraph",
+    "firstSeenAt": "2026-03-07T07:26:42.945Z",
+    "lastSeenAt": "2026-03-07T19:20:07.807Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "kraken",
+      "launches",
+      "xchange",
+      "engine",
+      "power",
+      "tokenized",
+      "stock",
+      "trading"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "8df82ab18792291d864865340546520b29e27a13",
+    "title": "Solana price registers 14% rally, how SOL and utility protocols are shaping crypto in Q1 2026",
+    "url": "https://ambcrypto.com/solana-price-registers-14-rally-how-sol-and-utility-protocols-are-shaping-crypto-in-q1-2026",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-03-07T19:20:07.806Z",
+    "lastSeenAt": "2026-03-07T19:20:07.806Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "solana",
+      "price",
+      "registers",
+      "rally",
+      "utility",
+      "protocols",
+      "shaping",
+      "crypto"
     ],
     "majorUpdate": false,
     "updateReason": null
@@ -37,27 +93,6 @@
       "volume",
       "network",
       "surged"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "db7cd0d83682f73e16a511ddd4fe5f889df371e9",
-    "title": "Kraken launches xChange engine to power tokenized stock trading",
-    "url": "https://cointelegraph.com/news/kraken-xstocks-platform-xchange-engine-tokenized-stock-trading",
-    "source": "Cointelegraph",
-    "firstSeenAt": "2026-03-07T07:26:42.945Z",
-    "lastSeenAt": "2026-03-07T07:26:42.945Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "kraken",
-      "launches",
-      "xchange",
-      "engine",
-      "power",
-      "tokenized",
-      "stock",
-      "trading"
     ],
     "majorUpdate": false,
     "updateReason": null
@@ -205,83 +240,6 @@
       "most",
       "base",
       "launches"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "db9879be747ac0e68b79df4b1ce0a5ce7b906fd3",
-    "title": "Signal Board Summary 2026-03-05",
-    "url": "",
-    "source": "signal-board",
-    "firstSeenAt": "2026-03-05T07:40:54.189Z",
-    "lastSeenAt": "2026-03-05T07:40:54.189Z",
-    "sectionShown": "signal",
-    "topicTags": [
-      "signal-board"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "4e6965409c49024b9f11f7b08506969b724e5649",
-    "title": "Western Union teams with Crossmint to support USDPT stablecoin on Solana",
-    "url": "https://cointelegraph.com/news/western-union-taps-crossmint-to-support-solana-based-usd-stablecoin-and-digital-asset-payout-network",
-    "source": "Cointelegraph",
-    "firstSeenAt": "2026-03-05T07:40:45.805Z",
-    "lastSeenAt": "2026-03-05T07:40:45.805Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "western",
-      "union",
-      "teams",
-      "with",
-      "crossmint",
-      "support",
-      "usdpt",
-      "stablecoin"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "409fdd1bc6e4478a3a205f771e2d5223477cfc54",
-    "title": "Ether, solana, xrp surge 8% as crypto markets rally on easing war fears",
-    "url": "https://www.coindesk.com/markets/2026/03/05/ether-solana-xrp-surge-8-as-crypto-markets-rally-on-easing-war-fears",
-    "source": "CoinDesk",
-    "firstSeenAt": "2026-03-05T07:40:45.805Z",
-    "lastSeenAt": "2026-03-05T07:40:45.805Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "ether",
-      "solana",
-      "surge",
-      "crypto",
-      "markets",
-      "rally",
-      "easing",
-      "fears"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "5369265a1ae0866c234c2c892ab8298b046fc056",
-    "title": "Backpack taps Superstate for IPO roadshow tokenization offering, opens waitlist",
-    "url": "https://www.theblock.co/post/392240/backpack-taps-superstate-for-ipo-roadshow-tokenization-offering-opens-waitlist",
-    "source": "The Block",
-    "firstSeenAt": "2026-03-05T07:40:45.804Z",
-    "lastSeenAt": "2026-03-05T07:40:45.804Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "backpack",
-      "taps",
-      "superstate",
-      "roadshow",
-      "tokenization",
-      "offering",
-      "opens",
-      "waitlist"
     ],
     "majorUpdate": false,
     "updateReason": null

@@ -1,21 +1,21 @@
 {
   "date": "2026-03-07",
-  "generated_at_utc": "2026-03-07T07:26:50.279Z",
-  "ctxMarket": "Attention is on broad declines across major crypto assets, with Solana down 4% and spot Bitcoin ETFs seeing notable outflows. Solana ETFs posted their first losses since February, and most index constituents are trading lower.",
-  "ctxTalking": "• Solana’s payment volume growth and record stablecoin activity\n• Tokenized stock trading launching on Solana via Kraken’s xChange engine\n• The end of Step Finance after a wallet compromise",
-  "ctxMatters": "Solana’s surge in payment volume and stablecoin usage signals growing network utility despite recent price drops. The launch of tokenized equities trading on Solana expands its use cases beyond crypto. The closure of Step Finance highlights ongoing security challenges for DeFi projects on the network.",
-  "ctxSignal": "Signal: Growth in Solana’s payment and stablecoin activity, and new tokenized stock trading options.\nNoise: Short-term price swings tied to ETF flows without clear long-term impact.",
-  "ctxGlossary": "Tokenized equities — Traditional stocks represented as tokens on a blockchain\nStablecoin — A cryptocurrency pegged to a stable asset, often the US dollar",
+  "generated_at_utc": "2026-03-07T19:20:15.675Z",
+  "ctxMarket": "Attention is on Solana’s recent 14% rally and the surge in payment activity, despite a broader market pullback where most major tokens, including SOL, saw declines after Friday. Solana ETFs posted their first losses since February, and overall sentiment is mixed as Bitcoin and other majors face pressure from ETF outflows and a stronger dollar.",
+  "ctxTalking": "• Solana’s payment volume growth and stablecoin activity outpacing peer blockchains\n• Kraken’s launch of an onchain engine for tokenized stock trading on Ethereum and Solana\n• The shutdown of Step Finance after a wallet compromise",
+  "ctxMatters": "Rapid growth in Solana’s payments and stablecoin use signals expanding real-world applications and network utility. Integration of tokenized equities trading may broaden Solana’s ecosystem appeal. The Step Finance shutdown highlights ongoing security risks for DeFi projects on Solana.",
+  "ctxSignal": "Signal: Solana’s payment volume and stablecoin market cap hitting record highs; new tokenized equity trading options.\nNoise: Short-term price swings tied to ETF flows and macro headlines.",
+  "ctxGlossary": "Stablecoin — A cryptocurrency pegged to a stable asset, often the US dollar.\nTokenized equity — A digital representation of a traditional stock, tradable on blockchains.",
   "readMore": [
     {
-      "title": "Bitcoin slips below $68,000 heading into the weekend as dollar posts steepest weekly gain in a year",
-      "source": "CoinDesk",
-      "url": "https://www.coindesk.com/markets/2026/03/07/bitcoin-slips-below-usd68-000-heading-into-the-weekend-as-dollar-posts-steepest-weekly-gain-in-a-year"
+      "title": "Solana price registers 14% rally, how SOL and utility protocols are shaping crypto in Q1 2026",
+      "source": "AMB Crypto",
+      "url": "https://ambcrypto.com/solana-price-registers-14-rally-how-sol-and-utility-protocols-are-shaping-crypto-in-q1-2026"
     },
     {
-      "title": "Pump.fun team moves 1.75B PUMP",
-      "source": "AMB Crypto",
-      "url": "https://ambcrypto.com/pump-fun-team-moves-1-75b-pump-can-bulls-offset-selling-pressure"
+      "title": "Bitcoin slips below $68,000 as dollar posts steepest weekly gain in a year",
+      "source": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/03/07/bitcoin-slips-below-usd68-000-heading-into-the-weekend-as-dollar-posts-steepest-weekly-gain-in-a-year"
     },
     {
       "title": "Kraken launches xChange engine to power tokenized stock trading",

@@ -1,11 +1,25 @@
 [
   {
+    "id": "45ad358b99b48b3fb9db490f12d7d3a647052029",
+    "title": "Signal Board Summary 2026-03-07",
+    "url": "",
+    "source": "signal-board",
+    "firstSeenAt": "2026-03-07T19:20:15.678Z",
+    "lastSeenAt": "2026-03-07T19:20:15.678Z",
+    "sectionShown": "signal",
+    "topicTags": [
+      "signal-board"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "b347a75e9cca91ded89b402dcaecaeb524bb1f65",
     "title": "CoinDesk 20 performance update: Aave drops 4.3% as all index constituents trade lower",
     "url": "https://www.coindesk.com/coindesk-indices/2026/03/06/coindesk-20-performance-update-aave-drops-4-3-as-all-index-constituents-trade-lower",
     "source": "CoinDesk",
     "firstSeenAt": "2026-03-06T19:32:43.075Z",
-    "lastSeenAt": "2026-03-07T07:26:42.946Z",
+    "lastSeenAt": "2026-03-07T19:20:07.807Z",
     "sectionShown": "briefing",
     "topicTags": [
       "coindesk",
@@ -16,6 +30,48 @@
       "index",
       "constituents",
       "trade"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "db7cd0d83682f73e16a511ddd4fe5f889df371e9",
+    "title": "Kraken launches xChange engine to power tokenized stock trading",
+    "url": "https://cointelegraph.com/news/kraken-xstocks-platform-xchange-engine-tokenized-stock-trading",
+    "source": "Cointelegraph",
+    "firstSeenAt": "2026-03-07T07:26:42.945Z",
+    "lastSeenAt": "2026-03-07T19:20:07.807Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "kraken",
+      "launches",
+      "xchange",
+      "engine",
+      "power",
+      "tokenized",
+      "stock",
+      "trading"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "8df82ab18792291d864865340546520b29e27a13",
+    "title": "Solana price registers 14% rally, how SOL and utility protocols are shaping crypto in Q1 2026",
+    "url": "https://ambcrypto.com/solana-price-registers-14-rally-how-sol-and-utility-protocols-are-shaping-crypto-in-q1-2026",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-03-07T19:20:07.806Z",
+    "lastSeenAt": "2026-03-07T19:20:07.806Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "solana",
+      "price",
+      "registers",
+      "rally",
+      "utility",
+      "protocols",
+      "shaping",
+      "crypto"
     ],
     "majorUpdate": false,
     "updateReason": null
@@ -37,27 +93,6 @@
       "volume",
       "network",
       "surged"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "db7cd0d83682f73e16a511ddd4fe5f889df371e9",
-    "title": "Kraken launches xChange engine to power tokenized stock trading",
-    "url": "https://cointelegraph.com/news/kraken-xstocks-platform-xchange-engine-tokenized-stock-trading",
-    "source": "Cointelegraph",
-    "firstSeenAt": "2026-03-07T07:26:42.945Z",
-    "lastSeenAt": "2026-03-07T07:26:42.945Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "kraken",
-      "launches",
-      "xchange",
-      "engine",
-      "power",
-      "tokenized",
-      "stock",
-      "trading"
     ],
     "majorUpdate": false,
     "updateReason": null
@@ -100,69 +135,6 @@
       "rising",
       "volumes",
       "center"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "47caaff417f2a39b30a8d38d5931b135e2480564",
-    "title": "Kraken rolls out unified execution layer for xStocks tokenized equities called xChange",
-    "url": "https://www.theblock.co/post/392466/kraken-unified-execution-layer-xstocks-tokenized-equities-xchange",
-    "source": "The Block",
-    "firstSeenAt": "2026-03-06T07:37:18.862Z",
-    "lastSeenAt": "2026-03-06T07:37:18.862Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "kraken",
-      "rolls",
-      "unified",
-      "execution",
-      "layer",
-      "xstocks",
-      "tokenized",
-      "equities"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "d1bd97bbda65af2271435bb1d19572103723198c",
-    "title": "Solana seeing rising interest, but is it enough to boost SOL?",
-    "url": "https://ambcrypto.com/solana-seeing-rising-interest-but-is-it-enough-to-boost-sol",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-03-06T07:37:18.861Z",
-    "lastSeenAt": "2026-03-06T07:37:18.861Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "solana",
-      "seeing",
-      "rising",
-      "interest",
-      "enough",
-      "boost",
-      "transaction",
-      "volume"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "89e11606c74ae9718409ff38115fa857d8888837",
-    "title": "Solana ETFs still hold ‘impressive numbers’ even as token dives 57%",
-    "url": "https://cointelegraph.com/news/solana-etfs-impressive-numbers-token-dives-since-launch",
-    "source": "Cointelegraph",
-    "firstSeenAt": "2026-03-06T07:37:18.861Z",
-    "lastSeenAt": "2026-03-06T07:37:18.861Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "solana",
-      "etfs",
-      "still",
-      "hold",
-      "impressive",
-      "numbers",
-      "even",
-      "token"
     ],
     "majorUpdate": false,
     "updateReason": null

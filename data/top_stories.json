@@ -1,13 +1,79 @@
 {
   "meta": {
-    "generatedAt": "2026-03-07T07:26:42.784Z",
-    "totalCandidates": 102,
-    "solanaCandidates": 19,
+    "generatedAt": "2026-03-07T19:20:07.643Z",
+    "totalCandidates": 100,
+    "solanaCandidates": 18,
     "selected": 5,
     "tweetPool": 0,
     "narrativeKeywordsCount": 0
   },
   "items": [
+    {
+      "id": "https://www.coindesk.com/business/2026/03/07/circle-starts-using-usdc-stablecoin-for-internal-treasury-moves-settling-usd68-million",
+      "title": "Circle moves $68 million in just 30 minutes by using its own stablecoin for internal payments",
+      "url": "https://www.coindesk.com/business/2026/03/07/circle-starts-using-usdc-stablecoin-for-internal-treasury-moves-settling-usd68-million",
+      "source": "CoinDesk",
+      "publishedAt": "2026-03-07T15:03:26.000Z",
+      "summary": "The stablecoin issuer used its Mint platform for intercompany transfers, replacing bank wires that often take days to settle, CEO Jeremy Allaire said.",
+      "tags": [
+        "circle",
+        "moves",
+        "million"
+      ],
+      "topicBucket": "defi",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 8,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 4,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "136303ad2e41ad760ada06533d87a753fa60eb03",
+      "score": 22
+    },
+    {
+      "id": "https://ambcrypto.com/solana-price-registers-14-rally-how-sol-and-utility-protocols-are-shaping-crypto-in-q1-2026",
+      "title": "Solana price registers 14% rally, how SOL and utility protocols are shaping crypto in Q1 2026",
+      "url": "https://ambcrypto.com/solana-price-registers-14-rally-how-sol-and-utility-protocols-are-shaping-crypto-in-q1-2026",
+      "source": "AMB Crypto",
+      "publishedAt": "2026-03-07T11:30:00.000Z",
+      "summary": "The cryptocurrency industry entered a dynamic phase in the first quarter of 2026, characterized by […]",
+      "tags": [
+        "solana",
+        "price",
+        "registers"
+      ],
+      "topicBucket": "general",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 10,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 1,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "8df82ab18792291d864865340546520b29e27a13",
+      "score": 21
+    },
     {
       "id": "https://www.theblock.co/post/392733/first-us-state-level-stablecoin-bill-passes-in-florida",
       "title": "First US state-level stablecoin bill passes in Florida",
@@ -33,91 +99,25 @@
       "scoreBreakdown": {
         "relevanceScore": 8,
         "mentionScore": 0,
-        "recencyScore": 9,
+        "recencyScore": 8,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "c7558681ecafd28d8a52c1b40540bbce042b016e",
-      "score": 21
+      "score": 20
     },
     {
-      "id": "https://ambcrypto.com/bnb-chain-outpaces-rivals-in-stablecoin-activity-why-is-capital-moving-here",
-      "title": "BNB Chain outpaces rivals in stablecoin activity – Why is capital moving here?",
-      "url": "https://ambcrypto.com/bnb-chain-outpaces-rivals-in-stablecoin-activity-why-is-capital-moving-here",
-      "source": "AMB Crypto",
-      "publishedAt": "2026-03-07T01:00:42.000Z",
-      "summary": "BNB Chain is seeing significant stablecoin activity as its fast infrastructure supports high-frequency transfers.",
+      "id": "https://www.coindesk.com/markets/2026/03/06/vancouver-mayor-s-bitcoin-investment-proposal-blocked-by-city-provincial-law",
+      "title": "Vancouver mayor's bitcoin investment proposal blocked by city, provincial law",
+      "url": "https://www.coindesk.com/markets/2026/03/06/vancouver-mayor-s-bitcoin-investment-proposal-blocked-by-city-provincial-law",
+      "source": "CoinDesk",
+      "publishedAt": "2026-03-06T08:39:40.000Z",
+      "summary": "Officials say the Vancouver Charter limits city reserves to government debt, bank instruments and other traditional assets.",
       "tags": [
-        "chain",
-        "outpaces",
-        "rivals"
-      ],
-      "topicBucket": "infra",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 8,
-        "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 1,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "a5594ec664fd5bcc30bbc5e52bfe686d31b7ab3c",
-      "score": 19
-    },
-    {
-      "id": "https://decrypt.co/360284/florida-gov-ron-desantis-eyes-state-stablecoin-framework",
-      "title": "Florida Gov. Ron DeSantis Eyes State Stablecoin Framework Following Senate Passage",
-      "url": "https://decrypt.co/360284/florida-gov-ron-desantis-eyes-state-stablecoin-framework",
-      "source": "Decrypt",
-      "publishedAt": "2026-03-06T21:24:45.000Z",
-      "summary": "The bill establishes Florida-centric consumer protections and safeguards against money laundering",
-      "tags": [
-        "florida",
-        "desantis",
-        "eyes"
-      ],
-      "topicBucket": "defi",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 5,
-        "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 3,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "e533ace39a4ad9f047bf525301d6b257d4be4892",
-      "score": 18
-    },
-    {
-      "id": "https://ambcrypto.com/pump-fun-team-moves-1-75b-pump-can-bulls-offset-selling-pressure",
-      "title": "Pump.fun team moves 1.75B PUMP: Can bulls offset selling pressure?",
-      "url": "https://ambcrypto.com/pump-fun-team-moves-1-75b-pump-can-bulls-offset-selling-pressure",
-      "source": "AMB Crypto",
-      "publishedAt": "2026-03-07T03:00:36.000Z",
-      "summary": "PUMP team may be adding fresh pressure after recent token transfers.",
-      "tags": [
-        "pump",
-        "team",
-        "moves"
+        "vancouver",
+        "mayor",
+        "bitcoin"
       ],
       "topicBucket": "general",
       "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
@@ -130,29 +130,29 @@
       "narrativesMatched": [],
       "premiumNarrativesMatched": [],
       "scoreBreakdown": {
-        "relevanceScore": 5,
+        "relevanceScore": -1,
         "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 1,
+        "recencyScore": 8,
+        "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "699d5165d344a25fa3248153644210aea604e9dc",
-      "score": 16
+      "dedupeFingerprint": "25813ae53b410a1cd43e9a51a1e462fc056f614d",
+      "score": 11
     },
     {
-      "id": "https://cointelegraph.com/news/kraken-xstocks-platform-xchange-engine-tokenized-stock-trading",
-      "title": "Kraken launches xChange engine to power tokenized stock trading",
-      "url": "https://cointelegraph.com/news/kraken-xstocks-platform-xchange-engine-tokenized-stock-trading",
-      "source": "Cointelegraph",
-      "publishedAt": "2026-03-06T17:15:37.000Z",
-      "summary": "The new onchain trading engine from the xStocks platform enables trading of more than 70 tokenized equities across Ethereum and Solana.",
+      "id": "https://www.coindesk.com/markets/2026/03/07/bitcoin-slips-below-usd68-000-heading-into-the-weekend-as-dollar-posts-steepest-weekly-gain-in-a-year",
+      "title": "Bitcoin slips below $68,000 as dollar posts steepest weekly gain in a year",
+      "url": "https://www.coindesk.com/markets/2026/03/07/bitcoin-slips-below-usd68-000-heading-into-the-weekend-as-dollar-posts-steepest-weekly-gain-in-a-year",
+      "source": "CoinDesk",
+      "publishedAt": "2026-03-07T06:15:48.000Z",
+      "summary": "Most majors gave back Friday's gains, with solana down 4%, ether falling 4.4%, and 43% of bitcoin's supply now sitting at a loss according to Glassnode data.",
       "tags": [
-        "kraken",
-        "launches",
-        "xchange"
+        "bitcoin",
+        "slips",
+        "below"
       ],
-      "topicBucket": "general",
+      "topicBucket": "tokenomics",
       "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
       "mentionCount": 0,
       "xMentions": 0,
@@ -163,15 +163,15 @@
       "narrativesMatched": [],
       "premiumNarrativesMatched": [],
       "scoreBreakdown": {
-        "relevanceScore": 3,
+        "relevanceScore": -3,
         "mentionScore": 0,
         "recencyScore": 9,
-        "sourceScore": 0,
+        "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "db7cd0d83682f73e16a511ddd4fe5f889df371e9",
-      "score": 12
+      "dedupeFingerprint": "d8f124750216e7d6489df0410e4428dd0f441b5d",
+      "score": 0
     }
   ]
 }

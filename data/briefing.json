@@ -4,22 +4,22 @@
   "subtitle": "Top links from trusted desks",
   "items": [
     {
+      "type": "APPS",
+      "title": "Solana price registers 14% rally, how SOL and utility protocols are shaping crypto in Q1 2026",
+      "category": "APPS",
+      "source": "AMB Crypto",
+      "date": "2026-03-07",
+      "url": "https://ambcrypto.com/solana-price-registers-14-rally-how-sol-and-utility-protocols-are-shaping-crypto-in-q1-2026",
+      "whyYouShouldCare": "The 14% price rally for Solana indicates growing interest and potential utility for SOL and associated protocols in the evolving crypto landscape."
+    },
+    {
       "type": "ECOSYSTEM",
       "title": "Kraken launches xChange engine to power tokenized stock trading",
       "category": "ECOSYSTEM",
       "source": "Cointelegraph",
       "date": "2026-03-06",
       "url": "https://cointelegraph.com/news/kraken-xstocks-platform-xchange-engine-tokenized-stock-trading",
-      "whyYouShouldCare": "Kraken's xChange engine could enhance liquidity and trading options on Solana, potentially attracting more institutional interest in tokenized assets."
-    },
-    {
-      "type": "MARKET",
-      "title": "State of Solana: Payments",
-      "category": "MARKET",
-      "source": "Messari",
-      "date": "2026-03-05",
-      "url": "https://messari.io/article/state-of-solana-payments",
-      "whyYouShouldCare": "The latest payment metrics for Solana indicate growing adoption, which could strengthen its position as a viable platform for decentralized finance."
+      "whyYouShouldCare": "Kraken's xChange engine enhances the Solana ecosystem by enabling tokenized stock trading, potentially increasing liquidity and attracting new users."
     },
     {
       "type": "MARKET",
@@ -28,7 +28,7 @@
       "source": "CoinDesk",
       "date": "2026-03-06",
       "url": "https://www.coindesk.com/coindesk-indices/2026/03/06/coindesk-20-performance-update-aave-drops-4-3-as-all-index-constituents-trade-lower",
-      "whyYouShouldCare": "Aave's decline within the CoinDesk 20 highlights broader market pressures, which may impact investor sentiment towards Solana's ecosystem and its associated projects."
+      "whyYouShouldCare": "Aave's 4.3% decline, along with other index constituents, reflects broader market pressures that could impact Solana's liquidity and investor sentiment."
     }
   ]
 }
