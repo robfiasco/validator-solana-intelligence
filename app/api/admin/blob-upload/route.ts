@@ -28,6 +28,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
             onBeforeGenerateToken: async () => ({
                 allowedContentTypes: ["application/json", "text/plain"],
                 maximumSizeInBytes: 50 * 1024 * 1024,
+                allowOverwrite: true,
             }),
             onUploadCompleted: async () => {},
         });
