@@ -1,6 +1,7 @@
 # Gossip — Solana Intelligence Terminal
 
-![Gossip Signal Board Screenshot](./assets/signal-board.png)
+<img width="407" height="726" alt="image" src="https://github.com/user-attachments/assets/e63d54fe-4202-47a9-8d42-25b82f5b9bd3" />
+
 
 **v1.0.8** · https://gossip-app-rob-fiasco.vercel.app · Android APK available in Releases
 
@@ -16,7 +17,7 @@ to unlock premium intelligence for Seeker holders.
 
 ## Demo
 
-Demo video: [ADD DEMO VIDEO LINK]
+Demo video: [https://youtu.be/vrGX7jF2jUU?si=g3yhEwIvX7AYUtKj]
 
 Live preview: https://gossip-app-rob-fiasco.vercel.app
 Android APK: https://github.com/robfiasco/gossip-app/releases
