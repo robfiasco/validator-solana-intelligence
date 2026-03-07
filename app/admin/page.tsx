@@ -139,7 +139,7 @@ export default function AdminPage() {
     const cfg = statusConfig[status];
 
     return (
-        <main className="font-sans min-h-screen bg-[#0a0f1a] flex items-center justify-center p-6">
+        <main className="font-sans min-h-screen bg-[#0a0f1a] flex items-center justify-center p-6" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
             <div className="w-full max-w-sm space-y-5">
 
                 {/* Header */}
@@ -181,8 +181,8 @@ export default function AdminPage() {
                             ref={fileInputRef}
                             type="file"
                             accept=".json,application/json"
-                            className="hidden"
-                            onChange={(e) => handleFileSelect(e.target.files?.[0] ?? null)}
+                            style={{ display: 'none' }}
+                            onChange={(e) => { e.stopPropagation(); handleFileSelect(e.target.files?.[0] ?? null); }}
                             disabled={busy}
                         />
                         {file ? (

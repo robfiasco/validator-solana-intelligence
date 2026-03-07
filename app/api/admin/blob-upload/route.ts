@@ -4,14 +4,20 @@ import { handleUpload, type HandleUploadBody } from "@vercel/blob/client";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest): Promise<NextResponse> {
+    const token = process.env.BLOB_READ_WRITE_TOKEN;
+    if (!token) {
+        console.error("[blob-upload] BLOB_READ_WRITE_TOKEN is not set");
+        return NextResponse.json({ error: "Blob not configured" }, { status: 500 });
+    }
+
     const body = (await request.json()) as HandleUploadBody;
 
     try {
         const jsonResponse = await handleUpload({
+            token,
             body,
             request,
             onBeforeGenerateToken: async (_pathname, clientPayload) => {
-                // Validate the admin secret passed as clientPayload
                 const { secret } = JSON.parse(clientPayload ?? "{}");
                 if (!secret || secret !== process.env.ADMIN_SECRET) {
                     throw new Error("Unauthorized");
@@ -22,13 +28,14 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
                 };
             },
             onUploadCompleted: async () => {
-                // Nothing needed here — upload-signals stores the URL after upload
+                // Nothing needed here
             },
         });
 
         return NextResponse.json(jsonResponse);
     } catch (err) {
         const msg = err instanceof Error ? err.message : "Upload failed";
+        console.error("[blob-upload] handleUpload error:", msg);
         const status = msg === "Unauthorized" ? 401 : 400;
         return NextResponse.json({ error: msg }, { status });
     }
