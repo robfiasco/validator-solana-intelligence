@@ -1,9 +1,15 @@
 // Generates a client upload token for Vercel Blob.
-// Called by the @vercel/blob client SDK before uploading directly to blob storage.
+// Secret is validated via query param before handleUpload runs.
 import { handleUpload, type HandleUploadBody } from "@vercel/blob/client";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest): Promise<NextResponse> {
+    // Validate secret from query param before anything else
+    const secretParam = request.nextUrl.searchParams.get("secret");
+    if (!secretParam || secretParam !== process.env.ADMIN_SECRET) {
+        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
     const token = process.env.BLOB_READ_WRITE_TOKEN;
     if (!token) {
         console.error("[blob-upload] BLOB_READ_WRITE_TOKEN is not set");
@@ -17,26 +23,17 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
             token,
             body,
             request,
-            onBeforeGenerateToken: async (_pathname, clientPayload) => {
-                const { secret } = JSON.parse(clientPayload ?? "{}");
-                if (!secret || secret !== process.env.ADMIN_SECRET) {
-                    throw new Error("Unauthorized");
-                }
-                return {
-                    allowedContentTypes: ["application/json", "text/plain"],
-                    maximumSizeInBytes: 50 * 1024 * 1024, // 50 MB
-                };
-            },
-            onUploadCompleted: async () => {
-                // Nothing needed here
-            },
+            onBeforeGenerateToken: async () => ({
+                allowedContentTypes: ["application/json", "text/plain"],
+                maximumSizeInBytes: 50 * 1024 * 1024,
+            }),
+            onUploadCompleted: async () => {},
         });
 
         return NextResponse.json(jsonResponse);
     } catch (err) {
         const msg = err instanceof Error ? err.message : "Upload failed";
         console.error("[blob-upload] handleUpload error:", msg);
-        const status = msg === "Unauthorized" ? 401 : 400;
-        return NextResponse.json({ error: msg }, { status });
+        return NextResponse.json({ error: msg }, { status: 400 });
     }
 }
