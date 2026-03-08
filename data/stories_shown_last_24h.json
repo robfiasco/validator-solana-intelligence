@@ -1,25 +1,11 @@
 [
   {
-    "id": "45ad358b99b48b3fb9db490f12d7d3a647052029",
-    "title": "Signal Board Summary 2026-03-07",
-    "url": "",
-    "source": "signal-board",
-    "firstSeenAt": "2026-03-07T19:20:15.678Z",
-    "lastSeenAt": "2026-03-07T19:20:15.678Z",
-    "sectionShown": "signal",
-    "topicTags": [
-      "signal-board"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
     "id": "b347a75e9cca91ded89b402dcaecaeb524bb1f65",
     "title": "CoinDesk 20 performance update: Aave drops 4.3% as all index constituents trade lower",
     "url": "https://www.coindesk.com/coindesk-indices/2026/03/06/coindesk-20-performance-update-aave-drops-4-3-as-all-index-constituents-trade-lower",
     "source": "CoinDesk",
     "firstSeenAt": "2026-03-06T19:32:43.075Z",
-    "lastSeenAt": "2026-03-07T19:20:07.807Z",
+    "lastSeenAt": "2026-03-08T07:29:30.139Z",
     "sectionShown": "briefing",
     "topicTags": [
       "coindesk",
@@ -40,7 +26,7 @@
     "url": "https://cointelegraph.com/news/kraken-xstocks-platform-xchange-engine-tokenized-stock-trading",
     "source": "Cointelegraph",
     "firstSeenAt": "2026-03-07T07:26:42.945Z",
-    "lastSeenAt": "2026-03-07T19:20:07.807Z",
+    "lastSeenAt": "2026-03-08T07:29:30.139Z",
     "sectionShown": "briefing",
     "topicTags": [
       "kraken",
@@ -51,6 +37,41 @@
       "tokenized",
       "stock",
       "trading"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "db0624ea890d88a9fdbfa4976af14cef3a10d350",
+    "title": "Solana – What to expect when bullish fundamentals meet bearish market reality",
+    "url": "https://ambcrypto.com/solana-what-to-expect-when-bullish-fundamentals-meet-bearish-market-reality",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-03-08T07:29:30.138Z",
+    "lastSeenAt": "2026-03-08T07:29:30.138Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "solana",
+      "what",
+      "expect",
+      "when",
+      "bullish",
+      "fundamentals",
+      "meet",
+      "bearish"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "45ad358b99b48b3fb9db490f12d7d3a647052029",
+    "title": "Signal Board Summary 2026-03-07",
+    "url": "",
+    "source": "signal-board",
+    "firstSeenAt": "2026-03-07T19:20:15.678Z",
+    "lastSeenAt": "2026-03-07T19:20:15.678Z",
+    "sectionShown": "signal",
+    "topicTags": [
+      "signal-board"
     ],
     "majorUpdate": false,
     "updateReason": null
@@ -72,69 +93,6 @@
       "protocols",
       "shaping",
       "crypto"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "468e5d2a4d5bc13965a1d9d73c05b3adcc53011b",
-    "title": "State of Solana: Payments",
-    "url": "https://messari.io/article/state-of-solana-payments",
-    "source": "Messari",
-    "firstSeenAt": "2026-03-05T20:32:09.989Z",
-    "lastSeenAt": "2026-03-07T07:26:42.946Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "state",
-      "solana",
-      "payments",
-      "total",
-      "payment",
-      "volume",
-      "network",
-      "surged"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "2cb9e9ddf1ccdd5c945a2b055196d8d2701a1e6f",
-    "title": "Ripple adds Coinbase crypto futures to its $3 trillion clearing platform",
-    "url": "https://www.coindesk.com/business/2026/03/05/ripple-adds-coinbase-crypto-futures-to-its-usd3-trillion-trading-venue",
-    "source": "CoinDesk",
-    "firstSeenAt": "2026-03-06T19:32:43.075Z",
-    "lastSeenAt": "2026-03-06T19:32:43.075Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "ripple",
-      "adds",
-      "coinbase",
-      "crypto",
-      "futures",
-      "trillion",
-      "clearing",
-      "platform"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "4770a7e23ecb863f21a104fda97d0bfb6a17688e",
-    "title": "Can Solana’s 755% payment surge trigger a SOL supercycle?",
-    "url": "https://ambcrypto.com/can-solanas-755-payment-surge-trigger-a-sol-supercycle",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-03-06T19:32:43.075Z",
-    "lastSeenAt": "2026-03-06T19:32:43.075Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "solana",
-      "payment",
-      "surge",
-      "trigger",
-      "supercycle",
-      "rising",
-      "volumes",
-      "center"
     ],
     "majorUpdate": false,
     "updateReason": null

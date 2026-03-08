@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-03-07T19:20:07.643Z",
-    "totalCandidates": 100,
-    "solanaCandidates": 18,
+    "generatedAt": "2026-03-08T07:29:29.973Z",
+    "totalCandidates": 99,
+    "solanaCandidates": 20,
     "selected": 5,
     "tweetPool": 0,
     "narrativeKeywordsCount": 0
@@ -33,25 +33,25 @@
       "scoreBreakdown": {
         "relevanceScore": 8,
         "mentionScore": 0,
-        "recencyScore": 10,
+        "recencyScore": 9,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "136303ad2e41ad760ada06533d87a753fa60eb03",
-      "score": 22
+      "score": 21
     },
     {
-      "id": "https://ambcrypto.com/solana-price-registers-14-rally-how-sol-and-utility-protocols-are-shaping-crypto-in-q1-2026",
-      "title": "Solana price registers 14% rally, how SOL and utility protocols are shaping crypto in Q1 2026",
-      "url": "https://ambcrypto.com/solana-price-registers-14-rally-how-sol-and-utility-protocols-are-shaping-crypto-in-q1-2026",
+      "id": "https://ambcrypto.com/solana-what-to-expect-when-bullish-fundamentals-meet-bearish-market-reality",
+      "title": "Solana – What to expect when bullish fundamentals meet bearish market reality",
+      "url": "https://ambcrypto.com/solana-what-to-expect-when-bullish-fundamentals-meet-bearish-market-reality",
       "source": "AMB Crypto",
-      "publishedAt": "2026-03-07T11:30:00.000Z",
-      "summary": "The cryptocurrency industry entered a dynamic phase in the first quarter of 2026, characterized by […]",
+      "publishedAt": "2026-03-08T04:00:08.000Z",
+      "summary": "While multi-year conviction remains strong, it doesn't mean everything for Solana.",
       "tags": [
         "solana",
-        "price",
-        "registers"
+        "what",
+        "expect"
       ],
       "topicBucket": "general",
       "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
@@ -64,15 +64,48 @@
       "narrativesMatched": [],
       "premiumNarrativesMatched": [],
       "scoreBreakdown": {
-        "relevanceScore": 10,
+        "relevanceScore": 8,
         "mentionScore": 0,
         "recencyScore": 10,
         "sourceScore": 1,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "8df82ab18792291d864865340546520b29e27a13",
-      "score": 21
+      "dedupeFingerprint": "db0624ea890d88a9fdbfa4976af14cef3a10d350",
+      "score": 19
+    },
+    {
+      "id": "https://ambcrypto.com/youll-burn-down-your-home-trump-crypto-advisor-slams-banks-position-on-clarity-act",
+      "title": "‘You’ll burn down your home?’ – Trump crypto advisor slams banks’ position on CLARITY Act",
+      "url": "https://ambcrypto.com/youll-burn-down-your-home-trump-crypto-advisor-slams-banks-position-on-clarity-act",
+      "source": "AMB Crypto",
+      "publishedAt": "2026-03-08T01:00:30.000Z",
+      "summary": "Stablecoins emerged as the third largest buyer of U.S T-bills, reinforcing the White House's bet.",
+      "tags": [
+        "burn",
+        "down",
+        "your"
+      ],
+      "topicBucket": "tokenomics",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 8,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 1,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "b78d13e0cf51aa7635f8401d92bfc4e91dd1fd31",
+      "score": 19
     },
     {
       "id": "https://www.theblock.co/post/392733/first-us-state-level-stablecoin-bill-passes-in-florida",
@@ -99,28 +132,28 @@
       "scoreBreakdown": {
         "relevanceScore": 8,
         "mentionScore": 0,
-        "recencyScore": 8,
+        "recencyScore": 7,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "c7558681ecafd28d8a52c1b40540bbce042b016e",
-      "score": 20
+      "score": 19
     },
     {
-      "id": "https://www.coindesk.com/markets/2026/03/06/vancouver-mayor-s-bitcoin-investment-proposal-blocked-by-city-provincial-law",
-      "title": "Vancouver mayor's bitcoin investment proposal blocked by city, provincial law",
-      "url": "https://www.coindesk.com/markets/2026/03/06/vancouver-mayor-s-bitcoin-investment-proposal-blocked-by-city-provincial-law",
-      "source": "CoinDesk",
-      "publishedAt": "2026-03-06T08:39:40.000Z",
-      "summary": "Officials say the Vancouver Charter limits city reserves to government debt, bank instruments and other traditional assets.",
+      "id": "https://ambcrypto.com/ethereum-blackrock-drops-eth-etf-staking-fee-after-firm-issues-warning",
+      "title": "Ethereum – BlackRock drops ETH ETF staking fee as firm issues ‘warning’",
+      "url": "https://ambcrypto.com/ethereum-blackrock-drops-eth-etf-staking-fee-after-firm-issues-warning",
+      "source": "AMB Crypto",
+      "publishedAt": "2026-03-07T20:00:59.000Z",
+      "summary": "Culper Research has shorted ETH citing underlying Ethereum staking and validator crisis.",
       "tags": [
-        "vancouver",
-        "mayor",
-        "bitcoin"
+        "ethereum",
+        "blackrock",
+        "drops"
       ],
-      "topicBucket": "general",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "topicBucket": "infra",
+      "whyItMatters": "Infrastructure changes here can reset risk and throughput expectations.",
       "mentionCount": 0,
       "xMentions": 0,
       "who": [],
@@ -130,48 +163,15 @@
       "narrativesMatched": [],
       "premiumNarrativesMatched": [],
       "scoreBreakdown": {
-        "relevanceScore": -1,
+        "relevanceScore": 5,
         "mentionScore": 0,
-        "recencyScore": 8,
-        "sourceScore": 4,
+        "recencyScore": 10,
+        "sourceScore": 1,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "25813ae53b410a1cd43e9a51a1e462fc056f614d",
-      "score": 11
-    },
-    {
-      "id": "https://www.coindesk.com/markets/2026/03/07/bitcoin-slips-below-usd68-000-heading-into-the-weekend-as-dollar-posts-steepest-weekly-gain-in-a-year",
-      "title": "Bitcoin slips below $68,000 as dollar posts steepest weekly gain in a year",
-      "url": "https://www.coindesk.com/markets/2026/03/07/bitcoin-slips-below-usd68-000-heading-into-the-weekend-as-dollar-posts-steepest-weekly-gain-in-a-year",
-      "source": "CoinDesk",
-      "publishedAt": "2026-03-07T06:15:48.000Z",
-      "summary": "Most majors gave back Friday's gains, with solana down 4%, ether falling 4.4%, and 43% of bitcoin's supply now sitting at a loss according to Glassnode data.",
-      "tags": [
-        "bitcoin",
-        "slips",
-        "below"
-      ],
-      "topicBucket": "tokenomics",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": -3,
-        "mentionScore": 0,
-        "recencyScore": 9,
-        "sourceScore": 4,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "d8f124750216e7d6489df0410e4428dd0f441b5d",
-      "score": 0
+      "dedupeFingerprint": "175df8f49ceb05dbc2035592ae14c772ffb40280",
+      "score": 16
     }
   ]
 }
