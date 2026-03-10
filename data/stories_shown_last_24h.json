@@ -1,5 +1,68 @@
 [
   {
+    "id": "da616f6727273cd3835dd6c20ce6550ddad09d39",
+    "title": "Jito Foundation acquires and revives SolanaFloor following shutdown over $27 million exploit",
+    "url": "https://www.coindesk.com/business/2026/03/10/jito-foundation-acquires-and-revives-solanafloor-following-shutdown-over-usd27-million-exploit",
+    "source": "CoinDesk",
+    "firstSeenAt": "2026-03-10T19:36:55.572Z",
+    "lastSeenAt": "2026-03-10T19:36:55.572Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "jito",
+      "foundation",
+      "acquires",
+      "revives",
+      "solanafloor",
+      "following",
+      "shutdown",
+      "over"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "1790d217857b5bbb039e0b430e39977958880536",
+    "title": "Solana, XRP ETFs take different paths as crypto investors pile in",
+    "url": "https://www.coindesk.com/markets/2026/03/10/solana-etfs-find-institutional-backing-while-xrp-funds-depend-more-on-retail",
+    "source": "CoinDesk",
+    "firstSeenAt": "2026-03-10T19:36:55.571Z",
+    "lastSeenAt": "2026-03-10T19:36:55.571Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "solana",
+      "etfs",
+      "take",
+      "different",
+      "paths",
+      "crypto",
+      "investors",
+      "pile"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "8e057c3ae24c5f1f22df54d600de6ba8304b4c47",
+    "title": "BONK: Will rising whale interest help the memecoin rise 22%?",
+    "url": "https://ambcrypto.com/bonk-will-rising-whale-interest-help-the-memecoin-rise-22",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-03-10T19:36:55.571Z",
+    "lastSeenAt": "2026-03-10T19:36:55.571Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "bonk",
+      "will",
+      "rising",
+      "whale",
+      "interest",
+      "help",
+      "memecoin",
+      "rise"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "7170a8d3489892e741ad59da3d99b6a741509ca4",
     "title": "Global insurance broker Aon tests stablecoin payments with Coinbase, Paxos",
     "url": "https://www.coindesk.com/business/2026/03/09/global-insurance-broker-aon-tests-stablecoin-payments-with-coinbase-paxos",
@@ -114,48 +177,6 @@
       "after",
       "platform",
       "shutdown"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "5fa73c2524968004faa8d7ceb64b1cf7953d053b",
-    "title": "What happened to Bitcoin, Ethereum, Solana, and XRP ETFs this week?",
-    "url": "https://ambcrypto.com/what-happened-to-bitcoin-ethereum-solana-and-xrp-etfs-this-week",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-03-08T19:21:33.681Z",
-    "lastSeenAt": "2026-03-09T07:49:12.951Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "what",
-      "happened",
-      "bitcoin",
-      "ethereum",
-      "solana",
-      "etfs",
-      "this",
-      "week"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "24f25c34d6b5be526b5df76c68a9c919c14d2803",
-    "title": "Solana transfers $650B in stablecoins – Liquidity flows away from Ethereum",
-    "url": "https://ambcrypto.com/solana-transfers-650b-in-stablecoins-liquidity-flows-away-from-ethereum",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-03-09T07:49:12.951Z",
-    "lastSeenAt": "2026-03-09T07:49:12.951Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "solana",
-      "transfers",
-      "650b",
-      "stablecoins",
-      "liquidity",
-      "flows",
-      "away",
-      "from"
     ],
     "majorUpdate": false,
     "updateReason": null

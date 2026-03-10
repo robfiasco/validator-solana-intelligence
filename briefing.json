@@ -5,30 +5,30 @@
   "items": [
     {
       "type": "APPS",
-      "title": "Wall Street funneled $540M into US Solana ETFs in Q4: Bloomberg",
+      "title": "Solana, XRP ETFs take different paths as crypto investors pile in",
       "category": "APPS",
-      "source": "Cointelegraph",
+      "source": "CoinDesk",
       "date": "2026-03-10",
-      "url": "https://cointelegraph.com/news/financial-institutions-bought-540m-solana-etfs-q4",
-      "whyYouShouldCare": "The influx of $540M into US Solana ETFs indicates growing institutional interest, potentially enhancing SOL's liquidity and market positioning."
+      "url": "https://www.coindesk.com/markets/2026/03/10/solana-etfs-find-institutional-backing-while-xrp-funds-depend-more-on-retail",
+      "whyYouShouldCare": "The contrasting paths of Solana and XRP ETFs highlight differing investor confidence levels, which could impact SOL's market positioning and liquidity."
     },
     {
       "type": "APPS",
-      "title": "Ether, solana, XRP jump higher as Trump signals Iran war nearing end",
+      "title": "BONK: Will rising whale interest help the memecoin rise 22%?",
       "category": "APPS",
-      "source": "CoinDesk",
+      "source": "AMB Crypto",
       "date": "2026-03-10",
-      "url": "https://www.coindesk.com/markets/2026/03/10/ether-solana-xrp-jump-higher-as-trump-signals-iran-war-nearing-end",
-      "whyYouShouldCare": "The rise in SOL's value alongside Ether and XRP suggests a positive market sentiment that could bolster Solana's ecosystem usage."
+      "url": "https://ambcrypto.com/bonk-will-rising-whale-interest-help-the-memecoin-rise-22",
+      "whyYouShouldCare": "Increased whale interest in BONK may drive its price up, potentially influencing broader market sentiment and liquidity dynamics within the Solana ecosystem."
     },
     {
-      "type": "MARKET",
-      "title": "Global insurance broker Aon tests stablecoin payments with Coinbase, Paxos",
-      "category": "MARKET",
+      "type": "RISK",
+      "title": "Jito Foundation acquires and revives SolanaFloor following shutdown over $27 million exploit",
+      "category": "RISK",
       "source": "CoinDesk",
-      "date": "2026-03-09",
-      "url": "https://www.coindesk.com/business/2026/03/09/global-insurance-broker-aon-tests-stablecoin-payments-with-coinbase-paxos",
-      "whyYouShouldCare": "Aon's testing of stablecoin payments signals increasing adoption of crypto in traditional finance, which may benefit Solana's ecosystem through expanded use cases."
+      "date": "2026-03-10",
+      "url": "https://www.coindesk.com/business/2026/03/10/jito-foundation-acquires-and-revives-solanafloor-following-shutdown-over-usd27-million-exploit",
+      "whyYouShouldCare": "The Jito Foundation's revival of SolanaFloor after a significant exploit underscores ongoing efforts to enhance security and trust in the Solana ecosystem."
     }
   ]
 }

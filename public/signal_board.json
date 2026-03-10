@@ -1,26 +1,26 @@
 {
   "date": "2026-03-10",
-  "generated_at_utc": "2026-03-10T07:39:24.885Z",
-  "ctxMarket": "Attention is on institutional flows into Solana ETFs and a surge in payment activity on the network. Solana’s role in stablecoin settlements is also drawing interest, especially after recent tests by major financial firms.",
-  "ctxTalking": "• Wall Street’s $540M investment in US Solana ETFs, led by advisors and hedge funds\n• Solana, along with other altcoins, reacting to geopolitical developments and risk sentiment\n• Major insurance broker Aon piloting stablecoin payments using Solana rails",
-  "ctxMatters": "Institutional adoption via ETFs signals growing mainstream acceptance of Solana. The network’s rapid payment volume growth and use in real-world settlement tests may reinforce its position as a payments infrastructure. These developments could influence future integrations and partnerships across finance and insurance sectors.",
-  "ctxSignal": "Signal: Institutional ETF flows and real-world payment tests highlight sustained interest in Solana’s utility.\nNoise: Short-term price moves tied to geopolitical headlines may not reflect underlying network fundamentals.",
-  "ctxGlossary": "ETF — Exchange-traded fund, a regulated investment vehicle tracking an asset or index\nStablecoin — A cryptocurrency pegged to a stable asset, such as the US dollar",
+  "generated_at_utc": "2026-03-10T19:37:04.593Z",
+  "ctxMarket": "Attention is focused on Solana’s institutional inflows and ecosystem developments, despite recent outflows from Solana funds. Payment volume and stablecoin activity on Solana have surged, drawing comparisons to other blockchains.",
+  "ctxTalking": "• Institutional demand for Solana ETFs, with Wall Street and investment advisors leading recent inflows\n• Jito Foundation’s acquisition and revival of SolanaFloor after a major exploit at its parent company\n• Rising whale interest in Solana-based meme coin BONK and speculation about its price movement",
+  "ctxMatters": "Institutional participation in Solana ETFs signals growing mainstream interest, even as short-term fund outflows persist. The SolanaFloor acquisition highlights ongoing efforts to restore ecosystem infrastructure after security incidents. Increased payment and stablecoin activity may reinforce Solana’s position in blockchain payments.",
+  "ctxSignal": "Signal: Institutional ETF inflows and payment volume growth point to sustained ecosystem engagement.\nNoise: Speculation about BONK’s price trajectory lacks concrete backing beyond whale activity.",
+  "ctxGlossary": "ETF — Exchange-traded fund, a tradable investment product tracking an asset or index\nWhale — An entity holding large amounts of a cryptocurrency, capable of influencing markets",
   "readMore": [
     {
-      "title": "Wall Street funneled $540M into US Solana ETFs in Q4",
-      "source": "Cointelegraph",
-      "url": "https://cointelegraph.com/news/financial-institutions-bought-540m-solana-etfs-q4"
+      "title": "BONK",
+      "source": "AMB Crypto",
+      "url": "https://ambcrypto.com/bonk-will-rising-whale-interest-help-the-memecoin-rise-22"
     },
     {
-      "title": "Ether, solana, XRP jump higher as Trump signals Iran war nearing end",
+      "title": "Solana, XRP ETFs take different paths as crypto investors pile in",
       "source": "CoinDesk",
-      "url": "https://www.coindesk.com/markets/2026/03/10/ether-solana-xrp-jump-higher-as-trump-signals-iran-war-nearing-end"
+      "url": "https://www.coindesk.com/markets/2026/03/10/solana-etfs-find-institutional-backing-while-xrp-funds-depend-more-on-retail"
     },
     {
-      "title": "State of Solana",
-      "source": "Messari",
-      "url": "https://messari.io/article/state-of-solana-payments"
+      "title": "Jito Foundation acquires SolanaFloor days after platform shutdown",
+      "source": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/jito-foundation-acquires-solanafloor-to-revive-solana-ecosystem-journalism"
     }
   ]
 }
