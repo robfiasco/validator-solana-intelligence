@@ -1,5 +1,68 @@
 [
   {
+    "id": "065471f21fc9f374ab345df592063a94756492cd",
+    "title": "President Trump Is Hosting Another Exclusive Event for Meme Coin Holders",
+    "url": "https://decrypt.co/360954/president-trump-hosting-another-exclusive-event-meme-coin-holders",
+    "source": "Decrypt",
+    "firstSeenAt": "2026-03-13T07:43:17.984Z",
+    "lastSeenAt": "2026-03-13T07:43:17.984Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "president",
+      "trump",
+      "hosting",
+      "another",
+      "exclusive",
+      "event",
+      "meme",
+      "coin"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "fc0f0b9fce1e5bd27d8089f3fcac887e59f98dcc",
+    "title": "Bitcoin above $71,000, ETH, SOL, ADA zoom higher as cryptos shrugs off stock weakness",
+    "url": "https://www.coindesk.com/markets/2026/03/13/bitcoin-above-usd71-000-eth-sol-ada-zoom-higher-as-cryptos-shrugs-off-stock-weakness",
+    "source": "CoinDesk",
+    "firstSeenAt": "2026-03-13T07:43:17.984Z",
+    "lastSeenAt": "2026-03-13T07:43:17.984Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "bitcoin",
+      "above",
+      "zoom",
+      "higher",
+      "cryptos",
+      "shrugs",
+      "stock",
+      "weakness"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "fb28d90fb46958341988f81c27072f6f804fc4a9",
+    "title": "Binance data reveals insiders continue to dump TRUMP memecoins as its price hits a record low",
+    "url": "https://cryptoslate.com/binance-data-reveals-insiders-continue-to-dump-trump-memecoins-as-its-price-hits-a-record-low",
+    "source": "CryptoSlate",
+    "firstSeenAt": "2026-03-13T07:43:17.983Z",
+    "lastSeenAt": "2026-03-13T07:43:17.983Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "binance",
+      "data",
+      "reveals",
+      "insiders",
+      "continue",
+      "dump",
+      "trump",
+      "memecoins"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "610b452ae6761b9cf564cd0ed9ee4a5c424d04d9",
     "title": "FTX estate moves $17M in Solana while network staking activity remains strong",
     "url": "https://ambcrypto.com/ftx-estate-moves-17m-in-solana-while-network-staking-activity-remains-strong",
@@ -177,69 +240,6 @@
       "impact",
       "link",
       "powers"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "1790d217857b5bbb039e0b430e39977958880536",
-    "title": "Solana, XRP ETFs take different paths as crypto investors pile in",
-    "url": "https://www.coindesk.com/markets/2026/03/10/solana-etfs-find-institutional-backing-while-xrp-funds-depend-more-on-retail",
-    "source": "CoinDesk",
-    "firstSeenAt": "2026-03-10T19:36:55.571Z",
-    "lastSeenAt": "2026-03-11T07:41:59.992Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "solana",
-      "etfs",
-      "take",
-      "different",
-      "paths",
-      "crypto",
-      "investors",
-      "pile"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "02a9e4742ddda379c9a412ab439e200c5dbb2ae7",
-    "title": "Nasdaq-listed Solmate proposes reverse stock split to build Solana hub in UAE",
-    "url": "https://www.theblock.co/post/393130/solmate-proposes-stock-split-solana-strategy",
-    "source": "The Block",
-    "firstSeenAt": "2026-03-11T07:41:59.991Z",
-    "lastSeenAt": "2026-03-11T07:41:59.991Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "nasdaq",
-      "listed",
-      "solmate",
-      "proposes",
-      "reverse",
-      "stock",
-      "split",
-      "build"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "26e1ab07952e0687b926d80682a7141a64bf3892",
-    "title": "Trump Meme Coin Down 96% From Peak as President's Approval Ratings Sink",
-    "url": "https://decrypt.co/360616/trump-meme-coin-down-96-peak-approval-ratings-sink",
-    "source": "Decrypt",
-    "firstSeenAt": "2026-03-11T07:41:59.991Z",
-    "lastSeenAt": "2026-03-11T07:41:59.991Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "trump",
-      "meme",
-      "coin",
-      "down",
-      "from",
-      "peak",
-      "president",
-      "approval"
     ],
     "majorUpdate": false,
     "updateReason": null

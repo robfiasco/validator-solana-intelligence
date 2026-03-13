@@ -1,34 +1,34 @@
 {
-  "date": "2026-03-12",
+  "date": "2026-03-13",
   "title": "TODAY'S SOLANA BRIEFING",
   "subtitle": "Top links from trusted desks",
   "items": [
     {
-      "type": "MARKET",
-      "title": "FTX estate moves $17M in Solana while network staking activity remains strong",
-      "category": "MARKET",
-      "source": "AMB Crypto",
+      "type": "APPS",
+      "title": "Binance data reveals insiders continue to dump TRUMP memecoins as its price hits a record low",
+      "category": "APPS",
+      "source": "CryptoSlate",
       "date": "2026-03-12",
-      "url": "https://ambcrypto.com/ftx-estate-moves-17m-in-solana-while-network-staking-activity-remains-strong",
-      "whyYouShouldCare": "The FTX estate's $17M transfer in Solana highlights ongoing liquidity and confidence in the network, despite past controversies."
+      "url": "https://cryptoslate.com/binance-data-reveals-insiders-continue-to-dump-trump-memecoins-as-its-price-hits-a-record-low",
+      "whyYouShouldCare": "The ongoing sell-off of TRUMP memecoins by insiders indicates a lack of confidence, which could impact market sentiment and liquidity for related assets."
     },
     {
       "type": "APPS",
-      "title": "Pump.fun becomes Solana’s first $1B revenue platform as Ethereum, Base, BSC and Monad subdomains hint at cross-chain move",
+      "title": "President Trump Is Hosting Another Exclusive Event for Meme Coin Holders",
       "category": "APPS",
-      "source": "The Block",
+      "source": "Decrypt",
       "date": "2026-03-12",
-      "url": "https://www.theblock.co/post/393358/pump-fun-becomes-solanas-first-1b-revenue-platform-as-ethereum-base-bsc-and-monad-subdomains-hint-at-cross-chain-move",
-      "whyYouShouldCare": "Pump.fun achieving $1B in revenue signals strong ecosystem growth and potential for cross-chain integration, enhancing Solana's competitive positioning."
+      "url": "https://decrypt.co/360954/president-trump-hosting-another-exclusive-event-meme-coin-holders",
+      "whyYouShouldCare": "Trump's exclusive event for meme coin holders may drive speculative interest and engagement, potentially influencing the broader market dynamics around meme coins."
     },
     {
       "type": "APPS",
-      "title": "Polychain backs VeryAI’s $10M raise to build palm-scan identity system on Solana",
+      "title": "Bitcoin above $71,000, ETH, SOL, ADA zoom higher as cryptos shrugs off stock weakness",
       "category": "APPS",
-      "source": "Cointelegraph",
-      "date": "2026-03-12",
-      "url": "https://cointelegraph.com/news/polychain-backs-veryai-s-10m-raise-to-build-palm-scan-identity-system-on-solana",
-      "whyYouShouldCare": "Polychain's investment in VeryAI for a palm-scan identity system on Solana indicates increasing interest in innovative applications within the ecosystem."
+      "source": "CoinDesk",
+      "date": "2026-03-13",
+      "url": "https://www.coindesk.com/markets/2026/03/13/bitcoin-above-usd71-000-eth-sol-ada-zoom-higher-as-cryptos-shrugs-off-stock-weakness",
+      "whyYouShouldCare": "Bitcoin's rise above $71,000 alongside gains in ETH, SOL, and ADA suggests a strengthening crypto market, which could enhance liquidity and usage across the ecosystem."
     }
   ]
 }

@@ -1,112 +1,13 @@
 {
   "meta": {
-    "generatedAt": "2026-03-12T19:41:03.550Z",
-    "totalCandidates": 95,
-    "solanaCandidates": 30,
+    "generatedAt": "2026-03-13T07:43:17.821Z",
+    "totalCandidates": 96,
+    "solanaCandidates": 21,
     "selected": 5,
     "tweetPool": 0,
     "narrativeKeywordsCount": 0
   },
   "items": [
-    {
-      "id": "https://ambcrypto.com/pump-fun-moves-beyond-solana-heres-why-stablecoin-flows-matter-now",
-      "title": "Pump.fun moves beyond Solana: Here’s why stablecoin flows matter now!",
-      "url": "https://ambcrypto.com/pump-fun-moves-beyond-solana-heres-why-stablecoin-flows-matter-now",
-      "source": "AMB Crypto",
-      "publishedAt": "2026-03-12T15:00:33.000Z",
-      "summary": "Solana’s on-chain activity is booming, but Pump.fun’s expansion could change the game.",
-      "tags": [
-        "pump",
-        "moves",
-        "beyond"
-      ],
-      "topicBucket": "defi",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 21,
-        "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 1,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "a8989f4c8f7eec193d6587ac7ed592422392d7d2",
-      "score": 32
-    },
-    {
-      "id": "https://ambcrypto.com/ftx-estate-moves-17m-in-solana-while-network-staking-activity-remains-strong",
-      "title": "FTX estate moves $17M in Solana while network staking activity remains strong",
-      "url": "https://ambcrypto.com/ftx-estate-moves-17m-in-solana-while-network-staking-activity-remains-strong",
-      "source": "AMB Crypto",
-      "publishedAt": "2026-03-12T17:46:20.000Z",
-      "summary": "Alameda Research unstaked $17M in SOL for creditor repayments, but Solana’s staking data shows net positive inflows.",
-      "tags": [
-        "estate",
-        "moves",
-        "solana"
-      ],
-      "topicBucket": "market",
-      "whyItMatters": "Infrastructure changes here can reset risk and throughput expectations.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 19,
-        "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 1,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "610b452ae6761b9cf564cd0ed9ee4a5c424d04d9",
-      "score": 30
-    },
-    {
-      "id": "https://www.theblock.co/post/393358/pump-fun-becomes-solanas-first-1b-revenue-platform-as-ethereum-base-bsc-and-monad-subdomains-hint-at-cross-chain-move",
-      "title": "Pump.fun becomes Solana’s first $1B revenue platform as Ethereum, Base, BSC and Monad subdomains hint at cross-chain move",
-      "url": "https://www.theblock.co/post/393358/pump-fun-becomes-solanas-first-1b-revenue-platform-as-ethereum-base-bsc-and-monad-subdomains-hint-at-cross-chain-move",
-      "source": "The Block",
-      "publishedAt": "2026-03-12T10:30:55.000Z",
-      "summary": "Pump.fun tops $1 billion in revenue as domain records reveal Ethereum, Base, BSC, and Monad subdomains amid potential cross-chain expansion.",
-      "tags": [
-        "pump",
-        "becomes",
-        "solana"
-      ],
-      "topicBucket": "general",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 13,
-        "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 4,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "6a3793535896e3d607fb409283d09e090a733c3e",
-      "score": 27
-    },
     {
       "id": "https://messari.io/article/in-the-stables-the-rise-of-yield-bearing-stablecoins",
       "title": "In The Stables: The Rise of Yield-Bearing Stablecoins",
@@ -132,13 +33,46 @@
       "scoreBreakdown": {
         "relevanceScore": 11,
         "mentionScore": 0,
-        "recencyScore": 10,
+        "recencyScore": 9,
         "sourceScore": 3,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "382324d40ff86a38374ae4b585c873ab7924a5d5",
-      "score": 24
+      "score": 23
+    },
+    {
+      "id": "https://www.theblock.co/post/393323/lido-stablecoin-vault",
+      "title": "Lido cleans up Earn offering, rolls outs first stablecoin vault with USDT and USDC",
+      "url": "https://www.theblock.co/post/393323/lido-stablecoin-vault",
+      "source": "The Block",
+      "publishedAt": "2026-03-12T15:00:00.000Z",
+      "summary": "Lido is consolidating its Earn offering into EarnETH and EarnUSD, the latter of which represents its first stablecoin vault.",
+      "tags": [
+        "lido",
+        "cleans",
+        "earn"
+      ],
+      "topicBucket": "defi",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 8,
+        "mentionScore": 0,
+        "recencyScore": 9,
+        "sourceScore": 4,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "ad0a091ebc0a02f4fe77d49f9ba7db126ea8b72c",
+      "score": 21
     },
     {
       "id": "https://www.theblock.co/post/393378/grayscale-debuts-avalanche-staking-etf-on-nasdaq-under-ticker-gava",
@@ -165,13 +99,79 @@
       "scoreBreakdown": {
         "relevanceScore": 8,
         "mentionScore": 0,
-        "recencyScore": 10,
+        "recencyScore": 9,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "675561ea70aa72ee7899e0c014094b908bac46eb",
-      "score": 22
+      "score": 21
+    },
+    {
+      "id": "https://decrypt.co/360954/president-trump-hosting-another-exclusive-event-meme-coin-holders",
+      "title": "President Trump Is Hosting Another Exclusive Event for Meme Coin Holders",
+      "url": "https://decrypt.co/360954/president-trump-hosting-another-exclusive-event-meme-coin-holders",
+      "source": "Decrypt",
+      "publishedAt": "2026-03-12T20:49:01.000Z",
+      "summary": "President Trump's Solana meme coin jumped briefly after the team announced a new exclusive event for top holders.",
+      "tags": [
+        "president",
+        "trump",
+        "hosting"
+      ],
+      "topicBucket": "general",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 3,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 3,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "065471f21fc9f374ab345df592063a94756492cd",
+      "score": 16
+    },
+    {
+      "id": "https://www.coindesk.com/markets/2026/03/12/circle-s-outperformance-highlights-usdc-s-staying-power-says-bullish-wall-street-analyst",
+      "title": "Circle’s outperformance highlights USDC’s staying power, says bullish Wall Street analyst",
+      "url": "https://www.coindesk.com/markets/2026/03/12/circle-s-outperformance-highlights-usdc-s-staying-power-says-bullish-wall-street-analyst",
+      "source": "CoinDesk",
+      "publishedAt": "2026-03-12T15:00:52.000Z",
+      "summary": "William Blair said Circle’s recent rally reflects more than macro factors, pointing to USDC resilience and growing recognition of the firm’s stablecoin infrastructure advantage.",
+      "tags": [
+        "circle",
+        "outperformance",
+        "highlights"
+      ],
+      "topicBucket": "infra",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 3,
+        "mentionScore": 0,
+        "recencyScore": 9,
+        "sourceScore": 4,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "f0ced32ec8a90b8b9851e93a3fd4f2148503363b",
+      "score": 16
     }
   ]
 }

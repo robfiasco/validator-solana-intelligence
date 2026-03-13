@@ -1,26 +1,26 @@
 {
-  "date": "2026-03-12",
-  "generated_at_utc": "2026-03-12T19:41:12.594Z",
-  "ctxMarket": "Attention is on Solana’s growing on-chain activity, major platform milestones, and security incidents. Cross-chain expansion and identity solutions are also drawing interest.",
-  "ctxTalking": "• Pump.fun surpassing $1B in revenue and signaling cross-chain ambitions\n• Security breach on Bonk.fun’s website leading to wallet-draining phishing attacks\n• Polychain’s $10M investment in VeryAI’s palm-scan identity system on Solana",
-  "ctxMatters": "Pump.fun’s revenue milestone and cross-chain signals highlight Solana’s role in platform growth and interoperability. The Bonk.fun hack underscores ongoing security risks for users and projects. Investment in biometric identity tools suggests a push for better user verification and privacy on Solana.",
-  "ctxSignal": "Signal: Pump.fun’s revenue and cross-chain moves, and Polychain’s backing of on-chain identity tech.\nNoise: Minimal losses reported from the Bonk.fun hack may not reflect broader security concerns.",
-  "ctxGlossary": "Phishing — A scam where attackers trick users into revealing sensitive information or draining wallets.\nOn-chain verification — Confirming user actions or identities directly on the blockchain.",
+  "date": "2026-03-13",
+  "generated_at_utc": "2026-03-13T07:43:27.078Z",
+  "ctxMarket": "Attention is focused on Solana’s memecoin sector, with notable volatility around the TRUMP token following insider activity and event-driven price swings. Infrastructure and security are also in the spotlight due to major platform milestones and a recent phishing incident.",
+  "ctxTalking": "• Insiders linked to the TRUMP memecoin project moved large token batches to Binance as the price hit record lows.\n• President Trump’s team announced an exclusive event for top TRUMP coin holders, briefly impacting the token’s price.\n• Pump.fun became Solana’s first $1B revenue platform, with hints at cross-chain expansion.\n• A phishing attack targeted Bonk.fun users via a hijacked domain.",
+  "ctxMatters": "Solana’s memecoin ecosystem is experiencing both rapid growth and increased risk, drawing scrutiny to insider actions and security practices. Major revenue milestones and cross-chain ambitions highlight Solana’s expanding influence, while security breaches reinforce the need for vigilance among users and developers.",
+  "ctxSignal": "Signal: Insider token movements, major platform revenue achievements, and security incidents are shaping Solana’s current landscape.\nNoise: Short-lived price jumps tied to event announcements without sustained impact.",
+  "ctxGlossary": "Overhang — Excess token supply that can pressure prices lower.\nPhishing — A scam where attackers trick users into revealing sensitive information or assets.",
   "readMore": [
+    {
+      "title": "Binance data reveals insiders continue to dump TRUMP memecoins as its price hits a record low",
+      "source": "CryptoSlate",
+      "url": "https://cryptoslate.com/binance-data-reveals-insiders-continue-to-dump-trump-memecoins-as-its-price-hits-a-record-low"
+    },
+    {
+      "title": "President Trump Is Hosting Another Exclusive Event for Meme Coin Holders",
+      "source": "Decrypt",
+      "url": "https://decrypt.co/360954/president-trump-hosting-another-exclusive-event-meme-coin-holders"
+    },
     {
       "title": "Polychain backs VeryAI’s $10M raise to build palm-scan identity system on Solana",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/polychain-backs-veryai-s-10m-raise-to-build-palm-scan-identity-system-on-solana"
-    },
-    {
-      "title": "FTX estate moves $17M in Solana while network staking activity remains strong",
-      "source": "AMB Crypto",
-      "url": "https://ambcrypto.com/ftx-estate-moves-17m-in-solana-while-network-staking-activity-remains-strong"
-    },
-    {
-      "title": "Pump.fun becomes Solana’s first $1B revenue platform as Ethereum, Base, BSC and Monad subdomains hint at cross-chain move",
-      "source": "The Block",
-      "url": "https://www.theblock.co/post/393358/pump-fun-becomes-solanas-first-1b-revenue-platform-as-ethereum-base-bsc-and-monad-subdomains-hint-at-cross-chain-move"
     }
   ]
 }
