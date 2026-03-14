@@ -1,24 +1,57 @@
 {
   "meta": {
-    "generatedAt": "2026-03-14T07:33:33.147Z",
-    "totalCandidates": 98,
-    "solanaCandidates": 23,
+    "generatedAt": "2026-03-14T19:25:00.655Z",
+    "totalCandidates": 96,
+    "solanaCandidates": 22,
     "selected": 5,
     "tweetPool": 0,
     "narrativeKeywordsCount": 0
   },
   "items": [
     {
-      "id": "https://www.theblock.co/post/393588/billionaire-investor-druckenmiller-quicker-cheaper-stablecoins-power-payments-10-15-years",
-      "title": "Billionaire investor Druckenmiller says ‘quicker, cheaper’ stablecoins could power payments in 10-15 years",
-      "url": "https://www.theblock.co/post/393588/billionaire-investor-druckenmiller-quicker-cheaper-stablecoins-power-payments-10-15-years",
-      "source": "The Block",
-      "publishedAt": "2026-03-13T20:03:52.000Z",
-      "summary": "Druckenmiller argued that stablecoins could meaningfully boost financial system productivity by making payments faster and cheaper.",
+      "id": "https://ambcrypto.com/solana-examining-if-sols-67-drawdown-is-an-attractive-entry-point",
+      "title": "Solana: Examining if SOL’s 67% drawdown is an ‘attractive entry point’",
+      "url": "https://ambcrypto.com/solana-examining-if-sols-67-drawdown-is-an-attractive-entry-point",
+      "source": "AMB Crypto",
+      "publishedAt": "2026-03-14T19:00:25.000Z",
+      "summary": "Key bullish catalysts include strong fundamentals and growth positioning amid stablecoin boom",
       "tags": [
-        "billionaire",
-        "investor",
-        "druckenmiller"
+        "solana",
+        "examining",
+        "drawdown"
+      ],
+      "topicBucket": "defi",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 13,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 1,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "f4f799d48ec3837c41f5af9074439b5f6550b39f",
+      "score": 24
+    },
+    {
+      "id": "https://www.coindesk.com/business/2026/03/14/brazil-industry-giants-representing-850-companies-decry-stablecoin-tax-threat",
+      "title": "Brazil industry giants representing 850 companies decry stablecoin tax threat",
+      "url": "https://www.coindesk.com/business/2026/03/14/brazil-industry-giants-representing-850-companies-decry-stablecoin-tax-threat",
+      "source": "CoinDesk",
+      "publishedAt": "2026-03-14T14:58:14.000Z",
+      "summary": "They argue the tax would be illegal, violating Brazil's Constitution and Virtual Assets Law, as stablecoins are not considered fiat currency.",
+      "tags": [
+        "brazil",
+        "industry",
+        "giants"
       ],
       "topicBucket": "defi",
       "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
@@ -38,55 +71,22 @@
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "e4b70f59391cbf06643531fd8f949a9e48de68df",
+      "dedupeFingerprint": "57fb3b2ffa4db5903e4640c10871ac7b6583bbfc",
       "score": 22
     },
     {
-      "id": "https://messari.io/article/in-the-stables-the-rise-of-yield-bearing-stablecoins",
-      "title": "In The Stables: The Rise of Yield-Bearing Stablecoins",
-      "url": "https://messari.io/article/in-the-stables-the-rise-of-yield-bearing-stablecoins",
-      "source": "Messari",
-      "publishedAt": "2026-03-12T16:21:00.000Z",
-      "summary": "This week’s edition of In The Stables highlights the accelerating growth of yield-bearing stablecoins and their increasing divergence from the broader stablecoin market. While total stablecoin market capitalization rose 1.2% WoW to $303 billion with net inflows of $3.7 billion, activity indicators s",
-      "tags": [
-        "stables",
-        "rise",
-        "yield"
-      ],
-      "topicBucket": "defi",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 11,
-        "mentionScore": 0,
-        "recencyScore": 7,
-        "sourceScore": 3,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "382324d40ff86a38374ae4b585c873ab7924a5d5",
-      "score": 21
-    },
-    {
-      "id": "https://ambcrypto.com/solana-listing-grayscale-etf-and-how-avalanche-avax-is-wooing-institutions",
-      "title": "Solana listing, Grayscale ETF, and how Avalanche [AVAX] is wooing institutions",
-      "url": "https://ambcrypto.com/solana-listing-grayscale-etf-and-how-avalanche-avax-is-wooing-institutions",
+      "id": "https://ambcrypto.com/can-solana-use-usdc-beating-usdt-in-adjusted-transaction-volume-to-outperform-ethereum",
+      "title": "Can Solana use USDC beating USDT in ‘Adjusted Transaction Volume’ to outperform Ethereum?",
+      "url": "https://ambcrypto.com/can-solana-use-usdc-beating-usdt-in-adjusted-transaction-volume-to-outperform-ethereum",
       "source": "AMB Crypto",
-      "publishedAt": "2026-03-13T23:30:05.000Z",
-      "summary": "How can Solana boost AVAX’s institutional momentum?",
+      "publishedAt": "2026-03-14T16:00:16.000Z",
+      "summary": "As Solana gains on Ethereum, USDC’s minting activity raises a major question.",
       "tags": [
         "solana",
-        "listing",
-        "grayscale"
+        "usdc",
+        "beating"
       ],
-      "topicBucket": "market",
+      "topicBucket": "general",
       "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
       "mentionCount": 0,
       "xMentions": 0,
@@ -104,41 +104,8 @@
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "1efd64ef2de11abd218a7f45d2069bd42dc439f6",
+      "dedupeFingerprint": "eb5a681747acf39b4bee5d850dcaa82f96599832",
       "score": 19
-    },
-    {
-      "id": "https://cointelegraph.com/news/stablecoins-power-global-payments-10-years-stanley-druckenmiller",
-      "title": "Stablecoins could form backbone of global payments in 10 years: Billionaire",
-      "url": "https://cointelegraph.com/news/stablecoins-power-global-payments-10-years-stanley-druckenmiller",
-      "source": "Cointelegraph",
-      "publishedAt": "2026-03-14T01:22:32.000Z",
-      "summary": "Stanley Druckenmiller said stablecoins are more efficient, faster and cheaper than fiat running on traditional banking infrastructure.",
-      "tags": [
-        "stablecoins",
-        "could",
-        "form"
-      ],
-      "topicBucket": "infra",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 8,
-        "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 0,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "62a97a4f8646ccff4523a4ed6ac2cf65efccaeb6",
-      "score": 18
     },
     {
       "id": "https://www.theblock.co/post/393509/metacomp-raises-35-million-alibaba",
@@ -165,13 +132,46 @@
       "scoreBreakdown": {
         "relevanceScore": 3,
         "mentionScore": 0,
-        "recencyScore": 9,
+        "recencyScore": 8,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "33b43f24165d926abbde62a08530ed8150887056",
-      "score": 16
+      "score": 15
+    },
+    {
+      "id": "https://ambcrypto.com/aave-whats-next-after-blockchain-capitals-24m-deposit-meets-shrinking-exchange-supply",
+      "title": "AAVE – What’s next after Blockchain Capital’s $24M deposit meets shrinking exchange supply?",
+      "url": "https://ambcrypto.com/aave-whats-next-after-blockchain-capitals-24m-deposit-meets-shrinking-exchange-supply",
+      "source": "AMB Crypto",
+      "publishedAt": "2026-03-14T17:00:07.000Z",
+      "summary": "A new $24M deposit has introduced new liquidity dynamics for AAVE.",
+      "tags": [
+        "aave",
+        "what",
+        "next"
+      ],
+      "topicBucket": "tokenomics",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 3,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 1,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "91e6cac050673da4a2c943d06d37904312089e10",
+      "score": 14
     }
   ]
 }

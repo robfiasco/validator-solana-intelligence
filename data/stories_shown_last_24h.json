@@ -1,5 +1,68 @@
 [
   {
+    "id": "06d841966f73d7299f874203eb2ab57b1ab8be56",
+    "title": "Crypto Venture Weekly: March 9-13, 2026",
+    "url": "https://messari.io/article/crypto-venture-weekly-march-9-13-2026",
+    "source": "Messari",
+    "firstSeenAt": "2026-03-13T19:29:56.539Z",
+    "lastSeenAt": "2026-03-14T19:25:00.828Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "crypto",
+      "venture",
+      "weekly",
+      "march",
+      "2026",
+      "projects",
+      "raised",
+      "million"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "eb5a681747acf39b4bee5d850dcaa82f96599832",
+    "title": "Can Solana use USDC beating USDT in ‘Adjusted Transaction Volume’ to outperform Ethereum?",
+    "url": "https://ambcrypto.com/can-solana-use-usdc-beating-usdt-in-adjusted-transaction-volume-to-outperform-ethereum",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-03-14T19:25:00.828Z",
+    "lastSeenAt": "2026-03-14T19:25:00.828Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "solana",
+      "usdc",
+      "beating",
+      "usdt",
+      "adjusted",
+      "transaction",
+      "volume",
+      "outperform"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "f4f799d48ec3837c41f5af9074439b5f6550b39f",
+    "title": "Solana: Examining if SOL’s 67% drawdown is an ‘attractive entry point’",
+    "url": "https://ambcrypto.com/solana-examining-if-sols-67-drawdown-is-an-attractive-entry-point",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-03-14T19:25:00.827Z",
+    "lastSeenAt": "2026-03-14T19:25:00.827Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "solana",
+      "examining",
+      "drawdown",
+      "attractive",
+      "entry",
+      "point",
+      "bullish",
+      "catalysts"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "1d6b3de218fae072764168a9d6cd17e92bd68061",
     "title": "Signal Board Summary 2026-03-14",
     "url": "",
@@ -30,27 +93,6 @@
       "shrugs",
       "stock",
       "weakness"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "06d841966f73d7299f874203eb2ab57b1ab8be56",
-    "title": "Crypto Venture Weekly: March 9-13, 2026",
-    "url": "https://messari.io/article/crypto-venture-weekly-march-9-13-2026",
-    "source": "Messari",
-    "firstSeenAt": "2026-03-13T19:29:56.539Z",
-    "lastSeenAt": "2026-03-14T07:33:33.312Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "crypto",
-      "venture",
-      "weekly",
-      "march",
-      "2026",
-      "projects",
-      "raised",
-      "million"
     ],
     "majorUpdate": false,
     "updateReason": null
@@ -114,48 +156,6 @@
       "solana",
       "flows",
       "remain"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "065471f21fc9f374ab345df592063a94756492cd",
-    "title": "President Trump Is Hosting Another Exclusive Event for Meme Coin Holders",
-    "url": "https://decrypt.co/360954/president-trump-hosting-another-exclusive-event-meme-coin-holders",
-    "source": "Decrypt",
-    "firstSeenAt": "2026-03-13T07:43:17.984Z",
-    "lastSeenAt": "2026-03-13T07:43:17.984Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "president",
-      "trump",
-      "hosting",
-      "another",
-      "exclusive",
-      "event",
-      "meme",
-      "coin"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "fb28d90fb46958341988f81c27072f6f804fc4a9",
-    "title": "Binance data reveals insiders continue to dump TRUMP memecoins as its price hits a record low",
-    "url": "https://cryptoslate.com/binance-data-reveals-insiders-continue-to-dump-trump-memecoins-as-its-price-hits-a-record-low",
-    "source": "CryptoSlate",
-    "firstSeenAt": "2026-03-13T07:43:17.983Z",
-    "lastSeenAt": "2026-03-13T07:43:17.983Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "binance",
-      "data",
-      "reveals",
-      "insiders",
-      "continue",
-      "dump",
-      "trump",
-      "memecoins"
     ],
     "majorUpdate": false,
     "updateReason": null

@@ -4,13 +4,22 @@
   "subtitle": "Top links from trusted desks",
   "items": [
     {
-      "type": "ECOSYSTEM",
-      "title": "Solana listing, Grayscale ETF, and how Avalanche [AVAX] is wooing institutions",
-      "category": "ECOSYSTEM",
+      "type": "MARKET",
+      "title": "Solana: Examining if SOL’s 67% drawdown is an ‘attractive entry point’",
+      "category": "MARKET",
       "source": "AMB Crypto",
-      "date": "2026-03-13",
-      "url": "https://ambcrypto.com/solana-listing-grayscale-etf-and-how-avalanche-avax-is-wooing-institutions",
-      "whyYouShouldCare": "Solana's recent listing alongside Grayscale's ETF signals growing institutional interest, which could enhance liquidity and usage within its ecosystem."
+      "date": "2026-03-14",
+      "url": "https://ambcrypto.com/solana-examining-if-sols-67-drawdown-is-an-attractive-entry-point",
+      "whyYouShouldCare": "A 67% drawdown in SOL could signal a potential opportunity for investors, impacting market sentiment and future liquidity."
+    },
+    {
+      "type": "APPS",
+      "title": "Can Solana use USDC beating USDT in ‘Adjusted Transaction Volume’ to outperform Ethereum?",
+      "category": "APPS",
+      "source": "AMB Crypto",
+      "date": "2026-03-14",
+      "url": "https://ambcrypto.com/can-solana-use-usdc-beating-usdt-in-adjusted-transaction-volume-to-outperform-ethereum",
+      "whyYouShouldCare": "USDC's rise over USDT in transaction volume could enhance Solana's competitive edge against Ethereum, influencing ecosystem adoption and liquidity."
     },
     {
       "type": "APPS",
@@ -19,16 +28,7 @@
       "source": "Messari",
       "date": "2026-03-13",
       "url": "https://messari.io/article/crypto-venture-weekly-march-9-13-2026",
-      "whyYouShouldCare": "The latest crypto venture insights highlight emerging trends and projects that could influence Solana's competitive positioning and ecosystem development."
-    },
-    {
-      "type": "APPS",
-      "title": "Bitcoin above $71,000, ETH, SOL, ADA zoom higher as cryptos shrugs off stock weakness",
-      "category": "APPS",
-      "source": "CoinDesk",
-      "date": "2026-03-13",
-      "url": "https://www.coindesk.com/markets/2026/03/13/bitcoin-above-usd71-000-eth-sol-ada-zoom-higher-as-cryptos-shrugs-off-stock-weakness",
-      "whyYouShouldCare": "Bitcoin's surge past $71,000, coupled with gains in ETH, SOL, and ADA, indicates strong market momentum that may positively impact Solana's liquidity and adoption."
+      "whyYouShouldCare": "Weekly venture insights highlight trends and investments in the crypto space, which can affect Solana's market positioning and ecosystem growth."
     }
   ]
 }

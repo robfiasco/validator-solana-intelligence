@@ -1,16 +1,16 @@
 {
   "date": "2026-03-14",
-  "generated_at_utc": "2026-03-14T07:33:43.470Z",
-  "ctxMarket": "Attention is focused on Solana’s role in high-profile meme coin activity and ongoing institutional narratives. Recent volatility in Trump-linked Solana tokens and large venture funding rounds are shaping discussions.",
-  "ctxTalking": "• Trump meme coin volatility, with dramatic price swings and insider token movements\n• Institutional interest in Solana and Avalanche, including ETF discussions and treasury purchases\n• Major venture funding rounds and acquisitions involving Solana ecosystem projects",
-  "ctxMatters": "Solana’s visibility is rising due to both speculative meme coin activity and institutional positioning. Large token transfers by insiders raise questions about project transparency and token supply. New funding and acquisitions could accelerate development and competition within the Solana ecosystem.",
-  "ctxSignal": "Signal: Insider movements and funding rounds directly impact project trajectories and user sentiment.\nNoise: Short-term meme coin price spikes tied to exclusive event announcements.",
-  "ctxGlossary": "ETF — Exchange-Traded Fund, a regulated investment vehicle that can track crypto assets.\nTreasury Purchase — When an entity acquires and holds crypto as a reserve or investment.",
+  "generated_at_utc": "2026-03-14T19:25:08.285Z",
+  "ctxMarket": "Attention is on Solana’s recent 67% drawdown, with discussion focused on fundamentals and stablecoin activity. USDC’s transaction volume on Solana is drawing comparisons to Ethereum, while meme coin trading is seeing sharp spikes tied to exclusive events.",
+  "ctxTalking": "• Solana’s price drop and whether fundamentals support renewed interest\n• USDC’s rising transaction volume on Solana versus Ethereum\n• Solana-based meme coins surging as holders seek access to exclusive Trump-related events",
+  "ctxMatters": "Solana’s fundamentals and stablecoin growth are being scrutinized amid significant price moves. Increased USDC activity may signal changing user preferences between blockchains. Meme coin activity highlights Solana’s role in new forms of community engagement and event-driven demand.",
+  "ctxSignal": "Signal: Shifts in stablecoin usage and transaction volume on Solana versus Ethereum; major fundraising and acquisitions in the ecosystem.\nNoise: Short-term meme coin price surges tied to event announcements.",
+  "ctxGlossary": "USDC — A major U.S. dollar-pegged stablecoin used for transactions and trading.\nMeme coin — A cryptocurrency created around internet memes or pop culture, often with speculative or community-driven value.",
   "readMore": [
     {
-      "title": "Solana listing, Grayscale ETF, and how Avalanche [AVAX] is wooing institutions",
+      "title": "Solana",
       "source": "AMB Crypto",
-      "url": "https://ambcrypto.com/solana-listing-grayscale-etf-and-how-avalanche-avax-is-wooing-institutions"
+      "url": "https://ambcrypto.com/solana-examining-if-sols-67-drawdown-is-an-attractive-entry-point"
     },
     {
       "title": "Trump Meme Coin Price, Trading Volume Skyrocket as Holders Vie for Exclusive Event Access",
