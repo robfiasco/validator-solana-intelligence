@@ -5,7 +5,7 @@
     "url": "https://messari.io/article/crypto-venture-weekly-march-9-13-2026",
     "source": "Messari",
     "firstSeenAt": "2026-03-13T19:29:56.539Z",
-    "lastSeenAt": "2026-03-14T19:25:00.828Z",
+    "lastSeenAt": "2026-03-15T07:43:24.221Z",
     "sectionShown": "briefing",
     "topicTags": [
       "crypto",
@@ -16,6 +16,48 @@
       "projects",
       "raised",
       "million"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "56f2282f9ed6fb5e52c9c84642e19793f606aa71",
+    "title": "Solana’s KEY metric flips bullish after 2 months: Can SOL reclaim $93?",
+    "url": "https://ambcrypto.com/solanas-key-metric-flips-bullish-after-2-months-can-sol-reclaim-93",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-03-15T07:43:24.220Z",
+    "lastSeenAt": "2026-03-15T07:43:24.220Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "solana",
+      "metric",
+      "flips",
+      "bullish",
+      "after",
+      "months",
+      "reclaim",
+      "supertrend"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "37ef5912f68e2b378d3f1ab6a0093bb2b7073664",
+    "title": "Inside Solana’s upgrade – Lower fees, mainnet debut & what’s next for SOL",
+    "url": "https://ambcrypto.com/inside-solanas-upgrade-lower-fees-mainnet-debut-whats-next-for-sol",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-03-15T07:43:24.219Z",
+    "lastSeenAt": "2026-03-15T07:43:24.219Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "inside",
+      "solana",
+      "upgrade",
+      "lower",
+      "fees",
+      "mainnet",
+      "debut",
+      "what"
     ],
     "majorUpdate": false,
     "updateReason": null
@@ -156,111 +198,6 @@
       "solana",
       "flows",
       "remain"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "065471f21fc9f374ab345df592063a94756492cd",
-    "title": "President Trump Is Hosting Another Exclusive Event for Meme Coin Holders",
-    "url": "https://decrypt.co/360954/president-trump-hosting-another-exclusive-event-meme-coin-holders",
-    "source": "Decrypt",
-    "firstSeenAt": "2026-03-13T07:43:17.984Z",
-    "lastSeenAt": "2026-03-13T07:43:17.984Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "president",
-      "trump",
-      "hosting",
-      "another",
-      "exclusive",
-      "event",
-      "meme",
-      "coin"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "fb28d90fb46958341988f81c27072f6f804fc4a9",
-    "title": "Binance data reveals insiders continue to dump TRUMP memecoins as its price hits a record low",
-    "url": "https://cryptoslate.com/binance-data-reveals-insiders-continue-to-dump-trump-memecoins-as-its-price-hits-a-record-low",
-    "source": "CryptoSlate",
-    "firstSeenAt": "2026-03-13T07:43:17.983Z",
-    "lastSeenAt": "2026-03-13T07:43:17.983Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "binance",
-      "data",
-      "reveals",
-      "insiders",
-      "continue",
-      "dump",
-      "trump",
-      "memecoins"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "610b452ae6761b9cf564cd0ed9ee4a5c424d04d9",
-    "title": "FTX estate moves $17M in Solana while network staking activity remains strong",
-    "url": "https://ambcrypto.com/ftx-estate-moves-17m-in-solana-while-network-staking-activity-remains-strong",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-03-12T19:41:03.694Z",
-    "lastSeenAt": "2026-03-12T19:41:03.694Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "estate",
-      "moves",
-      "solana",
-      "while",
-      "network",
-      "staking",
-      "activity",
-      "remains"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "6a3793535896e3d607fb409283d09e090a733c3e",
-    "title": "Pump.fun becomes Solana’s first $1B revenue platform as Ethereum, Base, BSC and Monad subdomains hint at cross-chain move",
-    "url": "https://www.theblock.co/post/393358/pump-fun-becomes-solanas-first-1b-revenue-platform-as-ethereum-base-bsc-and-monad-subdomains-hint-at-cross-chain-move",
-    "source": "The Block",
-    "firstSeenAt": "2026-03-12T19:41:03.694Z",
-    "lastSeenAt": "2026-03-12T19:41:03.694Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "pump",
-      "becomes",
-      "solana",
-      "first",
-      "revenue",
-      "platform",
-      "ethereum",
-      "base"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "85a2d8971d1b5a89e64df0db89a013c31d152bd0",
-    "title": "Polychain backs VeryAI’s $10M raise to build palm-scan identity system on Solana",
-    "url": "https://cointelegraph.com/news/polychain-backs-veryai-s-10m-raise-to-build-palm-scan-identity-system-on-solana",
-    "source": "Cointelegraph",
-    "firstSeenAt": "2026-03-12T19:41:03.694Z",
-    "lastSeenAt": "2026-03-12T19:41:03.694Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "polychain",
-      "backs",
-      "veryai",
-      "raise",
-      "build",
-      "palm",
-      "scan",
-      "identity"
     ],
     "majorUpdate": false,
     "updateReason": null

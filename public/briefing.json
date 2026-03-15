@@ -1,25 +1,25 @@
 {
-  "date": "2026-03-14",
+  "date": "2026-03-15",
   "title": "TODAY'S SOLANA BRIEFING",
   "subtitle": "Top links from trusted desks",
   "items": [
     {
-      "type": "MARKET",
-      "title": "Solana: Examining if SOL’s 67% drawdown is an ‘attractive entry point’",
-      "category": "MARKET",
+      "type": "APPS",
+      "title": "Inside Solana’s upgrade – Lower fees, mainnet debut & what’s next for SOL",
+      "category": "APPS",
       "source": "AMB Crypto",
-      "date": "2026-03-14",
-      "url": "https://ambcrypto.com/solana-examining-if-sols-67-drawdown-is-an-attractive-entry-point",
-      "whyYouShouldCare": "A 67% drawdown in SOL could signal a potential opportunity for investors, impacting market sentiment and future liquidity."
+      "date": "2026-03-15",
+      "url": "https://ambcrypto.com/inside-solanas-upgrade-lower-fees-mainnet-debut-whats-next-for-sol",
+      "whyYouShouldCare": "The recent upgrade aims to reduce transaction fees and enhance network efficiency, potentially increasing user adoption and overall ecosystem activity for SOL."
     },
     {
       "type": "APPS",
-      "title": "Can Solana use USDC beating USDT in ‘Adjusted Transaction Volume’ to outperform Ethereum?",
+      "title": "Solana’s KEY metric flips bullish after 2 months: Can SOL reclaim $93?",
       "category": "APPS",
       "source": "AMB Crypto",
       "date": "2026-03-14",
-      "url": "https://ambcrypto.com/can-solana-use-usdc-beating-usdt-in-adjusted-transaction-volume-to-outperform-ethereum",
-      "whyYouShouldCare": "USDC's rise over USDT in transaction volume could enhance Solana's competitive edge against Ethereum, influencing ecosystem adoption and liquidity."
+      "url": "https://ambcrypto.com/solanas-key-metric-flips-bullish-after-2-months-can-sol-reclaim-93",
+      "whyYouShouldCare": "A bullish shift in a key metric could signal a recovery in SOL's price, influencing market sentiment and liquidity dynamics."
     },
     {
       "type": "APPS",
@@ -28,7 +28,7 @@
       "source": "Messari",
       "date": "2026-03-13",
       "url": "https://messari.io/article/crypto-venture-weekly-march-9-13-2026",
-      "whyYouShouldCare": "Weekly venture insights highlight trends and investments in the crypto space, which can affect Solana's market positioning and ecosystem growth."
+      "whyYouShouldCare": "Weekly insights into crypto ventures highlight trends and investments that could impact Solana's ecosystem and its competitive positioning."
     }
   ]
 }
