@@ -1,5 +1,26 @@
 [
   {
+    "id": "37ef5912f68e2b378d3f1ab6a0093bb2b7073664",
+    "title": "Inside Solana’s upgrade – Lower fees, mainnet debut & what’s next for SOL",
+    "url": "https://ambcrypto.com/inside-solanas-upgrade-lower-fees-mainnet-debut-whats-next-for-sol",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-03-15T07:43:24.219Z",
+    "lastSeenAt": "2026-03-15T19:26:22.687Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "inside",
+      "solana",
+      "upgrade",
+      "lower",
+      "fees",
+      "mainnet",
+      "debut",
+      "what"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "06d841966f73d7299f874203eb2ab57b1ab8be56",
     "title": "Crypto Venture Weekly: March 9-13, 2026",
     "url": "https://messari.io/article/crypto-venture-weekly-march-9-13-2026",
@@ -37,69 +58,6 @@
       "months",
       "reclaim",
       "supertrend"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "37ef5912f68e2b378d3f1ab6a0093bb2b7073664",
-    "title": "Inside Solana’s upgrade – Lower fees, mainnet debut & what’s next for SOL",
-    "url": "https://ambcrypto.com/inside-solanas-upgrade-lower-fees-mainnet-debut-whats-next-for-sol",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-03-15T07:43:24.219Z",
-    "lastSeenAt": "2026-03-15T07:43:24.219Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "inside",
-      "solana",
-      "upgrade",
-      "lower",
-      "fees",
-      "mainnet",
-      "debut",
-      "what"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "eb5a681747acf39b4bee5d850dcaa82f96599832",
-    "title": "Can Solana use USDC beating USDT in ‘Adjusted Transaction Volume’ to outperform Ethereum?",
-    "url": "https://ambcrypto.com/can-solana-use-usdc-beating-usdt-in-adjusted-transaction-volume-to-outperform-ethereum",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-03-14T19:25:00.828Z",
-    "lastSeenAt": "2026-03-14T19:25:00.828Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "solana",
-      "usdc",
-      "beating",
-      "usdt",
-      "adjusted",
-      "transaction",
-      "volume",
-      "outperform"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "f4f799d48ec3837c41f5af9074439b5f6550b39f",
-    "title": "Solana: Examining if SOL’s 67% drawdown is an ‘attractive entry point’",
-    "url": "https://ambcrypto.com/solana-examining-if-sols-67-drawdown-is-an-attractive-entry-point",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-03-14T19:25:00.827Z",
-    "lastSeenAt": "2026-03-14T19:25:00.827Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "solana",
-      "examining",
-      "drawdown",
-      "attractive",
-      "entry",
-      "point",
-      "bullish",
-      "catalysts"
     ],
     "majorUpdate": false,
     "updateReason": null
