@@ -1,1 +1,3464 @@
-[]
+[
+  {
+    "clusterId": "cluster_1",
+    "category": "Ecosystem Updates",
+    "topKeywords": [
+      "solana",
+      "sol",
+      "token",
+      "update",
+      "hackathon"
+    ],
+    "tweetCount": 68,
+    "clusterScore": 6704.412794078473,
+    "reason": "Ecosystem Updates cluster linked by [solana, sol, token, update, hackathon]",
+    "sampleTweets": [
+      {
+        "id": "2032512050245562372",
+        "handle": "inno_ox",
+        "created_at_iso": "2026-03-13 13:40:09 -04:00",
+        "text": "What happened last week on @solanamobile 📱?\n\n> Solana Mobile Stack is officially open to all Android OEMs, any hardware manufacturer can now integrate it.\n> $SKR listed on @krakenfx, 30 Seekers giveaway. 🎁\n> MONOLITH Hackathon by @RadiantsDAO officially closed. 888 developers registered, over 400 submissions received.\n> @FlashTrade gave away $10 to trade perpetuals to first 1,000 Seekers. 📈\n> @HubraApp personal AI DeFi agent now available on Seeker. 🤖\n> @gibdotmeme announced exclusive airdrop for Seeker holders.\n> @colonythegame announced that 100% of team revenue allocated to acquire and stake $SKR, and integrated staked $SKR directly into gameplay mechanics.\n> @poofnew: apps built on Poof can now be published directly to the Solana dApp Store.\n> @foreseelol added official $SKR trading & price predictions support.\n> @SeekerClaw x @clawpumptech where users can now launch tokens on https://t.co/0NVrdt7EtA directly from Seeker.\n> @cfldotfun the previous Solana Mobile hackathon winner grew to thousands of downloads within weeks.\n> @cloudrunner game now live on the dApp Store\nSharkPool Student Dashboard live on the dApp Store\n> @LinceFinance the smart risk engine for yield optimization now on Seeker.\n> @BananaZoneApp went multi-token, users can now predict the SKR chart using SKR on Seeker.\n> @Knockoutgamesio introduced March Madness Venator tournament exclusive to Seeker users, 50 SOL in prizes.\n> @UnitasLabs app live on Solana dApp Store. Seekers receive 20% Unitas boost for first month.\n> @NOMADZxyz dropped its 9th app update on the dApp Store.\n> Seeker season 2 is live. Activity tracking is on.\n\nSeek, and you shall find.",
+        "url": "https://twitter.com/inno_ox/status/2032512050245562372",
+        "score": 574
+      },
+      {
+        "id": "2032118940227518911",
+        "handle": "jussy_world",
+        "created_at_iso": "2026-03-12 11:38:04 -04:00",
+        "text": "PumpFun expanding to EVM chains bad for Solana\n\nIs the stupidest take I ever heard\n\nThey made $1B on SOL\n\nStill making $1.27M in revenue daily\n\n$667M weekly volume\n\n175k active wallets in 24h\n\n28k tokens launched in 24h\n\n9 out of 22 fastest companies to reach $100M in revenue are built on Solana\n\nOther chains have no consumers, no active wallets, revenue close to zero\n\nThere is Solana and there is no second best\n\nThey will make their second billion on Solana too",
+        "url": "https://twitter.com/jussy_world/status/2032118940227518911",
+        "score": 257
+      },
+      {
+        "id": "2033150235107893537",
+        "handle": "SolanaSensei",
+        "created_at_iso": "2026-03-15 07:56:04 -04:00",
+        "text": "Solana is about to get way cheaper and faster.\n\nP-token (SIMD-266) has been approved as a replacement for Solana’s SPL Token program, basically the same instruction set, but fewer compute units.\n\nIn essence, you’ll now pay lower priority fees for every on-chain token operation.\n\nComing to Solana Mainnet in April\n\nIBRL.",
+        "url": "https://twitter.com/SolanaSensei/status/2033150235107893537",
+        "score": 233
+      },
+      {
+        "id": "2032817422856761673",
+        "handle": "jussy_world",
+        "created_at_iso": "2026-03-14 09:53:36 -04:00",
+        "text": "🚨 Breaking:\n\nMassive upgrade coming to @solana P-Token (SIMD-266)\n\nIt makes token transfers significantly cheaper and lighter\n\nBefore:\n1M txs = 3.706 SOL (priority fees)\n\nAfter:\n1M txs = 0.188 SOL\n\nThat’s ~95% cheaper\n\nLower CUs → lower fees → higher throughput\n\nComing in April",
+        "url": "https://twitter.com/jussy_world/status/2032817422856761673",
+        "score": 216
+      },
+      {
+        "id": "2032503528770429299",
+        "handle": "x402",
+        "created_at_iso": "2026-03-13 13:06:18 -04:00",
+        "text": "RT @MeteoraEco: Solana is for Builders. Let's Hack for Meteora!\n\nMeteora is sponsoring a track at the @FundingCommons hackathon this weeken…",
+        "url": "https://twitter.com/x402/status/2032503528770429299",
+        "score": 209
+      },
+      {
+        "id": "2032502254826319878",
+        "handle": "SolanaSensei",
+        "created_at_iso": "2026-03-13 13:01:14 -04:00",
+        "text": "Solana token holders keep climbing.\n\nFrom near zero in 2021 to over 164.4M today.\n\nMore users, more wallets, more people choosing to be part of the ecosystem.\n\nThe direction we're going is very fkn clear. https://t.co/UhMjtbfSOg",
+        "url": "https://twitter.com/SolanaSensei/status/2032502254826319878",
+        "score": 209
+      },
+      {
+        "id": "2033023185709420986",
+        "handle": "solana_devs",
+        "created_at_iso": "2026-03-14 23:31:13 -04:00",
+        "text": "RT @nocircuit: Solana devs are shipping a big efficiency gain next month with zero breaking changes.\n\nP-token, coming to mainnet in April,…",
+        "url": "https://twitter.com/solana_devs/status/2033023185709420986",
+        "score": 175
+      },
+      {
+        "id": "2032911636990665216",
+        "handle": "nocircuit",
+        "created_at_iso": "2026-03-14 16:07:58 -04:00",
+        "text": "RT @jussy_world: 🚨 Breaking:\n\nMassive upgrade coming to @solana P-Token (SIMD-266)\n\nIt makes token transfers significantly cheaper and ligh…",
+        "url": "https://twitter.com/nocircuit/status/2032911636990665216",
+        "score": 165
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_3",
+    "category": "Token Launch / Pump",
+    "topKeywords": [
+      "token",
+      "tge",
+      "airdrop",
+      "claim",
+      "sol"
+    ],
+    "tweetCount": 31,
+    "clusterScore": 3030.932549588061,
+    "reason": "Token Launch / Pump cluster linked by [token, tge, airdrop, claim, sol]",
+    "sampleTweets": [
+      {
+        "id": "2032761153466806344",
+        "handle": "0xyunss",
+        "created_at_iso": "2026-03-14 06:10:00 -04:00",
+        "text": "triplet-sol, 1 day 18 hours, $97 profit, 14% clean. this is what a multidays classic bid-ask looks like when you pick the right token and just let it sit.\n\nthe setup was simple. classic bid-ask, -42% range on 80 bins, single side sol. no overcomplicated strat, just a clean wide range deployed after the token already dumped around 30% from ath.\n\ni never open a position at ath. ever.\n\nopening at ath means you're the exit liquidity for everyone who bought earlier. waiting for the dump means you're entering when most people are panicking, and your range has real room to work both ways.\n\ntoken selection for multi-days is different from quick plays. minimum 1M volume per 24 hours and mcap minimum 1M. anything below that and the token might just slowly bleed with no volume to generate fees.\n\nchart quality matters too. i specifically avoid tokens that had a sudden vertical pump on day 1 of launch. those never survive multi-days. i want a token with a healthy chart, gradual price discovery, and volume that's been consistent, not a one-day wonder.\n\nthe classic -42% range means my position covers a lot of ground without needing to touch it. i set it and checked back occasionally, no active monitoring.\n\ni still have 2 positions open on other pairs running the same approach. this march i'm leaning more into multi-days plays. the current market feels like a good spot for it. less noise, less fomo, just fees accumulating.\n\nthe r/r on multi-days right now is actually really clean if you pick the right token and be patient.\n\n@MeteoraAG @met_lparmy",
+        "url": "https://twitter.com/0xyunss/status/2032761153466806344",
+        "score": 320
+      },
+      {
+        "id": "2033151525690712210",
+        "handle": "sol_nxxn",
+        "created_at_iso": "2026-03-15 08:01:12 -04:00",
+        "text": "I sell 99% of airdrops in the first weeks\n\nBeen following this rule for over a year - saved me tens of thousands $\n\nBackpack is expected to launch at ~$300M FDV, with a rumor raise at $1B + equity for stakers\n\nThinking about putting it in 1%\n\nWhat will you do with your $BP? 🤔 https://t.co/IlWNFOc46J",
+        "url": "https://twitter.com/sol_nxxn/status/2033151525690712210",
+        "score": 235
+      },
+      {
+        "id": "2032971539025707126",
+        "handle": "0xyunss",
+        "created_at_iso": "2026-03-14 20:06:00 -04:00",
+        "text": "i sat red for 3 hours on this position and didn't touch it. that patience just paid $65, 12% clean on shape-sol.\n\nprice moved against my range, fees weren't covering IL yet, and every instinct is telling you to close and cut the loss.\n\nthat's the whole point of this strat. you pick the right token, you set a default range, and you trust the setup. the exit pump came, swept through my bins, and i closed clean.\n\nthis is becoming my go-to when i don't have enough time to stare at charts for quick plays. with multidays classic bid-ask i check my position maybe twice a day. no active monitoring, no stress, just letting the range do its job.\n\nthe tradeoff is you have to be comfortable sitting in red. not every multi-days position is going to be green from the moment you open it. if you can't handle seeing IL on screen for a few hours without touching the position, this strat isn't for you.\n\nbut if you can hold, the exit pump almost always comes on a well-selected token. and when it does, it's a clean exit with fees stacked from the entire hold period.\n\nslowly getting more comfortable with this approach. the r/r just makes sense for the current market.\n\n@MeteoraAG @met_lparmy",
+        "url": "https://twitter.com/0xyunss/status/2032971539025707126",
+        "score": 226
+      },
+      {
+        "id": "2032319975328006272",
+        "handle": "jrwhale",
+        "created_at_iso": "2026-03-13 00:56:55 -04:00",
+        "text": "My points >> tokens will be around 70k $BP\n\nTo fill 100k bag, i already started accumulating $BP on @pacifica_fi for 35k $BP. Hopefully it gets filled within this week. \n\nI may be busy with IRL events on @Backpack's TGE. Maybe don't have time to check the price or buy more. And i believe current sentiment is at the lowest.\n\nAlready accumulated $BTC, $SOL, $MON, $2Z (and some $JUP) for this cycle. Only $BP left in the bag.\n\nTGE is just the beginning.",
+        "url": "https://twitter.com/jrwhale/status/2032319975328006272",
+        "score": 207
+      },
+      {
+        "id": "2032146826791698668",
+        "handle": "jussy_world",
+        "created_at_iso": "2026-03-12 13:28:53 -04:00",
+        "text": "🚨 Breaking:\n\n@Backpack TGE is officialy in 5 days\n\nRe-verification for token claim closes this Sunday at 23:59 UTC\n\nNo verification = no claim\n\nPolymarket odds on FDV have completely flipped:\n\nA month ago 93% chance of $700M FDV, now 13%\n\n$100M FDV is now sitting at 97%\n\nWhat's your predicted FDV?",
+        "url": "https://twitter.com/jussy_world/status/2032146826791698668",
+        "score": 206
+      },
+      {
+        "id": "2032978633690845293",
+        "handle": "raunit",
+        "created_at_iso": "2026-03-14 20:34:11 -04:00",
+        "text": "RT @redacted_noah: After P-token drops some mfer is going to say you have to upgrade your tokens to P-token and then rug you.\n\nPlease, can…",
+        "url": "https://twitter.com/raunit/status/2032978633690845293",
+        "score": 170
+      },
+      {
+        "id": "2032871247495967029",
+        "handle": "jussy_world",
+        "created_at_iso": "2026-03-14 13:27:28 -04:00",
+        "text": "Crypto neobanks are competing to become and offer THE BEST\n\nSo I compared them:\n\n@JupGlobal\n\n0% top-up fee\nVisa may charge 0.4% - 1%, there no transaction fee or fx fee\nUp to 10% USDC cashback, QR payments\n\n@KASTxyz\n\n0% top-up fee\n0.5% - 1.75% non-USD tx fee, Visa may charge 0.4% - 1%\n100+ countries incl. USA\nCashback, airdrop, physical card\n\n@xplaceapp\n\n0% top-up fee\n0.5% non-USD tx fee, Visa may charge 0.4% - 1%\n160+ countries incl. USA\n2% cashback + 16% APY on savings\n\n@AviciMoney\n\n0% top-up fee\nVisa may charge 0.4% - 1%, there no transaction fee or fx fee\n100+ countries incl. USA (excl. UK), physical card\n\n@solflare\n\n1% platform fee\nNon-USD tx fee 0.40 - 0.70%\nNative wallet integration\n\n@Revolut\n\n0 - 2% exchange fee\nWhole Europe (no Africa, LATAM)\nMulti-chain\n\n@fusewallet\n\n0% top-up\nVisa fee 1%, non-USD tx fee ?\nNative wallet integration\n\n@GetPyra\n\n0% top-up fee\n1.5% non-USD tx fee, Visa may charge 0.4% - 1%\n75+ countries\nSpend crypto without selling\n\n@surfcashx\n\nDetails TBA\nRegional off-ramp, works with local QR payment rails\n0.5% fee for fiat payments\nYou can pay bills or rent\n\nThe race to become the best Neobank is heating up\n\nAt the end users wins from it\n\nWho wins? Who you prefer?",
+        "url": "https://twitter.com/jussy_world/status/2032871247495967029",
+        "score": 164
+      },
+      {
+        "id": "2032835514185765180",
+        "handle": "solana_devs",
+        "created_at_iso": "2026-03-14 11:05:29 -04:00",
+        "text": "RT @redacted_noah: P-token is a great example of why Solana is killing it on perf. Everyone thought the solution to scale was overly creati…",
+        "url": "https://twitter.com/solana_devs/status/2032835514185765180",
+        "score": 108
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_5",
+    "category": "AI / Agents",
+    "topKeywords": [
+      "agent",
+      "agents",
+      "solana",
+      "hackathon",
+      "phantom"
+    ],
+    "tweetCount": 22,
+    "clusterScore": 2383.5643672689494,
+    "reason": "AI / Agents cluster linked by [agent, agents, solana, hackathon, phantom]",
+    "sampleTweets": [
+      {
+        "id": "2032739527903871019",
+        "handle": "SolanaSensei",
+        "created_at_iso": "2026-03-14 04:44:04 -04:00",
+        "text": "📰 NEWS: AI AGENTS ON SOLANA\n\n> Solana Agent Economy Hackathon: Agent Talent Show – Build & Win $30K!  Co-hosts: @solana & @trendsdotfun\n\n> Pumpfun rolls out automated buybacks for tokenized AI agents.\n\n> Phantom's Connect SDK plugin is live on the @cursor_ai Marketplace.\n\n>  Agents can now have access to 250+ premium APIs from a single USDC balance on Solana thanks to @agentcashdev",
+        "url": "https://twitter.com/SolanaSensei/status/2032739527903871019",
+        "score": 266
+      },
+      {
+        "id": "2032932619730534865",
+        "handle": "okx",
+        "created_at_iso": "2026-03-14 17:31:21 -04:00",
+        "text": "AI agents are becoming onchain users.\n\nOur Onchain OS gives developers the tools to build, deploy, and scale agents across our Wallet and onchain marketplace — used by 12M+ monthly users.\n\nExplore your agent’s workstation → https://t.co/K2CahN8hoz https://t.co/71gZ2eKd29",
+        "url": "https://twitter.com/okx/status/2032932619730534865",
+        "score": 167
+      },
+      {
+        "id": "2032591582642520350",
+        "handle": "x402",
+        "created_at_iso": "2026-03-13 18:56:11 -04:00",
+        "text": "RT @clawpumptech: You can now launch the first ever Tokenized Agents on @Pumpfun and empower them with all @solana DeFi Skills through @cla…",
+        "url": "https://twitter.com/x402/status/2032591582642520350",
+        "score": 157
+      },
+      {
+        "id": "2032572577529372774",
+        "handle": "x402",
+        "created_at_iso": "2026-03-13 17:40:40 -04:00",
+        "text": "RT @solana: Agents can just buy things on Solana",
+        "url": "https://twitter.com/x402/status/2032572577529372774",
+        "score": 157
+      },
+      {
+        "id": "2032572435850051619",
+        "handle": "vibhu",
+        "created_at_iso": "2026-03-13 17:40:06 -04:00",
+        "text": "RT @solana: Agents can just buy things on Solana",
+        "url": "https://twitter.com/vibhu/status/2032572435850051619",
+        "score": 157
+      },
+      {
+        "id": "2032151410070987257",
+        "handle": "x402",
+        "created_at_iso": "2026-03-12 13:47:06 -04:00",
+        "text": "Get your agents ready: @solana has an agentic finance track in the hackathon at @FundingCommons this weekend in SF",
+        "url": "https://twitter.com/x402/status/2032151410070987257",
+        "score": 154
+      },
+      {
+        "id": "2032890041375318302",
+        "handle": "x402",
+        "created_at_iso": "2026-03-14 14:42:09 -04:00",
+        "text": "RT @fairscalexyz: Today we’re introducing FairScale for Agents. Credibility infrastructure for the autonomous economy.\n\nAgents now have pay…",
+        "url": "https://twitter.com/x402/status/2032890041375318302",
+        "score": 110
+      },
+      {
+        "id": "2032821770722619396",
+        "handle": "Dune",
+        "created_at_iso": "2026-03-14 10:10:52 -04:00",
+        "text": "RT @Dune: Dune CLI &amp; Skills are live 🔔\n\n130+ chains of onchain data, now agent-native. Your AI agents can now:\n✅ Discover onchain tables an…",
+        "url": "https://twitter.com/Dune/status/2032821770722619396",
+        "score": 108
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_2",
+    "category": "DeFi Yield / LP",
+    "topKeywords": [
+      "jupiter",
+      "meteora",
+      "jup",
+      "pool",
+      "solana"
+    ],
+    "tweetCount": 12,
+    "clusterScore": 1601.374099514823,
+    "reason": "DeFi Yield / LP cluster linked by [jupiter, meteora, jup, pool, solana]",
+    "sampleTweets": [
+      {
+        "id": "2032143897443635281",
+        "handle": "inno_ox",
+        "created_at_iso": "2026-03-12 13:17:15 -04:00",
+        "text": "everyone says $jup is down bad. WRONG ❌ \n\nif you held/bought AND staked JUP at TGE, you're actually doing GREAT!\n\nASR alone:\n> 10,000 JUP staked at TGE → 31,450 JUP today.\n that's +214% JUP in 7 ASR periods\n\nJupuary stakers allocation 2025 on top of that.\nand none of this even counts:\n> PENGU, BLUE, METEORA, SBTs airdrops\n> HUMA presale access \n> WET ICO eligibility \n> Catstanbul & Catlumpurr subsidies (2x $2K)\n\npeople are starting to realize that staking JUP is one of the best R/R plays in Solana DeFi.\n\n874M JUP staked. 374K stakers. 22.88% current APY.\n\nand now with no new net emissions, selling pressure dropped. price has been quietly going up the last few weeks.\n\nare you staking your jup? 🐱",
+        "url": "https://twitter.com/inno_ox/status/2032143897443635281",
+        "score": 411
+      },
+      {
+        "id": "2033165831065231861",
+        "handle": "SolanaSensei",
+        "created_at_iso": "2026-03-15 08:58:03 -04:00",
+        "text": "What's your favorite way to swap on Solana?\n\nDo you use Jupiter, Kamino, Titan, or do you just swap in your wallet.\n\nInterested to see your answers 👇 https://t.co/XFYSFuVQC4",
+        "url": "https://twitter.com/SolanaSensei/status/2033165831065231861",
+        "score": 355
+      },
+      {
+        "id": "2032842453154410972",
+        "handle": "SolanaSensei",
+        "created_at_iso": "2026-03-14 11:33:03 -04:00",
+        "text": "Jupiter’s $JUP buybacks have now reached a total of $80M\n\nFor comparison, PumpFun has done $324M\n\nWhat should they do with the tokens? https://t.co/l3JVAebgfi",
+        "url": "https://twitter.com/SolanaSensei/status/2032842453154410972",
+        "score": 162
+      },
+      {
+        "id": "2033118522902298708",
+        "handle": "jussy_world",
+        "created_at_iso": "2026-03-15 05:50:04 -04:00",
+        "text": "So far, @JupGlobal is the most transparent neobank I’ve used\n\nThey show you exactly what you’re paying and why\n\nNo hidden fees\n\nExample from my last purchase:\n\n• Coffee: $6.81 + Visa FX fee (~0.4–1%) $0.07\n• Amount taken in total: $6.88\n• Exchange Rate: 1 AED = $0.272\n• Jupiter Global fee: $0.00\n\nI pay nothing to Jupiter, because they take ZERO fees\n\nWith most neobanks, fees are hidden and they just show you the total amount that was taken from you\n\nOn Jup everything is clear\n\nBig win for transparency",
+        "url": "https://twitter.com/jussy_world/status/2033118522902298708",
+        "score": 135
+      },
+      {
+        "id": "2032893601013772757",
+        "handle": "met_lparmy",
+        "created_at_iso": "2026-03-14 14:56:18 -04:00",
+        "text": "Top performing pools on Meteora today, sorted by 24h Fee.\n\nDid you print any fees today? https://t.co/3Gaqqrutuh",
+        "url": "https://twitter.com/met_lparmy/status/2032893601013772757",
+        "score": 110
+      },
+      {
+        "id": "2032460205171298702",
+        "handle": "jussy_world",
+        "created_at_iso": "2026-03-13 10:14:08 -04:00",
+        "text": "🚨 Jupiter just introduced @jup_offerbook\n\nA peer-to-peer lending protocol for tokens, NFTs, RWAs, and more\n\nHow it works:\n\nBorrowers and lenders create fixed-term loans, choosing their own collateral, APR, loan size and duration\n\nThere are no price-based liquidations, since it’s time-based\n\nRegistration is now live!",
+        "url": "https://twitter.com/jussy_world/status/2032460205171298702",
+        "score": 104
+      },
+      {
+        "id": "2032958471058976842",
+        "handle": "met_lparmy",
+        "created_at_iso": "2026-03-14 19:14:04 -04:00",
+        "text": "RT @SolanaSensei: Meteora's stats are insane, they generate:\n\n- $41 per sec\n- $2,491 per min\n- $149,473 per hour\n\n90.75% of this goes direc…",
+        "url": "https://twitter.com/met_lparmy/status/2032958471058976842",
+        "score": 56
+      },
+      {
+        "id": "2032910178371170450",
+        "handle": "mert",
+        "created_at_iso": "2026-03-14 16:02:10 -04:00",
+        "text": "another shielded ZEC ATH today!!\n\nthe most private pool of digital value keeps getting more private as cypherpunk chads keep encrypting their money\n\ncome and take it https://t.co/R0eYBjMKVJ",
+        "url": "https://twitter.com/mert/status/2032910178371170450",
+        "score": 55
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_7",
+    "category": "Perps / Trading",
+    "topKeywords": [
+      "trading",
+      "volume",
+      "long",
+      "token",
+      "sol"
+    ],
+    "tweetCount": 11,
+    "clusterScore": 1107.0350721366065,
+    "reason": "Perps / Trading cluster linked by [trading, volume, long, token, sol]",
+    "sampleTweets": [
+      {
+        "id": "2033156759305764979",
+        "handle": "0xyunss",
+        "created_at_iso": "2026-03-15 08:22:00 -04:00",
+        "text": "saw distorted dumping hard with volume still gut, decided to open token side instead of the usual single side sol. closed $59, 17.64% clean.\n\ntoken side position means i'm deploying tokens instead of sol on my LP. if the price recovers i collect fees and my tokens appreciate at the same time. the risk is if it keeps bleeding, but that's why token selection matters before anything else.\n\nthe market right now is concerning. a lot of tokens with solid narrative are sitting at painful lows and it's hard to tell what recovers and what just stays down. \n\ndistorted dumped about 85% from ath, even the new emoji narrative viral anywhere, but the whole market has been brutal. \n\nre-entered again this morning. letting it sit and seeing if there's a pullback from here. position is open, range is set, not going to touch it until the setup plays out.\n\nsometimes the best plays come from tokens everyone else already gave up on.\n\n@MeteoraAG @met_lparmy",
+        "url": "https://twitter.com/0xyunss/status/2033156759305764979",
+        "score": 244
+      },
+      {
+        "id": "2032316703556956308",
+        "handle": "jrwhale",
+        "created_at_iso": "2026-03-13 00:43:55 -04:00",
+        "text": "Almost total $56m volume in a year on @Backpack \n\nBackpack's portfolio margin was already in Season 1, so margin balance keeps getting yield. (meaning portfolio margined + auto yield)\n\nTrading PNL is not much, it's just a number. https://t.co/vOcJiqkeFj",
+        "url": "https://twitter.com/jrwhale/status/2032316703556956308",
+        "score": 207
+      },
+      {
+        "id": "2032762574551343440",
+        "handle": "met_lparmy",
+        "created_at_iso": "2026-03-14 06:15:39 -04:00",
+        "text": "The Dynamic Terminal brings a familiar trading interface into LPing.\n\nBut instead of buy/sell on the side panel, you LP.\nFees, volume, liquidity metrics… all in one place.\n\nThere shouldn’t be a trading interface and an LP interface. It should just be one.",
+        "url": "https://twitter.com/met_lparmy/status/2032762574551343440",
+        "score": 107
+      },
+      {
+        "id": "2032422233667228062",
+        "handle": "QwQiao",
+        "created_at_iso": "2026-03-13 07:43:15 -04:00",
+        "text": "trading is fundamentally a zero sum game where in order to make money u have to outsmart ur competitors\n\nlong term investing is a positive sum bet on a better future.\n\nwhy banging ur head against the wall trying to win a difficult and competitive game when u can play a far easier game with almost no competition?",
+        "url": "https://twitter.com/QwQiao/status/2032422233667228062",
+        "score": 104
+      },
+      {
+        "id": "2032314760730198194",
+        "handle": "jrwhale",
+        "created_at_iso": "2026-03-13 00:36:12 -04:00",
+        "text": "After almost a year of trading on @Backpack. points seasons are finally close.\n\nOver half of total points are in Season 4, got 123,344 total points. It's not much but it's honest work.\n\nWhat's next?\n\nTGE on March 23, the team is in limbo mode for preparation. https://t.co/Bi5aBa2qfl",
+        "url": "https://twitter.com/jrwhale/status/2032314760730198194",
+        "score": 103
+      },
+      {
+        "id": "2033118162884100317",
+        "handle": "0xharsh1001",
+        "created_at_iso": "2026-03-15 05:48:38 -04:00",
+        "text": "RT @vrajdesai78: sneak peak into the new feature coming to @met_engine extension \n\nhave been trading with 'Free Money' tab since past two w…",
+        "url": "https://twitter.com/0xharsh1001/status/2033118162884100317",
+        "score": 67
+      },
+      {
+        "id": "2033089917891522626",
+        "handle": "MadSimon_sol",
+        "created_at_iso": "2026-03-15 03:56:24 -04:00",
+        "text": "Happy Sunday everyone \n\nSL put into profit and now I just sit back and relax \n\nNow packing my @Backpack and onto a long hike with my dogs\n\nWhat are y’all up to today? https://t.co/fiGezGAgbV",
+        "url": "https://twitter.com/MadSimon_sol/status/2033089917891522626",
+        "score": 63
+      },
+      {
+        "id": "2032915266217050293",
+        "handle": "mert",
+        "created_at_iso": "2026-03-14 16:22:23 -04:00",
+        "text": "if my life were ever in danger, I would not call 911\n\ninstead I would tweet my location coordinates and say I have hidden a CA there\n\nthe trenchers would be there long before any other mortals",
+        "url": "https://twitter.com/mert/status/2032915266217050293",
+        "score": 55
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_6",
+    "category": "DeFi Yield / LP",
+    "topKeywords": [
+      "dlmm",
+      "sol",
+      "pool",
+      "agent",
+      "long"
+    ],
+    "tweetCount": 3,
+    "clusterScore": 677.3711455797167,
+    "reason": "DeFi Yield / LP cluster linked by [dlmm, sol, pool, agent, long]",
+    "sampleTweets": [
+      {
+        "id": "2032441729719439843",
+        "handle": "0xyunss",
+        "created_at_iso": "2026-03-13 09:00:43 -04:00",
+        "text": "i vibecoded a DLMM agent that runs multi-hour LP positions on @MeteoraAG and it just went from 0.6 sol to 1 sol in 3 days.\n\nthe interesting part isn't the pnl. it's how the agent decides where to enter.\n\ni plugged in the new @lpagent_io  API to pull behaviour data from top LPers in a pool. the agent analyzes what the top performers are actually doing: \n\navg hold time, win rate, roi per position, whether they hold overnight or not. then uses that to shape its own strategy.\n\nthe agent uses this to understand the pool's character before deciding whether to enter and how long to hold.\n\nthe agent evolves each run. it's not hardcoded to one strategy. it reads the top LPers in whatever pool it's looking at and mirrors the behavior that's actually working in that specific pool at that specific time.\n\nright now i'm keeping it conservative. multi-hour positions only, minimum risk, just letting it compound slowly. 0.6 to 1 sol in 3 days without touching it is good enough validation to keep running.\n\nthe vision is to let it get smarter over time. the more pools it analyzes, the more patterns it picks up from real top performers, the better its entry decisions get.\n\nstill early but this is probably the most interesting thing i've built around @MeteoraAG so far.",
+        "url": "https://twitter.com/0xyunss/status/2032441729719439843",
+        "score": 260
+      },
+      {
+        "id": "2032650674614284421",
+        "handle": "0xyunss",
+        "created_at_iso": "2026-03-13 22:51:00 -04:00",
+        "text": "3 hari ini gua sibuk vibecoding agent buat jalan DLMM multihour di @MeteoraAG sendiri.\n\ngua train dia pake data dari lpagent, biar dia bisa baca pola top LP di pool yang dia analisa. \n\nterus gua tambahin ilmu dan framework yang gua udah punya selama ini soal DLMM. kombinasi keduanya yang nentuin gimana dia buka dan tutup posisi.\n\nhasilnya? dari 0.6 sol sekarang udah 1 sol dalam 3 hari tanpa gua pegang.\n\ntapi ini bedanya agent sama bot. bot itu kaku. lu set rule, dia jalanin rule itu terus sampe lu ubah manual. agent beda. \n\ndia bisa belajar dari kesalahan otomatis, evolve seiring makin banyak posisi yang dia buka, dan gua suruh dia ngelog dan jurnaling setiap keputusan yang dia buat. jadi gua bisa trace kenapa dia masuk, kenapa dia keluar, dan apa yang dia pelajari dari hasilnya.\n\nini masih eksperimen. gua rela kehilangan modal ini kalau emang hasilnya ga bagus. untuk biaya API-nya sendiri kena sekitar 3$ per hari.\n\ntertarik buat nyoba?\n\n@MeteoraAG",
+        "url": "https://twitter.com/0xyunss/status/2032650674614284421",
+        "score": 211
+      },
+      {
+        "id": "2032286776740446636",
+        "handle": "0xyunss",
+        "created_at_iso": "2026-03-12 22:45:00 -04:00",
+        "text": "kebanyakan orang buka posisi DLMM di @MeteoraAG pakai support and resistance buat nentuin rangenya. gua dulu juga gitu. tapi sekarang ada cara yang lebih objektif dan datanya ada langsung di depan muka lu di Dynamic Terminal.\n\ndua metrik yang paling penting buat nentuin range dan strategi: volatility sama fees/active TVL.\n\nvolatility itu seberapa liar pergerakan harga token tersebut. angka ini yang gua pakai buat ngitung range yang mau gua deploy, bukan feeling, bukan kira-kira.\n\nrumusnya simple. kalau mau main cepet, volatility x 5. kalau volatility-nya 3-4% kayak di screenshot ini, berarti range gua sekitar 15%. gua deploy single side sol dengan -15% range, masuk, tunggu bins keisi, keluar.\n\nkalau mau main agak panjang, pakai volatility x 10 setelah price discovery selesai. rangenya lebih lebar, hold time lebih lama, tapi lebih aman dari OOR.\n\nsekarang fees/active TVL. ini metrik buat lo yang mau main multi-hours atau multi-days. angka ini nunjukin seberapa besar fee yang didistribusikan per TVL yang lagi in range.\n\ngua pribadi ngga mau buka posisi multi-jam di pool yang fees/active TVL-nya di bawah 5%. di atas 5% artinya ada cukup fee yang masuk buat ngalahin IL lo, terutama kalau harga balik arah.\n\ndi screenshot ini fees/active TVL-nya 40.95%. itu angka yang sangat bagus, artinya pool ini aktif banget dan fee-nya gede relatif terhadap TVL yang aktif.\n\n@MeteoraAG @MeteoraIDN",
+        "url": "https://twitter.com/0xyunss/status/2032286776740446636",
+        "score": 207
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_8",
+    "category": "Wallets",
+    "topKeywords": [
+      "backpack",
+      "trading",
+      "validator",
+      "airdrop",
+      "tge"
+    ],
+    "tweetCount": 5,
+    "clusterScore": 602.6668106023869,
+    "reason": "Wallets cluster linked by [backpack, trading, validator, airdrop, tge]",
+    "sampleTweets": [
+      {
+        "id": "2032280669716636000",
+        "handle": "jrwhale",
+        "created_at_iso": "2026-03-12 22:20:44 -04:00",
+        "text": "Thank you @heronjr_x for Backpack airdrop tool\n\nPoints cost &amp; breakeven price updated. You can input your trading fees + loss in 'CostFarm Loss' for breakeven.\n\nUse the tool link below. https://t.co/oyigegp2Mp",
+        "url": "https://twitter.com/jrwhale/status/2032280669716636000",
+        "score": 155
+      },
+      {
+        "id": "2033105248928362972",
+        "handle": "armaniferrante",
+        "created_at_iso": "2026-03-15 04:57:19 -04:00",
+        "text": "RT @jrwhale: Almost 8% of $MON stake on Backpack validator\n\nTotal stake: 12.53B $MON\nBackpack stake: 0.98B $MON\nStake APR: 15.43% (Highest)…",
+        "url": "https://twitter.com/armaniferrante/status/2033105248928362972",
+        "score": 130
+      },
+      {
+        "id": "2032794180821680606",
+        "handle": "jrwhale",
+        "created_at_iso": "2026-03-14 08:21:14 -04:00",
+        "text": "Almost 8% of $MON stake on Backpack validator\n\nTotal stake: 12.53B $MON\nBackpack stake: 0.98B $MON\nStake APR: 15.43% (Highest)\nCommission: 0 https://t.co/KjtXTZA5Mt",
+        "url": "https://twitter.com/jrwhale/status/2032794180821680606",
+        "score": 107
+      },
+      {
+        "id": "2032787656137232839",
+        "handle": "jussy_world",
+        "created_at_iso": "2026-03-14 07:55:19 -04:00",
+        "text": "$BP (Backpack) is now trading:\n\nOn WhaleMarket, Mexc, and BingX, premarkets\n\nWith current price $0.4\n\nMeanwhile Polymarket odds on the same FDV have dropped significantly\n\nMarket hasn't made up its mind yet\n\nWhat FDV are you expecting? https://t.co/dktCoiflpb",
+        "url": "https://twitter.com/jussy_world/status/2032787656137232839",
+        "score": 107
+      },
+      {
+        "id": "2032145007432675480",
+        "handle": "jrwhale",
+        "created_at_iso": "2026-03-12 13:21:39 -04:00",
+        "text": "Backpack TGE at March 23\n\nSome will sell, some will buy.\n\nDon’t be the guy who sell at the bottom and who buy at the top.",
+        "url": "https://twitter.com/jrwhale/status/2032145007432675480",
+        "score": 103
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_10",
+    "category": "Wallets",
+    "topKeywords": [
+      "wallet",
+      "solflare",
+      "pool"
+    ],
+    "tweetCount": 7,
+    "clusterScore": 511.0209488153628,
+    "reason": "Wallets cluster linked by [wallet, solflare, pool]",
+    "sampleTweets": [
+      {
+        "id": "2033132205103271946",
+        "handle": "mert",
+        "created_at_iso": "2026-03-15 06:44:26 -04:00",
+        "text": "RT @seppmos: Since the ZODL wallet launched (fka Zashi wallet):\n\n🔸 Shielded ZEC grew by 400%\n🔸 From 1M+ to 5M+ ZEC in the shielded pool\n🔸 $…",
+        "url": "https://twitter.com/mert/status/2033132205103271946",
+        "score": 142
+      },
+      {
+        "id": "2032517080516641265",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-13 14:00:08 -04:00",
+        "text": "Privacy is a human right. Your Solflare wallet is no exception.\n\nPrivate Send is the 1st feature on Solflare’s Privacy Aggregation Layer (PAL), letting you send assets without revealing your wallet address to the recipient.\n\nYour transaction still settles on-chain but your wallet identity stays obscured.\n\nPrivacy when you choose, and transparency when you want.",
+        "url": "https://twitter.com/solflare/status/2032517080516641265",
+        "score": 104
+      },
+      {
+        "id": "2032875813243109528",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-14 13:45:37 -04:00",
+        "text": "RT @solflare: Life when you're using Solflare https://t.co/pjnxsvR5nV",
+        "url": "https://twitter.com/solflare/status/2032875813243109528",
+        "score": 55
+      },
+      {
+        "id": "2032871925194899672",
+        "handle": "Dune",
+        "created_at_iso": "2026-03-14 13:30:10 -04:00",
+        "text": "RT @Dune: Dune Enterprise now powers @BinanceWallet 🤝\n\nAs one of the world's largest multi-chain crypto wallets serving millions of users,…",
+        "url": "https://twitter.com/Dune/status/2032871925194899672",
+        "score": 55
+      },
+      {
+        "id": "2032576761985368076",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-13 17:57:18 -04:00",
+        "text": "Life when you're using Solflare https://t.co/pjnxsvR5nV",
+        "url": "https://twitter.com/solflare/status/2032576761985368076",
+        "score": 52
+      },
+      {
+        "id": "2032468086809616803",
+        "handle": "armaniferrante",
+        "created_at_iso": "2026-03-13 10:45:27 -04:00",
+        "text": "FDV this. FDV that.\n\nJust download the app bro. \n\nLiterally the only fully featured multichain wallet with zero fee swapping and bridging.",
+        "url": "https://twitter.com/armaniferrante/status/2032468086809616803",
+        "score": 52
+      },
+      {
+        "id": "2032180747637825912",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-12 15:43:40 -04:00",
+        "text": "Solflare HAD to cook this hard 😏 https://t.co/uPxE2tlqUl",
+        "url": "https://twitter.com/solflare/status/2032180747637825912",
+        "score": 51
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_4",
+    "category": "Staking / LST",
+    "topKeywords": [
+      "validator",
+      "staking",
+      "liquid",
+      "apy"
+    ],
+    "tweetCount": 1,
+    "clusterScore": 286.108416236603,
+    "reason": "Staking / LST cluster linked by [validator, staking, liquid, apy]",
+    "sampleTweets": [
+      {
+        "id": "2033134698809999813",
+        "handle": "MadSimon_sol",
+        "created_at_iso": "2026-03-15 06:54:20 -04:00",
+        "text": "Imagine that 8% of staked $MON is staked on the @Backpack validator for the highest APR 🤯\n\nIf you’re not big on staking and want to be liquid and flexible, Lend APY is juicy too \n\nI’m currently to 50/50 staking and lending 🤑\n\nEverything in your 🎒 https://t.co/H5IhCc1YjM",
+        "url": "https://twitter.com/MadSimon_sol/status/2033134698809999813",
+        "score": 286
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_9",
+    "category": "Infra / MEV",
+    "topKeywords": [
+      "validator",
+      "staking"
+    ],
+    "tweetCount": 1,
+    "clusterScore": 143.58326073492032,
+    "reason": "Infra / MEV cluster linked by [validator, staking]",
+    "sampleTweets": [
+      {
+        "id": "2033135550484693268",
+        "handle": "armaniferrante",
+        "created_at_iso": "2026-03-15 06:57:43 -04:00",
+        "text": "RT @MadSimon_sol: Imagine that 8% of staked $MON is staked on the @Backpack validator for the highest APR 🤯\n\nIf you’re not big on staking a…",
+        "url": "https://twitter.com/armaniferrante/status/2033135550484693268",
+        "score": 144
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_11",
+    "category": "Hack / Exploit",
+    "topKeywords": [
+      "funds"
+    ],
+    "tweetCount": 1,
+    "clusterScore": 74.5514183081563,
+    "reason": "Hack / Exploit cluster linked by [funds]",
+    "sampleTweets": [
+      {
+        "id": "2033143337872658472",
+        "handle": "jussy_world",
+        "created_at_iso": "2026-03-15 07:28:40 -04:00",
+        "text": "FYI\n@AviciMoney raised $3.5M through @MetaDAOProject\n\nThe team doesn't have direct access to its funds they unlock through proposals only when actually needed\n\nAnd they're built a fully self-custodial neobank, meaning you always have access to your funds\n\nBig funding rounds don't mean anything\n\nThey just mean you're good at PITCHING or you are good SALESMAN\n\nFutarchy",
+        "url": "https://twitter.com/jussy_world/status/2033143337872658472",
+        "score": 75
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_12",
+    "category": "DeFi Yield / LP",
+    "topKeywords": [
+      "farm"
+    ],
+    "tweetCount": 1,
+    "clusterScore": 73.29327580066753,
+    "reason": "DeFi Yield / LP cluster linked by [farm]",
+    "sampleTweets": [
+      {
+        "id": "2033140015983718621",
+        "handle": "ivan_nomadz",
+        "created_at_iso": "2026-03-15 07:15:28 -04:00",
+        "text": "10 Things To Do in Dubai This March\n\nThe last two days were a reminder of something we all know, but rarely stop to think about. \n\nA virus, a stomach that wouldn't cooperate, and suddenly the whole world shrinks down to a bed and four walls. \n\nWhen you're stuck like that, even the simplest things - a walk outside, fresh air - start to feel like luxuries. Being unwell has a way of sharpening your appreciation for time and health in a way that nothing else quite does. \n\nSo the moment I was back on my feet, I started looking at what's out there. And honestly, Dubai delivered. It turns out there's an extraordinary amount happening right now. Whether you've been cooped up like I was, or you've simply been putting things off, consider this your nudge to get out and make the most of it.\n\nLimited-Time Attractions (booking required) and Events Happening Now\n\n1. Dubai Miracle Garden. Free entry for UAE residents with Emirates ID until March 31. Over 150 million flowers in full bloom across one of the world's most spectacular floral displays.\n2. Aquaventure World. Free tickets available daily online for both UAE residents and visitors (March 10–22). Maximum four tickets per booking, limited availability each day.\n3. Lost World Aquarium at Atlantis. Free entry on the same dates as Aquaventure (March 10–22), with the same booking conditions. A rare chance to explore one of Dubai's most immersive underwater attractions at no cost.\n4. Jungle Bay Waterpark. Free access to the waterpark and resort beach from March 13–31. Advance booking is mandatory.\n\n5. House of Hype at Dubai Mall. 50 free tickets released daily on a first-come, first-served basis until March 22. The only condition: wear the four colours of the UAE flag.\n\n6. Aura Skypool. 500 free tickets available throughout March using the code AURA500. At 200 metres above the Palm Jumeirah, this is arguably the best free view in the city.\n\n7. Beach Canteen Festival. Running from March 19 to April 5, this free beachfront festival features live entertainment, food, and a relaxed seaside atmosphere.\n\n8. Ramadan Fireworks and Night Markets. With Ramadan in full swing, free fireworks displays and open-air night markets are taking place across the city, offering a festive and atmospheric way to spend an evening.\n\n9. Camel Hugging Therapy at the Camel Farm. A genuinely unique free experience running March 11–22. Unusual, memorable, and completely free.\n\n10. Dubai Aquarium. The aquarium itself requires a ticket, but the massive tank is fully visible from inside Dubai Mall at no charge.",
+        "url": "https://twitter.com/ivan_nomadz/status/2033140015983718621",
+        "score": 73
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_13",
+    "category": "Hack / Exploit",
+    "topKeywords": [
+      "compromised"
+    ],
+    "tweetCount": 1,
+    "clusterScore": 59.56248827101048,
+    "reason": "Hack / Exploit cluster linked by [compromised]",
+    "sampleTweets": [
+      {
+        "id": "2033046935511159055",
+        "handle": "vibhu",
+        "created_at_iso": "2026-03-15 01:05:36 -04:00",
+        "text": "(If you missed the original, our official account was compromised for about 2 hours)",
+        "url": "https://twitter.com/vibhu/status/2033046935511159055",
+        "score": 60
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_14",
+    "category": "AI / Agents",
+    "topKeywords": [
+      "llm"
+    ],
+    "tweetCount": 1,
+    "clusterScore": 52.006519974858975,
+    "reason": "AI / Agents cluster linked by [llm]",
+    "sampleTweets": [
+      {
+        "id": "2032452316339769624",
+        "handle": "0xharsh1001",
+        "created_at_iso": "2026-03-13 09:42:48 -04:00",
+        "text": "for the next iteration of products at @met_engine we will be working on first principles tools, which just solve a lot of redundant work around market making. \n\nLLMs have instilled immense confidence in our ability to ship harder!",
+        "url": "https://twitter.com/0xharsh1001/status/2032452316339769624",
+        "score": 52
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_15",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033178144878858306",
+        "handle": "met_lparmy",
+        "created_at_iso": "2026-03-15 09:46:59 -04:00",
+        "text": "RT @met_lparmy: LP Army Bootcamp - Indonesian #3 - Day 2 https://t.co/NWU8eVAAbw",
+        "url": "https://twitter.com/met_lparmy/status/2033178144878858306",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_16",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033177824845013357",
+        "handle": "Heavymetalcook6",
+        "created_at_iso": "2026-03-15 09:45:42 -04:00",
+        "text": "Indonesian bootcamp Day 2 LIVE\nLFG",
+        "url": "https://twitter.com/Heavymetalcook6/status/2033177824845013357",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_17",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033173926155853926",
+        "handle": "met_lparmy",
+        "created_at_iso": "2026-03-15 09:30:13 -04:00",
+        "text": "LP Army Bootcamp - Indonesian #3 - Day 2 https://t.co/NWU8eVAAbw",
+        "url": "https://twitter.com/met_lparmy/status/2033173926155853926",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_18",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033160558069887172",
+        "handle": "okx",
+        "created_at_iso": "2026-03-15 08:37:05 -04:00",
+        "text": "Its Sunday. Touch grass. https://t.co/NAqY5gnVdG",
+        "url": "https://twitter.com/okx/status/2033160558069887172",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_19",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033144898178712027",
+        "handle": "met_lparmy",
+        "created_at_iso": "2026-03-15 07:34:52 -04:00",
+        "text": "Join the Academy to learn more: \nhttps://t.co/RKcu25dg4F",
+        "url": "https://twitter.com/met_lparmy/status/2033144898178712027",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_20",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033138537327886375",
+        "handle": "met_lparmy",
+        "created_at_iso": "2026-03-15 07:09:35 -04:00",
+        "text": "RT @madragtrades: https://t.co/Jzzr7WyMfE",
+        "url": "https://twitter.com/met_lparmy/status/2033138537327886375",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_21",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033136052806824220",
+        "handle": "SolanaSensei",
+        "created_at_iso": "2026-03-15 06:59:43 -04:00",
+        "text": "⛩️ GM AND NAMASTE ⛩️\n\nKeep building and enjoy the process https://t.co/mQ9MECuG64",
+        "url": "https://twitter.com/SolanaSensei/status/2033136052806824220",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_22",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033131884243275966",
+        "handle": "mert",
+        "created_at_iso": "2026-03-15 06:43:09 -04:00",
+        "text": "not only the last 1000x, but also the last PvE, and the most critical mission left in crypto\n\nwithout encrypted money, none of the other stuff matters except as the scaffolds of surveillance at scale",
+        "url": "https://twitter.com/mert/status/2033131884243275966",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_23",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033130677944607193",
+        "handle": "mert",
+        "created_at_iso": "2026-03-15 06:38:22 -04:00",
+        "text": "RT @QwQiao: continue to believe that zcash is the last possible 1000x in crypto.\n\ngov overreach, money printing, rise in socialism, quantum…",
+        "url": "https://twitter.com/mert/status/2033130677944607193",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_24",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033128848313786754",
+        "handle": "okx",
+        "created_at_iso": "2026-03-15 06:31:05 -04:00",
+        "text": "GM to everyone keeping through market waves with us. https://t.co/ojiNKtHVfC",
+        "url": "https://twitter.com/okx/status/2033128848313786754",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_25",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033124785878929821",
+        "handle": "QwQiao",
+        "created_at_iso": "2026-03-15 06:14:57 -04:00",
+        "text": "there’s still lots of possible 10x’s and maybe 100x’s, but a 1000x requires an extraordinarily large tam.",
+        "url": "https://twitter.com/QwQiao/status/2033124785878929821",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_26",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033121486547104082",
+        "handle": "QwQiao",
+        "created_at_iso": "2026-03-15 06:01:50 -04:00",
+        "text": "continue to believe that zcash is the last possible 1000x in crypto.\n\ngov overreach, money printing, rise in socialism, quantum. all massive multi-decade tailwinds.\n\nas with btc, don’t trade it. accumulate during periods of apathy and hold it for 10-20yrs.",
+        "url": "https://twitter.com/QwQiao/status/2033121486547104082",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_27",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033104980152868986",
+        "handle": "SolanaSensei",
+        "created_at_iso": "2026-03-15 04:56:15 -04:00",
+        "text": "Praise no one. Blame no one.\n\nHelp everyone when you can, but depend on no one.\n\nFree yourself from worldly attachments and selfish desires.\n\nFace heat and cold, pleasure and pain, honor and dishonor with equal calm.\n\nLive for the welfare of others and see yourself reflected in every being.\n\nMaster the senses until awareness allows you to transcend them.\n\nRemain united with the Self.",
+        "url": "https://twitter.com/SolanaSensei/status/2033104980152868986",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_28",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033099717975171430",
+        "handle": "jussy_world",
+        "created_at_iso": "2026-03-15 04:35:20 -04:00",
+        "text": "P.s. this tweet is not sponsored",
+        "url": "https://twitter.com/jussy_world/status/2033099717975171430",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_29",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033085476270149666",
+        "handle": "mert",
+        "created_at_iso": "2026-03-15 03:38:45 -04:00",
+        "text": "zcash",
+        "url": "https://twitter.com/mert/status/2033085476270149666",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_30",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033060662943895854",
+        "handle": "okx",
+        "created_at_iso": "2026-03-15 02:00:09 -04:00",
+        "text": "Full send! Shanghai. https://t.co/h2H5N1MFWe",
+        "url": "https://twitter.com/okx/status/2033060662943895854",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_31",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033039194168102996",
+        "handle": "vibhu",
+        "created_at_iso": "2026-03-15 00:34:50 -04:00",
+        "text": "https://t.co/4sFNPtBURJ",
+        "url": "https://twitter.com/vibhu/status/2033039194168102996",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_32",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2033031960050758016",
+        "handle": "okx",
+        "created_at_iso": "2026-03-15 00:06:05 -04:00",
+        "text": "$0 to over $300B in six years.\n\nStablecoins are becoming a core layer of global finance. https://t.co/CIMXzCPR6o",
+        "url": "https://twitter.com/okx/status/2033031960050758016",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_33",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032977853394845772",
+        "handle": "okx",
+        "created_at_iso": "2026-03-14 20:31:05 -04:00",
+        "text": "Most platforms charge you to use their own features.\n\nOKX doesn’t. $0 monthly. Everything unlocked. https://t.co/qrOSrXRci8",
+        "url": "https://twitter.com/okx/status/2032977853394845772",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_34",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032953321061843187",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-14 18:53:36 -04:00",
+        "text": "RT @solflare: 3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093…",
+        "url": "https://twitter.com/solflare/status/2032953321061843187",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_35",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032942804943466978",
+        "handle": "KASTxyz",
+        "created_at_iso": "2026-03-14 18:11:49 -04:00",
+        "text": "Sign up and deposit $100 for a chance to win a Pengu Black Card:\n\nhttps://t.co/WXqn0eTcXk",
+        "url": "https://twitter.com/KASTxyz/status/2032942804943466978",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_36",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032942801449607358",
+        "handle": "KASTxyz",
+        "created_at_iso": "2026-03-14 18:11:48 -04:00",
+        "text": "How to sign up to KAST: https://t.co/Gd1wle1G6K",
+        "url": "https://twitter.com/KASTxyz/status/2032942801449607358",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_37",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032942796106088782",
+        "handle": "KASTxyz",
+        "created_at_iso": "2026-03-14 18:11:47 -04:00",
+        "text": "This could be you 🫵\n\nAll you have to do is:\n1️⃣ Download KAST \n2️⃣ Verify your account \n3️⃣ Deposit $100\n\nOnce you do, you'll be entered for a chance to win a Pengu Black Card 🐧 https://t.co/KGDxjyxMbQ",
+        "url": "https://twitter.com/KASTxyz/status/2032942796106088782",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_38",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032926663688769644",
+        "handle": "vibhu",
+        "created_at_iso": "2026-03-14 17:07:41 -04:00",
+        "text": "RT @foursixsix: Your comments 10 seconds after you try to bullpost any blockchain other than @solana. https://t.co/ZXHbH8f3zU",
+        "url": "https://twitter.com/vibhu/status/2032926663688769644",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_39",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032917344234700852",
+        "handle": "mert",
+        "created_at_iso": "2026-03-14 16:30:39 -04:00",
+        "text": "it would be much less inspiring if both were fighting over the exact same pie\n\nthis way, we get to explore the design space of many different ideas in parallel",
+        "url": "https://twitter.com/mert/status/2032917344234700852",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_40",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032915921388400867",
+        "handle": "vibhu",
+        "created_at_iso": "2026-03-14 16:25:00 -04:00",
+        "text": "The way to become the neutral, permissionless financial layer that the world adopts is to IBRL\n\nThe fact that this still isn’t obvious to the entire industry is insane",
+        "url": "https://twitter.com/vibhu/status/2032915921388400867",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_41",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032887299436941342",
+        "handle": "okx",
+        "created_at_iso": "2026-03-14 14:31:16 -04:00",
+        "text": "With Dual Investment, you set your price.\n\nIf it hits, you sell. If it doesn’t, you earn. https://t.co/RS9KCtzppy",
+        "url": "https://twitter.com/okx/status/2032887299436941342",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_42",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032881854659915891",
+        "handle": "inno_ox",
+        "created_at_iso": "2026-03-14 14:09:37 -04:00",
+        "text": "the average person on earth earns $450,000 in their ENTIRE LIFETIME.\n\n$11,250/year. 40 years of work. that's it.\n\nyou don't need a 8fig. you don't need to beat that number.\n\n> you're not late.",
+        "url": "https://twitter.com/inno_ox/status/2032881854659915891",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_43",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032879969332797647",
+        "handle": "MadSimon_sol",
+        "created_at_iso": "2026-03-14 14:02:08 -04:00",
+        "text": "Hi my name is Simon and this is where I live 🇩🇪 https://t.co/ASfHR5PaD3",
+        "url": "https://twitter.com/MadSimon_sol/status/2032879969332797647",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_44",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032877311557775767",
+        "handle": "AviciMoney",
+        "created_at_iso": "2026-03-14 13:51:34 -04:00",
+        "text": "RT @jussy_world: I landed in Thailand\n\nFirst thing I needed was cash\n\nTook my USDC on @solana, used @AviciMoney\n\nWithdrew from the first AT…",
+        "url": "https://twitter.com/AviciMoney/status/2032877311557775767",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_45",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032876672488550451",
+        "handle": "SolanaSensei",
+        "created_at_iso": "2026-03-14 13:49:02 -04:00",
+        "text": "I love becoming way stricter with healthy habits during crypto bear markets, like working out and eating clean.\n\nIf you can’t change the market, change yourself and focus on what’s within your control.",
+        "url": "https://twitter.com/SolanaSensei/status/2032876672488550451",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_46",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032875867022443006",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-14 13:45:50 -04:00",
+        "text": "RT @solflare: Gearing up to go Beyond Speculation 🏃\n\nA collaborative activation with @NetrunnerTax",
+        "url": "https://twitter.com/solflare/status/2032875867022443006",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_47",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032872154728124819",
+        "handle": "0xyunss",
+        "created_at_iso": "2026-03-14 13:31:05 -04:00",
+        "text": "RT @izebel_eth: time isnt running out, but if you dont use it well it will https://t.co/XcmPXc85Dy",
+        "url": "https://twitter.com/0xyunss/status/2032872154728124819",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_48",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032866827995619473",
+        "handle": "KASTxyz",
+        "created_at_iso": "2026-03-14 13:09:55 -04:00",
+        "text": "RT @solanapayments: \"KAST, because it was built on top of stablecoins, is available in 170+ countries\" \n\n@raagulanpathy, Founder at @KASTxyz",
+        "url": "https://twitter.com/KASTxyz/status/2032866827995619473",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_49",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032861241849356439",
+        "handle": "solana_devs",
+        "created_at_iso": "2026-03-14 12:47:43 -04:00",
+        "text": "👀👀",
+        "url": "https://twitter.com/solana_devs/status/2032861241849356439",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_50",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032846405790728466",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-14 11:48:46 -04:00",
+        "text": "https://t.co/xjKSNrlG7D",
+        "url": "https://twitter.com/solflare/status/2032846405790728466",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_51",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032842461899272493",
+        "handle": "okx",
+        "created_at_iso": "2026-03-14 11:33:05 -04:00",
+        "text": "Hello, onchain adventurers 🫡\n\nOur weekend quiz is here! For a chance at $500 USDT, all you gotta do is ... \n\n☑️ Follow @OKX\n☑️ RT + comment your answer below \n\nHave a go!👇 https://t.co/R3NYVqbP2f",
+        "url": "https://twitter.com/okx/status/2032842461899272493",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_52",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032836314249179203",
+        "handle": "mert",
+        "created_at_iso": "2026-03-14 11:08:40 -04:00",
+        "text": "they actually did it 😭😭😭 https://t.co/BkKYyiZU9X",
+        "url": "https://twitter.com/mert/status/2032836314249179203",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_53",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032834484639355094",
+        "handle": "met_lparmy",
+        "created_at_iso": "2026-03-14 11:01:24 -04:00",
+        "text": "Advanced Bootcamp 9 - CrimeXBT Strategy\n\nhttps://t.co/Dez9WEFwZx",
+        "url": "https://twitter.com/met_lparmy/status/2032834484639355094",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_54",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032834471657984090",
+        "handle": "Heavymetalcook6",
+        "created_at_iso": "2026-03-14 11:01:20 -04:00",
+        "text": "LFG",
+        "url": "https://twitter.com/Heavymetalcook6/status/2032834471657984090",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_55",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032834348454481968",
+        "handle": "Heavymetalcook6",
+        "created_at_iso": "2026-03-14 11:00:51 -04:00",
+        "text": "RT @met_lparmy: Advanced Bootcamp 9 - CrimeXBT Strategy https://t.co/Dez9WEG4P5",
+        "url": "https://twitter.com/Heavymetalcook6/status/2032834348454481968",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_56",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032834207622603118",
+        "handle": "met_lparmy",
+        "created_at_iso": "2026-03-14 11:00:17 -04:00",
+        "text": "Advanced Bootcamp 9 - CrimeXBT Strategy https://t.co/Dez9WEG4P5",
+        "url": "https://twitter.com/met_lparmy/status/2032834207622603118",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_57",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032834206666269000",
+        "handle": "Heavymetalcook6",
+        "created_at_iso": "2026-03-14 11:00:17 -04:00",
+        "text": "Advanced Bootcamp 9 - CrimeXBT Strategy https://t.co/KsOClvI9jp",
+        "url": "https://twitter.com/Heavymetalcook6/status/2032834206666269000",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_58",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032831265955578348",
+        "handle": "sol_nxxn",
+        "created_at_iso": "2026-03-14 10:48:36 -04:00",
+        "text": "@solana @toly average fees are calculated across transfers, swaps, and smart contract activity\n\nfees are a highly volatile metric and can vary based on network activity",
+        "url": "https://twitter.com/sol_nxxn/status/2032831265955578348",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_59",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032827513500488112",
+        "handle": "MadSimon_sol",
+        "created_at_iso": "2026-03-14 10:33:41 -04:00",
+        "text": "Grass touched and now back to some grind \n\nThese two suckers had a great day and now they gotta recharge \n\nBut they are the best work buddies ngl https://t.co/l2UwnWdug5",
+        "url": "https://twitter.com/MadSimon_sol/status/2032827513500488112",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_60",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032826612669100469",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-14 10:30:07 -04:00",
+        "text": "Daily reminder ↓ https://t.co/bMB92OKTOg",
+        "url": "https://twitter.com/solflare/status/2032826612669100469",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_61",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032817106152980693",
+        "handle": "ivan_nomadz",
+        "created_at_iso": "2026-03-14 09:52:20 -04:00",
+        "text": "RT @_brizal: .@blockworksDAS accom booked via @NOMADZxyz \n32% cheaper than Agoda, not bad at all... https://t.co/DkQvYF0acV",
+        "url": "https://twitter.com/ivan_nomadz/status/2032817106152980693",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_62",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032812255381958901",
+        "handle": "0xyunss",
+        "created_at_iso": "2026-03-14 09:33:04 -04:00",
+        "text": "RT @MeteoraIDN: LP Army Bootcamp - Indonesian #3 - Day 1 https://t.co/K0fWALhEgW",
+        "url": "https://twitter.com/0xyunss/status/2032812255381958901",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_63",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032811687762387236",
+        "handle": "Heavymetalcook6",
+        "created_at_iso": "2026-03-14 09:30:48 -04:00",
+        "text": "INDNOESIAN BOOTCAMP DAY 1\nLFG",
+        "url": "https://twitter.com/Heavymetalcook6/status/2032811687762387236",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_64",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032811521953378452",
+        "handle": "met_lparmy",
+        "created_at_iso": "2026-03-14 09:30:09 -04:00",
+        "text": "LP Army Bootcamp - Indonesian #3 - Day 1 https://t.co/pZ8i25z4EW",
+        "url": "https://twitter.com/met_lparmy/status/2032811521953378452",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_65",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032807658604925256",
+        "handle": "mert",
+        "created_at_iso": "2026-03-14 09:14:48 -04:00",
+        "text": "seems like a good direction\n\ndont agree with most of the criticism\n\nbut if I were a builder on ETH, I'd be annoyed by the attention the EF gets all the time (certainly feels like they seek it out but I could be wrong)\n\nit's not about you, the point of a foundation is to not exist",
+        "url": "https://twitter.com/mert/status/2032807658604925256",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_66",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032803288786010175",
+        "handle": "vibhu",
+        "created_at_iso": "2026-03-14 08:57:26 -04:00",
+        "text": "RT @calilyliu: Blockchains are tech for finance. \n\nThe moonshot that Bitcoin originally proposed, that many of us came to build, has gone b…",
+        "url": "https://twitter.com/vibhu/status/2032803288786010175",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_67",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032799103248175237",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-14 08:40:48 -04:00",
+        "text": "3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093844609550582231725359408128481117450284102701938521105596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467154357846878861444324224152358623224381745688499164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467154357846878861444324224152358623224381745688499164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467154357846878861444324224152358623224381745688499164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467154357846878861444324224152358623224381745688499164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467154357846878861444324224152358623224381745688499164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467154357846878861444324224152358623224381745688499164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467154357846878861444324224152358623224381745688499164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467154357846878861444324224152358623224381745688499164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467154357846878861444324224152358623224381745688499164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467154357846878861444324224152358623224381745688499164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467154357846878861444324224152358623224381745688499164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467154357846878861444324224152358623224381745688499164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467154357846878861444324224152358623224381745688499164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467154357846878861444324224152358623224381745688499164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712",
+        "url": "https://twitter.com/solflare/status/2032799103248175237",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_68",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032788172027945147",
+        "handle": "KASTxyz",
+        "created_at_iso": "2026-03-14 07:57:22 -04:00",
+        "text": "RT @raagulanpathy: Do you think an investor like QED who backed NuBank, is in the business of banking just a crypto card?\n\n@KASTxyz is buil…",
+        "url": "https://twitter.com/KASTxyz/status/2032788172027945147",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_69",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032786506080035144",
+        "handle": "0xharsh1001",
+        "created_at_iso": "2026-03-14 07:50:45 -04:00",
+        "text": "RT @met_engine: here is how to use \"Free Money\" tab with our extension. \n\n1) install our extension \n2) login \n3) open @Polymarket  to find…",
+        "url": "https://twitter.com/0xharsh1001/status/2032786506080035144",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_70",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032771569899143211",
+        "handle": "jrwhale",
+        "created_at_iso": "2026-03-14 06:51:23 -04:00",
+        "text": "RT @WuBlockchain: Exclusive: Coinbase, the largest cryptocurrency exchange in the US, is in talks with Bybit, the world's second-largest of…",
+        "url": "https://twitter.com/jrwhale/status/2032771569899143211",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_71",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032758437210112144",
+        "handle": "met_lparmy",
+        "created_at_iso": "2026-03-14 05:59:12 -04:00",
+        "text": "RT @olawande0x: Ever entered a good LP position on @MeteoraAG but still ended up in a loss?\n\nIt happens more often than you think because e…",
+        "url": "https://twitter.com/met_lparmy/status/2032758437210112144",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_72",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032758146658443577",
+        "handle": "SolanaSensei",
+        "created_at_iso": "2026-03-14 05:58:03 -04:00",
+        "text": "⛩️ GM AND NAMASTE ⛩️\n\nTake a few deep breaths today and keep a calm mind.\n\nLet that calm guide your steps through the day. https://t.co/2nYNSUOPG7",
+        "url": "https://twitter.com/SolanaSensei/status/2032758146658443577",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_73",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032751843311263814",
+        "handle": "okx",
+        "created_at_iso": "2026-03-14 05:33:00 -04:00",
+        "text": "🥧",
+        "url": "https://twitter.com/okx/status/2032751843311263814",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_74",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032741180421616127",
+        "handle": "mert",
+        "created_at_iso": "2026-03-14 04:50:38 -04:00",
+        "text": "RT @gainzy222: I think ur supposed to buy zec here\n\nAm I saying this because I own a boatload ? yeh\n\nStill a buy",
+        "url": "https://twitter.com/mert/status/2032741180421616127",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_75",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032725620426174639",
+        "handle": "mert",
+        "created_at_iso": "2026-03-14 03:48:48 -04:00",
+        "text": "this is like Wintermute calling on Jane Street to stop dumping",
+        "url": "https://twitter.com/mert/status/2032725620426174639",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_76",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032719843774910823",
+        "handle": "MadSimon_sol",
+        "created_at_iso": "2026-03-14 03:25:51 -04:00",
+        "text": "Happy weekend CT \n\nRome wasn’t built on a day\n\nBe patient and it’ll pay off big time \n\nBrick by brick, study @Backpack https://t.co/0n5wXeuvAv",
+        "url": "https://twitter.com/MadSimon_sol/status/2032719843774910823",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_77",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032706917898821706",
+        "handle": "mert",
+        "created_at_iso": "2026-03-14 02:34:29 -04:00",
+        "text": "total BNB victory https://t.co/lSQwRQ6iEg",
+        "url": "https://twitter.com/mert/status/2032706917898821706",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_78",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032687547701133316",
+        "handle": "Heavymetalcook6",
+        "created_at_iso": "2026-03-14 01:17:31 -04:00",
+        "text": "👀",
+        "url": "https://twitter.com/Heavymetalcook6/status/2032687547701133316",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_79",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032685087297265822",
+        "handle": "mert",
+        "created_at_iso": "2026-03-14 01:07:44 -04:00",
+        "text": "who would've guessed that the USA and Iran will solve climate change by completely raping the world's petrochemical supply",
+        "url": "https://twitter.com/mert/status/2032685087297265822",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_80",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032674291561734211",
+        "handle": "mert",
+        "created_at_iso": "2026-03-14 00:24:51 -04:00",
+        "text": "RT @armaniferrante: Zcash next 🎒 https://t.co/YUkeoFzvBS",
+        "url": "https://twitter.com/mert/status/2032674291561734211",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_81",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032671838740885743",
+        "handle": "okx",
+        "created_at_iso": "2026-03-14 00:15:06 -04:00",
+        "text": "Weekend plans ... https://t.co/ZnhVlZ0JD8",
+        "url": "https://twitter.com/okx/status/2032671838740885743",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_82",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032668319573278949",
+        "handle": "armaniferrante",
+        "created_at_iso": "2026-03-14 00:01:07 -04:00",
+        "text": "Zcash next 🎒 https://t.co/YUkeoFzvBS",
+        "url": "https://twitter.com/armaniferrante/status/2032668319573278949",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_83",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032631915409232152",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-13 21:36:27 -04:00",
+        "text": "RT @solflare: Who needs this? https://t.co/3HeU2SSKew",
+        "url": "https://twitter.com/solflare/status/2032631915409232152",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_84",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032630565304783266",
+        "handle": "okx",
+        "created_at_iso": "2026-03-13 21:31:05 -04:00",
+        "text": "A boost for your next deposit.\n\nTogether with @Tether, we’re offering new and existing US users a 4% match paid in USAT.\n\nOpt in → Deposit $10+ → Earn. \nhttps://t.co/BztOaPCmaa https://t.co/MOnsSIykik",
+        "url": "https://twitter.com/okx/status/2032630565304783266",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_85",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032608460768940326",
+        "handle": "nocircuit",
+        "created_at_iso": "2026-03-13 20:03:15 -04:00",
+        "text": "Love this onboarding flow. Excited to try out @agentcashdev this weekend 🤖 https://t.co/D8qyDxanXc",
+        "url": "https://twitter.com/nocircuit/status/2032608460768940326",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_86",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032592124785447250",
+        "handle": "vibhu",
+        "created_at_iso": "2026-03-13 18:58:20 -04:00",
+        "text": "RT @ludo_txtx: 2 weeks in at @SolanaFndn, and we've been cooking.\n\nOne thing became clear fast: every CLI and dev tool we ship is now used…",
+        "url": "https://twitter.com/vibhu/status/2032592124785447250",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_87",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032586850452316623",
+        "handle": "KASTxyz",
+        "created_at_iso": "2026-03-13 18:37:23 -04:00",
+        "text": "Interested in cloud services?\n\nEmail business@kast.xyz for more details",
+        "url": "https://twitter.com/KASTxyz/status/2032586850452316623",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_88",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032586846920651125",
+        "handle": "KASTxyz",
+        "created_at_iso": "2026-03-13 18:37:22 -04:00",
+        "text": "KAST 🤝 AWS\n\nWe kicked off our @awscloud partnership with a VIP Summit in Singapore 🇸🇬\n\nWe'll be working together to help @KASTbusiness customers access cloud services to scale their businesses. https://t.co/30hBpWUFHW",
+        "url": "https://twitter.com/KASTxyz/status/2032586846920651125",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_89",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032585268553711686",
+        "handle": "okx",
+        "created_at_iso": "2026-03-13 18:31:06 -04:00",
+        "text": "Main character energy. https://t.co/qh4pNHgGUx",
+        "url": "https://twitter.com/okx/status/2032585268553711686",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_90",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032575009491677536",
+        "handle": "inno_ox",
+        "created_at_iso": "2026-03-13 17:50:20 -04:00",
+        "text": "RT @solanamobile: https://t.co/EY9jBv7M8Z",
+        "url": "https://twitter.com/inno_ox/status/2032575009491677536",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_91",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032557413468090811",
+        "handle": "0xharsh1001",
+        "created_at_iso": "2026-03-13 16:40:25 -04:00",
+        "text": "Always wanted this, the fees of btcSol too high... Trying this.",
+        "url": "https://twitter.com/0xharsh1001/status/2032557413468090811",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_92",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032553240714514915",
+        "handle": "x402",
+        "created_at_iso": "2026-03-13 16:23:50 -04:00",
+        "text": "RT @_rishinsharma: If you haven't tried @agentcashdev  yet here are 4 reasons why:\n\n1. You're probably eligible for free USDC credits\n2. Th…",
+        "url": "https://twitter.com/x402/status/2032553240714514915",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_93",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032550406686134364",
+        "handle": "0xharsh1001",
+        "created_at_iso": "2026-03-13 16:12:34 -04:00",
+        "text": "We need @Polymarket for this",
+        "url": "https://twitter.com/0xharsh1001/status/2032550406686134364",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_94",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032544300765164025",
+        "handle": "AviciMoney",
+        "created_at_iso": "2026-03-13 15:48:18 -04:00",
+        "text": "Congrats to Winners🏆\n\n@UponlyandNAKA , @dalnosk , @AlexanderMalam3 , @EyePenetrate123 , @Emeks_P\n\nDm us to get your Physical signature cards for free.   Enjoy 0% ATM withdrawals, Low fees, Self custody.",
+        "url": "https://twitter.com/AviciMoney/status/2032544300765164025",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_95",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032543018587427184",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-13 15:43:13 -04:00",
+        "text": "https://t.co/XsxjBLleLE",
+        "url": "https://twitter.com/solflare/status/2032543018587427184",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_96",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032537478838493332",
+        "handle": "mert",
+        "created_at_iso": "2026-03-13 15:21:12 -04:00",
+        "text": "Boris' argument for why Bitcoin is a ponzi:\n\ni) one of his friends once invested in it and the price went down\n\nii) Satoshi is Japanese (?)\n\niii) there's no one to talk to if, and I quote: \"they decrypt the crypto\"\n\niv) Pokemon cards are better because kids notice them\n\n$200,000 https://t.co/n5ra7ETXMt",
+        "url": "https://twitter.com/mert/status/2032537478838493332",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_97",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032536690904924167",
+        "handle": "vibhu",
+        "created_at_iso": "2026-03-13 15:18:04 -04:00",
+        "text": "I got $19 \n\nIncredible onboarding experience",
+        "url": "https://twitter.com/vibhu/status/2032536690904924167",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_98",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032535080988504150",
+        "handle": "solana_devs",
+        "created_at_iso": "2026-03-13 15:11:40 -04:00",
+        "text": "RT @_rishinsharma: If you haven't tried @agentcashdev  yet here are 4 reasons why:\n\n1. You're probably eligible for free USDC credits\n2. Th…",
+        "url": "https://twitter.com/solana_devs/status/2032535080988504150",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_99",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032527239141797907",
+        "handle": "AviciMoney",
+        "created_at_iso": "2026-03-13 14:40:30 -04:00",
+        "text": "Someone just lost $49.9M because a checkbox was the last line of defense.\n\nCrypto UX is still early, still broken for finance and that's the opportunity.\n\nour V2 design is built around this. Good UX that always protects you. https://t.co/vnTXfThUL5",
+        "url": "https://twitter.com/AviciMoney/status/2032527239141797907",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_100",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032522550639460466",
+        "handle": "okx",
+        "created_at_iso": "2026-03-13 14:21:53 -04:00",
+        "text": "Crypto's future is compliance-first.\n\nWe're MiCA-licensed, regulated, and live across the EEA — including France. \n\nBuilt for the new era of finance. Get started: https://t.co/RkAR3qmu6G https://t.co/Ktb88xdfuA",
+        "url": "https://twitter.com/okx/status/2032522550639460466",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_101",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032519589867978794",
+        "handle": "x402",
+        "created_at_iso": "2026-03-13 14:10:07 -04:00",
+        "text": "The agentic economy starts with @moonpay on @solana",
+        "url": "https://twitter.com/x402/status/2032519589867978794",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_102",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032517722811007385",
+        "handle": "phygitals",
+        "created_at_iso": "2026-03-13 14:02:42 -04:00",
+        "text": "RT @ebonyclappah: Hey @phygitals \n\nWe're opening Yu-Gi-Oh live on stream and giving them away to our $YUGI community\n\nWould be amazing if y…",
+        "url": "https://twitter.com/phygitals/status/2032517722811007385",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_103",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032517551087882583",
+        "handle": "phygitals",
+        "created_at_iso": "2026-03-13 14:02:01 -04:00",
+        "text": "RT @ebonyclappah: Just concluded our 3rd stream, the amount of Dark Magicians we pulled almost made me want to KMS\n\nWe did a few giveaways…",
+        "url": "https://twitter.com/phygitals/status/2032517551087882583",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_104",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032517520012333492",
+        "handle": "phygitals",
+        "created_at_iso": "2026-03-13 14:01:53 -04:00",
+        "text": "RT @funkchan: @MrFredoSix Yeah I grabbed a PSA 10 off @phygitals for a Christmas present\n\nIt was hard to resist grabbing one for myself 😂",
+        "url": "https://twitter.com/phygitals/status/2032517520012333492",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_105",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032517094206746753",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-13 14:00:12 -04:00",
+        "text": "https://t.co/Jf1NT7EPlx",
+        "url": "https://twitter.com/solflare/status/2032517094206746753",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_106",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032499530500120815",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-13 12:50:24 -04:00",
+        "text": "Gearing up to go Beyond Speculation 🏃\n\nA collaborative activation with @NetrunnerTax",
+        "url": "https://twitter.com/solflare/status/2032499530500120815",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_107",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032494671423828094",
+        "handle": "okx",
+        "created_at_iso": "2026-03-13 12:31:06 -04:00",
+        "text": "Wall Street assets are moving onchain.\n\nMarkets that were once locked in TradFi systems are becoming programmable. A massive unlock for global access.\n\nThat’s what crypto was built for. https://t.co/mJCNhhhChl",
+        "url": "https://twitter.com/okx/status/2032494671423828094",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_108",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032494423725216085",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-13 12:30:07 -04:00",
+        "text": "RT @Frame_tailor_: I’m set 😁\n\nDrop your photo in the comments and I’ll do the same for you😅 https://t.co/QUTKyyAdtr",
+        "url": "https://twitter.com/solflare/status/2032494423725216085",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_109",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032492913310003572",
+        "handle": "Heavymetalcook6",
+        "created_at_iso": "2026-03-13 12:24:07 -04:00",
+        "text": "Excited for the @MeteoraIDN Bootcamp #3!\nMarch 14 &amp; 15 8:30PM WIB\n\nLP Army YouTube : https://t.co/yOOGTjGaQg\n\nX: @MeteoraIDN  and @met_lparmy\n\nStreamyard\nDay 1: https://t.co/07egHnIHzp\nDay 2: https://t.co/JdJlFy3ifr\n🤘",
+        "url": "https://twitter.com/Heavymetalcook6/status/2032492913310003572",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_110",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032491746907615663",
+        "handle": "MadSimon_sol",
+        "created_at_iso": "2026-03-13 12:19:28 -04:00",
+        "text": "100% clay 🤌🤌 https://t.co/qpozxoVCo4",
+        "url": "https://twitter.com/MadSimon_sol/status/2032491746907615663",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_111",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032491088502489531",
+        "handle": "vibhu",
+        "created_at_iso": "2026-03-13 12:16:52 -04:00",
+        "text": "RT @trycallshot: Waitlist is live.\n\nCallshot exists to shift the paradigm of fantasy sports designed for a new generation of fans powered b…",
+        "url": "https://twitter.com/vibhu/status/2032491088502489531",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_112",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032480809521705451",
+        "handle": "vibhu",
+        "created_at_iso": "2026-03-13 11:36:01 -04:00",
+        "text": "RT @Grayscale: Grayscale has more than a few reasons why we're so optimistic about @solana's future. \n\n1️⃣ Leader in users, transactions &amp;…",
+        "url": "https://twitter.com/vibhu/status/2032480809521705451",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_113",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032479688141213978",
+        "handle": "JupGlobal",
+        "created_at_iso": "2026-03-13 11:31:33 -04:00",
+        "text": "RT @JupiterExchange: We’re building the future of finance! https://t.co/6cDuQt3DPI",
+        "url": "https://twitter.com/JupGlobal/status/2032479688141213978",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_114",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032478577954849023",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-13 11:27:09 -04:00",
+        "text": "remember, not everything needs to be public… https://t.co/LOjHRd9RiI",
+        "url": "https://twitter.com/solflare/status/2032478577954849023",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_115",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032477035629809884",
+        "handle": "Dune",
+        "created_at_iso": "2026-03-13 11:21:01 -04:00",
+        "text": "RT @Dune: Dune MCP is live 🔌\n\nPlug Dune directly into @claudeai, @ChatGPTapp, @cursor_ai, and more.\n\nSearch tables. Write queries. Build ch…",
+        "url": "https://twitter.com/Dune/status/2032477035629809884",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_116",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032470340790526055",
+        "handle": "MadSimon_sol",
+        "created_at_iso": "2026-03-13 10:54:25 -04:00",
+        "text": "Haters will say it’s fake",
+        "url": "https://twitter.com/MadSimon_sol/status/2032470340790526055",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_117",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032470320163008959",
+        "handle": "okx",
+        "created_at_iso": "2026-03-13 10:54:20 -04:00",
+        "text": "Market’s vibing green right now 🟩 https://t.co/39ABCb0o3I",
+        "url": "https://twitter.com/okx/status/2032470320163008959",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_118",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032467827211256016",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-13 10:44:26 -04:00",
+        "text": "RT @alcoachxyz: محفظتك على سولانا  كتاب مفتوح  لكل العالم هل أنت مستعد للخصوصية؟ 🛡️\n\nالكثير يعتقد أن الكريبتو مجهول، لكن الحقيقة أن أي شخص…",
+        "url": "https://twitter.com/solflare/status/2032467827211256016",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_119",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032463725073231897",
+        "handle": "jrwhale",
+        "created_at_iso": "2026-03-13 10:28:08 -04:00",
+        "text": "You will see more neobank apps in coming months.\n\nBut tell me who's building outside of @raincards?",
+        "url": "https://twitter.com/jrwhale/status/2032463725073231897",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_120",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032461844242473384",
+        "handle": "armaniferrante",
+        "created_at_iso": "2026-03-13 10:20:39 -04:00",
+        "text": "RT @monad: Less friction, more value for Monad users\n\nZERO % fees bridging and swapping on @Backpack",
+        "url": "https://twitter.com/armaniferrante/status/2032461844242473384",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_121",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032458619002990947",
+        "handle": "armaniferrante",
+        "created_at_iso": "2026-03-13 10:07:50 -04:00",
+        "text": "🤯",
+        "url": "https://twitter.com/armaniferrante/status/2032458619002990947",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_122",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032458168723231046",
+        "handle": "KASTxyz",
+        "created_at_iso": "2026-03-13 10:06:03 -04:00",
+        "text": "Fees down ↓ Adoption up ↑\n\nFX fees on non-USD spend are now between 0.5-1.75% https://t.co/ghYF3nKzYU",
+        "url": "https://twitter.com/KASTxyz/status/2032458168723231046",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_123",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032456794359107953",
+        "handle": "Dune",
+        "created_at_iso": "2026-03-13 10:00:35 -04:00",
+        "text": "@tether Built with Dune’s Stablecoins Dataset + Dune MCP.\n\nExplore more insights and access the data behind them:\nhttps://t.co/2MJEmJ65tG",
+        "url": "https://twitter.com/Dune/status/2032456794359107953",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_124",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032451978408939909",
+        "handle": "Dune",
+        "created_at_iso": "2026-03-13 09:41:27 -04:00",
+        "text": "Dune MCP + Claude code 🎯",
+        "url": "https://twitter.com/Dune/status/2032451978408939909",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_125",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032442057315525062",
+        "handle": "Dune",
+        "created_at_iso": "2026-03-13 09:02:02 -04:00",
+        "text": "Check out the guide below to set up!\nhttps://t.co/zWAEHgmtxP",
+        "url": "https://twitter.com/Dune/status/2032442057315525062",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_126",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032440608393138559",
+        "handle": "ivan_nomadz",
+        "created_at_iso": "2026-03-13 08:56:16 -04:00",
+        "text": "New community will get:\n\n- 200 XP \n- 20% XP boost\n- unique quest and leaderboard https://t.co/EJ7NoHLPS2",
+        "url": "https://twitter.com/ivan_nomadz/status/2032440608393138559",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_127",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032439666960748624",
+        "handle": "ivan_nomadz",
+        "created_at_iso": "2026-03-13 08:52:32 -04:00",
+        "text": "Which community should get @NOMADZxyz travel benefits next? \n\nVote below.",
+        "url": "https://twitter.com/ivan_nomadz/status/2032439666960748624",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_128",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032438748709855423",
+        "handle": "KASTxyz",
+        "created_at_iso": "2026-03-13 08:48:53 -04:00",
+        "text": "RT @Abrlien: KAST @KASTxyz just raised $80M in Series A 💪\n\nTo put that into perspective\n\nCoinbase started with $5M\nRevolut $8.7M\nRobinhood…",
+        "url": "https://twitter.com/KASTxyz/status/2032438748709855423",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_129",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032438583202603052",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-13 08:48:13 -04:00",
+        "text": "Who needs this? https://t.co/3HeU2SSKew",
+        "url": "https://twitter.com/solflare/status/2032438583202603052",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_130",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032435731017388209",
+        "handle": "phygitals",
+        "created_at_iso": "2026-03-13 08:36:53 -04:00",
+        "text": "Okay Pokémon fans…\n\nLet’s hear it from you. Who’s your favourite? ⬇️",
+        "url": "https://twitter.com/phygitals/status/2032435731017388209",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_131",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032415648622723163",
+        "handle": "jrwhale",
+        "created_at_iso": "2026-03-13 07:17:05 -04:00",
+        "text": "$MON is looking good here\n\nSend higher https://t.co/27Lo5ZWQ8i",
+        "url": "https://twitter.com/jrwhale/status/2032415648622723163",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_132",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032414990284607845",
+        "handle": "QwQiao",
+        "created_at_iso": "2026-03-13 07:14:28 -04:00",
+        "text": "RT @alliance: Travis Kalanick (founder of Uber) on learning from investor rejection https://t.co/Fudql7cUQS",
+        "url": "https://twitter.com/QwQiao/status/2032414990284607845",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_133",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032414302066348244",
+        "handle": "Dune",
+        "created_at_iso": "2026-03-13 07:11:44 -04:00",
+        "text": "RT @cryptodotnews: NEW: $POL | 63% of all x402 Facilitators activity occurs on @0xPolygon https://t.co/qktBnunNzR",
+        "url": "https://twitter.com/Dune/status/2032414302066348244",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_134",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032414265286791312",
+        "handle": "ivan_nomadz",
+        "created_at_iso": "2026-03-13 07:11:35 -04:00",
+        "text": "@SuperteamAE @solana I am sure it will be a high-quility event for builders. \nApply here:\nhttps://t.co/FqqwRCU8A1",
+        "url": "https://twitter.com/ivan_nomadz/status/2032414265286791312",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_135",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032405747791794663",
+        "handle": "KASTxyz",
+        "created_at_iso": "2026-03-13 06:37:45 -04:00",
+        "text": "RT @WayfindersGG: Our Pudgy Party Tournament brought together 50+ streamers from around the world to celebrate the game and compete live on…",
+        "url": "https://twitter.com/KASTxyz/status/2032405747791794663",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_136",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032389772434350280",
+        "handle": "KASTxyz",
+        "created_at_iso": "2026-03-13 05:34:16 -04:00",
+        "text": "RT @brenda_wav: ¡@KASTxyz en México! 🇲🇽 reuniendo a líderes de comunidad, builders y creadores en el espacio blockchain y financiero.\n\nPróx…",
+        "url": "https://twitter.com/KASTxyz/status/2032389772434350280",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_137",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032361005129597252",
+        "handle": "armaniferrante",
+        "created_at_iso": "2026-03-13 03:39:57 -04:00",
+        "text": "Something I learn (and forget) over and over again is that it doesn’t matter what you say. It’s what you do. Believe in yourself and your vision. Try your best to incorporate feedback and not be delusional. But at the end of the day, you need to put your head down, and build.",
+        "url": "https://twitter.com/armaniferrante/status/2032361005129597252",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_138",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032328709970280681",
+        "handle": "0xyunss",
+        "created_at_iso": "2026-03-13 01:31:37 -04:00",
+        "text": "RT @kira0s: working on my customized @MeteoraAG  PNL card atm, featured some of my favourite people in the community, will adding more each…",
+        "url": "https://twitter.com/0xyunss/status/2032328709970280681",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_139",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032280711181517161",
+        "handle": "jrwhale",
+        "created_at_iso": "2026-03-12 22:20:54 -04:00",
+        "text": "@heronjr_x Link: https://t.co/9DIuWrOnJd",
+        "url": "https://twitter.com/jrwhale/status/2032280711181517161",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_140",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032273356930552045",
+        "handle": "solana_devs",
+        "created_at_iso": "2026-03-12 21:51:40 -04:00",
+        "text": "https://t.co/eAmMAiPv0z",
+        "url": "https://twitter.com/solana_devs/status/2032273356930552045",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_141",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032273022208655828",
+        "handle": "raunit",
+        "created_at_iso": "2026-03-12 21:50:20 -04:00",
+        "text": "Perks of remote work:\n\nReviewing code at 5 AM, got hungry and wanted dosa.  \nBooked a cab to Rameshwaram, opened Claude Code on my phone, and kept reviewing while eating dosa.\n\nFinished the review on the way back home.\n\nWork for today: done.  \nFinally FNL https://t.co/KkvLO7V4Xc",
+        "url": "https://twitter.com/raunit/status/2032273022208655828",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_142",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032261743485780202",
+        "handle": "vibhu",
+        "created_at_iso": "2026-03-12 21:05:31 -04:00",
+        "text": "RT @Mastercard: @vincenzomaiett @toly @MiebachMichael @rajgokal One network to rule them all",
+        "url": "https://twitter.com/vibhu/status/2032261743485780202",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_143",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032212600876916955",
+        "handle": "phygitals",
+        "created_at_iso": "2026-03-12 17:50:15 -04:00",
+        "text": "This one is going to be good 👀\n\nMega Evolution Chaos Rising (May 22 Release) ⚡️ https://t.co/oGKpxJ8l3k",
+        "url": "https://twitter.com/phygitals/status/2032212600876916955",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_144",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032206175475732620",
+        "handle": "QwQiao",
+        "created_at_iso": "2026-03-12 17:24:43 -04:00",
+        "text": "ive learned the hard way that geopolitics is impossible to trade. as is “macro”.\n\nso im just chilling, channeling my inner buffett, and doing nothing.",
+        "url": "https://twitter.com/QwQiao/status/2032206175475732620",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_145",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032199618826469571",
+        "handle": "phygitals",
+        "created_at_iso": "2026-03-12 16:58:40 -04:00",
+        "text": "RT @chronicledvault: Nidoking Illustration Rare 174/165 — SV: 151 🟣👑\nOne of the most respected and powerful Pokémon from the original 151.…",
+        "url": "https://twitter.com/phygitals/status/2032199618826469571",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_146",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032195483884466209",
+        "handle": "solana_devs",
+        "created_at_iso": "2026-03-12 16:42:14 -04:00",
+        "text": "RT @ludo_txtx: 2 weeks in at @SolanaFndn, and we've been cooking.\n\nOne thing became clear fast: every CLI and dev tool we ship is now used…",
+        "url": "https://twitter.com/solana_devs/status/2032195483884466209",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_147",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032190935237558589",
+        "handle": "raunit",
+        "created_at_iso": "2026-03-12 16:24:09 -04:00",
+        "text": "AI for output,stablecoins for speed",
+        "url": "https://twitter.com/raunit/status/2032190935237558589",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_148",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032183721575792726",
+        "handle": "AviciMoney",
+        "created_at_iso": "2026-03-12 15:55:30 -04:00",
+        "text": "Results will be announced within next 24hours. Stay tuned!",
+        "url": "https://twitter.com/AviciMoney/status/2032183721575792726",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_149",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032183470504435922",
+        "handle": "Dune",
+        "created_at_iso": "2026-03-12 15:54:30 -04:00",
+        "text": "RT @sakshimiishra: Built a Stablecoin Wars dashboard on @Dune\n\nSome things I found digging through $228B of stablecoin data:\n\n→ USDC grew 7…",
+        "url": "https://twitter.com/Dune/status/2032183470504435922",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_150",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032183338711028047",
+        "handle": "Dune",
+        "created_at_iso": "2026-03-12 15:53:58 -04:00",
+        "text": "Fact Checking 🤝",
+        "url": "https://twitter.com/Dune/status/2032183338711028047",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_151",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032182414454505675",
+        "handle": "raunit",
+        "created_at_iso": "2026-03-12 15:50:18 -04:00",
+        "text": "cool",
+        "url": "https://twitter.com/raunit/status/2032182414454505675",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_152",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032176457200631914",
+        "handle": "jussy_world",
+        "created_at_iso": "2026-03-12 15:26:38 -04:00",
+        "text": "11 days my bad",
+        "url": "https://twitter.com/jussy_world/status/2032176457200631914",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_153",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032159941029458035",
+        "handle": "KASTxyz",
+        "created_at_iso": "2026-03-12 14:21:00 -04:00",
+        "text": "RT @pudgypenguins: Pengu is taking over the Digital Asset Summit in New York City alongside @KASTxyz. \n\nJoin us on March 25th at the Pengu…",
+        "url": "https://twitter.com/KASTxyz/status/2032159941029458035",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_154",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032159710237868445",
+        "handle": "Dune",
+        "created_at_iso": "2026-03-12 14:20:05 -04:00",
+        "text": "https://t.co/Av0Zyxi9ZM",
+        "url": "https://twitter.com/Dune/status/2032159710237868445",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_155",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032159706446229519",
+        "handle": "Dune",
+        "created_at_iso": "2026-03-12 14:20:04 -04:00",
+        "text": "Great resource for enterprise teams looking to go deeper with onchain data 📊\n\nWhether you're building dashboards, querying cross-chain activity, or turning raw blockchain data into actionable insights, this course covers the fundamentals.\n\nCheck it out 👇",
+        "url": "https://twitter.com/Dune/status/2032159706446229519",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_156",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032153704141357208",
+        "handle": "KASTxyz",
+        "created_at_iso": "2026-03-12 13:56:13 -04:00",
+        "text": "RT @Cryptic_Web3: While the giants of today started strong, @KASTxyz is starting at a different velocity. With a massive $80M series A, Kas…",
+        "url": "https://twitter.com/KASTxyz/status/2032153704141357208",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_157",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032150043126276582",
+        "handle": "nocircuit",
+        "created_at_iso": "2026-03-12 13:41:40 -04:00",
+        "text": "RT @vibhu: AVAX is now on @Solana.\n\nAvalanche is a bet that enterprises will want to customize and own a Layer 1 end-to-end.\n\nIf you believ…",
+        "url": "https://twitter.com/nocircuit/status/2032150043126276582",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_158",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032146984132624761",
+        "handle": "solana_devs",
+        "created_at_iso": "2026-03-12 13:29:31 -04:00",
+        "text": "RT @FundingCommons: The first vertical festival for human flourishing in the age of AI. 🌸💻 \n\nThis weekend, 1,000+ researchers, builders, fo…",
+        "url": "https://twitter.com/solana_devs/status/2032146984132624761",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_159",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032140129750618337",
+        "handle": "x402",
+        "created_at_iso": "2026-03-12 13:02:16 -04:00",
+        "text": "RT @stormrae_ai: We casually broke the world record for public AI red-teaming challenges to date: 14,969 humans trying to outsmart a single…",
+        "url": "https://twitter.com/x402/status/2032140129750618337",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_160",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032139613738057863",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-12 13:00:13 -04:00",
+        "text": "Try Private Send on your next transaction ↓\nhttps://t.co/4LzEh1pnqV",
+        "url": "https://twitter.com/solflare/status/2032139613738057863",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_161",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032139601096425932",
+        "handle": "solflare",
+        "created_at_iso": "2026-03-12 13:00:10 -04:00",
+        "text": "Worried you’re being watched? 👀\n\nCould be time to choose Private Send.\n\nChoose privacy when you want it↓ https://t.co/HDwJmZdViu",
+        "url": "https://twitter.com/solflare/status/2032139601096425932",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_162",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032135514271232473",
+        "handle": "Heavymetalcook6",
+        "created_at_iso": "2026-03-12 12:43:56 -04:00",
+        "text": "RT @0xmiir: In markets like this, you sharpen your knife.\n\nWe have two approaches to this:\n\n1) Product: making @MeteoraAG stupid easy to us…",
+        "url": "https://twitter.com/Heavymetalcook6/status/2032135514271232473",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_163",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032134081815986528",
+        "handle": "raunit",
+        "created_at_iso": "2026-03-12 12:38:14 -04:00",
+        "text": "Let’s see whether I’m being consistent or not 🥲 https://t.co/uI6ywgwIFq",
+        "url": "https://twitter.com/raunit/status/2032134081815986528",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_164",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032131037166215497",
+        "handle": "MadSimon_sol",
+        "created_at_iso": "2026-03-12 12:26:09 -04:00",
+        "text": "A new era about to begin \n\nEverything in your @Backpack https://t.co/BTeos636IT",
+        "url": "https://twitter.com/MadSimon_sol/status/2032131037166215497",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_165",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032127901642957251",
+        "handle": "mert",
+        "created_at_iso": "2026-03-12 12:13:41 -04:00",
+        "text": "I don't get how you are considered unemployable past 70-80 years old and yet that's the age group exclusively running most countries",
+        "url": "https://twitter.com/mert/status/2032127901642957251",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_166",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032117055357665764",
+        "handle": "Dune",
+        "created_at_iso": "2026-03-12 11:30:35 -04:00",
+        "text": "RT @Dune: Stablecoins move trillions. Now you can see exactly where and how.\n\nIntroducing Dune's Stablecoin Dataset👇\n\n▪️200+ Stablecoins (…",
+        "url": "https://twitter.com/Dune/status/2032117055357665764",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_167",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032109863376138452",
+        "handle": "ivan_nomadz",
+        "created_at_iso": "2026-03-12 11:02:00 -04:00",
+        "text": "5/ Those are opportunities you don’t want to miss!\n\nTo make them even more useful, @NOMADZxyz has prepared:\n\n~ event locations on the map\n~ “book nearby” feature\n~ hotel discounts up to 60%\n~ event badges that give extra XP\n\nWhich events will you attend?\nhttps://t.co/OGssI4xXxG",
+        "url": "https://twitter.com/ivan_nomadz/status/2032109863376138452",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clusterId": "cluster_168",
+    "category": "General / Uncategorized",
+    "topKeywords": [],
+    "tweetCount": 1,
+    "clusterScore": 0,
+    "reason": "General / Uncategorized cluster linked by []",
+    "sampleTweets": [
+      {
+        "id": "2032108520464925011",
+        "handle": "armaniferrante",
+        "created_at_iso": "2026-03-12 10:56:40 -04:00",
+        "text": "🎒",
+        "url": "https://twitter.com/armaniferrante/status/2032108520464925011",
+        "score": 0
+      }
+    ]
+  }
+]

@@ -1,230 +1,230 @@
 {
-  "generated_at": "2026-03-09T13:35:50.411Z",
+  "generated_at": "2026-03-15T14:33:49.915Z",
   "global_metrics": {
-    "total_tweets": 49,
-    "total_engagement": 22719,
-    "unique_voices": 18,
-    "top_tweet": 5433
+    "total_tweets": 54,
+    "total_engagement": 18441,
+    "unique_voices": 20,
+    "top_tweet": 3460
   },
   "items": [
     {
-      "id": "story_1773063300464_0",
-      "title": "Solana Surpasses Ethereum in RWA Holders",
+      "id": "story_1773585203919_0",
+      "title": "Solana Enables Instant USDC-to-Cash ATM Withdrawals in Thailand",
       "type": "critical",
       "category": "Security / Risk Alert",
-      "author": "@solana",
-      "timestamp": "2026-03-09T13:35:00.464Z",
+      "author": "@jussy_world",
+      "timestamp": "2026-03-15T14:33:23.919Z",
       "metrics": {
-        "tweets": 39,
-        "engagement": 19252,
-        "topTweet": 5433,
-        "voices": 11,
+        "tweets": 41,
+        "engagement": 15708,
+        "topTweet": 3460,
+        "voices": 14,
         "engagementTrend": [
-          7701,
-          10588,
-          13091,
-          15786,
-          19252
+          6283,
+          8639,
+          10681,
+          12881,
+          15708
         ]
       },
       "ctPulse": [
         {
-          "handle": "@solana",
-          "thought": "BREAKING: Solana flipped Ethereum in total RWA holders for the first time, according to @RWA_xyz 🤯 https://t.co/cOQ4VezJn2",
-          "url": "https://twitter.com/solana/status/2030285301159985501"
+          "handle": "@jussy_world",
+          "thought": "I landed in Thailand\n\nFirst thing I needed was cash\n\nTook my USDC on @solana, used @AviciMoney\n\nWithdrew from the first ATM I found in 1 minute\n\nDone\n\nUSDC on Solana to cash 💸\n\nThat's the future of f",
+          "url": "https://twitter.com/jussy_world/status/2032874254438642173"
         },
         {
-          "handle": "@solana",
-          "thought": "Agents got smarter with the identity and payment rails to back it up. Consumer products shipped across trading terminals to privacy tools. Institutions continued expanding onchain with the capital to ",
-          "url": "https://twitter.com/solana/status/2030674505757274609"
-        },
-        {
-          "handle": "@solana",
-          "thought": "\"To run stablecoins, you need stable rails. You need a network that is secure, efficient, fast, and cheap. You can't find anyone better than Solana.\" - Shawn Chan, CEO of @SGB_app https://t.co/DQD3FEv",
-          "url": "https://twitter.com/solana/status/2030914380838097249"
+          "handle": "@mert",
+          "thought": "this means that Solana token transactions (i.e payments, transfers etc) will very soon become **20 times** more efficient \n\nTWENTY \n\nget ready to learn increased bandwidth buddy",
+          "url": "https://twitter.com/mert/status/2032729174826180615"
         },
         {
           "handle": "@vibhu",
-          "thought": "RT @solana: BREAKING: Solana flipped Ethereum in total RWA holders for the first time, according to @RWA_xyz 🤯 https://t.co/cOQ4VezJn2",
-          "url": "https://twitter.com/vibhu/status/2030286431415857633"
+          "thought": "My mandate: ensure Solana captures 90%+ of global finance; that every asset anyone will want to own lives on Solana; that every human has a Solana wallet; that Solana becomes the preeminent network st",
+          "url": "https://twitter.com/vibhu/status/2032574444724449605"
         },
         {
-          "handle": "@solana",
-          "thought": "BREAKING: @xStocksFi is bringing Nasdaq's tokenized equity markets to Solana DeFi",
-          "url": "https://twitter.com/solana/status/2030969676038316086"
+          "handle": "@jussy_world",
+          "thought": "Solana generated $700K in chain fees in the last 24 hours\n\nThat’s more than all 30+ most hyped chains combined:\n\nBSC - $400k\nBase - $98k\nPolygon - $73k\nArbitrum - $11k\nHyperliquid - $12k\nTON - $8k\nFil",
+          "url": "https://twitter.com/jussy_world/status/2032429124309180750"
+        },
+        {
+          "handle": "@jussy_world",
+          "thought": "Crypto neobanks are competing to become and offer THE BEST\n\nSo I compared them:\n\n@JupGlobal\n\n0% top-up fee\nVisa may charge 0.4% - 1%, there no transaction fee or fx fee\nUp to 10% USDC cashback, QR pay",
+          "url": "https://twitter.com/jussy_world/status/2032871247495967029"
         }
       ],
       "whoToFollow": [
         {
-          "handle": "@solana",
-          "reason": "Official updates and ecosystem developments",
-          "role": "Builder",
-          "engagement": 9942
+          "handle": "@jussy_world",
+          "reason": "Shares firsthand experiences and ecosystem data on Solana payments.",
+          "role": "Analyst",
+          "engagement": 5961
         },
         {
-          "handle": "@gumsays",
-          "reason": "Tracks protocol growth and RWA adoption trends",
-          "role": "Analyst",
-          "engagement": 5065
+          "handle": "@AviciMoney",
+          "reason": "Provides the crypto-to-cash ATM bridge highlighted in this development.",
+          "role": "Builder",
+          "engagement": 3428
         }
       ],
       "content": {
-        "signal": "Solana now leads Ethereum in total real-world asset (RWA) holders, according to RWA_xyz.",
-        "story": "Solana has overtaken Ethereum in the number of real-world asset (RWA) holders for the first time, as reported by RWA_xyz. This marks a significant milestone in the ongoing competition between major blockchains for dominance in the tokenization and onchain asset space. The shift reflects changing user preferences and growing institutional activity on Solana’s network.\n\n### What's Happening\n\nSolana’s ecosystem has seen a surge in RWA adoption, with more users holding tokenized assets like equities and stablecoins directly onchain. Institutional players are expanding their presence, supported by advancements in identity and payment infrastructure. Recent announcements highlight that Nasdaq’s tokenized equity markets are being brought to Solana DeFi, and protocols such as Kamino have become the largest by total value locked (TVL) due in part to their RWA focus.\n\nSolana’s technical strengths—speed, low fees, and efficient settlement—are being cited by ecosystem leaders as critical for stablecoin and RWA operations. Consumer-facing products, privacy tools, and trading terminals are shipping at a rapid pace, further driving user engagement and capital inflows.\n\n### Why It Matters\n\nFlipping Ethereum in RWA holders signals a shift in where users and institutions are choosing to interact with tokenized assets. Solana’s ability to attract both retail and institutional capital suggests it is becoming a preferred platform for scalable, real-world financial applications. This momentum is reinforced by high trading volumes, growing developer activity, and new products launching across DeFi, NFTs, and hardware devices.\n\nThe network’s revenue generation has also outpaced Ethereum in recent months, indicating robust ecosystem activity. With stable infrastructure and a focus on user experience, Solana is positioning itself as a foundational layer for the next wave of onchain finance.\n\n### The Risk or Debate\n\nRapid growth in RWA adoption brings scrutiny around security, compliance, and network reliability. As more capital and institutional players move onchain, the risk of technical failures or regulatory challenges increases. The sustainability of high yields and the safety of new protocols remain open questions, especially as the ecosystem continues to scale.\n\nThere is also debate over whether Solana’s infrastructure can maintain its performance under heavier loads and more complex use cases. The competition with Ethereum and other chains is ongoing, and shifts in user or developer sentiment could quickly change the landscape.\n\n### What To Watch\n\nUpcoming developments include further institutional integrations, new stablecoin and RWA product launches, and the results of ongoing hackathons aimed at expanding Solana’s application stack. Monitoring the security and uptime of the network will be key as adoption grows. The evolution of regulatory frameworks and how projects respond to compliance requirements will also shape the future trajectory of RWAs on Solana.",
+        "signal": "Solana users can now convert USDC to local cash at ATMs in under a minute, signaling real-world utility and ecosystem growth.",
+        "story": "Solana’s ecosystem just demonstrated a tangible use case: converting USDC to local cash at an ATM in Thailand in under a minute. This was made possible by AviciMoney, which bridges Solana’s digital assets to traditional financial rails. The process is simple—USDC on Solana is sent to AviciMoney, and cash is withdrawn at a local ATM, bypassing the usual friction of fiat off-ramps.\\n\\n### What's Happening\\n\\nThis development is part of a broader trend: Solana-based neobanks and payment platforms are racing to offer seamless crypto-to-fiat experiences. Projects like Jupiter and KASTxyz are competing on fees, cashback, and global reach, aiming to make digital assets as spendable as cash. Meanwhile, Solana’s network activity is surging, with recent data showing it generated $700,000 in chain fees over 24 hours—more than 30 other major blockchains combined.\\n\\nSolana’s technical roadmap is also accelerating. The upcoming P-Token (SIMD-266) upgrade, set for April, will make token transactions up to 20 times more efficient, reducing costs and increasing throughput. This positions Solana as a high-bandwidth, low-fee network for both payments and broader financial applications.\\n\\n### Why It Matters\\n\\nThe ability to instantly convert stablecoins to cash at ATMs is a milestone for crypto usability. It lowers the barrier for travelers, expats, and anyone needing quick access to funds, and it demonstrates Solana’s ambition to capture a significant share of global finance. With over 164 million token holders and 100 billion transactions processed, Solana’s user base and transaction volume are growing rapidly.\\n\\nThis growth is not just technical but strategic. By making digital assets liquid and spendable in the real world, Solana is challenging both traditional banks and competing blockchains. The network’s high throughput and low fees are attracting new users and developers, while neobank integrations and payment rails expand its reach into everyday commerce.\\n\\n### The Risk or Debate\\n\\nHowever, rapid growth and real-world integrations bring new risks. Relying on third-party services like AviciMoney introduces potential points of failure, including regulatory scrutiny, compliance issues, and operational risks. There’s also the question of how sustainable these low fees and high rewards are, especially as competition among crypto neobanks intensifies.\\n\\nNetwork upgrades like P-Token promise efficiency, but any major protocol change carries the risk of bugs or unintended consequences. And while Solana’s fee revenue is impressive, it’s unclear how much of this activity is driven by organic user demand versus speculative trading or incentives.\\n\\n### What To Watch\\n\\nThe next few months will be critical. Watch for the rollout of the P-Token upgrade and its impact on transaction costs and network stability. Monitor how neobank platforms expand their services and whether more countries and ATMs become accessible for crypto-to-cash conversions.\\n\\nRegulatory developments will also be key, especially as crypto-fiat bridges attract attention from authorities. Finally, track whether Solana can maintain its lead in transaction volume and user growth as competition from other chains and traditional finance intensifies.",
         "takeaways": [
-          "Solana has surpassed Ethereum in total RWA holders for the first time.",
-          "Institutional and retail adoption of tokenized assets is accelerating on Solana.",
-          "Network growth brings both new opportunities and increased scrutiny around security and compliance."
+          "Solana users can now withdraw USDC as cash from ATMs in Thailand via AviciMoney.",
+          "Solana’s network activity and fee revenue are outpacing other major blockchains.",
+          "Upcoming protocol upgrades aim to make Solana even faster and cheaper for payments."
         ]
       },
       "riskLevel": "medium",
-      "narrativeStrength": 8.9
+      "narrativeStrength": 9.3
     },
     {
-      "id": "story_1773063338627_1",
-      "title": "Jupiter and Pudgy Launch Mobile SBT, Expand Solana Onramps",
+      "id": "story_1773585214894_1",
+      "title": "Jupiter Hits $80M in Buybacks: What Comes Next?",
       "type": "live",
-      "category": "Alpha / Early Access",
-      "author": "@FabianoSolana",
-      "timestamp": "2026-03-09T13:35:38.627Z",
+      "category": "Product Launch / Live",
+      "author": "@SolanaSensei",
+      "timestamp": "2026-03-15T14:33:34.894Z",
       "metrics": {
         "tweets": 5,
-        "engagement": 1523,
-        "topTweet": 570,
+        "engagement": 1281,
+        "topTweet": 421,
         "voices": 3,
         "engagementTrend": [
-          609,
-          837,
-          1035,
-          1248,
-          1523
+          512,
+          704,
+          871,
+          1050,
+          1281
         ]
       },
       "ctPulse": [
         {
-          "handle": "@FabianoSolana",
-          "thought": "RT @JupiterExchange: Pudgy x Jupiter Mobile SBT token is now live! 🐧\n\nThere are two ways to claim the Jupiter Pudgy Open Edition SBT:\n\n1️⃣…",
-          "url": "https://twitter.com/FabianoSolana/status/2030001017375379608"
+          "handle": "@SolanaSensei",
+          "thought": "Jupiter’s $JUP buybacks have now reached a total of $80M\n\nFor comparison, PumpFun has done $324M\n\nWhat should they do with the tokens? https://t.co/l3JVAebgfi",
+          "url": "https://twitter.com/SolanaSensei/status/2032842453154410972"
         },
         {
-          "handle": "@FabianoSolana",
-          "thought": "Say what you want about Jupiter but\n\nGetting involved in the JUP ecosystem will pay off the most:\n\n- PENGU Airdrop\n\n- HUMA presale opportunity\n\n- DTF WET ICO access\n\n- BLUE Airdrop\n\n- Moonbird SBT\n\n- ",
-          "url": "https://twitter.com/FabianoSolana/status/2030329124875637010"
+          "handle": "@JupGlobal",
+          "thought": "RT @JupiterExchange: We’re building the future of finance! https://t.co/6cDuQt3DPI",
+          "url": "https://twitter.com/JupGlobal/status/2032479688141213978"
+        },
+        {
+          "handle": "@jussy_world",
+          "thought": "So far, @JupGlobal is the most transparent neobank I’ve used\n\nThey show you exactly what you’re paying and why\n\nNo hidden fees\n\nExample from my last purchase:\n\n• Coffee: $6.81 + Visa FX fee (~0.4–1%) ",
+          "url": "https://twitter.com/jussy_world/status/2033118522902298708"
+        },
+        {
+          "handle": "@JupGlobal",
+          "thought": "We’re back and hitting the streets of Kuala Lumpur to put the new Jupiter card to the test. From quick bites to buying \"the weirdest items,\" we’re seeing if it can actually handle our shopping habits.",
+          "url": "https://twitter.com/JupGlobal/status/2032369090531377457"
+        },
+        {
+          "handle": "@jussy_world",
+          "thought": "🚨 Jupiter just introduced @jup_offerbook\n\nA peer-to-peer lending protocol for tokens, NFTs, RWAs, and more\n\nHow it works:\n\nBorrowers and lenders create fixed-term loans, choosing their own collateral",
+          "url": "https://twitter.com/jussy_world/status/2032460205171298702"
+        }
+      ],
+      "whoToFollow": [
+        {
+          "handle": "@JupGlobal",
+          "reason": "Official account for Jupiter, providing updates on products and strategy.",
+          "role": "Builder",
+          "engagement": 448
         },
         {
           "handle": "@SolanaSensei",
-          "thought": "With only a few months live, Jupiter's stablecoin $JupUSD has already reached $67M in total supply.\n\n100% backed with 82% USDtb and 18% USDC.\n\nHave you used it already? https://t.co/GdgNiiVSxz",
-          "url": "https://twitter.com/SolanaSensei/status/2030666613033521407"
-        },
-        {
-          "handle": "@mango_",
-          "thought": "🔴 All latest @JupiterExchange updates 👇\n\n1 | @pudgypenguins x @jup_mobile\nPudgy SBT is available to claim for a limited time. Just do any swap inside the wallet until March 20.\n\n2 | @JupGlobal kick ",
-          "url": "https://twitter.com/mango_/status/2030272260523843620"
-        },
-        {
-          "handle": "@mango_",
-          "thought": "As I’m putting my stables to work again, I'm exploring some fresh teams.\n\nHere's what caught my eye on @HubraApp:\n\n→ USDG vault: 12.87% APR\n→ Exposure to both Kamino + Jupiter Lend venues\n→ One vault,",
-          "url": "https://twitter.com/mango_/status/2030317523120328911"
-        }
-      ],
-      "whoToFollow": [
-        {
-          "handle": "@JupiterExchange",
-          "reason": "Primary source for platform updates and new features",
-          "role": "Builder",
-          "engagement": 1001
-        },
-        {
-          "handle": "@pudgypenguins",
-          "reason": "Key NFT partner in the SBT collaboration",
-          "role": "Community",
-          "engagement": 319
+          "reason": "Shares insights and analysis on Solana ecosystem developments.",
+          "role": "Analyst",
+          "engagement": 421
         }
       ],
       "content": {
-        "signal": "Jupiter Exchange and Pudgy Penguins have launched a mobile SBT token, signaling deeper integration and expanding user engagement in the Solana ecosystem.",
-        "story": "Jupiter Exchange and Pudgy Penguins have rolled out a new mobile Soulbound Token (SBT), available for a limited time to users who complete a swap in the Jupiter wallet before March 20. This move adds another layer to Jupiter’s growing suite of user incentives and ecosystem integrations, following a series of airdrops, presale opportunities, and new product launches.\n\n### What's Happening\n\nThe Pudgy x Jupiter Mobile SBT is now live, offering users a new way to participate in both communities. Claiming the SBT requires a simple wallet swap, making the process accessible and encouraging wallet activity. This launch comes alongside other recent Jupiter updates, including the release of the Jupiter Card—a Visa-powered in-wallet card for daily spending—and the introduction of Comet Trading, a Telegram-based trading bot.\n\nJupiter’s stablecoin, $JupUSD, has also seen rapid growth, reaching $67 million in total supply within a few months. The stablecoin is fully backed, with 82% in USDtb and 18% in USDC, reflecting a focus on transparency and stability. Meanwhile, new yield opportunities are emerging through integrations with platforms like Hubra, which offers access to both Kamino and Jupiter Lend venues in a single vault.\n\n### Why It Matters\n\nThe SBT launch signals Jupiter’s intent to deepen user engagement and strengthen ties with influential NFT brands like Pudgy Penguins. By making participation easy and rewarding, Jupiter is positioning itself as a central hub for Solana-native activity, from trading to payments to NFT-based rewards. The rapid adoption of $JupUSD and the rollout of the Jupiter Card suggest that the platform is moving beyond swaps, aiming to become a comprehensive financial layer within Solana.\n\nThese developments are also broadening the appeal of Solana’s ecosystem. By integrating NFTs, stablecoins, and DeFi products, Jupiter is lowering the barrier for new users and offering existing participants more ways to interact and benefit. The ongoing series of airdrops, presale access, and new token launches keeps the community engaged and incentivized.\n\n### The Risk or Debate\n\nThe pace of new product launches and reward programs raises questions about sustainability and user fatigue. While SBTs and airdrops can drive engagement, there is a risk that users may become desensitized if rewards lose perceived value. The reliance on stablecoins, even with full backing, also introduces exposure to underlying asset risks and potential regulatory scrutiny.\n\nIntegrations with multiple platforms and the rapid scaling of new features may introduce technical or security risks. The complexity of managing cross-platform incentives and products could lead to confusion or operational challenges for less experienced users.\n\n### What To Watch\n\nThe limited-time SBT claim window closes on March 20, so user participation metrics will reveal the level of engagement. Adoption and usage of the Jupiter Card and Comet Trading bot will indicate whether Jupiter can successfully expand beyond swaps into payments and social trading. The growth trajectory of $JupUSD and the performance of new yield products on platforms like Hubra will be key indicators of ecosystem health and user trust.\n\nContinued collaboration with NFT brands and further airdrop or presale announcements may signal Jupiter’s next moves in community building and product expansion.",
+        "signal": "Jupiter’s $JUP token buybacks have reached $80 million, raising questions about future plans for these tokens.",
+        "story": "Jupiter, a leading Solana-based exchange and neobank, has now conducted $80 million worth of $JUP token buybacks. This milestone puts Jupiter’s buyback activity in sharp focus, especially when compared to PumpFun’s much larger $324 million in buybacks. The scale of these operations signals a maturing approach to tokenomics among Solana’s most prominent projects.\n\n### What's Happening\n\nJupiter has been actively buying back its $JUP tokens, accumulating a significant treasury. These buybacks are a deliberate move, but the project has yet to clarify what it intends to do with the repurchased tokens. The comparison to PumpFun’s larger buyback figure highlights both the competitive landscape and the different strategies at play within the Solana ecosystem.\n\nMeanwhile, Jupiter continues to roll out new products. The Jupiter Global Card is being tested in real-world settings, offering users transparent, fee-free spending. Additionally, Jupiter has launched Offerbook, a peer-to-peer lending protocol that allows users to create fixed-term loans with customizable terms and no price-based liquidations. These developments show Jupiter’s ambition to expand beyond trading into broader financial services.\n\n### Why It Matters\n\nThe scale of Jupiter’s buybacks is notable because it reflects both strong revenue generation and a commitment to managing token supply. Buybacks can support token price and signal confidence in the project’s future. However, the real impact depends on what happens next: Will the tokens be burned, redistributed, or used for ecosystem incentives?\n\nJupiter’s transparency around fees and its push into neobanking and lending suggest a broader vision for decentralized finance on Solana. By offering clear pricing and zero fees on card transactions, Jupiter is positioning itself as a user-friendly alternative to traditional banks. The launch of Offerbook further diversifies its product suite, potentially attracting new users and liquidity.\n\n### The Risk or Debate\n\nThe main question now is what Jupiter will do with the $80 million in repurchased tokens. Without a clear plan, there’s uncertainty around whether these tokens will be removed from circulation, reintroduced through incentives, or held for strategic purposes. Each option carries different implications for $JUP holders and the project’s long-term value proposition.\n\nThere’s also the broader debate about the effectiveness of buybacks versus other token management strategies. While buybacks can create short-term price support, their long-term impact depends on transparency and follow-through. Jupiter’s next moves will be closely watched by both supporters and skeptics.\n\n### What To Watch\n\nThe key development to monitor is Jupiter’s announcement on the fate of the repurchased tokens. Any decision—whether burn, redistribution, or retention—will shape market sentiment and could influence other projects’ approaches to tokenomics. Additionally, the adoption and performance of Jupiter’s new products, especially the Global Card and Offerbook, will indicate how successfully the project can expand its user base and revenue streams.\n\nAs Jupiter continues to innovate, its ability to balance growth, transparency, and tokenholder interests will be critical for sustaining momentum in a competitive Solana ecosystem.",
         "takeaways": [
-          "Jupiter and Pudgy Penguins launched a mobile SBT, claimable via wallet swap until March 20.",
-          "Jupiter is expanding its ecosystem with a stablecoin, in-wallet Visa card, and trading bot.",
-          "Rapid product launches and reward programs raise sustainability and user engagement questions."
+          "Jupiter has conducted $80 million in $JUP token buybacks, a significant milestone.",
+          "The project is expanding into neobanking and peer-to-peer lending with new product launches.",
+          "Uncertainty remains over the future use of the repurchased tokens, which could impact $JUP’s value."
         ]
       },
       "riskLevel": "medium",
-      "narrativeStrength": 4.9
+      "narrativeStrength": 4.8
     },
     {
-      "id": "story_1773063350411_2",
-      "title": "Solana Sets Stablecoin Volume Record in February",
+      "id": "story_1773585229915_2",
+      "title": "Meteora’s DLMM Pools Drive Major Fee Generation on Solana",
       "type": "alpha",
       "category": "AI / Agents",
-      "author": "@therealchaseeb",
-      "timestamp": "2026-03-09T13:35:50.411Z",
+      "author": "@SolanaSensei",
+      "timestamp": "2026-03-15T14:33:49.915Z",
       "metrics": {
-        "tweets": 5,
-        "engagement": 1944,
-        "topTweet": 596,
-        "voices": 4,
+        "tweets": 8,
+        "engagement": 1452,
+        "topTweet": 505,
+        "voices": 3,
         "engagementTrend": [
-          778,
-          1069,
-          1322,
-          1594,
-          1944
+          581,
+          798,
+          987,
+          1190,
+          1452
         ]
       },
       "ctPulse": [
         {
-          "handle": "@therealchaseeb",
-          "thought": "RT @solana: $650B in stablecoin volume in February. More than any network. More than 2x the previous record. https://t.co/aosQM2C9KA",
-          "url": "https://twitter.com/therealchaseeb/status/2030624616457421240"
+          "handle": "@SolanaSensei",
+          "thought": "Meteora's stats are insane, they generate:\n\n- $41 per sec\n- $2,491 per min\n- $149,473 per hour\n\n90.75% of this goes directly to liquidity providers! https://t.co/pUzSpacypc",
+          "url": "https://twitter.com/SolanaSensei/status/2032797406241452339"
         },
         {
-          "handle": "@solanapayments",
-          "thought": "RT @solana: $650B in stablecoin volume in February. More than any network. More than 2x the previous record. https://t.co/aosQM2C9KA",
-          "url": "https://twitter.com/solanapayments/status/2030694415296061479"
+          "handle": "@0xyunss",
+          "thought": "kebanyakan orang buka posisi DLMM di @MeteoraAG pakai support and resistance buat nentuin rangenya. gua dulu juga gitu. tapi sekarang ada cara yang lebih objektif dan datanya ada langsung di depan muk",
+          "url": "https://twitter.com/0xyunss/status/2032286776740446636"
         },
         {
-          "handle": "@vibhu",
-          "thought": "RT @solana: $650B in stablecoin volume in February. More than any network. More than 2x the previous record. https://t.co/aosQM2C9KA",
-          "url": "https://twitter.com/vibhu/status/2030651007445897477"
+          "handle": "@0xyunss",
+          "thought": "i vibecoded a DLMM agent that runs multi-hour LP positions on @MeteoraAG and it just went from 0.6 sol to 1 sol in 3 days.\n\nthe interesting part isn't the pnl. it's how the agent decides where to ente",
+          "url": "https://twitter.com/0xyunss/status/2032441729719439843"
         },
         {
-          "handle": "@vibhu",
-          "thought": "RT @solana: Agents got smarter with the identity and payment rails to back it up. Consumer products shipped across trading terminals to pri…",
-          "url": "https://twitter.com/vibhu/status/2030660223606591927"
+          "handle": "@0xyunss",
+          "thought": "3 hari ini gua sibuk vibecoding agent buat jalan DLMM multihour di @MeteoraAG sendiri.\n\ngua train dia pake data dari lpagent, biar dia bisa baca pola top LP di pool yang dia analisa. \n\nterus gua tamba",
+          "url": "https://twitter.com/0xyunss/status/2032650674614284421"
         },
         {
-          "handle": "@solana",
-          "thought": "RT @tokenterminal: ICYMI: RWA market cap on @solana is up by ~10x over the past year.\n\nData includes tokenized funds, stocks, and commoditi…",
-          "url": "https://twitter.com/solana/status/2030752837089788235"
+          "handle": "@met_lparmy",
+          "thought": "Top performing pools on Meteora today, sorted by 24h Fee.\n\nDid you print any fees today? https://t.co/3Gaqqrutuh",
+          "url": "https://twitter.com/met_lparmy/status/2032893601013772757"
         }
       ],
       "whoToFollow": [
         {
-          "handle": "@solana",
-          "reason": "Official source for network updates and ecosystem growth.",
-          "role": "Builder",
-          "engagement": 684
+          "handle": "@SolanaSensei",
+          "reason": "Shares real-time stats and insights on Solana DeFi protocols.",
+          "role": "Analyst",
+          "engagement": 785
         },
         {
-          "handle": "@tokenterminal",
-          "reason": "Provides analytics on real-world asset trends and on-chain data.",
-          "role": "Analyst",
-          "engagement": 596
+          "handle": "@0xyunss",
+          "reason": "Building and sharing agent-driven LP strategies on Meteora.",
+          "role": "Builder",
+          "engagement": 505
         }
       ],
       "content": {
-        "signal": "Solana processed $650B in stablecoin volume in February, more than any other network and over twice its previous record.",
-        "story": "Solana just posted a new milestone: $650 billion in stablecoin volume moved across its network in February. This figure not only tops all other blockchains for the month, but also more than doubles Solana’s previous record. The surge comes as Solana’s infrastructure for payments and identity continues to mature, and as more consumer-facing products go live.\n\n### What's Happening\nStablecoins—crypto tokens pegged to the value of fiat currencies—are seeing unprecedented activity on Solana. The network’s payment rails and identity features have become more robust, supporting everything from trading terminals to private consumer apps. Meanwhile, the market cap for real-world assets (RWAs) on Solana has grown roughly 10x over the past year, reflecting broader adoption of tokenized funds, stocks, and commodities.\n\nThis momentum is being noticed by builders and users alike. The combination of high throughput, low fees, and improved developer tooling is making Solana a preferred platform for stablecoin transactions and new financial products. The network’s ability to handle large volumes efficiently is a key factor in this growth.\n\n### Why It Matters\nStablecoin volume is a strong proxy for real economic activity on-chain. Solana’s outsized numbers suggest it is becoming a central hub for payments, trading, and asset transfers. This is significant because it signals growing trust in Solana’s infrastructure and its ability to support both retail and institutional use cases.\n\nThe rapid expansion of RWAs on Solana points to a broader trend: traditional financial assets are being brought on-chain at scale. This could open the door to new products and services that blend crypto-native speed with real-world value. For the Solana ecosystem, these developments could attract more developers, users, and capital.\n\n### The Risk or Debate\nWith rapid growth comes scrutiny. High stablecoin volumes can attract regulatory attention, especially as real-world assets are tokenized and moved on-chain. There are also technical risks: network congestion, smart contract bugs, or exploits could undermine confidence if not managed carefully. Finally, questions remain about how sustainable this pace of growth is, and whether it’s driven by organic demand or short-term incentives.\n\n### What To Watch\nKeep an eye on how Solana’s payment and identity rails evolve, especially as more consumer products launch. Watch for further growth in tokenized real-world assets and how regulators respond to these developments. Also, monitor the network’s stability and performance as volumes continue to rise. The next few months will reveal whether Solana can maintain its lead in stablecoin and RWA activity without hitting technical or regulatory roadblocks.",
+        "signal": "Meteora’s dynamic liquidity pools are generating high fees, with new agent-driven strategies emerging to optimize returns for liquidity providers.",
+        "story": "Meteora’s decentralized liquidity pools on Solana are pulling in eye-catching fee revenue—over $149,000 per hour, with more than 90% of this going directly to liquidity providers. This surge is drawing attention from both traders and builders, who are now experimenting with new agent-driven strategies to maximize their share of these rewards.\n\n### What's Happening\nMeteora’s Dynamic Liquidity Market Maker (DLMM) pools are seeing a wave of activity as users deploy capital to earn a share of the protocol’s substantial fee generation. The platform’s real-time stats—$41 per second in fees—are fueling a new wave of experimentation. Builders are now creating agents that automate liquidity provision, using data-driven approaches to optimize entry and exit points in these pools.\n\nSome are leveraging APIs that analyze the behavior of top-performing liquidity providers, feeding this intelligence into their agents to mimic or adapt successful strategies. The focus is on metrics like volatility and fees relative to active TVL, allowing for more objective, data-backed decisions rather than relying solely on manual charting or gut instinct.\n\n### Why It Matters\nThe scale of fees being generated—and the high percentage distributed to LPs—signals that Solana’s DeFi ecosystem is maturing, with real incentives for active participation. The rise of agent-driven strategies marks a shift from manual to automated liquidity management, potentially lowering the barrier for new participants and increasing efficiency for experienced ones.\n\nThis trend also highlights the growing sophistication of tools available to LPs, who can now tap into live pool data and peer performance analytics to refine their approach. As more capital and talent flow into these strategies, the competition for fees is likely to intensify, driving further innovation in both tooling and tactics.\n\n### The Risk or Debate\nWhile the fee numbers are impressive, there are risks. Automated agents can amplify both gains and losses, especially if market conditions shift rapidly or if too many participants crowd into similar strategies. Impermanent loss remains a persistent concern, particularly in volatile pools. There’s also the question of sustainability: high fee rates may not persist if trading volumes drop or if new pools dilute returns.\n\nAnother debate is whether agent-driven approaches will lead to more efficient markets or simply create new forms of arms races, where only those with the best data and fastest bots consistently win. Less sophisticated LPs may find themselves at a disadvantage as the ecosystem becomes more competitive.\n\n### What To Watch\nKeep an eye on the evolution of agent tooling—especially integrations that allow for real-time behavioral analysis of top LPs. Watch for shifts in fee rates as more capital enters Meteora’s pools, and monitor how sustainable these high returns are over time. The next phase could see even more advanced strategies emerge, potentially reshaping how liquidity is managed across Solana DeFi.",
         "takeaways": [
-          "Solana processed $650B in stablecoin volume in February, leading all blockchains.",
-          "Real-world asset market cap on Solana has grown nearly 10x in a year.",
-          "Growth in payments and identity rails is enabling new consumer and trading products."
+          "Meteora pools are generating over $149,000 in fees per hour, with 90%+ going to LPs.",
+          "Agent-driven strategies using real-time data are gaining traction for optimizing liquidity provision.",
+          "Sustainability of high fee rates and the impact of increased competition are key uncertainties."
         ]
       },
       "riskLevel": "medium",
-      "narrativeStrength": 5.2
+      "narrativeStrength": 5.1
     }
   ]
 }
