@@ -1,34 +1,34 @@
 {
-  "date": "2026-03-15",
+  "date": "2026-03-16",
   "title": "TODAY'S SOLANA BRIEFING",
   "subtitle": "Top links from trusted desks",
   "items": [
     {
       "type": "APPS",
-      "title": "Inside Solana’s upgrade – Lower fees, mainnet debut & what’s next for SOL",
+      "title": "Bitcoin briefly tops $74,000 as ether, sol, ada gains as much as 6% in Monday surge",
       "category": "APPS",
-      "source": "AMB Crypto",
-      "date": "2026-03-15",
-      "url": "https://ambcrypto.com/inside-solanas-upgrade-lower-fees-mainnet-debut-whats-next-for-sol",
-      "whyYouShouldCare": "The recent Solana upgrade aims to enhance user experience with lower fees, potentially increasing network activity and attracting more developers to the ecosystem."
-    },
-    {
-      "type": "APPS",
-      "title": "Crypto market’s weekly winners and losers – TAO, HYPE, PI, NIGHT",
-      "category": "APPS",
-      "source": "AMB Crypto",
-      "date": "2026-03-15",
-      "url": "https://ambcrypto.com/crypto-markets-weekly-winners-and-losers-tao-hype-pi-night",
-      "whyYouShouldCare": "Tracking weekly crypto performance highlights market trends, which can influence investor sentiment and liquidity dynamics within the Solana ecosystem."
+      "source": "CoinDesk",
+      "date": "2026-03-16",
+      "url": "https://www.coindesk.com/markets/2026/03/16/bitcoin-tops-usd74-000-as-ether-sol-ada-gains-as-much-as-6-in-monday-surge",
+      "whyYouShouldCare": "The surge in Bitcoin and altcoins like Solana indicates increased market confidence, which could enhance liquidity and user engagement within the Solana ecosystem."
     },
     {
       "type": "INFRA",
-      "title": "Aave and CoW Swap publish dueling post-mortems after $50 million DeFi swap disaster",
+      "title": "Tokenized commodities cross $1B on XRPL! What’s behind this shift?",
       "category": "INFRA",
+      "source": "AMB Crypto",
+      "date": "2026-03-16",
+      "url": "https://ambcrypto.com/tokenized-commodities-cross-1b-on-xrpl-whats-behind-this-shift",
+      "whyYouShouldCare": "The rise of tokenized commodities on XRPL highlights a growing trend that could influence asset diversification strategies within the Solana network."
+    },
+    {
+      "type": "APPS",
+      "title": "Australian Senate committee backs crypto bill requiring platforms to get licensed",
+      "category": "APPS",
       "source": "The Block",
-      "date": "2026-03-15",
-      "url": "https://www.theblock.co/post/393621/aave-and-cow-swap-publish-dueling-post-mortems-after-50-million-defi-swap-disaster",
-      "whyYouShouldCare": "The aftermath of the $50 million DeFi incident raises concerns about security in decentralized finance, impacting user trust and engagement across platforms, including Solana."
+      "date": "2026-03-16",
+      "url": "https://www.theblock.co/post/393684/australian-senate-committee-backs-crypto-bill",
+      "whyYouShouldCare": "The Australian Senate's support for crypto licensing may set regulatory precedents that impact how Solana and other platforms operate in compliant markets."
     }
   ]
 }
