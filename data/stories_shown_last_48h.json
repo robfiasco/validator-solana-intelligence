@@ -75,47 +75,5 @@
     ],
     "majorUpdate": false,
     "updateReason": null
-  },
-  {
-    "id": "06d841966f73d7299f874203eb2ab57b1ab8be56",
-    "title": "Crypto Venture Weekly: March 9-13, 2026",
-    "url": "https://messari.io/article/crypto-venture-weekly-march-9-13-2026",
-    "source": "Messari",
-    "firstSeenAt": "2026-03-13T19:29:56.539Z",
-    "lastSeenAt": "2026-03-15T07:43:24.221Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "crypto",
-      "venture",
-      "weekly",
-      "march",
-      "2026",
-      "projects",
-      "raised",
-      "million"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "56f2282f9ed6fb5e52c9c84642e19793f606aa71",
-    "title": "Solana’s KEY metric flips bullish after 2 months: Can SOL reclaim $93?",
-    "url": "https://ambcrypto.com/solanas-key-metric-flips-bullish-after-2-months-can-sol-reclaim-93",
-    "source": "AMB Crypto",
-    "firstSeenAt": "2026-03-15T07:43:24.220Z",
-    "lastSeenAt": "2026-03-15T07:43:24.220Z",
-    "sectionShown": "briefing",
-    "topicTags": [
-      "solana",
-      "metric",
-      "flips",
-      "bullish",
-      "after",
-      "months",
-      "reclaim",
-      "supertrend"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
   }
 ]

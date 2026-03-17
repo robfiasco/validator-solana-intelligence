@@ -1,21 +1,21 @@
 {
-  "date": "2026-03-16",
-  "generated_at_utc": "2026-03-16T19:52:28.894Z",
-  "ctxMarket": "Attention is on Solana’s recent price movement, with exchange outflows of over $300M in 24 hours supporting bullish sentiment. The surge in meme coin trading and notable venture activity are also in focus.",
-  "ctxTalking": "• Solana’s price holding above $90 and the potential for further gains if momentum continues\n• A Trump-themed meme coin on Solana spiking in price and volume as holders seek access to an exclusive event\n• Significant venture capital raises and acquisitions involving Solana ecosystem projects",
-  "ctxMatters": "Sustained outflows from exchanges can signal strong holder conviction for Solana. The meme coin trend highlights how community-driven tokens can create new engagement models. Venture activity and acquisitions may influence the pace of new product launches and integrations on Solana.",
-  "ctxSignal": "Signal: Large exchange outflows and major venture deals point to continued institutional and retail interest in Solana.\nNoise: Short-term meme coin price spikes tied to exclusive events may not reflect broader market trends.",
-  "ctxGlossary": "Exchange outflows — Crypto assets moving from trading platforms to private wallets, often seen as a sign of holding.\nMeme coin — A cryptocurrency inspired by internet memes or pop culture, usually with speculative appeal.",
+  "date": "2026-03-17",
+  "generated_at_utc": "2026-03-17T07:53:02.485Z",
+  "ctxMarket": "Crypto majors, including Solana, posted strong double-digit weekly gains, with attention focused on ETF inflows and speculation around a ceasefire. Bitcoin approached $75,000 ahead of the upcoming Federal Reserve decision, drawing further market interest.",
+  "ctxTalking": "• ETF inflows and ceasefire speculation driving a broad crypto rally\n• Memecoin WIF’s 10% price increase and potential for further movement\n• Significant venture funding and acquisitions, including Jito acquiring SolanaFloor",
+  "ctxMatters": "ETF inflows and geopolitical speculation are influencing liquidity and sentiment across major tokens. Venture activity and acquisitions signal ongoing development and consolidation within the Solana ecosystem. These trends may shape user experience, network growth, and competitive positioning.",
+  "ctxSignal": "Signal: ETF inflows and venture funding are directly tied to increased activity and ecosystem expansion.\nNoise: Price speculation around memecoins like WIF lacks clear fundamental drivers in today’s context.",
+  "ctxGlossary": "ETF — Exchange-traded fund, a type of investment vehicle that can bring institutional capital into crypto markets.\nTreasury purchase — Large-scale acquisition of crypto assets by companies for their reserves.",
   "readMore": [
     {
-      "title": "Solana flips $90 support – SOL’s rally to $100 possible ONLY IF…",
-      "source": "AMB Crypto",
-      "url": "https://ambcrypto.com/solana-flips-90-support-sols-rally-to-100-possible-only-if"
+      "title": "Crypto majors post double-digit weekly gains as bitcoin tests $75,000 ahead of Fed decision",
+      "source": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/03/17/crypto-majors-post-double-digit-weekly-gains-as-bitcoin-tests-usd75-000-ahead-of-fed-decision"
     },
     {
-      "title": "Trump Meme Coin Price, Trading Volume Skyrocket as Holders Vie for Exclusive Event Access",
-      "source": "Decrypt",
-      "url": "https://decrypt.co/361063/trump-meme-coin-price-trading-volume-skyrocket-exclusive-event"
+      "title": "After WIF’s latest 10% price hike, is a breakout past $2 next?",
+      "source": "AMB Crypto",
+      "url": "https://ambcrypto.com/after-wifs-latest-10-price-hike-is-a-breakout-past-2-next"
     },
     {
       "title": "Crypto Venture Weekly",

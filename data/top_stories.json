@@ -1,46 +1,13 @@
 {
   "meta": {
-    "generatedAt": "2026-03-16T19:52:19.645Z",
-    "totalCandidates": 83,
-    "solanaCandidates": 10,
+    "generatedAt": "2026-03-17T07:52:53.259Z",
+    "totalCandidates": 92,
+    "solanaCandidates": 13,
     "selected": 5,
     "tweetPool": 0,
     "narrativeKeywordsCount": 0
   },
   "items": [
-    {
-      "id": "https://ambcrypto.com/wlfi-governance-overhaul-approved-as-community-vote-passes-with-99-support",
-      "title": "WLFI governance overhaul approved as community vote passes with 99% support",
-      "url": "https://ambcrypto.com/wlfi-governance-overhaul-approved-as-community-vote-passes-with-99-support",
-      "source": "AMB Crypto",
-      "publishedAt": "2026-03-16T15:38:03.000Z",
-      "summary": "World Liberty Financial’s governance proposal has passed with overwhelming support, clearing quorum and paving the way for staking-based governance.",
-      "tags": [
-        "wlfi",
-        "governance",
-        "overhaul"
-      ],
-      "topicBucket": "general",
-      "whyItMatters": "Infrastructure changes here can reset risk and throughput expectations.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 19,
-        "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 1,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "3305fb5bf6955cf94efd0a36bb3b46f66564b06c",
-      "score": 30
-    },
     {
       "id": "https://www.coindesk.com/tech/2026/03/16/trump-backed-wlfi-passes-proposal-letting-usd5-million-stakers-buy-direct-access-to-team",
       "title": "Trump-backed WLFI passes proposal letting $5 million stakers buy 'direct access' to team",
@@ -66,17 +33,17 @@
       "scoreBreakdown": {
         "relevanceScore": 11,
         "mentionScore": 0,
-        "recencyScore": 10,
+        "recencyScore": 9,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "763ee0240d4b9da597040436d463b6d6177885f3",
-      "score": 25
+      "score": 24
     },
     {
       "id": "https://www.coindesk.com/markets/2026/03/16/circle-is-up-100-in-a-month-why-this-boring-stablecoin-is-suddenly-the-hottest-trade-in-crypto",
-      "title": "Circle is up 100% in a month: Why this boring stablecoin stock is suddenly the hottest trade in crypto",
+      "title": "Circle is up 100% in a month: Why this stablecoin stock is suddenly the hottest trade in crypto",
       "url": "https://www.coindesk.com/markets/2026/03/16/circle-is-up-100-in-a-month-why-this-boring-stablecoin-is-suddenly-the-hottest-trade-in-crypto",
       "source": "CoinDesk",
       "publishedAt": "2026-03-16T16:15:58.000Z",
@@ -99,45 +66,12 @@
       "scoreBreakdown": {
         "relevanceScore": 8,
         "mentionScore": 0,
-        "recencyScore": 10,
+        "recencyScore": 9,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "3e8f3978dd54180abe3c6af6aee5d93df0e320fb",
-      "score": 22
-    },
-    {
-      "id": "https://ambcrypto.com/solana-flips-90-support-sols-rally-to-100-possible-only-if",
-      "title": "Solana flips $90 support – SOL’s rally to $100 possible ONLY IF…",
-      "url": "https://ambcrypto.com/solana-flips-90-support-sols-rally-to-100-possible-only-if",
-      "source": "AMB Crypto",
-      "publishedAt": "2026-03-16T11:00:36.000Z",
-      "summary": "Exchange outflows supported the bullish case, with over $300M leaving exchanges in 24 hours.",
-      "tags": [
-        "solana",
-        "flips",
-        "support"
-      ],
-      "topicBucket": "market",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 10,
-        "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 1,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "36110652ae07d66af432b878d9504b05c5828a73",
       "score": 21
     },
     {
@@ -165,13 +99,79 @@
       "scoreBreakdown": {
         "relevanceScore": 6,
         "mentionScore": 0,
-        "recencyScore": 10,
+        "recencyScore": 9,
         "sourceScore": 3,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "7c3a0d1f6045f0dc574c3207b5d639df8fb5bbc0",
-      "score": 19
+      "score": 18
+    },
+    {
+      "id": "https://www.coindesk.com/markets/2026/03/16/ai-linked-crypto-tokens-surge-as-nvidia-s-jensen-huang-touts-agentic-future",
+      "title": "AI-linked crypto tokens surge as Nvidia's Jensen Huang touts agentic future",
+      "url": "https://www.coindesk.com/markets/2026/03/16/ai-linked-crypto-tokens-surge-as-nvidia-s-jensen-huang-touts-agentic-future",
+      "source": "CoinDesk",
+      "publishedAt": "2026-03-16T22:20:35.000Z",
+      "summary": "CEO Jensen Huang predicted $1 trillion in chip demand through 2027 and praised OpenClaw and the rapid rise of agentic AI systems.",
+      "tags": [
+        "linked",
+        "crypto",
+        "tokens"
+      ],
+      "topicBucket": "general",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 3,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 4,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "5dc487369d057ee18cb9c221ed3c136f29c2ebb2",
+      "score": 17
+    },
+    {
+      "id": "https://cointelegraph.com/news/defi-education-fund-withdraws-sec-lawsuit-crypto-airdrops-shift",
+      "title": "DeFi lobby drops airdrop lawsuit against SEC, citing crypto shift",
+      "url": "https://cointelegraph.com/news/defi-education-fund-withdraws-sec-lawsuit-crypto-airdrops-shift",
+      "source": "Cointelegraph",
+      "publishedAt": "2026-03-17T06:11:50.000Z",
+      "summary": "The voluntary dismissal was filed without prejudice, meaning Beba and the DeFi Education Fund could refile the same case at a later date.",
+      "tags": [
+        "defi",
+        "lobby",
+        "drops"
+      ],
+      "topicBucket": "tokenomics",
+      "whyItMatters": "Token supply mechanics can move short-term flows fast.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 5,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 0,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "790cf92f7a709ba19f3c83cc2203cc202628799e",
+      "score": 15
     }
   ]
 }
