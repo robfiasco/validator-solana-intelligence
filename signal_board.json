@@ -1,16 +1,16 @@
 {
-  "date": "2026-03-17",
-  "generated_at_utc": "2026-03-17T19:53:43.986Z",
-  "ctxMarket": "Attention is on Solana’s continued inflow streak and its role in the broader crypto rally, with SOL up nearly 10% over the past week. Regulatory and infrastructure developments are also drawing focus, especially as Solana marks its sixth anniversary.",
-  "ctxTalking": "• Solana’s six-week inflow streak and recent price breakout\n• Phantom wallet gaining CFTC approval for regulated derivatives access\n• Solana’s expanding use cases, including tokenized stocks and ongoing high transaction volumes",
-  "ctxMatters": "Sustained inflows and price momentum highlight persistent demand for Solana assets. Regulatory progress, such as Phantom’s CFTC nod, could broaden user access to derivatives within the Solana ecosystem. The network’s diversification into tokenized stocks and continued transaction leadership signal evolving utility for both users and builders.",
-  "ctxSignal": "Signal: Regulatory approvals and strong inflows point to growing institutional and retail interest in Solana.\nNoise: Memecoin branding overshadows Solana’s expanding infrastructure and new use cases.",
-  "ctxGlossary": "Inflow — Net amount of capital entering an asset or ecosystem.\nTokenized stocks — Digital representations of traditional stocks issued on a blockchain.",
+  "date": "2026-03-18",
+  "generated_at_utc": "2026-03-18T07:50:42.841Z",
+  "ctxMarket": "Attention is on Solana’s resurgence, driven by increased USDC activity and renewed derivatives interest. Tokenized securities and inflows are also in focus, with Solana maintaining a leading role in transaction volume and infrastructure.",
+  "ctxTalking": "• Solana’s stablecoin and derivatives activity is rising, with USDC usage and open interest up.\n• Major players are betting on tokenized securities, with Solana capturing significant market share.\n• Phantom wallet received CFTC approval to access regulated derivatives markets.",
+  "ctxMatters": "Stablecoin and derivatives growth signals expanding use cases and deeper liquidity on Solana.\nTokenized securities highlight Solana’s evolving role beyond memecoins, attracting institutional attention.\nRegulatory nods for wallets like Phantom may lower barriers for users to access compliant financial products.",
+  "ctxSignal": "Signal: Sustained inflows and institutional moves into tokenized assets on Solana.\nNoise: Speculation about price direction without clear catalysts.",
+  "ctxGlossary": "Open Interest (OI) — The total number of outstanding derivative contracts.\nTokenized Securities — Traditional assets like stocks represented as tokens on a blockchain.\nStablecoin — A cryptocurrency pegged to a stable asset, often the US dollar.",
   "readMore": [
     {
-      "title": "Solana records 6-week inflow streak, but THIS level is key for SOL",
+      "title": "Solana’s stablecoin surge meets rising OI – Can SOL’s price push higher?",
       "source": "AMB Crypto",
-      "url": "https://ambcrypto.com/solana-records-6-week-inflow-streak-but-this-level-is-key-for-sol"
+      "url": "https://ambcrypto.com/solanas-stablecoin-surge-meets-rising-oi-can-sols-price-push-higher"
     },
     {
       "title": "ASTER token rallies as privacy-preserving native blockchain powering DEX mainnets",

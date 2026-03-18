@@ -1,34 +1,34 @@
 {
-  "date": "2026-03-17",
+  "date": "2026-03-18",
   "title": "TODAY'S SOLANA BRIEFING",
   "subtitle": "Top links from trusted desks",
   "items": [
     {
       "type": "MARKET",
-      "title": "ASTER token rallies as privacy-preserving native blockchain powering DEX mainnets",
+      "title": "Webinar Recap: Corporate Treasury Onchain — 24/7 Global Liquidity",
       "category": "MARKET",
-      "source": "The Block",
+      "source": "Solana News",
       "date": "2026-03-17",
-      "url": "https://www.theblock.co/post/393955/aster-token-privacy-preserving-blockchain-dex-mainnet",
-      "whyYouShouldCare": "The rise of ASTER token highlights growing interest in privacy-focused solutions, which could enhance liquidity and user engagement in Solana's DEX ecosystem."
+      "url": "https://solana.com/news/webinar-recap-corporate-treasury-onchain",
+      "whyYouShouldCare": "The discussion on corporate treasury management on-chain highlights Solana's potential for facilitating continuous liquidity, which could enhance institutional adoption."
+    },
+    {
+      "type": "MARKET",
+      "title": "Solana’s stablecoin surge meets rising OI – Can SOL’s price push higher?",
+      "category": "MARKET",
+      "source": "AMB Crypto",
+      "date": "2026-03-18",
+      "url": "https://ambcrypto.com/solanas-stablecoin-surge-meets-rising-oi-can-sols-price-push-higher",
+      "whyYouShouldCare": "The increase in stablecoin activity alongside rising open interest suggests a growing interest in Solana, potentially positioning SOL for upward price movement."
     },
     {
       "type": "APPS",
-      "title": "Popular Solana wallet Phantom wins CFTC nod to access regulated derivatives markets",
+      "title": "SOL price signal tied to previous 142% rally flashes again: Are the bulls back?",
       "category": "APPS",
-      "source": "CoinDesk",
+      "source": "Cointelegraph",
       "date": "2026-03-17",
-      "url": "https://www.coindesk.com/policy/2026/03/17/phantom-wins-cftc-no-action-relief-clearing-path-for-crypto-wallet-access-to-regulated-derivatives-markets",
-      "whyYouShouldCare": "Phantom's approval for regulated derivatives access may boost user confidence and attract institutional interest, potentially increasing Solana's overall market activity."
-    },
-    {
-      "type": "INFRA",
-      "title": "As Solana turns six years old, the “memecoin chain” is quietly listing 200 plus tokenized stocks for Wall Street",
-      "category": "INFRA",
-      "source": "CryptoSlate",
-      "date": "2026-03-17",
-      "url": "https://cryptoslate.com/as-solana-turns-six-years-old-the-memecoin-chain-is-quietly-listing-200-plus-tokenized-stocks-for-wall-street",
-      "whyYouShouldCare": "The listing of over 200 tokenized stocks on Solana signifies its expanding infrastructure, which could drive more users and liquidity to the platform."
+      "url": "https://cointelegraph.com/news/sol-price-signal-tied-to-previous-142percent-rally-flashes-again-are-the-bulls-back",
+      "whyYouShouldCare": "The re-emergence of a price signal linked to a previous significant rally indicates potential bullish momentum for SOL, attracting trader attention."
     }
   ]
 }

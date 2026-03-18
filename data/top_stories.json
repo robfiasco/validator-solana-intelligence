@@ -1,26 +1,26 @@
 {
   "meta": {
-    "generatedAt": "2026-03-17T19:53:34.729Z",
+    "generatedAt": "2026-03-18T07:50:33.330Z",
     "totalCandidates": 94,
-    "solanaCandidates": 24,
+    "solanaCandidates": 25,
     "selected": 5,
     "tweetPool": 0,
     "narrativeKeywordsCount": 0
   },
   "items": [
     {
-      "id": "https://www.coindesk.com/policy/2026/03/17/phantom-wins-cftc-no-action-relief-clearing-path-for-crypto-wallet-access-to-regulated-derivatives-markets",
-      "title": "Popular Solana wallet Phantom wins CFTC nod to access regulated derivatives markets",
-      "url": "https://www.coindesk.com/policy/2026/03/17/phantom-wins-cftc-no-action-relief-clearing-path-for-crypto-wallet-access-to-regulated-derivatives-markets",
-      "source": "CoinDesk",
-      "publishedAt": "2026-03-17T15:06:21.000Z",
-      "summary": "This means Phantom can act as a non-custodial interface connecting users to registered derivatives platforms, removing the need for broker registration under specific conditions.",
+      "id": "https://ambcrypto.com/solanas-stablecoin-surge-meets-rising-oi-can-sols-price-push-higher",
+      "title": "Solana’s stablecoin surge meets rising OI – Can SOL’s price push higher?",
+      "url": "https://ambcrypto.com/solanas-stablecoin-surge-meets-rising-oi-can-sols-price-push-higher",
+      "source": "AMB Crypto",
+      "publishedAt": "2026-03-18T05:00:03.000Z",
+      "summary": "Solana is regaining strength as USDC activity surges and derivatives conviction returns.",
       "tags": [
-        "popular",
         "solana",
-        "wallet"
+        "stablecoin",
+        "surge"
       ],
-      "topicBucket": "consumer",
+      "topicBucket": "defi",
       "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
       "mentionCount": 0,
       "xMentions": 0,
@@ -31,14 +31,47 @@
       "narrativesMatched": [],
       "premiumNarrativesMatched": [],
       "scoreBreakdown": {
-        "relevanceScore": 13,
+        "relevanceScore": 18,
         "mentionScore": 0,
         "recencyScore": 10,
-        "sourceScore": 4,
+        "sourceScore": 1,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "f3dfbf9f41896f83332b6f0e663b43e4caf2a10a",
+      "dedupeFingerprint": "9a7a437f3a437e79c51d2e210dd06c705661abca",
+      "score": 29
+    },
+    {
+      "id": "https://solana.com/news/webinar-recap-corporate-treasury-onchain",
+      "title": "Webinar Recap: Corporate Treasury Onchain — 24/7 Global Liquidity",
+      "url": "https://solana.com/news/webinar-recap-corporate-treasury-onchain",
+      "source": "Solana News",
+      "publishedAt": "2026-03-17T00:00:00.000Z",
+      "summary": "Discover how global enterprises are moving corporate treasury onchain. Learn how Solana and Fireblocks enable 24/7 liquidity, instant global payouts, and yield generation using stablecoins.",
+      "tags": [
+        "webinar",
+        "recap",
+        "corporate"
+      ],
+      "topicBucket": "defi",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 14,
+        "mentionScore": 0,
+        "recencyScore": 8,
+        "sourceScore": 5,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "65d089336c6bb3e5922a1f073a790ea6bc358cf6",
       "score": 27
     },
     {
@@ -66,58 +99,25 @@
       "scoreBreakdown": {
         "relevanceScore": 13,
         "mentionScore": 0,
-        "recencyScore": 10,
+        "recencyScore": 9,
         "sourceScore": 1,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "f8dea038eac40f9c85c60ab67bf546c32c5b9f33",
-      "score": 24
+      "score": 23
     },
     {
-      "id": "https://www.theblock.co/post/393955/aster-token-privacy-preserving-blockchain-dex-mainnet",
-      "title": "ASTER token rallies as privacy-preserving native blockchain powering DEX mainnets",
-      "url": "https://www.theblock.co/post/393955/aster-token-privacy-preserving-blockchain-dex-mainnet",
-      "source": "The Block",
-      "publishedAt": "2026-03-17T16:21:32.000Z",
-      "summary": "Aster Chain supports 50ms block times, 100,000 TPS, as well as cross-chain deposits between BNB Chain, Arbitrum, Ethereum and Solana.",
-      "tags": [
-        "aster",
-        "token",
-        "rallies"
-      ],
-      "topicBucket": "defi",
-      "whyItMatters": "Flow and volume shifts here usually show up first in Solana risk appetite.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 8,
-        "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 4,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "2b2105463167f85d536bd77cfc9842fde6b52fd4",
-      "score": 22
-    },
-    {
-      "id": "https://www.theblock.co/post/393929/cftc-wont-pursue-broker-registration-phantom-derivatives-trading",
-      "title": "CFTC won’t pursue broker registration action against Phantom over derivatives trading feature",
-      "url": "https://www.theblock.co/post/393929/cftc-wont-pursue-broker-registration-phantom-derivatives-trading",
-      "source": "The Block",
-      "publishedAt": "2026-03-17T14:46:13.000Z",
-      "summary": "The CFTC considers Phantom’s proposed feature as a passive software interface, with users trading directly through regulated brokers.",
+      "id": "https://decrypt.co/361449/phantom-cftc-regulated-derivatives-markets",
+      "title": "CFTC Clears Phantom to Connect Users to Regulated Derivatives Markets",
+      "url": "https://decrypt.co/361449/phantom-cftc-regulated-derivatives-markets",
+      "source": "Decrypt",
+      "publishedAt": "2026-03-17T20:35:27.000Z",
+      "summary": "Under the ruling, the developer of the Phantom self-custody crypto wallet avoids having to register as a broker.",
       "tags": [
         "cftc",
-        "pursue",
-        "broker"
+        "clears",
+        "phantom"
       ],
       "topicBucket": "consumer",
       "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
@@ -133,12 +133,12 @@
         "relevanceScore": 8,
         "mentionScore": 0,
         "recencyScore": 10,
-        "sourceScore": 4,
+        "sourceScore": 3,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "7416a73001327b5f81c6c2664a193ddbc5d7c9ab",
-      "score": 22
+      "dedupeFingerprint": "99f0ce81109864e87d3552e2bf6b4fd856160f49",
+      "score": 21
     },
     {
       "id": "https://www.coindesk.com/markets/2026/03/17/gensler-and-biden-were-just-better-for-crypto-says-tally-ceo-as-dao-governance-platform-shuts-down",
@@ -165,13 +165,13 @@
       "scoreBreakdown": {
         "relevanceScore": 8,
         "mentionScore": 0,
-        "recencyScore": 10,
+        "recencyScore": 9,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "acd03c811eaaa3460bc64be657d6ebbf327fde0c",
-      "score": 22
+      "score": 21
     }
   ]
 }

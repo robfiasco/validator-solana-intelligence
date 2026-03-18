@@ -1,5 +1,68 @@
 [
   {
+    "id": "9a7a437f3a437e79c51d2e210dd06c705661abca",
+    "title": "Solana’s stablecoin surge meets rising OI – Can SOL’s price push higher?",
+    "url": "https://ambcrypto.com/solanas-stablecoin-surge-meets-rising-oi-can-sols-price-push-higher",
+    "source": "AMB Crypto",
+    "firstSeenAt": "2026-03-18T07:50:33.497Z",
+    "lastSeenAt": "2026-03-18T07:50:33.497Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "solana",
+      "stablecoin",
+      "surge",
+      "meets",
+      "rising",
+      "price",
+      "push",
+      "higher"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "904072388f2972a47cd3a4acb07a3138d5c1a398",
+    "title": "SOL price signal tied to previous 142% rally flashes again: Are the bulls back?",
+    "url": "https://cointelegraph.com/news/sol-price-signal-tied-to-previous-142percent-rally-flashes-again-are-the-bulls-back",
+    "source": "Cointelegraph",
+    "firstSeenAt": "2026-03-18T07:50:33.497Z",
+    "lastSeenAt": "2026-03-18T07:50:33.497Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "price",
+      "signal",
+      "tied",
+      "previous",
+      "rally",
+      "flashes",
+      "again",
+      "bulls"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "65d089336c6bb3e5922a1f073a790ea6bc358cf6",
+    "title": "Webinar Recap: Corporate Treasury Onchain — 24/7 Global Liquidity",
+    "url": "https://solana.com/news/webinar-recap-corporate-treasury-onchain",
+    "source": "Solana News",
+    "firstSeenAt": "2026-03-18T07:50:33.496Z",
+    "lastSeenAt": "2026-03-18T07:50:33.496Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "webinar",
+      "recap",
+      "corporate",
+      "treasury",
+      "onchain",
+      "global",
+      "liquidity",
+      "discover"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "2b2105463167f85d536bd77cfc9842fde6b52fd4",
     "title": "ASTER token rallies as privacy-preserving native blockchain powering DEX mainnets",
     "url": "https://www.theblock.co/post/393955/aster-token-privacy-preserving-blockchain-dex-mainnet",
