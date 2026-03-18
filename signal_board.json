@@ -1,26 +1,26 @@
 {
   "date": "2026-03-18",
-  "generated_at_utc": "2026-03-18T07:50:42.841Z",
-  "ctxMarket": "Attention is on Solana’s resurgence, driven by increased USDC activity and renewed derivatives interest. Tokenized securities and inflows are also in focus, with Solana maintaining a leading role in transaction volume and infrastructure.",
-  "ctxTalking": "• Solana’s stablecoin and derivatives activity is rising, with USDC usage and open interest up.\n• Major players are betting on tokenized securities, with Solana capturing significant market share.\n• Phantom wallet received CFTC approval to access regulated derivatives markets.",
-  "ctxMatters": "Stablecoin and derivatives growth signals expanding use cases and deeper liquidity on Solana.\nTokenized securities highlight Solana’s evolving role beyond memecoins, attracting institutional attention.\nRegulatory nods for wallets like Phantom may lower barriers for users to access compliant financial products.",
-  "ctxSignal": "Signal: Sustained inflows and institutional moves into tokenized assets on Solana.\nNoise: Speculation about price direction without clear catalysts.",
-  "ctxGlossary": "Open Interest (OI) — The total number of outstanding derivative contracts.\nTokenized Securities — Traditional assets like stocks represented as tokens on a blockchain.\nStablecoin — A cryptocurrency pegged to a stable asset, often the US dollar.",
+  "generated_at_utc": "2026-03-18T19:51:58.044Z",
+  "ctxMarket": "Attention is focused on the SEC’s reclassification of major crypto tokens, including Solana, as “digital commodities.” Solana is also seeing renewed interest due to a surge in stablecoin activity and derivatives trading.",
+  "ctxTalking": "• The SEC’s decision to categorize Solana and other major tokens as digital commodities\n• Increased USDC activity and open interest on Solana\n• Corporate treasury adoption of onchain solutions for 24/7 liquidity",
+  "ctxMatters": "The SEC’s move could reduce legal uncertainty for Solana and similar tokens, potentially affecting how projects and exchanges operate. Rising stablecoin and derivatives activity signals growing user engagement on Solana. Onchain treasury adoption highlights Solana’s role in global enterprise finance.",
+  "ctxSignal": "Signal: The SEC’s reclassification and Solana’s stablecoin growth both represent structural shifts in the ecosystem.\nNoise: Speculation about immediate price movements without clear causal links.",
+  "ctxGlossary": "Digital commodity — A regulatory category for assets like Solana, distinct from securities.\nOpen interest (OI) — The total number of outstanding derivative contracts, such as futures, that have not been settled.",
   "readMore": [
+    {
+      "title": "SEC makes huge U-turn, declares crypto tokens are ‘digital commodities’ after years of legal battles",
+      "source": "CryptoSlate",
+      "url": "https://cryptoslate.com/in-a-massive-u-turn-the-sec-declares-most-crypto-tokens-digital-commodities-after-years-of-legal-battles"
+    },
     {
       "title": "Solana’s stablecoin surge meets rising OI – Can SOL’s price push higher?",
       "source": "AMB Crypto",
       "url": "https://ambcrypto.com/solanas-stablecoin-surge-meets-rising-oi-can-sols-price-push-higher"
     },
     {
-      "title": "ASTER token rallies as privacy-preserving native blockchain powering DEX mainnets",
-      "source": "The Block",
-      "url": "https://www.theblock.co/post/393955/aster-token-privacy-preserving-blockchain-dex-mainnet"
-    },
-    {
-      "title": "Popular Solana wallet Phantom wins CFTC nod to access regulated derivatives markets",
-      "source": "CoinDesk",
-      "url": "https://www.coindesk.com/policy/2026/03/17/phantom-wins-cftc-no-action-relief-clearing-path-for-crypto-wallet-access-to-regulated-derivatives-markets"
+      "title": "State of Rango Q4 2025",
+      "source": "Messari",
+      "url": "https://messari.io/article/state-of-rango-q4-2025"
     }
   ]
 }

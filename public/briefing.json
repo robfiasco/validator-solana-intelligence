@@ -4,13 +4,22 @@
   "subtitle": "Top links from trusted desks",
   "items": [
     {
-      "type": "MARKET",
-      "title": "Webinar Recap: Corporate Treasury Onchain — 24/7 Global Liquidity",
-      "category": "MARKET",
-      "source": "Solana News",
+      "type": "APPS",
+      "title": "SEC makes huge U-turn, declares crypto tokens are ‘digital commodities’ after years of legal battles",
+      "category": "APPS",
+      "source": "CryptoSlate",
+      "date": "2026-03-18",
+      "url": "https://cryptoslate.com/in-a-massive-u-turn-the-sec-declares-most-crypto-tokens-digital-commodities-after-years-of-legal-battles",
+      "whyYouShouldCare": "The SEC's classification of crypto tokens as 'digital commodities' could enhance regulatory clarity, potentially benefiting Solana's ecosystem and attracting institutional interest."
+    },
+    {
+      "type": "INFRA",
+      "title": "State of Rango Q4 2025",
+      "category": "INFRA",
+      "source": "Messari",
       "date": "2026-03-17",
-      "url": "https://solana.com/news/webinar-recap-corporate-treasury-onchain",
-      "whyYouShouldCare": "The discussion on corporate treasury management on-chain highlights Solana's potential for facilitating continuous liquidity, which could enhance institutional adoption."
+      "url": "https://messari.io/article/state-of-rango-q4-2025",
+      "whyYouShouldCare": "Rango's Q4 2025 report highlights infrastructure developments that could improve Solana's interoperability and user experience, fostering greater adoption within its ecosystem."
     },
     {
       "type": "MARKET",
@@ -19,16 +28,7 @@
       "source": "AMB Crypto",
       "date": "2026-03-18",
       "url": "https://ambcrypto.com/solanas-stablecoin-surge-meets-rising-oi-can-sols-price-push-higher",
-      "whyYouShouldCare": "The increase in stablecoin activity alongside rising open interest suggests a growing interest in Solana, potentially positioning SOL for upward price movement."
-    },
-    {
-      "type": "APPS",
-      "title": "SOL price signal tied to previous 142% rally flashes again: Are the bulls back?",
-      "category": "APPS",
-      "source": "Cointelegraph",
-      "date": "2026-03-17",
-      "url": "https://cointelegraph.com/news/sol-price-signal-tied-to-previous-142percent-rally-flashes-again-are-the-bulls-back",
-      "whyYouShouldCare": "The re-emergence of a price signal linked to a previous significant rally indicates potential bullish momentum for SOL, attracting trader attention."
+      "whyYouShouldCare": "The increase in stablecoin activity alongside rising open interest suggests a bullish sentiment for SOL, indicating potential upward price movement and increased liquidity."
     }
   ]
 }

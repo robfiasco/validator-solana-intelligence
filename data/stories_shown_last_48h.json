@@ -1,11 +1,25 @@
 [
   {
+    "id": "2fd23aa8f5566b69313989d545e4398835e64041",
+    "title": "Signal Board Summary 2026-03-18",
+    "url": "",
+    "source": "signal-board",
+    "firstSeenAt": "2026-03-18T19:51:58.047Z",
+    "lastSeenAt": "2026-03-18T19:51:58.047Z",
+    "sectionShown": "signal",
+    "topicTags": [
+      "signal-board"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
     "id": "9a7a437f3a437e79c51d2e210dd06c705661abca",
     "title": "Solana’s stablecoin surge meets rising OI – Can SOL’s price push higher?",
     "url": "https://ambcrypto.com/solanas-stablecoin-surge-meets-rising-oi-can-sols-price-push-higher",
     "source": "AMB Crypto",
     "firstSeenAt": "2026-03-18T07:50:33.497Z",
-    "lastSeenAt": "2026-03-18T07:50:33.497Z",
+    "lastSeenAt": "2026-03-18T19:51:48.099Z",
     "sectionShown": "briefing",
     "topicTags": [
       "solana",
@@ -16,6 +30,48 @@
       "price",
       "push",
       "higher"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "c3995a83047e4ef303c401b0c5eea3b2f3f3e47a",
+    "title": "State of Rango Q4 2025",
+    "url": "https://messari.io/article/state-of-rango-q4-2025",
+    "source": "Messari",
+    "firstSeenAt": "2026-03-18T19:51:48.099Z",
+    "lastSeenAt": "2026-03-18T19:51:48.099Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "state",
+      "rango",
+      "2025",
+      "closed",
+      "with",
+      "strong",
+      "growth",
+      "across"
+    ],
+    "majorUpdate": false,
+    "updateReason": null
+  },
+  {
+    "id": "d2a4107a467e8e24d9092da0db7cedeb061fdcaa",
+    "title": "SEC makes huge U-turn, declares crypto tokens are ‘digital commodities’ after years of legal battles",
+    "url": "https://cryptoslate.com/in-a-massive-u-turn-the-sec-declares-most-crypto-tokens-digital-commodities-after-years-of-legal-battles",
+    "source": "CryptoSlate",
+    "firstSeenAt": "2026-03-18T19:51:48.098Z",
+    "lastSeenAt": "2026-03-18T19:51:48.098Z",
+    "sectionShown": "briefing",
+    "topicTags": [
+      "makes",
+      "huge",
+      "turn",
+      "declares",
+      "crypto",
+      "tokens",
+      "digital",
+      "commodities"
     ],
     "majorUpdate": false,
     "updateReason": null
@@ -163,20 +219,6 @@
       "only",
       "exchange",
       "outflows"
-    ],
-    "majorUpdate": false,
-    "updateReason": null
-  },
-  {
-    "id": "cff06d4a90fb1eba61875091d158e3f39de0731a",
-    "title": "Signal Board Summary 2026-03-16",
-    "url": "",
-    "source": "signal-board",
-    "firstSeenAt": "2026-03-16T08:07:19.509Z",
-    "lastSeenAt": "2026-03-16T08:07:19.509Z",
-    "sectionShown": "signal",
-    "topicTags": [
-      "signal-board"
     ],
     "majorUpdate": false,
     "updateReason": null
