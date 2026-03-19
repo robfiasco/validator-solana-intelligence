@@ -1,13 +1,112 @@
 {
   "meta": {
-    "generatedAt": "2026-03-19T07:46:10.193Z",
-    "totalCandidates": 98,
-    "solanaCandidates": 15,
+    "generatedAt": "2026-03-19T19:45:17.882Z",
+    "totalCandidates": 100,
+    "solanaCandidates": 12,
     "selected": 5,
     "tweetPool": 0,
     "narrativeKeywordsCount": 0
   },
   "items": [
+    {
+      "id": "https://www.coindesk.com/tech/2026/03/19/openclaw-developers-targeted-in-github-phishing-scam-offering-fake-token-airdrops",
+      "title": "OpenClaw developers targeted in GitHub phishing scam offering fake token airdrops",
+      "url": "https://www.coindesk.com/tech/2026/03/19/openclaw-developers-targeted-in-github-phishing-scam-offering-fake-token-airdrops",
+      "source": "CoinDesk",
+      "publishedAt": "2026-03-19T15:45:10.000Z",
+      "summary": "Security researchers said attackers are impersonating OpenClaw on GitHub, luring developers with bogus CLAW token giveaways that trick users into connecting their crypto wallets.",
+      "tags": [
+        "openclaw",
+        "developers",
+        "targeted"
+      ],
+      "topicBucket": "tokenomics",
+      "whyItMatters": "Token supply mechanics can move short-term flows fast.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 8,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 4,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "e6ca052d16386d6d0ed590f540c3b49b2a532da5",
+      "score": 22
+    },
+    {
+      "id": "https://www.coindesk.com/policy/2026/03/19/coinbase-faces-a-multibillion-dollar-threat-from-d-c-but-a-rewards-loophole-could-protect-its-stablecoin-revenue",
+      "title": "Coinbase faces a multibillion-dollar threat from D.C. but a 'rewards' loophole could protect its stablecoin revenue",
+      "url": "https://www.coindesk.com/policy/2026/03/19/coinbase-faces-a-multibillion-dollar-threat-from-d-c-but-a-rewards-loophole-could-protect-its-stablecoin-revenue",
+      "source": "CoinDesk",
+      "publishedAt": "2026-03-19T12:00:00.000Z",
+      "summary": "The proposed rules could ban yield on stablecoins like USDC, though analysts say the exchange may adapt.",
+      "tags": [
+        "coinbase",
+        "faces",
+        "multibillion"
+      ],
+      "topicBucket": "defi",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 8,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 4,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "9fe626a44206e7d5e8952da0882c41deff63c498",
+      "score": 22
+    },
+    {
+      "id": "https://www.theblock.co/post/394290/openclaw-phishing-crypto-wallets",
+      "title": "OpenClaw’s rise draws phishing campaign targeting developers’ crypto wallets",
+      "url": "https://www.theblock.co/post/394290/openclaw-phishing-crypto-wallets",
+      "source": "The Block",
+      "publishedAt": "2026-03-19T08:38:25.000Z",
+      "summary": "OpenClaw creator Peter Steinberger warned that any crypto-themed outreach invoking the AI platform should be treated as fraudulent.",
+      "tags": [
+        "openclaw",
+        "rise",
+        "draws"
+      ],
+      "topicBucket": "consumer",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 8,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 4,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "2bec1b5f3a4d34ab141f94107a37696473a432b4",
+      "score": 22
+    },
     {
       "id": "https://www.coindesk.com/markets/2026/03/19/forget-market-hours-leading-etp-firm-just-opened-24-7-liquidity-for-tokenized-stocks-gold-and-money-market-funds",
       "title": "Forget market hours: Leading ETP firm just opened 24/7 liquidity for tokenized stocks, gold and money market funds",
@@ -33,13 +132,13 @@
       "scoreBreakdown": {
         "relevanceScore": 8,
         "mentionScore": 0,
-        "recencyScore": 10,
+        "recencyScore": 9,
         "sourceScore": 4,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "c9449278abe80445fe9309990d960c1cdc1a9685",
-      "score": 22
+      "score": 21
     },
     {
       "id": "https://decrypt.co/361646/openclaw-developers-lured-github-phishing-campaign",
@@ -66,112 +165,13 @@
       "scoreBreakdown": {
         "relevanceScore": 8,
         "mentionScore": 0,
-        "recencyScore": 10,
+        "recencyScore": 9,
         "sourceScore": 3,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "c0d84dc561b8850e9555472c5455667d66f81872",
-      "score": 21
-    },
-    {
-      "id": "https://www.theblock.co/post/394169/why-tokenized-assets-are-defis-biggest-unlock",
-      "title": "Why tokenized assets are DeFi’s biggest unlock",
-      "url": "https://www.theblock.co/post/394169/why-tokenized-assets-are-defis-biggest-unlock",
-      "source": "The Block",
-      "publishedAt": "2026-03-18T16:20:58.000Z",
-      "summary": "DeFi founders discuss why tokenized assets, liquidity, and real-world integration—not new primitives—will drive the next phase of growth.",
-      "tags": [
-        "tokenized",
-        "assets",
-        "defi"
-      ],
-      "topicBucket": "tokenomics",
-      "whyItMatters": "Token supply mechanics can move short-term flows fast.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 8,
-        "mentionScore": 0,
-        "recencyScore": 9,
-        "sourceScore": 4,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "9e1feab5ee49fee41b1c820a498fe476d082b8f1",
-      "score": 21
-    },
-    {
-      "id": "https://www.theblock.co/post/394164/senate-banking-committee-april-vote-crypto-market-structure-bill-sen-lummis",
-      "title": "Senate Banking Committee eyes April vote on crypto market structure bill, Sen. Lummis says",
-      "url": "https://www.theblock.co/post/394164/senate-banking-committee-april-vote-crypto-market-structure-bill-sen-lummis",
-      "source": "The Block",
-      "publishedAt": "2026-03-18T15:45:13.000Z",
-      "summary": "A Senate panel plans to hold a hearing to amend and vote on a broad cryptocurrency market structure bill in April.",
-      "tags": [
-        "senate",
-        "banking",
-        "committee"
-      ],
-      "topicBucket": "general",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 8,
-        "mentionScore": 0,
-        "recencyScore": 9,
-        "sourceScore": 4,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "d113efb8eb4c70ebd4e1c9201d8214e994cd9ca1",
-      "score": 21
-    },
-    {
-      "id": "https://www.theblock.co/post/394146/polymarket-acquires-crypto-startup-brahma-prediction-platform-looks-boost-liquidity-fortune",
-      "title": "Polymarket acquires crypto startup Brahma as prediction platform looks to boost liquidity: Fortune",
-      "url": "https://www.theblock.co/post/394146/polymarket-acquires-crypto-startup-brahma-prediction-platform-looks-boost-liquidity-fortune",
-      "source": "The Block",
-      "publishedAt": "2026-03-18T15:21:53.000Z",
-      "summary": "Brahma might be able to bolster liquidity for Polymarket's lower-profile wagers that do not attract large pools of capital.",
-      "tags": [
-        "polymarket",
-        "acquires",
-        "crypto"
-      ],
-      "topicBucket": "defi",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 8,
-        "mentionScore": 0,
-        "recencyScore": 9,
-        "sourceScore": 4,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "91bf726c92cf2b5836379ebb56a8dc6198b57f7f",
-      "score": 21
+      "score": 20
     }
   ]
 }

@@ -5,30 +5,30 @@
   "items": [
     {
       "type": "APPS",
+      "title": "Forward Industries buys back $27 million in stock using Galaxy loan as SOL treasury faces drawdown",
+      "category": "APPS",
+      "source": "The Block",
+      "date": "2026-03-19",
+      "url": "https://www.theblock.co/post/394346/forward-industries-buys-back-27-million-stock-galaxy-loan-sol-treasury-drawdown",
+      "whyYouShouldCare": "Forward Industries' stock buyback using a Galaxy loan indicates potential liquidity challenges, which could impact Solana's treasury management and overall ecosystem stability."
+    },
+    {
+      "type": "APPS",
+      "title": "SEC drastically reduces KYC pressure on Bitcoin, XRP, and Solana with revamped crypto rules",
+      "category": "APPS",
+      "source": "CryptoSlate",
+      "date": "2026-03-19",
+      "url": "https://cryptoslate.com/sec-redrawn-crypto-rules-quietly-eases-kyc-pressure-on-bitcoin-xrp-and-solana",
+      "whyYouShouldCare": "The SEC's reduced KYC requirements for Solana could enhance user adoption and liquidity, fostering a more robust trading environment for the token."
+    },
+    {
+      "type": "APPS",
       "title": "SEC makes huge U-turn, declares crypto tokens are ‘digital commodities’ after years of legal battles",
       "category": "APPS",
       "source": "CryptoSlate",
       "date": "2026-03-18",
       "url": "https://cryptoslate.com/in-a-massive-u-turn-the-sec-declares-most-crypto-tokens-digital-commodities-after-years-of-legal-battles",
-      "whyYouShouldCare": "The SEC's classification of crypto tokens as 'digital commodities' could enhance regulatory clarity, potentially benefiting Solana's ecosystem and positioning in the market."
-    },
-    {
-      "type": "INFRA",
-      "title": "State of Rango Q4 2025",
-      "category": "INFRA",
-      "source": "Messari",
-      "date": "2026-03-17",
-      "url": "https://messari.io/article/state-of-rango-q4-2025",
-      "whyYouShouldCare": "Rango's Q4 2025 report highlights its growth and infrastructure developments, which may influence Solana's liquidity and usage within decentralized finance."
-    },
-    {
-      "type": "APPS",
-      "title": "Bitcoin OGs dump over $100 million in BTC after hawkish Fed dents rate cut hopes",
-      "category": "APPS",
-      "source": "CoinDesk",
-      "date": "2026-03-19",
-      "url": "https://www.coindesk.com/markets/2026/03/19/bitcoin-ogs-dump-over-usd100-million-in-btc-after-hawkish-fed-dents-rate-cut-hopes",
-      "whyYouShouldCare": "The significant sell-off of Bitcoin by early investors indicates shifting market dynamics, which could impact investor sentiment and liquidity across the broader crypto space, including Solana."
+      "whyYouShouldCare": "The SEC's classification of crypto tokens as ‘digital commodities’ may provide regulatory clarity, potentially benefiting Solana's market positioning and attracting institutional interest."
     }
   ]
 }

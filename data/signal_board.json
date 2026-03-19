@@ -1,16 +1,16 @@
 {
   "date": "2026-03-19",
-  "generated_at_utc": "2026-03-19T07:46:20.132Z",
-  "ctxMarket": "Attention is focused on the SEC’s reclassification of major crypto tokens—including Solana—as “digital commodities,” marking a significant regulatory shift. Usage and integration growth on Solana remain strong, especially in transaction leadership and onchain treasury solutions.",
-  "ctxTalking": "• The SEC’s decision to label Solana and other major tokens as digital commodities\n• Continued growth in Solana’s transaction volume and its role in onchain corporate treasury management\n• Venture funding activity and acquisitions involving Solana ecosystem projects",
-  "ctxMatters": "The SEC’s move could reduce legal uncertainty for Solana and similar tokens, potentially influencing future project launches and integrations. Solana’s prominence in transaction activity and enterprise treasury use highlights its infrastructure’s appeal for both users and institutions. Ongoing venture investment and acquisitions signal sustained interest in Solana-based projects.",
-  "ctxSignal": "Signal: Regulatory clarity from the SEC and measurable growth in Solana’s usage and integrations.\nNoise: Speculation around short-term price impacts not directly tied to these developments.",
-  "ctxGlossary": "Digital commodity — A regulatory category for assets like Solana, distinct from securities.\nOnchain treasury — Managing corporate funds directly on blockchain networks for real-time access.",
+  "generated_at_utc": "2026-03-19T19:45:26.068Z",
+  "ctxMarket": "Attention is focused on the SEC’s major regulatory shift, which now classifies tokens like Solana as “digital commodities” rather than securities. This has created renewed clarity for builders and institutions, while privacy-focused projects face a narrower regulatory path.",
+  "ctxTalking": "• The SEC’s reclassification of major crypto tokens, including Solana, as digital commodities\n• Strong transaction and user growth on Solana and other chains in Q4 2025\n• Increased institutional interest in onchain treasury management and large crypto treasury purchases",
+  "ctxMatters": "Regulatory clarity from the SEC could reduce compliance uncertainty for Solana projects and users. Solana’s continued lead in transaction volume highlights ongoing ecosystem activity. Institutional adoption of onchain treasury tools signals growing mainstream integration.",
+  "ctxSignal": "Signal: SEC’s new stance on token classification and Solana’s transaction growth\nNoise: Speculation about long-term impacts on privacy coins without direct SEC statements",
+  "ctxGlossary": "Digital commodities — Assets like Solana now classified by the SEC as not being securities\nOnchain treasury — Corporate funds managed directly on blockchain platforms for liquidity and payouts",
   "readMore": [
     {
-      "title": "SEC makes huge U-turn, declares crypto tokens are ‘digital commodities’ after years of legal battles",
+      "title": "SEC drastically reduces KYC pressure on Bitcoin, XRP, and Solana with revamped crypto rules",
       "source": "CryptoSlate",
-      "url": "https://cryptoslate.com/in-a-massive-u-turn-the-sec-declares-most-crypto-tokens-digital-commodities-after-years-of-legal-battles"
+      "url": "https://cryptoslate.com/sec-redrawn-crypto-rules-quietly-eases-kyc-pressure-on-bitcoin-xrp-and-solana"
     },
     {
       "title": "State of Rango Q4 2025",
