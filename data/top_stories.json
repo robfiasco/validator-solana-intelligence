@@ -1,13 +1,46 @@
 {
   "meta": {
-    "generatedAt": "2026-03-20T19:36:31.126Z",
-    "totalCandidates": 98,
+    "generatedAt": "2026-03-21T07:31:42.953Z",
+    "totalCandidates": 100,
     "solanaCandidates": 14,
     "selected": 5,
     "tweetPool": 0,
     "narrativeKeywordsCount": 0
   },
   "items": [
+    {
+      "id": "https://ambcrypto.com/solana-stalls-despite-1-8b-rwa-growth-where-is-sols-liquidity-going",
+      "title": "Solana stalls despite $1.8B RWA growth – Where is SOL’s liquidity going?",
+      "url": "https://ambcrypto.com/solana-stalls-despite-1-8b-rwa-growth-where-is-sols-liquidity-going",
+      "source": "AMB Crypto",
+      "publishedAt": "2026-03-21T04:00:45.000Z",
+      "summary": "Ondo Finance’s move to add 50 tokenized assets on Solana highlights how sidelined capital is being pooled into RWAs, giving a clearer picture of where liquidity is flowing.",
+      "tags": [
+        "solana",
+        "stalls",
+        "despite"
+      ],
+      "topicBucket": "defi",
+      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 21,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 1,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "baeaa7008745c19773c060c06779316284857898",
+      "score": 32
+    },
     {
       "id": "https://solana.com/news/bits-to-bricks-stablecoins-de-dollarization-alisha-chhangani",
       "title": "Bits to Bricks: Can Stablecoins Prevent De-Dollarization?",
@@ -33,93 +66,27 @@
       "scoreBreakdown": {
         "relevanceScore": 14,
         "mentionScore": 0,
-        "recencyScore": 9,
+        "recencyScore": 8,
         "sourceScore": 5,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
       "dedupeFingerprint": "37424d251bd3600f6a57a83770fecee058ac67c5",
-      "score": 28
+      "score": 27
     },
     {
-      "id": "https://ambcrypto.com/stablecoin-supply-nears-318b-fresh-inflows-or-just-capital-rotation",
-      "title": "Stablecoin supply nears $318B: Fresh inflows or just capital rotation?",
-      "url": "https://ambcrypto.com/stablecoin-supply-nears-318b-fresh-inflows-or-just-capital-rotation",
-      "source": "AMB Crypto",
-      "publishedAt": "2026-03-20T19:00:30.000Z",
-      "summary": "Stablecoin liquidity expands across markets, balancing fresh inflows with internal capital rotation.",
+      "id": "https://decrypt.co/361929/white-house-ai-proposal-override-state-laws-avoid-new-regulator",
+      "title": "White House AI Proposal Seeks to Override State Laws, Avoid New Regulator",
+      "url": "https://decrypt.co/361929/white-house-ai-proposal-override-state-laws-avoid-new-regulator",
+      "source": "Decrypt",
+      "publishedAt": "2026-03-20T17:56:24.000Z",
+      "summary": "The Trump administration's framework outlines a national approach to AI policy, from child safety to data centers.",
       "tags": [
-        "stablecoin",
-        "supply",
-        "nears"
+        "white",
+        "house",
+        "proposal"
       ],
-      "topicBucket": "tokenomics",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 11,
-        "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 1,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "b0de8c626abf52eca6336780630c293e189b9156",
-      "score": 22
-    },
-    {
-      "id": "https://ambcrypto.com/solana-sees-capital-repositioning-on-chain-is-a-new-cycle-forming",
-      "title": "Solana sees capital repositioning on-chain – Is a new cycle forming?",
-      "url": "https://ambcrypto.com/solana-sees-capital-repositioning-on-chain-is-a-new-cycle-forming",
-      "source": "AMB Crypto",
-      "publishedAt": "2026-03-20T08:00:21.000Z",
-      "summary": "Solana strengthened as demand absorbed supply and liquidity deepened, setting up potential sustained upside.",
-      "tags": [
-        "solana",
-        "sees",
-        "capital"
-      ],
-      "topicBucket": "tokenomics",
-      "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
-      "mentionCount": 0,
-      "xMentions": 0,
-      "who": [],
-      "xWho": [],
-      "mentionedBy": [],
-      "matchReason": "none",
-      "narrativesMatched": [],
-      "premiumNarrativesMatched": [],
-      "scoreBreakdown": {
-        "relevanceScore": 11,
-        "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 1,
-        "narrativeScore": 0,
-        "premiumNarrativeScore": 0
-      },
-      "dedupeFingerprint": "c18fee33618776d046c677fb100b1950f7c79ab9",
-      "score": 22
-    },
-    {
-      "id": "https://www.coindesk.com/policy/2026/03/20/crypto-clarity-act-may-be-cleared-to-move-after-senators-agree-on-stablecoin-yield",
-      "title": "Crypto Clarity Act may be cleared to move after senators agree on stablecoin yield",
-      "url": "https://www.coindesk.com/policy/2026/03/20/crypto-clarity-act-may-be-cleared-to-move-after-senators-agree-on-stablecoin-yield",
-      "source": "CoinDesk",
-      "publishedAt": "2026-03-20T19:27:20.000Z",
-      "summary": "One of the major sticking points on the crypto market structure bill may be resolved, at least enough to move toward a Senate hearing to advance the bill.",
-      "tags": [
-        "crypto",
-        "clarity",
-        "cleared"
-      ],
-      "topicBucket": "defi",
+      "topicBucket": "general",
       "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
       "mentionCount": 0,
       "xMentions": 0,
@@ -132,25 +99,25 @@
       "scoreBreakdown": {
         "relevanceScore": 5,
         "mentionScore": 0,
-        "recencyScore": 10,
-        "sourceScore": 4,
+        "recencyScore": 9,
+        "sourceScore": 3,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "58656ef6aebbc21a0dd683d52230efec4cd56f76",
-      "score": 19
+      "dedupeFingerprint": "6743d4ecb392e5637237e4c667df3efe1cd27f18",
+      "score": 17
     },
     {
-      "id": "https://www.theblock.co/post/394531/solana-foundation-president-says-crypto-gaming-is-dead",
-      "title": "Solana Foundation president says crypto gaming is dead",
-      "url": "https://www.theblock.co/post/394531/solana-foundation-president-says-crypto-gaming-is-dead",
-      "source": "The Block",
-      "publishedAt": "2026-03-20T18:41:27.000Z",
-      "summary": "While blockchain gaming has yet to live up to its promise, some companies, and top brands, have not given up.",
+      "id": "https://ambcrypto.com/ethereum-vs-solana-no-chain-has-defensible-moat-yet-warns-wintermute-ceo",
+      "title": "Ethereum vs Solana – No chain has defensible ‘moat’ yet, warns Wintermute CEO",
+      "url": "https://ambcrypto.com/ethereum-vs-solana-no-chain-has-defensible-moat-yet-warns-wintermute-ceo",
+      "source": "AMB Crypto",
+      "publishedAt": "2026-03-21T07:00:01.000Z",
+      "summary": "The three-year-old Hyperliquid currently leads the overall blockchain market in generated revenue.",
       "tags": [
+        "ethereum",
         "solana",
-        "foundation",
-        "president"
+        "chain"
       ],
       "topicBucket": "general",
       "whyItMatters": "Keep this on radar — it can shift near-term SOL narrative and positioning.",
@@ -166,12 +133,45 @@
         "relevanceScore": 5,
         "mentionScore": 0,
         "recencyScore": 10,
-        "sourceScore": 4,
+        "sourceScore": 1,
         "narrativeScore": 0,
         "premiumNarrativeScore": 0
       },
-      "dedupeFingerprint": "34c2e78684de1aed63653806128f30433e7deeee",
-      "score": 19
+      "dedupeFingerprint": "e89e759c2abaaa807119bf7867b97cd803392e1e",
+      "score": 16
+    },
+    {
+      "id": "https://cointelegraph.com/news/grayscale-files-sec-papers-for-hyperliquid-etf-joining-bitwise-21shares",
+      "title": "Grayscale files S-1 for Hyperliquid ETF, joining Bitwise, 21Shares",
+      "url": "https://cointelegraph.com/news/grayscale-files-sec-papers-for-hyperliquid-etf-joining-bitwise-21shares",
+      "source": "Cointelegraph",
+      "publishedAt": "2026-03-21T00:36:00.000Z",
+      "summary": "Unlike Bitwise, Grayscale doesn’t plan to incorporate staking for its Hyperliquid ETF but hasn’t ruled out integrating it in the future.",
+      "tags": [
+        "grayscale",
+        "files",
+        "hyperliquid"
+      ],
+      "topicBucket": "market",
+      "whyItMatters": "Infrastructure changes here can reset risk and throughput expectations.",
+      "mentionCount": 0,
+      "xMentions": 0,
+      "who": [],
+      "xWho": [],
+      "mentionedBy": [],
+      "matchReason": "none",
+      "narrativesMatched": [],
+      "premiumNarrativesMatched": [],
+      "scoreBreakdown": {
+        "relevanceScore": 3,
+        "mentionScore": 0,
+        "recencyScore": 10,
+        "sourceScore": 0,
+        "narrativeScore": 0,
+        "premiumNarrativeScore": 0
+      },
+      "dedupeFingerprint": "11c966a8cec597dc5144b326459905cdc16459a6",
+      "score": 13
     }
   ]
 }
